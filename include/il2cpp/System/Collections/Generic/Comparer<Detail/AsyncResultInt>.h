@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Detail_AsyncResultInt___get_Default (const MethodInfo_2A8BD50* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Detail_AsyncResultInt___CreateComparer (const MethodInfo_2A8BE60* method);
+int32_t System_Collections_Generic_Comparer_Detail_AsyncResultInt___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_Detail_AsyncResultInt__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2A8C260* method);
+void System_Collections_Generic_Comparer_Detail_AsyncResultInt____ctor (System_Collections_Generic_Comparer_Detail_AsyncResultInt__o* __this, const MethodInfo_2A8C430* method);

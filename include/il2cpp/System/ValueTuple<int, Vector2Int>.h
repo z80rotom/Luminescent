@@ -1,0 +1,15 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_ValueTuple_int__Vector2Int____ctor (System_ValueTuple_int__Vector2Int__o __this, int32_t item1, UnityEngine_Vector2Int_o item2, const MethodInfo_29AD990* method);
+bool System_ValueTuple_int__Vector2Int___Equals (System_ValueTuple_int__Vector2Int__o __this, Il2CppObject* obj, const MethodInfo_29AD9A0* method);
+bool System_ValueTuple_int__Vector2Int___Equals (System_ValueTuple_int__Vector2Int__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29ADAE0* method);
+bool System_ValueTuple_int__Vector2Int___System_Collections_IStructuralEquatable_Equals (System_ValueTuple_int__Vector2Int__o __this, Il2CppObject* other, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29ADC00* method);
+int32_t System_ValueTuple_int__Vector2Int___System_IComparable_CompareTo (System_ValueTuple_int__Vector2Int__o __this, Il2CppObject* other, const MethodInfo_29ADF10* method);
+int32_t System_ValueTuple_int__Vector2Int___CompareTo (System_ValueTuple_int__Vector2Int__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29AE100* method);
+int32_t System_ValueTuple_int__Vector2Int___System_Collections_IStructuralComparable_CompareTo (System_ValueTuple_int__Vector2Int__o __this, Il2CppObject* other, System_Collections_IComparer_o* comparer, const MethodInfo_29AE210* method);
+int32_t System_ValueTuple_int__Vector2Int___GetHashCode (System_ValueTuple_int__Vector2Int__o __this, const MethodInfo_29AE5B0* method);
+int32_t System_ValueTuple_int__Vector2Int___System_Collections_IStructuralEquatable_GetHashCode (System_ValueTuple_int__Vector2Int__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29AE5F0* method);
+int32_t System_ValueTuple_int__Vector2Int___GetHashCodeCore (System_ValueTuple_int__Vector2Int__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29AE640* method);
+System_String_o* System_ValueTuple_int__Vector2Int___ToString (System_ValueTuple_int__Vector2Int__o __this, const MethodInfo_29AE810* method);

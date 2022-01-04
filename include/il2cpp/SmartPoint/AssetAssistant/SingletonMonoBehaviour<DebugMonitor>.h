@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+SmartPoint_Components_DebugMonitor_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMonitor___get_Instance (const MethodInfo_26B9AB0* method);
+bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMonitor___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMonitor__o* __this, const MethodInfo_26BA7D0* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMonitor___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMonitor__o* __this, const MethodInfo_26BAB70* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMonitor____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMonitor__o* __this, const MethodInfo_26BB510* method);

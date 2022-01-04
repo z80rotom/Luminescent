@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_CompilerServices_TaskAwaiter_int____ctor (System_Runtime_CompilerServices_TaskAwaiter_int__o __this, System_Threading_Tasks_Task_TResult__o* task, const MethodInfo_2916260* method);
+void System_Runtime_CompilerServices_TaskAwaiter_int___UnsafeOnCompleted (System_Runtime_CompilerServices_TaskAwaiter_int__o __this, System_Action_o* continuation, const MethodInfo_2916270* method);
+int32_t System_Runtime_CompilerServices_TaskAwaiter_int___GetResult (System_Runtime_CompilerServices_TaskAwaiter_int__o __this, const MethodInfo_2916290* method);

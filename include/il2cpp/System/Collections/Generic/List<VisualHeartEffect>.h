@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_VisualHeartEffect____ctor (System_Collections_Generic_List_VisualHeartEffect__o* __this, const MethodInfo_2BAD0F0* method);
+int32_t System_Collections_Generic_List_VisualHeartEffect___get_Count (System_Collections_Generic_List_VisualHeartEffect__o* __this, const MethodInfo_2BAD9C0* method);
+Dpr_Contest_VisualHeartEffect_o* System_Collections_Generic_List_VisualHeartEffect___get_Item (System_Collections_Generic_List_VisualHeartEffect__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
+void System_Collections_Generic_List_VisualHeartEffect___Add (System_Collections_Generic_List_VisualHeartEffect__o* __this, Dpr_Contest_VisualHeartEffect_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_VisualHeartEffect___RemoveAt (System_Collections_Generic_List_VisualHeartEffect__o* __this, int32_t index, const MethodInfo_2BAF8D0* method);

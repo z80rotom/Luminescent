@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+XLSXContent_SecretbaseUpgrade_o* Dpr_SecretBase_SecretBaseMasterDataManager__get_Secretbase (Dpr_SecretBase_SecretBaseMasterDataManager_o* __this, const MethodInfo* method);
+System_Collections_Generic_List_StatueEffectData__o* Dpr_SecretBase_SecretBaseMasterDataManager__get_StatueEffectData (Dpr_SecretBase_SecretBaseMasterDataManager_o* __this, const MethodInfo* method);
+XLSXContent_Pedestal_o* Dpr_SecretBase_SecretBaseMasterDataManager__get_PedestalData (Dpr_SecretBase_SecretBaseMasterDataManager_o* __this, const MethodInfo* method);
+System_Collections_IEnumerator_o* Dpr_SecretBase_SecretBaseMasterDataManager__Load (Dpr_SecretBase_SecretBaseMasterDataManager_o* __this, const MethodInfo* method);
+Dpr_SecretBase_StatueEffectData_o* Dpr_SecretBase_SecretBaseMasterDataManager__GetStatueEffectData (Dpr_SecretBase_SecretBaseMasterDataManager_o* __this, int32_t id, const MethodInfo* method);
+UnityEngine_RectInt_o Dpr_SecretBase_SecretBaseMasterDataManager__GetStatueRect (Dpr_SecretBase_SecretBaseMasterDataManager_o* __this, Dpr_SecretBase_StatueItemData_o data, const MethodInfo* method);
+UnityEngine_Vector2Int_o Dpr_SecretBase_SecretBaseMasterDataManager__GetRoomSize (Dpr_SecretBase_SecretBaseMasterDataManager_o* __this, const MethodInfo* method);
+void Dpr_SecretBase_SecretBaseMasterDataManager___ctor (Dpr_SecretBase_SecretBaseMasterDataManager_o* __this, const MethodInfo* method);

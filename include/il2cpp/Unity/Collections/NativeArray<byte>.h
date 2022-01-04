@@ -1,0 +1,15 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t Unity_Collections_NativeArray_byte___get_Length (Unity_Collections_NativeArray_byte__o __this, const MethodInfo_2849640* method);
+uint8_t Unity_Collections_NativeArray_byte___get_Item (Unity_Collections_NativeArray_byte__o __this, int32_t index, const MethodInfo_2849650* method);
+void Unity_Collections_NativeArray_byte___set_Item (Unity_Collections_NativeArray_byte__o __this, int32_t index, uint8_t value, const MethodInfo_28496E0* method);
+void Unity_Collections_NativeArray_byte___Deallocate (Unity_Collections_NativeArray_byte__o __this, const MethodInfo_2849780* method);
+void Unity_Collections_NativeArray_byte___Dispose (Unity_Collections_NativeArray_byte__o __this, const MethodInfo_28497C0* method);
+Unity_Collections_NativeArray_Enumerator_T__o Unity_Collections_NativeArray_byte___GetEnumerator (Unity_Collections_NativeArray_byte__o __this, const MethodInfo_2849810* method);
+System_Collections_Generic_IEnumerator_T__o* Unity_Collections_NativeArray_byte___System_Collections_Generic_IEnumerable_T__GetEnumerator (Unity_Collections_NativeArray_byte__o __this, const MethodInfo_2849850* method);
+System_Collections_IEnumerator_o* Unity_Collections_NativeArray_byte___System_Collections_IEnumerable_GetEnumerator (Unity_Collections_NativeArray_byte__o __this, const MethodInfo_28498E0* method);
+bool Unity_Collections_NativeArray_byte___Equals (Unity_Collections_NativeArray_byte__o __this, Unity_Collections_NativeArray_T__o other, const MethodInfo_2849990* method);
+bool Unity_Collections_NativeArray_byte___Equals (Unity_Collections_NativeArray_byte__o __this, Il2CppObject* obj, const MethodInfo_28499C0* method);
+int32_t Unity_Collections_NativeArray_byte___GetHashCode (Unity_Collections_NativeArray_byte__o __this, const MethodInfo_2849AF0* method);

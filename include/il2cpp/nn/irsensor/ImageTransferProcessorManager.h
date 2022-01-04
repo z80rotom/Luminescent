@@ -1,0 +1,18 @@
+#pragma once
+
+#include "il2cpp.h"
+
+nn_irsensor_ImageTransferProcessorState_o nn_irsensor_ImageTransferProcessorManager__get_State (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);
+System_Byte_array* nn_irsensor_ImageTransferProcessorManager__get_ImageBuffer (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager__set_ImageBuffer (nn_irsensor_ImageTransferProcessorManager_o* __this, System_Byte_array* value, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager__Finalize (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager__Initialize (nn_irsensor_ImageTransferProcessorManager_o* __this, nn_irsensor_IrCameraHandle_o handle, int32_t format, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager__Initialize (nn_irsensor_ImageTransferProcessorManager_o* __this, nn_irsensor_IrCameraHandle_o handle, nn_irsensor_ImageTransferProcessorConfig_o config, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager__Initialize (nn_irsensor_ImageTransferProcessorManager_o* __this, nn_irsensor_IrCameraHandle_o handle, nn_irsensor_ImageTransferProcessorExConfig_o config, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager__Destroy (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);
+bool nn_irsensor_ImageTransferProcessorManager__IsRunning (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager__Run (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);
+nn_Result_o nn_irsensor_ImageTransferProcessorManager__Update (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager__Stop (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager___Destroy (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);
+void nn_irsensor_ImageTransferProcessorManager___ctor (nn_irsensor_ImageTransferProcessorManager_o* __this, const MethodInfo* method);

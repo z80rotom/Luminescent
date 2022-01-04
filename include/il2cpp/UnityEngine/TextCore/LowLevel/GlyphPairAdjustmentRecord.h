@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+UnityEngine_TextCore_LowLevel_GlyphAdjustmentRecord_o UnityEngine_TextCore_LowLevel_GlyphPairAdjustmentRecord__get_firstAdjustmentRecord (UnityEngine_TextCore_LowLevel_GlyphPairAdjustmentRecord_o __this, const MethodInfo* method);
+UnityEngine_TextCore_LowLevel_GlyphAdjustmentRecord_o UnityEngine_TextCore_LowLevel_GlyphPairAdjustmentRecord__get_secondAdjustmentRecord (UnityEngine_TextCore_LowLevel_GlyphPairAdjustmentRecord_o __this, const MethodInfo* method);

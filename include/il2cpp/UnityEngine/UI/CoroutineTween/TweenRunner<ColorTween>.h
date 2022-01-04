@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_IEnumerator_o* UnityEngine_UI_CoroutineTween_TweenRunner_ColorTween___Start (UnityEngine_UI_CoroutineTween_ColorTween_o tweenInfo, const MethodInfo_2CCB1D0* method);
+void UnityEngine_UI_CoroutineTween_TweenRunner_ColorTween___Init (UnityEngine_UI_CoroutineTween_TweenRunner_ColorTween__o* __this, UnityEngine_MonoBehaviour_o* coroutineContainer, const MethodInfo_2CCB2B0* method);
+void UnityEngine_UI_CoroutineTween_TweenRunner_ColorTween___StartTween (UnityEngine_UI_CoroutineTween_TweenRunner_ColorTween__o* __this, UnityEngine_UI_CoroutineTween_ColorTween_o info, const MethodInfo_2CCB2C0* method);
+void UnityEngine_UI_CoroutineTween_TweenRunner_ColorTween___StopTween (UnityEngine_UI_CoroutineTween_TweenRunner_ColorTween__o* __this, const MethodInfo_2CCB460* method);
+void UnityEngine_UI_CoroutineTween_TweenRunner_ColorTween____ctor (UnityEngine_UI_CoroutineTween_TweenRunner_ColorTween__o* __this, const MethodInfo_2CCB4B0* method);

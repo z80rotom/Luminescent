@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Remoting_Messaging_CallContext___ctor (System_Runtime_Remoting_Messaging_CallContext_o* __this, const MethodInfo* method);
+Il2CppObject* System_Runtime_Remoting_Messaging_CallContext__SetCurrentCallContext (System_Runtime_Remoting_Messaging_LogicalCallContext_o* ctx, const MethodInfo* method);
+System_Runtime_Remoting_Messaging_LogicalCallContext_o* System_Runtime_Remoting_Messaging_CallContext__SetLogicalCallContext (System_Runtime_Remoting_Messaging_LogicalCallContext_o* callCtx, const MethodInfo* method);

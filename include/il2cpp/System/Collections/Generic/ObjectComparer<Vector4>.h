@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_Vector4___Compare (System_Collections_Generic_ObjectComparer_Vector4__o* __this, UnityEngine_Vector4_o x, UnityEngine_Vector4_o y, const MethodInfo_28BE520* method);
+bool System_Collections_Generic_ObjectComparer_Vector4___Equals (System_Collections_Generic_ObjectComparer_Vector4__o* __this, Il2CppObject* obj, const MethodInfo_28BE660* method);
+int32_t System_Collections_Generic_ObjectComparer_Vector4___GetHashCode (System_Collections_Generic_ObjectComparer_Vector4__o* __this, const MethodInfo_28BE6B0* method);
+void System_Collections_Generic_ObjectComparer_Vector4____ctor (System_Collections_Generic_ObjectComparer_Vector4__o* __this, const MethodInfo_28BE6E0* method);

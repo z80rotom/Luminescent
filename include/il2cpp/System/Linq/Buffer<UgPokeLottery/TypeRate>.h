@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Buffer_UgPokeLottery_TypeRate____ctor (System_Linq_Buffer_UgPokeLottery_TypeRate__o __this, System_Collections_Generic_IEnumerable_TElement__o* source, const MethodInfo_296A550* method);
+Dpr_UnderGround_UgPokeLottery_TypeRate_array* System_Linq_Buffer_UgPokeLottery_TypeRate___ToArray (System_Linq_Buffer_UgPokeLottery_TypeRate__o __this, const MethodInfo_296AB10* method);

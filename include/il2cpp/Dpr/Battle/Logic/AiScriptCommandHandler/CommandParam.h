@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_AiScriptCommandHandler_CommandParam___ctor (Dpr_Battle_Logic_AiScriptCommandHandler_CommandParam_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_AiScriptCommandHandler_CommandParam__CopyFrom (Dpr_Battle_Logic_AiScriptCommandHandler_CommandParam_o* __this, Dpr_Battle_Logic_AiScriptCommandHandler_CommandParam_o* src, const MethodInfo* method);
+void Dpr_Battle_Logic_AiScriptCommandHandler_CommandParam__Clear (Dpr_Battle_Logic_AiScriptCommandHandler_CommandParam_o* __this, const MethodInfo* method);

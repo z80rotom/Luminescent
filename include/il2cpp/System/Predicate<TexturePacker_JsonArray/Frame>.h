@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Predicate_TexturePacker_JsonArray_Frame____ctor (System_Predicate_TexturePacker_JsonArray_Frame__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_290BF50* method);
+bool System_Predicate_TexturePacker_JsonArray_Frame___Invoke (System_Predicate_TexturePacker_JsonArray_Frame__o* __this, TMPro_SpriteAssetUtilities_TexturePacker_JsonArray_Frame_o obj, const MethodInfo_290BF70* method);
+System_IAsyncResult_o* System_Predicate_TexturePacker_JsonArray_Frame___BeginInvoke (System_Predicate_TexturePacker_JsonArray_Frame__o* __this, TMPro_SpriteAssetUtilities_TexturePacker_JsonArray_Frame_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_290C390* method);
+bool System_Predicate_TexturePacker_JsonArray_Frame___EndInvoke (System_Predicate_TexturePacker_JsonArray_Frame__o* __this, System_IAsyncResult_o* result, const MethodInfo_290C430* method);

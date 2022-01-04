@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Type_array* System_Runtime_Remoting_Messaging_CADMethodRef__GetTypes (System_Runtime_Remoting_Messaging_CADMethodRef_o* __this, System_String_array* typeArray, const MethodInfo* method);
+System_Reflection_MethodBase_o* System_Runtime_Remoting_Messaging_CADMethodRef__Resolve (System_Runtime_Remoting_Messaging_CADMethodRef_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_Messaging_CADMethodRef___ctor (System_Runtime_Remoting_Messaging_CADMethodRef_o* __this, System_Runtime_Remoting_Messaging_IMethodMessage_o* msg, const MethodInfo* method);

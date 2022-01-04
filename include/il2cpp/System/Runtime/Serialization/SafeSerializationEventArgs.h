@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Serialization_SafeSerializationEventArgs___ctor (System_Runtime_Serialization_SafeSerializationEventArgs_o* __this, System_Runtime_Serialization_StreamingContext_o streamingContext, const MethodInfo* method);
+System_Collections_Generic_IList_object__o* System_Runtime_Serialization_SafeSerializationEventArgs__get_SerializedStates (System_Runtime_Serialization_SafeSerializationEventArgs_o* __this, const MethodInfo* method);

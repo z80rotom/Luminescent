@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+UnityEngine_Playables_PlayableHandle_o UnityEngine_Experimental_Playables_CameraPlayable__GetHandle (UnityEngine_Experimental_Playables_CameraPlayable_o __this, const MethodInfo* method);
+bool UnityEngine_Experimental_Playables_CameraPlayable__Equals (UnityEngine_Experimental_Playables_CameraPlayable_o __this, UnityEngine_Experimental_Playables_CameraPlayable_o other, const MethodInfo* method);

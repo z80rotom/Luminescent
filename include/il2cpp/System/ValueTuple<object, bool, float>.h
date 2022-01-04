@@ -1,0 +1,15 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_ValueTuple_object__bool__float____ctor (System_ValueTuple_object__bool__float__o __this, Il2CppObject* item1, bool item2, float item3, const MethodInfo_29BB920* method);
+bool System_ValueTuple_object__bool__float___Equals (System_ValueTuple_object__bool__float__o __this, Il2CppObject* obj, const MethodInfo_29BB960* method);
+bool System_ValueTuple_object__bool__float___Equals (System_ValueTuple_object__bool__float__o __this, System_ValueTuple_T1__T2__T3__o other, const MethodInfo_29BBA90* method);
+bool System_ValueTuple_object__bool__float___System_Collections_IStructuralEquatable_Equals (System_ValueTuple_object__bool__float__o __this, Il2CppObject* other, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29BBC00* method);
+int32_t System_ValueTuple_object__bool__float___System_IComparable_CompareTo (System_ValueTuple_object__bool__float__o __this, Il2CppObject* other, const MethodInfo_29BBF80* method);
+int32_t System_ValueTuple_object__bool__float___CompareTo (System_ValueTuple_object__bool__float__o __this, System_ValueTuple_T1__T2__T3__o other, const MethodInfo_29BC160* method);
+int32_t System_ValueTuple_object__bool__float___System_Collections_IStructuralComparable_CompareTo (System_ValueTuple_object__bool__float__o __this, Il2CppObject* other, System_Collections_IComparer_o* comparer, const MethodInfo_29BC2C0* method);
+int32_t System_ValueTuple_object__bool__float___GetHashCode (System_ValueTuple_object__bool__float__o __this, const MethodInfo_29BC6D0* method);
+int32_t System_ValueTuple_object__bool__float___System_Collections_IStructuralEquatable_GetHashCode (System_ValueTuple_object__bool__float__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29BC740* method);
+int32_t System_ValueTuple_object__bool__float___GetHashCodeCore (System_ValueTuple_object__bool__float__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29BC790* method);
+System_String_o* System_ValueTuple_object__bool__float___ToString (System_ValueTuple_object__bool__float__o __this, const MethodInfo_29BC9C0* method);

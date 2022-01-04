@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_IntPtr___Compare (System_Collections_Generic_ObjectComparer_IntPtr__o* __this, intptr_t x, intptr_t y, const MethodInfo_28B98B0* method);
+bool System_Collections_Generic_ObjectComparer_IntPtr___Equals (System_Collections_Generic_ObjectComparer_IntPtr__o* __this, Il2CppObject* obj, const MethodInfo_28B99B0* method);
+int32_t System_Collections_Generic_ObjectComparer_IntPtr___GetHashCode (System_Collections_Generic_ObjectComparer_IntPtr__o* __this, const MethodInfo_28B9A00* method);
+void System_Collections_Generic_ObjectComparer_IntPtr____ctor (System_Collections_Generic_ObjectComparer_IntPtr__o* __this, const MethodInfo_28B9A30* method);

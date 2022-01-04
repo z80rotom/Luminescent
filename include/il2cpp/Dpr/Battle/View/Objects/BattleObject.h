@@ -1,0 +1,42 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t Dpr_Battle_View_Objects_BattleObject__get_Index (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__set_Index (Dpr_Battle_View_Objects_BattleObject_o* __this, int32_t value, const MethodInfo* method);
+bool Dpr_Battle_View_Objects_BattleObject__get_IsEnable (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__set_IsEnable (Dpr_Battle_View_Objects_BattleObject_o* __this, bool value, const MethodInfo* method);
+int32_t Dpr_Battle_View_Objects_BattleObject__get_Priority (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__set_Priority (Dpr_Battle_View_Objects_BattleObject_o* __this, int32_t value, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__get_NodeScaleTranslation (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__set_NodeScaleTranslation (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o value, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__get_NodeRotateTranslation (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__set_NodeRotateTranslation (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o value, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__Awake (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__OnDestroy (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__Initialize (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__InitializeMember (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__SetTranslationVec (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o translation, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetTranslationVec (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__SetTranslationOffset (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o translation, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetTranslationOffset (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__SetScaleVec (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o scale, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetScaleVec (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__SetScaleOffset (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o scale, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetScaleOffset (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__SetNodeScaleTranslation (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o translation, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetNodeScaleTranslation (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__SetNodeRotateTranslation (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o translation, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetNodeRotateTranslation (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__SetRotationVec (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o rot, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetRotationVec (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__SetRotationVecOffset (Dpr_Battle_View_Objects_BattleObject_o* __this, UnityEngine_Vector3_o rot, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetRotationVecOffset (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+bool Dpr_Battle_View_Objects_BattleObject__IsActive (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__OnUpdatePreJob (Dpr_Battle_View_Objects_BattleObject_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__OnUpdatePostJob (Dpr_Battle_View_Objects_BattleObject_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject__UpdateSTR (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetCalcTranslation (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetCalcScale (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Battle_View_Objects_BattleObject__GetCalcRot (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleObject___ctor (Dpr_Battle_View_Objects_BattleObject_o* __this, const MethodInfo* method);

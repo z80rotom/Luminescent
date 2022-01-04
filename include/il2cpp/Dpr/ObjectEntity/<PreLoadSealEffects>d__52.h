@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_ObjectEntity__PreLoadSealEffects_d__52___ctor (Dpr_ObjectEntity__PreLoadSealEffects_d__52_o* __this, int32_t __1__state, const MethodInfo* method);
+void Dpr_ObjectEntity__PreLoadSealEffects_d__52__System_IDisposable_Dispose (Dpr_ObjectEntity__PreLoadSealEffects_d__52_o* __this, const MethodInfo* method);
+bool Dpr_ObjectEntity__PreLoadSealEffects_d__52__MoveNext (Dpr_ObjectEntity__PreLoadSealEffects_d__52_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_ObjectEntity__PreLoadSealEffects_d__52__System_Collections_Generic_IEnumerator_System_Object__get_Current (Dpr_ObjectEntity__PreLoadSealEffects_d__52_o* __this, const MethodInfo* method);
+void Dpr_ObjectEntity__PreLoadSealEffects_d__52__System_Collections_IEnumerator_Reset (Dpr_ObjectEntity__PreLoadSealEffects_d__52_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_ObjectEntity__PreLoadSealEffects_d__52__System_Collections_IEnumerator_get_Current (Dpr_ObjectEntity__PreLoadSealEffects_d__52_o* __this, const MethodInfo* method);

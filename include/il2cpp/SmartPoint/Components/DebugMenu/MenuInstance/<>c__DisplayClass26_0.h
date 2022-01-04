@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void SmartPoint_Components_DebugMenu_MenuInstance___c__DisplayClass26_0___ctor (SmartPoint_Components_DebugMenu_MenuInstance___c__DisplayClass26_0_o* __this, const MethodInfo* method);
+bool SmartPoint_Components_DebugMenu_MenuInstance___c__DisplayClass26_0___SetCurrentCell_b__0 (SmartPoint_Components_DebugMenu_MenuInstance___c__DisplayClass26_0_o* __this, SmartPoint_Components_LayoutScrollView_Cell_o* x, const MethodInfo* method);

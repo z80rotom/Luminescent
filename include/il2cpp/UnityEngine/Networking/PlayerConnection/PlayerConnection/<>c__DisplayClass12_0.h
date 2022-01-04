@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_Networking_PlayerConnection_PlayerConnection___c__DisplayClass12_0___ctor (UnityEngine_Networking_PlayerConnection_PlayerConnection___c__DisplayClass12_0_o* __this, const MethodInfo* method);
+bool UnityEngine_Networking_PlayerConnection_PlayerConnection___c__DisplayClass12_0___Register_b__0 (UnityEngine_Networking_PlayerConnection_PlayerConnection___c__DisplayClass12_0_o* __this, UnityEngine_Networking_PlayerConnection_PlayerEditorConnectionEvents_MessageTypeSubscribers_o* x, const MethodInfo* method);

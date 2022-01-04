@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Comparison_Detail_Ranking2_Ranking2ScoreDataInt____ctor (System_Comparison_Detail_Ranking2_Ranking2ScoreDataInt__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_29FCA30* method);
+int32_t System_Comparison_Detail_Ranking2_Ranking2ScoreDataInt___Invoke (System_Comparison_Detail_Ranking2_Ranking2ScoreDataInt__o* __this, NexPlugin_Detail_Ranking2_Ranking2ScoreDataInt_o x, NexPlugin_Detail_Ranking2_Ranking2ScoreDataInt_o y, const MethodInfo_29FCA50* method);
+System_IAsyncResult_o* System_Comparison_Detail_Ranking2_Ranking2ScoreDataInt___BeginInvoke (System_Comparison_Detail_Ranking2_Ranking2ScoreDataInt__o* __this, NexPlugin_Detail_Ranking2_Ranking2ScoreDataInt_o x, NexPlugin_Detail_Ranking2_Ranking2ScoreDataInt_o y, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_29FCD60* method);
+int32_t System_Comparison_Detail_Ranking2_Ranking2ScoreDataInt___EndInvoke (System_Comparison_Detail_Ranking2_Ranking2ScoreDataInt__o* __this, System_IAsyncResult_o* result, const MethodInfo_29FCE00* method);

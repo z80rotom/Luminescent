@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Serialization_Formatters_Binary_IntSizedArray___ctor (System_Runtime_Serialization_Formatters_Binary_IntSizedArray_o* __this, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_IntSizedArray___ctor (System_Runtime_Serialization_Formatters_Binary_IntSizedArray_o* __this, System_Runtime_Serialization_Formatters_Binary_IntSizedArray_o* sizedArray, const MethodInfo* method);
+Il2CppObject* System_Runtime_Serialization_Formatters_Binary_IntSizedArray__Clone (System_Runtime_Serialization_Formatters_Binary_IntSizedArray_o* __this, const MethodInfo* method);
+int32_t System_Runtime_Serialization_Formatters_Binary_IntSizedArray__get_Item (System_Runtime_Serialization_Formatters_Binary_IntSizedArray_o* __this, int32_t index, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_IntSizedArray__set_Item (System_Runtime_Serialization_Formatters_Binary_IntSizedArray_o* __this, int32_t index, int32_t value, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_IntSizedArray__IncreaseCapacity (System_Runtime_Serialization_Formatters_Binary_IntSizedArray_o* __this, int32_t index, const MethodInfo* method);

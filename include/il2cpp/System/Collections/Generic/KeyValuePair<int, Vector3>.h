@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_KeyValuePair_int__Vector3____ctor (System_Collections_Generic_KeyValuePair_int__Vector3__o __this, int32_t key, UnityEngine_Vector3_o value, const MethodInfo_299DAD0* method);
+int32_t System_Collections_Generic_KeyValuePair_int__Vector3___get_Key (System_Collections_Generic_KeyValuePair_int__Vector3__o __this, const MethodInfo_299DAF0* method);
+UnityEngine_Vector3_o System_Collections_Generic_KeyValuePair_int__Vector3___get_Value (System_Collections_Generic_KeyValuePair_int__Vector3__o __this, const MethodInfo_299DB00* method);
+System_String_o* System_Collections_Generic_KeyValuePair_int__Vector3___ToString (System_Collections_Generic_KeyValuePair_int__Vector3__o __this, const MethodInfo_299DB10* method);

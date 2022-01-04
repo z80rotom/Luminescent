@@ -1,0 +1,7 @@
+set(SWITCH_IP 192.168.1.1)
+add_compile_definitions(
+        AFFECTION_ENABLED=true
+        EXP_SHARE_ENABLED=true
+        TIME_PENALTY_ENABLED=true
+        SHINY_CHANCE=1/4096.f
+)

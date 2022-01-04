@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Remoting_Lifetime_LifetimeServices___cctor (const MethodInfo* method);
+System_TimeSpan_o System_Runtime_Remoting_Lifetime_LifetimeServices__get_LeaseManagerPollTime (const MethodInfo* method);
+void System_Runtime_Remoting_Lifetime_LifetimeServices__set_LeaseManagerPollTime (System_TimeSpan_o value, const MethodInfo* method);
+System_TimeSpan_o System_Runtime_Remoting_Lifetime_LifetimeServices__get_LeaseTime (const MethodInfo* method);
+void System_Runtime_Remoting_Lifetime_LifetimeServices__set_LeaseTime (System_TimeSpan_o value, const MethodInfo* method);
+System_TimeSpan_o System_Runtime_Remoting_Lifetime_LifetimeServices__get_RenewOnCallTime (const MethodInfo* method);
+void System_Runtime_Remoting_Lifetime_LifetimeServices__set_RenewOnCallTime (System_TimeSpan_o value, const MethodInfo* method);
+System_TimeSpan_o System_Runtime_Remoting_Lifetime_LifetimeServices__get_SponsorshipTimeout (const MethodInfo* method);
+void System_Runtime_Remoting_Lifetime_LifetimeServices__set_SponsorshipTimeout (System_TimeSpan_o value, const MethodInfo* method);
+void System_Runtime_Remoting_Lifetime_LifetimeServices__TrackLifetime (System_Runtime_Remoting_ServerIdentity_o* identity, const MethodInfo* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_TimeSpan____ctor (System_Array_InternalEnumerator_TimeSpan__o __this, System_Array_o* array, const MethodInfo_256E6D0* method);
+void System_Array_InternalEnumerator_TimeSpan___Dispose (System_Array_InternalEnumerator_TimeSpan__o __this, const MethodInfo_256E700* method);
+bool System_Array_InternalEnumerator_TimeSpan___MoveNext (System_Array_InternalEnumerator_TimeSpan__o __this, const MethodInfo_256E710* method);
+System_TimeSpan_o System_Array_InternalEnumerator_TimeSpan___get_Current (System_Array_InternalEnumerator_TimeSpan__o __this, const MethodInfo_256E770* method);
+void System_Array_InternalEnumerator_TimeSpan___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_TimeSpan__o __this, const MethodInfo_256E8B0* method);
+Il2CppObject* System_Array_InternalEnumerator_TimeSpan___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_TimeSpan__o __this, const MethodInfo_256E8C0* method);

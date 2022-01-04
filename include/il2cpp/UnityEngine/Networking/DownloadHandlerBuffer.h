@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+intptr_t UnityEngine_Networking_DownloadHandlerBuffer__Create (UnityEngine_Networking_DownloadHandlerBuffer_o* obj, const MethodInfo* method);
+void UnityEngine_Networking_DownloadHandlerBuffer__InternalCreateBuffer (UnityEngine_Networking_DownloadHandlerBuffer_o* __this, const MethodInfo* method);
+void UnityEngine_Networking_DownloadHandlerBuffer___ctor (UnityEngine_Networking_DownloadHandlerBuffer_o* __this, const MethodInfo* method);
+System_Byte_array* UnityEngine_Networking_DownloadHandlerBuffer__GetData (UnityEngine_Networking_DownloadHandlerBuffer_o* __this, const MethodInfo* method);
+System_Byte_array* UnityEngine_Networking_DownloadHandlerBuffer__InternalGetData (UnityEngine_Networking_DownloadHandlerBuffer_o* __this, const MethodInfo* method);

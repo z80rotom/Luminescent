@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+UnityEngine_XR_MeshId_o UnityEngine_XR_MeshGenerationResult__get_MeshId (UnityEngine_XR_MeshGenerationResult_o __this, const MethodInfo* method);
+UnityEngine_Mesh_o* UnityEngine_XR_MeshGenerationResult__get_Mesh (UnityEngine_XR_MeshGenerationResult_o __this, const MethodInfo* method);
+UnityEngine_MeshCollider_o* UnityEngine_XR_MeshGenerationResult__get_MeshCollider (UnityEngine_XR_MeshGenerationResult_o __this, const MethodInfo* method);
+int32_t UnityEngine_XR_MeshGenerationResult__get_Status (UnityEngine_XR_MeshGenerationResult_o __this, const MethodInfo* method);
+int32_t UnityEngine_XR_MeshGenerationResult__get_Attributes (UnityEngine_XR_MeshGenerationResult_o __this, const MethodInfo* method);
+bool UnityEngine_XR_MeshGenerationResult__Equals (UnityEngine_XR_MeshGenerationResult_o __this, Il2CppObject* obj, const MethodInfo* method);
+bool UnityEngine_XR_MeshGenerationResult__Equals (UnityEngine_XR_MeshGenerationResult_o __this, UnityEngine_XR_MeshGenerationResult_o other, const MethodInfo* method);
+int32_t UnityEngine_XR_MeshGenerationResult__GetHashCode (UnityEngine_XR_MeshGenerationResult_o __this, const MethodInfo* method);

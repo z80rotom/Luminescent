@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_2___ctor (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_2_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_2___StartTalk_b__16 (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_2_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_2___StartTalk_b__12 (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_2_o* __this, const MethodInfo* method);

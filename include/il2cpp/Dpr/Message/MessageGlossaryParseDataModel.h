@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Message_MessageGlossaryParseDataModel__Dispose (Dpr_Message_MessageGlossaryParseDataModel_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageGlossaryParseDataModel__SetLabelData (Dpr_Message_MessageGlossaryParseDataModel_o* __this, Dpr_Message_LabelData_o* labelData, int32_t langID, const MethodInfo* method);
+System_Collections_Generic_List_MessageTagDataModel__o* Dpr_Message_MessageGlossaryParseDataModel__get_TagDataList (Dpr_Message_MessageGlossaryParseDataModel_o* __this, const MethodInfo* method);
+Dpr_Message_AttributeInfo_o* Dpr_Message_MessageGlossaryParseDataModel__get_AttributeDataModel (Dpr_Message_MessageGlossaryParseDataModel_o* __this, const MethodInfo* method);
+Dpr_Message_WordData_array* Dpr_Message_MessageGlossaryParseDataModel__get_WordDataArray (Dpr_Message_MessageGlossaryParseDataModel_o* __this, const MethodInfo* method);
+float Dpr_Message_MessageGlossaryParseDataModel__get_FontSize (Dpr_Message_MessageGlossaryParseDataModel_o* __this, const MethodInfo* method);
+float Dpr_Message_MessageGlossaryParseDataModel__get_StrWidth (Dpr_Message_MessageGlossaryParseDataModel_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageGlossaryParseDataModel__SetTagWord (Dpr_Message_MessageGlossaryParseDataModel_o* __this, int32_t setTargetIndex, System_String_o* word, float strWidth, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageGlossaryParseDataModel__GetName (Dpr_Message_MessageGlossaryParseDataModel_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageGlossaryParseDataModel___ctor (Dpr_Message_MessageGlossaryParseDataModel_o* __this, const MethodInfo* method);

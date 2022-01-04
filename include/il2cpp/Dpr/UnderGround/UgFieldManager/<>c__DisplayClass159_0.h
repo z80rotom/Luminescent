@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UnderGround_UgFieldManager___c__DisplayClass159_0___ctor (Dpr_UnderGround_UgFieldManager___c__DisplayClass159_0_o* __this, const MethodInfo* method);
+bool Dpr_UnderGround_UgFieldManager___c__DisplayClass159_0___DeleteTargetSecretBase_b__0 (Dpr_UnderGround_UgFieldManager___c__DisplayClass159_0_o* __this, Dpr_UnderGround_UgFieldManager_SecretBaseModel_o* x, const MethodInfo* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_NsUid____ctor (System_Array_InternalEnumerator_NsUid__o __this, System_Array_o* array, const MethodInfo_2668400* method);
+void System_Array_InternalEnumerator_NsUid___Dispose (System_Array_InternalEnumerator_NsUid__o __this, const MethodInfo_2668430* method);
+bool System_Array_InternalEnumerator_NsUid___MoveNext (System_Array_InternalEnumerator_NsUid__o __this, const MethodInfo_2668440* method);
+nn_ec_NsUid_o System_Array_InternalEnumerator_NsUid___get_Current (System_Array_InternalEnumerator_NsUid__o __this, const MethodInfo_26684A0* method);
+void System_Array_InternalEnumerator_NsUid___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_NsUid__o __this, const MethodInfo_26685E0* method);
+Il2CppObject* System_Array_InternalEnumerator_NsUid___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_NsUid__o __this, const MethodInfo_26685F0* method);

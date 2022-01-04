@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Pml_UgFather_UgFatherDataManager___c__DisplayClass49_1___ctor (Pml_UgFather_UgFatherDataManager___c__DisplayClass49_1_o* __this, const MethodInfo* method);
+int32_t Pml_UgFather_UgFatherDataManager___c__DisplayClass49_1___LotUGFBuyDatasByCategory_b__3 (Pml_UgFather_UgFatherDataManager___c__DisplayClass49_1_o* __this, XLSXContent_UgFatherShopTable_SheetBuyBase_o* a, XLSXContent_UgFatherShopTable_SheetBuyBase_o* b, const MethodInfo* method);

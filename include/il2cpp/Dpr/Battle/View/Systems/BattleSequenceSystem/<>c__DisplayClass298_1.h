@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass298_1___ctor (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass298_1_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass298_1___BTL_SEQ_FUNC_DEF_ModelCreate_b__1 (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass298_1_o* __this, const MethodInfo* method);

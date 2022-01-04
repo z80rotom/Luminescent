@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_DamageDetermine___ctor (Dpr_Battle_Logic_Section_DamageDetermine_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_DamageDetermine__Execute (Dpr_Battle_Logic_Section_DamageDetermine_o* __this, Dpr_Battle_Logic_Section_DamageDetermine_Result_o* pResult, Dpr_Battle_Logic_Section_DamageDetermine_Description_o** description, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_DamageDetermine__damageDetermineEvent (Dpr_Battle_Logic_Section_DamageDetermine_o* __this, Dpr_Battle_Logic_DamageCalcResult_o* damageRec, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_WazaParam_o* wazaParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_DamageDetermine__udpateCriticalCount (Dpr_Battle_Logic_Section_DamageDetermine_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pAttacker, Dpr_Battle_Logic_DamageCalcResult_o* pDamageRec, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_DamageDetermine__updateTotalDamageRecieved (Dpr_Battle_Logic_Section_DamageDetermine_o* __this, Dpr_Battle_Logic_DamageCalcResult_o* pDamageRec, const MethodInfo* method);

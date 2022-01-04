@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_IDigResultItem____ctor (System_Collections_Generic_List_IDigResultItem__o* __this, const MethodInfo_2BAD0F0* method);
+void System_Collections_Generic_List_IDigResultItem___Add (System_Collections_Generic_List_IDigResultItem__o* __this, Dpr_DigFossil_IDigResultItem_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_IDigResultItem___Clear (System_Collections_Generic_List_IDigResultItem__o* __this, const MethodInfo_2BAE0A0* method);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_IDigResultItem___GetEnumerator (System_Collections_Generic_List_IDigResultItem__o* __this, const MethodInfo_2BAEA50* method);

@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_int__RoadsignViewData____ctor (System_Collections_Generic_Dictionary_int__RoadsignViewData__o* __this, int32_t capacity, const MethodInfo_2A44B80* method);
+Dpr_MsgWindow_RoadsignViewData_o* System_Collections_Generic_Dictionary_int__RoadsignViewData___get_Item (System_Collections_Generic_Dictionary_int__RoadsignViewData__o* __this, int32_t key, const MethodInfo_2A44F30* method);
+void System_Collections_Generic_Dictionary_int__RoadsignViewData___Add (System_Collections_Generic_Dictionary_int__RoadsignViewData__o* __this, int32_t key, Dpr_MsgWindow_RoadsignViewData_o* value, const MethodInfo_2A45020* method);
+void System_Collections_Generic_Dictionary_int__RoadsignViewData___Clear (System_Collections_Generic_Dictionary_int__RoadsignViewData__o* __this, const MethodInfo_2A451E0* method);
+bool System_Collections_Generic_Dictionary_int__RoadsignViewData___ContainsKey (System_Collections_Generic_Dictionary_int__RoadsignViewData__o* __this, int32_t key, const MethodInfo_2A45280* method);

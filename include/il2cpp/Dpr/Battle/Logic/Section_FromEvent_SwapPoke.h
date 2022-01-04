@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_FromEvent_SwapPoke___ctor (Dpr_Battle_Logic_Section_FromEvent_SwapPoke_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FromEvent_SwapPoke__Execute (Dpr_Battle_Logic_Section_FromEvent_SwapPoke_o* __this, Dpr_Battle_Logic_Section_FromEvent_SwapPoke_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_SwapPoke_Description_o** description, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FromEvent_SwapPoke__afterMoveEvent (Dpr_Battle_Logic_Section_FromEvent_SwapPoke_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);

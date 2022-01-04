@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Enumerable___c__DisplayClass6_0_UgStoneStatue____ctor (System_Linq_Enumerable___c__DisplayClass6_0_UgStoneStatue__o* __this, const MethodInfo_296F200* method);
+bool System_Linq_Enumerable___c__DisplayClass6_0_UgStoneStatue____CombinePredicates_b__0 (System_Linq_Enumerable___c__DisplayClass6_0_UgStoneStatue__o* __this, DPData_UgStoneStatue_o x, const MethodInfo_296F210* method);

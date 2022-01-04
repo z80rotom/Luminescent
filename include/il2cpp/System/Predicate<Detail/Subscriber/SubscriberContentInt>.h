@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Predicate_Detail_Subscriber_SubscriberContentInt____ctor (System_Predicate_Detail_Subscriber_SubscriberContentInt__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_29034F0* method);
+bool System_Predicate_Detail_Subscriber_SubscriberContentInt___Invoke (System_Predicate_Detail_Subscriber_SubscriberContentInt__o* __this, NexPlugin_Detail_Subscriber_SubscriberContentInt_o obj, const MethodInfo_2903510* method);
+System_IAsyncResult_o* System_Predicate_Detail_Subscriber_SubscriberContentInt___BeginInvoke (System_Predicate_Detail_Subscriber_SubscriberContentInt__o* __this, NexPlugin_Detail_Subscriber_SubscriberContentInt_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_2903980* method);
+bool System_Predicate_Detail_Subscriber_SubscriberContentInt___EndInvoke (System_Predicate_Detail_Subscriber_SubscriberContentInt__o* __this, System_IAsyncResult_o* result, const MethodInfo_2903A20* method);

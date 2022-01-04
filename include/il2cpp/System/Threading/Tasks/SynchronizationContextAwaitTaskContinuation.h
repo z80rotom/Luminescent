@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation___ctor (System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation_o* __this, System_Threading_SynchronizationContext_o* context, System_Action_o* action, bool flowExecutionContext, int32_t* stackMark, const MethodInfo* method);
+void System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation__Run (System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation_o* __this, System_Threading_Tasks_Task_o* task, bool canInlineContinuationTask, const MethodInfo* method);
+void System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation__PostAction (Il2CppObject* state, const MethodInfo* method);
+System_Threading_ContextCallback_o* System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation__GetPostActionCallback (const MethodInfo* method);
+void System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation___cctor (const MethodInfo* method);

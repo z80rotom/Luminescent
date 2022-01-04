@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Remoting_ServerIdentity___ctor (System_Runtime_Remoting_ServerIdentity_o* __this, System_String_o* objectUri, System_Runtime_Remoting_Contexts_Context_o* context, System_Type_o* objectType, const MethodInfo* method);
+System_Type_o* System_Runtime_Remoting_ServerIdentity__get_ObjectType (System_Runtime_Remoting_ServerIdentity_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_ServerIdentity__StartTrackingLifetime (System_Runtime_Remoting_ServerIdentity_o* __this, System_Runtime_Remoting_Lifetime_ILease_o* lease, const MethodInfo* method);
+void System_Runtime_Remoting_ServerIdentity__OnLifetimeExpired (System_Runtime_Remoting_ServerIdentity_o* __this, const MethodInfo* method);
+System_Runtime_Remoting_ObjRef_o* System_Runtime_Remoting_ServerIdentity__CreateObjRef (System_Runtime_Remoting_ServerIdentity_o* __this, System_Type_o* requestedType, const MethodInfo* method);
+void System_Runtime_Remoting_ServerIdentity__AttachServerObject (System_Runtime_Remoting_ServerIdentity_o* __this, System_MarshalByRefObject_o* serverObject, System_Runtime_Remoting_Contexts_Context_o* context, const MethodInfo* method);
+System_Runtime_Remoting_Lifetime_Lease_o* System_Runtime_Remoting_ServerIdentity__get_Lease (System_Runtime_Remoting_ServerIdentity_o* __this, const MethodInfo* method);
+System_Runtime_Remoting_Contexts_Context_o* System_Runtime_Remoting_ServerIdentity__get_Context (System_Runtime_Remoting_ServerIdentity_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_ServerIdentity__set_Context (System_Runtime_Remoting_ServerIdentity_o* __this, System_Runtime_Remoting_Contexts_Context_o* value, const MethodInfo* method);
+void System_Runtime_Remoting_ServerIdentity__DisposeServerObject (System_Runtime_Remoting_ServerIdentity_o* __this, const MethodInfo* method);

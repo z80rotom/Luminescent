@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void TMPro_TMP_InputField__MouseDragOutsideRect_d__294___ctor (TMPro_TMP_InputField__MouseDragOutsideRect_d__294_o* __this, int32_t __1__state, const MethodInfo* method);
+void TMPro_TMP_InputField__MouseDragOutsideRect_d__294__System_IDisposable_Dispose (TMPro_TMP_InputField__MouseDragOutsideRect_d__294_o* __this, const MethodInfo* method);
+bool TMPro_TMP_InputField__MouseDragOutsideRect_d__294__MoveNext (TMPro_TMP_InputField__MouseDragOutsideRect_d__294_o* __this, const MethodInfo* method);
+Il2CppObject* TMPro_TMP_InputField__MouseDragOutsideRect_d__294__System_Collections_Generic_IEnumerator_System_Object__get_Current (TMPro_TMP_InputField__MouseDragOutsideRect_d__294_o* __this, const MethodInfo* method);
+void TMPro_TMP_InputField__MouseDragOutsideRect_d__294__System_Collections_IEnumerator_Reset (TMPro_TMP_InputField__MouseDragOutsideRect_d__294_o* __this, const MethodInfo* method);
+Il2CppObject* TMPro_TMP_InputField__MouseDragOutsideRect_d__294__System_Collections_IEnumerator_get_Current (TMPro_TMP_InputField__MouseDragOutsideRect_d__294_o* __this, const MethodInfo* method);

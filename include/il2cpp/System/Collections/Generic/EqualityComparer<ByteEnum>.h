@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_EqualityComparer_T__o* System_Collections_Generic_EqualityComparer_ByteEnum___get_Default (const MethodInfo_2B37100* method);
+System_Collections_Generic_EqualityComparer_T__o* System_Collections_Generic_EqualityComparer_ByteEnum___CreateComparer (const MethodInfo_2B37210* method);
+int32_t System_Collections_Generic_EqualityComparer_ByteEnum___IndexOf (System_Collections_Generic_EqualityComparer_ByteEnum__o* __this, System_ByteEnum_array* array, uint8_t value, int32_t startIndex, int32_t count, const MethodInfo_2B37830* method);
+int32_t System_Collections_Generic_EqualityComparer_ByteEnum___LastIndexOf (System_Collections_Generic_EqualityComparer_ByteEnum__o* __this, System_ByteEnum_array* array, uint8_t value, int32_t startIndex, int32_t count, const MethodInfo_2B378F0* method);
+int32_t System_Collections_Generic_EqualityComparer_ByteEnum___System_Collections_IEqualityComparer_GetHashCode (System_Collections_Generic_EqualityComparer_ByteEnum__o* __this, Il2CppObject* obj, const MethodInfo_2B37990* method);
+bool System_Collections_Generic_EqualityComparer_ByteEnum___System_Collections_IEqualityComparer_Equals (System_Collections_Generic_EqualityComparer_ByteEnum__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2B37A60* method);
+void System_Collections_Generic_EqualityComparer_ByteEnum____ctor (System_Collections_Generic_EqualityComparer_ByteEnum__o* __this, const MethodInfo_2B37BD0* method);

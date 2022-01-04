@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Predicate_Detail_Ranking_RankingRankDataInt____ctor (System_Predicate_Detail_Ranking_RankingRankDataInt__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_2902140* method);
+bool System_Predicate_Detail_Ranking_RankingRankDataInt___Invoke (System_Predicate_Detail_Ranking_RankingRankDataInt__o* __this, NexPlugin_Detail_Ranking_RankingRankDataInt_o obj, const MethodInfo_2902160* method);
+System_IAsyncResult_o* System_Predicate_Detail_Ranking_RankingRankDataInt___BeginInvoke (System_Predicate_Detail_Ranking_RankingRankDataInt__o* __this, NexPlugin_Detail_Ranking_RankingRankDataInt_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_2902580* method);
+bool System_Predicate_Detail_Ranking_RankingRankDataInt___EndInvoke (System_Predicate_Detail_Ranking_RankingRankDataInt__o* __this, System_IAsyncResult_o* result, const MethodInfo_2902620* method);

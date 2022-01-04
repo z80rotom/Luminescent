@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_UIVertex___get_Default (const MethodInfo_28882F0* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_UIVertex___CreateComparer (const MethodInfo_2888400* method);
+int32_t System_Collections_Generic_Comparer_UIVertex___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_UIVertex__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2888800* method);
+void System_Collections_Generic_Comparer_UIVertex____ctor (System_Collections_Generic_Comparer_UIVertex__o* __this, const MethodInfo_2888A30* method);

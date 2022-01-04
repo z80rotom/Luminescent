@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_UgPokeLottery_TypeRate___get_Default (const MethodInfo_2A887D0* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_UgPokeLottery_TypeRate___CreateComparer (const MethodInfo_2A888E0* method);
+int32_t System_Collections_Generic_Comparer_UgPokeLottery_TypeRate___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_UgPokeLottery_TypeRate__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2A88CE0* method);
+void System_Collections_Generic_Comparer_UgPokeLottery_TypeRate____ctor (System_Collections_Generic_Comparer_UgPokeLottery_TypeRate__o* __this, const MethodInfo_2A88E50* method);

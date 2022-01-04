@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_MV_POKE_DATA____ctor (System_Array_InternalEnumerator_MV_POKE_DATA__o __this, System_Array_o* array, const MethodInfo_24E8DA0* method);
+void System_Array_InternalEnumerator_MV_POKE_DATA___Dispose (System_Array_InternalEnumerator_MV_POKE_DATA__o __this, const MethodInfo_24E8DD0* method);
+bool System_Array_InternalEnumerator_MV_POKE_DATA___MoveNext (System_Array_InternalEnumerator_MV_POKE_DATA__o __this, const MethodInfo_24E8DE0* method);
+DPData_MV_POKE_DATA_o System_Array_InternalEnumerator_MV_POKE_DATA___get_Current (System_Array_InternalEnumerator_MV_POKE_DATA__o __this, const MethodInfo_24E8E40* method);
+void System_Array_InternalEnumerator_MV_POKE_DATA___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_MV_POKE_DATA__o __this, const MethodInfo_24E8FA0* method);
+Il2CppObject* System_Array_InternalEnumerator_MV_POKE_DATA___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_MV_POKE_DATA__o __this, const MethodInfo_24E8FB0* method);

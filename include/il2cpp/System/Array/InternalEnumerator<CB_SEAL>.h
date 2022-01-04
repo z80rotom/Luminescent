@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_CB_SEAL____ctor (System_Array_InternalEnumerator_CB_SEAL__o __this, System_Array_o* array, const MethodInfo_24E59E0* method);
+void System_Array_InternalEnumerator_CB_SEAL___Dispose (System_Array_InternalEnumerator_CB_SEAL__o __this, const MethodInfo_24E5A10* method);
+bool System_Array_InternalEnumerator_CB_SEAL___MoveNext (System_Array_InternalEnumerator_CB_SEAL__o __this, const MethodInfo_24E5A20* method);
+DPData_CB_SEAL_o System_Array_InternalEnumerator_CB_SEAL___get_Current (System_Array_InternalEnumerator_CB_SEAL__o __this, const MethodInfo_24E5A80* method);
+void System_Array_InternalEnumerator_CB_SEAL___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_CB_SEAL__o __this, const MethodInfo_24E5BB0* method);
+Il2CppObject* System_Array_InternalEnumerator_CB_SEAL___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_CB_SEAL__o __this, const MethodInfo_24E5BC0* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_UgStoneStatue___Compare (System_Collections_Generic_ObjectComparer_UgStoneStatue__o* __this, DPData_UgStoneStatue_o x, DPData_UgStoneStatue_o y, const MethodInfo_28B3D40* method);
+bool System_Collections_Generic_ObjectComparer_UgStoneStatue___Equals (System_Collections_Generic_ObjectComparer_UgStoneStatue__o* __this, Il2CppObject* obj, const MethodInfo_28B3E50* method);
+int32_t System_Collections_Generic_ObjectComparer_UgStoneStatue___GetHashCode (System_Collections_Generic_ObjectComparer_UgStoneStatue__o* __this, const MethodInfo_28B3EA0* method);
+void System_Collections_Generic_ObjectComparer_UgStoneStatue____ctor (System_Collections_Generic_ObjectComparer_UgStoneStatue__o* __this, const MethodInfo_28B3ED0* method);

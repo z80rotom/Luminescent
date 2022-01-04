@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void NexPlugin_Detail_SmartDeviceVoiceChat_SmartDeviceVoiceChatJoinRoomParamInt___ctor (NexPlugin_Detail_SmartDeviceVoiceChat_SmartDeviceVoiceChatJoinRoomParamInt_o __this, NexPlugin_SmartDeviceVoiceChatJoinRoomParam_o* param, const MethodInfo* method);

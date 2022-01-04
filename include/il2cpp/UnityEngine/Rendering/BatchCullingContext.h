@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_Rendering_BatchCullingContext___ctor (UnityEngine_Rendering_BatchCullingContext_o __this, Unity_Collections_NativeArray_Plane__o inCullingPlanes, Unity_Collections_NativeArray_BatchVisibility__o inOutBatchVisibility, Unity_Collections_NativeArray_int__o outVisibleIndices, UnityEngine_Rendering_LODParameters_o inLodParameters, const MethodInfo* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int64_t UnityEngine_UIElements_EventBase_PointerMoveEvent___TypeId (const MethodInfo_2CCE2A0* method);
+void UnityEngine_UIElements_EventBase_PointerMoveEvent___Acquire (UnityEngine_UIElements_EventBase_PointerMoveEvent__o* __this, const MethodInfo_2CCE960* method);
+void UnityEngine_UIElements_EventBase_PointerMoveEvent___Dispose (UnityEngine_UIElements_EventBase_PointerMoveEvent__o* __this, const MethodInfo_2CCE970* method);
+int64_t UnityEngine_UIElements_EventBase_PointerMoveEvent___get_eventTypeId (UnityEngine_UIElements_EventBase_PointerMoveEvent__o* __this, const MethodInfo_2CCEA80* method);

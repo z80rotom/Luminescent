@@ -1,0 +1,15 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_Rendering_RenderTargetIdentifier___ctor (UnityEngine_Rendering_RenderTargetIdentifier_o __this, int32_t type, const MethodInfo* method);
+void UnityEngine_Rendering_RenderTargetIdentifier___ctor (UnityEngine_Rendering_RenderTargetIdentifier_o __this, int32_t nameID, const MethodInfo* method);
+void UnityEngine_Rendering_RenderTargetIdentifier___ctor (UnityEngine_Rendering_RenderTargetIdentifier_o __this, UnityEngine_Texture_o* tex, const MethodInfo* method);
+UnityEngine_Rendering_RenderTargetIdentifier_o UnityEngine_Rendering_RenderTargetIdentifier__op_Implicit (int32_t type, const MethodInfo* method);
+UnityEngine_Rendering_RenderTargetIdentifier_o UnityEngine_Rendering_RenderTargetIdentifier__op_Implicit (int32_t nameID, const MethodInfo* method);
+UnityEngine_Rendering_RenderTargetIdentifier_o UnityEngine_Rendering_RenderTargetIdentifier__op_Implicit (UnityEngine_Texture_o* tex, const MethodInfo* method);
+System_String_o* UnityEngine_Rendering_RenderTargetIdentifier__ToString (UnityEngine_Rendering_RenderTargetIdentifier_o __this, const MethodInfo* method);
+int32_t UnityEngine_Rendering_RenderTargetIdentifier__GetHashCode (UnityEngine_Rendering_RenderTargetIdentifier_o __this, const MethodInfo* method);
+bool UnityEngine_Rendering_RenderTargetIdentifier__Equals (UnityEngine_Rendering_RenderTargetIdentifier_o __this, UnityEngine_Rendering_RenderTargetIdentifier_o rhs, const MethodInfo* method);
+bool UnityEngine_Rendering_RenderTargetIdentifier__Equals (UnityEngine_Rendering_RenderTargetIdentifier_o __this, Il2CppObject* obj, const MethodInfo* method);
+bool UnityEngine_Rendering_RenderTargetIdentifier__op_Equality (UnityEngine_Rendering_RenderTargetIdentifier_o lhs, UnityEngine_Rendering_RenderTargetIdentifier_o rhs, const MethodInfo* method);

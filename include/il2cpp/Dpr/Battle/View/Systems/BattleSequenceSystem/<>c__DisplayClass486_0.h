@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass486_0___ctor (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass486_0_o* __this, const MethodInfo* method);
+bool Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass486_0___PreloadModel_b__0 (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass486_0_o* __this, System_Tuple_string__ObjectEntity__o* x, const MethodInfo* method);
+void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass486_0___PreloadModel_b__1 (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass486_0_o* __this, UnityEngine_GameObject_o* x, const MethodInfo* method);

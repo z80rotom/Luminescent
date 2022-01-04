@@ -1,0 +1,17 @@
+#pragma once
+
+#include "il2cpp.h"
+
+float UnityEngine_UI_CoroutineTween_FloatTween__get_startValue (UnityEngine_UI_CoroutineTween_FloatTween_o __this, const MethodInfo* method);
+void UnityEngine_UI_CoroutineTween_FloatTween__set_startValue (UnityEngine_UI_CoroutineTween_FloatTween_o __this, float value, const MethodInfo* method);
+float UnityEngine_UI_CoroutineTween_FloatTween__get_targetValue (UnityEngine_UI_CoroutineTween_FloatTween_o __this, const MethodInfo* method);
+void UnityEngine_UI_CoroutineTween_FloatTween__set_targetValue (UnityEngine_UI_CoroutineTween_FloatTween_o __this, float value, const MethodInfo* method);
+float UnityEngine_UI_CoroutineTween_FloatTween__get_duration (UnityEngine_UI_CoroutineTween_FloatTween_o __this, const MethodInfo* method);
+void UnityEngine_UI_CoroutineTween_FloatTween__set_duration (UnityEngine_UI_CoroutineTween_FloatTween_o __this, float value, const MethodInfo* method);
+bool UnityEngine_UI_CoroutineTween_FloatTween__get_ignoreTimeScale (UnityEngine_UI_CoroutineTween_FloatTween_o __this, const MethodInfo* method);
+void UnityEngine_UI_CoroutineTween_FloatTween__set_ignoreTimeScale (UnityEngine_UI_CoroutineTween_FloatTween_o __this, bool value, const MethodInfo* method);
+void UnityEngine_UI_CoroutineTween_FloatTween__TweenValue (UnityEngine_UI_CoroutineTween_FloatTween_o __this, float floatPercentage, const MethodInfo* method);
+void UnityEngine_UI_CoroutineTween_FloatTween__AddOnChangedCallback (UnityEngine_UI_CoroutineTween_FloatTween_o __this, UnityEngine_Events_UnityAction_float__o* callback, const MethodInfo* method);
+bool UnityEngine_UI_CoroutineTween_FloatTween__GetIgnoreTimescale (UnityEngine_UI_CoroutineTween_FloatTween_o __this, const MethodInfo* method);
+float UnityEngine_UI_CoroutineTween_FloatTween__GetDuration (UnityEngine_UI_CoroutineTween_FloatTween_o __this, const MethodInfo* method);
+bool UnityEngine_UI_CoroutineTween_FloatTween__ValidTarget (UnityEngine_UI_CoroutineTween_FloatTween_o __this, const MethodInfo* method);

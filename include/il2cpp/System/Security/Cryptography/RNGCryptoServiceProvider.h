@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Security_Cryptography_RNGCryptoServiceProvider___cctor (const MethodInfo* method);
+void System_Security_Cryptography_RNGCryptoServiceProvider___ctor (System_Security_Cryptography_RNGCryptoServiceProvider_o* __this, const MethodInfo* method);
+void System_Security_Cryptography_RNGCryptoServiceProvider__Check (System_Security_Cryptography_RNGCryptoServiceProvider_o* __this, const MethodInfo* method);
+bool System_Security_Cryptography_RNGCryptoServiceProvider__RngOpen (const MethodInfo* method);
+intptr_t System_Security_Cryptography_RNGCryptoServiceProvider__RngInitialize (System_Byte_array* seed, const MethodInfo* method);
+intptr_t System_Security_Cryptography_RNGCryptoServiceProvider__RngGetBytes (intptr_t handle, System_Byte_array* data, const MethodInfo* method);
+void System_Security_Cryptography_RNGCryptoServiceProvider__RngClose (intptr_t handle, const MethodInfo* method);
+void System_Security_Cryptography_RNGCryptoServiceProvider__GetBytes (System_Security_Cryptography_RNGCryptoServiceProvider_o* __this, System_Byte_array* data, const MethodInfo* method);
+void System_Security_Cryptography_RNGCryptoServiceProvider__Finalize (System_Security_Cryptography_RNGCryptoServiceProvider_o* __this, const MethodInfo* method);
+void System_Security_Cryptography_RNGCryptoServiceProvider__Dispose (System_Security_Cryptography_RNGCryptoServiceProvider_o* __this, bool disposing, const MethodInfo* method);

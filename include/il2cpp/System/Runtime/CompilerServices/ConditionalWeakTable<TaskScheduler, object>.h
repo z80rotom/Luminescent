@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_CompilerServices_ConditionalWeakTable_TaskScheduler__object____ctor (System_Runtime_CompilerServices_ConditionalWeakTable_TaskScheduler__object__o* __this, const MethodInfo_2914A40* method);
+void System_Runtime_CompilerServices_ConditionalWeakTable_TaskScheduler__object___Add (System_Runtime_CompilerServices_ConditionalWeakTable_TaskScheduler__object__o* __this, System_Threading_Tasks_TaskScheduler_o* key, Il2CppObject* value, const MethodInfo_29150F0* method);

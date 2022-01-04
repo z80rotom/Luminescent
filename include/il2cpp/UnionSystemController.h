@@ -1,0 +1,57 @@
+#pragma once
+
+#include "il2cpp.h"
+
+UnionStateTransitionController_o* UnionSystemController__get_transitionController (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__set_transitionController (UnionSystemController_o* __this, UnionStateTransitionController_o* value, const MethodInfo* method);
+void UnionSystemController__SetOnlinePlayerSelectState (UnionSystemController_o* __this, int32_t state, const MethodInfo* method);
+int32_t UnionSystemController__GetOnlinePlayerSelectState (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetFadeAfterSelectState (UnionSystemController_o* __this, int32_t state, const MethodInfo* method);
+int32_t UnionSystemController__GetFadeAfterSelectState (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetTargetStationIndex (UnionSystemController_o* __this, int32_t index, int32_t cassetVersion, bool isTalkEnd, const MethodInfo* method);
+int32_t UnionSystemController__GetTargetStationIndex (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController___ctor (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__Clear (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__CreateTargetData (UnionSystemController_o* __this, int32_t index, int32_t state, int32_t id, bool isRecruiment, const MethodInfo* method);
+void UnionSystemController__SetOnlinePlayerCharacter (UnionSystemController_o* __this, OnlinePlayerCharacter_o* onlinePlayerCharacter, const MethodInfo* method);
+void UnionSystemController__MessageFinishChangeOpcState (UnionSystemController_o* __this, int32_t state, const MethodInfo* method);
+void UnionSystemController__MessageFinishChangeOpcState (UnionSystemController_o* __this, int32_t state, int32_t fadeAfterState, const MethodInfo* method);
+void UnionSystemController__ChangeOpcState (UnionSystemController_o* __this, int32_t state, const MethodInfo* method);
+void UnionSystemController__StartMsgBattle (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__StartMsgGreeting (UnionSystemController_o* __this, System_Action_int__o* startGreetings, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageBattle (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageTrade (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageGreeting (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageBallDeco (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageCommunicate (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageNowBattle (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageNowTrade (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageNowRecord (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageNowGreetings (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetSystemMessageNowBallDecoration (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__GetRandomLabelFile (UnionSystemController_o* __this, System_String_array** labelFile, int32_t num, const MethodInfo* method);
+void UnionSystemController__OpenMessageTalkBattle (UnionSystemController_o* __this, int32_t sexId, const MethodInfo* method);
+void UnionSystemController__OpenMessageTalkTrade (UnionSystemController_o* __this, int32_t sexId, const MethodInfo* method);
+void UnionSystemController__OpenMessageTalkRecode (UnionSystemController_o* __this, int32_t sexId, const MethodInfo* method);
+void UnionSystemController__OpenMessageTalkGreeting (UnionSystemController_o* __this, int32_t sexId, const MethodInfo* method);
+void UnionSystemController__OpenMessageTalkBallDeco (UnionSystemController_o* __this, int32_t sexId, const MethodInfo* method);
+void UnionSystemController__SetTradeErrorMesage (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__StartOpenGreetingMsgWindow (UnionSystemController_o* __this, int32_t stationIndex, int32_t sexId, int32_t cassetVersion, const MethodInfo* method);
+void UnionSystemController__OpenSystemMsgWindow (UnionSystemController_o* __this, int32_t index, int32_t speakerID, const MethodInfo* method);
+void UnionSystemController__CloseSystemMsgWindow (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__OpenYesNoWindowRecruiment (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetNetworkErrorMessage (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__RusultGreetJoinYesNoWindow (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__RusultGreetRecruimentYesNoWindow (UnionSystemController_o* __this, int32_t selectIndex, const MethodInfo* method);
+void UnionSystemController__RusultGreetJoinYesNoWindow (UnionSystemController_o* __this, int32_t selectIndex, const MethodInfo* method);
+bool UnionSystemController__CheckErrorMessageTrade (UnionSystemController_o* __this, const MethodInfo* method);
+bool UnionSystemController__CheckBallDeco (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetEndSpokeEndData (UnionSystemController_o* __this, System_Action_int__o* endSpokeData, const MethodInfo* method);
+void UnionSystemController__SetRequestData (UnionSystemController_o* __this, System_Action_int__byte__o* requestData, const MethodInfo* method);
+void UnionSystemController__SetIsRecruiment (UnionSystemController_o* __this, bool recruiment, const MethodInfo* method);
+void UnionSystemController__PlayerInputEnabled (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__PlayerInputDisabled (UnionSystemController_o* __this, const MethodInfo* method);
+void UnionSystemController__SetDefaltCancelFunc (UnionSystemController_o* __this, System_Action_int__o* func, const MethodInfo* method);
+void UnionSystemController__SetCallbackCommunication (UnionSystemController_o* __this, System_Action_int__OpcState_OnlineState__bool__o* startCommunicationFunc, const MethodInfo* method);
+void UnionSystemController__PenaltyErrorMsgUpdate (UnionSystemController_o* __this, float time, const MethodInfo* method);
+void UnionSystemController___PenaltyErrorMsgUpdate_b__72_0 (UnionSystemController_o* __this, const MethodInfo* method);

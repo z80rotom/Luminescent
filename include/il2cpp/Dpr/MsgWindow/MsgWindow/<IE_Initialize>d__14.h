@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14___ctor (Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14_o* __this, int32_t __1__state, const MethodInfo* method);
+void Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14__System_IDisposable_Dispose (Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14_o* __this, const MethodInfo* method);
+bool Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14__MoveNext (Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14__System_Collections_Generic_IEnumerator_System_Object__get_Current (Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14_o* __this, const MethodInfo* method);
+void Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14__System_Collections_IEnumerator_Reset (Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14__System_Collections_IEnumerator_get_Current (Dpr_MsgWindow_MsgWindow__IE_Initialize_d__14_o* __this, const MethodInfo* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_AnimatorClipInfo___get_Default (const MethodInfo_2880960* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_AnimatorClipInfo___CreateComparer (const MethodInfo_2880A70* method);
+int32_t System_Collections_Generic_Comparer_AnimatorClipInfo___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_AnimatorClipInfo__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2880E70* method);
+void System_Collections_Generic_Comparer_AnimatorClipInfo____ctor (System_Collections_Generic_Comparer_AnimatorClipInfo__o* __this, const MethodInfo_2880FE0* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_Color32___Compare (System_Collections_Generic_ObjectComparer_Color32__o* __this, UnityEngine_Color32_o x, UnityEngine_Color32_o y, const MethodInfo_28BC070* method);
+bool System_Collections_Generic_ObjectComparer_Color32___Equals (System_Collections_Generic_ObjectComparer_Color32__o* __this, Il2CppObject* obj, const MethodInfo_28BC170* method);
+int32_t System_Collections_Generic_ObjectComparer_Color32___GetHashCode (System_Collections_Generic_ObjectComparer_Color32__o* __this, const MethodInfo_28BC1C0* method);
+void System_Collections_Generic_ObjectComparer_Color32____ctor (System_Collections_Generic_ObjectComparer_Color32__o* __this, const MethodInfo_28BC1F0* method);

@@ -1,0 +1,18 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void SmartPoint_AssetAssistant_UnityExtensions_FloatBits___ctor (SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o __this, float value, const MethodInfo* method);
+void SmartPoint_AssetAssistant_UnityExtensions_FloatBits___ctor (SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o __this, int32_t value, const MethodInfo* method);
+void SmartPoint_AssetAssistant_UnityExtensions_FloatBits___ctor (SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o __this, uint32_t value, const MethodInfo* method);
+float SmartPoint_AssetAssistant_UnityExtensions_FloatBits__op_Implicit (SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o fpBits, const MethodInfo* method);
+SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o SmartPoint_AssetAssistant_UnityExtensions_FloatBits__op_Implicit (float fp, const MethodInfo* method);
+SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o SmartPoint_AssetAssistant_UnityExtensions_FloatBits__op_Implicit (int32_t bits, const MethodInfo* method);
+SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o SmartPoint_AssetAssistant_UnityExtensions_FloatBits__op_Implicit (uint32_t ubits, const MethodInfo* method);
+float SmartPoint_AssetAssistant_UnityExtensions_FloatBits__ToFloat (int32_t bits, const MethodInfo* method);
+float SmartPoint_AssetAssistant_UnityExtensions_FloatBits__ToFloat (uint32_t bits, const MethodInfo* method);
+int32_t SmartPoint_AssetAssistant_UnityExtensions_FloatBits__ToInt (float value, const MethodInfo* method);
+uint32_t SmartPoint_AssetAssistant_UnityExtensions_FloatBits__ToUInt (float value, const MethodInfo* method);
+System_String_o* SmartPoint_AssetAssistant_UnityExtensions_FloatBits__ToString (SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o __this, const MethodInfo* method);
+SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o SmartPoint_AssetAssistant_UnityExtensions_FloatBits__Absolute (SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o __this, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_UnityExtensions_FloatBits__IsInRange (SmartPoint_AssetAssistant_UnityExtensions_FloatBits_o __this, float low, float high, const MethodInfo* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void TradeSelectPokeModel__TradePokeCheckOkWait_d__46___ctor (TradeSelectPokeModel__TradePokeCheckOkWait_d__46_o* __this, int32_t __1__state, const MethodInfo* method);
+void TradeSelectPokeModel__TradePokeCheckOkWait_d__46__System_IDisposable_Dispose (TradeSelectPokeModel__TradePokeCheckOkWait_d__46_o* __this, const MethodInfo* method);
+bool TradeSelectPokeModel__TradePokeCheckOkWait_d__46__MoveNext (TradeSelectPokeModel__TradePokeCheckOkWait_d__46_o* __this, const MethodInfo* method);
+Il2CppObject* TradeSelectPokeModel__TradePokeCheckOkWait_d__46__System_Collections_Generic_IEnumerator_System_Object__get_Current (TradeSelectPokeModel__TradePokeCheckOkWait_d__46_o* __this, const MethodInfo* method);
+void TradeSelectPokeModel__TradePokeCheckOkWait_d__46__System_Collections_IEnumerator_Reset (TradeSelectPokeModel__TradePokeCheckOkWait_d__46_o* __this, const MethodInfo* method);
+Il2CppObject* TradeSelectPokeModel__TradePokeCheckOkWait_d__46__System_Collections_IEnumerator_get_Current (TradeSelectPokeModel__TradePokeCheckOkWait_d__46_o* __this, const MethodInfo* method);

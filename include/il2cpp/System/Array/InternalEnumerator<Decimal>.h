@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_Decimal____ctor (System_Array_InternalEnumerator_Decimal__o __this, System_Array_o* array, const MethodInfo_256A280* method);
+void System_Array_InternalEnumerator_Decimal___Dispose (System_Array_InternalEnumerator_Decimal__o __this, const MethodInfo_256A2B0* method);
+bool System_Array_InternalEnumerator_Decimal___MoveNext (System_Array_InternalEnumerator_Decimal__o __this, const MethodInfo_256A2C0* method);
+System_Decimal_o System_Array_InternalEnumerator_Decimal___get_Current (System_Array_InternalEnumerator_Decimal__o __this, const MethodInfo_256A320* method);
+void System_Array_InternalEnumerator_Decimal___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_Decimal__o __this, const MethodInfo_256A460* method);
+Il2CppObject* System_Array_InternalEnumerator_Decimal___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_Decimal__o __this, const MethodInfo_256A470* method);

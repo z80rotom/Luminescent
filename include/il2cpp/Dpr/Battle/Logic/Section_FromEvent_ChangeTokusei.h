@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_FromEvent_ChangeTokusei___ctor (Dpr_Battle_Logic_Section_FromEvent_ChangeTokusei_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FromEvent_ChangeTokusei__Execute (Dpr_Battle_Logic_Section_FromEvent_ChangeTokusei_o* __this, Dpr_Battle_Logic_Section_FromEvent_ChangeTokusei_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_ChangeTokusei_Description_o** description, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FromEvent_ChangeTokusei__afterTokuseiChanged_Item (Dpr_Battle_Logic_Section_FromEvent_ChangeTokusei_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, int32_t prevTokusei, int32_t nextTokusei, const MethodInfo* method);

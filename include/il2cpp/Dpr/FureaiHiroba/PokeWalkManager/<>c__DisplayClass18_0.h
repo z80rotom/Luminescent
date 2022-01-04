@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_FureaiHiroba_PokeWalkManager___c__DisplayClass18_0___ctor (Dpr_FureaiHiroba_PokeWalkManager___c__DisplayClass18_0_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_PokeWalkManager___c__DisplayClass18_0___AllSubPoke_b__0 (Dpr_FureaiHiroba_PokeWalkManager___c__DisplayClass18_0_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method);
+void Dpr_FureaiHiroba_PokeWalkManager___c__DisplayClass18_0___AllSubPoke_b__1 (Dpr_FureaiHiroba_PokeWalkManager___c__DisplayClass18_0_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method);

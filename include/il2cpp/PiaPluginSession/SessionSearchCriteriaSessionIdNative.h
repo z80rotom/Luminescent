@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void PiaPluginSession_SessionSearchCriteriaSessionIdNative___ctor (PiaPluginSession_SessionSearchCriteriaSessionIdNative_o __this, PiaPluginSession_SessionSearchCriteriaSessionId_o* criteria, const MethodInfo* method);
+void PiaPluginSession_SessionSearchCriteriaSessionIdNative__Dispose (PiaPluginSession_SessionSearchCriteriaSessionIdNative_o __this, const MethodInfo* method);

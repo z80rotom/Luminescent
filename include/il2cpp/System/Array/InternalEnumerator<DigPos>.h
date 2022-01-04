@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_DigPos____ctor (System_Array_InternalEnumerator_DigPos__o __this, System_Array_o* array, const MethodInfo_24E6EC0* method);
+void System_Array_InternalEnumerator_DigPos___Dispose (System_Array_InternalEnumerator_DigPos__o __this, const MethodInfo_24E6EF0* method);
+bool System_Array_InternalEnumerator_DigPos___MoveNext (System_Array_InternalEnumerator_DigPos__o __this, const MethodInfo_24E6F00* method);
+DPData_DigPos_o System_Array_InternalEnumerator_DigPos___get_Current (System_Array_InternalEnumerator_DigPos__o __this, const MethodInfo_24E6F60* method);
+void System_Array_InternalEnumerator_DigPos___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_DigPos__o __this, const MethodInfo_24E7090* method);
+Il2CppObject* System_Array_InternalEnumerator_DigPos___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_DigPos__o __this, const MethodInfo_24E70A0* method);

@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Enumerable_Iterator_Vector3____ctor (System_Linq_Enumerable_Iterator_Vector3__o* __this, const MethodInfo_2975CE0* method);
+UnityEngine_Vector3_o System_Linq_Enumerable_Iterator_Vector3___get_Current (System_Linq_Enumerable_Iterator_Vector3__o* __this, const MethodInfo_2975D20* method);
+void System_Linq_Enumerable_Iterator_Vector3___Dispose (System_Linq_Enumerable_Iterator_Vector3__o* __this, const MethodInfo_2975D30* method);
+System_Collections_Generic_IEnumerator_TSource__o* System_Linq_Enumerable_Iterator_Vector3___GetEnumerator (System_Linq_Enumerable_Iterator_Vector3__o* __this, const MethodInfo_2975D50* method);
+Il2CppObject* System_Linq_Enumerable_Iterator_Vector3___System_Collections_IEnumerator_get_Current (System_Linq_Enumerable_Iterator_Vector3__o* __this, const MethodInfo_2975DB0* method);
+System_Collections_IEnumerator_o* System_Linq_Enumerable_Iterator_Vector3___System_Collections_IEnumerable_GetEnumerator (System_Linq_Enumerable_Iterator_Vector3__o* __this, const MethodInfo_2975E20* method);
+void System_Linq_Enumerable_Iterator_Vector3___System_Collections_IEnumerator_Reset (System_Linq_Enumerable_Iterator_Vector3__o* __this, const MethodInfo_2975E40* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_List_UINavigator_____ctor (System_Collections_Generic_List_List_UINavigator___o* __this, const MethodInfo_2BAD0F0* method);
+System_Collections_Generic_List_UINavigator__o* System_Collections_Generic_List_List_UINavigator____get_Item (System_Collections_Generic_List_List_UINavigator___o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
+void System_Collections_Generic_List_List_UINavigator____set_Item (System_Collections_Generic_List_List_UINavigator___o* __this, int32_t index, System_Collections_Generic_List_UINavigator__o* value, const MethodInfo_2BADA30* method);
+void System_Collections_Generic_List_List_UINavigator____Add (System_Collections_Generic_List_List_UINavigator___o* __this, System_Collections_Generic_List_UINavigator__o* item, const MethodInfo_2BADD00* method);

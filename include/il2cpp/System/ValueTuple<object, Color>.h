@@ -1,0 +1,15 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_ValueTuple_object__Color____ctor (System_ValueTuple_object__Color__o __this, Il2CppObject* item1, UnityEngine_Color_o item2, const MethodInfo_29B49E0* method);
+bool System_ValueTuple_object__Color___Equals (System_ValueTuple_object__Color__o __this, Il2CppObject* obj, const MethodInfo_29B4A40* method);
+bool System_ValueTuple_object__Color___Equals (System_ValueTuple_object__Color__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29B4B90* method);
+bool System_ValueTuple_object__Color___System_Collections_IStructuralEquatable_Equals (System_ValueTuple_object__Color__o __this, Il2CppObject* other, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29B4CA0* method);
+int32_t System_ValueTuple_object__Color___System_IComparable_CompareTo (System_ValueTuple_object__Color__o __this, Il2CppObject* other, const MethodInfo_29B4F40* method);
+int32_t System_ValueTuple_object__Color___CompareTo (System_ValueTuple_object__Color__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29B5140* method);
+int32_t System_ValueTuple_object__Color___System_Collections_IStructuralComparable_CompareTo (System_ValueTuple_object__Color__o __this, Il2CppObject* other, System_Collections_IComparer_o* comparer, const MethodInfo_29B5240* method);
+int32_t System_ValueTuple_object__Color___GetHashCode (System_ValueTuple_object__Color__o __this, const MethodInfo_29B5580* method);
+int32_t System_ValueTuple_object__Color___System_Collections_IStructuralEquatable_GetHashCode (System_ValueTuple_object__Color__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29B55E0* method);
+int32_t System_ValueTuple_object__Color___GetHashCodeCore (System_ValueTuple_object__Color__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29B5630* method);
+System_String_o* System_ValueTuple_object__Color___ToString (System_ValueTuple_object__Color__o __this, const MethodInfo_29B57C0* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_FreeFall_Release___ctor (Dpr_Battle_Logic_Section_FreeFall_Release_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FreeFall_Release__Execute (Dpr_Battle_Logic_Section_FreeFall_Release_o* __this, Dpr_Battle_Logic_Section_FreeFall_Release_Result_o* pResult, Dpr_Battle_Logic_Section_FreeFall_Release_Description_o** description, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_POKEPARAM_o* Dpr_Battle_Logic_Section_FreeFall_Release__getCapturedPoke (Dpr_Battle_Logic_Section_FreeFall_Release_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FreeFall_Release__freeFallEnd_Captured (Dpr_Battle_Logic_Section_FreeFall_Release_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* capturedPoke, bool canAppear, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FreeFall_Release__cureSick (Dpr_Battle_Logic_Section_FreeFall_Release_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, int32_t sick, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FreeFall_Release__freeFallEnd_Attacker (Dpr_Battle_Logic_Section_FreeFall_Release_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, bool canAppear, const MethodInfo* method);

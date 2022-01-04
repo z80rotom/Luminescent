@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_MonsLv____ctor (System_Array_InternalEnumerator_MonsLv__o __this, System_Array_o* array, const MethodInfo_26563E0* method);
+void System_Array_InternalEnumerator_MonsLv___Dispose (System_Array_InternalEnumerator_MonsLv__o __this, const MethodInfo_2656410* method);
+bool System_Array_InternalEnumerator_MonsLv___MoveNext (System_Array_InternalEnumerator_MonsLv__o __this, const MethodInfo_2656420* method);
+MonsLv_o System_Array_InternalEnumerator_MonsLv___get_Current (System_Array_InternalEnumerator_MonsLv__o __this, const MethodInfo_2656480* method);
+void System_Array_InternalEnumerator_MonsLv___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_MonsLv__o __this, const MethodInfo_26565B0* method);
+Il2CppObject* System_Array_InternalEnumerator_MonsLv___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_MonsLv__o __this, const MethodInfo_26565C0* method);

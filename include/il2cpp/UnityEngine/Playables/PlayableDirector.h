@@ -1,0 +1,32 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t UnityEngine_Playables_PlayableDirector__get_extrapolationMode (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+UnityEngine_Playables_PlayableAsset_o* UnityEngine_Playables_PlayableDirector__get_playableAsset (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+UnityEngine_Playables_PlayableGraph_o UnityEngine_Playables_PlayableDirector__get_playableGraph (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__set_time (UnityEngine_Playables_PlayableDirector_o* __this, double value, const MethodInfo* method);
+double UnityEngine_Playables_PlayableDirector__get_time (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+double UnityEngine_Playables_PlayableDirector__get_duration (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__Evaluate (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__Play (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__Stop (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__Pause (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__Resume (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__RebuildGraph (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+UnityEngine_Object_o* UnityEngine_Playables_PlayableDirector__GetReferenceValue (UnityEngine_Playables_PlayableDirector_o* __this, UnityEngine_PropertyName_o id, bool* idValid, const MethodInfo* method);
+UnityEngine_Object_o* UnityEngine_Playables_PlayableDirector__GetGenericBinding (UnityEngine_Playables_PlayableDirector_o* __this, UnityEngine_Object_o* key, const MethodInfo* method);
+int32_t UnityEngine_Playables_PlayableDirector__GetWrapMode (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+UnityEngine_Playables_PlayableGraph_o UnityEngine_Playables_PlayableDirector__GetGraphHandle (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+UnityEngine_ScriptableObject_o* UnityEngine_Playables_PlayableDirector__Internal_GetPlayableAsset (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__add_played (UnityEngine_Playables_PlayableDirector_o* __this, System_Action_PlayableDirector__o* value, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__remove_played (UnityEngine_Playables_PlayableDirector_o* __this, System_Action_PlayableDirector__o* value, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__add_paused (UnityEngine_Playables_PlayableDirector_o* __this, System_Action_PlayableDirector__o* value, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__remove_paused (UnityEngine_Playables_PlayableDirector_o* __this, System_Action_PlayableDirector__o* value, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__add_stopped (UnityEngine_Playables_PlayableDirector_o* __this, System_Action_PlayableDirector__o* value, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__remove_stopped (UnityEngine_Playables_PlayableDirector_o* __this, System_Action_PlayableDirector__o* value, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__SendOnPlayableDirectorPlay (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__SendOnPlayableDirectorPause (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__SendOnPlayableDirectorStop (UnityEngine_Playables_PlayableDirector_o* __this, const MethodInfo* method);
+UnityEngine_Object_o* UnityEngine_Playables_PlayableDirector__GetReferenceValue_Injected (UnityEngine_Playables_PlayableDirector_o* __this, UnityEngine_PropertyName_o* id, bool* idValid, const MethodInfo* method);
+void UnityEngine_Playables_PlayableDirector__GetGraphHandle_Injected (UnityEngine_Playables_PlayableDirector_o* __this, UnityEngine_Playables_PlayableGraph_o* ret, const MethodInfo* method);

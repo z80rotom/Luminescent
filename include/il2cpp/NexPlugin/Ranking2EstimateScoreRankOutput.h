@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint32_t NexPlugin_Ranking2EstimateScoreRankOutput__GetRank (NexPlugin_Ranking2EstimateScoreRankOutput_o __this, const MethodInfo* method);
+uint32_t NexPlugin_Ranking2EstimateScoreRankOutput__GetScore (NexPlugin_Ranking2EstimateScoreRankOutput_o __this, const MethodInfo* method);
+uint32_t NexPlugin_Ranking2EstimateScoreRankOutput__GetCategory (NexPlugin_Ranking2EstimateScoreRankOutput_o __this, const MethodInfo* method);
+uint32_t NexPlugin_Ranking2EstimateScoreRankOutput__GetSeason (NexPlugin_Ranking2EstimateScoreRankOutput_o __this, const MethodInfo* method);
+uint32_t NexPlugin_Ranking2EstimateScoreRankOutput__GetSamplingRate (NexPlugin_Ranking2EstimateScoreRankOutput_o __this, const MethodInfo* method);
+uint32_t NexPlugin_Ranking2EstimateScoreRankOutput__GetLength (NexPlugin_Ranking2EstimateScoreRankOutput_o __this, const MethodInfo* method);
+void NexPlugin_Ranking2EstimateScoreRankOutput__Trace (NexPlugin_Ranking2EstimateScoreRankOutput_o __this, const MethodInfo* method);
+System_String_o* NexPlugin_Ranking2EstimateScoreRankOutput__ToString (NexPlugin_Ranking2EstimateScoreRankOutput_o __this, const MethodInfo* method);

@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_SubContents_NetUseManager_OPCNetTestPosition_object____ctor (Dpr_SubContents_NetUseManager_OPCNetTestPosition_object__o* __this, UnityEngine_Vector3_o InitPos, const MethodInfo_26B5720* method);
+void Dpr_SubContents_NetUseManager_OPCNetTestPosition_object___SetTsetPos (Dpr_SubContents_NetUseManager_OPCNetTestPosition_object__o* __this, const MethodInfo_26B5790* method);
+UnityEngine_Vector3_o Dpr_SubContents_NetUseManager_OPCNetTestPosition_object___GetPos (Dpr_SubContents_NetUseManager_OPCNetTestPosition_object__o* __this, const MethodInfo_26B58A0* method);

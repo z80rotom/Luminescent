@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgNetworkManager___get_isInstantiated (const MethodInfo_26B9650* method);
+UgNetworkManager_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgNetworkManager___get_Instance (const MethodInfo_26B9AB0* method);
+bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgNetworkManager___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgNetworkManager__o* __this, const MethodInfo_26BA7D0* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgNetworkManager___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgNetworkManager__o* __this, const MethodInfo_26BAB70* method);

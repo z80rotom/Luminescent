@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_WordData____ctor (System_Collections_Generic_List_WordData__o* __this, const MethodInfo_2BAD0F0* method);
+int32_t System_Collections_Generic_List_WordData___get_Count (System_Collections_Generic_List_WordData__o* __this, const MethodInfo_2BAD9C0* method);
+Dpr_Message_WordData_o* System_Collections_Generic_List_WordData___get_Item (System_Collections_Generic_List_WordData__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
+void System_Collections_Generic_List_WordData___Add (System_Collections_Generic_List_WordData__o* __this, Dpr_Message_WordData_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_WordData___Clear (System_Collections_Generic_List_WordData__o* __this, const MethodInfo_2BAE0A0* method);
+void System_Collections_Generic_List_WordData___RemoveAt (System_Collections_Generic_List_WordData__o* __this, int32_t index, const MethodInfo_2BAF8D0* method);
+Dpr_Message_WordData_array* System_Collections_Generic_List_WordData___ToArray (System_Collections_Generic_List_WordData__o* __this, const MethodInfo_2BAFDA0* method);

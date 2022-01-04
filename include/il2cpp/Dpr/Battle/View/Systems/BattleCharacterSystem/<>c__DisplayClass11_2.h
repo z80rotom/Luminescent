@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_View_Systems_BattleCharacterSystem___c__DisplayClass11_2___ctor (Dpr_Battle_View_Systems_BattleCharacterSystem___c__DisplayClass11_2_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Systems_BattleCharacterSystem___c__DisplayClass11_2___StartLoadAllCharacter_b__4 (Dpr_Battle_View_Systems_BattleCharacterSystem___c__DisplayClass11_2_o* __this, const MethodInfo* method);

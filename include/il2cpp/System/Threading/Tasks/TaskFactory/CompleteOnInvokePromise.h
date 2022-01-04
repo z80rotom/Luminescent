@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Threading_Tasks_TaskFactory_CompleteOnInvokePromise___ctor (System_Threading_Tasks_TaskFactory_CompleteOnInvokePromise_o* __this, System_Collections_Generic_IList_Task__o* tasks, const MethodInfo* method);
+void System_Threading_Tasks_TaskFactory_CompleteOnInvokePromise__Invoke (System_Threading_Tasks_TaskFactory_CompleteOnInvokePromise_o* __this, System_Threading_Tasks_Task_o* completingTask, const MethodInfo* method);

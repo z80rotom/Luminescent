@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_Events_InvokableCall_Vector2___add_Delegate (UnityEngine_Events_InvokableCall_Vector2__o* __this, UnityEngine_Events_UnityAction_T1__o* value, const MethodInfo_284D8D0* method);
+void UnityEngine_Events_InvokableCall_Vector2___remove_Delegate (UnityEngine_Events_InvokableCall_Vector2__o* __this, UnityEngine_Events_UnityAction_T1__o* value, const MethodInfo_284D980* method);
+void UnityEngine_Events_InvokableCall_Vector2____ctor (UnityEngine_Events_InvokableCall_Vector2__o* __this, Il2CppObject* target, System_Reflection_MethodInfo_o* theFunction, const MethodInfo_284DA30* method);
+void UnityEngine_Events_InvokableCall_Vector2____ctor (UnityEngine_Events_InvokableCall_Vector2__o* __this, UnityEngine_Events_UnityAction_T1__o* action, const MethodInfo_284DB50* method);
+void UnityEngine_Events_InvokableCall_Vector2___Invoke (UnityEngine_Events_InvokableCall_Vector2__o* __this, System_Object_array* args, const MethodInfo_284DBA0* method);
+void UnityEngine_Events_InvokableCall_Vector2___Invoke (UnityEngine_Events_InvokableCall_Vector2__o* __this, UnityEngine_Vector2_o args0, const MethodInfo_284DD00* method);
+bool UnityEngine_Events_InvokableCall_Vector2___Find (UnityEngine_Events_InvokableCall_Vector2__o* __this, Il2CppObject* targetObj, System_Reflection_MethodInfo_o* method, const MethodInfo_284DD70* method);

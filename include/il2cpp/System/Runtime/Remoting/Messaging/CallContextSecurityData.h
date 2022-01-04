@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool System_Runtime_Remoting_Messaging_CallContextSecurityData__get_HasInfo (System_Runtime_Remoting_Messaging_CallContextSecurityData_o* __this, const MethodInfo* method);
+Il2CppObject* System_Runtime_Remoting_Messaging_CallContextSecurityData__Clone (System_Runtime_Remoting_Messaging_CallContextSecurityData_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_Messaging_CallContextSecurityData___ctor (System_Runtime_Remoting_Messaging_CallContextSecurityData_o* __this, const MethodInfo* method);

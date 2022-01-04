@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UnderGround_UgFieldManager___c__DisplayClass203_0___ctor (Dpr_UnderGround_UgFieldManager___c__DisplayClass203_0_o* __this, const MethodInfo* method);
+bool Dpr_UnderGround_UgFieldManager___c__DisplayClass203_0___CreateSecretBaseRandom_b__0 (Dpr_UnderGround_UgFieldManager___c__DisplayClass203_0_o* __this, Dpr_UnderGround_UgFieldManager_SecretBaseModel_o* sb, const MethodInfo* method);

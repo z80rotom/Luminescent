@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover___ctor (Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover__Execute (Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover_o* __this, Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover_Result_o* pResult, Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover_Description_o** description, const MethodInfo* method);
+uint32_t Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover__calcRecoverVolume (Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, int32_t wazano, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover__getRecoverMessage (Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover_o* __this, Dpr_Battle_Logic_StrParam_o* pMessage, Dpr_Battle_Logic_BTL_POKEPARAM_o* pAttacker, Dpr_Battle_Logic_BTL_POKEPARAM_o* pTarget, int32_t wazano, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover__recoverHP (Dpr_Battle_Logic_Section_WazaExec_Category_SimpleRecover_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, uint16_t recoverHP, Dpr_Battle_Logic_StrParam_o** recoverMsg, const MethodInfo* method);

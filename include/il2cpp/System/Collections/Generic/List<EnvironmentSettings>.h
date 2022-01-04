@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_List_EnvironmentSettings___get_Count (System_Collections_Generic_List_EnvironmentSettings__o* __this, const MethodInfo_2BAD9C0* method);
+EnvironmentSettings_o* System_Collections_Generic_List_EnvironmentSettings___get_Item (System_Collections_Generic_List_EnvironmentSettings__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
+void System_Collections_Generic_List_EnvironmentSettings___Clear (System_Collections_Generic_List_EnvironmentSettings__o* __this, const MethodInfo_2BAE0A0* method);

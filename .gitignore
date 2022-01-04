@@ -1,0 +1,24 @@
+# CMake files
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+.cmake/
+Testing/
+
+# Build tools
+Makefile
+.ninja_log
+.ninja_deps
+build.ninja
+
+# Build outputs
+build113/
+starlight_patch_113/
+linkerscripts/symstemp.ld
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Config
+config.cmake

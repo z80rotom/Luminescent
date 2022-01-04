@@ -1,0 +1,39 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool Dpr_Field_Walking_FieldWalkingManager__get_isLoaded (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+Pml_PokePara_PokemonParam_o* Dpr_Field_Walking_FieldWalkingManager__get_PartnerPokeParam (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__set_PartnerPokeParam (Dpr_Field_Walking_FieldWalkingManager_o* __this, Pml_PokePara_PokemonParam_o* value, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_Field_Walking_FieldWalkingManager__get_EntryPoint (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__set_EntryPoint (Dpr_Field_Walking_FieldWalkingManager_o* __this, UnityEngine_Vector3_o value, const MethodInfo* method);
+Dpr_Field_Walking_WalkingCharacterController_o* Dpr_Field_Walking_FieldWalkingManager__GetPartnerPokeController (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+bool Dpr_Field_Walking_FieldWalkingManager__IsCanTalk (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__NPCToPartner (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+System_Collections_IEnumerator_o* Dpr_Field_Walking_FieldWalkingManager__LoadMD (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__SetPartnerNpcName (Dpr_Field_Walking_FieldWalkingManager_o* __this, System_String_o* npcName, const MethodInfo* method);
+bool Dpr_Field_Walking_FieldWalkingManager__SetPartnerNpcName (Dpr_Field_Walking_FieldWalkingManager_o* __this, int32_t id, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__SetPartnerNameToLabel (Dpr_Field_Walking_FieldWalkingManager_o* __this, int32_t index, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__TurearukiWarp (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__SetPartnerPoke (Dpr_Field_Walking_FieldWalkingManager_o* __this, Pml_PokePara_PokemonParam_o* poke, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__UpdatePartnerPokeIndex (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+int32_t Dpr_Field_Walking_FieldWalkingManager__GetTurearukiIndex (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__LoadPartnerPoke (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__SetEntryPoint (Dpr_Field_Walking_FieldWalkingManager_o* __this, UnityEngine_Vector3_o pos, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__CreateTurearuki (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__DeleteTurearuki (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+System_Collections_IEnumerator_o* Dpr_Field_Walking_FieldWalkingManager__CreatePartner (Dpr_Field_Walking_FieldWalkingManager_o* __this, bool isQuiet, bool isFormChange, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__Destroy (Dpr_Field_Walking_FieldWalkingManager_o* __this, bool isDestroyGameObject, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__CheckPartnerPokeChange (Dpr_Field_Walking_FieldWalkingManager_o* __this, Pml_PokePara_PokemonParam_o* param, bool isDelete, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__PokeUpdate (Dpr_Field_Walking_FieldWalkingManager_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__ChangePositionNPC (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+bool Dpr_Field_Walking_FieldWalkingManager__IsCanTurearuki (Dpr_Field_Walking_FieldWalkingManager_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);
+bool Dpr_Field_Walking_FieldWalkingManager__IsCanTurearukiState (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+bool Dpr_Field_Walking_FieldWalkingManager__IsCanTurearukiMap (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+bool Dpr_Field_Walking_FieldWalkingManager__IsCanTurearukiPoke (Dpr_Field_Walking_FieldWalkingManager_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__Turearuki_Talk (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager__ResetMonohiroiTime (const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager___ctor (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager___cctor (const MethodInfo* method);
+System_Collections_IEnumerator_o* Dpr_Field_Walking_FieldWalkingManager___NPCToPartner_g__NpcSearch_28_0 (Dpr_Field_Walking_FieldWalkingManager_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_FieldWalkingManager___LoadMD_b__29_0 (Dpr_Field_Walking_FieldWalkingManager_o* __this, UnityEngine_Object_o* asset, const MethodInfo* method);

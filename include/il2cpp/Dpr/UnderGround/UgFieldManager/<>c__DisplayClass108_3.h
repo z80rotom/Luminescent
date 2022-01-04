@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UnderGround_UgFieldManager___c__DisplayClass108_3___ctor (Dpr_UnderGround_UgFieldManager___c__DisplayClass108_3_o* __this, const MethodInfo* method);
+bool Dpr_UnderGround_UgFieldManager___c__DisplayClass108_3___DebugDrawPokeRate_b__5 (Dpr_UnderGround_UgFieldManager___c__DisplayClass108_3_o* __this, Dpr_UnderGround_UgPokeLottery_PokeSlot_o* x, const MethodInfo* method);

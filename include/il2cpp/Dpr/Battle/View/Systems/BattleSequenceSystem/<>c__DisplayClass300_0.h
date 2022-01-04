@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass300_0___ctor (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass300_0_o* __this, const MethodInfo* method);
+bool Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass300_0___BTL_SEQ_FUNC_DEF_ModelCreateBall_b__0 (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass300_0_o* __this, System_Tuple_string__ObjectEntity__o* x, const MethodInfo* method);

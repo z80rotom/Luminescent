@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Dictionary_ValueCollection_Enumerator_TKey__TValue__o System_Collections_Generic_Dictionary_ValueCollection_string__AssetBundleRecord___GetEnumerator (System_Collections_Generic_Dictionary_ValueCollection_string__AssetBundleRecord__o* __this, const MethodInfo_2982F20* method);

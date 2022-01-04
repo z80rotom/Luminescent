@@ -1,0 +1,52 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool Dpr_Message_MessageManager__get_IsInitialize (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+bool Dpr_Message_MessageManager__get_IsLoading (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager__Initialize (Dpr_Message_MessageManager_o* __this, int32_t languageId, const MethodInfo* method);
+bool Dpr_Message_MessageManager__CheckInitialized (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager__Destroy (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+int32_t Dpr_Message_MessageManager__get_UserLanguageID (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+bool Dpr_Message_MessageManager__get_IsKanji (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager__SetJPNKanjiFlag (Dpr_Message_MessageManager_o* __this, bool flag, const MethodInfo* method);
+System_String_array* Dpr_Message_MessageManager__get_Varitnas (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+Dpr_Message_MessageMsgFile_o* Dpr_Message_MessageManager__GetMsgFile (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, const MethodInfo* method);
+Dpr_Message_MessageMsgFile_o* Dpr_Message_MessageManager__GetMsgFile (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, int32_t languageId, const MethodInfo* method);
+void Dpr_Message_MessageManager__UnloadMSBTAssetBundle (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager__UnloadCommonMSBTAssetBundle (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager__RegistLoadingLanguageMsbt (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager__RegisitLoadingCommonMsbt (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager__RegistLoadingMsbtFile (Dpr_Message_MessageManager_o* __this, int32_t languageId, const MethodInfo* method);
+void Dpr_Message_MessageManager__ReloadAllMsbtFile (Dpr_Message_MessageManager_o* __this, int32_t newLanguageId, System_Action_o* onCompleteLoad, const MethodInfo* method);
+Dpr_Message_LoadMsbtOperation_o* Dpr_Message_MessageManager__AsyncReloadAllMsbtFileAsync (Dpr_Message_MessageManager_o* __this, int32_t newLanguageId, const MethodInfo* method);
+void Dpr_Message_MessageManager__RequestLoadMessageAssetbundle (Dpr_Message_MessageManager_o* __this, System_Action_o* onFinishedLoadRequest, const MethodInfo* method);
+void Dpr_Message_MessageManager__OnFinishReloadMsbt (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+Dpr_Message_TagWordBuffer_o* Dpr_Message_MessageManager__get_TagWordBuffer (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager__ClearTagWordParams (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager__SetTagWordParam (Dpr_Message_MessageManager_o* __this, int32_t index, Dpr_Message_AWordParamBase_o* wordParam, const MethodInfo* method);
+bool Dpr_Message_MessageManager__IsSetWordParam (Dpr_Message_MessageManager_o* __this, int32_t index, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetRivalName (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetRivalMotherName (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetNameMessage (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, int32_t labelIndex, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetNameMessage (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, int32_t labelIndex, int32_t languageId, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetNameMessage (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, System_String_o* label, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetNameMessage (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, System_String_o* label, int32_t languageId, const MethodInfo* method);
+Dpr_Message_MessageGlossaryParseDataModel_o* Dpr_Message_MessageManager__GetNameMessageDataModel (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, int32_t labelIndex, const MethodInfo* method);
+Dpr_Message_MessageGlossaryParseDataModel_o* Dpr_Message_MessageManager__GetNameMessageDataModel (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, int32_t labelIndex, int32_t languageId, const MethodInfo* method);
+Dpr_Message_MessageGlossaryParseDataModel_o* Dpr_Message_MessageManager__GetNameMessageDataModel (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, System_String_o* label, const MethodInfo* method);
+Dpr_Message_MessageGlossaryParseDataModel_o* Dpr_Message_MessageManager__GetNameMessageDataModel (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, System_String_o* label, int32_t languageId, const MethodInfo* method);
+Dpr_Message_AttributeInfo_o* Dpr_Message_MessageManager__GetAttributeInfo (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, System_String_o* label, int32_t languageId, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetSimpleMessage (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, System_String_o* label, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetSimpleMessage (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, System_String_o* label, int32_t languageId, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetSimpleMessage (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, int32_t labelIndex, const MethodInfo* method);
+System_String_o* Dpr_Message_MessageManager__GetSimpleMessage (Dpr_Message_MessageManager_o* __this, System_String_o* fileName, int32_t labelIndex, int32_t languageId, const MethodInfo* method);
+void Dpr_Message_MessageManager__OnCompleteLoadAssetBundle (Dpr_Message_MessageManager_o* __this, Dpr_Message_LoadAssetBundleTask_o* loadTask, const MethodInfo* method);
+void Dpr_Message_MessageManager__OnCompleteLoadMsbtFile (Dpr_Message_MessageManager_o* __this, Dpr_Message_LoadMsbtFileTask_o* loadTask, const MethodInfo* method);
+void Dpr_Message_MessageManager__OnChangedConfig (Dpr_Message_MessageManager_o* __this, int32_t configID, int32_t value, const MethodInfo* method);
+Dpr_Message_WordDataModel_o* Dpr_Message_MessageManager__GetWordDataFromPool (const MethodInfo* method);
+bool Dpr_Message_MessageManager__get_InsertSDCard (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager___ctor (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager___cctor (const MethodInfo* method);
+void Dpr_Message_MessageManager___Initialize_b__9_0 (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);
+void Dpr_Message_MessageManager___AsyncReloadAllMsbtFileAsync_b__27_0 (Dpr_Message_MessageManager_o* __this, const MethodInfo* method);

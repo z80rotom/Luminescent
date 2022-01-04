@@ -1,0 +1,22 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UI_Collections_IndexedSet_object___Add (UnityEngine_UI_Collections_IndexedSet_object__o* __this, Il2CppObject* item, const MethodInfo_2CCA580* method);
+bool UnityEngine_UI_Collections_IndexedSet_object___AddUnique (UnityEngine_UI_Collections_IndexedSet_object__o* __this, Il2CppObject* item, const MethodInfo_2CCA600* method);
+bool UnityEngine_UI_Collections_IndexedSet_object___Remove (UnityEngine_UI_Collections_IndexedSet_object__o* __this, Il2CppObject* item, const MethodInfo_2CCA6C0* method);
+System_Collections_Generic_IEnumerator_T__o* UnityEngine_UI_Collections_IndexedSet_object___GetEnumerator (UnityEngine_UI_Collections_IndexedSet_object__o* __this, const MethodInfo_2CCA750* method);
+System_Collections_IEnumerator_o* UnityEngine_UI_Collections_IndexedSet_object___System_Collections_IEnumerable_GetEnumerator (UnityEngine_UI_Collections_IndexedSet_object__o* __this, const MethodInfo_2CCA7B0* method);
+void UnityEngine_UI_Collections_IndexedSet_object___Clear (UnityEngine_UI_Collections_IndexedSet_object__o* __this, const MethodInfo_2CCA7D0* method);
+bool UnityEngine_UI_Collections_IndexedSet_object___Contains (UnityEngine_UI_Collections_IndexedSet_object__o* __this, Il2CppObject* item, const MethodInfo_2CCA820* method);
+void UnityEngine_UI_Collections_IndexedSet_object___CopyTo (UnityEngine_UI_Collections_IndexedSet_object__o* __this, System_Object_array* array, int32_t arrayIndex, const MethodInfo_2CCA840* method);
+int32_t UnityEngine_UI_Collections_IndexedSet_object___get_Count (UnityEngine_UI_Collections_IndexedSet_object__o* __this, const MethodInfo_2CCA860* method);
+bool UnityEngine_UI_Collections_IndexedSet_object___get_IsReadOnly (UnityEngine_UI_Collections_IndexedSet_object__o* __this, const MethodInfo_2CCA880* method);
+int32_t UnityEngine_UI_Collections_IndexedSet_object___IndexOf (UnityEngine_UI_Collections_IndexedSet_object__o* __this, Il2CppObject* item, const MethodInfo_2CCA890* method);
+void UnityEngine_UI_Collections_IndexedSet_object___Insert (UnityEngine_UI_Collections_IndexedSet_object__o* __this, int32_t index, Il2CppObject* item, const MethodInfo_2CCA8E0* method);
+void UnityEngine_UI_Collections_IndexedSet_object___RemoveAt (UnityEngine_UI_Collections_IndexedSet_object__o* __this, int32_t index, const MethodInfo_2CCA950* method);
+Il2CppObject* UnityEngine_UI_Collections_IndexedSet_object___get_Item (UnityEngine_UI_Collections_IndexedSet_object__o* __this, int32_t index, const MethodInfo_2CCAA80* method);
+void UnityEngine_UI_Collections_IndexedSet_object___set_Item (UnityEngine_UI_Collections_IndexedSet_object__o* __this, int32_t index, Il2CppObject* value, const MethodInfo_2CCAAA0* method);
+void UnityEngine_UI_Collections_IndexedSet_object___RemoveAll (UnityEngine_UI_Collections_IndexedSet_object__o* __this, System_Predicate_T__o* match, const MethodInfo_2CCAB50* method);
+void UnityEngine_UI_Collections_IndexedSet_object___Sort (UnityEngine_UI_Collections_IndexedSet_object__o* __this, System_Comparison_T__o* sortLayoutFunction, const MethodInfo_2CCAC30* method);
+void UnityEngine_UI_Collections_IndexedSet_object____ctor (UnityEngine_UI_Collections_IndexedSet_object__o* __this, const MethodInfo_2CCAD00* method);

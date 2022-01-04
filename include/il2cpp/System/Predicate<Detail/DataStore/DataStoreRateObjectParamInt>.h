@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Predicate_Detail_DataStore_DataStoreRateObjectParamInt____ctor (System_Predicate_Detail_DataStore_DataStoreRateObjectParamInt__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_2900830* method);
+bool System_Predicate_Detail_DataStore_DataStoreRateObjectParamInt___Invoke (System_Predicate_Detail_DataStore_DataStoreRateObjectParamInt__o* __this, NexPlugin_Detail_DataStore_DataStoreRateObjectParamInt_o obj, const MethodInfo_2900850* method);
+System_IAsyncResult_o* System_Predicate_Detail_DataStore_DataStoreRateObjectParamInt___BeginInvoke (System_Predicate_Detail_DataStore_DataStoreRateObjectParamInt__o* __this, NexPlugin_Detail_DataStore_DataStoreRateObjectParamInt_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_2900B20* method);
+bool System_Predicate_Detail_DataStore_DataStoreRateObjectParamInt___EndInvoke (System_Predicate_Detail_DataStore_DataStoreRateObjectParamInt__o* __this, System_IAsyncResult_o* result, const MethodInfo_2900BB0* method);

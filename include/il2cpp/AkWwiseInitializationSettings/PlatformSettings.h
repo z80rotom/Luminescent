@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void AkWwiseInitializationSettings_PlatformSettings__IgnorePropertyValue (AkWwiseInitializationSettings_PlatformSettings_o* __this, System_String_o* propertyPath, const MethodInfo* method);
+bool AkWwiseInitializationSettings_PlatformSettings__IsPropertyIgnored (AkWwiseInitializationSettings_PlatformSettings_o* __this, System_String_o* propertyPath, const MethodInfo* method);
+void AkWwiseInitializationSettings_PlatformSettings___ctor (AkWwiseInitializationSettings_PlatformSettings_o* __this, const MethodInfo* method);
+void AkWwiseInitializationSettings_PlatformSettings__SetUseGlobalPropertyValue (AkWwiseInitializationSettings_PlatformSettings_o* __this, System_String_o* propertyPath, bool use, const MethodInfo* method);
+void AkWwiseInitializationSettings_PlatformSettings__SetGlobalPropertyValues (AkWwiseInitializationSettings_PlatformSettings_o* __this, System_Collections_IEnumerable_o* enumerable, const MethodInfo* method);
+bool AkWwiseInitializationSettings_PlatformSettings__IsUsingGlobalPropertyValue (AkWwiseInitializationSettings_PlatformSettings_o* __this, System_String_o* propertyPath, const MethodInfo* method);
+System_Collections_Generic_HashSet_string__o* AkWwiseInitializationSettings_PlatformSettings__get_GlobalPropertyHashSet (AkWwiseInitializationSettings_PlatformSettings_o* __this, const MethodInfo* method);
+void AkWwiseInitializationSettings_PlatformSettings__set_GlobalPropertyHashSet (AkWwiseInitializationSettings_PlatformSettings_o* __this, System_Collections_Generic_HashSet_string__o* value, const MethodInfo* method);

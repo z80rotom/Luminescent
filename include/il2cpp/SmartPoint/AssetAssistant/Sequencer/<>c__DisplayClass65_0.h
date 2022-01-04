@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void SmartPoint_AssetAssistant_Sequencer___c__DisplayClass65_0___ctor (SmartPoint_AssetAssistant_Sequencer___c__DisplayClass65_0_o* __this, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_Sequencer___c__DisplayClass65_0___SubscribeUpdate_b__0 (SmartPoint_AssetAssistant_Sequencer___c__DisplayClass65_0_o* __this, System_ValueTuple_int__Sequencer_TickCallback__o x, const MethodInfo* method);

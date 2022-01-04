@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_RaycastHit2D___Compare (System_Collections_Generic_ObjectComparer_RaycastHit2D__o* __this, UnityEngine_RaycastHit2D_o x, UnityEngine_RaycastHit2D_o y, const MethodInfo_28BCB10* method);
+bool System_Collections_Generic_ObjectComparer_RaycastHit2D___Equals (System_Collections_Generic_ObjectComparer_RaycastHit2D__o* __this, Il2CppObject* obj, const MethodInfo_28BCC40* method);
+int32_t System_Collections_Generic_ObjectComparer_RaycastHit2D___GetHashCode (System_Collections_Generic_ObjectComparer_RaycastHit2D__o* __this, const MethodInfo_28BCC90* method);
+void System_Collections_Generic_ObjectComparer_RaycastHit2D____ctor (System_Collections_Generic_ObjectComparer_RaycastHit2D__o* __this, const MethodInfo_28BCCC0* method);

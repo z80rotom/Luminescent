@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph____ctor (System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph__o* __this, const MethodInfo_2A0F8E0* method);
+TMPro_TMP_SpriteGlyph_o* System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph___get_Item (System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph__o* __this, uint32_t key, const MethodInfo_2A0FCB0* method);
+void System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph___Add (System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph__o* __this, uint32_t key, TMPro_TMP_SpriteGlyph_o* value, const MethodInfo_2A0FDA0* method);
+void System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph___Clear (System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph__o* __this, const MethodInfo_2A0FF60* method);
+bool System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph___ContainsKey (System_Collections_Generic_Dictionary_uint__TMP_SpriteGlyph__o* __this, uint32_t key, const MethodInfo_2A10000* method);

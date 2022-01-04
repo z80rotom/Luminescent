@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_List_PedestalIcon___FindIndex (System_Collections_Generic_List_PedestalIcon__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE780* method);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_PedestalIcon___GetEnumerator (System_Collections_Generic_List_PedestalIcon__o* __this, const MethodInfo_2BAEA50* method);

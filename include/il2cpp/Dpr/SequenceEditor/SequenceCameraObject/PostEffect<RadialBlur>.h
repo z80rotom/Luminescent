@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+Dpr_Rendering_RadialBlur_o* Dpr_SequenceEditor_SequenceCameraObject_PostEffect_RadialBlur___get_EffectObject (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_RadialBlur__o* __this, const MethodInfo_26B5180* method);
+void Dpr_SequenceEditor_SequenceCameraObject_PostEffect_RadialBlur____ctor (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_RadialBlur__o* __this, Dpr_Battle_View_BattlePostProcessFilter_o* filter, const MethodInfo_26B51C0* method);

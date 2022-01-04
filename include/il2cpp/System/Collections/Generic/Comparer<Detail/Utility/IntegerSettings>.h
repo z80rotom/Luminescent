@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Detail_Utility_IntegerSettings___get_Default (const MethodInfo_2871B30* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Detail_Utility_IntegerSettings___CreateComparer (const MethodInfo_2871C40* method);
+int32_t System_Collections_Generic_Comparer_Detail_Utility_IntegerSettings___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_Detail_Utility_IntegerSettings__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2872040* method);
+void System_Collections_Generic_Comparer_Detail_Utility_IntegerSettings____ctor (System_Collections_Generic_Comparer_Detail_Utility_IntegerSettings__o* __this, const MethodInfo_28721B0* method);

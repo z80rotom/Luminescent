@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Playable___get_Default (const MethodInfo_2882B00* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Playable___CreateComparer (const MethodInfo_2882C10* method);
+int32_t System_Collections_Generic_Comparer_Playable___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_Playable__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2883010* method);
+void System_Collections_Generic_Comparer_Playable____ctor (System_Collections_Generic_Comparer_Playable__o* __this, const MethodInfo_2883180* method);

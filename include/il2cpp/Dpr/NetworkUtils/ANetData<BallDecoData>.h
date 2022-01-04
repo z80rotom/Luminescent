@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint8_t Dpr_NetworkUtils_ANetData_BallDecoData___get_GetDataID (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, const MethodInfo_25BFED0* method);
+void Dpr_NetworkUtils_ANetData_BallDecoData____ctor (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, const MethodInfo_25BFF80* method);
+void Dpr_NetworkUtils_ANetData_BallDecoData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, const MethodInfo_25BFFF0* method);
+void Dpr_NetworkUtils_ANetData_BallDecoData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, int32_t idx, const MethodInfo_25C0280* method);
+int32_t Dpr_NetworkUtils_ANetData_BallDecoData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, const MethodInfo_25C0290* method);
+int32_t Dpr_NetworkUtils_ANetData_BallDecoData___SendReliableData (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_25C02A0* method);
+int32_t Dpr_NetworkUtils_ANetData_BallDecoData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, int32_t transportType, const MethodInfo_25C0350* method);
+int32_t Dpr_NetworkUtils_ANetData_BallDecoData___SendUnReliableData (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_25C03F0* method);
+int32_t Dpr_NetworkUtils_ANetData_BallDecoData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, int32_t transportType, const MethodInfo_25C0490* method);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_BallDecoData___CreateReliableData (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, const MethodInfo_25C0520* method);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_BallDecoData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, const MethodInfo_25C05E0* method);
+void Dpr_NetworkUtils_ANetData_BallDecoData___WriteSendData (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_25C06A0* method);
+System_Byte_array* Dpr_NetworkUtils_ANetData_BallDecoData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, const MethodInfo_25C06F0* method);
+void Dpr_NetworkUtils_ANetData_BallDecoData___ReceivePacket (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_25C08A0* method);
+void Dpr_NetworkUtils_ANetData_BallDecoData___ReadRecieveData (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_25C08F0* method);
+Dpr_NetworkUtils_BallDecoData_o Dpr_NetworkUtils_ANetData_BallDecoData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_BallDecoData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_25C0930* method);
+void Dpr_NetworkUtils_ANetData_BallDecoData____cctor (const MethodInfo_25C0C20* method);

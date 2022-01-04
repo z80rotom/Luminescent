@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_List_SubscriberContent_____ctor (System_Collections_Generic_List_List_SubscriberContent___o* __this, const MethodInfo_2BAD0F0* method);
+void System_Collections_Generic_List_List_SubscriberContent____Add (System_Collections_Generic_List_List_SubscriberContent___o* __this, System_Collections_Generic_List_SubscriberContent__o* item, const MethodInfo_2BADD00* method);

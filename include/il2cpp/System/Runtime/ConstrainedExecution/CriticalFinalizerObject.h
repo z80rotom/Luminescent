@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_ConstrainedExecution_CriticalFinalizerObject___ctor (System_Runtime_ConstrainedExecution_CriticalFinalizerObject_o* __this, const MethodInfo* method);
+void System_Runtime_ConstrainedExecution_CriticalFinalizerObject__Finalize (System_Runtime_ConstrainedExecution_CriticalFinalizerObject_o* __this, const MethodInfo* method);

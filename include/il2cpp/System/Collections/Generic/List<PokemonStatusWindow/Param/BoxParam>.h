@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_PokemonStatusWindow_Param_BoxParam____ctor (System_Collections_Generic_List_PokemonStatusWindow_Param_BoxParam__o* __this, const MethodInfo_2BAD0F0* method);
+Dpr_UI_PokemonStatusWindow_Param_BoxParam_o* System_Collections_Generic_List_PokemonStatusWindow_Param_BoxParam___get_Item (System_Collections_Generic_List_PokemonStatusWindow_Param_BoxParam__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
+void System_Collections_Generic_List_PokemonStatusWindow_Param_BoxParam___Add (System_Collections_Generic_List_PokemonStatusWindow_Param_BoxParam__o* __this, Dpr_UI_PokemonStatusWindow_Param_BoxParam_o* item, const MethodInfo_2BADD00* method);

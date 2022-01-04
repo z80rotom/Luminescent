@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637___ctor (Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637_o* __this, int32_t __1__state, const MethodInfo* method);
+void Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637__System_IDisposable_Dispose (Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637_o* __this, const MethodInfo* method);
+bool Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637__MoveNext (Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637__System_Collections_Generic_IEnumerator_System_Object__get_Current (Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637_o* __this, const MethodInfo* method);
+void Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637__System_Collections_IEnumerator_Reset (Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637__System_Collections_IEnumerator_get_Current (Dpr_EvScript_EvDataManager__LoadUMAAsset_d__1637_o* __this, const MethodInfo* method);

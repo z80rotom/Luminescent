@@ -1,0 +1,30 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool Dpr_Battle_View_Objects_BattleViewCharacter__get_IsGJoker (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+bool Dpr_Battle_View_Objects_BattleViewCharacter__get_IsVisible (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__set_IsVisible (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, bool value, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__Initialize (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, int32_t vPos, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__InitializeMember (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__SetRenderActive (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, bool isActive, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__SetVisible (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, bool value, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__UpdateVisible (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__SetVisibleShadow (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, bool value, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__ResetAnimState (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__SetEnableWaitB (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, bool value, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__UpdateWaitB (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__ChangeAnimState (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, System_String_o* parameterName, bool isReset, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__ChangeAnimStateBool (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, System_String_o* parameterName, bool value, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__ChangeAnimStateInt (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, System_String_o* parameterName, int32_t vlaue, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__SetAnimSpeed (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, float speed, const MethodInfo* method);
+float Dpr_Battle_View_Objects_BattleViewCharacter__GetAnimSpeed (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__UpdateAnimSpeed (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__StartLookAt (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, UnityEngine_Vector3_o pos, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__EndLookAt (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__StartDelete (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+bool Dpr_Battle_View_Objects_BattleViewCharacter__get_IsFinishDelete (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__AttachObject (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, UnityEngine_GameObject_o* obj, System_String_o* nodeName, bool isFollowPos, bool isFollowRot, bool isFollowScl, bool isFollowAnimScl, bool isFollowLocalScl, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__DetachObject (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, UnityEngine_GameObject_o* obj, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter__OnUpdatePreJob (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleViewCharacter___ctor (Dpr_Battle_View_Objects_BattleViewCharacter_o* __this, const MethodInfo* method);

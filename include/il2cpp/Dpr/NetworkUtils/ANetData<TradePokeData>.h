@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint8_t Dpr_NetworkUtils_ANetData_TradePokeData___get_GetDataID (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, const MethodInfo_26AC9D0* method);
+void Dpr_NetworkUtils_ANetData_TradePokeData____ctor (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, const MethodInfo_26ACA80* method);
+void Dpr_NetworkUtils_ANetData_TradePokeData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, const MethodInfo_26ACAF0* method);
+void Dpr_NetworkUtils_ANetData_TradePokeData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, int32_t idx, const MethodInfo_26ACD70* method);
+int32_t Dpr_NetworkUtils_ANetData_TradePokeData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, const MethodInfo_26ACD80* method);
+int32_t Dpr_NetworkUtils_ANetData_TradePokeData___SendReliableData (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_26ACD90* method);
+int32_t Dpr_NetworkUtils_ANetData_TradePokeData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, int32_t transportType, const MethodInfo_26ACE40* method);
+int32_t Dpr_NetworkUtils_ANetData_TradePokeData___SendUnReliableData (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_26ACEE0* method);
+int32_t Dpr_NetworkUtils_ANetData_TradePokeData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, int32_t transportType, const MethodInfo_26ACF80* method);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_TradePokeData___CreateReliableData (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, const MethodInfo_26AD010* method);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_TradePokeData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, const MethodInfo_26AD0D0* method);
+void Dpr_NetworkUtils_ANetData_TradePokeData___WriteSendData (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_26AD190* method);
+System_Byte_array* Dpr_NetworkUtils_ANetData_TradePokeData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, const MethodInfo_26AD1E0* method);
+void Dpr_NetworkUtils_ANetData_TradePokeData___ReceivePacket (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_26AD390* method);
+void Dpr_NetworkUtils_ANetData_TradePokeData___ReadRecieveData (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_26AD3E0* method);
+Dpr_NetworkUtils_TradePokeData_o Dpr_NetworkUtils_ANetData_TradePokeData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_TradePokeData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_26AD420* method);
+void Dpr_NetworkUtils_ANetData_TradePokeData____cctor (const MethodInfo_26AD710* method);

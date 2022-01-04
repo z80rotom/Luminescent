@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+NexPlugin_DataStorePersistenceInfo_o* NexPlugin_Detail_DataStore_DataStorePersistenceInfoInt__ExchangeStruct (NexPlugin_Detail_DataStore_DataStorePersistenceInfoInt_o __this, const MethodInfo* method);
+NexPlugin_DataStorePersistenceInfo_o* NexPlugin_Detail_DataStore_DataStorePersistenceInfoInt__ExchangePtrToStruct (intptr_t src, const MethodInfo* method);
+void NexPlugin_Detail_DataStore_DataStorePersistenceInfoInt___ctor (NexPlugin_Detail_DataStore_DataStorePersistenceInfoInt_o __this, NexPlugin_DataStorePersistenceInfo_o* param, const MethodInfo* method);

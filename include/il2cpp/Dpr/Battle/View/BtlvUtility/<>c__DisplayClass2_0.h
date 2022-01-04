@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_View_BtlvUtility___c__DisplayClass2_0___ctor (Dpr_Battle_View_BtlvUtility___c__DisplayClass2_0_o* __this, const MethodInfo* method);
+bool Dpr_Battle_View_BtlvUtility___c__DisplayClass2_0___GetUniqueWazaDataTurnType_b__0 (Dpr_Battle_View_BtlvUtility___c__DisplayClass2_0_o* __this, XLSXContent_BattleDataTable_SheetBattleUniqueWazaData_o* x, const MethodInfo* method);

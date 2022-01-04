@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_TownmapFacilityItem____ctor (System_Collections_Generic_List_TownmapFacilityItem__o* __this, const MethodInfo_2BAD0F0* method);
+int32_t System_Collections_Generic_List_TownmapFacilityItem___get_Count (System_Collections_Generic_List_TownmapFacilityItem__o* __this, const MethodInfo_2BAD9C0* method);
+void System_Collections_Generic_List_TownmapFacilityItem___Add (System_Collections_Generic_List_TownmapFacilityItem__o* __this, Dpr_UI_TownmapFacilityItem_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_TownmapFacilityItem___Clear (System_Collections_Generic_List_TownmapFacilityItem__o* __this, const MethodInfo_2BAE0A0* method);

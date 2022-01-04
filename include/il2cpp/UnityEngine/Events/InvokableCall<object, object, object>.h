@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_Events_InvokableCall_object__object__object____ctor (UnityEngine_Events_InvokableCall_object__object__object__o* __this, Il2CppObject* target, System_Reflection_MethodInfo_o* theFunction, const MethodInfo_284E760* method);
+void UnityEngine_Events_InvokableCall_object__object__object___Invoke (UnityEngine_Events_InvokableCall_object__object__object__o* __this, System_Object_array* args, const MethodInfo_284E870* method);
+void UnityEngine_Events_InvokableCall_object__object__object___Invoke (UnityEngine_Events_InvokableCall_object__object__object__o* __this, Il2CppObject* args0, Il2CppObject* args1, Il2CppObject* args2, const MethodInfo_284EAD0* method);
+bool UnityEngine_Events_InvokableCall_object__object__object___Find (UnityEngine_Events_InvokableCall_object__object__object__o* __this, Il2CppObject* targetObj, System_Reflection_MethodInfo_o* method, const MethodInfo_284EB50* method);

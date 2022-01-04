@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Remoting_Messaging_RemotingSurrogateSelector___ctor (System_Runtime_Remoting_Messaging_RemotingSurrogateSelector_o* __this, const MethodInfo* method);
+System_Runtime_Serialization_ISerializationSurrogate_o* System_Runtime_Remoting_Messaging_RemotingSurrogateSelector__GetSurrogate (System_Runtime_Remoting_Messaging_RemotingSurrogateSelector_o* __this, System_Type_o* type, System_Runtime_Serialization_StreamingContext_o context, System_Runtime_Serialization_ISurrogateSelector_o** ssout, const MethodInfo* method);
+void System_Runtime_Remoting_Messaging_RemotingSurrogateSelector___cctor (const MethodInfo* method);

@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UIElements_ObjectPool_PropagationPaths____ctor (UnityEngine_UIElements_ObjectPool_PropagationPaths__o* __this, int32_t maxSize, const MethodInfo_2CD1B70* method);
+UnityEngine_UIElements_PropagationPaths_o* UnityEngine_UIElements_ObjectPool_PropagationPaths___Get (UnityEngine_UIElements_ObjectPool_PropagationPaths__o* __this, const MethodInfo_2CD1C30* method);
+void UnityEngine_UIElements_ObjectPool_PropagationPaths___Release (UnityEngine_UIElements_ObjectPool_PropagationPaths__o* __this, UnityEngine_UIElements_PropagationPaths_o* element, const MethodInfo_2CD1CA0* method);

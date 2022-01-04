@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Contest_DanceSection__IE_WaitFinish_d__44___ctor (Dpr_Contest_DanceSection__IE_WaitFinish_d__44_o* __this, int32_t __1__state, const MethodInfo* method);
+void Dpr_Contest_DanceSection__IE_WaitFinish_d__44__System_IDisposable_Dispose (Dpr_Contest_DanceSection__IE_WaitFinish_d__44_o* __this, const MethodInfo* method);
+bool Dpr_Contest_DanceSection__IE_WaitFinish_d__44__MoveNext (Dpr_Contest_DanceSection__IE_WaitFinish_d__44_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_Contest_DanceSection__IE_WaitFinish_d__44__System_Collections_Generic_IEnumerator_System_Object__get_Current (Dpr_Contest_DanceSection__IE_WaitFinish_d__44_o* __this, const MethodInfo* method);
+void Dpr_Contest_DanceSection__IE_WaitFinish_d__44__System_Collections_IEnumerator_Reset (Dpr_Contest_DanceSection__IE_WaitFinish_d__44_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_Contest_DanceSection__IE_WaitFinish_d__44__System_Collections_IEnumerator_get_Current (Dpr_Contest_DanceSection__IE_WaitFinish_d__44_o* __this, const MethodInfo* method);

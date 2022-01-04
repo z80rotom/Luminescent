@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_DataStoreRatingInfo___Compare (System_Collections_Generic_ObjectComparer_DataStoreRatingInfo__o* __this, NexPlugin_DataStoreRatingInfo_o x, NexPlugin_DataStoreRatingInfo_o y, const MethodInfo_28B5640* method);
+bool System_Collections_Generic_ObjectComparer_DataStoreRatingInfo___Equals (System_Collections_Generic_ObjectComparer_DataStoreRatingInfo__o* __this, Il2CppObject* obj, const MethodInfo_28B5750* method);
+int32_t System_Collections_Generic_ObjectComparer_DataStoreRatingInfo___GetHashCode (System_Collections_Generic_ObjectComparer_DataStoreRatingInfo__o* __this, const MethodInfo_28B57A0* method);
+void System_Collections_Generic_ObjectComparer_DataStoreRatingInfo____ctor (System_Collections_Generic_ObjectComparer_DataStoreRatingInfo__o* __this, const MethodInfo_28B57D0* method);

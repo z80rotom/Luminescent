@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_HashSet_Enumerator_AkRoomAwareObject___Dispose (System_Collections_Generic_HashSet_Enumerator_AkRoomAwareObject__o __this, const MethodInfo_2A2B110* method);
+bool System_Collections_Generic_HashSet_Enumerator_AkRoomAwareObject___MoveNext (System_Collections_Generic_HashSet_Enumerator_AkRoomAwareObject__o __this, const MethodInfo_2A2B120* method);
+AkRoomAwareObject_o* System_Collections_Generic_HashSet_Enumerator_AkRoomAwareObject___get_Current (System_Collections_Generic_HashSet_Enumerator_AkRoomAwareObject__o __this, const MethodInfo_2A2B250* method);

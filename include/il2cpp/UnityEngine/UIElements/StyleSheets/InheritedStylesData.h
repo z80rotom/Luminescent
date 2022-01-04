@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UIElements_StyleSheets_InheritedStylesData___ctor (UnityEngine_UIElements_StyleSheets_InheritedStylesData_o* __this, const MethodInfo* method);
+bool UnityEngine_UIElements_StyleSheets_InheritedStylesData__Equals (UnityEngine_UIElements_StyleSheets_InheritedStylesData_o* __this, UnityEngine_UIElements_StyleSheets_InheritedStylesData_o* other, const MethodInfo* method);
+bool UnityEngine_UIElements_StyleSheets_InheritedStylesData__Equals (UnityEngine_UIElements_StyleSheets_InheritedStylesData_o* __this, Il2CppObject* obj, const MethodInfo* method);
+int32_t UnityEngine_UIElements_StyleSheets_InheritedStylesData__GetHashCode (UnityEngine_UIElements_StyleSheets_InheritedStylesData_o* __this, const MethodInfo* method);
+void UnityEngine_UIElements_StyleSheets_InheritedStylesData___cctor (const MethodInfo* method);

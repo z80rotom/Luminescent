@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin___ctor (Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin__Execute (Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin_o* __this, Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin_Result_o* pResult, Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin_Description_o** description, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin__doFunjinExplode (Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_WazaParam_o* wazaParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin__putFunjinExplodeCommand (Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_WazaParam_o* wazaParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin__isDamageEnable (Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, uint32_t damage, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin__addDamage (Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* damagePoke, uint32_t damage, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin__checkPokeDead (Dpr_Battle_Logic_Section_WazaExec_CheckFail_Funjin_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);

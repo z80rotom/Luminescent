@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_KeyValuePair_PoffinData__int____ctor (System_Collections_Generic_KeyValuePair_PoffinData__int__o __this, DPData_PoffinData_o key, int32_t value, const MethodInfo_299C580* method);
+DPData_PoffinData_o System_Collections_Generic_KeyValuePair_PoffinData__int___get_Key (System_Collections_Generic_KeyValuePair_PoffinData__int__o __this, const MethodInfo_299C5C0* method);
+int32_t System_Collections_Generic_KeyValuePair_PoffinData__int___get_Value (System_Collections_Generic_KeyValuePair_PoffinData__int__o __this, const MethodInfo_299C5D0* method);
+System_String_o* System_Collections_Generic_KeyValuePair_PoffinData__int___ToString (System_Collections_Generic_KeyValuePair_PoffinData__int__o __this, const MethodInfo_299C5E0* method);

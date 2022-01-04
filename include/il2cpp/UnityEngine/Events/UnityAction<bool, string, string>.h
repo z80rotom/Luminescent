@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_Events_UnityAction_bool__string__string____ctor (UnityEngine_Events_UnityAction_bool__string__string__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_2853BC0* method);
+void UnityEngine_Events_UnityAction_bool__string__string___Invoke (UnityEngine_Events_UnityAction_bool__string__string__o* __this, bool arg0, System_String_o* arg1, System_String_o* arg2, const MethodInfo_2853BE0* method);

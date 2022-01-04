@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Action_Detail_DataStore_DataStoreRatingInitParamInt____ctor (System_Action_Detail_DataStore_DataStoreRatingInitParamInt__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_26C4CB0* method);
+void System_Action_Detail_DataStore_DataStoreRatingInitParamInt___Invoke (System_Action_Detail_DataStore_DataStoreRatingInitParamInt__o* __this, NexPlugin_Detail_DataStore_DataStoreRatingInitParamInt_o obj, const MethodInfo_26C4CD0* method);
+System_IAsyncResult_o* System_Action_Detail_DataStore_DataStoreRatingInitParamInt___BeginInvoke (System_Action_Detail_DataStore_DataStoreRatingInitParamInt__o* __this, NexPlugin_Detail_DataStore_DataStoreRatingInitParamInt_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_26C5030* method);
+void System_Action_Detail_DataStore_DataStoreRatingInitParamInt___EndInvoke (System_Action_Detail_DataStore_DataStoreRatingInitParamInt__o* __this, System_IAsyncResult_o* result, const MethodInfo_26C50D0* method);

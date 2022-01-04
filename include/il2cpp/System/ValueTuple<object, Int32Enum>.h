@@ -1,0 +1,15 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_ValueTuple_object__Int32Enum____ctor (System_ValueTuple_object__Int32Enum__o __this, Il2CppObject* item1, int32_t item2, const MethodInfo_29B1C50* method);
+bool System_ValueTuple_object__Int32Enum___Equals (System_ValueTuple_object__Int32Enum__o __this, Il2CppObject* obj, const MethodInfo_29B1C80* method);
+bool System_ValueTuple_object__Int32Enum___Equals (System_ValueTuple_object__Int32Enum__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29B1DB0* method);
+bool System_ValueTuple_object__Int32Enum___System_Collections_IStructuralEquatable_Equals (System_ValueTuple_object__Int32Enum__o __this, Il2CppObject* other, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29B1EB0* method);
+int32_t System_ValueTuple_object__Int32Enum___System_IComparable_CompareTo (System_ValueTuple_object__Int32Enum__o __this, Il2CppObject* other, const MethodInfo_29B2130* method);
+int32_t System_ValueTuple_object__Int32Enum___CompareTo (System_ValueTuple_object__Int32Enum__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29B2310* method);
+int32_t System_ValueTuple_object__Int32Enum___System_Collections_IStructuralComparable_CompareTo (System_ValueTuple_object__Int32Enum__o __this, Il2CppObject* other, System_Collections_IComparer_o* comparer, const MethodInfo_29B2410* method);
+int32_t System_ValueTuple_object__Int32Enum___GetHashCode (System_ValueTuple_object__Int32Enum__o __this, const MethodInfo_29B2720* method);
+int32_t System_ValueTuple_object__Int32Enum___System_Collections_IStructuralEquatable_GetHashCode (System_ValueTuple_object__Int32Enum__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29B27E0* method);
+int32_t System_ValueTuple_object__Int32Enum___GetHashCodeCore (System_ValueTuple_object__Int32Enum__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29B2830* method);
+System_String_o* System_ValueTuple_object__Int32Enum___ToString (System_ValueTuple_object__Int32Enum__o __this, const MethodInfo_29B29B0* method);

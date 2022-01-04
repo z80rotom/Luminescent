@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_FromEvent_InsertWazaAction___ctor (Dpr_Battle_Logic_Section_FromEvent_InsertWazaAction_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FromEvent_InsertWazaAction__Execute (Dpr_Battle_Logic_Section_FromEvent_InsertWazaAction_o* __this, Dpr_Battle_Logic_Section_FromEvent_InsertWazaAction_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_InsertWazaAction_Description_o** description, const MethodInfo* method);
+uint32_t Dpr_Battle_Logic_Section_FromEvent_InsertWazaAction__calcActionPriority (Dpr_Battle_Logic_Section_FromEvent_InsertWazaAction_o* __this, Dpr_Battle_Logic_PokeAction_o* pokeAction, const MethodInfo* method);

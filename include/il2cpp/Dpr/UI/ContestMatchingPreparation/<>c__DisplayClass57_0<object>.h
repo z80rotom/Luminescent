@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UI_ContestMatchingPreparation___c__DisplayClass57_0_object____ctor (Dpr_UI_ContestMatchingPreparation___c__DisplayClass57_0_object__o* __this, const MethodInfo_26B68D0* method);
+void Dpr_UI_ContestMatchingPreparation___c__DisplayClass57_0_object____OpenUIWIndow_b__0 (Dpr_UI_ContestMatchingPreparation___c__DisplayClass57_0_object__o* __this, Dpr_UI_UIWindow_o* win, const MethodInfo_26B68E0* method);

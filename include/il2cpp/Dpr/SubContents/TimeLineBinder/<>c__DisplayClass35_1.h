@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_SubContents_TimeLineBinder___c__DisplayClass35_1___ctor (Dpr_SubContents_TimeLineBinder___c__DisplayClass35_1_o* __this, const MethodInfo* method);
+void Dpr_SubContents_TimeLineBinder___c__DisplayClass35_1___OpLoadAssets_b__2 (Dpr_SubContents_TimeLineBinder___c__DisplayClass35_1_o* __this, UnityEngine_Object_o* asset, const MethodInfo* method);
+void Dpr_SubContents_TimeLineBinder___c__DisplayClass35_1___OpLoadAssets_b__1 (Dpr_SubContents_TimeLineBinder___c__DisplayClass35_1_o* __this, UnityEngine_Object_o* asset, const MethodInfo* method);

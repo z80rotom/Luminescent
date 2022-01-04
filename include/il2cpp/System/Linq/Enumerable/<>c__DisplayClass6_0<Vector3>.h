@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Enumerable___c__DisplayClass6_0_Vector3____ctor (System_Linq_Enumerable___c__DisplayClass6_0_Vector3__o* __this, const MethodInfo_296F700* method);
+bool System_Linq_Enumerable___c__DisplayClass6_0_Vector3____CombinePredicates_b__0 (System_Linq_Enumerable___c__DisplayClass6_0_Vector3__o* __this, UnityEngine_Vector3_o x, const MethodInfo_296F710* method);

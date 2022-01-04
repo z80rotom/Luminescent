@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UI_UIWindow__FadeTransition_d__53_object____ctor (Dpr_UI_UIWindow__FadeTransition_d__53_object__o* __this, int32_t __1__state, const MethodInfo_26B7460* method);
+void Dpr_UI_UIWindow__FadeTransition_d__53_object___System_IDisposable_Dispose (Dpr_UI_UIWindow__FadeTransition_d__53_object__o* __this, const MethodInfo_26B7490* method);
+bool Dpr_UI_UIWindow__FadeTransition_d__53_object___MoveNext (Dpr_UI_UIWindow__FadeTransition_d__53_object__o* __this, const MethodInfo_26B74A0* method);
+Il2CppObject* Dpr_UI_UIWindow__FadeTransition_d__53_object___System_Collections_Generic_IEnumerator_System_Object__get_Current (Dpr_UI_UIWindow__FadeTransition_d__53_object__o* __this, const MethodInfo_26B7720* method);
+void Dpr_UI_UIWindow__FadeTransition_d__53_object___System_Collections_IEnumerator_Reset (Dpr_UI_UIWindow__FadeTransition_d__53_object__o* __this, const MethodInfo_26B7730* method);
+Il2CppObject* Dpr_UI_UIWindow__FadeTransition_d__53_object___System_Collections_IEnumerator_get_Current (Dpr_UI_UIWindow__FadeTransition_d__53_object__o* __this, const MethodInfo_26B7790* method);

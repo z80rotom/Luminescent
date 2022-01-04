@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint8_t Dpr_NetworkUtils_ANetData_DigJoinData___get_GetDataID (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, const MethodInfo_2AC2340* method);
+void Dpr_NetworkUtils_ANetData_DigJoinData____ctor (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, const MethodInfo_2AC23F0* method);
+void Dpr_NetworkUtils_ANetData_DigJoinData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, const MethodInfo_2AC2450* method);
+void Dpr_NetworkUtils_ANetData_DigJoinData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, int32_t idx, const MethodInfo_2AC26D0* method);
+int32_t Dpr_NetworkUtils_ANetData_DigJoinData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, const MethodInfo_2AC26E0* method);
+int32_t Dpr_NetworkUtils_ANetData_DigJoinData___SendReliableData (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AC26F0* method);
+int32_t Dpr_NetworkUtils_ANetData_DigJoinData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, int32_t transportType, const MethodInfo_2AC27A0* method);
+int32_t Dpr_NetworkUtils_ANetData_DigJoinData___SendUnReliableData (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AC2840* method);
+int32_t Dpr_NetworkUtils_ANetData_DigJoinData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, int32_t transportType, const MethodInfo_2AC28E0* method);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_DigJoinData___CreateReliableData (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, const MethodInfo_2AC2970* method);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_DigJoinData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, const MethodInfo_2AC2A30* method);
+void Dpr_NetworkUtils_ANetData_DigJoinData___WriteSendData (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_2AC2AF0* method);
+System_Byte_array* Dpr_NetworkUtils_ANetData_DigJoinData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, const MethodInfo_2AC2B40* method);
+void Dpr_NetworkUtils_ANetData_DigJoinData___ReceivePacket (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC2CF0* method);
+void Dpr_NetworkUtils_ANetData_DigJoinData___ReadRecieveData (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC2D40* method);
+Dpr_NetworkUtils_DigJoinData_o Dpr_NetworkUtils_ANetData_DigJoinData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_DigJoinData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC2D80* method);
+void Dpr_NetworkUtils_ANetData_DigJoinData____cctor (const MethodInfo_2AC3070* method);

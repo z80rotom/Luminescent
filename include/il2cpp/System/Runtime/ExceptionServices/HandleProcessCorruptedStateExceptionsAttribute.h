@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_ExceptionServices_HandleProcessCorruptedStateExceptionsAttribute___ctor (System_Runtime_ExceptionServices_HandleProcessCorruptedStateExceptionsAttribute_o* __this, const MethodInfo* method);

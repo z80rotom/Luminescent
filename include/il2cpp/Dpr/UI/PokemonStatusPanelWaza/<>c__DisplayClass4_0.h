@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UI_PokemonStatusPanelWaza___c__DisplayClass4_0___ctor (Dpr_UI_PokemonStatusPanelWaza___c__DisplayClass4_0_o* __this, const MethodInfo* method);
+void Dpr_UI_PokemonStatusPanelWaza___c__DisplayClass4_0___SetupDetail_b__0 (Dpr_UI_PokemonStatusPanelWaza___c__DisplayClass4_0_o* __this, const MethodInfo* method);
+void Dpr_UI_PokemonStatusPanelWaza___c__DisplayClass4_0___SetupDetail_b__1 (Dpr_UI_PokemonStatusPanelWaza___c__DisplayClass4_0_o* __this, const MethodInfo* method);

@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_ProcessCoverAction___ctor (Dpr_Battle_Logic_Section_ProcessCoverAction_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_ProcessCoverAction__Execute (Dpr_Battle_Logic_Section_ProcessCoverAction_o* __this, Dpr_Battle_Logic_Section_ProcessCoverAction_Result_o* pResult, Dpr_Battle_Logic_Section_ProcessCoverAction_Description_o** description, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_ProcessCoverAction__processAction_Change (Dpr_Battle_Logic_Section_ProcessCoverAction_o* __this, Dpr_Battle_Logic_PokeIDRegister_o* inPokeIDRegister, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_ProcessCoverAction__processAction_Cover (Dpr_Battle_Logic_Section_ProcessCoverAction_o* __this, Dpr_Battle_Logic_PokeIDRegister_o* inPokeIDRegister, const MethodInfo* method);
+uint8_t Dpr_Battle_Logic_Section_ProcessCoverAction__memberChange (Dpr_Battle_Logic_Section_ProcessCoverAction_o* __this, Dpr_Battle_Logic_PokeAction_o* pokeAction, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_ProcessCoverAction__afterMemberIn (Dpr_Battle_Logic_Section_ProcessCoverAction_o* __this, Dpr_Battle_Logic_PokeIDRegister_o* targets, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_ProcessCoverAction__checkExpGet (Dpr_Battle_Logic_Section_ProcessCoverAction_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_ProcessCoverAction__requestPokeChangeForServer (Dpr_Battle_Logic_Section_ProcessCoverAction_o* __this, const MethodInfo* method);

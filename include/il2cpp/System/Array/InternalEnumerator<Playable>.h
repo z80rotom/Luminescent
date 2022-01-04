@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_Playable____ctor (System_Array_InternalEnumerator_Playable__o __this, System_Array_o* array, const MethodInfo_2579010* method);
+void System_Array_InternalEnumerator_Playable___Dispose (System_Array_InternalEnumerator_Playable__o __this, const MethodInfo_2579040* method);
+bool System_Array_InternalEnumerator_Playable___MoveNext (System_Array_InternalEnumerator_Playable__o __this, const MethodInfo_2579050* method);
+UnityEngine_Playables_Playable_o System_Array_InternalEnumerator_Playable___get_Current (System_Array_InternalEnumerator_Playable__o __this, const MethodInfo_25790B0* method);
+void System_Array_InternalEnumerator_Playable___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_Playable__o __this, const MethodInfo_25791F0* method);
+Il2CppObject* System_Array_InternalEnumerator_Playable___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_Playable__o __this, const MethodInfo_2579200* method);

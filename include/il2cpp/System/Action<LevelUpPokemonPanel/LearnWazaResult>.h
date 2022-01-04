@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Action_LevelUpPokemonPanel_LearnWazaResult____ctor (System_Action_LevelUpPokemonPanel_LearnWazaResult__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_26BFC80* method);
+void System_Action_LevelUpPokemonPanel_LearnWazaResult___Invoke (System_Action_LevelUpPokemonPanel_LearnWazaResult__o* __this, Dpr_UI_LevelUpPokemonPanel_LearnWazaResult_o obj, const MethodInfo_26BFCA0* method);
+System_IAsyncResult_o* System_Action_LevelUpPokemonPanel_LearnWazaResult___BeginInvoke (System_Action_LevelUpPokemonPanel_LearnWazaResult__o* __this, Dpr_UI_LevelUpPokemonPanel_LearnWazaResult_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_26BFF30* method);
+void System_Action_LevelUpPokemonPanel_LearnWazaResult___EndInvoke (System_Action_LevelUpPokemonPanel_LearnWazaResult__o* __this, System_IAsyncResult_o* result, const MethodInfo_26BFFC0* method);

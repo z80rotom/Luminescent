@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void TMPro_TMP_TextProcessingStack_object____ctor (TMPro_TMP_TextProcessingStack_object__o __this, System_Object_array* stack, const MethodInfo_2845A40* method);
+void TMPro_TMP_TextProcessingStack_object____ctor (TMPro_TMP_TextProcessingStack_object__o __this, int32_t capacity, const MethodInfo_2845A80* method);
+void TMPro_TMP_TextProcessingStack_object____ctor (TMPro_TMP_TextProcessingStack_object__o __this, int32_t capacity, int32_t rolloverSize, const MethodInfo_2845B00* method);
+int32_t TMPro_TMP_TextProcessingStack_object___get_Count (TMPro_TMP_TextProcessingStack_object__o __this, const MethodInfo_2845B90* method);
+Il2CppObject* TMPro_TMP_TextProcessingStack_object___get_current (TMPro_TMP_TextProcessingStack_object__o __this, const MethodInfo_2845BA0* method);
+int32_t TMPro_TMP_TextProcessingStack_object___get_rolloverSize (TMPro_TMP_TextProcessingStack_object__o __this, const MethodInfo_2845C00* method);
+void TMPro_TMP_TextProcessingStack_object___set_rolloverSize (TMPro_TMP_TextProcessingStack_object__o __this, int32_t value, const MethodInfo_2845C10* method);
+void TMPro_TMP_TextProcessingStack_object___SetDefault (TMPro_TMP_TextProcessingStack_T__array* stack, Il2CppObject* item, const MethodInfo_2845C20* method);
+void TMPro_TMP_TextProcessingStack_object___Clear (TMPro_TMP_TextProcessingStack_object__o __this, const MethodInfo_2845CD0* method);
+void TMPro_TMP_TextProcessingStack_object___SetDefault (TMPro_TMP_TextProcessingStack_object__o __this, Il2CppObject* item, const MethodInfo_2845CE0* method);
+void TMPro_TMP_TextProcessingStack_object___Add (TMPro_TMP_TextProcessingStack_object__o __this, Il2CppObject* item, const MethodInfo_2845D90* method);
+Il2CppObject* TMPro_TMP_TextProcessingStack_object___Remove (TMPro_TMP_TextProcessingStack_object__o __this, const MethodInfo_2845DF0* method);
+void TMPro_TMP_TextProcessingStack_object___Push (TMPro_TMP_TextProcessingStack_object__o __this, Il2CppObject* item, const MethodInfo_2845E60* method);
+Il2CppObject* TMPro_TMP_TextProcessingStack_object___Pop (TMPro_TMP_TextProcessingStack_object__o __this, const MethodInfo_2845F70* method);
+Il2CppObject* TMPro_TMP_TextProcessingStack_object___Peek (TMPro_TMP_TextProcessingStack_object__o __this, const MethodInfo_2846020* method);
+Il2CppObject* TMPro_TMP_TextProcessingStack_object___CurrentItem (TMPro_TMP_TextProcessingStack_object__o __this, const MethodInfo_2846070* method);
+Il2CppObject* TMPro_TMP_TextProcessingStack_object___PreviousItem (TMPro_TMP_TextProcessingStack_object__o __this, const MethodInfo_28460D0* method);

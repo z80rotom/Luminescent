@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void PiaPluginSession_SessionSearchCriteriaNative_AttributeNative___ctor (PiaPluginSession_SessionSearchCriteriaNative_AttributeNative_o* __this, const MethodInfo* method);
+void PiaPluginSession_SessionSearchCriteriaNative_AttributeNative___ctor (PiaPluginSession_SessionSearchCriteriaNative_AttributeNative_o* __this, PiaPluginSession_SessionSearchCriteria_Attribute_o* attribute, const MethodInfo* method);
+void PiaPluginSession_SessionSearchCriteriaNative_AttributeNative__Dispose (PiaPluginSession_SessionSearchCriteriaNative_AttributeNative_o* __this, const MethodInfo* method);

@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint8_t Dpr_NetworkUtils_ANetData_TranerData___get_GetDataID (Dpr_NetworkUtils_ANetData_TranerData__o* __this, const MethodInfo_26AE480* method);
+void Dpr_NetworkUtils_ANetData_TranerData____ctor (Dpr_NetworkUtils_ANetData_TranerData__o* __this, const MethodInfo_26AE530* method);
+void Dpr_NetworkUtils_ANetData_TranerData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_TranerData__o* __this, const MethodInfo_26AE5D0* method);
+void Dpr_NetworkUtils_ANetData_TranerData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_TranerData__o* __this, int32_t idx, const MethodInfo_26AE8C0* method);
+int32_t Dpr_NetworkUtils_ANetData_TranerData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_TranerData__o* __this, const MethodInfo_26AE8D0* method);
+int32_t Dpr_NetworkUtils_ANetData_TranerData___SendReliableData (Dpr_NetworkUtils_ANetData_TranerData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_26AE8E0* method);
+int32_t Dpr_NetworkUtils_ANetData_TranerData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_TranerData__o* __this, int32_t transportType, const MethodInfo_26AE990* method);
+int32_t Dpr_NetworkUtils_ANetData_TranerData___SendUnReliableData (Dpr_NetworkUtils_ANetData_TranerData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_26AEA30* method);
+int32_t Dpr_NetworkUtils_ANetData_TranerData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_TranerData__o* __this, int32_t transportType, const MethodInfo_26AEAD0* method);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_TranerData___CreateReliableData (Dpr_NetworkUtils_ANetData_TranerData__o* __this, const MethodInfo_26AEB60* method);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_TranerData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_TranerData__o* __this, const MethodInfo_26AEC20* method);
+void Dpr_NetworkUtils_ANetData_TranerData___WriteSendData (Dpr_NetworkUtils_ANetData_TranerData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_26AECE0* method);
+System_Byte_array* Dpr_NetworkUtils_ANetData_TranerData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_TranerData__o* __this, const MethodInfo_26AED30* method);
+void Dpr_NetworkUtils_ANetData_TranerData___ReceivePacket (Dpr_NetworkUtils_ANetData_TranerData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_26AEF50* method);
+void Dpr_NetworkUtils_ANetData_TranerData___ReadRecieveData (Dpr_NetworkUtils_ANetData_TranerData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_26AEFA0* method);
+Dpr_NetworkUtils_TranerData_o Dpr_NetworkUtils_ANetData_TranerData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_TranerData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_26AF010* method);
+void Dpr_NetworkUtils_ANetData_TranerData____cctor (const MethodInfo_26AF330* method);

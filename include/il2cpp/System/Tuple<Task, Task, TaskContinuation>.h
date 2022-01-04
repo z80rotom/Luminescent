@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Threading_Tasks_Task_o* System_Tuple_Task__Task__TaskContinuation___get_Item1 (System_Tuple_Task__Task__TaskContinuation__o* __this, const MethodInfo_29A8EF0* method);
+System_Threading_Tasks_Task_o* System_Tuple_Task__Task__TaskContinuation___get_Item2 (System_Tuple_Task__Task__TaskContinuation__o* __this, const MethodInfo_29A8F00* method);
+System_Threading_Tasks_TaskContinuation_o* System_Tuple_Task__Task__TaskContinuation___get_Item3 (System_Tuple_Task__Task__TaskContinuation__o* __this, const MethodInfo_29A8F10* method);
+void System_Tuple_Task__Task__TaskContinuation____ctor (System_Tuple_Task__Task__TaskContinuation__o* __this, System_Threading_Tasks_Task_o* item1, System_Threading_Tasks_Task_o* item2, System_Threading_Tasks_TaskContinuation_o* item3, const MethodInfo_29A8F20* method);

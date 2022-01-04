@@ -1,0 +1,13 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t UnityEngine_UIElements_StyleEnum_Int32Enum___get_value (UnityEngine_UIElements_StyleEnum_Int32Enum__o __this, const MethodInfo_2CD4F60* method);
+void UnityEngine_UIElements_StyleEnum_Int32Enum___set_specificity (UnityEngine_UIElements_StyleEnum_Int32Enum__o __this, int32_t value, const MethodInfo_2CD4F80* method);
+int32_t UnityEngine_UIElements_StyleEnum_Int32Enum___get_keyword (UnityEngine_UIElements_StyleEnum_Int32Enum__o __this, const MethodInfo_2CD4F90* method);
+void UnityEngine_UIElements_StyleEnum_Int32Enum____ctor (UnityEngine_UIElements_StyleEnum_Int32Enum__o __this, int32_t v, int32_t keyword, const MethodInfo_2CD4FA0* method);
+bool UnityEngine_UIElements_StyleEnum_Int32Enum___op_Equality (UnityEngine_UIElements_StyleEnum_T__o lhs, UnityEngine_UIElements_StyleEnum_T__o rhs, const MethodInfo_2CD4FB0* method);
+bool UnityEngine_UIElements_StyleEnum_Int32Enum___Equals (UnityEngine_UIElements_StyleEnum_Int32Enum__o __this, UnityEngine_UIElements_StyleEnum_T__o other, const MethodInfo_2CD50A0* method);
+bool UnityEngine_UIElements_StyleEnum_Int32Enum___Equals (UnityEngine_UIElements_StyleEnum_Int32Enum__o __this, Il2CppObject* obj, const MethodInfo_2CD5140* method);
+int32_t UnityEngine_UIElements_StyleEnum_Int32Enum___GetHashCode (UnityEngine_UIElements_StyleEnum_Int32Enum__o __this, const MethodInfo_2CD52D0* method);
+System_String_o* UnityEngine_UIElements_StyleEnum_Int32Enum___ToString (UnityEngine_UIElements_StyleEnum_Int32Enum__o __this, const MethodInfo_2CD53C0* method);

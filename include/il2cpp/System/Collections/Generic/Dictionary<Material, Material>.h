@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_Material__Material____ctor (System_Collections_Generic_Dictionary_Material__Material__o* __this, const MethodInfo_29D3C00* method);
+void System_Collections_Generic_Dictionary_Material__Material___Add (System_Collections_Generic_Dictionary_Material__Material__o* __this, UnityEngine_Material_o* key, UnityEngine_Material_o* value, const MethodInfo_29D40C0* method);
+bool System_Collections_Generic_Dictionary_Material__Material___TryGetValue (System_Collections_Generic_Dictionary_Material__Material__o* __this, UnityEngine_Material_o* key, UnityEngine_Material_o** value, const MethodInfo_29D5E10* method);

@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_MessageEnumData_MsgLangId__string____ctor (System_Collections_Generic_Dictionary_MessageEnumData_MsgLangId__string__o* __this, const MethodInfo_2A50550* method);
+System_String_o* System_Collections_Generic_Dictionary_MessageEnumData_MsgLangId__string___get_Item (System_Collections_Generic_Dictionary_MessageEnumData_MsgLangId__string__o* __this, int32_t key, const MethodInfo_2A50920* method);
+void System_Collections_Generic_Dictionary_MessageEnumData_MsgLangId__string___Add (System_Collections_Generic_Dictionary_MessageEnumData_MsgLangId__string__o* __this, int32_t key, System_String_o* value, const MethodInfo_2A50A10* method);

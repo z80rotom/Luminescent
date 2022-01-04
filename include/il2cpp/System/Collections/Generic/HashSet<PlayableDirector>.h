@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_HashSet_PlayableDirector____ctor (System_Collections_Generic_HashSet_PlayableDirector__o* __this, const MethodInfo_2A2FE40* method);
+bool System_Collections_Generic_HashSet_PlayableDirector___Contains (System_Collections_Generic_HashSet_PlayableDirector__o* __this, UnityEngine_Playables_PlayableDirector_o* item, const MethodInfo_2A304B0* method);
+bool System_Collections_Generic_HashSet_PlayableDirector___Remove (System_Collections_Generic_HashSet_PlayableDirector__o* __this, UnityEngine_Playables_PlayableDirector_o* item, const MethodInfo_2A30640* method);
+bool System_Collections_Generic_HashSet_PlayableDirector___Add (System_Collections_Generic_HashSet_PlayableDirector__o* __this, UnityEngine_Playables_PlayableDirector_o* item, const MethodInfo_2A30F50* method);

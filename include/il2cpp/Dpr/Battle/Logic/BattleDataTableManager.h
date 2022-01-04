@@ -1,0 +1,27 @@
+#pragma once
+
+#include "il2cpp.h"
+
+Dpr_Battle_Logic_BattleDataTableManager_o* Dpr_Battle_Logic_BattleDataTableManager__get_Instance (const MethodInfo* method);
+XLSXContent_BattleDataTable_o* Dpr_Battle_Logic_BattleDataTableManager__get_BattleDataTable (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager__set_BattleDataTable (Dpr_Battle_Logic_BattleDataTableManager_o* __this, XLSXContent_BattleDataTable_o* value, const MethodInfo* method);
+XLSXContent_BattleDefaultPlacementData_o* Dpr_Battle_Logic_BattleDataTableManager__get_BattleDefaultPlacementData (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager__set_BattleDefaultPlacementData (Dpr_Battle_Logic_BattleDataTableManager_o* __this, XLSXContent_BattleDefaultPlacementData_o* value, const MethodInfo* method);
+XLSXContent_BattleWaitCameraData_o* Dpr_Battle_Logic_BattleDataTableManager__get_BattleWaitCameraData (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager__set_BattleWaitCameraData (Dpr_Battle_Logic_BattleDataTableManager_o* __this, XLSXContent_BattleWaitCameraData_o* value, const MethodInfo* method);
+XLSXContent_BattleSetupEffectLots_o* Dpr_Battle_Logic_BattleDataTableManager__get_BattleSetupEffectLots (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager__set_BattleSetupEffectLots (Dpr_Battle_Logic_BattleDataTableManager_o* __this, XLSXContent_BattleSetupEffectLots_o* value, const MethodInfo* method);
+bool Dpr_Battle_Logic_BattleDataTableManager__get_IsInitialized (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager__set_IsInitialized (Dpr_Battle_Logic_BattleDataTableManager_o* __this, bool value, const MethodInfo* method);
+bool Dpr_Battle_Logic_BattleDataTableManager__get_IsABAppended (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager__set_IsABAppended (Dpr_Battle_Logic_BattleDataTableManager_o* __this, bool value, const MethodInfo* method);
+bool Dpr_Battle_Logic_BattleDataTableManager__AppendAssetBundleRequests (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+bool Dpr_Battle_Logic_BattleDataTableManager__OnDispatchRequests (Dpr_Battle_Logic_BattleDataTableManager_o* __this, int32_t eventType, System_String_o* name, UnityEngine_Object_o* asset, const MethodInfo* method);
+bool Dpr_Battle_Logic_BattleDataTableManager__get_IsLoaded (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager__OnAfterLoadAll (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager__OnAfterLoadAll_Update (float deltaTime, const MethodInfo* method);
+XLSXContent_BattleSetupEffectLots_SheetArenaEffTable_o* Dpr_Battle_Logic_BattleDataTableManager__GetArenaEff (int32_t arenaID, const MethodInfo* method);
+XLSXContent_BattleSetupEffectLots_SheetAttEffTable_o* Dpr_Battle_Logic_BattleDataTableManager__GetAttEff (int32_t mapAttributeEx, int32_t arenaID, const MethodInfo* method);
+XLSXContent_BattleSetupEffectLots_SheetRuleEffTable_o* Dpr_Battle_Logic_BattleDataTableManager__GetRuleEff (int32_t lot, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager___ctor (Dpr_Battle_Logic_BattleDataTableManager_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_BattleDataTableManager___cctor (const MethodInfo* method);

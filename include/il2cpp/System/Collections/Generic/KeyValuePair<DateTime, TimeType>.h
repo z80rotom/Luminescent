@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_KeyValuePair_DateTime__TimeType____ctor (System_Collections_Generic_KeyValuePair_DateTime__TimeType__o __this, System_DateTime_o key, System_TimeType_o* value, const MethodInfo_299CC70* method);
+System_DateTime_o System_Collections_Generic_KeyValuePair_DateTime__TimeType___get_Key (System_Collections_Generic_KeyValuePair_DateTime__TimeType__o __this, const MethodInfo_299CC80* method);
+System_TimeType_o* System_Collections_Generic_KeyValuePair_DateTime__TimeType___get_Value (System_Collections_Generic_KeyValuePair_DateTime__TimeType__o __this, const MethodInfo_299CC90* method);

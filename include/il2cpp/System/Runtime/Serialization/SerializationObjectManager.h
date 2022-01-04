@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Serialization_SerializationObjectManager___ctor (System_Runtime_Serialization_SerializationObjectManager_o* __this, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
+void System_Runtime_Serialization_SerializationObjectManager__RegisterObject (System_Runtime_Serialization_SerializationObjectManager_o* __this, Il2CppObject* obj, const MethodInfo* method);
+void System_Runtime_Serialization_SerializationObjectManager__RaiseOnSerializedEvent (System_Runtime_Serialization_SerializationObjectManager_o* __this, const MethodInfo* method);
+void System_Runtime_Serialization_SerializationObjectManager__AddOnSerialized (System_Runtime_Serialization_SerializationObjectManager_o* __this, Il2CppObject* obj, const MethodInfo* method);

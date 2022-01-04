@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_HashSet_BtlvSound__o* System_Collections_Generic_KeyValuePair_int__HashSet_BtlvSound____get_Value (System_Collections_Generic_KeyValuePair_int__HashSet_BtlvSound___o __this, const MethodInfo_299D5D0* method);

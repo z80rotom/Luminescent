@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_SecretBase_SelectWindow_OptionsItem__string___Init (Dpr_SecretBase_SelectWindow_OptionsItem__string__o* __this, const MethodInfo_26B4430* method);
+int32_t Dpr_SecretBase_SelectWindow_OptionsItem__string___BindItem (Dpr_SecretBase_SelectWindow_OptionsItem__string__o* __this, System_String_o* data, Dpr_SecretBase_OptionsItem_o* item, const MethodInfo_26B4580* method);
+int32_t Dpr_SecretBase_SelectWindow_OptionsItem__string___AddItem (Dpr_SecretBase_SelectWindow_OptionsItem__string__o* __this, System_String_o* data, const MethodInfo_26B4670* method);
+void Dpr_SecretBase_SelectWindow_OptionsItem__string___ClearItem (Dpr_SecretBase_SelectWindow_OptionsItem__string__o* __this, const MethodInfo_26B46F0* method);
+bool Dpr_SecretBase_SelectWindow_OptionsItem__string___SelectNext (Dpr_SecretBase_SelectWindow_OptionsItem__string__o* __this, const MethodInfo_26B4790* method);
+bool Dpr_SecretBase_SelectWindow_OptionsItem__string___SelectPrev (Dpr_SecretBase_SelectWindow_OptionsItem__string__o* __this, const MethodInfo_26B4810* method);
+void Dpr_SecretBase_SelectWindow_OptionsItem__string____ctor (Dpr_SecretBase_SelectWindow_OptionsItem__string__o* __this, const MethodInfo_26B4A20* method);

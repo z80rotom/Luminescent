@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Enumerable_Iterator_object____ctor (System_Linq_Enumerable_Iterator_object__o* __this, const MethodInfo_29751A0* method);
+Il2CppObject* System_Linq_Enumerable_Iterator_object___get_Current (System_Linq_Enumerable_Iterator_object__o* __this, const MethodInfo_29751E0* method);
+void System_Linq_Enumerable_Iterator_object___Dispose (System_Linq_Enumerable_Iterator_object__o* __this, const MethodInfo_29751F0* method);
+System_Collections_Generic_IEnumerator_TSource__o* System_Linq_Enumerable_Iterator_object___GetEnumerator (System_Linq_Enumerable_Iterator_object__o* __this, const MethodInfo_2975200* method);
+Il2CppObject* System_Linq_Enumerable_Iterator_object___System_Collections_IEnumerator_get_Current (System_Linq_Enumerable_Iterator_object__o* __this, const MethodInfo_2975260* method);
+System_Collections_IEnumerator_o* System_Linq_Enumerable_Iterator_object___System_Collections_IEnumerable_GetEnumerator (System_Linq_Enumerable_Iterator_object__o* __this, const MethodInfo_2975280* method);
+void System_Linq_Enumerable_Iterator_object___System_Collections_IEnumerator_Reset (System_Linq_Enumerable_Iterator_object__o* __this, const MethodInfo_29752A0* method);

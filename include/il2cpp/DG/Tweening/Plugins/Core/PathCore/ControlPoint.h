@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void DG_Tweening_Plugins_Core_PathCore_ControlPoint___ctor (DG_Tweening_Plugins_Core_PathCore_ControlPoint_o __this, UnityEngine_Vector3_o a, UnityEngine_Vector3_o b, const MethodInfo* method);
+DG_Tweening_Plugins_Core_PathCore_ControlPoint_o DG_Tweening_Plugins_Core_PathCore_ControlPoint__op_Addition (DG_Tweening_Plugins_Core_PathCore_ControlPoint_o cp, UnityEngine_Vector3_o v, const MethodInfo* method);
+System_String_o* DG_Tweening_Plugins_Core_PathCore_ControlPoint__ToString (DG_Tweening_Plugins_Core_PathCore_ControlPoint_o __this, const MethodInfo* method);

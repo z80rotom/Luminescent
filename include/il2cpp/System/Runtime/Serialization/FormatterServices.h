@@ -1,0 +1,24 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Serialization_FormatterServices___cctor (const MethodInfo* method);
+System_Reflection_MemberInfo_array* System_Runtime_Serialization_FormatterServices__GetSerializableMembers (System_RuntimeType_o* type, const MethodInfo* method);
+bool System_Runtime_Serialization_FormatterServices__CheckSerializable (System_RuntimeType_o* type, const MethodInfo* method);
+System_Reflection_MemberInfo_array* System_Runtime_Serialization_FormatterServices__InternalGetSerializableMembers (System_RuntimeType_o* type, const MethodInfo* method);
+bool System_Runtime_Serialization_FormatterServices__GetParentTypes (System_RuntimeType_o* parentType, System_RuntimeType_array** parentTypes, int32_t* parentTypeCount, const MethodInfo* method);
+System_Reflection_MemberInfo_array* System_Runtime_Serialization_FormatterServices__GetSerializableMembers (System_Type_o* type, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
+Il2CppObject* System_Runtime_Serialization_FormatterServices__GetUninitializedObject (System_Type_o* type, const MethodInfo* method);
+Il2CppObject* System_Runtime_Serialization_FormatterServices__nativeGetUninitializedObject (System_RuntimeType_o* type, const MethodInfo* method);
+bool System_Runtime_Serialization_FormatterServices__GetEnableUnsafeTypeForwarders (const MethodInfo* method);
+bool System_Runtime_Serialization_FormatterServices__UnsafeTypeForwardersIsEnabled (const MethodInfo* method);
+void System_Runtime_Serialization_FormatterServices__SerializationSetValue (System_Reflection_MemberInfo_o* fi, Il2CppObject* target, Il2CppObject* value, const MethodInfo* method);
+Il2CppObject* System_Runtime_Serialization_FormatterServices__PopulateObjectMembers (Il2CppObject* obj, System_Reflection_MemberInfo_array* members, System_Object_array* data, const MethodInfo* method);
+System_Object_array* System_Runtime_Serialization_FormatterServices__GetObjectData (Il2CppObject* obj, System_Reflection_MemberInfo_array* members, const MethodInfo* method);
+System_Type_o* System_Runtime_Serialization_FormatterServices__GetTypeFromAssembly (System_Reflection_Assembly_o* assem, System_String_o* name, const MethodInfo* method);
+System_Reflection_Assembly_o* System_Runtime_Serialization_FormatterServices__LoadAssemblyFromString (System_String_o* assemblyName, const MethodInfo* method);
+System_Reflection_Assembly_o* System_Runtime_Serialization_FormatterServices__LoadAssemblyFromStringNoThrow (System_String_o* assemblyName, const MethodInfo* method);
+System_String_o* System_Runtime_Serialization_FormatterServices__GetClrAssemblyName (System_Type_o* type, bool* hasTypeForwardedFrom, const MethodInfo* method);
+System_String_o* System_Runtime_Serialization_FormatterServices__GetClrTypeFullName (System_Type_o* type, const MethodInfo* method);
+System_String_o* System_Runtime_Serialization_FormatterServices__GetClrTypeFullNameForArray (System_Type_o* type, const MethodInfo* method);
+System_String_o* System_Runtime_Serialization_FormatterServices__GetClrTypeFullNameForNonArrayTypes (System_Type_o* type, const MethodInfo* method);

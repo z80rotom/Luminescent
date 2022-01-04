@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool System_Collections_Generic_ObjectEqualityComparer_Int32Enum___Equals (System_Collections_Generic_ObjectEqualityComparer_Int32Enum__o* __this, int32_t x, int32_t y, const MethodInfo_29233F0* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Int32Enum___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_Int32Enum__o* __this, int32_t obj, const MethodInfo_2923490* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Int32Enum___IndexOf (System_Collections_Generic_ObjectEqualityComparer_Int32Enum__o* __this, System_Int32Enum_array* array, int32_t value, int32_t startIndex, int32_t count, const MethodInfo_29234F0* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Int32Enum___LastIndexOf (System_Collections_Generic_ObjectEqualityComparer_Int32Enum__o* __this, System_Int32Enum_array* array, int32_t value, int32_t startIndex, int32_t count, const MethodInfo_2923620* method);
+bool System_Collections_Generic_ObjectEqualityComparer_Int32Enum___Equals (System_Collections_Generic_ObjectEqualityComparer_Int32Enum__o* __this, Il2CppObject* obj, const MethodInfo_2923740* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Int32Enum___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_Int32Enum__o* __this, const MethodInfo_2923790* method);
+void System_Collections_Generic_ObjectEqualityComparer_Int32Enum____ctor (System_Collections_Generic_ObjectEqualityComparer_Int32Enum__o* __this, const MethodInfo_29237C0* method);

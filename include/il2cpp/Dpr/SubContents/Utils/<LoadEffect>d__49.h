@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_SubContents_Utils__LoadEffect_d__49___ctor (Dpr_SubContents_Utils__LoadEffect_d__49_o* __this, int32_t __1__state, const MethodInfo* method);
+void Dpr_SubContents_Utils__LoadEffect_d__49__System_IDisposable_Dispose (Dpr_SubContents_Utils__LoadEffect_d__49_o* __this, const MethodInfo* method);
+bool Dpr_SubContents_Utils__LoadEffect_d__49__MoveNext (Dpr_SubContents_Utils__LoadEffect_d__49_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_SubContents_Utils__LoadEffect_d__49__System_Collections_Generic_IEnumerator_System_Object__get_Current (Dpr_SubContents_Utils__LoadEffect_d__49_o* __this, const MethodInfo* method);
+void Dpr_SubContents_Utils__LoadEffect_d__49__System_Collections_IEnumerator_Reset (Dpr_SubContents_Utils__LoadEffect_d__49_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_SubContents_Utils__LoadEffect_d__49__System_Collections_IEnumerator_get_Current (Dpr_SubContents_Utils__LoadEffect_d__49_o* __this, const MethodInfo* method);

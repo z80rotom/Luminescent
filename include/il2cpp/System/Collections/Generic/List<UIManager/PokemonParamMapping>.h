@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_UIManager_PokemonParamMapping____ctor (System_Collections_Generic_List_UIManager_PokemonParamMapping__o* __this, const MethodInfo_2BAD0F0* method);
+void System_Collections_Generic_List_UIManager_PokemonParamMapping___Add (System_Collections_Generic_List_UIManager_PokemonParamMapping__o* __this, Dpr_UI_UIManager_PokemonParamMapping_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_UIManager_PokemonParamMapping___Clear (System_Collections_Generic_List_UIManager_PokemonParamMapping__o* __this, const MethodInfo_2BAE0A0* method);
+int32_t System_Collections_Generic_List_UIManager_PokemonParamMapping___FindIndex (System_Collections_Generic_List_UIManager_PokemonParamMapping__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE780* method);

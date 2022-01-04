@@ -1,0 +1,13 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_RaidBoss_Reinforce___ctor (Dpr_Battle_Logic_Section_RaidBoss_Reinforce_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Reinforce__Execute (Dpr_Battle_Logic_Section_RaidBoss_Reinforce_o* __this, Dpr_Battle_Logic_Section_RaidBoss_Reinforce_Result_o* pResult, Dpr_Battle_Logic_Section_RaidBoss_Reinforce_Description_o** description, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_RaidBoss_Reinforce__canReinforce (Dpr_Battle_Logic_Section_RaidBoss_Reinforce_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Reinforce__cureSick (Dpr_Battle_Logic_Section_RaidBoss_Reinforce_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Reinforce__recoverRank (Dpr_Battle_Logic_Section_RaidBoss_Reinforce_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Reinforce__setNextTurn (Dpr_Battle_Logic_Section_RaidBoss_Reinforce_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Reinforce__registerHandler (Dpr_Battle_Logic_Section_RaidBoss_Reinforce_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Reinforce__decGWallRepairCount (Dpr_Battle_Logic_Section_RaidBoss_Reinforce_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Reinforce__resetPlayersRank (Dpr_Battle_Logic_Section_RaidBoss_Reinforce_o* __this, const MethodInfo* method);

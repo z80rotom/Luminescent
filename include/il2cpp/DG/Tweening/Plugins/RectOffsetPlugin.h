@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void DG_Tweening_Plugins_RectOffsetPlugin__Reset (DG_Tweening_Plugins_RectOffsetPlugin_o* __this, DG_Tweening_Core_TweenerCore_RectOffset__RectOffset__NoOptions__o* t, const MethodInfo* method);
+void DG_Tweening_Plugins_RectOffsetPlugin__SetFrom (DG_Tweening_Plugins_RectOffsetPlugin_o* __this, DG_Tweening_Core_TweenerCore_RectOffset__RectOffset__NoOptions__o* t, bool isRelative, const MethodInfo* method);
+void DG_Tweening_Plugins_RectOffsetPlugin__SetFrom (DG_Tweening_Plugins_RectOffsetPlugin_o* __this, DG_Tweening_Core_TweenerCore_RectOffset__RectOffset__NoOptions__o* t, UnityEngine_RectOffset_o* fromValue, bool setImmediately, const MethodInfo* method);
+UnityEngine_RectOffset_o* DG_Tweening_Plugins_RectOffsetPlugin__ConvertToStartValue (DG_Tweening_Plugins_RectOffsetPlugin_o* __this, DG_Tweening_Core_TweenerCore_RectOffset__RectOffset__NoOptions__o* t, UnityEngine_RectOffset_o* value, const MethodInfo* method);
+void DG_Tweening_Plugins_RectOffsetPlugin__SetRelativeEndValue (DG_Tweening_Plugins_RectOffsetPlugin_o* __this, DG_Tweening_Core_TweenerCore_RectOffset__RectOffset__NoOptions__o* t, const MethodInfo* method);
+void DG_Tweening_Plugins_RectOffsetPlugin__SetChangeValue (DG_Tweening_Plugins_RectOffsetPlugin_o* __this, DG_Tweening_Core_TweenerCore_RectOffset__RectOffset__NoOptions__o* t, const MethodInfo* method);
+float DG_Tweening_Plugins_RectOffsetPlugin__GetSpeedBasedDuration (DG_Tweening_Plugins_RectOffsetPlugin_o* __this, DG_Tweening_Plugins_Options_NoOptions_o options, float unitsXSecond, UnityEngine_RectOffset_o* changeValue, const MethodInfo* method);
+void DG_Tweening_Plugins_RectOffsetPlugin__EvaluateAndApply (DG_Tweening_Plugins_RectOffsetPlugin_o* __this, DG_Tweening_Plugins_Options_NoOptions_o options, DG_Tweening_Tween_o* t, bool isRelative, DG_Tweening_Core_DOGetter_RectOffset__o* getter, DG_Tweening_Core_DOSetter_RectOffset__o* setter, float elapsed, UnityEngine_RectOffset_o* startValue, UnityEngine_RectOffset_o* changeValue, float duration, bool usingInversePosition, int32_t updateNotice, const MethodInfo* method);
+void DG_Tweening_Plugins_RectOffsetPlugin___ctor (DG_Tweening_Plugins_RectOffsetPlugin_o* __this, const MethodInfo* method);
+void DG_Tweening_Plugins_RectOffsetPlugin___cctor (const MethodInfo* method);

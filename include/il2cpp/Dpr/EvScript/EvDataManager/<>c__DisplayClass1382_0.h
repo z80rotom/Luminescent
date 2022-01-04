@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_EvScript_EvDataManager___c__DisplayClass1382_0___ctor (Dpr_EvScript_EvDataManager___c__DisplayClass1382_0_o* __this, const MethodInfo* method);
+void Dpr_EvScript_EvDataManager___c__DisplayClass1382_0___EvCmdRotomuFormCheck_b__0 (Dpr_EvScript_EvDataManager___c__DisplayClass1382_0_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);
+int32_t Dpr_EvScript_EvDataManager___c__DisplayClass1382_0___EvCmdRotomuFormCheck_g__GetRotomuFormBitFlag_1 (Dpr_EvScript_EvDataManager___c__DisplayClass1382_0_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);

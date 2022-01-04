@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_Level2Map____ctor (System_Collections_Generic_List_Level2Map__o* __this, const MethodInfo_2BAD0F0* method);
+void System_Collections_Generic_List_Level2Map___Add (System_Collections_Generic_List_Level2Map__o* __this, Mono_Globalization_Unicode_Level2Map_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_Level2Map___Sort (System_Collections_Generic_List_Level2Map__o* __this, System_Comparison_T__o* comparison, const MethodInfo_2BAFD20* method);
+Mono_Globalization_Unicode_Level2Map_array* System_Collections_Generic_List_Level2Map___ToArray (System_Collections_Generic_List_Level2Map__o* __this, const MethodInfo_2BAFDA0* method);

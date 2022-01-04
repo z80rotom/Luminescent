@@ -1,0 +1,53 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t UnionTradeManager__get_tradeTargetIndex (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__set_tradeTargetIndex (UnionTradeManager_o* __this, int32_t value, const MethodInfo* method);
+bool UnionTradeManager__get_isLoadingBox (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__set_isLoadingBox (UnionTradeManager_o* __this, bool value, const MethodInfo* method);
+void UnionTradeManager__Init (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__OnUpdate (UnionTradeManager_o* __this, float deltaTime, const MethodInfo* method);
+void UnionTradeManager__SetTargetTranerParam (UnionTradeManager_o* __this, uint32_t id, System_String_o* name, int32_t cassetVersion, int32_t langId, const MethodInfo* method);
+void UnionTradeManager__SetIsError (UnionTradeManager_o* __this, bool error, const MethodInfo* method);
+bool UnionTradeManager__GetIsError (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__SetWaitMessage (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__CreateTradeSelectModel (UnionTradeManager_o* __this, System_Action_o* reStartFunc, System_Action_o* networkErrorFunc, System_Action_o* leaveFunc, const MethodInfo* method);
+void UnionTradeManager__WaitBoxWindowComplete (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__SetBoxData (UnionTradeManager_o* __this, UnionTradeManager_BoxPokeData_o boxData, const MethodInfo* method);
+UnionTradeManager_BoxPokeData_o UnionTradeManager__GetBoxPokeData (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__Clear (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__Cancel (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__Error (UnionTradeManager_o* __this, const MethodInfo* method);
+TradeSelectPokeModel_o* UnionTradeManager__GetTradeSlectPokeModel (UnionTradeManager_o* __this, const MethodInfo* method);
+int32_t UnionTradeManager__GetCurrentState (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__NextState (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__SetCurrentState (UnionTradeManager_o* __this, int32_t state, const MethodInfo* method);
+void UnionTradeManager__SetTargetIndex (UnionTradeManager_o* __this, int32_t index, const MethodInfo* method);
+void UnionTradeManager__SetTargetConfirmPokeParam (UnionTradeManager_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);
+Pml_PokePara_PokemonParam_o* UnionTradeManager__GetTargetConfirmPokeParam (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__SetIsRecruiment (UnionTradeManager_o* __this, bool isRec, const MethodInfo* method);
+Pml_PokePara_PokemonParam_o* UnionTradeManager__GetSelectMyPokemonParam (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__SendPokeParam (UnionTradeManager_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);
+void UnionTradeManager__RecivePokeData (UnionTradeManager_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);
+void UnionTradeManager__ReciveCancelData (UnionTradeManager_o* __this, Dpr_NetworkUtils_NetDataCurrentFlowCancelData_o* data, const MethodInfo* method);
+void UnionTradeManager__ReciveTradeReadyOkData (UnionTradeManager_o* __this, Dpr_NetworkUtils_NetDataTradeReadyOkData_o* data, const MethodInfo* method);
+void UnionTradeManager__ReciveReturnSelectPoke (UnionTradeManager_o* __this, Dpr_NetworkUtils_NetDataReturnSelectData_o* data, const MethodInfo* method);
+void UnionTradeManager__ReciveTradePokeCheckOk (UnionTradeManager_o* __this, Dpr_NetworkUtils_NetDataTradePokeCheckOkData_o* data, const MethodInfo* method);
+void UnionTradeManager__SetTargetTradePoke (UnionTradeManager_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);
+void UnionTradeManager__SetSecurityTradeParam (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__SetTargetTradeDemoPoke (UnionTradeManager_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);
+void UnionTradeManager__SettingSecurityControllerParam (UnionTradeManager_o* __this, int32_t stationIndex, UnionTradeManager_BoxPokeData_o boxPokeData, const MethodInfo* method);
+void UnionTradeManager__StartOpenTradeBoxWindow (UnionTradeManager_o* __this, int32_t index, bool isFirst, const MethodInfo* method);
+void UnionTradeManager__InitPlayerState (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__OnFinishedTradeInternal (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__TradeError (UnionTradeManager_o* __this, Dpr_NetworkUtils_ErrorAppletResult_o* errorAppletResult, const MethodInfo* method);
+void UnionTradeManager__TradeSecurityError (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__TradeSelectError (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__CheckTragetNetworkError (UnionTradeManager_o* __this, int32_t targetIndex, const MethodInfo* method);
+void UnionTradeManager__OnFatalError (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__SecurtyTradeClear (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__OpenTradeCancelMsg (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__CloseBoxMenuWindow (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager__CloseStatusWindow (UnionTradeManager_o* __this, const MethodInfo* method);
+void UnionTradeManager___ctor (UnionTradeManager_o* __this, const MethodInfo* method);

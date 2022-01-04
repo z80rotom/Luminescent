@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Threading_Tasks_Task_int__array* System_Runtime_CompilerServices_AsyncTaskCache__CreateInt32Tasks (const MethodInfo* method);
+System_Threading_Tasks_Task_TResult__o* System_Runtime_CompilerServices_AsyncTaskCache__CreateCacheableTask_bool_ (bool result, const MethodInfo_2331EC0* method);
+System_Threading_Tasks_Task_TResult__o* System_Runtime_CompilerServices_AsyncTaskCache__CreateCacheableTask_int_ (int32_t result, const MethodInfo_2331F30* method);
+System_Threading_Tasks_Task_TResult__o* System_Runtime_CompilerServices_AsyncTaskCache__CreateCacheableTask_object_ (Il2CppObject* result, const MethodInfo_1EBFDB0* method);
+void System_Runtime_CompilerServices_AsyncTaskCache___cctor (const MethodInfo* method);

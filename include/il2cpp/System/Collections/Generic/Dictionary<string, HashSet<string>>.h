@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_string__HashSet_string_____ctor (System_Collections_Generic_Dictionary_string__HashSet_string___o* __this, const MethodInfo_29D3C00* method);
+void System_Collections_Generic_Dictionary_string__HashSet_string____Add (System_Collections_Generic_Dictionary_string__HashSet_string___o* __this, System_String_o* key, System_Collections_Generic_HashSet_string__o* value, const MethodInfo_29D40C0* method);
+void System_Collections_Generic_Dictionary_string__HashSet_string____Clear (System_Collections_Generic_Dictionary_string__HashSet_string___o* __this, const MethodInfo_29D4280* method);
+bool System_Collections_Generic_Dictionary_string__HashSet_string____TryGetValue (System_Collections_Generic_Dictionary_string__HashSet_string___o* __this, System_String_o* key, System_Collections_Generic_HashSet_string__o** value, const MethodInfo_29D5E10* method);

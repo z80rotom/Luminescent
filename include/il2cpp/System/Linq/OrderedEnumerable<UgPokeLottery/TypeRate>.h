@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_IEnumerator_TElement__o* System_Linq_OrderedEnumerable_UgPokeLottery_TypeRate___GetEnumerator (System_Linq_OrderedEnumerable_UgPokeLottery_TypeRate__o* __this, const MethodInfo_2869960* method);
+System_Collections_IEnumerator_o* System_Linq_OrderedEnumerable_UgPokeLottery_TypeRate___System_Collections_IEnumerable_GetEnumerator (System_Linq_OrderedEnumerable_UgPokeLottery_TypeRate__o* __this, const MethodInfo_28699E0* method);
+void System_Linq_OrderedEnumerable_UgPokeLottery_TypeRate____ctor (System_Linq_OrderedEnumerable_UgPokeLottery_TypeRate__o* __this, const MethodInfo_2869A00* method);

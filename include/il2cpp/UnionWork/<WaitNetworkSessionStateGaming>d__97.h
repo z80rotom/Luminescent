@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnionWork__WaitNetworkSessionStateGaming_d__97___ctor (UnionWork__WaitNetworkSessionStateGaming_d__97_o* __this, int32_t __1__state, const MethodInfo* method);
+void UnionWork__WaitNetworkSessionStateGaming_d__97__System_IDisposable_Dispose (UnionWork__WaitNetworkSessionStateGaming_d__97_o* __this, const MethodInfo* method);
+bool UnionWork__WaitNetworkSessionStateGaming_d__97__MoveNext (UnionWork__WaitNetworkSessionStateGaming_d__97_o* __this, const MethodInfo* method);
+Il2CppObject* UnionWork__WaitNetworkSessionStateGaming_d__97__System_Collections_Generic_IEnumerator_System_Object__get_Current (UnionWork__WaitNetworkSessionStateGaming_d__97_o* __this, const MethodInfo* method);
+void UnionWork__WaitNetworkSessionStateGaming_d__97__System_Collections_IEnumerator_Reset (UnionWork__WaitNetworkSessionStateGaming_d__97_o* __this, const MethodInfo* method);
+Il2CppObject* UnionWork__WaitNetworkSessionStateGaming_d__97__System_Collections_IEnumerator_get_Current (UnionWork__WaitNetworkSessionStateGaming_d__97_o* __this, const MethodInfo* method);

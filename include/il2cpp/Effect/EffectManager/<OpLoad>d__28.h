@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Effect_EffectManager__OpLoad_d__28___ctor (Effect_EffectManager__OpLoad_d__28_o* __this, int32_t __1__state, const MethodInfo* method);
+void Effect_EffectManager__OpLoad_d__28__System_IDisposable_Dispose (Effect_EffectManager__OpLoad_d__28_o* __this, const MethodInfo* method);
+bool Effect_EffectManager__OpLoad_d__28__MoveNext (Effect_EffectManager__OpLoad_d__28_o* __this, const MethodInfo* method);
+Il2CppObject* Effect_EffectManager__OpLoad_d__28__System_Collections_Generic_IEnumerator_System_Object__get_Current (Effect_EffectManager__OpLoad_d__28_o* __this, const MethodInfo* method);
+void Effect_EffectManager__OpLoad_d__28__System_Collections_IEnumerator_Reset (Effect_EffectManager__OpLoad_d__28_o* __this, const MethodInfo* method);
+Il2CppObject* Effect_EffectManager__OpLoad_d__28__System_Collections_IEnumerator_get_Current (Effect_EffectManager__OpLoad_d__28_o* __this, const MethodInfo* method);

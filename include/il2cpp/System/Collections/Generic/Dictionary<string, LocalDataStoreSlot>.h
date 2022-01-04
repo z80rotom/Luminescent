@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_string__LocalDataStoreSlot____ctor (System_Collections_Generic_Dictionary_string__LocalDataStoreSlot__o* __this, const MethodInfo_29D3C00* method);
+void System_Collections_Generic_Dictionary_string__LocalDataStoreSlot___Add (System_Collections_Generic_Dictionary_string__LocalDataStoreSlot__o* __this, System_String_o* key, System_LocalDataStoreSlot_o* value, const MethodInfo_29D40C0* method);
+bool System_Collections_Generic_Dictionary_string__LocalDataStoreSlot___Remove (System_Collections_Generic_Dictionary_string__LocalDataStoreSlot__o* __this, System_String_o* key, const MethodInfo_29D5AA0* method);

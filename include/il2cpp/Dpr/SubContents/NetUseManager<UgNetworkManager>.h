@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_IEnumerator_o* Dpr_SubContents_NetUseManager_UgNetworkManager___Start (Dpr_SubContents_NetUseManager_UgNetworkManager__o* __this, const MethodInfo_26B58B0* method);
+void Dpr_SubContents_NetUseManager_UgNetworkManager___SetNetData (Dpr_SubContents_NetUseManager_UgNetworkManager__o* __this, Dpr_NetworkUtils_INetData_o* netDatas, const MethodInfo_26B5930* method);
+void Dpr_SubContents_NetUseManager_UgNetworkManager___SetEnableZone (Dpr_SubContents_NetUseManager_UgNetworkManager__o* __this, int32_t mapType, const MethodInfo_26B5A70* method);
+void Dpr_SubContents_NetUseManager_UgNetworkManager___OnDestroy (Dpr_SubContents_NetUseManager_UgNetworkManager__o* __this, const MethodInfo_26B5E70* method);
+void Dpr_SubContents_NetUseManager_UgNetworkManager___RequestNetData (Dpr_SubContents_NetUseManager_UgNetworkManager__o* __this, uint8_t dataID, const MethodInfo_26B61A0* method);
+void Dpr_SubContents_NetUseManager_UgNetworkManager____ctor (Dpr_SubContents_NetUseManager_UgNetworkManager__o* __this, const MethodInfo_26B62F0* method);

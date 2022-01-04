@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_List_AkSpatialAudioListener__o* AkSpatialAudioListener_SpatialAudioListenerList__get_ListenerList (AkSpatialAudioListener_SpatialAudioListenerList_o* __this, const MethodInfo* method);
+bool AkSpatialAudioListener_SpatialAudioListenerList__Add (AkSpatialAudioListener_SpatialAudioListenerList_o* __this, AkSpatialAudioListener_o* listener, const MethodInfo* method);
+bool AkSpatialAudioListener_SpatialAudioListenerList__Remove (AkSpatialAudioListener_SpatialAudioListenerList_o* __this, AkSpatialAudioListener_o* listener, const MethodInfo* method);
+void AkSpatialAudioListener_SpatialAudioListenerList__Refresh (AkSpatialAudioListener_SpatialAudioListenerList_o* __this, const MethodInfo* method);
+void AkSpatialAudioListener_SpatialAudioListenerList___ctor (AkSpatialAudioListener_SpatialAudioListenerList_o* __this, const MethodInfo* method);

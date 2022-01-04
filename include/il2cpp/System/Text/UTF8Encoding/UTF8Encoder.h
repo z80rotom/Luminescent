@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Text_UTF8Encoding_UTF8Encoder___ctor (System_Text_UTF8Encoding_UTF8Encoder_o* __this, System_Text_UTF8Encoding_o* encoding, const MethodInfo* method);
+void System_Text_UTF8Encoding_UTF8Encoder___ctor (System_Text_UTF8Encoding_UTF8Encoder_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
+void System_Text_UTF8Encoding_UTF8Encoder__System_Runtime_Serialization_ISerializable_GetObjectData (System_Text_UTF8Encoding_UTF8Encoder_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
+void System_Text_UTF8Encoding_UTF8Encoder__Reset (System_Text_UTF8Encoding_UTF8Encoder_o* __this, const MethodInfo* method);

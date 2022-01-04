@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass9_0___ctor (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass9_0_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass9_0___CreatePositionNoList_b__3 (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass9_0_o* __this, int32_t No, const MethodInfo* method);

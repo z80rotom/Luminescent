@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int8_t System_Collections_Generic_KeyValuePair_sbyte__DataStoreRatingInitParam___get_Key (System_Collections_Generic_KeyValuePair_sbyte__DataStoreRatingInitParam__o __this, const MethodInfo_299E900* method);
+NexPlugin_DataStoreRatingInitParam_o* System_Collections_Generic_KeyValuePair_sbyte__DataStoreRatingInitParam___get_Value (System_Collections_Generic_KeyValuePair_sbyte__DataStoreRatingInitParam__o __this, const MethodInfo_299E910* method);

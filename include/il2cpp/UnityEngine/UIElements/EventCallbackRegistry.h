@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+UnityEngine_UIElements_EventCallbackList_o* UnityEngine_UIElements_EventCallbackRegistry__GetCallbackList (UnityEngine_UIElements_EventCallbackList_o* initializer, const MethodInfo* method);
+void UnityEngine_UIElements_EventCallbackRegistry__ReleaseCallbackList (UnityEngine_UIElements_EventCallbackList_o* toRelease, const MethodInfo* method);
+void UnityEngine_UIElements_EventCallbackRegistry__InvokeCallbacks (UnityEngine_UIElements_EventCallbackRegistry_o* __this, UnityEngine_UIElements_EventBase_o* evt, const MethodInfo* method);
+bool UnityEngine_UIElements_EventCallbackRegistry__HasTrickleDownHandlers (UnityEngine_UIElements_EventCallbackRegistry_o* __this, const MethodInfo* method);
+bool UnityEngine_UIElements_EventCallbackRegistry__HasBubbleHandlers (UnityEngine_UIElements_EventCallbackRegistry_o* __this, const MethodInfo* method);
+void UnityEngine_UIElements_EventCallbackRegistry___cctor (const MethodInfo* method);

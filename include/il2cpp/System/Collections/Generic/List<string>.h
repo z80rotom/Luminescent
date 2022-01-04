@@ -1,0 +1,20 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_string____ctor (System_Collections_Generic_List_string__o* __this, const MethodInfo_2BAD0F0* method);
+void System_Collections_Generic_List_string____ctor (System_Collections_Generic_List_string__o* __this, int32_t capacity, const MethodInfo_2BAD1C0* method);
+void System_Collections_Generic_List_string____ctor (System_Collections_Generic_List_string__o* __this, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo_2BAD2E0* method);
+int32_t System_Collections_Generic_List_string___get_Count (System_Collections_Generic_List_string__o* __this, const MethodInfo_2BAD9C0* method);
+System_String_o* System_Collections_Generic_List_string___get_Item (System_Collections_Generic_List_string__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
+void System_Collections_Generic_List_string___set_Item (System_Collections_Generic_List_string__o* __this, int32_t index, System_String_o* value, const MethodInfo_2BADA30* method);
+void System_Collections_Generic_List_string___Add (System_Collections_Generic_List_string__o* __this, System_String_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_string___AddRange (System_Collections_Generic_List_string__o* __this, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo_2BADF50* method);
+void System_Collections_Generic_List_string___Clear (System_Collections_Generic_List_string__o* __this, const MethodInfo_2BAE0A0* method);
+bool System_Collections_Generic_List_string___Contains (System_Collections_Generic_List_string__o* __this, System_String_o* item, const MethodInfo_2BAE0F0* method);
+void System_Collections_Generic_List_string___CopyTo (System_Collections_Generic_List_string__o* __this, int32_t index, System_String_array* array, int32_t arrayIndex, int32_t count, const MethodInfo_2BAE470* method);
+int32_t System_Collections_Generic_List_string___FindIndex (System_Collections_Generic_List_string__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE780* method);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_string___GetEnumerator (System_Collections_Generic_List_string__o* __this, const MethodInfo_2BAEA50* method);
+bool System_Collections_Generic_List_string___Remove (System_Collections_Generic_List_string__o* __this, System_String_o* item, const MethodInfo_2BAF560* method);
+void System_Collections_Generic_List_string___RemoveAt (System_Collections_Generic_List_string__o* __this, int32_t index, const MethodInfo_2BAF8D0* method);
+System_String_array* System_Collections_Generic_List_string___ToArray (System_Collections_Generic_List_string__o* __this, const MethodInfo_2BAFDA0* method);

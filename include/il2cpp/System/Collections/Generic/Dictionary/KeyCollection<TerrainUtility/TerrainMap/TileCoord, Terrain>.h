@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Dictionary_KeyCollection_Enumerator_TKey__TValue__o System_Collections_Generic_Dictionary_KeyCollection_TerrainUtility_TerrainMap_TileCoord__Terrain___GetEnumerator (System_Collections_Generic_Dictionary_KeyCollection_TerrainUtility_TerrainMap_TileCoord__Terrain__o* __this, const MethodInfo_2840AE0* method);

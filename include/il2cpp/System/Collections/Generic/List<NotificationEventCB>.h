@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_NotificationEventCB____ctor (System_Collections_Generic_List_NotificationEventCB__o* __this, const MethodInfo_2BAD0F0* method);
+void System_Collections_Generic_List_NotificationEventCB___Add (System_Collections_Generic_List_NotificationEventCB__o* __this, NexPlugin_NotificationEventCB_o* item, const MethodInfo_2BADD00* method);
+bool System_Collections_Generic_List_NotificationEventCB___Contains (System_Collections_Generic_List_NotificationEventCB__o* __this, NexPlugin_NotificationEventCB_o* item, const MethodInfo_2BAE0F0* method);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_NotificationEventCB___GetEnumerator (System_Collections_Generic_List_NotificationEventCB__o* __this, const MethodInfo_2BAEA50* method);
+bool System_Collections_Generic_List_NotificationEventCB___Remove (System_Collections_Generic_List_NotificationEventCB__o* __this, NexPlugin_NotificationEventCB_o* item, const MethodInfo_2BAF560* method);

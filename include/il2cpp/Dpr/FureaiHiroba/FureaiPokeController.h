@@ -1,0 +1,28 @@
+#pragma once
+
+#include "il2cpp.h"
+
+Dpr_FureaiHiroba_FureaiPokeModel_o* Dpr_FureaiHiroba_FureaiPokeController__get_model (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+Dpr_Field_Walking_WalkData_o* Dpr_FureaiHiroba_FureaiPokeController__get_walkModel (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+Dpr_FureaiHiroba_FureaiPokeView_o* Dpr_FureaiHiroba_FureaiPokeController__get_view (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__add_OnPlayerNear (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_Field_Walking_EventHandler_FureaiPokeModel__o* value, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__remove_OnPlayerNear (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_Field_Walking_EventHandler_FureaiPokeModel__o* value, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__add_OnWalkingKaizyo (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_Field_Walking_EventHandler_FureaiPokeModel__o* value, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__remove_OnWalkingKaizyo (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_Field_Walking_EventHandler_FureaiPokeModel__o* value, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__add_OnGotoSanpo (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_Field_Walking_EventHandler_FureaiPokeModel__o* value, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__remove_OnGotoSanpo (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_Field_Walking_EventHandler_FureaiPokeModel__o* value, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__add_OnReturn (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_Field_Walking_EventHandler_FureaiPokeModel__o* value, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__remove_OnReturn (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_Field_Walking_EventHandler_FureaiPokeModel__o* value, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__SetModel (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_Field_Walking_WalkingCharacterModel_o* model, const MethodInfo* method);
+Dpr_Field_Walking_AIModel_o* Dpr_FureaiHiroba_FureaiPokeController__CreateAIModel (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__AISetting (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__SetDebugDrawActive (Dpr_FureaiHiroba_FureaiPokeController_o* __this, bool isActive, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__ModelUpdate (Dpr_FureaiHiroba_FureaiPokeController_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__MyUpdate (Dpr_FureaiHiroba_FureaiPokeController_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__PlayerNear (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+System_Collections_Generic_List_FureaiPokeModel__o* Dpr_FureaiHiroba_FureaiPokeController__GetWalkingCharacters (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__Amity (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__Tes (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController__Tes2 (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController___ctor (Dpr_FureaiHiroba_FureaiPokeController_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiPokeController___AISetting_b__23_0 (Dpr_FureaiHiroba_FureaiPokeController_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* model, const MethodInfo* method);

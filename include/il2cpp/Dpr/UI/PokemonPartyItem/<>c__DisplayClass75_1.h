@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UI_PokemonPartyItem___c__DisplayClass75_1___ctor (Dpr_UI_PokemonPartyItem___c__DisplayClass75_1_o* __this, const MethodInfo* method);
+void Dpr_UI_PokemonPartyItem___c__DisplayClass75_1___FormChange_g__Complete_1 (Dpr_UI_PokemonPartyItem___c__DisplayClass75_1_o* __this, const MethodInfo* method);
+void Dpr_UI_PokemonPartyItem___c__DisplayClass75_1___FormChange_b__2 (Dpr_UI_PokemonPartyItem___c__DisplayClass75_1_o* __this, Effect_EffectInstance_o* instance, const MethodInfo* method);
+void Dpr_UI_PokemonPartyItem___c__DisplayClass75_1___FormChange_b__3 (Dpr_UI_PokemonPartyItem___c__DisplayClass75_1_o* __this, Audio_AudioInstance_o* __, const MethodInfo* method);

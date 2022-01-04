@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_HashSet_Text____ctor (System_Collections_Generic_HashSet_Text__o* __this, const MethodInfo_2A2FE40* method);
+bool System_Collections_Generic_HashSet_Text___Remove (System_Collections_Generic_HashSet_Text__o* __this, UnityEngine_UI_Text_o* item, const MethodInfo_2A30640* method);
+int32_t System_Collections_Generic_HashSet_Text___get_Count (System_Collections_Generic_HashSet_Text__o* __this, const MethodInfo_2A308D0* method);
+System_Collections_Generic_HashSet_Enumerator_T__o System_Collections_Generic_HashSet_Text___GetEnumerator (System_Collections_Generic_HashSet_Text__o* __this, const MethodInfo_2A308F0* method);
+bool System_Collections_Generic_HashSet_Text___Add (System_Collections_Generic_HashSet_Text__o* __this, UnityEngine_UI_Text_o* item, const MethodInfo_2A30F50* method);

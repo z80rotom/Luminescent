@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_GlyphRect___Compare (System_Collections_Generic_ObjectComparer_GlyphRect__o* __this, UnityEngine_TextCore_GlyphRect_o x, UnityEngine_TextCore_GlyphRect_o y, const MethodInfo_28BCEB0* method);
+bool System_Collections_Generic_ObjectComparer_GlyphRect___Equals (System_Collections_Generic_ObjectComparer_GlyphRect__o* __this, Il2CppObject* obj, const MethodInfo_28BCFC0* method);
+int32_t System_Collections_Generic_ObjectComparer_GlyphRect___GetHashCode (System_Collections_Generic_ObjectComparer_GlyphRect__o* __this, const MethodInfo_28BD010* method);
+void System_Collections_Generic_ObjectComparer_GlyphRect____ctor (System_Collections_Generic_ObjectComparer_GlyphRect__o* __this, const MethodInfo_28BD040* method);

@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void SmartPoint_AssetAssistant_AssetBundleDownloadManifest___c__DisplayClass36_0___ctor (SmartPoint_AssetAssistant_AssetBundleDownloadManifest___c__DisplayClass36_0_o* __this, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_AssetBundleDownloadManifest___c__DisplayClass36_0___GetExists_b__0 (SmartPoint_AssetAssistant_AssetBundleDownloadManifest___c__DisplayClass36_0_o* __this, SmartPoint_AssetAssistant_AssetBundleRecord_o* x, const MethodInfo* method);

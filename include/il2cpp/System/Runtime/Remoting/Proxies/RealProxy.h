@@ -1,0 +1,20 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Remoting_Proxies_RealProxy___ctor (System_Runtime_Remoting_Proxies_RealProxy_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_Proxies_RealProxy___ctor (System_Runtime_Remoting_Proxies_RealProxy_o* __this, System_Type_o* classToProxy, const MethodInfo* method);
+void System_Runtime_Remoting_Proxies_RealProxy___ctor (System_Runtime_Remoting_Proxies_RealProxy_o* __this, System_Type_o* classToProxy, System_Runtime_Remoting_ClientIdentity_o* identity, const MethodInfo* method);
+void System_Runtime_Remoting_Proxies_RealProxy___ctor (System_Runtime_Remoting_Proxies_RealProxy_o* __this, System_Type_o* classToProxy, intptr_t stub, Il2CppObject* stubData, const MethodInfo* method);
+System_Type_o* System_Runtime_Remoting_Proxies_RealProxy__InternalGetProxyType (Il2CppObject* transparentProxy, const MethodInfo* method);
+System_Type_o* System_Runtime_Remoting_Proxies_RealProxy__GetProxiedType (System_Runtime_Remoting_Proxies_RealProxy_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_Proxies_RealProxy__GetObjectData (System_Runtime_Remoting_Proxies_RealProxy_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
+System_Runtime_Remoting_Identity_o* System_Runtime_Remoting_Proxies_RealProxy__get_ObjectIdentity (System_Runtime_Remoting_Proxies_RealProxy_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_Proxies_RealProxy__set_ObjectIdentity (System_Runtime_Remoting_Proxies_RealProxy_o* __this, System_Runtime_Remoting_Identity_o* value, const MethodInfo* method);
+Il2CppObject* System_Runtime_Remoting_Proxies_RealProxy__PrivateInvoke (System_Runtime_Remoting_Proxies_RealProxy_o* rp, System_Runtime_Remoting_Messaging_IMessage_o* msg, System_Exception_o** exc, System_Object_array** out_args, const MethodInfo* method);
+Il2CppObject* System_Runtime_Remoting_Proxies_RealProxy__InternalGetTransparentProxy (System_Runtime_Remoting_Proxies_RealProxy_o* __this, System_String_o* className, const MethodInfo* method);
+Il2CppObject* System_Runtime_Remoting_Proxies_RealProxy__GetTransparentProxy (System_Runtime_Remoting_Proxies_RealProxy_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_Proxies_RealProxy__AttachServer (System_Runtime_Remoting_Proxies_RealProxy_o* __this, System_MarshalByRefObject_o* s, const MethodInfo* method);
+void System_Runtime_Remoting_Proxies_RealProxy__SetTargetDomain (System_Runtime_Remoting_Proxies_RealProxy_o* __this, int32_t domainId, const MethodInfo* method);
+Il2CppObject* System_Runtime_Remoting_Proxies_RealProxy__GetAppDomainTarget (System_Runtime_Remoting_Proxies_RealProxy_o* __this, const MethodInfo* method);
+System_Object_array* System_Runtime_Remoting_Proxies_RealProxy__ProcessResponse (System_Runtime_Remoting_Messaging_IMethodReturnMessage_o* mrm, System_Runtime_Remoting_Messaging_MonoMethodMessage_o* call, const MethodInfo* method);

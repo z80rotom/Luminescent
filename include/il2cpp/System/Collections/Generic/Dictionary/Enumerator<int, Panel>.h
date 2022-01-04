@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool System_Collections_Generic_Dictionary_Enumerator_int__Panel___MoveNext (System_Collections_Generic_Dictionary_Enumerator_int__Panel__o __this, const MethodInfo_2636510* method);
+System_Collections_Generic_KeyValuePair_TKey__TValue__o System_Collections_Generic_Dictionary_Enumerator_int__Panel___get_Current (System_Collections_Generic_Dictionary_Enumerator_int__Panel__o __this, const MethodInfo_2636690* method);

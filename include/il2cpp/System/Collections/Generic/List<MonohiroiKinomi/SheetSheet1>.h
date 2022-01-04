@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_MonohiroiKinomi_SheetSheet1___Clear (System_Collections_Generic_List_MonohiroiKinomi_SheetSheet1__o* __this, const MethodInfo_2BAE0A0* method);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_MonohiroiKinomi_SheetSheet1___GetEnumerator (System_Collections_Generic_List_MonohiroiKinomi_SheetSheet1__o* __this, const MethodInfo_2BAEA50* method);

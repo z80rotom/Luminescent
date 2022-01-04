@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_KeyValuePair_object__Playable____ctor (System_Collections_Generic_KeyValuePair_object__Playable__o __this, Il2CppObject* key, UnityEngine_Playables_Playable_o value, const MethodInfo_299E640* method);
+Il2CppObject* System_Collections_Generic_KeyValuePair_object__Playable___get_Key (System_Collections_Generic_KeyValuePair_object__Playable__o __this, const MethodInfo_299E680* method);
+UnityEngine_Playables_Playable_o System_Collections_Generic_KeyValuePair_object__Playable___get_Value (System_Collections_Generic_KeyValuePair_object__Playable__o __this, const MethodInfo_299E690* method);
+System_String_o* System_Collections_Generic_KeyValuePair_object__Playable___ToString (System_Collections_Generic_KeyValuePair_object__Playable__o __this, const MethodInfo_299E6A0* method);

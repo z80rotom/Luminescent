@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_Events_InvokableCall_object__object___add_Delegate (UnityEngine_Events_InvokableCall_object__object__o* __this, UnityEngine_Events_UnityAction_T1__T2__o* value, const MethodInfo_284DDC0* method);
+void UnityEngine_Events_InvokableCall_object__object___remove_Delegate (UnityEngine_Events_InvokableCall_object__object__o* __this, UnityEngine_Events_UnityAction_T1__T2__o* value, const MethodInfo_284DE70* method);
+void UnityEngine_Events_InvokableCall_object__object____ctor (UnityEngine_Events_InvokableCall_object__object__o* __this, Il2CppObject* target, System_Reflection_MethodInfo_o* theFunction, const MethodInfo_284DF20* method);
+void UnityEngine_Events_InvokableCall_object__object____ctor (UnityEngine_Events_InvokableCall_object__object__o* __this, UnityEngine_Events_UnityAction_T1__T2__o* action, const MethodInfo_284E030* method);
+void UnityEngine_Events_InvokableCall_object__object___Invoke (UnityEngine_Events_InvokableCall_object__object__o* __this, System_Object_array* args, const MethodInfo_284E080* method);
+void UnityEngine_Events_InvokableCall_object__object___Invoke (UnityEngine_Events_InvokableCall_object__object__o* __this, Il2CppObject* args0, Il2CppObject* args1, const MethodInfo_284E260* method);
+bool UnityEngine_Events_InvokableCall_object__object___Find (UnityEngine_Events_InvokableCall_object__object__o* __this, Il2CppObject* targetObj, System_Reflection_MethodInfo_o* method, const MethodInfo_284E2D0* method);

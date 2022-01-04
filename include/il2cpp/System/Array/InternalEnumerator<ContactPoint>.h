@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_ContactPoint____ctor (System_Array_InternalEnumerator_ContactPoint__o __this, System_Array_o* array, const MethodInfo_2577760* method);
+void System_Array_InternalEnumerator_ContactPoint___Dispose (System_Array_InternalEnumerator_ContactPoint__o __this, const MethodInfo_2577790* method);
+bool System_Array_InternalEnumerator_ContactPoint___MoveNext (System_Array_InternalEnumerator_ContactPoint__o __this, const MethodInfo_25777A0* method);
+UnityEngine_ContactPoint_o System_Array_InternalEnumerator_ContactPoint___get_Current (System_Array_InternalEnumerator_ContactPoint__o __this, const MethodInfo_2577800* method);
+void System_Array_InternalEnumerator_ContactPoint___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_ContactPoint__o __this, const MethodInfo_2577960* method);
+Il2CppObject* System_Array_InternalEnumerator_ContactPoint___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_ContactPoint__o __this, const MethodInfo_2577970* method);

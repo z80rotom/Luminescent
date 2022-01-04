@@ -1,0 +1,13 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_FieldEffect_End___ctor (Dpr_Battle_Logic_Section_FieldEffect_End_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FieldEffect_End__Execute (Dpr_Battle_Logic_Section_FieldEffect_End_o* __this, Dpr_Battle_Logic_Section_FieldEffect_End_Result_o* pResult, Dpr_Battle_Logic_Section_FieldEffect_End_Description_o** description, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_FieldEffect_End__remove (Dpr_Battle_Logic_Section_FieldEffect_End_o* __this, int32_t effect, Dpr_Battle_Logic_BTL_POKEPARAM_o* pDependPoke, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FieldEffect_End__putRemovedMessage (Dpr_Battle_Logic_Section_FieldEffect_End_o* __this, int32_t effect, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FieldEffect_End__checkItemReaction_All (Dpr_Battle_Logic_Section_FieldEffect_End_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FieldEffect_End__getFrontPokeSetByAgilityOrder (Dpr_Battle_Logic_Section_FieldEffect_End_o* __this, Dpr_Battle_Logic_PokeSet_o* targets, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FieldEffect_End__checkItemReaction (Dpr_Battle_Logic_Section_FieldEffect_End_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FieldEffect_End__resetGround (Dpr_Battle_Logic_Section_FieldEffect_End_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FieldEffect_End__resetKagakuhenkaGas (Dpr_Battle_Logic_Section_FieldEffect_End_o* __this, const MethodInfo* method);

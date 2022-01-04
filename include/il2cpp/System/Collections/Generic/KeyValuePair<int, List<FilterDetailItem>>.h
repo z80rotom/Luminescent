@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_KeyValuePair_int__List_FilterDetailItem____get_Key (System_Collections_Generic_KeyValuePair_int__List_FilterDetailItem___o __this, const MethodInfo_299D5C0* method);
+System_Collections_Generic_List_FilterDetailItem__o* System_Collections_Generic_KeyValuePair_int__List_FilterDetailItem____get_Value (System_Collections_Generic_KeyValuePair_int__List_FilterDetailItem___o __this, const MethodInfo_299D5D0* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Threading_CancellationTokenRegistration___ctor (System_Threading_CancellationTokenRegistration_o __this, System_Threading_CancellationCallbackInfo_o* callbackInfo, System_Threading_SparselyPopulatedArrayAddInfo_CancellationCallbackInfo__o registrationInfo, const MethodInfo* method);
+bool System_Threading_CancellationTokenRegistration__TryDeregister (System_Threading_CancellationTokenRegistration_o __this, const MethodInfo* method);
+void System_Threading_CancellationTokenRegistration__Dispose (System_Threading_CancellationTokenRegistration_o __this, const MethodInfo* method);
+bool System_Threading_CancellationTokenRegistration__Equals (System_Threading_CancellationTokenRegistration_o __this, Il2CppObject* obj, const MethodInfo* method);
+bool System_Threading_CancellationTokenRegistration__Equals (System_Threading_CancellationTokenRegistration_o __this, System_Threading_CancellationTokenRegistration_o other, const MethodInfo* method);
+int32_t System_Threading_CancellationTokenRegistration__GetHashCode (System_Threading_CancellationTokenRegistration_o __this, const MethodInfo* method);

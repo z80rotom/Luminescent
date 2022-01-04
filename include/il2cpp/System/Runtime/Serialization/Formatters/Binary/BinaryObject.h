@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Serialization_Formatters_Binary_BinaryObject___ctor (System_Runtime_Serialization_Formatters_Binary_BinaryObject_o* __this, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryObject__Set (System_Runtime_Serialization_Formatters_Binary_BinaryObject_o* __this, int32_t objectId, int32_t mapId, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryObject__Write (System_Runtime_Serialization_Formatters_Binary_BinaryObject_o* __this, System_Runtime_Serialization_Formatters_Binary___BinaryWriter_o* sout, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryObject__Read (System_Runtime_Serialization_Formatters_Binary_BinaryObject_o* __this, System_Runtime_Serialization_Formatters_Binary___BinaryParser_o* input, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryObject__Dump (System_Runtime_Serialization_Formatters_Binary_BinaryObject_o* __this, const MethodInfo* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UnderGround_UgFieldDataManager_FossilPosData___ctor (Dpr_UnderGround_UgFieldDataManager_FossilPosData_o __this, XLSXContent_UnderGroundFossilPos_SheetData_array* data, const MethodInfo* method);
+UnityEngine_Vector2Int_o Dpr_UnderGround_UgFieldDataManager_FossilPosData__GetRandomPos (Dpr_UnderGround_UgFieldDataManager_FossilPosData_o __this, int32_t pointNo, const MethodInfo* method);
+bool Dpr_UnderGround_UgFieldDataManager_FossilPosData__CheckWallPos (Dpr_UnderGround_UgFieldDataManager_FossilPosData_o __this, UnityEngine_Vector2Int_o grid, int32_t* wallDir, const MethodInfo* method);
+int32_t Dpr_UnderGround_UgFieldDataManager_FossilPosData__CheckRightOrLeft (Dpr_UnderGround_UgFieldDataManager_FossilPosData_o __this, UnityEngine_Vector2Int_o wallGrid, const MethodInfo* method);

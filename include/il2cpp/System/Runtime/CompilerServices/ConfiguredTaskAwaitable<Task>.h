@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Runtime_CompilerServices_ConfiguredTaskAwaitable_ConfiguredTaskAwaiter_TResult__o System_Runtime_CompilerServices_ConfiguredTaskAwaitable_Task___GetAwaiter (System_Runtime_CompilerServices_ConfiguredTaskAwaitable_Task__o __this, const MethodInfo_2916100* method);

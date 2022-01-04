@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_EmptyInternalEnumerator_PoffinData___Dispose (System_Array_EmptyInternalEnumerator_PoffinData__o* __this, const MethodInfo_281FCC0* method);
+bool System_Array_EmptyInternalEnumerator_PoffinData___MoveNext (System_Array_EmptyInternalEnumerator_PoffinData__o* __this, const MethodInfo_281FCD0* method);
+DPData_PoffinData_o System_Array_EmptyInternalEnumerator_PoffinData___get_Current (System_Array_EmptyInternalEnumerator_PoffinData__o* __this, const MethodInfo_281FCE0* method);
+Il2CppObject* System_Array_EmptyInternalEnumerator_PoffinData___System_Collections_IEnumerator_get_Current (System_Array_EmptyInternalEnumerator_PoffinData__o* __this, const MethodInfo_281FD50* method);
+void System_Array_EmptyInternalEnumerator_PoffinData___System_Collections_IEnumerator_Reset (System_Array_EmptyInternalEnumerator_PoffinData__o* __this, const MethodInfo_281FDC0* method);
+void System_Array_EmptyInternalEnumerator_PoffinData____ctor (System_Array_EmptyInternalEnumerator_PoffinData__o* __this, const MethodInfo_281FDD0* method);
+void System_Array_EmptyInternalEnumerator_PoffinData____cctor (const MethodInfo_281FDE0* method);

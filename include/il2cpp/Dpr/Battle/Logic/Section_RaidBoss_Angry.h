@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_RaidBoss_Angry___ctor (Dpr_Battle_Logic_Section_RaidBoss_Angry_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Angry__Execute (Dpr_Battle_Logic_Section_RaidBoss_Angry_o* __this, Dpr_Battle_Logic_Section_RaidBoss_Angry_Result_o* pResult, Dpr_Battle_Logic_Section_RaidBoss_Angry_Description_o** description, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_RaidBoss_Angry__checkAngry (Dpr_Battle_Logic_Section_RaidBoss_Angry_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_RaidBoss_Angry__checkWazaActionEnable (Dpr_Battle_Logic_Section_RaidBoss_Angry_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Angry__addWazaAction (Dpr_Battle_Logic_Section_RaidBoss_Angry_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_Angry__appearGWall (Dpr_Battle_Logic_Section_RaidBoss_Angry_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method);

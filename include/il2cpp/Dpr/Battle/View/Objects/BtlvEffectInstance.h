@@ -1,0 +1,24 @@
+#pragma once
+
+#include "il2cpp.h"
+
+Effect_EffectInstance_o* Dpr_Battle_View_Objects_BtlvEffectInstance__get_Effect (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__set_Effect (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, Effect_EffectInstance_o* value, const MethodInfo* method);
+bool Dpr_Battle_View_Objects_BtlvEffectInstance__get_IsStop (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__set_IsStop (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, bool value, const MethodInfo* method);
+bool Dpr_Battle_View_Objects_BtlvEffectInstance__get_IsScreenEffect (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__set_AutoRotate (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, bool value, const MethodInfo* method);
+Dpr_BallDeco_AffixSealData_o Dpr_Battle_View_Objects_BtlvEffectInstance__get_SealData (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__set_SealData (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, Dpr_BallDeco_AffixSealData_o value, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance___ctor (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, Effect_EffectData_o* effectData, int32_t drawType, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance___ctor (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, Effect_EffectData_o* effectData, Dpr_BallDeco_AffixSealData_o sealData, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__Dispose (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__Play (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, System_Action_EffectInstance__o* onComplete, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__Fade (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__Kill (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, bool immediate, const MethodInfo* method);
+bool Dpr_Battle_View_Objects_BtlvEffectInstance__IsActive (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__OnUpdatePreJob (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__OnUpdatePostJob (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__SetRenderCamera (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, Dpr_Battle_View_Objects_BattleScreenObject_o* screenObject, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__UpdateSRT (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BtlvEffectInstance__SetMultiplyColor (Dpr_Battle_View_Objects_BtlvEffectInstance_o* __this, UnityEngine_Vector4_o color, const MethodInfo* method);

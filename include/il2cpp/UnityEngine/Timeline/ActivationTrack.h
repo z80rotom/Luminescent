@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool UnityEngine_Timeline_ActivationTrack__CanCompileClips (UnityEngine_Timeline_ActivationTrack_o* __this, const MethodInfo* method);
+int32_t UnityEngine_Timeline_ActivationTrack__get_postPlaybackState (UnityEngine_Timeline_ActivationTrack_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_ActivationTrack__set_postPlaybackState (UnityEngine_Timeline_ActivationTrack_o* __this, int32_t value, const MethodInfo* method);
+UnityEngine_Playables_Playable_o UnityEngine_Timeline_ActivationTrack__CreateTrackMixer (UnityEngine_Timeline_ActivationTrack_o* __this, UnityEngine_Playables_PlayableGraph_o graph, UnityEngine_GameObject_o* go, int32_t inputCount, const MethodInfo* method);
+void UnityEngine_Timeline_ActivationTrack__UpdateTrackMode (UnityEngine_Timeline_ActivationTrack_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_ActivationTrack__GatherProperties (UnityEngine_Timeline_ActivationTrack_o* __this, UnityEngine_Playables_PlayableDirector_o* director, UnityEngine_Timeline_IPropertyCollector_o* driver, const MethodInfo* method);
+void UnityEngine_Timeline_ActivationTrack__OnCreateClip (UnityEngine_Timeline_ActivationTrack_o* __this, UnityEngine_Timeline_TimelineClip_o* clip, const MethodInfo* method);
+void UnityEngine_Timeline_ActivationTrack___ctor (UnityEngine_Timeline_ActivationTrack_o* __this, const MethodInfo* method);

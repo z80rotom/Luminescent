@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint8_t Dpr_NetworkUtils_ANetData_MatchWaitData___get_GetDataID (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, const MethodInfo_2AC8E70* method);
+void Dpr_NetworkUtils_ANetData_MatchWaitData____ctor (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, const MethodInfo_2AC8F20* method);
+void Dpr_NetworkUtils_ANetData_MatchWaitData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, const MethodInfo_2AC8F80* method);
+void Dpr_NetworkUtils_ANetData_MatchWaitData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, int32_t idx, const MethodInfo_2AC9200* method);
+int32_t Dpr_NetworkUtils_ANetData_MatchWaitData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, const MethodInfo_2AC9210* method);
+int32_t Dpr_NetworkUtils_ANetData_MatchWaitData___SendReliableData (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AC9220* method);
+int32_t Dpr_NetworkUtils_ANetData_MatchWaitData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, int32_t transportType, const MethodInfo_2AC92D0* method);
+int32_t Dpr_NetworkUtils_ANetData_MatchWaitData___SendUnReliableData (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AC9370* method);
+int32_t Dpr_NetworkUtils_ANetData_MatchWaitData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, int32_t transportType, const MethodInfo_2AC9410* method);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_MatchWaitData___CreateReliableData (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, const MethodInfo_2AC94A0* method);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_MatchWaitData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, const MethodInfo_2AC9560* method);
+void Dpr_NetworkUtils_ANetData_MatchWaitData___WriteSendData (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_2AC9620* method);
+System_Byte_array* Dpr_NetworkUtils_ANetData_MatchWaitData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, const MethodInfo_2AC9670* method);
+void Dpr_NetworkUtils_ANetData_MatchWaitData___ReceivePacket (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC9820* method);
+void Dpr_NetworkUtils_ANetData_MatchWaitData___ReadRecieveData (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC9870* method);
+Dpr_NetworkUtils_MatchWaitData_o Dpr_NetworkUtils_ANetData_MatchWaitData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_MatchWaitData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC98B0* method);
+void Dpr_NetworkUtils_ANetData_MatchWaitData____cctor (const MethodInfo_2AC9BA0* method);

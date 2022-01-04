@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_3___ctor (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_3_o* __this, const MethodInfo* method);
+bool Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_3___StartTalk_b__14 (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_3_o* __this, UnityEngine_AnimationClip_o* x, const MethodInfo* method);
+bool Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_3___StartTalk_b__17 (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_3_o* __this, UnityEngine_AnimationClip_o* x, const MethodInfo* method);

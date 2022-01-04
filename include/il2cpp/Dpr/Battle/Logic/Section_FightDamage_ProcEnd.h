@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_FightDamage_ProcEnd___ctor (Dpr_Battle_Logic_Section_FightDamage_ProcEnd_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FightDamage_ProcEnd__Execute (Dpr_Battle_Logic_Section_FightDamage_ProcEnd_o* __this, Dpr_Battle_Logic_Section_FightDamage_ProcEnd_Result_o* pResult, Dpr_Battle_Logic_Section_FightDamage_ProcEnd_Description_o** description, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FightDamage_ProcEnd__cureKori (Dpr_Battle_Logic_Section_FightDamage_ProcEnd_o* __this, Dpr_Battle_Logic_WazaParam_o* wazaParam, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_PokeSet_o* targets, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FightDamage_ProcEnd__cureSick_KOORI (Dpr_Battle_Logic_Section_FightDamage_ProcEnd_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FightDamage_ProcEnd__friendPinchAction (Dpr_Battle_Logic_Section_FightDamage_ProcEnd_o* __this, Dpr_Battle_Logic_PokeSet_o* targets, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_FightDamage_ProcEnd__IsPinch (Dpr_Battle_Logic_Section_FightDamage_ProcEnd_o* __this, uint32_t now_value, uint32_t max_value, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FightDamage_ProcEnd__checkItemReaction_ForTargets (Dpr_Battle_Logic_Section_FightDamage_ProcEnd_o* __this, Dpr_Battle_Logic_PokeSet_o* targets, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FightDamage_ProcEnd__checkItemReaction (Dpr_Battle_Logic_Section_FightDamage_ProcEnd_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);

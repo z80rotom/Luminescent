@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_RaycastHit___get_Default (const MethodInfo_2884620* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_RaycastHit___CreateComparer (const MethodInfo_2884730* method);
+int32_t System_Collections_Generic_Comparer_RaycastHit___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_RaycastHit__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2884B30* method);
+void System_Collections_Generic_Comparer_RaycastHit____ctor (System_Collections_Generic_Comparer_RaycastHit__o* __this, const MethodInfo_2884D20* method);

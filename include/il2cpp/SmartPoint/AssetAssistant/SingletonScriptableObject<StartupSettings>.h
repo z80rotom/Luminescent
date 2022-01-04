@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+SmartPoint_AssetAssistant_StartupSettings_o* SmartPoint_AssetAssistant_SingletonScriptableObject_StartupSettings___get_instance (const MethodInfo_26BB5C0* method);
+void SmartPoint_AssetAssistant_SingletonScriptableObject_StartupSettings___OnEnable (SmartPoint_AssetAssistant_SingletonScriptableObject_StartupSettings__o* __this, const MethodInfo_26BBB20* method);
+void SmartPoint_AssetAssistant_SingletonScriptableObject_StartupSettings____ctor (SmartPoint_AssetAssistant_SingletonScriptableObject_StartupSettings__o* __this, const MethodInfo_26BBCF0* method);

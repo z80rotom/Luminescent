@@ -1,0 +1,17 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_List_DigMasterDataManager_StoneBoxData__o* Dpr_DigFossil_DigMasterDataManager__get_StoneBoxDatas (Dpr_DigFossil_DigMasterDataManager_o* __this, const MethodInfo* method);
+System_Collections_Generic_List_DigMasterDataManager_DepositItemData__o* Dpr_DigFossil_DigMasterDataManager__get_DepositItemDatas (Dpr_DigFossil_DigMasterDataManager_o* __this, const MethodInfo* method);
+System_Collections_Generic_List_DigMasterDataManager_HardStoneData__o* Dpr_DigFossil_DigMasterDataManager__get_HardStoneDatas (Dpr_DigFossil_DigMasterDataManager_o* __this, const MethodInfo* method);
+System_Collections_Generic_List_StatueEffectRawData_Sheettable__o* Dpr_DigFossil_DigMasterDataManager__get_StatueEffectData (Dpr_DigFossil_DigMasterDataManager_o* __this, const MethodInfo* method);
+void Dpr_DigFossil_DigMasterDataManager__set_StatueEffectData (Dpr_DigFossil_DigMasterDataManager_o* __this, System_Collections_Generic_List_StatueEffectRawData_Sheettable__o* value, const MethodInfo* method);
+void Dpr_DigFossil_DigMasterDataManager__Initialize (Dpr_DigFossil_DigMasterDataManager_o* __this, const MethodInfo* method);
+XLSXContent_StatueEffectRawData_Sheettable_o* Dpr_DigFossil_DigMasterDataManager__GetStatueEffectData (Dpr_DigFossil_DigMasterDataManager_o* __this, int16_t statueId, const MethodInfo* method);
+System_Char_array* Dpr_DigFossil_DigMasterDataManager__ShapeRotationRight_char_ (System_Char_array** inDst, const MethodInfo_2CD7040* method);
+System_Object_array* Dpr_DigFossil_DigMasterDataManager__ShapeRotationRight_object_ (System_Object_array** inDst, const MethodInfo_2CD71D0* method);
+System_Char_array* Dpr_DigFossil_DigMasterDataManager__ShapeRotationRight_char_ (System_Char_array** inDst, int32_t count, const MethodInfo_2CD7170* method);
+System_Object_array* Dpr_DigFossil_DigMasterDataManager__ShapeRotationRight_object_ (System_Object_array** inDst, int32_t count, const MethodInfo_2CD7320* method);
+System_Char_array* Dpr_DigFossil_DigMasterDataManager__ToShape (System_String_o** inShape, const MethodInfo* method);
+void Dpr_DigFossil_DigMasterDataManager___ctor (Dpr_DigFossil_DigMasterDataManager_o* __this, const MethodInfo* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UIElements_CallbackEventHandler__HandleEventAtTargetPhase (UnityEngine_UIElements_CallbackEventHandler_o* __this, UnityEngine_UIElements_EventBase_o* evt, const MethodInfo* method);
+void UnityEngine_UIElements_CallbackEventHandler__HandleEvent (UnityEngine_UIElements_CallbackEventHandler_o* __this, UnityEngine_UIElements_EventBase_o* evt, const MethodInfo* method);
+bool UnityEngine_UIElements_CallbackEventHandler__HasTrickleDownHandlers (UnityEngine_UIElements_CallbackEventHandler_o* __this, const MethodInfo* method);
+bool UnityEngine_UIElements_CallbackEventHandler__HasBubbleUpHandlers (UnityEngine_UIElements_CallbackEventHandler_o* __this, const MethodInfo* method);
+void UnityEngine_UIElements_CallbackEventHandler__ExecuteDefaultActionAtTarget (UnityEngine_UIElements_CallbackEventHandler_o* __this, UnityEngine_UIElements_EventBase_o* evt, const MethodInfo* method);
+void UnityEngine_UIElements_CallbackEventHandler__ExecuteDefaultAction (UnityEngine_UIElements_CallbackEventHandler_o* __this, UnityEngine_UIElements_EventBase_o* evt, const MethodInfo* method);

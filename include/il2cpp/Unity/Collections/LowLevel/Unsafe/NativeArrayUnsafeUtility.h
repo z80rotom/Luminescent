@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+Unity_Collections_NativeArray_T__o Unity_Collections_LowLevel_Unsafe_NativeArrayUnsafeUtility__ConvertExistingDataToNativeArray_byte_ (void* dataPointer, int32_t length, int32_t allocator, const MethodInfo_2CDA2C0* method);
+Unity_Collections_NativeArray_T__o Unity_Collections_LowLevel_Unsafe_NativeArrayUnsafeUtility__ConvertExistingDataToNativeArray_int_ (void* dataPointer, int32_t length, int32_t allocator, const MethodInfo_2CDA2D0* method);
+Unity_Collections_NativeArray_T__o Unity_Collections_LowLevel_Unsafe_NativeArrayUnsafeUtility__ConvertExistingDataToNativeArray_LightDataGI_ (void* dataPointer, int32_t length, int32_t allocator, const MethodInfo_2CDA2E0* method);
+Unity_Collections_NativeArray_T__o Unity_Collections_LowLevel_Unsafe_NativeArrayUnsafeUtility__ConvertExistingDataToNativeArray_Matrix4x4_ (void* dataPointer, int32_t length, int32_t allocator, const MethodInfo_2CDA2F0* method);
+Unity_Collections_NativeArray_T__o Unity_Collections_LowLevel_Unsafe_NativeArrayUnsafeUtility__ConvertExistingDataToNativeArray_Plane_ (void* dataPointer, int32_t length, int32_t allocator, const MethodInfo_2CDA300* method);
+Unity_Collections_NativeArray_T__o Unity_Collections_LowLevel_Unsafe_NativeArrayUnsafeUtility__ConvertExistingDataToNativeArray_BatchVisibility_ (void* dataPointer, int32_t length, int32_t allocator, const MethodInfo_2CDA310* method);

@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void TMPro_TMP_TextProcessingStack_int____ctor (TMPro_TMP_TextProcessingStack_int__o __this, System_Int32_array* stack, const MethodInfo_2844CC0* method);
+void TMPro_TMP_TextProcessingStack_int____ctor (TMPro_TMP_TextProcessingStack_int__o __this, int32_t capacity, const MethodInfo_2844D00* method);
+void TMPro_TMP_TextProcessingStack_int____ctor (TMPro_TMP_TextProcessingStack_int__o __this, int32_t capacity, int32_t rolloverSize, const MethodInfo_2844D80* method);
+int32_t TMPro_TMP_TextProcessingStack_int___get_Count (TMPro_TMP_TextProcessingStack_int__o __this, const MethodInfo_2844E00* method);
+int32_t TMPro_TMP_TextProcessingStack_int___get_current (TMPro_TMP_TextProcessingStack_int__o __this, const MethodInfo_2844E10* method);
+int32_t TMPro_TMP_TextProcessingStack_int___get_rolloverSize (TMPro_TMP_TextProcessingStack_int__o __this, const MethodInfo_2844E70* method);
+void TMPro_TMP_TextProcessingStack_int___set_rolloverSize (TMPro_TMP_TextProcessingStack_int__o __this, int32_t value, const MethodInfo_2844E80* method);
+void TMPro_TMP_TextProcessingStack_int___SetDefault (TMPro_TMP_TextProcessingStack_T__array* stack, int32_t item, const MethodInfo_2844E90* method);
+void TMPro_TMP_TextProcessingStack_int___Clear (TMPro_TMP_TextProcessingStack_int__o __this, const MethodInfo_2844F40* method);
+void TMPro_TMP_TextProcessingStack_int___SetDefault (TMPro_TMP_TextProcessingStack_int__o __this, int32_t item, const MethodInfo_2844F50* method);
+void TMPro_TMP_TextProcessingStack_int___Add (TMPro_TMP_TextProcessingStack_int__o __this, int32_t item, const MethodInfo_2845000* method);
+int32_t TMPro_TMP_TextProcessingStack_int___Remove (TMPro_TMP_TextProcessingStack_int__o __this, const MethodInfo_2845050* method);
+void TMPro_TMP_TextProcessingStack_int___Push (TMPro_TMP_TextProcessingStack_int__o __this, int32_t item, const MethodInfo_28450C0* method);
+int32_t TMPro_TMP_TextProcessingStack_int___Pop (TMPro_TMP_TextProcessingStack_int__o __this, const MethodInfo_28451D0* method);
+int32_t TMPro_TMP_TextProcessingStack_int___Peek (TMPro_TMP_TextProcessingStack_int__o __this, const MethodInfo_2845270* method);
+int32_t TMPro_TMP_TextProcessingStack_int___CurrentItem (TMPro_TMP_TextProcessingStack_int__o __this, const MethodInfo_28452C0* method);
+int32_t TMPro_TMP_TextProcessingStack_int___PreviousItem (TMPro_TMP_TextProcessingStack_int__o __this, const MethodInfo_2845320* method);

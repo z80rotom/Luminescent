@@ -1,0 +1,19 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint64_t PiaPluginSession_StationInfoNative__get_constantId (PiaPluginSession_StationInfoNative_o __this, const MethodInfo* method);
+void PiaPluginSession_StationInfoNative__set_constantId (PiaPluginSession_StationInfoNative_o __this, uint64_t value, const MethodInfo* method);
+int32_t PiaPluginSession_StationInfoNative__get_stationIndex (PiaPluginSession_StationInfoNative_o __this, const MethodInfo* method);
+void PiaPluginSession_StationInfoNative__set_stationIndex (PiaPluginSession_StationInfoNative_o __this, int32_t value, const MethodInfo* method);
+uint16_t PiaPluginSession_StationInfoNative__get_playerNum (PiaPluginSession_StationInfoNative_o __this, const MethodInfo* method);
+void PiaPluginSession_StationInfoNative__set_playerNum (PiaPluginSession_StationInfoNative_o __this, uint16_t value, const MethodInfo* method);
+intptr_t PiaPluginSession_StationInfoNative__get_pStationInfoArray (PiaPluginSession_StationInfoNative_o __this, const MethodInfo* method);
+void PiaPluginSession_StationInfoNative__set_pStationInfoArray (PiaPluginSession_StationInfoNative_o __this, intptr_t value, const MethodInfo* method);
+int32_t PiaPluginSession_StationInfoNative__get_rtt (PiaPluginSession_StationInfoNative_o __this, const MethodInfo* method);
+void PiaPluginSession_StationInfoNative__set_rtt (PiaPluginSession_StationInfoNative_o __this, int32_t value, const MethodInfo* method);
+float PiaPluginSession_StationInfoNative__get_unicastPacketLossRate (PiaPluginSession_StationInfoNative_o __this, const MethodInfo* method);
+void PiaPluginSession_StationInfoNative__set_unicastPacketLossRate (PiaPluginSession_StationInfoNative_o __this, float value, const MethodInfo* method);
+float PiaPluginSession_StationInfoNative__get_broadcastPacketLossRate (PiaPluginSession_StationInfoNative_o __this, const MethodInfo* method);
+void PiaPluginSession_StationInfoNative__set_broadcastPacketLossRate (PiaPluginSession_StationInfoNative_o __this, float value, const MethodInfo* method);
+void PiaPluginSession_StationInfoNative__Dispose (PiaPluginSession_StationInfoNative_o __this, const MethodInfo* method);

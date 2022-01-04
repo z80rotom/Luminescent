@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_Protrusion____ctor (System_Array_InternalEnumerator_Protrusion__o __this, System_Array_o* array, const MethodInfo_266F7A0* method);
+void System_Array_InternalEnumerator_Protrusion___Dispose (System_Array_InternalEnumerator_Protrusion__o __this, const MethodInfo_266F7D0* method);
+bool System_Array_InternalEnumerator_Protrusion___MoveNext (System_Array_InternalEnumerator_Protrusion__o __this, const MethodInfo_266F7E0* method);
+nn_irsensor_Protrusion_o System_Array_InternalEnumerator_Protrusion___get_Current (System_Array_InternalEnumerator_Protrusion__o __this, const MethodInfo_266F840* method);
+void System_Array_InternalEnumerator_Protrusion___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_Protrusion__o __this, const MethodInfo_266F980* method);
+Il2CppObject* System_Array_InternalEnumerator_Protrusion___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_Protrusion__o __this, const MethodInfo_266F990* method);

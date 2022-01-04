@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_SortedList_SortedListEnumerator___ctor (System_Collections_SortedList_SortedListEnumerator_o* __this, System_Collections_SortedList_o* sortedList, int32_t index, int32_t count, int32_t getObjRetType, const MethodInfo* method);
+Il2CppObject* System_Collections_SortedList_SortedListEnumerator__Clone (System_Collections_SortedList_SortedListEnumerator_o* __this, const MethodInfo* method);
+Il2CppObject* System_Collections_SortedList_SortedListEnumerator__get_Key (System_Collections_SortedList_SortedListEnumerator_o* __this, const MethodInfo* method);
+bool System_Collections_SortedList_SortedListEnumerator__MoveNext (System_Collections_SortedList_SortedListEnumerator_o* __this, const MethodInfo* method);
+System_Collections_DictionaryEntry_o System_Collections_SortedList_SortedListEnumerator__get_Entry (System_Collections_SortedList_SortedListEnumerator_o* __this, const MethodInfo* method);
+Il2CppObject* System_Collections_SortedList_SortedListEnumerator__get_Current (System_Collections_SortedList_SortedListEnumerator_o* __this, const MethodInfo* method);
+Il2CppObject* System_Collections_SortedList_SortedListEnumerator__get_Value (System_Collections_SortedList_SortedListEnumerator_o* __this, const MethodInfo* method);
+void System_Collections_SortedList_SortedListEnumerator__Reset (System_Collections_SortedList_SortedListEnumerator_o* __this, const MethodInfo* method);

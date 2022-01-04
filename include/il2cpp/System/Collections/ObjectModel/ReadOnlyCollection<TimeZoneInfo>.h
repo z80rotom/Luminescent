@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_ObjectModel_ReadOnlyCollection_TimeZoneInfo____ctor (System_Collections_ObjectModel_ReadOnlyCollection_TimeZoneInfo__o* __this, System_Collections_Generic_IList_T__o* list, const MethodInfo_29EE0C0* method);
+System_Collections_Generic_IEnumerator_T__o* System_Collections_ObjectModel_ReadOnlyCollection_TimeZoneInfo___GetEnumerator (System_Collections_ObjectModel_ReadOnlyCollection_TimeZoneInfo__o* __this, const MethodInfo_29EE390* method);

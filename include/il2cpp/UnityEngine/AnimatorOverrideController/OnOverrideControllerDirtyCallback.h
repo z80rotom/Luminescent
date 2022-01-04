@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_AnimatorOverrideController_OnOverrideControllerDirtyCallback___ctor (UnityEngine_AnimatorOverrideController_OnOverrideControllerDirtyCallback_o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method);
+void UnityEngine_AnimatorOverrideController_OnOverrideControllerDirtyCallback__Invoke (UnityEngine_AnimatorOverrideController_OnOverrideControllerDirtyCallback_o* __this, const MethodInfo* method);
+System_IAsyncResult_o* UnityEngine_AnimatorOverrideController_OnOverrideControllerDirtyCallback__BeginInvoke (UnityEngine_AnimatorOverrideController_OnOverrideControllerDirtyCallback_o* __this, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method);
+void UnityEngine_AnimatorOverrideController_OnOverrideControllerDirtyCallback__EndInvoke (UnityEngine_AnimatorOverrideController_OnOverrideControllerDirtyCallback_o* __this, System_IAsyncResult_o* result, const MethodInfo* method);

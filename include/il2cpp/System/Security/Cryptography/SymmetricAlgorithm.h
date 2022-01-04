@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Security_Cryptography_SymmetricAlgorithm___ctor (System_Security_Cryptography_SymmetricAlgorithm_o* __this, const MethodInfo* method);
+void System_Security_Cryptography_SymmetricAlgorithm__Dispose (System_Security_Cryptography_SymmetricAlgorithm_o* __this, const MethodInfo* method);
+void System_Security_Cryptography_SymmetricAlgorithm__Dispose (System_Security_Cryptography_SymmetricAlgorithm_o* __this, bool disposing, const MethodInfo* method);
+int32_t System_Security_Cryptography_SymmetricAlgorithm__get_BlockSize (System_Security_Cryptography_SymmetricAlgorithm_o* __this, const MethodInfo* method);
+int32_t System_Security_Cryptography_SymmetricAlgorithm__get_FeedbackSize (System_Security_Cryptography_SymmetricAlgorithm_o* __this, const MethodInfo* method);
+int32_t System_Security_Cryptography_SymmetricAlgorithm__get_Mode (System_Security_Cryptography_SymmetricAlgorithm_o* __this, const MethodInfo* method);
+int32_t System_Security_Cryptography_SymmetricAlgorithm__get_Padding (System_Security_Cryptography_SymmetricAlgorithm_o* __this, const MethodInfo* method);

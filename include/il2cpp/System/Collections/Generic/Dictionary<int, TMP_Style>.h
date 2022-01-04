@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_int__TMP_Style____ctor (System_Collections_Generic_Dictionary_int__TMP_Style__o* __this, const MethodInfo_2A44B60* method);
+void System_Collections_Generic_Dictionary_int__TMP_Style___Add (System_Collections_Generic_Dictionary_int__TMP_Style__o* __this, int32_t key, TMPro_TMP_Style_o* value, const MethodInfo_2A45020* method);
+void System_Collections_Generic_Dictionary_int__TMP_Style___Clear (System_Collections_Generic_Dictionary_int__TMP_Style__o* __this, const MethodInfo_2A451E0* method);
+bool System_Collections_Generic_Dictionary_int__TMP_Style___ContainsKey (System_Collections_Generic_Dictionary_int__TMP_Style__o* __this, int32_t key, const MethodInfo_2A45280* method);
+bool System_Collections_Generic_Dictionary_int__TMP_Style___TryGetValue (System_Collections_Generic_Dictionary_int__TMP_Style__o* __this, int32_t key, TMPro_TMP_Style_o** value, const MethodInfo_2A46CB0* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_SpriteState____ctor (System_Array_InternalEnumerator_SpriteState__o __this, System_Array_o* array, const MethodInfo_2665850* method);
+void System_Array_InternalEnumerator_SpriteState___Dispose (System_Array_InternalEnumerator_SpriteState__o __this, const MethodInfo_2665880* method);
+bool System_Array_InternalEnumerator_SpriteState___MoveNext (System_Array_InternalEnumerator_SpriteState__o __this, const MethodInfo_2665890* method);
+UnityEngine_UI_SpriteState_o System_Array_InternalEnumerator_SpriteState___get_Current (System_Array_InternalEnumerator_SpriteState__o __this, const MethodInfo_26658F0* method);
+void System_Array_InternalEnumerator_SpriteState___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_SpriteState__o __this, const MethodInfo_2665A50* method);
+Il2CppObject* System_Array_InternalEnumerator_SpriteState___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_SpriteState__o __this, const MethodInfo_2665A60* method);

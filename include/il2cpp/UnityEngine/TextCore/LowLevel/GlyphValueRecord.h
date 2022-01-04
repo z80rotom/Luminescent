@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+float UnityEngine_TextCore_LowLevel_GlyphValueRecord__get_xPlacement (UnityEngine_TextCore_LowLevel_GlyphValueRecord_o __this, const MethodInfo* method);
+float UnityEngine_TextCore_LowLevel_GlyphValueRecord__get_yPlacement (UnityEngine_TextCore_LowLevel_GlyphValueRecord_o __this, const MethodInfo* method);
+float UnityEngine_TextCore_LowLevel_GlyphValueRecord__get_xAdvance (UnityEngine_TextCore_LowLevel_GlyphValueRecord_o __this, const MethodInfo* method);
+float UnityEngine_TextCore_LowLevel_GlyphValueRecord__get_yAdvance (UnityEngine_TextCore_LowLevel_GlyphValueRecord_o __this, const MethodInfo* method);
+int32_t UnityEngine_TextCore_LowLevel_GlyphValueRecord__GetHashCode (UnityEngine_TextCore_LowLevel_GlyphValueRecord_o __this, const MethodInfo* method);
+bool UnityEngine_TextCore_LowLevel_GlyphValueRecord__Equals (UnityEngine_TextCore_LowLevel_GlyphValueRecord_o __this, Il2CppObject* obj, const MethodInfo* method);
+bool UnityEngine_TextCore_LowLevel_GlyphValueRecord__Equals (UnityEngine_TextCore_LowLevel_GlyphValueRecord_o __this, UnityEngine_TextCore_LowLevel_GlyphValueRecord_o other, const MethodInfo* method);

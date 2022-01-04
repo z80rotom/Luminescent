@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass15_0___ctor (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass15_0_o* __this, const MethodInfo* method);
+bool Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass15_0___SetPokePosition_b__0 (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass15_0_o* __this, XLSXContent_FreeSanpoGridPosition_SheetSheet1_o* x, const MethodInfo* method);
+bool Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass15_0___SetPokePosition_b__1 (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass15_0_o* __this, XLSXContent_FreeSanpoGridPosition_SheetSheet1_o* x, const MethodInfo* method);

@@ -1,0 +1,20 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_SecretBase_SelectWindow_object__object___Start (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4410* method);
+void Dpr_SecretBase_SelectWindow_object__object___Update (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4420* method);
+void Dpr_SecretBase_SelectWindow_object__object___Init (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4430* method);
+void Dpr_SecretBase_SelectWindow_object__object___CursorAttach (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4480* method);
+int32_t Dpr_SecretBase_SelectWindow_object__object___BindItem (Dpr_SecretBase_SelectWindow_object__object__o* __this, Il2CppObject* data, Il2CppObject* item, const MethodInfo_26B4580* method);
+int32_t Dpr_SecretBase_SelectWindow_object__object___AddItem (Dpr_SecretBase_SelectWindow_object__object__o* __this, Il2CppObject* data, const MethodInfo_26B4670* method);
+void Dpr_SecretBase_SelectWindow_object__object___ClearItem (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B46F0* method);
+bool Dpr_SecretBase_SelectWindow_object__object___SelectNext (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4790* method);
+bool Dpr_SecretBase_SelectWindow_object__object___SelectPrev (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4810* method);
+void Dpr_SecretBase_SelectWindow_object__object___SetCursorActive (Dpr_SecretBase_SelectWindow_object__object__o* __this, bool value, const MethodInfo_26B4880* method);
+void Dpr_SecretBase_SelectWindow_object__object___SetIndex (Dpr_SecretBase_SelectWindow_object__object__o* __this, int32_t index, const MethodInfo_26B4960* method);
+int32_t Dpr_SecretBase_SelectWindow_object__object___GetIndex (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4980* method);
+Il2CppObject* Dpr_SecretBase_SelectWindow_object__object___GetData (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4990* method);
+Il2CppObject* Dpr_SecretBase_SelectWindow_object__object___GetIcon (Dpr_SecretBase_SelectWindow_object__object__o* __this, int32_t index, const MethodInfo_26B49E0* method);
+int32_t Dpr_SecretBase_SelectWindow_object__object___GetItemCount (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4A00* method);
+void Dpr_SecretBase_SelectWindow_object__object____ctor (Dpr_SecretBase_SelectWindow_object__object__o* __this, const MethodInfo_26B4A20* method);

@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Dictionary_ValueCollection_Enumerator_TKey__TValue__o System_Collections_Generic_Dictionary_ValueCollection_int__PointerEventData___GetEnumerator (System_Collections_Generic_Dictionary_ValueCollection_int__PointerEventData__o* __this, const MethodInfo_2753680* method);

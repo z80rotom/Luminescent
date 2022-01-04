@@ -1,0 +1,48 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_Timeline_TimelineAsset__UpgradeToLatestVersion (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+UnityEngine_Timeline_TimelineAsset_EditorSettings_o* UnityEngine_Timeline_TimelineAsset__get_editorSettings (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+double UnityEngine_Timeline_TimelineAsset__get_duration (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+double UnityEngine_Timeline_TimelineAsset__get_fixedDuration (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__set_fixedDuration (UnityEngine_Timeline_TimelineAsset_o* __this, double value, const MethodInfo* method);
+int32_t UnityEngine_Timeline_TimelineAsset__get_durationMode (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__set_durationMode (UnityEngine_Timeline_TimelineAsset_o* __this, int32_t value, const MethodInfo* method);
+System_Collections_Generic_IEnumerable_PlayableBinding__o* UnityEngine_Timeline_TimelineAsset__get_outputs (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+int32_t UnityEngine_Timeline_TimelineAsset__get_clipCaps (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+int32_t UnityEngine_Timeline_TimelineAsset__get_outputTrackCount (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+int32_t UnityEngine_Timeline_TimelineAsset__get_rootTrackCount (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__OnValidate (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+float UnityEngine_Timeline_TimelineAsset__GetValidFramerate (float framerate, const MethodInfo* method);
+UnityEngine_Timeline_TrackAsset_o* UnityEngine_Timeline_TimelineAsset__GetRootTrack (UnityEngine_Timeline_TimelineAsset_o* __this, int32_t index, const MethodInfo* method);
+System_Collections_Generic_IEnumerable_TrackAsset__o* UnityEngine_Timeline_TimelineAsset__GetRootTracks (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+UnityEngine_Timeline_TrackAsset_o* UnityEngine_Timeline_TimelineAsset__GetOutputTrack (UnityEngine_Timeline_TimelineAsset_o* __this, int32_t index, const MethodInfo* method);
+System_Collections_Generic_IEnumerable_TrackAsset__o* UnityEngine_Timeline_TimelineAsset__GetOutputTracks (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__UpdateRootTrackCache (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__UpdateOutputTrackCache (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+System_Collections_Generic_IEnumerable_TrackAsset__o* UnityEngine_Timeline_TimelineAsset__get_flattenedTracks (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+UnityEngine_Timeline_MarkerTrack_o* UnityEngine_Timeline_TimelineAsset__get_markerTrack (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+System_Collections_Generic_List_ScriptableObject__o* UnityEngine_Timeline_TimelineAsset__get_trackObjects (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__AddTrackInternal (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Timeline_TrackAsset_o* track, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__RemoveTrack (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Timeline_TrackAsset_o* track, const MethodInfo* method);
+UnityEngine_Playables_Playable_o UnityEngine_Timeline_TimelineAsset__CreatePlayable (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Playables_PlayableGraph_o graph, UnityEngine_GameObject_o* go, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset____internalAwake (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__GatherProperties (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Playables_PlayableDirector_o* director, UnityEngine_Timeline_IPropertyCollector_o* driver, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__CreateMarkerTrack (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__Invalidate (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+double UnityEngine_Timeline_TimelineAsset__CalculateDuration (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__AddSubTracksRecursive (UnityEngine_Timeline_TrackAsset_o* track, System_Collections_Generic_List_TrackAsset__o** allTracks, const MethodInfo* method);
+UnityEngine_Timeline_TrackAsset_o* UnityEngine_Timeline_TimelineAsset__CreateTrack (UnityEngine_Timeline_TimelineAsset_o* __this, System_Type_o* type, UnityEngine_Timeline_TrackAsset_o* parent, System_String_o* name, const MethodInfo* method);
+Il2CppObject* UnityEngine_Timeline_TimelineAsset__CreateTrack_object_ (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Timeline_TrackAsset_o* parent, System_String_o* trackName, const MethodInfo_2365870* method);
+Il2CppObject* UnityEngine_Timeline_TimelineAsset__CreateTrack_object_ (UnityEngine_Timeline_TimelineAsset_o* __this, System_String_o* trackName, const MethodInfo_2365780* method);
+Il2CppObject* UnityEngine_Timeline_TimelineAsset__CreateTrack_object_ (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo_2365690* method);
+bool UnityEngine_Timeline_TimelineAsset__DeleteClip (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Timeline_TimelineClip_o* clip, const MethodInfo* method);
+bool UnityEngine_Timeline_TimelineAsset__DeleteTrack (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Timeline_TrackAsset_o* track, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__MoveLastTrackBefore (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Timeline_TrackAsset_o* asset, const MethodInfo* method);
+UnityEngine_Timeline_TrackAsset_o* UnityEngine_Timeline_TimelineAsset__AllocateTrack (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Timeline_TrackAsset_o* trackAssetParent, System_String_o* trackName, System_Type_o* trackType, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__DeleteRecordedAnimation (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Timeline_TrackAsset_o* track, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset__DeleteRecordedAnimation (UnityEngine_Timeline_TimelineAsset_o* __this, UnityEngine_Timeline_TimelineClip_o* clip, const MethodInfo* method);
+void UnityEngine_Timeline_TimelineAsset___ctor (UnityEngine_Timeline_TimelineAsset_o* __this, const MethodInfo* method);

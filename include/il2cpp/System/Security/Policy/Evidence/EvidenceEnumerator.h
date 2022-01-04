@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Security_Policy_Evidence_EvidenceEnumerator___ctor (System_Security_Policy_Evidence_EvidenceEnumerator_o* __this, System_Collections_IEnumerator_o* hostenum, System_Collections_IEnumerator_o* assemblyenum, const MethodInfo* method);
+bool System_Security_Policy_Evidence_EvidenceEnumerator__MoveNext (System_Security_Policy_Evidence_EvidenceEnumerator_o* __this, const MethodInfo* method);
+void System_Security_Policy_Evidence_EvidenceEnumerator__Reset (System_Security_Policy_Evidence_EvidenceEnumerator_o* __this, const MethodInfo* method);
+Il2CppObject* System_Security_Policy_Evidence_EvidenceEnumerator__get_Current (System_Security_Policy_Evidence_EvidenceEnumerator_o* __this, const MethodInfo* method);

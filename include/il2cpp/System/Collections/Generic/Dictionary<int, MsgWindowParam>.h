@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_int__MsgWindowParam____ctor (System_Collections_Generic_Dictionary_int__MsgWindowParam__o* __this, const MethodInfo_2A44B60* method);
+int32_t System_Collections_Generic_Dictionary_int__MsgWindowParam___get_Count (System_Collections_Generic_Dictionary_int__MsgWindowParam__o* __this, const MethodInfo_2A44DE0* method);
+Dpr_MsgWindow_MsgWindowParam_o* System_Collections_Generic_Dictionary_int__MsgWindowParam___get_Item (System_Collections_Generic_Dictionary_int__MsgWindowParam__o* __this, int32_t key, const MethodInfo_2A44F30* method);
+void System_Collections_Generic_Dictionary_int__MsgWindowParam___Add (System_Collections_Generic_Dictionary_int__MsgWindowParam__o* __this, int32_t key, Dpr_MsgWindow_MsgWindowParam_o* value, const MethodInfo_2A45020* method);
+void System_Collections_Generic_Dictionary_int__MsgWindowParam___Clear (System_Collections_Generic_Dictionary_int__MsgWindowParam__o* __this, const MethodInfo_2A451E0* method);

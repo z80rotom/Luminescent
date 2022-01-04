@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Dictionary_TKey__HashSet_TElement___o* Dpr_Battle_View_VectorHash_int__object___get_RawElements (Dpr_Battle_View_VectorHash_int__object__o* __this, const MethodInfo_25ACAD0* method);
+void Dpr_Battle_View_VectorHash_int__object____ctor (Dpr_Battle_View_VectorHash_int__object__o* __this, int32_t capacity, const MethodInfo_25ACAE0* method);
+void Dpr_Battle_View_VectorHash_int__object___Dispose (Dpr_Battle_View_VectorHash_int__object__o* __this, const MethodInfo_25ACB60* method);
+void Dpr_Battle_View_VectorHash_int__object___CreateVector (Dpr_Battle_View_VectorHash_int__object__o* __this, int32_t key, System_Collections_Generic_HashSet_TElement__o* elements, const MethodInfo_25ACB80* method);
+bool Dpr_Battle_View_VectorHash_int__object___DeleteVector (Dpr_Battle_View_VectorHash_int__object__o* __this, int32_t key, const MethodInfo_25ACBA0* method);
+void Dpr_Battle_View_VectorHash_int__object___DeleteAllVector (Dpr_Battle_View_VectorHash_int__object__o* __this, const MethodInfo_25ACBC0* method);
+void Dpr_Battle_View_VectorHash_int__object___AddVector (Dpr_Battle_View_VectorHash_int__object__o* __this, int32_t key, System_Collections_Generic_HashSet_TElement__o* elements, const MethodInfo_25ACBE0* method);
+bool Dpr_Battle_View_VectorHash_int__object___HasVector (Dpr_Battle_View_VectorHash_int__object__o* __this, int32_t key, const MethodInfo_25ACE20* method);
+System_Collections_Generic_HashSet_TElement__o* Dpr_Battle_View_VectorHash_int__object___GetVector (Dpr_Battle_View_VectorHash_int__object__o* __this, int32_t key, const MethodInfo_25ACE40* method);
+bool Dpr_Battle_View_VectorHash_int__object___TryGetVector (Dpr_Battle_View_VectorHash_int__object__o* __this, int32_t key, System_Collections_Generic_HashSet_TElement__o** value, const MethodInfo_25ACE60* method);

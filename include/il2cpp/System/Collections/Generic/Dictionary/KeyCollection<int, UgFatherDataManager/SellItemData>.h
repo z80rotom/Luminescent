@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Dictionary_KeyCollection_Enumerator_TKey__TValue__o System_Collections_Generic_Dictionary_KeyCollection_int__UgFatherDataManager_SellItemData___GetEnumerator (System_Collections_Generic_Dictionary_KeyCollection_int__UgFatherDataManager_SellItemData__o* __this, const MethodInfo_2832BF0* method);

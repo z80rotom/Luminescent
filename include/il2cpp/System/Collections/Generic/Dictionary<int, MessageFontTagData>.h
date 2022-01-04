@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_int__MessageFontTagData____ctor (System_Collections_Generic_Dictionary_int__MessageFontTagData__o* __this, const MethodInfo_2A44B60* method);
+Dpr_Message_MessageFontTagData_o* System_Collections_Generic_Dictionary_int__MessageFontTagData___get_Item (System_Collections_Generic_Dictionary_int__MessageFontTagData__o* __this, int32_t key, const MethodInfo_2A44F30* method);
+void System_Collections_Generic_Dictionary_int__MessageFontTagData___Add (System_Collections_Generic_Dictionary_int__MessageFontTagData__o* __this, int32_t key, Dpr_Message_MessageFontTagData_o* value, const MethodInfo_2A45020* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_CompilerServices_InternalsVisibleToAttribute___ctor (System_Runtime_CompilerServices_InternalsVisibleToAttribute_o* __this, System_String_o* assemblyName, const MethodInfo* method);
+System_String_o* System_Runtime_CompilerServices_InternalsVisibleToAttribute__get_AssemblyName (System_Runtime_CompilerServices_InternalsVisibleToAttribute_o* __this, const MethodInfo* method);
+bool System_Runtime_CompilerServices_InternalsVisibleToAttribute__get_AllInternalsVisible (System_Runtime_CompilerServices_InternalsVisibleToAttribute_o* __this, const MethodInfo* method);
+void System_Runtime_CompilerServices_InternalsVisibleToAttribute__set_AllInternalsVisible (System_Runtime_CompilerServices_InternalsVisibleToAttribute_o* __this, bool value, const MethodInfo* method);

@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_View_Systems_BattleWeatherSystem_WeatherParam__SetParam (Dpr_Battle_View_Systems_BattleWeatherSystem_WeatherParam_o* __this, Dpr_Battle_View_Systems_BattleWeatherSystem_WeatherParam_o* param, const MethodInfo* method);
+void Dpr_Battle_View_Systems_BattleWeatherSystem_WeatherParam___ctor (Dpr_Battle_View_Systems_BattleWeatherSystem_WeatherParam_o* __this, const MethodInfo* method);

@@ -1,0 +1,34 @@
+#pragma once
+
+#include "il2cpp.h"
+
+UnityEngine_EventSystems_EventSystem_o* UnityEngine_EventSystems_EventSystem__get_current (const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__set_current (UnityEngine_EventSystems_EventSystem_o* value, const MethodInfo* method);
+bool UnityEngine_EventSystems_EventSystem__get_sendNavigationEvents (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__set_sendNavigationEvents (UnityEngine_EventSystems_EventSystem_o* __this, bool value, const MethodInfo* method);
+int32_t UnityEngine_EventSystems_EventSystem__get_pixelDragThreshold (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__set_pixelDragThreshold (UnityEngine_EventSystems_EventSystem_o* __this, int32_t value, const MethodInfo* method);
+UnityEngine_EventSystems_BaseInputModule_o* UnityEngine_EventSystems_EventSystem__get_currentInputModule (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+UnityEngine_GameObject_o* UnityEngine_EventSystems_EventSystem__get_firstSelectedGameObject (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__set_firstSelectedGameObject (UnityEngine_EventSystems_EventSystem_o* __this, UnityEngine_GameObject_o* value, const MethodInfo* method);
+UnityEngine_GameObject_o* UnityEngine_EventSystems_EventSystem__get_currentSelectedGameObject (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+UnityEngine_GameObject_o* UnityEngine_EventSystems_EventSystem__get_lastSelectedGameObject (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+bool UnityEngine_EventSystems_EventSystem__get_isFocused (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem___ctor (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__UpdateModules (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+bool UnityEngine_EventSystems_EventSystem__get_alreadySelecting (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__SetSelectedGameObject (UnityEngine_EventSystems_EventSystem_o* __this, UnityEngine_GameObject_o* selected, UnityEngine_EventSystems_BaseEventData_o* pointer, const MethodInfo* method);
+UnityEngine_EventSystems_BaseEventData_o* UnityEngine_EventSystems_EventSystem__get_baseEventDataCache (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__SetSelectedGameObject (UnityEngine_EventSystems_EventSystem_o* __this, UnityEngine_GameObject_o* selected, const MethodInfo* method);
+int32_t UnityEngine_EventSystems_EventSystem__RaycastComparer (UnityEngine_EventSystems_RaycastResult_o lhs, UnityEngine_EventSystems_RaycastResult_o rhs, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__RaycastAll (UnityEngine_EventSystems_EventSystem_o* __this, UnityEngine_EventSystems_PointerEventData_o* eventData, System_Collections_Generic_List_RaycastResult__o* raycastResults, const MethodInfo* method);
+bool UnityEngine_EventSystems_EventSystem__IsPointerOverGameObject (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+bool UnityEngine_EventSystems_EventSystem__IsPointerOverGameObject (UnityEngine_EventSystems_EventSystem_o* __this, int32_t pointerId, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__OnEnable (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__OnDisable (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__TickModules (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__OnApplicationFocus (UnityEngine_EventSystems_EventSystem_o* __this, bool hasFocus, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__Update (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem__ChangeEventModule (UnityEngine_EventSystems_EventSystem_o* __this, UnityEngine_EventSystems_BaseInputModule_o* module, const MethodInfo* method);
+System_String_o* UnityEngine_EventSystems_EventSystem__ToString (UnityEngine_EventSystems_EventSystem_o* __this, const MethodInfo* method);
+void UnityEngine_EventSystems_EventSystem___cctor (const MethodInfo* method);

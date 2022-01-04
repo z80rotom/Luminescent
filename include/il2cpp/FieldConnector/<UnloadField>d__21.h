@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void FieldConnector__UnloadField_d__21___ctor (FieldConnector__UnloadField_d__21_o* __this, int32_t __1__state, const MethodInfo* method);
+void FieldConnector__UnloadField_d__21__System_IDisposable_Dispose (FieldConnector__UnloadField_d__21_o* __this, const MethodInfo* method);
+bool FieldConnector__UnloadField_d__21__MoveNext (FieldConnector__UnloadField_d__21_o* __this, const MethodInfo* method);
+Il2CppObject* FieldConnector__UnloadField_d__21__System_Collections_Generic_IEnumerator_System_Object__get_Current (FieldConnector__UnloadField_d__21_o* __this, const MethodInfo* method);
+void FieldConnector__UnloadField_d__21__System_Collections_IEnumerator_Reset (FieldConnector__UnloadField_d__21_o* __this, const MethodInfo* method);
+Il2CppObject* FieldConnector__UnloadField_d__21__System_Collections_IEnumerator_get_Current (FieldConnector__UnloadField_d__21_o* __this, const MethodInfo* method);

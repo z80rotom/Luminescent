@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UnderGround_UgFieldManager_DigPointModel___ctor (Dpr_UnderGround_UgFieldManager_DigPointModel_o* __this, int32_t x, int32_t y, int32_t staionIndex, const MethodInfo* method);
+UnityEngine_Vector2Int_o Dpr_UnderGround_UgFieldManager_DigPointModel__GetEffOffset (Dpr_UnderGround_UgFieldManager_DigPointModel_o* __this, const MethodInfo* method);
+UnityEngine_Vector3_o Dpr_UnderGround_UgFieldManager_DigPointModel__GetPosition (Dpr_UnderGround_UgFieldManager_DigPointModel_o* __this, const MethodInfo* method);
+void Dpr_UnderGround_UgFieldManager_DigPointModel__SetActive (Dpr_UnderGround_UgFieldManager_DigPointModel_o* __this, bool isActive, const MethodInfo* method);
+void Dpr_UnderGround_UgFieldManager_DigPointModel__Destroy (Dpr_UnderGround_UgFieldManager_DigPointModel_o* __this, const MethodInfo* method);
+void Dpr_UnderGround_UgFieldManager_DigPointModel__KiraKira (Dpr_UnderGround_UgFieldManager_DigPointModel_o* __this, float startDelay, const MethodInfo* method);
+void Dpr_UnderGround_UgFieldManager_DigPointModel___cctor (const MethodInfo* method);
+void Dpr_UnderGround_UgFieldManager_DigPointModel___KiraKira_b__12_0 (Dpr_UnderGround_UgFieldManager_DigPointModel_o* __this, const MethodInfo* method);
+void Dpr_UnderGround_UgFieldManager_DigPointModel___KiraKira_b__12_1 (Dpr_UnderGround_UgFieldManager_DigPointModel_o* __this, Effect_EffectInstance_o* eff, const MethodInfo* method);
+void Dpr_UnderGround_UgFieldManager_DigPointModel___KiraKira_b__12_2 (Dpr_UnderGround_UgFieldManager_DigPointModel_o* __this, Effect_EffectInstance_o* eff, const MethodInfo* method);

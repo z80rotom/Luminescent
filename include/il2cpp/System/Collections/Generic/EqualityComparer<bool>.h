@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_EqualityComparer_T__o* System_Collections_Generic_EqualityComparer_bool___get_Default (const MethodInfo_2B35B30* method);
+System_Collections_Generic_EqualityComparer_T__o* System_Collections_Generic_EqualityComparer_bool___CreateComparer (const MethodInfo_2B35C40* method);
+int32_t System_Collections_Generic_EqualityComparer_bool___IndexOf (System_Collections_Generic_EqualityComparer_bool__o* __this, System_Boolean_array* array, bool value, int32_t startIndex, int32_t count, const MethodInfo_2B36260* method);
+int32_t System_Collections_Generic_EqualityComparer_bool___LastIndexOf (System_Collections_Generic_EqualityComparer_bool__o* __this, System_Boolean_array* array, bool value, int32_t startIndex, int32_t count, const MethodInfo_2B36320* method);
+int32_t System_Collections_Generic_EqualityComparer_bool___System_Collections_IEqualityComparer_GetHashCode (System_Collections_Generic_EqualityComparer_bool__o* __this, Il2CppObject* obj, const MethodInfo_2B363C0* method);
+bool System_Collections_Generic_EqualityComparer_bool___System_Collections_IEqualityComparer_Equals (System_Collections_Generic_EqualityComparer_bool__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2B36490* method);
+void System_Collections_Generic_EqualityComparer_bool____ctor (System_Collections_Generic_EqualityComparer_bool__o* __this, const MethodInfo_2B36610* method);

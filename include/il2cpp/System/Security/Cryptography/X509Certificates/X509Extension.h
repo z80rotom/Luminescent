@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Security_Cryptography_X509Certificates_X509Extension___ctor (System_Security_Cryptography_X509Certificates_X509Extension_o* __this, const MethodInfo* method);
+bool System_Security_Cryptography_X509Certificates_X509Extension__get_Critical (System_Security_Cryptography_X509Certificates_X509Extension_o* __this, const MethodInfo* method);
+void System_Security_Cryptography_X509Certificates_X509Extension__set_Critical (System_Security_Cryptography_X509Certificates_X509Extension_o* __this, bool value, const MethodInfo* method);
+void System_Security_Cryptography_X509Certificates_X509Extension__CopyFrom (System_Security_Cryptography_X509Certificates_X509Extension_o* __this, System_Security_Cryptography_AsnEncodedData_o* asnEncodedData, const MethodInfo* method);
+System_String_o* System_Security_Cryptography_X509Certificates_X509Extension__FormatUnkownData (System_Security_Cryptography_X509Certificates_X509Extension_o* __this, System_Byte_array* data, const MethodInfo* method);

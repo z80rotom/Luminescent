@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_TimeZoneInfo____ctor (System_Collections_Generic_List_TimeZoneInfo__o* __this, const MethodInfo_2BAD0F0* method);
+int32_t System_Collections_Generic_List_TimeZoneInfo___get_Count (System_Collections_Generic_List_TimeZoneInfo__o* __this, const MethodInfo_2BAD9C0* method);
+void System_Collections_Generic_List_TimeZoneInfo___Add (System_Collections_Generic_List_TimeZoneInfo__o* __this, System_TimeZoneInfo_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_TimeZoneInfo___AddRange (System_Collections_Generic_List_TimeZoneInfo__o* __this, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo_2BADF50* method);

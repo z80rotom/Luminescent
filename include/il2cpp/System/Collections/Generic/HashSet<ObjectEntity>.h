@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_HashSet_ObjectEntity____ctor (System_Collections_Generic_HashSet_ObjectEntity__o* __this, const MethodInfo_2A2FE40* method);
+System_Collections_Generic_HashSet_Enumerator_T__o System_Collections_Generic_HashSet_ObjectEntity___GetEnumerator (System_Collections_Generic_HashSet_ObjectEntity__o* __this, const MethodInfo_2A308F0* method);
+bool System_Collections_Generic_HashSet_ObjectEntity___Add (System_Collections_Generic_HashSet_ObjectEntity__o* __this, Dpr_ObjectEntity_o* item, const MethodInfo_2A30F50* method);

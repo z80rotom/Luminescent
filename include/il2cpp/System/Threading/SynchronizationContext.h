@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Threading_SynchronizationContext___ctor (System_Threading_SynchronizationContext_o* __this, const MethodInfo* method);
+void System_Threading_SynchronizationContext__Send (System_Threading_SynchronizationContext_o* __this, System_Threading_SendOrPostCallback_o* d, Il2CppObject* state, const MethodInfo* method);
+void System_Threading_SynchronizationContext__Post (System_Threading_SynchronizationContext_o* __this, System_Threading_SendOrPostCallback_o* d, Il2CppObject* state, const MethodInfo* method);
+void System_Threading_SynchronizationContext__SetSynchronizationContext (System_Threading_SynchronizationContext_o* syncContext, const MethodInfo* method);
+System_Threading_SynchronizationContext_o* System_Threading_SynchronizationContext__get_Current (const MethodInfo* method);
+System_Threading_SynchronizationContext_o* System_Threading_SynchronizationContext__get_CurrentNoFlow (const MethodInfo* method);
+System_Threading_SynchronizationContext_o* System_Threading_SynchronizationContext__GetThreadLocalContext (const MethodInfo* method);
+System_Threading_SynchronizationContext_o* System_Threading_SynchronizationContext__CreateCopy (System_Threading_SynchronizationContext_o* __this, const MethodInfo* method);

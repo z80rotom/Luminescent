@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_SignalAsset____ctor (System_Collections_Generic_List_SignalAsset__o* __this, const MethodInfo_2BAD0F0* method);
+int32_t System_Collections_Generic_List_SignalAsset___get_Count (System_Collections_Generic_List_SignalAsset__o* __this, const MethodInfo_2BAD9C0* method);
+UnityEngine_Timeline_SignalAsset_o* System_Collections_Generic_List_SignalAsset___get_Item (System_Collections_Generic_List_SignalAsset__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
+void System_Collections_Generic_List_SignalAsset___set_Item (System_Collections_Generic_List_SignalAsset__o* __this, int32_t index, UnityEngine_Timeline_SignalAsset_o* value, const MethodInfo_2BADA30* method);
+void System_Collections_Generic_List_SignalAsset___Add (System_Collections_Generic_List_SignalAsset__o* __this, UnityEngine_Timeline_SignalAsset_o* item, const MethodInfo_2BADD00* method);
+bool System_Collections_Generic_List_SignalAsset___Contains (System_Collections_Generic_List_SignalAsset__o* __this, UnityEngine_Timeline_SignalAsset_o* item, const MethodInfo_2BAE0F0* method);
+int32_t System_Collections_Generic_List_SignalAsset___IndexOf (System_Collections_Generic_List_SignalAsset__o* __this, UnityEngine_Timeline_SignalAsset_o* item, const MethodInfo_2BAECB0* method);
+void System_Collections_Generic_List_SignalAsset___RemoveAt (System_Collections_Generic_List_SignalAsset__o* __this, int32_t index, const MethodInfo_2BAF8D0* method);

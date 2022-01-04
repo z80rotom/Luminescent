@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void SmartPoint_AssetAssistant_AssetRequestItem___ctor (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, SmartPoint_AssetAssistant_AssetBundleDownloadManifest_o* _manifest, System_String_o* _assetName, const MethodInfo* method);
+UnityEngine_Object_o* SmartPoint_AssetAssistant_AssetRequestItem__get_asset (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_AssetRequestItem__get_isComplete (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, const MethodInfo* method);
+int32_t SmartPoint_AssetAssistant_AssetRequestItem__get_status (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetRequestItem__set_status (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, int32_t value, const MethodInfo* method);
+SmartPoint_AssetAssistant_AssetBundleDownloadManifest_o* SmartPoint_AssetAssistant_AssetRequestItem__get_manifest (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetRequestItem__set_manifest (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, SmartPoint_AssetAssistant_AssetBundleDownloadManifest_o* value, const MethodInfo* method);
+System_String_o* SmartPoint_AssetAssistant_AssetRequestItem__get_uri (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetRequestItem__set_uri (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, System_String_o* value, const MethodInfo* method);
+System_String_o* SmartPoint_AssetAssistant_AssetRequestItem__get_assetBundleName (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetRequestItem__set_assetBundleName (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, System_String_o* value, const MethodInfo* method);
+UnityEngine_AsyncOperation_o* SmartPoint_AssetAssistant_AssetRequestItem__get_resourceRequest (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetRequestItem__set_resourceRequest (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, UnityEngine_AsyncOperation_o* value, const MethodInfo* method);
+SmartPoint_AssetAssistant_RequestEventCallback_o* SmartPoint_AssetAssistant_AssetRequestItem__get_callback (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetRequestItem__set_callback (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, SmartPoint_AssetAssistant_RequestEventCallback_o* value, const MethodInfo* method);
+System_String_o* SmartPoint_AssetAssistant_AssetRequestItem__get_error (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetRequestItem__set_error (SmartPoint_AssetAssistant_AssetRequestItem_o* __this, System_String_o* value, const MethodInfo* method);

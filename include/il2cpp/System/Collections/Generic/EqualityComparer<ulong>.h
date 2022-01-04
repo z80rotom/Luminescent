@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_EqualityComparer_T__o* System_Collections_Generic_EqualityComparer_ulong___get_Default (const MethodInfo_2B436C0* method);
+System_Collections_Generic_EqualityComparer_T__o* System_Collections_Generic_EqualityComparer_ulong___CreateComparer (const MethodInfo_2B437D0* method);
+int32_t System_Collections_Generic_EqualityComparer_ulong___IndexOf (System_Collections_Generic_EqualityComparer_ulong__o* __this, System_UInt64_array* array, uint64_t value, int32_t startIndex, int32_t count, const MethodInfo_2B43DF0* method);
+int32_t System_Collections_Generic_EqualityComparer_ulong___LastIndexOf (System_Collections_Generic_EqualityComparer_ulong__o* __this, System_UInt64_array* array, uint64_t value, int32_t startIndex, int32_t count, const MethodInfo_2B43EB0* method);
+int32_t System_Collections_Generic_EqualityComparer_ulong___System_Collections_IEqualityComparer_GetHashCode (System_Collections_Generic_EqualityComparer_ulong__o* __this, Il2CppObject* obj, const MethodInfo_2B43F50* method);
+bool System_Collections_Generic_EqualityComparer_ulong___System_Collections_IEqualityComparer_Equals (System_Collections_Generic_EqualityComparer_ulong__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2B44020* method);
+void System_Collections_Generic_EqualityComparer_ulong____ctor (System_Collections_Generic_EqualityComparer_ulong__o* __this, const MethodInfo_2B44190* method);

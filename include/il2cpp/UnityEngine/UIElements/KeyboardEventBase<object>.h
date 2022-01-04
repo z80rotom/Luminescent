@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UIElements_KeyboardEventBase_object___set_modifiers (UnityEngine_UIElements_KeyboardEventBase_object__o* __this, int32_t value, const MethodInfo_2CCF190* method);
+void UnityEngine_UIElements_KeyboardEventBase_object___set_character (UnityEngine_UIElements_KeyboardEventBase_object__o* __this, uint16_t value, const MethodInfo_2CCF1A0* method);
+void UnityEngine_UIElements_KeyboardEventBase_object___set_keyCode (UnityEngine_UIElements_KeyboardEventBase_object__o* __this, int32_t value, const MethodInfo_2CCF1B0* method);
+void UnityEngine_UIElements_KeyboardEventBase_object___Init (UnityEngine_UIElements_KeyboardEventBase_object__o* __this, const MethodInfo_2CCF1C0* method);
+void UnityEngine_UIElements_KeyboardEventBase_object___LocalInit (UnityEngine_UIElements_KeyboardEventBase_object__o* __this, const MethodInfo_2CCF210* method);
+Il2CppObject* UnityEngine_UIElements_KeyboardEventBase_object___GetPooled (uint16_t c, int32_t keyCode, int32_t modifiers, const MethodInfo_2CCF290* method);
+Il2CppObject* UnityEngine_UIElements_KeyboardEventBase_object___GetPooled (UnityEngine_Event_o* systemEvent, const MethodInfo_2CCF4E0* method);
+void UnityEngine_UIElements_KeyboardEventBase_object____ctor (UnityEngine_UIElements_KeyboardEventBase_object__o* __this, const MethodInfo_2CCF760* method);

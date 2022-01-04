@@ -1,0 +1,52 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool Dpr_UI_SealEditSceneController__get_canResetRotate (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+Dpr_UI_Capsule2DViewController_o* Dpr_UI_SealEditSceneController__get_Capsule2DViewController (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+Dpr_UI_Capsule3DViewController_o* Dpr_UI_SealEditSceneController__get_Capsule3DViewController (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+bool Dpr_UI_SealEditSceneController__get_IsShow (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__set_IsShow (Dpr_UI_SealEditSceneController_o* __this, bool value, const MethodInfo* method);
+bool Dpr_UI_SealEditSceneController__get_IsAllowPreview (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+System_Action_o* Dpr_UI_SealEditSceneController__get_OnSelectSealWhenAffixSealMaxCount (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__set_OnSelectSealWhenAffixSealMaxCount (Dpr_UI_SealEditSceneController_o* __this, System_Action_o* value, const MethodInfo* method);
+System_Collections_IEnumerator_o* Dpr_UI_SealEditSceneController__Initialize (Dpr_UI_SealEditSceneController_o* __this, Dpr_UI_UIInputController_o* input, Dpr_UI_UIMsgWindowController_o* msgWindowController, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__SetKeyguid (Dpr_UI_SealEditSceneController_o* __this, Dpr_UI_Keyguide_o* keyguide, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__Show (Dpr_UI_SealEditSceneController_o* __this, Dpr_UI_CapsuleInfo_o* capsuleInfo, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__Hide (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__PlayReportCurrentCapsuleData (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+bool Dpr_UI_SealEditSceneController__OnUpdate (Dpr_UI_SealEditSceneController_o* __this, float deltaTime, const MethodInfo* method);
+bool Dpr_UI_SealEditSceneController__OnUpdateDefault (Dpr_UI_SealEditSceneController_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__OnUpdateCategoryTab (Dpr_UI_SealEditSceneController_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__OnUpdatePullDown (Dpr_UI_SealEditSceneController_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__OnUpdate3DMode (Dpr_UI_SealEditSceneController_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__OnUpdate2DMode (Dpr_UI_SealEditSceneController_o* __this, float deltaTime, const MethodInfo* method);
+Dpr_UI_SealCategoryButton_o* Dpr_UI_SealEditSceneController__GetNearCategoryButton (Dpr_UI_SealEditSceneController_o* __this, UnityEngine_Vector3_o pos, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__UpdateKeyGuide (Dpr_UI_SealEditSceneController_o* __this, bool isForce, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__MoveCursor (Dpr_UI_SealEditSceneController_o* __this, float x, float y, const MethodInfo* method);
+int32_t Dpr_UI_SealEditSceneController__Decide (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__SwitchMode (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__ShowPullDown (Dpr_UI_SealEditSceneController_o* __this, UnityEngine_Vector3_o pos, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__HidePullDown (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__UpdatePullDownCursor (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__UpdateCursorPositionToCurrentCategory (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+bool Dpr_UI_SealEditSceneController__MoveCurrentCategoryButtonNearestGrid (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__CheckCursorRaycast (Dpr_UI_SealEditSceneController_o* __this, bool isForce, bool isCheckMovable, bool isSelectSe, const MethodInfo* method);
+System_Collections_IEnumerator_o* Dpr_UI_SealEditSceneController__DelayCheckCursorRaycast (Dpr_UI_SealEditSceneController_o* __this, bool isForce, bool isCheckMovable, bool isSelectSe, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__RefreshShowPullDown (Dpr_UI_SealEditSceneController_o* __this, bool isMoveCursorCurrentCategory, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__RefreshCapsuleInfo (Dpr_UI_SealEditSceneController_o* __this, bool isReset, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__UpdatePallet (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__SwitchPallet (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__CheckCategoryButtonEnable (Dpr_UI_SealEditSceneController_o* __this, Dpr_UI_SealCategoryButton_o* button, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__SetupPullDown (Dpr_UI_SealEditSceneController_o* __this, Dpr_UI_SealCategoryButton_o* categoryButton, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__UpdateSealCountView (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__UpdateSwitchPalletIconActive (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__SetPickedSeal (Dpr_UI_SealEditSceneController_o* __this, Dpr_UI_Capsule2DGridCell_o* capsule2DGridCell, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__SetPickedSeal (Dpr_UI_SealEditSceneController_o* __this, Dpr_UI_Seal3DObject_o* seal3DObject, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__ClearPickedSeal (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__OnReverseCapsule2D (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController__CheckCursorInMovableRect (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+UnityEngine_Rect_o Dpr_UI_SealEditSceneController__GetRect (Dpr_UI_SealEditSceneController_o* __this, UnityEngine_RectTransform_o* rectTransform, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController___ctor (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController___SwitchMode_b__75_0 (Dpr_UI_SealEditSceneController_o* __this, const MethodInfo* method);
+void Dpr_UI_SealEditSceneController___SwitchMode_b__75_1 (Dpr_UI_SealEditSceneController_o* __this, int32_t index, const MethodInfo* method);

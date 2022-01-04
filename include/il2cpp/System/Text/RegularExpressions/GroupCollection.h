@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Text_RegularExpressions_GroupCollection___ctor (System_Text_RegularExpressions_GroupCollection_o* __this, System_Text_RegularExpressions_Match_o* match, System_Collections_Hashtable_o* caps, const MethodInfo* method);
+int32_t System_Text_RegularExpressions_GroupCollection__get_Count (System_Text_RegularExpressions_GroupCollection_o* __this, const MethodInfo* method);
+System_Text_RegularExpressions_Group_o* System_Text_RegularExpressions_GroupCollection__get_Item (System_Text_RegularExpressions_GroupCollection_o* __this, int32_t groupnum, const MethodInfo* method);
+System_Text_RegularExpressions_Group_o* System_Text_RegularExpressions_GroupCollection__GetGroup (System_Text_RegularExpressions_GroupCollection_o* __this, int32_t groupnum, const MethodInfo* method);
+System_Text_RegularExpressions_Group_o* System_Text_RegularExpressions_GroupCollection__GetGroupImpl (System_Text_RegularExpressions_GroupCollection_o* __this, int32_t groupnum, const MethodInfo* method);
+void System_Text_RegularExpressions_GroupCollection__CopyTo (System_Text_RegularExpressions_GroupCollection_o* __this, System_Array_o* array, int32_t arrayIndex, const MethodInfo* method);
+System_Collections_IEnumerator_o* System_Text_RegularExpressions_GroupCollection__GetEnumerator (System_Text_RegularExpressions_GroupCollection_o* __this, const MethodInfo* method);
+void System_Text_RegularExpressions_GroupCollection___ctor (System_Text_RegularExpressions_GroupCollection_o* __this, const MethodInfo* method);

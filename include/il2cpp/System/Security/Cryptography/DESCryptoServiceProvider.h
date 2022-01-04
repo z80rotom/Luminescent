@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Security_Cryptography_DESCryptoServiceProvider___ctor (System_Security_Cryptography_DESCryptoServiceProvider_o* __this, const MethodInfo* method);
+System_Security_Cryptography_ICryptoTransform_o* System_Security_Cryptography_DESCryptoServiceProvider__CreateDecryptor (System_Security_Cryptography_DESCryptoServiceProvider_o* __this, System_Byte_array* rgbKey, System_Byte_array* rgbIV, const MethodInfo* method);

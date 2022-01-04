@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage___ctor (Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage__Execute (Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage_o* __this, Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage_Description_o** description, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage__checkWazaInvalid (Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage_o* __this, Dpr_Battle_Logic_DmgAffRec_o* pAffinityRecorder, Dpr_Battle_Logic_BTL_POKEPARAM_o* pAttacker, Dpr_Battle_Logic_WazaParam_o* pWazaParam, Dpr_Battle_Logic_ActionDesc_o* actionDesc, Dpr_Battle_Logic_PokeSet_o* pTaragets, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage__damageWaza (Dpr_Battle_Logic_Section_FromEvent_DelayWazaDamage_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_WazaParam_o* wazaParam, Dpr_Battle_Logic_DmgAffRec_o* affinityRecorder, Dpr_Battle_Logic_PokeSet_o* targets, Dpr_Battle_Logic_ActionDesc_o* actionDesc, const MethodInfo* method);

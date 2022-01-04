@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool System_Collections_Generic_ObjectEqualityComparer_Color___Equals (System_Collections_Generic_ObjectEqualityComparer_Color__o* __this, UnityEngine_Color_o x, UnityEngine_Color_o y, const MethodInfo_292B470* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Color___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_Color__o* __this, UnityEngine_Color_o obj, const MethodInfo_292B4E0* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Color___IndexOf (System_Collections_Generic_ObjectEqualityComparer_Color__o* __this, UnityEngine_Color_array* array, UnityEngine_Color_o value, int32_t startIndex, int32_t count, const MethodInfo_292B510* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Color___LastIndexOf (System_Collections_Generic_ObjectEqualityComparer_Color__o* __this, UnityEngine_Color_array* array, UnityEngine_Color_o value, int32_t startIndex, int32_t count, const MethodInfo_292B620* method);
+bool System_Collections_Generic_ObjectEqualityComparer_Color___Equals (System_Collections_Generic_ObjectEqualityComparer_Color__o* __this, Il2CppObject* obj, const MethodInfo_292B720* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Color___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_Color__o* __this, const MethodInfo_292B770* method);
+void System_Collections_Generic_ObjectEqualityComparer_Color____ctor (System_Collections_Generic_ObjectEqualityComparer_Color__o* __this, const MethodInfo_292B7A0* method);

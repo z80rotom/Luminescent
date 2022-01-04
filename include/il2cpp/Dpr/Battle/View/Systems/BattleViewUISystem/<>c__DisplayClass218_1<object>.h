@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_View_Systems_BattleViewUISystem___c__DisplayClass218_1_object____ctor (Dpr_Battle_View_Systems_BattleViewUISystem___c__DisplayClass218_1_object__o* __this, const MethodInfo_25ABB80* method);
+void Dpr_Battle_View_Systems_BattleViewUISystem___c__DisplayClass218_1_object____CloseMenuUICoroutine_b__1 (Dpr_Battle_View_Systems_BattleViewUISystem___c__DisplayClass218_1_object__o* __this, Dpr_UI_UIWindow_o* window, const MethodInfo_25ABB90* method);

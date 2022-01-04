@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Enumerable___c__DisplayClass7_0_AnimatorClipInfo__float__float____ctor (System_Linq_Enumerable___c__DisplayClass7_0_AnimatorClipInfo__float__float__o* __this, const MethodInfo_2970E00* method);
+float System_Linq_Enumerable___c__DisplayClass7_0_AnimatorClipInfo__float__float____CombineSelectors_b__0 (System_Linq_Enumerable___c__DisplayClass7_0_AnimatorClipInfo__float__float__o* __this, UnityEngine_AnimatorClipInfo_o x, const MethodInfo_2970E10* method);

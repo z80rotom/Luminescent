@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_Enumerator_MethodInfo___Dispose (System_Collections_Generic_List_Enumerator_MethodInfo__o __this, const MethodInfo_2468ED0* method);
+bool System_Collections_Generic_List_Enumerator_MethodInfo___MoveNext (System_Collections_Generic_List_Enumerator_MethodInfo__o __this, const MethodInfo_2468EE0* method);
+System_Reflection_MethodInfo_o* System_Collections_Generic_List_Enumerator_MethodInfo___get_Current (System_Collections_Generic_List_Enumerator_MethodInfo__o __this, const MethodInfo_2469020* method);

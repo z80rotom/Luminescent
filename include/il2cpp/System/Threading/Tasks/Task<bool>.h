@@ -1,0 +1,20 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Threading_Tasks_Task_bool____ctor (System_Threading_Tasks_Task_bool__o* __this, const MethodInfo_2917980* method);
+void System_Threading_Tasks_Task_bool____ctor (System_Threading_Tasks_Task_bool__o* __this, bool result, const MethodInfo_29179F0* method);
+void System_Threading_Tasks_Task_bool____ctor (System_Threading_Tasks_Task_bool__o* __this, bool canceled, bool result, int32_t creationOptions, System_Threading_CancellationToken_o ct, const MethodInfo_2917A80* method);
+void System_Threading_Tasks_Task_bool____ctor (System_Threading_Tasks_Task_bool__o* __this, System_Func_object__TResult__o* function, Il2CppObject* state, System_Threading_CancellationToken_o cancellationToken, int32_t creationOptions, const MethodInfo_2917B30* method);
+void System_Threading_Tasks_Task_bool____ctor (System_Threading_Tasks_Task_bool__o* __this, System_Delegate_o* valueSelector, Il2CppObject* state, System_Threading_Tasks_Task_o* parent, System_Threading_CancellationToken_o cancellationToken, int32_t creationOptions, int32_t internalOptions, System_Threading_Tasks_TaskScheduler_o* scheduler, const MethodInfo_2917C30* method);
+bool System_Threading_Tasks_Task_bool___TrySetResult (System_Threading_Tasks_Task_bool__o* __this, bool result, const MethodInfo_2917D60* method);
+bool System_Threading_Tasks_Task_bool___get_Result (System_Threading_Tasks_Task_bool__o* __this, const MethodInfo_2917E10* method);
+bool System_Threading_Tasks_Task_bool___get_ResultOnSuccess (System_Threading_Tasks_Task_bool__o* __this, const MethodInfo_2917E80* method);
+bool System_Threading_Tasks_Task_bool___GetResultCore (System_Threading_Tasks_Task_bool__o* __this, bool waitCompletionNotification, const MethodInfo_2917E90* method);
+bool System_Threading_Tasks_Task_bool___TrySetException (System_Threading_Tasks_Task_bool__o* __this, Il2CppObject* exceptionObject, const MethodInfo_2917F30* method);
+bool System_Threading_Tasks_Task_bool___TrySetCanceled (System_Threading_Tasks_Task_bool__o* __this, System_Threading_CancellationToken_o tokenToRecord, const MethodInfo_2917FB0* method);
+bool System_Threading_Tasks_Task_bool___TrySetCanceled (System_Threading_Tasks_Task_bool__o* __this, System_Threading_CancellationToken_o tokenToRecord, Il2CppObject* cancellationException, const MethodInfo_2917FD0* method);
+void System_Threading_Tasks_Task_bool___InnerInvoke (System_Threading_Tasks_Task_bool__o* __this, const MethodInfo_2918050* method);
+System_Runtime_CompilerServices_TaskAwaiter_TResult__o System_Threading_Tasks_Task_bool___GetAwaiter (System_Threading_Tasks_Task_bool__o* __this, const MethodInfo_2918110* method);
+System_Runtime_CompilerServices_ConfiguredTaskAwaitable_TResult__o System_Threading_Tasks_Task_bool___ConfigureAwait (System_Threading_Tasks_Task_bool__o* __this, bool continueOnCapturedContext, const MethodInfo_2918140* method);
+void System_Threading_Tasks_Task_bool____cctor (const MethodInfo_29181C0* method);

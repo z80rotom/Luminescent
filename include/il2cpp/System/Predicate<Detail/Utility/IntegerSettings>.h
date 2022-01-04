@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Predicate_Detail_Utility_IntegerSettings____ctor (System_Predicate_Detail_Utility_IntegerSettings__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_29047A0* method);
+bool System_Predicate_Detail_Utility_IntegerSettings___Invoke (System_Predicate_Detail_Utility_IntegerSettings__o* __this, NexPlugin_Detail_Utility_IntegerSettings_o obj, const MethodInfo_29047C0* method);
+System_IAsyncResult_o* System_Predicate_Detail_Utility_IntegerSettings___BeginInvoke (System_Predicate_Detail_Utility_IntegerSettings__o* __this, NexPlugin_Detail_Utility_IntegerSettings_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_2904A60* method);
+bool System_Predicate_Detail_Utility_IntegerSettings___EndInvoke (System_Predicate_Detail_Utility_IntegerSettings__o* __this, System_IAsyncResult_o* result, const MethodInfo_2904AF0* method);

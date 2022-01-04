@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Serialization_Formatters_Binary_BinaryCrossAppDomainString___ctor (System_Runtime_Serialization_Formatters_Binary_BinaryCrossAppDomainString_o* __this, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryCrossAppDomainString__Read (System_Runtime_Serialization_Formatters_Binary_BinaryCrossAppDomainString_o* __this, System_Runtime_Serialization_Formatters_Binary___BinaryParser_o* input, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryCrossAppDomainString__Dump (System_Runtime_Serialization_Formatters_Binary_BinaryCrossAppDomainString_o* __this, const MethodInfo* method);

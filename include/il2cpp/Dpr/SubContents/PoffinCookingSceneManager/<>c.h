@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_SubContents_PoffinCookingSceneManager___c___cctor (const MethodInfo* method);
+void Dpr_SubContents_PoffinCookingSceneManager___c___ctor (Dpr_SubContents_PoffinCookingSceneManager___c_o* __this, const MethodInfo* method);
+void Dpr_SubContents_PoffinCookingSceneManager___c___SetActiveForPofin_b__24_0 (Dpr_SubContents_PoffinCookingSceneManager___c_o* __this, UnityEngine_GameObject_o* x, const MethodInfo* method);
+void Dpr_SubContents_PoffinCookingSceneManager___c___SetActiveForPofin_b__24_1 (Dpr_SubContents_PoffinCookingSceneManager___c_o* __this, UnityEngine_GameObject_o* x, const MethodInfo* method);
+void Dpr_SubContents_PoffinCookingSceneManager___c___SetActiveForPofin_b__24_2 (Dpr_SubContents_PoffinCookingSceneManager___c_o* __this, UnityEngine_GameObject_o* x, const MethodInfo* method);
+bool Dpr_SubContents_PoffinCookingSceneManager___c___SetActiveFureaiHiroba_b__25_0 (Dpr_SubContents_PoffinCookingSceneManager___c_o* __this, FieldCharacterEntity_o* x, const MethodInfo* method);
+UnityEngine_GameObject_o* Dpr_SubContents_PoffinCookingSceneManager___c___SetActivePoffinHouse_b__26_0 (Dpr_SubContents_PoffinCookingSceneManager___c_o* __this, FieldCharacterEntity_o* x, const MethodInfo* method);

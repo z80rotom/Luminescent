@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0___ctor (Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0_o* __this, const MethodInfo* method);
+void Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0___CallInternetGo_b__0 (Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0_o* __this, const MethodInfo* method);
+void Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0___CallInternetGo_b__3 (Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0_o* __this, const MethodInfo* method);
+void Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0___CallInternetGo_b__1 (Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0_o* __this, const MethodInfo* method);
+void Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0___CallInternetGo_b__2 (Dpr_NetworkUtils_NetworkManager___c__DisplayClass47_0_o* __this, const MethodInfo* method);

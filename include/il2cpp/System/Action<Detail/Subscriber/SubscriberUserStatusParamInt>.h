@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Action_Detail_Subscriber_SubscriberUserStatusParamInt____ctor (System_Action_Detail_Subscriber_SubscriberUserStatusParamInt__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_26C8230* method);
+void System_Action_Detail_Subscriber_SubscriberUserStatusParamInt___Invoke (System_Action_Detail_Subscriber_SubscriberUserStatusParamInt__o* __this, NexPlugin_Detail_Subscriber_SubscriberUserStatusParamInt_o obj, const MethodInfo_26C8250* method);
+System_IAsyncResult_o* System_Action_Detail_Subscriber_SubscriberUserStatusParamInt___BeginInvoke (System_Action_Detail_Subscriber_SubscriberUserStatusParamInt__o* __this, NexPlugin_Detail_Subscriber_SubscriberUserStatusParamInt_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_26C85B0* method);
+void System_Action_Detail_Subscriber_SubscriberUserStatusParamInt___EndInvoke (System_Action_Detail_Subscriber_SubscriberUserStatusParamInt__o* __this, System_IAsyncResult_o* result, const MethodInfo_26C8650* method);

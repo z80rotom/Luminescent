@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Comparison_BeforeRenderHelper_OrderBlock____ctor (System_Comparison_BeforeRenderHelper_OrderBlock__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_2A9A500* method);
+int32_t System_Comparison_BeforeRenderHelper_OrderBlock___Invoke (System_Comparison_BeforeRenderHelper_OrderBlock__o* __this, UnityEngine_BeforeRenderHelper_OrderBlock_o x, UnityEngine_BeforeRenderHelper_OrderBlock_o y, const MethodInfo_2A9A520* method);
+System_IAsyncResult_o* System_Comparison_BeforeRenderHelper_OrderBlock___BeginInvoke (System_Comparison_BeforeRenderHelper_OrderBlock__o* __this, UnityEngine_BeforeRenderHelper_OrderBlock_o x, UnityEngine_BeforeRenderHelper_OrderBlock_o y, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_2A9A830* method);
+int32_t System_Comparison_BeforeRenderHelper_OrderBlock___EndInvoke (System_Comparison_BeforeRenderHelper_OrderBlock__o* __this, System_IAsyncResult_o* result, const MethodInfo_2A9A8D0* method);

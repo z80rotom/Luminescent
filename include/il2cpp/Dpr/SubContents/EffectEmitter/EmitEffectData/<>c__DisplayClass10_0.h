@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_SubContents_EffectEmitter_EmitEffectData___c__DisplayClass10_0___ctor (Dpr_SubContents_EffectEmitter_EmitEffectData___c__DisplayClass10_0_o* __this, const MethodInfo* method);
+void Dpr_SubContents_EffectEmitter_EmitEffectData___c__DisplayClass10_0___PlayFx_b__0 (Dpr_SubContents_EffectEmitter_EmitEffectData___c__DisplayClass10_0_o* __this, Effect_EffectInstance_o* inst, const MethodInfo* method);

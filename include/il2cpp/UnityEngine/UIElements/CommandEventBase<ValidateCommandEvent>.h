@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UIElements_CommandEventBase_ValidateCommandEvent___Init (UnityEngine_UIElements_CommandEventBase_ValidateCommandEvent__o* __this, const MethodInfo_2CCDF80* method);
+UnityEngine_UIElements_ValidateCommandEvent_o* UnityEngine_UIElements_CommandEventBase_ValidateCommandEvent___GetPooled (UnityEngine_Event_o* systemEvent, const MethodInfo_2CCDFF0* method);
+void UnityEngine_UIElements_CommandEventBase_ValidateCommandEvent____ctor (UnityEngine_UIElements_CommandEventBase_ValidateCommandEvent__o* __this, const MethodInfo_2CCE150* method);

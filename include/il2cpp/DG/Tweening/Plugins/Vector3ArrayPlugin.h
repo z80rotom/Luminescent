@@ -1,0 +1,13 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void DG_Tweening_Plugins_Vector3ArrayPlugin__Reset (DG_Tweening_Plugins_Vector3ArrayPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3____Vector3ArrayOptions__o* t, const MethodInfo* method);
+void DG_Tweening_Plugins_Vector3ArrayPlugin__SetFrom (DG_Tweening_Plugins_Vector3ArrayPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3____Vector3ArrayOptions__o* t, bool isRelative, const MethodInfo* method);
+void DG_Tweening_Plugins_Vector3ArrayPlugin__SetFrom (DG_Tweening_Plugins_Vector3ArrayPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3____Vector3ArrayOptions__o* t, UnityEngine_Vector3_array* fromValue, bool setImmediately, const MethodInfo* method);
+UnityEngine_Vector3_array* DG_Tweening_Plugins_Vector3ArrayPlugin__ConvertToStartValue (DG_Tweening_Plugins_Vector3ArrayPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3____Vector3ArrayOptions__o* t, UnityEngine_Vector3_o value, const MethodInfo* method);
+void DG_Tweening_Plugins_Vector3ArrayPlugin__SetRelativeEndValue (DG_Tweening_Plugins_Vector3ArrayPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3____Vector3ArrayOptions__o* t, const MethodInfo* method);
+void DG_Tweening_Plugins_Vector3ArrayPlugin__SetChangeValue (DG_Tweening_Plugins_Vector3ArrayPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3____Vector3ArrayOptions__o* t, const MethodInfo* method);
+float DG_Tweening_Plugins_Vector3ArrayPlugin__GetSpeedBasedDuration (DG_Tweening_Plugins_Vector3ArrayPlugin_o* __this, DG_Tweening_Plugins_Options_Vector3ArrayOptions_o options, float unitsXSecond, UnityEngine_Vector3_array* changeValue, const MethodInfo* method);
+void DG_Tweening_Plugins_Vector3ArrayPlugin__EvaluateAndApply (DG_Tweening_Plugins_Vector3ArrayPlugin_o* __this, DG_Tweening_Plugins_Options_Vector3ArrayOptions_o options, DG_Tweening_Tween_o* t, bool isRelative, DG_Tweening_Core_DOGetter_Vector3__o* getter, DG_Tweening_Core_DOSetter_Vector3__o* setter, float elapsed, UnityEngine_Vector3_array* startValue, UnityEngine_Vector3_array* changeValue, float duration, bool usingInversePosition, int32_t updateNotice, const MethodInfo* method);
+void DG_Tweening_Plugins_Vector3ArrayPlugin___ctor (DG_Tweening_Plugins_Vector3ArrayPlugin_o* __this, const MethodInfo* method);

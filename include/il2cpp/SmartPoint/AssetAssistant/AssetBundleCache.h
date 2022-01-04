@@ -1,0 +1,28 @@
+#pragma once
+
+#include "il2cpp.h"
+
+UnityEngine_Object_o* SmartPoint_AssetAssistant_AssetBundleCache__get_loadedFirstAsset (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+TMPro_TMP_FontAsset_o* SmartPoint_AssetAssistant_AssetBundleCache__FindFirstAsset_TMP_FontAsset_ (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo_20F37D0* method);
+Il2CppObject* SmartPoint_AssetAssistant_AssetBundleCache__FindFirstAsset_object_ (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo_20F37D0* method);
+UnityEngine_Object_array* SmartPoint_AssetAssistant_AssetBundleCache__get_loadedAssets (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetBundleCache__set_loadedAssets (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, UnityEngine_Object_array* value, const MethodInfo* method);
+System_String_array* SmartPoint_AssetAssistant_AssetBundleCache__get_variants (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+System_String_array* SmartPoint_AssetAssistant_AssetBundleCache__get_remapDependencies (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_AssetBundleCache__get_allLoaded (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+SmartPoint_AssetAssistant_AssetBundleRecord_o* SmartPoint_AssetAssistant_AssetBundleCache__get_record (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetBundleCache__set_record (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, SmartPoint_AssetAssistant_AssetBundleRecord_o* value, const MethodInfo* method);
+UnityEngine_AssetBundle_o* SmartPoint_AssetAssistant_AssetBundleCache__get_assetBundle (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetBundleCache__set_assetBundle (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, UnityEngine_AssetBundle_o* value, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_AssetBundleCache__get_isLoaded (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetBundleCache__set_isLoaded (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, bool value, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_AssetBundleCache__get_canLoadAsset (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetBundleCache___ctor (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+int32_t SmartPoint_AssetAssistant_AssetBundleCache__Release (SmartPoint_AssetAssistant_AssetBundleCache_o* __this, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_AssetBundleCache__Contains (System_String_o* assetBundleName, bool includeNotLoaded, const MethodInfo* method);
+SmartPoint_AssetAssistant_AssetBundleCache_o* SmartPoint_AssetAssistant_AssetBundleCache__Add (SmartPoint_AssetAssistant_AssetBundleRecord_o* record, bool isLoaded, System_String_array* variants, const MethodInfo* method);
+SmartPoint_AssetAssistant_AssetBundleCache_o* SmartPoint_AssetAssistant_AssetBundleCache__Get (System_String_o* assetBundleName, bool includeNotLoaded, const MethodInfo* method);
+int32_t SmartPoint_AssetAssistant_AssetBundleCache__ReleaseFromAssetBundleChache (SmartPoint_AssetAssistant_AssetBundleCache_o* cache, bool unloadAllLoadedObjects, const MethodInfo* method);
+int32_t SmartPoint_AssetAssistant_AssetBundleCache__ReleaseFromAssetBundleName (System_String_o* assetBundleName, bool unloadAllLoadedObjects, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetBundleCache__Destroy (const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetBundleCache___cctor (const MethodInfo* method);

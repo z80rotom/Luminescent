@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_ShaderVariantCollection____ctor (System_Collections_Generic_List_ShaderVariantCollection__o* __this, const MethodInfo_2BAD0F0* method);
+void System_Collections_Generic_List_ShaderVariantCollection___Add (System_Collections_Generic_List_ShaderVariantCollection__o* __this, UnityEngine_ShaderVariantCollection_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_ShaderVariantCollection___Clear (System_Collections_Generic_List_ShaderVariantCollection__o* __this, const MethodInfo_2BAE0A0* method);

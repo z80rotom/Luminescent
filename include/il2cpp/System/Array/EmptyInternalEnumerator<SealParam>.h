@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_EmptyInternalEnumerator_SealParam___Dispose (System_Array_EmptyInternalEnumerator_SealParam__o* __this, const MethodInfo_28293C0* method);
+bool System_Array_EmptyInternalEnumerator_SealParam___MoveNext (System_Array_EmptyInternalEnumerator_SealParam__o* __this, const MethodInfo_28293D0* method);
+Dpr_NetworkUtils_SealParam_o System_Array_EmptyInternalEnumerator_SealParam___get_Current (System_Array_EmptyInternalEnumerator_SealParam__o* __this, const MethodInfo_28293E0* method);
+Il2CppObject* System_Array_EmptyInternalEnumerator_SealParam___System_Collections_IEnumerator_get_Current (System_Array_EmptyInternalEnumerator_SealParam__o* __this, const MethodInfo_2829450* method);
+void System_Array_EmptyInternalEnumerator_SealParam___System_Collections_IEnumerator_Reset (System_Array_EmptyInternalEnumerator_SealParam__o* __this, const MethodInfo_28294B0* method);
+void System_Array_EmptyInternalEnumerator_SealParam____ctor (System_Array_EmptyInternalEnumerator_SealParam__o* __this, const MethodInfo_28294C0* method);
+void System_Array_EmptyInternalEnumerator_SealParam____cctor (const MethodInfo_28294D0* method);

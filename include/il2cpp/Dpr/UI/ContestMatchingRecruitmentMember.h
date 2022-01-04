@@ -1,0 +1,37 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UI_ContestMatchingRecruitmentMember__Initialize (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, Dpr_UI_ContestMatchingUI_o* contestMatchingUI, Dpr_Contest_ContestMatchingNetwork_o* network, System_Action_o* onFinishState, System_Action_ContestMatching_FinishPattern__o* onFinishMatching, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnFinalize (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__Reset (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__StartProcess (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, int32_t stationIndex, float startCountDown, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__CheckModelLoadCompleted (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnUpdate (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__UpdateWaitJoinMember (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, float deltaTime, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__UpdateWaitSkip (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__UpdateWaitAllReady (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__FixSessionPlayerUIInfo (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+bool Dpr_UI_ContestMatchingRecruitmentMember__CheckMemberReady (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__FinishRecruitmentMember (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__CheckMemberActive (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__UpdateInput (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnSelectLeaveYes (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnSelectLeaveNo (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__HideMatchingUI (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__SetSkipFlag (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, int32_t stationIndex, bool flag, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__ChangeState_WaitAllReady (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnJoinOtherPlayer (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, int32_t stationIndex, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnLeaveMine (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnLeaveOtherPlayer (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, int32_t stationIndex, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnChangeHostMine (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnChangeHostOtherPlayer (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__Deactivate (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnReceiveCountDownData (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, Dpr_Contest_CountDownNetData_o* timeData, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnReceivePlayerData (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, Dpr_Contest_NetPlayerInfo_o* playerInfo, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember__OnReceiveReadyData (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, int32_t stationIndex, int32_t noticeID, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember___ctor (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember___OnLeaveMine_b__34_0 (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember___OnLeaveMine_b__34_1 (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember___OnLeaveMine_b__34_2 (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, const MethodInfo* method);
+void Dpr_UI_ContestMatchingRecruitmentMember___OnReceivePlayerData_b__40_0 (Dpr_UI_ContestMatchingRecruitmentMember_o* __this, UnityEngine_GameObject_o* model, const MethodInfo* method);

@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_SubContents_NetUseManager___c__DisplayClass16_0_object____ctor (Dpr_SubContents_NetUseManager___c__DisplayClass16_0_object__o* __this, const MethodInfo_26B52F0* method);
+bool Dpr_SubContents_NetUseManager___c__DisplayClass16_0_object____OnZoneChange_b__0 (Dpr_SubContents_NetUseManager___c__DisplayClass16_0_object__o* __this, int32_t zone, const MethodInfo_26B5300* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56___ctor (UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56_o* __this, int32_t __1__state, const MethodInfo* method);
+void UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56__System_IDisposable_Dispose (UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56_o* __this, const MethodInfo* method);
+bool UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56__MoveNext (UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56_o* __this, const MethodInfo* method);
+Il2CppObject* UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56__System_Collections_Generic_IEnumerator_System_Object__get_Current (UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56_o* __this, const MethodInfo* method);
+void UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56__System_Collections_IEnumerator_Reset (UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56_o* __this, const MethodInfo* method);
+Il2CppObject* UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56__System_Collections_IEnumerator_get_Current (UnityEngine_UI_LayoutGroup__DelayedSetDirty_d__56_o* __this, const MethodInfo* method);

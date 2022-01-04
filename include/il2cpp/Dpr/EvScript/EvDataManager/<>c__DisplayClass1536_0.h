@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_EvScript_EvDataManager___c__DisplayClass1536_0___ctor (Dpr_EvScript_EvDataManager___c__DisplayClass1536_0_o* __this, const MethodInfo* method);
+void Dpr_EvScript_EvDataManager___c__DisplayClass1536_0___EvCmdTemotiBoxPokeChk_b__0 (Dpr_EvScript_EvDataManager___c__DisplayClass1536_0_o* __this, Pml_PokePara_PokemonParam_o* param, const MethodInfo* method);
+bool Dpr_EvScript_EvDataManager___c__DisplayClass1536_0___EvCmdTemotiBoxPokeChk_g__CheckMonsNo_1 (Dpr_EvScript_EvDataManager___c__DisplayClass1536_0_o* __this, Pml_PokePara_PokemonParam_o* param, int32_t monsNo, const MethodInfo* method);

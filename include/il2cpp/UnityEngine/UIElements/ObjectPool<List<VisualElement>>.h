@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UIElements_ObjectPool_List_VisualElement_____ctor (UnityEngine_UIElements_ObjectPool_List_VisualElement___o* __this, int32_t maxSize, const MethodInfo_2CD1B70* method);
+System_Collections_Generic_List_VisualElement__o* UnityEngine_UIElements_ObjectPool_List_VisualElement____Get (UnityEngine_UIElements_ObjectPool_List_VisualElement___o* __this, const MethodInfo_2CD1C30* method);
+void UnityEngine_UIElements_ObjectPool_List_VisualElement____Release (UnityEngine_UIElements_ObjectPool_List_VisualElement___o* __this, System_Collections_Generic_List_VisualElement__o* element, const MethodInfo_2CD1CA0* method);

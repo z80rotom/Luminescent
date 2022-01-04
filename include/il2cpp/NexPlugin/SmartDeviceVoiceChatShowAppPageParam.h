@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void NexPlugin_SmartDeviceVoiceChatShowAppPageParam___ctor (NexPlugin_SmartDeviceVoiceChatShowAppPageParam_o* __this, const MethodInfo* method);
+void NexPlugin_SmartDeviceVoiceChatShowAppPageParam__SetUserHandle (NexPlugin_SmartDeviceVoiceChatShowAppPageParam_o* __this, nn_account_UserHandle_o userHandle_, const MethodInfo* method);
+nn_account_UserHandle_o NexPlugin_SmartDeviceVoiceChatShowAppPageParam__GetUserHandle (NexPlugin_SmartDeviceVoiceChatShowAppPageParam_o* __this, const MethodInfo* method);
+void NexPlugin_SmartDeviceVoiceChatShowAppPageParam__Reset (NexPlugin_SmartDeviceVoiceChatShowAppPageParam_o* __this, const MethodInfo* method);
+void NexPlugin_SmartDeviceVoiceChatShowAppPageParam__Trace (NexPlugin_SmartDeviceVoiceChatShowAppPageParam_o* __this, const MethodInfo* method);
+System_String_o* NexPlugin_SmartDeviceVoiceChatShowAppPageParam__ToString (NexPlugin_SmartDeviceVoiceChatShowAppPageParam_o* __this, const MethodInfo* method);

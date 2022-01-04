@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_Sequencer___get_isQuit (const MethodInfo_26B93E0* method);
+SmartPoint_AssetAssistant_Sequencer_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_Sequencer___get_Instance (const MethodInfo_26B9AB0* method);
+bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_Sequencer___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_Sequencer__o* __this, const MethodInfo_26BA7D0* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_Sequencer___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_Sequencer__o* __this, const MethodInfo_26BAB70* method);
+SmartPoint_AssetAssistant_Sequencer_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_Sequencer___Instantiate (System_String_o* instanceName, UnityEngine_Transform_o* parent, const MethodInfo_26BAC10* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_Sequencer____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_Sequencer__o* __this, const MethodInfo_26BB510* method);

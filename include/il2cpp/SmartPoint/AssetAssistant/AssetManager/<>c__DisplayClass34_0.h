@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void SmartPoint_AssetAssistant_AssetManager___c__DisplayClass34_0___ctor (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass34_0_o* __this, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_AssetManager___c__DisplayClass34_0___IsExistAssetBundle_b__0 (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass34_0_o* __this, System_String_o* __, const MethodInfo* method);
+bool SmartPoint_AssetAssistant_AssetManager___c__DisplayClass34_0___IsExistAssetBundle_b__1 (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass34_0_o* __this, System_String_o* __, const MethodInfo* method);

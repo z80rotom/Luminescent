@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_Root_ProcessActions___ctor (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_ProcessActions__Execute (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, Dpr_Battle_Logic_Section_Root_ProcessActions_Result_o* pResult, Dpr_Battle_Logic_Section_Root_ProcessActions_Description_o** description, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_ProcessActions__onTurnStart (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_ProcessActions__storePokeActions (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, Dpr_Battle_Logic_SVCL_ACTION_o* pClientInstructions, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_ProcessActions__sortPokeActionOrder (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_ProcessActions__setSpActPriority (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_ProcessActions__processUnfinishedAction (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_ProcessActions__turnCheck (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_ProcessActions__coverCheck (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_ProcessActions__turnEnd (Dpr_Battle_Logic_Section_Root_ProcessActions_o* __this, const MethodInfo* method);

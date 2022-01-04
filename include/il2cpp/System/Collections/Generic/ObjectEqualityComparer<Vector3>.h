@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool System_Collections_Generic_ObjectEqualityComparer_Vector3___Equals (System_Collections_Generic_ObjectEqualityComparer_Vector3__o* __this, UnityEngine_Vector3_o x, UnityEngine_Vector3_o y, const MethodInfo_29319E0* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Vector3___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_Vector3__o* __this, UnityEngine_Vector3_o obj, const MethodInfo_2931A50* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Vector3___IndexOf (System_Collections_Generic_ObjectEqualityComparer_Vector3__o* __this, UnityEngine_Vector3_array* array, UnityEngine_Vector3_o value, int32_t startIndex, int32_t count, const MethodInfo_2931A80* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Vector3___LastIndexOf (System_Collections_Generic_ObjectEqualityComparer_Vector3__o* __this, UnityEngine_Vector3_array* array, UnityEngine_Vector3_o value, int32_t startIndex, int32_t count, const MethodInfo_2931B90* method);
+bool System_Collections_Generic_ObjectEqualityComparer_Vector3___Equals (System_Collections_Generic_ObjectEqualityComparer_Vector3__o* __this, Il2CppObject* obj, const MethodInfo_2931CA0* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_Vector3___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_Vector3__o* __this, const MethodInfo_2931CF0* method);
+void System_Collections_Generic_ObjectEqualityComparer_Vector3____ctor (System_Collections_Generic_ObjectEqualityComparer_Vector3__o* __this, const MethodInfo_2931D20* method);

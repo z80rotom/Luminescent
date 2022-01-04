@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UIElements_KeyboardEventBase_KeyDownEvent___Init (UnityEngine_UIElements_KeyboardEventBase_KeyDownEvent__o* __this, const MethodInfo_2CCF1C0* method);
+UnityEngine_UIElements_KeyDownEvent_o* UnityEngine_UIElements_KeyboardEventBase_KeyDownEvent___GetPooled (uint16_t c, int32_t keyCode, int32_t modifiers, const MethodInfo_2CCF290* method);
+UnityEngine_UIElements_KeyDownEvent_o* UnityEngine_UIElements_KeyboardEventBase_KeyDownEvent___GetPooled (UnityEngine_Event_o* systemEvent, const MethodInfo_2CCF4E0* method);
+void UnityEngine_UIElements_KeyboardEventBase_KeyDownEvent____ctor (UnityEngine_UIElements_KeyboardEventBase_KeyDownEvent__o* __this, const MethodInfo_2CCF760* method);

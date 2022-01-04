@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_ServerClientFactory__CreateServerClient (Dpr_Battle_Logic_ServerClientFactory_Input_o** input, Dpr_Battle_Logic_ServerClientFactory_Output_o* output, const MethodInfo* method);
+void Dpr_Battle_Logic_ServerClientFactory__InitOutput (Dpr_Battle_Logic_ServerClientFactory_Output_o* output, const MethodInfo* method);
+void Dpr_Battle_Logic_ServerClientFactory__CreateLocalClients (Dpr_Battle_Logic_ServerClientFactory_Input_o** input, Dpr_Battle_Logic_ServerClientFactory_Output_o* output, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_CLIENT_o* Dpr_Battle_Logic_ServerClientFactory__CreateLocalClient (Dpr_Battle_Logic_ServerClientFactory_Input_o** input, Dpr_Battle_Logic_BTL_SERVER_o* server, int32_t clientId, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_CLIENT_o* Dpr_Battle_Logic_ServerClientFactory__CreateClientObject (Dpr_Battle_Logic_ServerClientFactory_Input_o** input, Dpr_Battle_Logic_BTL_SERVER_o* server, int32_t clientId, uint8_t clientType, const MethodInfo* method);
+Dpr_Battle_Logic_Adapter_o* Dpr_Battle_Logic_ServerClientFactory__CreateClientAdapter (Dpr_Battle_Logic_ServerClientFactory_Input_o** input, int32_t clientId, uint8_t clientType, const MethodInfo* method);
+void Dpr_Battle_Logic_ServerClientFactory__CreateDummyClients (Dpr_Battle_Logic_ServerClientFactory_Input_o** input, Dpr_Battle_Logic_ServerClientFactory_Output_o* output, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_CLIENT_o* Dpr_Battle_Logic_ServerClientFactory__CreateDummyClient (Dpr_Battle_Logic_ServerClientFactory_Input_o** input, Dpr_Battle_Logic_BTL_SERVER_o* server, int32_t clientId, Dpr_Battle_Logic_BTL_CLIENT_o* localClient, const MethodInfo* method);
+void Dpr_Battle_Logic_ServerClientFactory__CreateRemoteClients (Dpr_Battle_Logic_ServerClientFactory_Input_o** input, Dpr_Battle_Logic_ServerClientFactory_Output_o* output, const MethodInfo* method);
+void Dpr_Battle_Logic_ServerClientFactory__SetupCommandCheckServer (Dpr_Battle_Logic_ServerClientFactory_Input_o** input, Dpr_Battle_Logic_ServerClientFactory_Output_o* output, const MethodInfo* method);

@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_IEnumerator_TElement__o* System_Linq_OrderedEnumerable_int___GetEnumerator (System_Linq_OrderedEnumerable_int__o* __this, const MethodInfo_2869AC0* method);
+System_Collections_IEnumerator_o* System_Linq_OrderedEnumerable_int___System_Collections_IEnumerable_GetEnumerator (System_Linq_OrderedEnumerable_int__o* __this, const MethodInfo_2869B40* method);
+void System_Linq_OrderedEnumerable_int____ctor (System_Linq_OrderedEnumerable_int__o* __this, const MethodInfo_2869B60* method);

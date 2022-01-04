@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_SaveSealData____ctor (System_Array_InternalEnumerator_SaveSealData__o __this, System_Array_o* array, const MethodInfo_264B040* method);
+void System_Array_InternalEnumerator_SaveSealData___Dispose (System_Array_InternalEnumerator_SaveSealData__o __this, const MethodInfo_264B070* method);
+bool System_Array_InternalEnumerator_SaveSealData___MoveNext (System_Array_InternalEnumerator_SaveSealData__o __this, const MethodInfo_264B080* method);
+Dpr_BallDeco_SaveSealData_o System_Array_InternalEnumerator_SaveSealData___get_Current (System_Array_InternalEnumerator_SaveSealData__o __this, const MethodInfo_264B0E0* method);
+void System_Array_InternalEnumerator_SaveSealData___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_SaveSealData__o __this, const MethodInfo_264B210* method);
+Il2CppObject* System_Array_InternalEnumerator_SaveSealData___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_SaveSealData__o __this, const MethodInfo_264B220* method);

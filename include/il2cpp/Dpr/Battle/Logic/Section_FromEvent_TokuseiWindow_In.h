@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_FromEvent_TokuseiWindow_In___ctor (Dpr_Battle_Logic_Section_FromEvent_TokuseiWindow_In_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FromEvent_TokuseiWindow_In__Execute (Dpr_Battle_Logic_Section_FromEvent_TokuseiWindow_In_o* __this, Dpr_Battle_Logic_Section_FromEvent_TokuseiWindow_In_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_TokuseiWindow_In_Description_o** description, const MethodInfo* method);

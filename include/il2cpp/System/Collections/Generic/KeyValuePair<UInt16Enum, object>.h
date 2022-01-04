@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_KeyValuePair_UInt16Enum__object____ctor (System_Collections_Generic_KeyValuePair_UInt16Enum__object__o __this, uint16_t key, Il2CppObject* value, const MethodInfo_299EB40* method);
+uint16_t System_Collections_Generic_KeyValuePair_UInt16Enum__object___get_Key (System_Collections_Generic_KeyValuePair_UInt16Enum__object__o __this, const MethodInfo_299EB50* method);
+Il2CppObject* System_Collections_Generic_KeyValuePair_UInt16Enum__object___get_Value (System_Collections_Generic_KeyValuePair_UInt16Enum__object__o __this, const MethodInfo_299EB60* method);
+System_String_o* System_Collections_Generic_KeyValuePair_UInt16Enum__object___ToString (System_Collections_Generic_KeyValuePair_UInt16Enum__object__o __this, const MethodInfo_299EB70* method);

@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_SecretBase_SecretBaseMasterDataManager___c__DisplayClass12_0___ctor (Dpr_SecretBase_SecretBaseMasterDataManager___c__DisplayClass12_0_o* __this, const MethodInfo* method);
+bool Dpr_SecretBase_SecretBaseMasterDataManager___c__DisplayClass12_0___GetStatueRect_b__0 (Dpr_SecretBase_SecretBaseMasterDataManager___c__DisplayClass12_0_o* __this, XLSXContent_StatueEffectRawData_Sheettable_o* effData, const MethodInfo* method);

@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool System_Collections_Generic_ObjectEqualityComparer_sbyte___Equals (System_Collections_Generic_ObjectEqualityComparer_sbyte__o* __this, int8_t x, int8_t y, const MethodInfo_2924D90* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_sbyte___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_sbyte__o* __this, int8_t obj, const MethodInfo_2924DF0* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_sbyte___IndexOf (System_Collections_Generic_ObjectEqualityComparer_sbyte__o* __this, System_SByte_array* array, int8_t value, int32_t startIndex, int32_t count, const MethodInfo_2924E20* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_sbyte___LastIndexOf (System_Collections_Generic_ObjectEqualityComparer_sbyte__o* __this, System_SByte_array* array, int8_t value, int32_t startIndex, int32_t count, const MethodInfo_2924F10* method);
+bool System_Collections_Generic_ObjectEqualityComparer_sbyte___Equals (System_Collections_Generic_ObjectEqualityComparer_sbyte__o* __this, Il2CppObject* obj, const MethodInfo_2924FF0* method);
+int32_t System_Collections_Generic_ObjectEqualityComparer_sbyte___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_sbyte__o* __this, const MethodInfo_2925040* method);
+void System_Collections_Generic_ObjectEqualityComparer_sbyte____ctor (System_Collections_Generic_ObjectEqualityComparer_sbyte__o* __this, const MethodInfo_2925070* method);

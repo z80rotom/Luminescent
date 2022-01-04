@@ -1,0 +1,40 @@
+#pragma once
+
+#include "il2cpp.h"
+
+Dpr_Battle_Logic_Section_UseItem_Core_ItemEffectInfo_array* Dpr_Battle_Logic_Section_UseItem_Core__get_s_itemEffectTable (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_UseItem_Core___ctor (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_UseItem_Core__Execute (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_Section_UseItem_Core_Result_o* pResult, Dpr_Battle_Logic_Section_UseItem_Core_Description_o** description, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__canUseEscapeItem (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_POKEPARAM_o* Dpr_Battle_Logic_Section_UseItem_Core__getTaragetInfo (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, uint8_t* pTargetArea, uint8_t* pTargetPos, uint8_t targetPokeID, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_UseItem_Core__useBall (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* userPoke, uint16_t itemID, bool* pIsUsed, bool* pIsCaptured, Dpr_Battle_Logic_POKE_CAPTURED_CONTEXT_o* pCaptureContext, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_POKEPARAM_o* Dpr_Battle_Logic_Section_UseItem_Core__decideBallTarget (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, uint8_t* pTargetPos, Dpr_Battle_Logic_BTL_POKEPARAM_o* userPoke, const MethodInfo* method);
+int32_t Dpr_Battle_Logic_Section_UseItem_Core__decideCaptureValueCoef (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pUserPoke, Dpr_Battle_Logic_BTL_POKEPARAM_o* pTargetPoke, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_UseItem_Core__useBallForbidden (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, uint16_t itemID, uint8_t targetPos, uint8_t cause, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__canUseItem (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, uint16_t itemID, uint8_t targetArea, uint8_t targetPos, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_SleepRcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_PoisonRcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_YakedoRcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_KooriRcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_MahiRcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_KonranRcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_MeromeroRcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_Mental_Cure (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, int32_t sickID, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_Common_Cure (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, int32_t sickID, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_UseItem_Core__makeCmd_CureSick (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, int32_t sickID, bool bStdMsg, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_EffectGuard (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_Relive (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_AttackRank (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_DefenceRank (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_SPAttackRank (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_SPDefenceRank (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_AgilityRank (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_HitRank (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_Common_Rank (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, int32_t rankType, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_UseItem_Core__makeCmd_RankEffect (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, int32_t rankType, int32_t volume, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_CriticalUp (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_PP_Rcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_AllPP_Rcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__makeCmd_RecoverAllPP (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint8_t recoverLimit, bool bStdMsg, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_UseItem_Core__ItemEff_HP_Rcv (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint16_t itemID, int32_t itemParam, uint8_t actParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_UseItem_Core__makeCmd_RecoverHP (Dpr_Battle_Logic_Section_UseItem_Core_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, uint32_t recoverHP, bool bStdMsg, const MethodInfo* method);

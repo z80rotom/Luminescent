@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_Profile____ctor (System_Array_InternalEnumerator_Profile__o __this, System_Array_o* array, const MethodInfo_2668930* method);
+void System_Array_InternalEnumerator_Profile___Dispose (System_Array_InternalEnumerator_Profile__o __this, const MethodInfo_2668960* method);
+bool System_Array_InternalEnumerator_Profile___MoveNext (System_Array_InternalEnumerator_Profile__o __this, const MethodInfo_2668970* method);
+nn_friends_Profile_o System_Array_InternalEnumerator_Profile___get_Current (System_Array_InternalEnumerator_Profile__o __this, const MethodInfo_26689D0* method);
+void System_Array_InternalEnumerator_Profile___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_Profile__o __this, const MethodInfo_2668B30* method);
+Il2CppObject* System_Array_InternalEnumerator_Profile___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_Profile__o __this, const MethodInfo_2668B40* method);

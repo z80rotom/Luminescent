@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_EmptyInternalEnumerator_GlyphRect___Dispose (System_Array_EmptyInternalEnumerator_GlyphRect__o* __this, const MethodInfo_24DAEF0* method);
+bool System_Array_EmptyInternalEnumerator_GlyphRect___MoveNext (System_Array_EmptyInternalEnumerator_GlyphRect__o* __this, const MethodInfo_24DAF00* method);
+UnityEngine_TextCore_GlyphRect_o System_Array_EmptyInternalEnumerator_GlyphRect___get_Current (System_Array_EmptyInternalEnumerator_GlyphRect__o* __this, const MethodInfo_24DAF10* method);
+Il2CppObject* System_Array_EmptyInternalEnumerator_GlyphRect___System_Collections_IEnumerator_get_Current (System_Array_EmptyInternalEnumerator_GlyphRect__o* __this, const MethodInfo_24DAF80* method);
+void System_Array_EmptyInternalEnumerator_GlyphRect___System_Collections_IEnumerator_Reset (System_Array_EmptyInternalEnumerator_GlyphRect__o* __this, const MethodInfo_24DAFF0* method);
+void System_Array_EmptyInternalEnumerator_GlyphRect____ctor (System_Array_EmptyInternalEnumerator_GlyphRect__o* __this, const MethodInfo_24DB000* method);
+void System_Array_EmptyInternalEnumerator_GlyphRect____cctor (const MethodInfo_24DB010* method);

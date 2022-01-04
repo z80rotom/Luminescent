@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Resources_NeutralResourcesLanguageAttribute___ctor (System_Resources_NeutralResourcesLanguageAttribute_o* __this, System_String_o* cultureName, const MethodInfo* method);
+System_String_o* System_Resources_NeutralResourcesLanguageAttribute__get_CultureName (System_Resources_NeutralResourcesLanguageAttribute_o* __this, const MethodInfo* method);
+int32_t System_Resources_NeutralResourcesLanguageAttribute__get_Location (System_Resources_NeutralResourcesLanguageAttribute_o* __this, const MethodInfo* method);

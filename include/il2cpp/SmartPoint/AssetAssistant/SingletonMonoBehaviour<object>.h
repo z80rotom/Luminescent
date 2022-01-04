@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_object___get_isQuit (const MethodInfo_26B93E0* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_object___set_isQuit (bool value, const MethodInfo_26B9510* method);
+bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_object___get_isInstantiated (const MethodInfo_26B9650* method);
+UnityEngine_GameObject_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_object___GetGameObject (const MethodInfo_26B97F0* method);
+Il2CppObject* SmartPoint_AssetAssistant_SingletonMonoBehaviour_object___get_Instance (const MethodInfo_26B9AB0* method);
+bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_object___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_object__o* __this, const MethodInfo_26BA7D0* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_object___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_object__o* __this, const MethodInfo_26BAB70* method);
+Il2CppObject* SmartPoint_AssetAssistant_SingletonMonoBehaviour_object___Instantiate (System_String_o* instanceName, UnityEngine_Transform_o* parent, const MethodInfo_26BAC10* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_object____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_object__o* __this, const MethodInfo_26BB510* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_object____cctor (const MethodInfo_26BB520* method);

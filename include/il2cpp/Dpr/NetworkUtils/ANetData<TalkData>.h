@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint8_t Dpr_NetworkUtils_ANetData_TalkData___get_GetDataID (Dpr_NetworkUtils_ANetData_TalkData__o* __this, const MethodInfo_2AD5650* method);
+void Dpr_NetworkUtils_ANetData_TalkData____ctor (Dpr_NetworkUtils_ANetData_TalkData__o* __this, const MethodInfo_2AD5700* method);
+void Dpr_NetworkUtils_ANetData_TalkData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_TalkData__o* __this, const MethodInfo_2AD5760* method);
+void Dpr_NetworkUtils_ANetData_TalkData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_TalkData__o* __this, int32_t idx, const MethodInfo_2AD59E0* method);
+int32_t Dpr_NetworkUtils_ANetData_TalkData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_TalkData__o* __this, const MethodInfo_2AD59F0* method);
+int32_t Dpr_NetworkUtils_ANetData_TalkData___SendReliableData (Dpr_NetworkUtils_ANetData_TalkData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AD5A00* method);
+int32_t Dpr_NetworkUtils_ANetData_TalkData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_TalkData__o* __this, int32_t transportType, const MethodInfo_2AD5AB0* method);
+int32_t Dpr_NetworkUtils_ANetData_TalkData___SendUnReliableData (Dpr_NetworkUtils_ANetData_TalkData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AD5B50* method);
+int32_t Dpr_NetworkUtils_ANetData_TalkData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_TalkData__o* __this, int32_t transportType, const MethodInfo_2AD5BF0* method);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_TalkData___CreateReliableData (Dpr_NetworkUtils_ANetData_TalkData__o* __this, const MethodInfo_2AD5C80* method);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_TalkData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_TalkData__o* __this, const MethodInfo_2AD5D40* method);
+void Dpr_NetworkUtils_ANetData_TalkData___WriteSendData (Dpr_NetworkUtils_ANetData_TalkData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_2AD5E00* method);
+System_Byte_array* Dpr_NetworkUtils_ANetData_TalkData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_TalkData__o* __this, const MethodInfo_2AD5E50* method);
+void Dpr_NetworkUtils_ANetData_TalkData___ReceivePacket (Dpr_NetworkUtils_ANetData_TalkData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AD6000* method);
+void Dpr_NetworkUtils_ANetData_TalkData___ReadRecieveData (Dpr_NetworkUtils_ANetData_TalkData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AD6050* method);
+Dpr_NetworkUtils_TalkData_o Dpr_NetworkUtils_ANetData_TalkData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_TalkData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AD6090* method);
+void Dpr_NetworkUtils_ANetData_TalkData____cctor (const MethodInfo_2AD6380* method);

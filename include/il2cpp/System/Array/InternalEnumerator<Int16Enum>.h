@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_Int16Enum____ctor (System_Array_InternalEnumerator_Int16Enum__o __this, System_Array_o* array, const MethodInfo_256B180* method);
+void System_Array_InternalEnumerator_Int16Enum___Dispose (System_Array_InternalEnumerator_Int16Enum__o __this, const MethodInfo_256B1B0* method);
+bool System_Array_InternalEnumerator_Int16Enum___MoveNext (System_Array_InternalEnumerator_Int16Enum__o __this, const MethodInfo_256B1C0* method);
+int16_t System_Array_InternalEnumerator_Int16Enum___get_Current (System_Array_InternalEnumerator_Int16Enum__o __this, const MethodInfo_256B220* method);
+void System_Array_InternalEnumerator_Int16Enum___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_Int16Enum__o __this, const MethodInfo_256B360* method);
+Il2CppObject* System_Array_InternalEnumerator_Int16Enum___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_Int16Enum__o __this, const MethodInfo_256B370* method);

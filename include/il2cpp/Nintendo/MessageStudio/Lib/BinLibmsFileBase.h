@@ -1,0 +1,13 @@
+#pragma once
+
+#include "il2cpp.h"
+
+intptr_t Nintendo_MessageStudio_Lib_BinLibmsFileBase__get_FileObjectPtr (Nintendo_MessageStudio_Lib_BinLibmsFileBase_o* __this, const MethodInfo* method);
+bool Nintendo_MessageStudio_Lib_BinLibmsFileBase__get_IsFileLoaded (Nintendo_MessageStudio_Lib_BinLibmsFileBase_o* __this, const MethodInfo* method);
+void Nintendo_MessageStudio_Lib_BinLibmsFileBase__SetLoadResourceFunc (Nintendo_MessageStudio_Lib_LoadResource_o* func, const MethodInfo* method);
+void Nintendo_MessageStudio_Lib_BinLibmsFileBase__Load (Nintendo_MessageStudio_Lib_BinLibmsFileBase_o* __this, System_String_o* fileName, const MethodInfo* method);
+void Nintendo_MessageStudio_Lib_BinLibmsFileBase__ResetResourceFilePtr (Nintendo_MessageStudio_Lib_BinLibmsFileBase_o* __this, intptr_t resourceFilePtr, const MethodInfo* method);
+void Nintendo_MessageStudio_Lib_BinLibmsFileBase__Dispose (Nintendo_MessageStudio_Lib_BinLibmsFileBase_o* __this, bool disposing, const MethodInfo* method);
+void Nintendo_MessageStudio_Lib_BinLibmsFileBase__Finalize (Nintendo_MessageStudio_Lib_BinLibmsFileBase_o* __this, const MethodInfo* method);
+void Nintendo_MessageStudio_Lib_BinLibmsFileBase__Dispose (Nintendo_MessageStudio_Lib_BinLibmsFileBase_o* __this, const MethodInfo* method);
+void Nintendo_MessageStudio_Lib_BinLibmsFileBase___ctor (Nintendo_MessageStudio_Lib_BinLibmsFileBase_o* __this, const MethodInfo* method);

@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void StatueEntity__Awake (StatueEntity_o* __this, const MethodInfo* method);
+void StatueEntity__OnDestroy (StatueEntity_o* __this, const MethodInfo* method);
+void StatueEntity___ctor (StatueEntity_o* __this, const MethodInfo* method);

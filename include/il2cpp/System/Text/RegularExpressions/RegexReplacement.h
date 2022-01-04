@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Text_RegularExpressions_RegexReplacement___ctor (System_Text_RegularExpressions_RegexReplacement_o* __this, System_String_o* rep, System_Text_RegularExpressions_RegexNode_o* concat, System_Collections_Hashtable_o* _caps, const MethodInfo* method);
+void System_Text_RegularExpressions_RegexReplacement__ReplacementImpl (System_Text_RegularExpressions_RegexReplacement_o* __this, System_Text_StringBuilder_o* sb, System_Text_RegularExpressions_Match_o* match, const MethodInfo* method);
+void System_Text_RegularExpressions_RegexReplacement__ReplacementImplRTL (System_Text_RegularExpressions_RegexReplacement_o* __this, System_Collections_Generic_List_string__o* al, System_Text_RegularExpressions_Match_o* match, const MethodInfo* method);
+System_String_o* System_Text_RegularExpressions_RegexReplacement__get_Pattern (System_Text_RegularExpressions_RegexReplacement_o* __this, const MethodInfo* method);
+System_String_o* System_Text_RegularExpressions_RegexReplacement__Replace (System_Text_RegularExpressions_RegexReplacement_o* __this, System_Text_RegularExpressions_Regex_o* regex, System_String_o* input, int32_t count, int32_t startat, const MethodInfo* method);

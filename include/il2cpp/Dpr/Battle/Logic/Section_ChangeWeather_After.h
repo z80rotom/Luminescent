@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_ChangeWeather_After___ctor (Dpr_Battle_Logic_Section_ChangeWeather_After_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_ChangeWeather_After__Execute (Dpr_Battle_Logic_Section_ChangeWeather_After_o* __this, Dpr_Battle_Logic_Section_ChangeWeather_After_Result_o* pResult, Dpr_Battle_Logic_Section_ChangeWeather_After_Description_o** description, const MethodInfo* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Common_ApiCallsFrequency___get_Default (const MethodInfo_2A89BC0* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Common_ApiCallsFrequency___CreateComparer (const MethodInfo_2A89CD0* method);
+int32_t System_Collections_Generic_Comparer_Common_ApiCallsFrequency___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_Common_ApiCallsFrequency__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2A8A0D0* method);
+void System_Collections_Generic_Comparer_Common_ApiCallsFrequency____ctor (System_Collections_Generic_Comparer_Common_ApiCallsFrequency__o* __this, const MethodInfo_2A8A240* method);

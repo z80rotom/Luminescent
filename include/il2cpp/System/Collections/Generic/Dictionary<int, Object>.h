@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_int__Object____ctor (System_Collections_Generic_Dictionary_int__Object__o* __this, const MethodInfo_2A44B60* method);
+UnityEngine_Object_o* System_Collections_Generic_Dictionary_int__Object___get_Item (System_Collections_Generic_Dictionary_int__Object__o* __this, int32_t key, const MethodInfo_2A44F30* method);
+void System_Collections_Generic_Dictionary_int__Object___set_Item (System_Collections_Generic_Dictionary_int__Object__o* __this, int32_t key, UnityEngine_Object_o* value, const MethodInfo_2A45000* method);
+void System_Collections_Generic_Dictionary_int__Object___Add (System_Collections_Generic_Dictionary_int__Object__o* __this, int32_t key, UnityEngine_Object_o* value, const MethodInfo_2A45020* method);
+void System_Collections_Generic_Dictionary_int__Object___Clear (System_Collections_Generic_Dictionary_int__Object__o* __this, const MethodInfo_2A451E0* method);
+bool System_Collections_Generic_Dictionary_int__Object___ContainsKey (System_Collections_Generic_Dictionary_int__Object__o* __this, int32_t key, const MethodInfo_2A45280* method);

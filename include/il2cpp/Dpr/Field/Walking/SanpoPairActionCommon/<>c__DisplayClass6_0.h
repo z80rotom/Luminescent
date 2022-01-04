@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_0___ctor (Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_0_o* __this, const MethodInfo* method);
+UnityEngine_Coroutine_o* Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_0___DoAction_b__0 (Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_0_o* __this, const MethodInfo* method);
+UnityEngine_Coroutine_o* Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_0___DoAction_b__1 (Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_0_o* __this, const MethodInfo* method);

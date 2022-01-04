@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_int__CultureInfo____ctor (System_Collections_Generic_Dictionary_int__CultureInfo__o* __this, const MethodInfo_2A44B60* method);
+void System_Collections_Generic_Dictionary_int__CultureInfo___set_Item (System_Collections_Generic_Dictionary_int__CultureInfo__o* __this, int32_t key, System_Globalization_CultureInfo_o* value, const MethodInfo_2A45000* method);
+bool System_Collections_Generic_Dictionary_int__CultureInfo___TryGetValue (System_Collections_Generic_Dictionary_int__CultureInfo__o* __this, int32_t key, System_Globalization_CultureInfo_o** value, const MethodInfo_2A46CB0* method);

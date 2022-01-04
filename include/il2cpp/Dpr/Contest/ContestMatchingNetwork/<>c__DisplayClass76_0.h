@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Contest_ContestMatchingNetwork___c__DisplayClass76_0___ctor (Dpr_Contest_ContestMatchingNetwork___c__DisplayClass76_0_o* __this, const MethodInfo* method);
+void Dpr_Contest_ContestMatchingNetwork___c__DisplayClass76_0___StartSession_b__0 (Dpr_Contest_ContestMatchingNetwork___c__DisplayClass76_0_o* __this, Dpr_NetworkUtils_StartSessionResult_o res, const MethodInfo* method);

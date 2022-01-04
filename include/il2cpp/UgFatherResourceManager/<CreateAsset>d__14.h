@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UgFatherResourceManager__CreateAsset_d__14___ctor (UgFatherResourceManager__CreateAsset_d__14_o* __this, int32_t __1__state, const MethodInfo* method);
+void UgFatherResourceManager__CreateAsset_d__14__System_IDisposable_Dispose (UgFatherResourceManager__CreateAsset_d__14_o* __this, const MethodInfo* method);
+bool UgFatherResourceManager__CreateAsset_d__14__MoveNext (UgFatherResourceManager__CreateAsset_d__14_o* __this, const MethodInfo* method);
+Il2CppObject* UgFatherResourceManager__CreateAsset_d__14__System_Collections_Generic_IEnumerator_System_Object__get_Current (UgFatherResourceManager__CreateAsset_d__14_o* __this, const MethodInfo* method);
+void UgFatherResourceManager__CreateAsset_d__14__System_Collections_IEnumerator_Reset (UgFatherResourceManager__CreateAsset_d__14_o* __this, const MethodInfo* method);
+Il2CppObject* UgFatherResourceManager__CreateAsset_d__14__System_Collections_IEnumerator_get_Current (UgFatherResourceManager__CreateAsset_d__14_o* __this, const MethodInfo* method);

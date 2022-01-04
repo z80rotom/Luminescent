@@ -1,0 +1,19 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool Dpr_Battle_View_UI_BUIButtonBase_object___get_IsSelected (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, const MethodInfo_25AC3E0* method);
+void Dpr_Battle_View_UI_BUIButtonBase_object___set_IsSelected (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, bool value, const MethodInfo_25AC3F0* method);
+UnityEngine_RectTransform_o* Dpr_Battle_View_UI_BUIButtonBase_object___get_rectTransform (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, const MethodInfo_25AC410* method);
+int32_t Dpr_Battle_View_UI_BUIButtonBase_object___get_State (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, const MethodInfo_25AC470* method);
+int32_t Dpr_Battle_View_UI_BUIButtonBase_object___get_Index (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, const MethodInfo_25AC480* method);
+void Dpr_Battle_View_UI_BUIButtonBase_object___set_Index (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, int32_t value, const MethodInfo_25AC490* method);
+System_String_o* Dpr_Battle_View_UI_BUIButtonBase_object___get_Text (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, const MethodInfo_25AC4A0* method);
+void Dpr_Battle_View_UI_BUIButtonBase_object___set_Text (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, System_String_o* value, const MethodInfo_25AC520* method);
+void Dpr_Battle_View_UI_BUIButtonBase_object___OnDestroy (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, const MethodInfo_25AC5D0* method);
+Il2CppObject* Dpr_Battle_View_UI_BUIButtonBase_object___SetOnSelected (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, System_Action_o* onSelected, const MethodInfo_25AC610* method);
+Il2CppObject* Dpr_Battle_View_UI_BUIButtonBase_object___SetOnSubmit (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, System_Action_o* onSubmit, const MethodInfo_25AC670* method);
+bool Dpr_Battle_View_UI_BUIButtonBase_object___Submit (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, const MethodInfo_25AC6D0* method);
+void Dpr_Battle_View_UI_BUIButtonBase_object___OnChangeState (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, int32_t type, const MethodInfo_25AC810* method);
+void Dpr_Battle_View_UI_BUIButtonBase_object____ctor (Dpr_Battle_View_UI_BUIButtonBase_object__o* __this, const MethodInfo_25ACA20* method);
+void Dpr_Battle_View_UI_BUIButtonBase_object____cctor (const MethodInfo_25ACA40* method);

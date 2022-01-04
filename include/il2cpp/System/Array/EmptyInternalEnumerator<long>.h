@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_EmptyInternalEnumerator_long___Dispose (System_Array_EmptyInternalEnumerator_long__o* __this, const MethodInfo_27D3D10* method);
+bool System_Array_EmptyInternalEnumerator_long___MoveNext (System_Array_EmptyInternalEnumerator_long__o* __this, const MethodInfo_27D3D20* method);
+int64_t System_Array_EmptyInternalEnumerator_long___get_Current (System_Array_EmptyInternalEnumerator_long__o* __this, const MethodInfo_27D3D30* method);
+Il2CppObject* System_Array_EmptyInternalEnumerator_long___System_Collections_IEnumerator_get_Current (System_Array_EmptyInternalEnumerator_long__o* __this, const MethodInfo_27D3DA0* method);
+void System_Array_EmptyInternalEnumerator_long___System_Collections_IEnumerator_Reset (System_Array_EmptyInternalEnumerator_long__o* __this, const MethodInfo_27D3E00* method);
+void System_Array_EmptyInternalEnumerator_long____ctor (System_Array_EmptyInternalEnumerator_long__o* __this, const MethodInfo_27D3E10* method);
+void System_Array_EmptyInternalEnumerator_long____cctor (const MethodInfo_27D3E20* method);

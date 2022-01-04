@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_UICharInfo___Compare (System_Collections_Generic_ObjectComparer_UICharInfo__o* __this, UnityEngine_UICharInfo_o x, UnityEngine_UICharInfo_o y, const MethodInfo_28BD730* method);
+bool System_Collections_Generic_ObjectComparer_UICharInfo___Equals (System_Collections_Generic_ObjectComparer_UICharInfo__o* __this, Il2CppObject* obj, const MethodInfo_28BD860* method);
+int32_t System_Collections_Generic_ObjectComparer_UICharInfo___GetHashCode (System_Collections_Generic_ObjectComparer_UICharInfo__o* __this, const MethodInfo_28BD8B0* method);
+void System_Collections_Generic_ObjectComparer_UICharInfo____ctor (System_Collections_Generic_ObjectComparer_UICharInfo__o* __this, const MethodInfo_28BD8E0* method);

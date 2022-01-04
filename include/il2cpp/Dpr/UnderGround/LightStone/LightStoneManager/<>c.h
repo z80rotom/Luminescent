@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UnderGround_LightStone_LightStoneManager___c___cctor (const MethodInfo* method);
+void Dpr_UnderGround_LightStone_LightStoneManager___c___ctor (Dpr_UnderGround_LightStone_LightStoneManager___c_o* __this, const MethodInfo* method);
+void Dpr_UnderGround_LightStone_LightStoneManager___c___StartBonusTime_b__47_0 (Dpr_UnderGround_LightStone_LightStoneManager___c_o* __this, int32_t i, const MethodInfo* method);
+bool Dpr_UnderGround_LightStone_LightStoneManager___c___ActiveLightStone_b__58_0 (Dpr_UnderGround_LightStone_LightStoneManager___c_o* __this, Dpr_UnderGround_LightStone_LightStone_o* l, const MethodInfo* method);
+bool Dpr_UnderGround_LightStone_LightStoneManager___c___ActiveLightStone_b__58_1 (Dpr_UnderGround_LightStone_LightStoneManager___c_o* __this, Dpr_UnderGround_LightStone_LightStone_o* l, const MethodInfo* method);
+void Dpr_UnderGround_LightStone_LightStoneManager___c___StartBonus_b__59_0 (Dpr_UnderGround_LightStone_LightStoneManager___c_o* __this, const MethodInfo* method);
+System_Guid_o Dpr_UnderGround_LightStone_LightStoneManager___c___LotteryPosiiton_b__64_0 (Dpr_UnderGround_LightStone_LightStoneManager___c_o* __this, UnityEngine_Vector2Int_o i, const MethodInfo* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Threading_ThreadPoolWorkQueue_WorkStealingQueue__LocalPush (System_Threading_ThreadPoolWorkQueue_WorkStealingQueue_o* __this, System_Threading_IThreadPoolWorkItem_o* obj, const MethodInfo* method);
+bool System_Threading_ThreadPoolWorkQueue_WorkStealingQueue__LocalFindAndPop (System_Threading_ThreadPoolWorkQueue_WorkStealingQueue_o* __this, System_Threading_IThreadPoolWorkItem_o* obj, const MethodInfo* method);
+bool System_Threading_ThreadPoolWorkQueue_WorkStealingQueue__LocalPop (System_Threading_ThreadPoolWorkQueue_WorkStealingQueue_o* __this, System_Threading_IThreadPoolWorkItem_o** obj, const MethodInfo* method);
+bool System_Threading_ThreadPoolWorkQueue_WorkStealingQueue__TrySteal (System_Threading_ThreadPoolWorkQueue_WorkStealingQueue_o* __this, System_Threading_IThreadPoolWorkItem_o** obj, bool* missedSteal, const MethodInfo* method);
+bool System_Threading_ThreadPoolWorkQueue_WorkStealingQueue__TrySteal (System_Threading_ThreadPoolWorkQueue_WorkStealingQueue_o* __this, System_Threading_IThreadPoolWorkItem_o** obj, bool* missedSteal, int32_t millisecondsTimeout, const MethodInfo* method);
+void System_Threading_ThreadPoolWorkQueue_WorkStealingQueue___ctor (System_Threading_ThreadPoolWorkQueue_WorkStealingQueue_o* __this, const MethodInfo* method);

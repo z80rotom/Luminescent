@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void GameManager__SceneSwitchingOperation_d__82___ctor (GameManager__SceneSwitchingOperation_d__82_o* __this, int32_t __1__state, const MethodInfo* method);
+void GameManager__SceneSwitchingOperation_d__82__System_IDisposable_Dispose (GameManager__SceneSwitchingOperation_d__82_o* __this, const MethodInfo* method);
+bool GameManager__SceneSwitchingOperation_d__82__MoveNext (GameManager__SceneSwitchingOperation_d__82_o* __this, const MethodInfo* method);
+Il2CppObject* GameManager__SceneSwitchingOperation_d__82__System_Collections_Generic_IEnumerator_System_Object__get_Current (GameManager__SceneSwitchingOperation_d__82_o* __this, const MethodInfo* method);
+void GameManager__SceneSwitchingOperation_d__82__System_Collections_IEnumerator_Reset (GameManager__SceneSwitchingOperation_d__82_o* __this, const MethodInfo* method);
+Il2CppObject* GameManager__SceneSwitchingOperation_d__82__System_Collections_IEnumerator_get_Current (GameManager__SceneSwitchingOperation_d__82_o* __this, const MethodInfo* method);

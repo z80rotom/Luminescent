@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_Quaternion___Compare (System_Collections_Generic_ObjectComparer_Quaternion__o* __this, UnityEngine_Quaternion_o x, UnityEngine_Quaternion_o y, const MethodInfo_28BC930* method);
+bool System_Collections_Generic_ObjectComparer_Quaternion___Equals (System_Collections_Generic_ObjectComparer_Quaternion__o* __this, Il2CppObject* obj, const MethodInfo_28BCA70* method);
+int32_t System_Collections_Generic_ObjectComparer_Quaternion___GetHashCode (System_Collections_Generic_ObjectComparer_Quaternion__o* __this, const MethodInfo_28BCAC0* method);
+void System_Collections_Generic_ObjectComparer_Quaternion____ctor (System_Collections_Generic_ObjectComparer_Quaternion__o* __this, const MethodInfo_28BCAF0* method);

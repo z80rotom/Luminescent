@@ -1,0 +1,51 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section___ctor (Dpr_Battle_Logic_Section_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** param, const MethodInfo* method);
+Dpr_Battle_Logic_MainModule_o* Dpr_Battle_Logic_Section__GetMainModule (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_BattleEnv_o* Dpr_Battle_Logic_Section__GetBattleEnv (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_ServerCommandQueue_o* Dpr_Battle_Logic_Section__GetServerCommandQueue (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_ServerCommandPutter_o* Dpr_Battle_Logic_Section__GetServerCommandPutter (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_WazaCommandPutter_o* Dpr_Battle_Logic_Section__GetWazaCommandPutter (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_EventSystem_o* Dpr_Battle_Logic_Section__GetEventSystem (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_EventLauncher_o* Dpr_Battle_Logic_Section__GetEventLauncher (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_SectionSharedData_o* Dpr_Battle_Logic_Section__GetSharedData (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_ActionSharedData_o* Dpr_Battle_Logic_Section__GetActionSharedData (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_PokeActionContainer_o* Dpr_Battle_Logic_Section__GetPokemonActionContainer (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_PokeChangeRequest_o* Dpr_Battle_Logic_Section__GetPokeChangeRequest (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_CaptureInfo_o* Dpr_Battle_Logic_Section__GetCaptureInfo (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_SectionContainer_o* Dpr_Battle_Logic_Section__GetSectionContainer (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+uint8_t Dpr_Battle_Logic_Section__GetPokeID (Dpr_Battle_Logic_Section_o* __this, uint8_t pos, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_POKEPARAM_o* Dpr_Battle_Logic_Section__GetPokeParam (Dpr_Battle_Logic_Section_o* __this, uint8_t pokeID, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_POKEPARAM_o* Dpr_Battle_Logic_Section__GetPokeParam (Dpr_Battle_Logic_Section_o* __this, uint8_t pos, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_POKEPARAM_o* Dpr_Battle_Logic_Section__GetPokeParam (Dpr_Battle_Logic_Section_o* __this, uint8_t clientID, uint8_t posIdx, const MethodInfo* method);
+uint8_t Dpr_Battle_Logic_Section__GetPokePos (Dpr_Battle_Logic_Section_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);
+uint8_t Dpr_Battle_Logic_Section__GetPokePos (Dpr_Battle_Logic_Section_o* __this, uint8_t pokeID, const MethodInfo* method);
+int32_t Dpr_Battle_Logic_Section__GetPokeSide (Dpr_Battle_Logic_Section_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);
+int32_t Dpr_Battle_Logic_Section__GetPokeSide (Dpr_Battle_Logic_Section_o* __this, uint8_t pokeID, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_PARTY_o* Dpr_Battle_Logic_Section__GetPokeParty (Dpr_Battle_Logic_Section_o* __this, uint8_t clientID, const MethodInfo* method);
+int32_t Dpr_Battle_Logic_Section__GetRule (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+uint8_t Dpr_Battle_Logic_Section__GetMultiMode (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+int32_t Dpr_Battle_Logic_Section__GetCompetitor (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckCommMode (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckStatusFlag (Dpr_Battle_Logic_Section_o* __this, int32_t flag, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckFriendPoke (Dpr_Battle_Logic_Section_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke1, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke2, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckFriendPoke (Dpr_Battle_Logic_Section_o* __this, uint8_t pokeID1, uint8_t pokeID2, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckShowdown (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckAllDeadSide (Dpr_Battle_Logic_Section_o* __this, int32_t checkSide, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckSkipBattleAfterShowdown (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckTurnEnd (Dpr_Battle_Logic_Section_o* __this, uint8_t interruptCode, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckPlayersClient (Dpr_Battle_Logic_Section_o* __this, int32_t clientID, const MethodInfo* method);
+uint8_t Dpr_Battle_Logic_Section__GetFriendship (Dpr_Battle_Logic_Section_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckPlayersPoke (Dpr_Battle_Logic_Section_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckPlayersPoke (Dpr_Battle_Logic_Section_o* __this, uint8_t pokeID, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckPlayersFriendPoke (Dpr_Battle_Logic_Section_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckPlayersFriendPoke (Dpr_Battle_Logic_Section_o* __this, uint8_t pokeID, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckMustHit (Dpr_Battle_Logic_Section_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckInvalidWaza (Dpr_Battle_Logic_Section_o* __this, int32_t waza, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckWazaEffectEnable (Dpr_Battle_Logic_Section_o* __this, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section__CheckSkyBattleFailWaza (Dpr_Battle_Logic_Section_o* __this, int32_t waza, const MethodInfo* method);
+int32_t Dpr_Battle_Logic_Section__CheckEncoreWazaChange (Dpr_Battle_Logic_Section_o* __this, Dpr_Battle_Logic_PokeAction_o* action, const MethodInfo* method);
+uint64_t Dpr_Battle_Logic_Section__GetCounter (Dpr_Battle_Logic_Section_o* __this, uint8_t counterID, const MethodInfo* method);
+uint64_t Dpr_Battle_Logic_Section__GetCounter (Dpr_Battle_Logic_Section_o* __this, uint8_t counterID, int32_t clientID, const MethodInfo* method);

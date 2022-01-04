@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Enumerable___c__DisplayClass7_0_object__int__object____ctor (System_Linq_Enumerable___c__DisplayClass7_0_object__int__object__o* __this, const MethodInfo_296FFC0* method);
+Il2CppObject* System_Linq_Enumerable___c__DisplayClass7_0_object__int__object____CombineSelectors_b__0 (System_Linq_Enumerable___c__DisplayClass7_0_object__int__object__o* __this, Il2CppObject* x, const MethodInfo_296FFD0* method);

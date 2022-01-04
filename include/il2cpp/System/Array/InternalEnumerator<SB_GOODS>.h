@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_SB_GOODS____ctor (System_Array_InternalEnumerator_SB_GOODS__o __this, System_Array_o* array, const MethodInfo_24EB1D0* method);
+void System_Array_InternalEnumerator_SB_GOODS___Dispose (System_Array_InternalEnumerator_SB_GOODS__o __this, const MethodInfo_24EB200* method);
+bool System_Array_InternalEnumerator_SB_GOODS___MoveNext (System_Array_InternalEnumerator_SB_GOODS__o __this, const MethodInfo_24EB210* method);
+DPData_SB_GOODS_o System_Array_InternalEnumerator_SB_GOODS___get_Current (System_Array_InternalEnumerator_SB_GOODS__o __this, const MethodInfo_24EB270* method);
+void System_Array_InternalEnumerator_SB_GOODS___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_SB_GOODS__o __this, const MethodInfo_24EB3A0* method);
+Il2CppObject* System_Array_InternalEnumerator_SB_GOODS___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_SB_GOODS__o __this, const MethodInfo_24EB3B0* method);

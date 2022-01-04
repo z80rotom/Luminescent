@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_LinkedListNode_object____ctor (System_Collections_Generic_LinkedListNode_object__o* __this, System_Collections_Generic_LinkedList_T__o* list, Il2CppObject* value, const MethodInfo_299F6D0* method);
+System_Collections_Generic_LinkedListNode_T__o* System_Collections_Generic_LinkedListNode_object___get_Next (System_Collections_Generic_LinkedListNode_object__o* __this, const MethodInfo_299F720* method);
+Il2CppObject* System_Collections_Generic_LinkedListNode_object___get_Value (System_Collections_Generic_LinkedListNode_object__o* __this, const MethodInfo_299F750* method);
+void System_Collections_Generic_LinkedListNode_object___Invalidate (System_Collections_Generic_LinkedListNode_object__o* __this, const MethodInfo_299F760* method);

@@ -1,0 +1,19 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Text_RegularExpressions_RegexPrefix_o* System_Text_RegularExpressions_RegexFCD__FirstChars (System_Text_RegularExpressions_RegexTree_o* t, const MethodInfo* method);
+System_Text_RegularExpressions_RegexPrefix_o* System_Text_RegularExpressions_RegexFCD__Prefix (System_Text_RegularExpressions_RegexTree_o* tree, const MethodInfo* method);
+int32_t System_Text_RegularExpressions_RegexFCD__Anchors (System_Text_RegularExpressions_RegexTree_o* tree, const MethodInfo* method);
+int32_t System_Text_RegularExpressions_RegexFCD__AnchorFromType (int32_t type, const MethodInfo* method);
+void System_Text_RegularExpressions_RegexFCD___ctor (System_Text_RegularExpressions_RegexFCD_o* __this, const MethodInfo* method);
+void System_Text_RegularExpressions_RegexFCD__PushInt (System_Text_RegularExpressions_RegexFCD_o* __this, int32_t I, const MethodInfo* method);
+bool System_Text_RegularExpressions_RegexFCD__IntIsEmpty (System_Text_RegularExpressions_RegexFCD_o* __this, const MethodInfo* method);
+int32_t System_Text_RegularExpressions_RegexFCD__PopInt (System_Text_RegularExpressions_RegexFCD_o* __this, const MethodInfo* method);
+void System_Text_RegularExpressions_RegexFCD__PushFC (System_Text_RegularExpressions_RegexFCD_o* __this, System_Text_RegularExpressions_RegexFC_o* fc, const MethodInfo* method);
+bool System_Text_RegularExpressions_RegexFCD__FCIsEmpty (System_Text_RegularExpressions_RegexFCD_o* __this, const MethodInfo* method);
+System_Text_RegularExpressions_RegexFC_o* System_Text_RegularExpressions_RegexFCD__PopFC (System_Text_RegularExpressions_RegexFCD_o* __this, const MethodInfo* method);
+System_Text_RegularExpressions_RegexFC_o* System_Text_RegularExpressions_RegexFCD__TopFC (System_Text_RegularExpressions_RegexFCD_o* __this, const MethodInfo* method);
+System_Text_RegularExpressions_RegexFC_o* System_Text_RegularExpressions_RegexFCD__RegexFCFromRegexTree (System_Text_RegularExpressions_RegexFCD_o* __this, System_Text_RegularExpressions_RegexTree_o* tree, const MethodInfo* method);
+void System_Text_RegularExpressions_RegexFCD__SkipChild (System_Text_RegularExpressions_RegexFCD_o* __this, const MethodInfo* method);
+void System_Text_RegularExpressions_RegexFCD__CalculateFC (System_Text_RegularExpressions_RegexFCD_o* __this, int32_t NodeType, System_Text_RegularExpressions_RegexNode_o* node, int32_t CurIndex, const MethodInfo* method);

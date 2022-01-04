@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint8_t Dpr_NetworkUtils_ANetData_ReadyOkData___get_GetDataID (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, const MethodInfo_2ACD1C0* method);
+void Dpr_NetworkUtils_ANetData_ReadyOkData____ctor (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, const MethodInfo_2ACD270* method);
+void Dpr_NetworkUtils_ANetData_ReadyOkData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, const MethodInfo_2ACD2D0* method);
+void Dpr_NetworkUtils_ANetData_ReadyOkData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, int32_t idx, const MethodInfo_2ACD550* method);
+int32_t Dpr_NetworkUtils_ANetData_ReadyOkData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, const MethodInfo_2ACD560* method);
+int32_t Dpr_NetworkUtils_ANetData_ReadyOkData___SendReliableData (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2ACD570* method);
+int32_t Dpr_NetworkUtils_ANetData_ReadyOkData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, int32_t transportType, const MethodInfo_2ACD620* method);
+int32_t Dpr_NetworkUtils_ANetData_ReadyOkData___SendUnReliableData (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2ACD6C0* method);
+int32_t Dpr_NetworkUtils_ANetData_ReadyOkData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, int32_t transportType, const MethodInfo_2ACD760* method);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_ReadyOkData___CreateReliableData (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, const MethodInfo_2ACD7F0* method);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_ReadyOkData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, const MethodInfo_2ACD8B0* method);
+void Dpr_NetworkUtils_ANetData_ReadyOkData___WriteSendData (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_2ACD970* method);
+System_Byte_array* Dpr_NetworkUtils_ANetData_ReadyOkData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, const MethodInfo_2ACD9C0* method);
+void Dpr_NetworkUtils_ANetData_ReadyOkData___ReceivePacket (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2ACDB70* method);
+void Dpr_NetworkUtils_ANetData_ReadyOkData___ReadRecieveData (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2ACDBC0* method);
+Dpr_NetworkUtils_ReadyOkData_o Dpr_NetworkUtils_ANetData_ReadyOkData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_ReadyOkData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2ACDC00* method);
+void Dpr_NetworkUtils_ANetData_ReadyOkData____cctor (const MethodInfo_2ACDEF0* method);

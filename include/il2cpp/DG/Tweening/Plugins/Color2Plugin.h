@@ -1,0 +1,13 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void DG_Tweening_Plugins_Color2Plugin__Reset (DG_Tweening_Plugins_Color2Plugin_o* __this, DG_Tweening_Core_TweenerCore_Color2__Color2__ColorOptions__o* t, const MethodInfo* method);
+void DG_Tweening_Plugins_Color2Plugin__SetFrom (DG_Tweening_Plugins_Color2Plugin_o* __this, DG_Tweening_Core_TweenerCore_Color2__Color2__ColorOptions__o* t, bool isRelative, const MethodInfo* method);
+void DG_Tweening_Plugins_Color2Plugin__SetFrom (DG_Tweening_Plugins_Color2Plugin_o* __this, DG_Tweening_Core_TweenerCore_Color2__Color2__ColorOptions__o* t, DG_Tweening_Color2_o fromValue, bool setImmediately, const MethodInfo* method);
+DG_Tweening_Color2_o DG_Tweening_Plugins_Color2Plugin__ConvertToStartValue (DG_Tweening_Plugins_Color2Plugin_o* __this, DG_Tweening_Core_TweenerCore_Color2__Color2__ColorOptions__o* t, DG_Tweening_Color2_o value, const MethodInfo* method);
+void DG_Tweening_Plugins_Color2Plugin__SetRelativeEndValue (DG_Tweening_Plugins_Color2Plugin_o* __this, DG_Tweening_Core_TweenerCore_Color2__Color2__ColorOptions__o* t, const MethodInfo* method);
+void DG_Tweening_Plugins_Color2Plugin__SetChangeValue (DG_Tweening_Plugins_Color2Plugin_o* __this, DG_Tweening_Core_TweenerCore_Color2__Color2__ColorOptions__o* t, const MethodInfo* method);
+float DG_Tweening_Plugins_Color2Plugin__GetSpeedBasedDuration (DG_Tweening_Plugins_Color2Plugin_o* __this, DG_Tweening_Plugins_Options_ColorOptions_o options, float unitsXSecond, DG_Tweening_Color2_o changeValue, const MethodInfo* method);
+void DG_Tweening_Plugins_Color2Plugin__EvaluateAndApply (DG_Tweening_Plugins_Color2Plugin_o* __this, DG_Tweening_Plugins_Options_ColorOptions_o options, DG_Tweening_Tween_o* t, bool isRelative, DG_Tweening_Core_DOGetter_Color2__o* getter, DG_Tweening_Core_DOSetter_Color2__o* setter, float elapsed, DG_Tweening_Color2_o startValue, DG_Tweening_Color2_o changeValue, float duration, bool usingInversePosition, int32_t updateNotice, const MethodInfo* method);
+void DG_Tweening_Plugins_Color2Plugin___ctor (DG_Tweening_Plugins_Color2Plugin_o* __this, const MethodInfo* method);

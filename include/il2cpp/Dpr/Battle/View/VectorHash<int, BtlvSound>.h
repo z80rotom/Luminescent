@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Dictionary_TKey__HashSet_TElement___o* Dpr_Battle_View_VectorHash_int__BtlvSound___get_RawElements (Dpr_Battle_View_VectorHash_int__BtlvSound__o* __this, const MethodInfo_25ACAD0* method);
+void Dpr_Battle_View_VectorHash_int__BtlvSound____ctor (Dpr_Battle_View_VectorHash_int__BtlvSound__o* __this, int32_t capacity, const MethodInfo_25ACAE0* method);
+void Dpr_Battle_View_VectorHash_int__BtlvSound___Dispose (Dpr_Battle_View_VectorHash_int__BtlvSound__o* __this, const MethodInfo_25ACB60* method);
+void Dpr_Battle_View_VectorHash_int__BtlvSound___CreateVector (Dpr_Battle_View_VectorHash_int__BtlvSound__o* __this, int32_t key, System_Collections_Generic_HashSet_TElement__o* elements, const MethodInfo_25ACB80* method);
+void Dpr_Battle_View_VectorHash_int__BtlvSound___DeleteAllVector (Dpr_Battle_View_VectorHash_int__BtlvSound__o* __this, const MethodInfo_25ACBC0* method);
+bool Dpr_Battle_View_VectorHash_int__BtlvSound___HasVector (Dpr_Battle_View_VectorHash_int__BtlvSound__o* __this, int32_t key, const MethodInfo_25ACE20* method);
+bool Dpr_Battle_View_VectorHash_int__BtlvSound___TryGetVector (Dpr_Battle_View_VectorHash_int__BtlvSound__o* __this, int32_t key, System_Collections_Generic_HashSet_TElement__o** value, const MethodInfo_25ACE60* method);

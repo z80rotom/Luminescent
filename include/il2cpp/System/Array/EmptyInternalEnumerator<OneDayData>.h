@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_EmptyInternalEnumerator_OneDayData___Dispose (System_Array_EmptyInternalEnumerator_OneDayData__o* __this, const MethodInfo_281F2A0* method);
+bool System_Array_EmptyInternalEnumerator_OneDayData___MoveNext (System_Array_EmptyInternalEnumerator_OneDayData__o* __this, const MethodInfo_281F2B0* method);
+DPData_MysteryGift_OneDayData_o System_Array_EmptyInternalEnumerator_OneDayData___get_Current (System_Array_EmptyInternalEnumerator_OneDayData__o* __this, const MethodInfo_281F2C0* method);
+Il2CppObject* System_Array_EmptyInternalEnumerator_OneDayData___System_Collections_IEnumerator_get_Current (System_Array_EmptyInternalEnumerator_OneDayData__o* __this, const MethodInfo_281F330* method);
+void System_Array_EmptyInternalEnumerator_OneDayData___System_Collections_IEnumerator_Reset (System_Array_EmptyInternalEnumerator_OneDayData__o* __this, const MethodInfo_281F3A0* method);
+void System_Array_EmptyInternalEnumerator_OneDayData____ctor (System_Array_EmptyInternalEnumerator_OneDayData__o* __this, const MethodInfo_281F3B0* method);
+void System_Array_EmptyInternalEnumerator_OneDayData____cctor (const MethodInfo_281F3C0* method);

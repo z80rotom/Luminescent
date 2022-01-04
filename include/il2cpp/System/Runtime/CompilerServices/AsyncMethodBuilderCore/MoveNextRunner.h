@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner___ctor (System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_o* __this, System_Threading_ExecutionContext_o* context, System_Runtime_CompilerServices_IAsyncStateMachine_o* stateMachine, const MethodInfo* method);
+void System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner__Run (System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_o* __this, const MethodInfo* method);
+void System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner__InvokeMoveNext (Il2CppObject* stateMachine, const MethodInfo* method);

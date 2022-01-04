@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UI_UIWindow___c__DisplayClass28_0_object____ctor (Dpr_UI_UIWindow___c__DisplayClass28_0_object__o* __this, const MethodInfo_26B7210* method);
+System_Collections_IEnumerator_o* Dpr_UI_UIWindow___c__DisplayClass28_0_object____RegisterCloseOnOpenWindow_g__OnPreClose_0 (Dpr_UI_UIWindow___c__DisplayClass28_0_object__o* __this, const MethodInfo_26B7220* method);
+System_Collections_IEnumerator_o* Dpr_UI_UIWindow___c__DisplayClass28_0_object____RegisterCloseOnOpenWindow_g__OnClosed_1 (Dpr_UI_UIWindow___c__DisplayClass28_0_object__o* __this, Dpr_UI_UIWindow_o* window, const MethodInfo_26B72A0* method);
+void Dpr_UI_UIWindow___c__DisplayClass28_0_object____RegisterCloseOnOpenWindow_b__2 (Dpr_UI_UIWindow___c__DisplayClass28_0_object__o* __this, Dpr_UI_UIWindow_o* window, const MethodInfo_26B7330* method);
+void Dpr_UI_UIWindow___c__DisplayClass28_0_object____RegisterCloseOnOpenWindow_b__3 (Dpr_UI_UIWindow___c__DisplayClass28_0_object__o* __this, Dpr_UI_UIWindow_o* window, const MethodInfo_26B73C0* method);

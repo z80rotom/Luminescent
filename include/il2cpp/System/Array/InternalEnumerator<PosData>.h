@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_PosData____ctor (System_Array_InternalEnumerator_PosData__o __this, System_Array_o* array, const MethodInfo_2653300* method);
+void System_Array_InternalEnumerator_PosData___Dispose (System_Array_InternalEnumerator_PosData__o __this, const MethodInfo_2653330* method);
+bool System_Array_InternalEnumerator_PosData___MoveNext (System_Array_InternalEnumerator_PosData__o __this, const MethodInfo_2653340* method);
+Dpr_NetworkUtils_PosData_o System_Array_InternalEnumerator_PosData___get_Current (System_Array_InternalEnumerator_PosData__o __this, const MethodInfo_26533A0* method);
+void System_Array_InternalEnumerator_PosData___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_PosData__o __this, const MethodInfo_26534D0* method);
+Il2CppObject* System_Array_InternalEnumerator_PosData___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_PosData__o __this, const MethodInfo_26534E0* method);

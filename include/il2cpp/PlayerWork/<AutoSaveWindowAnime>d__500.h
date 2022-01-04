@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void PlayerWork__AutoSaveWindowAnime_d__500___ctor (PlayerWork__AutoSaveWindowAnime_d__500_o* __this, int32_t __1__state, const MethodInfo* method);
+void PlayerWork__AutoSaveWindowAnime_d__500__System_IDisposable_Dispose (PlayerWork__AutoSaveWindowAnime_d__500_o* __this, const MethodInfo* method);
+bool PlayerWork__AutoSaveWindowAnime_d__500__MoveNext (PlayerWork__AutoSaveWindowAnime_d__500_o* __this, const MethodInfo* method);
+Il2CppObject* PlayerWork__AutoSaveWindowAnime_d__500__System_Collections_Generic_IEnumerator_System_Object__get_Current (PlayerWork__AutoSaveWindowAnime_d__500_o* __this, const MethodInfo* method);
+void PlayerWork__AutoSaveWindowAnime_d__500__System_Collections_IEnumerator_Reset (PlayerWork__AutoSaveWindowAnime_d__500_o* __this, const MethodInfo* method);
+Il2CppObject* PlayerWork__AutoSaveWindowAnime_d__500__System_Collections_IEnumerator_get_Current (PlayerWork__AutoSaveWindowAnime_d__500_o* __this, const MethodInfo* method);

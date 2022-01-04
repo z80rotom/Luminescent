@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_Font__HashSet_Text_____ctor (System_Collections_Generic_Dictionary_Font__HashSet_Text___o* __this, const MethodInfo_29D3C00* method);
+int32_t System_Collections_Generic_Dictionary_Font__HashSet_Text____get_Count (System_Collections_Generic_Dictionary_Font__HashSet_Text___o* __this, const MethodInfo_29D3E80* method);
+void System_Collections_Generic_Dictionary_Font__HashSet_Text____Add (System_Collections_Generic_Dictionary_Font__HashSet_Text___o* __this, UnityEngine_Font_o* key, System_Collections_Generic_HashSet_Text__o* value, const MethodInfo_29D40C0* method);
+bool System_Collections_Generic_Dictionary_Font__HashSet_Text____Remove (System_Collections_Generic_Dictionary_Font__HashSet_Text___o* __this, UnityEngine_Font_o* key, const MethodInfo_29D5AA0* method);
+bool System_Collections_Generic_Dictionary_Font__HashSet_Text____TryGetValue (System_Collections_Generic_Dictionary_Font__HashSet_Text___o* __this, UnityEngine_Font_o* key, System_Collections_Generic_HashSet_Text__o** value, const MethodInfo_29D5E10* method);

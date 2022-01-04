@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Hashtable_HashtableEnumerator___ctor (System_Collections_Hashtable_HashtableEnumerator_o* __this, System_Collections_Hashtable_o* hashtable, int32_t getObjRetType, const MethodInfo* method);
+Il2CppObject* System_Collections_Hashtable_HashtableEnumerator__Clone (System_Collections_Hashtable_HashtableEnumerator_o* __this, const MethodInfo* method);
+Il2CppObject* System_Collections_Hashtable_HashtableEnumerator__get_Key (System_Collections_Hashtable_HashtableEnumerator_o* __this, const MethodInfo* method);
+bool System_Collections_Hashtable_HashtableEnumerator__MoveNext (System_Collections_Hashtable_HashtableEnumerator_o* __this, const MethodInfo* method);
+System_Collections_DictionaryEntry_o System_Collections_Hashtable_HashtableEnumerator__get_Entry (System_Collections_Hashtable_HashtableEnumerator_o* __this, const MethodInfo* method);
+Il2CppObject* System_Collections_Hashtable_HashtableEnumerator__get_Current (System_Collections_Hashtable_HashtableEnumerator_o* __this, const MethodInfo* method);
+Il2CppObject* System_Collections_Hashtable_HashtableEnumerator__get_Value (System_Collections_Hashtable_HashtableEnumerator_o* __this, const MethodInfo* method);
+void System_Collections_Hashtable_HashtableEnumerator__Reset (System_Collections_Hashtable_HashtableEnumerator_o* __this, const MethodInfo* method);

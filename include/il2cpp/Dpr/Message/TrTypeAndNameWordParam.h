@@ -1,0 +1,17 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Message_TrTypeAndNameWordParam__SetFRSingleWordParam (Dpr_Message_TrTypeAndNameWordParam_o* __this, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, int32_t languageId, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__SetFRPairWordParam (Dpr_Message_TrTypeAndNameWordParam_o* __this, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, int32_t languageId, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__SetFRSingleWordParam (Dpr_Message_TrTypeAndNameWordParam_o* __this, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__AppendFRDisplayPattern (Dpr_Message_TrTypeAndNameWordParam_o* __this, int32_t displayPattern, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__SetDESingleWordParam (Dpr_Message_TrTypeAndNameWordParam_o* __this, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, int32_t languageId, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__SetDEPairWordParam (Dpr_Message_TrTypeAndNameWordParam_o* __this, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, int32_t languageId, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__SetDESingleWordParam (Dpr_Message_TrTypeAndNameWordParam_o* __this, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__AppendDEDisplayPattern (Dpr_Message_TrTypeAndNameWordParam_o* __this, int32_t displayPattern, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__SetESSingleWordParam (Dpr_Message_TrTypeAndNameWordParam_o* __this, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, int32_t languageId, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__SetESPairWordParam (Dpr_Message_TrTypeAndNameWordParam_o* __this, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, int32_t languageId, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__SetESTrTypeAndNameWordParam (Dpr_Message_TrTypeAndNameWordParam_o* __this, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam__AppendESDisplayPattern (Dpr_Message_TrTypeAndNameWordParam_o* __this, int32_t displayPattern, Dpr_Message_TrTypeAndNameData_o* typeAndNameData, const MethodInfo* method);
+void Dpr_Message_TrTypeAndNameWordParam___ctor (Dpr_Message_TrTypeAndNameWordParam_o* __this, const MethodInfo* method);

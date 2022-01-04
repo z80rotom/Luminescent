@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int64_t UnityEngine_UIElements_EventBase_MouseEnterWindowEvent___TypeId (const MethodInfo_2CCE2A0* method);
+void UnityEngine_UIElements_EventBase_MouseEnterWindowEvent___Acquire (UnityEngine_UIElements_EventBase_MouseEnterWindowEvent__o* __this, const MethodInfo_2CCE960* method);
+void UnityEngine_UIElements_EventBase_MouseEnterWindowEvent___Dispose (UnityEngine_UIElements_EventBase_MouseEnterWindowEvent__o* __this, const MethodInfo_2CCE970* method);
+int64_t UnityEngine_UIElements_EventBase_MouseEnterWindowEvent___get_eventTypeId (UnityEngine_UIElements_EventBase_MouseEnterWindowEvent__o* __this, const MethodInfo_2CCEA80* method);

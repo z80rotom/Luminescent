@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool System_Collections_Generic_Dictionary_EffectData__ObjectPool_Param_EffectData__EffectInstance____ContainsKey (System_Collections_Generic_Dictionary_EffectData__ObjectPool_Param_EffectData__EffectInstance___o* __this, Effect_EffectData_o* key, const MethodInfo_29D4320* method);

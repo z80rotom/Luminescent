@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c___cctor (const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c___ctor (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c_o* __this, const MethodInfo* method);
+bool Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c___CreatePositionNoList_b__9_0 (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method);
+bool Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c___CreatePositionNoList_b__9_1 (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method);
+int32_t Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c___CreatePositionNoList_b__9_2 (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method);
+System_Guid_o Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c___CreatePositionNoList_b__9_4 (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c_o* __this, int32_t i, const MethodInfo* method);

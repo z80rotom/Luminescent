@@ -1,0 +1,18 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___ctor (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__0 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__1 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__2 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__3 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__4 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__5 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__6 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__7 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__8 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__9 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__10 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__11 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);
+void Dpr_UI_BoxStatusPanel___c__DisplayClass35_0___SetUp_b__12 (Dpr_UI_BoxStatusPanel___c__DisplayClass35_0_o* __this, const MethodInfo* method);

@@ -1,0 +1,21 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint8_t Dpr_NetworkUtils_ANetData_Signal___get_GetDataID (Dpr_NetworkUtils_ANetData_Signal__o* __this, const MethodInfo_25B4370* method);
+void Dpr_NetworkUtils_ANetData_Signal____ctor (Dpr_NetworkUtils_ANetData_Signal__o* __this, const MethodInfo_25B4420* method);
+void Dpr_NetworkUtils_ANetData_Signal___CreateDataBuffer (Dpr_NetworkUtils_ANetData_Signal__o* __this, const MethodInfo_25B4480* method);
+void Dpr_NetworkUtils_ANetData_Signal____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_Signal__o* __this, int32_t idx, const MethodInfo_25B4700* method);
+int32_t Dpr_NetworkUtils_ANetData_Signal___get_FromStationIndex (Dpr_NetworkUtils_ANetData_Signal__o* __this, const MethodInfo_25B4710* method);
+int32_t Dpr_NetworkUtils_ANetData_Signal___SendReliableData (Dpr_NetworkUtils_ANetData_Signal__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_25B4720* method);
+int32_t Dpr_NetworkUtils_ANetData_Signal___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_Signal__o* __this, int32_t transportType, const MethodInfo_25B47D0* method);
+int32_t Dpr_NetworkUtils_ANetData_Signal___SendUnReliableData (Dpr_NetworkUtils_ANetData_Signal__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_25B4870* method);
+int32_t Dpr_NetworkUtils_ANetData_Signal___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_Signal__o* __this, int32_t transportType, const MethodInfo_25B4910* method);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_Signal___CreateReliableData (Dpr_NetworkUtils_ANetData_Signal__o* __this, const MethodInfo_25B49A0* method);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_Signal___CreateUnReliableData (Dpr_NetworkUtils_ANetData_Signal__o* __this, const MethodInfo_25B4A60* method);
+void Dpr_NetworkUtils_ANetData_Signal___WriteSendData (Dpr_NetworkUtils_ANetData_Signal__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_25B4B20* method);
+System_Byte_array* Dpr_NetworkUtils_ANetData_Signal___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_Signal__o* __this, const MethodInfo_25B4B70* method);
+void Dpr_NetworkUtils_ANetData_Signal___ReceivePacket (Dpr_NetworkUtils_ANetData_Signal__o* __this, INL1_PacketReader_o* pr, const MethodInfo_25B4D20* method);
+void Dpr_NetworkUtils_ANetData_Signal___ReadRecieveData (Dpr_NetworkUtils_ANetData_Signal__o* __this, INL1_PacketReader_o* pr, const MethodInfo_25B4D70* method);
+Dpr_Battle_Logic_Net_Data_Signal_o Dpr_NetworkUtils_ANetData_Signal___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_Signal__o* __this, INL1_PacketReader_o* pr, const MethodInfo_25B4DB0* method);
+void Dpr_NetworkUtils_ANetData_Signal____cctor (const MethodInfo_25B50A0* method);

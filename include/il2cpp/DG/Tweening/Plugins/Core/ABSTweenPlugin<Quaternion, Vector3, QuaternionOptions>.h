@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void DG_Tweening_Plugins_Core_ABSTweenPlugin_Quaternion__Vector3__QuaternionOptions____ctor (DG_Tweening_Plugins_Core_ABSTweenPlugin_Quaternion__Vector3__QuaternionOptions__o* __this, const MethodInfo_25AA3E0* method);

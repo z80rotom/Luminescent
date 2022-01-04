@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Enumerable___c__DisplayClass6_0_AnimationClipPlayable____ctor (System_Linq_Enumerable___c__DisplayClass6_0_AnimationClipPlayable__o* __this, const MethodInfo_296F5E0* method);
+bool System_Linq_Enumerable___c__DisplayClass6_0_AnimationClipPlayable____CombinePredicates_b__0 (System_Linq_Enumerable___c__DisplayClass6_0_AnimationClipPlayable__o* __this, UnityEngine_Animations_AnimationClipPlayable_o x, const MethodInfo_296F5F0* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_FureaiHiroba_PokeEffect___c__DisplayClass5_0___ctor (Dpr_FureaiHiroba_PokeEffect___c__DisplayClass5_0_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_PokeEffect___c__DisplayClass5_0___PlayEffLoop_b__0 (Dpr_FureaiHiroba_PokeEffect___c__DisplayClass5_0_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_PokeEffect___c__DisplayClass5_0___PlayEffLoop_b__1 (Dpr_FureaiHiroba_PokeEffect___c__DisplayClass5_0_o* __this, const MethodInfo* method);
+void Dpr_FureaiHiroba_PokeEffect___c__DisplayClass5_0___PlayEffLoop_b__2 (Dpr_FureaiHiroba_PokeEffect___c__DisplayClass5_0_o* __this, const MethodInfo* method);

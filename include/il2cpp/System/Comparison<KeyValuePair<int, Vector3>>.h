@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Comparison_KeyValuePair_int__Vector3_____ctor (System_Comparison_KeyValuePair_int__Vector3___o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_2A00D00* method);
+int32_t System_Comparison_KeyValuePair_int__Vector3____Invoke (System_Comparison_KeyValuePair_int__Vector3___o* __this, System_Collections_Generic_KeyValuePair_int__Vector3__o x, System_Collections_Generic_KeyValuePair_int__Vector3__o y, const MethodInfo_2A00D20* method);
+System_IAsyncResult_o* System_Comparison_KeyValuePair_int__Vector3____BeginInvoke (System_Comparison_KeyValuePair_int__Vector3___o* __this, System_Collections_Generic_KeyValuePair_int__Vector3__o x, System_Collections_Generic_KeyValuePair_int__Vector3__o y, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_2A01030* method);
+int32_t System_Comparison_KeyValuePair_int__Vector3____EndInvoke (System_Comparison_KeyValuePair_int__Vector3___o* __this, System_IAsyncResult_o* result, const MethodInfo_2A010D0* method);

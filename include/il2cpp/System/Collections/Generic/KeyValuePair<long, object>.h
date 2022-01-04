@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_KeyValuePair_long__object____ctor (System_Collections_Generic_KeyValuePair_long__object__o __this, int64_t key, Il2CppObject* value, const MethodInfo_299DE80* method);
+int64_t System_Collections_Generic_KeyValuePair_long__object___get_Key (System_Collections_Generic_KeyValuePair_long__object__o __this, const MethodInfo_299DE90* method);
+Il2CppObject* System_Collections_Generic_KeyValuePair_long__object___get_Value (System_Collections_Generic_KeyValuePair_long__object__o __this, const MethodInfo_299DEA0* method);
+System_String_o* System_Collections_Generic_KeyValuePair_long__object___ToString (System_Collections_Generic_KeyValuePair_long__object__o __this, const MethodInfo_299DEB0* method);

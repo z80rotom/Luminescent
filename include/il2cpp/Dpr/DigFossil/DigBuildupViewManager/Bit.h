@@ -1,0 +1,32 @@
+#pragma once
+
+#include "il2cpp.h"
+
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_Top (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopLeft (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopRight (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopDown (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_Under (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderLeft (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderRight (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderDown (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopCorner (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopCornerLeftUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopCornerLeftDown (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopCornerRightUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopCornerRightDown (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderCorner (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderCornerLeftUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderCornerLeftDown (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderCornerRightUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderCornerRightDown (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopLeftUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopLeftDown (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopRightUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_TopRightDown (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderLeftUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderLeftDown (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderRightUp (const MethodInfo* method);
+uint32_t Dpr_DigFossil_DigBuildupViewManager_Bit__get_UnderRightDown (const MethodInfo* method);

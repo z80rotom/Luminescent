@@ -1,0 +1,17 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction___ctor (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__Execute (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_Result_o* pResult, Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_Description_o** description, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__canExtraAttack (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__effectOnExtraAttack (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__rankUp (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__rankUp (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, int32_t effect, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__extraAttack (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__decideWazaParam (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, Dpr_Battle_Logic_WazaParam_o* pWazaParam, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_POKEPARAM_o* Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__decideTarget (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, Dpr_Battle_Logic_WazaParam_o** wazaParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__wazaExec (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, Dpr_Battle_Logic_WazaParam_o* wazaParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__initGWall (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__repairGWall (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, const MethodInfo* method);
+Dpr_Battle_Logic_BTL_POKEPARAM_o* Dpr_Battle_Logic_Section_RaidBoss_ExtraAction__getBoss (Dpr_Battle_Logic_Section_RaidBoss_ExtraAction_o* __this, const MethodInfo* method);

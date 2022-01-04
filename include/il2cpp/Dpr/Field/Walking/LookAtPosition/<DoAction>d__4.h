@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Field_Walking_LookAtPosition__DoAction_d__4___ctor (Dpr_Field_Walking_LookAtPosition__DoAction_d__4_o* __this, int32_t __1__state, const MethodInfo* method);
+void Dpr_Field_Walking_LookAtPosition__DoAction_d__4__System_IDisposable_Dispose (Dpr_Field_Walking_LookAtPosition__DoAction_d__4_o* __this, const MethodInfo* method);
+bool Dpr_Field_Walking_LookAtPosition__DoAction_d__4__MoveNext (Dpr_Field_Walking_LookAtPosition__DoAction_d__4_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_Field_Walking_LookAtPosition__DoAction_d__4__System_Collections_Generic_IEnumerator_System_Object__get_Current (Dpr_Field_Walking_LookAtPosition__DoAction_d__4_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_LookAtPosition__DoAction_d__4__System_Collections_IEnumerator_Reset (Dpr_Field_Walking_LookAtPosition__DoAction_d__4_o* __this, const MethodInfo* method);
+Il2CppObject* Dpr_Field_Walking_LookAtPosition__DoAction_d__4__System_Collections_IEnumerator_get_Current (Dpr_Field_Walking_LookAtPosition__DoAction_d__4_o* __this, const MethodInfo* method);

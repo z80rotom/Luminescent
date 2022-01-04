@@ -1,0 +1,16 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Remoting_Messaging_CADMessageBase___ctor (System_Runtime_Remoting_Messaging_CADMessageBase_o* __this, System_Runtime_Remoting_Messaging_IMethodMessage_o* msg, const MethodInfo* method);
+System_Reflection_MethodBase_o* System_Runtime_Remoting_Messaging_CADMessageBase__GetMethod (System_Runtime_Remoting_Messaging_CADMessageBase_o* __this, const MethodInfo* method);
+System_Type_array* System_Runtime_Remoting_Messaging_CADMessageBase__GetSignature (System_Reflection_MethodBase_o* methodBase, bool load, const MethodInfo* method);
+int32_t System_Runtime_Remoting_Messaging_CADMessageBase__MarshalProperties (System_Collections_IDictionary_o* dict, System_Collections_ArrayList_o** args, const MethodInfo* method);
+void System_Runtime_Remoting_Messaging_CADMessageBase__UnmarshalProperties (System_Collections_IDictionary_o* dict, int32_t count, System_Collections_ArrayList_o* args, const MethodInfo* method);
+bool System_Runtime_Remoting_Messaging_CADMessageBase__IsPossibleToIgnoreMarshal (Il2CppObject* obj, const MethodInfo* method);
+Il2CppObject* System_Runtime_Remoting_Messaging_CADMessageBase__MarshalArgument (System_Runtime_Remoting_Messaging_CADMessageBase_o* __this, Il2CppObject* arg, System_Collections_ArrayList_o** args, const MethodInfo* method);
+Il2CppObject* System_Runtime_Remoting_Messaging_CADMessageBase__UnmarshalArgument (System_Runtime_Remoting_Messaging_CADMessageBase_o* __this, Il2CppObject* arg, System_Collections_ArrayList_o* args, const MethodInfo* method);
+System_Object_array* System_Runtime_Remoting_Messaging_CADMessageBase__MarshalArguments (System_Runtime_Remoting_Messaging_CADMessageBase_o* __this, System_Object_array* arguments, System_Collections_ArrayList_o** args, const MethodInfo* method);
+System_Object_array* System_Runtime_Remoting_Messaging_CADMessageBase__UnmarshalArguments (System_Runtime_Remoting_Messaging_CADMessageBase_o* __this, System_Object_array* arguments, System_Collections_ArrayList_o* args, const MethodInfo* method);
+void System_Runtime_Remoting_Messaging_CADMessageBase__SaveLogicalCallContext (System_Runtime_Remoting_Messaging_CADMessageBase_o* __this, System_Runtime_Remoting_Messaging_IMethodMessage_o* msg, System_Collections_ArrayList_o** serializeList, const MethodInfo* method);
+System_Runtime_Remoting_Messaging_LogicalCallContext_o* System_Runtime_Remoting_Messaging_CADMessageBase__GetLogicalCallContext (System_Runtime_Remoting_Messaging_CADMessageBase_o* __this, System_Collections_ArrayList_o* args, const MethodInfo* method);

@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_View_Extensions___c__DisplayClass7_0___ctor (Dpr_Battle_View_Extensions___c__DisplayClass7_0_o* __this, const MethodInfo* method);
+bool Dpr_Battle_View_Extensions___c__DisplayClass7_0___GetPokemonPlacement_b__0 (Dpr_Battle_View_Extensions___c__DisplayClass7_0_o* __this, XLSXContent_BattleDefaultPlacementData_SheetDefaultCharaPlacementData_o* x, const MethodInfo* method);

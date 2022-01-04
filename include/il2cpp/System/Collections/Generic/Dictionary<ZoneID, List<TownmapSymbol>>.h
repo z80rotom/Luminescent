@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_ZoneID__List_TownmapSymbol_____ctor (System_Collections_Generic_Dictionary_ZoneID__List_TownmapSymbol___o* __this, const MethodInfo_2A50550* method);
+void System_Collections_Generic_Dictionary_ZoneID__List_TownmapSymbol____Add (System_Collections_Generic_Dictionary_ZoneID__List_TownmapSymbol___o* __this, int32_t key, System_Collections_Generic_List_TownmapSymbol__o* value, const MethodInfo_2A50A10* method);
+bool System_Collections_Generic_Dictionary_ZoneID__List_TownmapSymbol____TryGetValue (System_Collections_Generic_Dictionary_ZoneID__List_TownmapSymbol___o* __this, int32_t key, System_Collections_Generic_List_TownmapSymbol__o** value, const MethodInfo_2A526A0* method);

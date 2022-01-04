@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_Color32____ctor (System_Array_InternalEnumerator_Color32__o __this, System_Array_o* array, const MethodInfo_2576C90* method);
+void System_Array_InternalEnumerator_Color32___Dispose (System_Array_InternalEnumerator_Color32__o __this, const MethodInfo_2576CC0* method);
+bool System_Array_InternalEnumerator_Color32___MoveNext (System_Array_InternalEnumerator_Color32__o __this, const MethodInfo_2576CD0* method);
+UnityEngine_Color32_o System_Array_InternalEnumerator_Color32___get_Current (System_Array_InternalEnumerator_Color32__o __this, const MethodInfo_2576D30* method);
+void System_Array_InternalEnumerator_Color32___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_Color32__o __this, const MethodInfo_2576E60* method);
+Il2CppObject* System_Array_InternalEnumerator_Color32___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_Color32__o __this, const MethodInfo_2576E70* method);

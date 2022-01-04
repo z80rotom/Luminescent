@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Serialization_Formatters_Binary_BinaryAssemblyInfo___ctor (System_Runtime_Serialization_Formatters_Binary_BinaryAssemblyInfo_o* __this, System_String_o* assemblyString, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryAssemblyInfo___ctor (System_Runtime_Serialization_Formatters_Binary_BinaryAssemblyInfo_o* __this, System_String_o* assemblyString, System_Reflection_Assembly_o* assembly, const MethodInfo* method);
+System_Reflection_Assembly_o* System_Runtime_Serialization_Formatters_Binary_BinaryAssemblyInfo__GetAssembly (System_Runtime_Serialization_Formatters_Binary_BinaryAssemblyInfo_o* __this, const MethodInfo* method);

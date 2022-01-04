@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_TMP_PageInfo____ctor (System_Array_InternalEnumerator_TMP_PageInfo__o __this, System_Array_o* array, const MethodInfo_2573A20* method);
+void System_Array_InternalEnumerator_TMP_PageInfo___Dispose (System_Array_InternalEnumerator_TMP_PageInfo__o __this, const MethodInfo_2573A50* method);
+bool System_Array_InternalEnumerator_TMP_PageInfo___MoveNext (System_Array_InternalEnumerator_TMP_PageInfo__o __this, const MethodInfo_2573A60* method);
+TMPro_TMP_PageInfo_o System_Array_InternalEnumerator_TMP_PageInfo___get_Current (System_Array_InternalEnumerator_TMP_PageInfo__o __this, const MethodInfo_2573AC0* method);
+void System_Array_InternalEnumerator_TMP_PageInfo___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_TMP_PageInfo__o __this, const MethodInfo_2573C20* method);
+Il2CppObject* System_Array_InternalEnumerator_TMP_PageInfo___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_TMP_PageInfo__o __this, const MethodInfo_2573C30* method);

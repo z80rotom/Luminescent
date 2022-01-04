@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_GenericComparer_PoffinData___Compare (System_Collections_Generic_GenericComparer_PoffinData__o* __this, DPData_PoffinData_o x, DPData_PoffinData_o y, const MethodInfo_2A20EA0* method);
+bool System_Collections_Generic_GenericComparer_PoffinData___Equals (System_Collections_Generic_GenericComparer_PoffinData__o* __this, Il2CppObject* obj, const MethodInfo_2A20ED0* method);
+int32_t System_Collections_Generic_GenericComparer_PoffinData___GetHashCode (System_Collections_Generic_GenericComparer_PoffinData__o* __this, const MethodInfo_2A20F20* method);
+void System_Collections_Generic_GenericComparer_PoffinData____ctor (System_Collections_Generic_GenericComparer_PoffinData__o* __this, const MethodInfo_2A20F50* method);

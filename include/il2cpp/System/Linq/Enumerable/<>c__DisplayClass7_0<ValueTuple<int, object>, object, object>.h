@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Enumerable___c__DisplayClass7_0_ValueTuple_int__object___object__object____ctor (System_Linq_Enumerable___c__DisplayClass7_0_ValueTuple_int__object___object__object__o* __this, const MethodInfo_29705A0* method);
+Il2CppObject* System_Linq_Enumerable___c__DisplayClass7_0_ValueTuple_int__object___object__object____CombineSelectors_b__0 (System_Linq_Enumerable___c__DisplayClass7_0_ValueTuple_int__object___object__object__o* __this, System_ValueTuple_int__object__o x, const MethodInfo_29705B0* method);

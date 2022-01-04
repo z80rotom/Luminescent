@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_byte___get_Default (const MethodInfo_2873580* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_byte___CreateComparer (const MethodInfo_2873690* method);
+int32_t System_Collections_Generic_Comparer_byte___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_byte__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2873A90* method);
+void System_Collections_Generic_Comparer_byte____ctor (System_Collections_Generic_Comparer_byte__o* __this, const MethodInfo_2873C00* method);

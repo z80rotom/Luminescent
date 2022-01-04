@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_UIElements_EventBase_IMGUIEvent____ctor (UnityEngine_UIElements_EventBase_IMGUIEvent__o* __this, const MethodInfo_2CCE230* method);
+int64_t UnityEngine_UIElements_EventBase_IMGUIEvent___TypeId (const MethodInfo_2CCE2A0* method);
+void UnityEngine_UIElements_EventBase_IMGUIEvent___Init (UnityEngine_UIElements_EventBase_IMGUIEvent__o* __this, const MethodInfo_2CCE3D0* method);
+UnityEngine_UIElements_IMGUIEvent_o* UnityEngine_UIElements_EventBase_IMGUIEvent___GetPooled (const MethodInfo_2CCE460* method);
+void UnityEngine_UIElements_EventBase_IMGUIEvent___Acquire (UnityEngine_UIElements_EventBase_IMGUIEvent__o* __this, const MethodInfo_2CCE960* method);
+void UnityEngine_UIElements_EventBase_IMGUIEvent___Dispose (UnityEngine_UIElements_EventBase_IMGUIEvent__o* __this, const MethodInfo_2CCE970* method);
+int64_t UnityEngine_UIElements_EventBase_IMGUIEvent___get_eventTypeId (UnityEngine_UIElements_EventBase_IMGUIEvent__o* __this, const MethodInfo_2CCEA80* method);

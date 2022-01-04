@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_Enumerator_BattleFieldEffect___Dispose (System_Collections_Generic_List_Enumerator_BattleFieldEffect__o __this, const MethodInfo_2468ED0* method);
+bool System_Collections_Generic_List_Enumerator_BattleFieldEffect___MoveNext (System_Collections_Generic_List_Enumerator_BattleFieldEffect__o __this, const MethodInfo_2468EE0* method);
+Dpr_Battle_View_Objects_BattleFieldEffect_o* System_Collections_Generic_List_Enumerator_BattleFieldEffect___get_Current (System_Collections_Generic_List_Enumerator_BattleFieldEffect__o __this, const MethodInfo_2469020* method);

@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_ValueTuple_int__Vector2Int____get_Default (const MethodInfo_287B910* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_ValueTuple_int__Vector2Int____CreateComparer (const MethodInfo_287BA20* method);
+int32_t System_Collections_Generic_Comparer_ValueTuple_int__Vector2Int____System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_ValueTuple_int__Vector2Int___o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_287BE20* method);
+void System_Collections_Generic_Comparer_ValueTuple_int__Vector2Int_____ctor (System_Collections_Generic_Comparer_ValueTuple_int__Vector2Int___o* __this, const MethodInfo_287BFA0* method);

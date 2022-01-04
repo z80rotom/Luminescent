@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Action_object__object__object__object____ctor (System_Action_object__object__object__object__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_281B340* method);
+void System_Action_object__object__object__object___Invoke (System_Action_object__object__object__object__o* __this, Il2CppObject* arg1, Il2CppObject* arg2, Il2CppObject* arg3, Il2CppObject* arg4, const MethodInfo_281B360* method);
+System_IAsyncResult_o* System_Action_object__object__object__object___BeginInvoke (System_Action_object__object__object__object__o* __this, Il2CppObject* arg1, Il2CppObject* arg2, Il2CppObject* arg3, Il2CppObject* arg4, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_281B7C0* method);
+void System_Action_object__object__object__object___EndInvoke (System_Action_object__object__object__object__o* __this, System_IAsyncResult_o* result, const MethodInfo_281B800* method);

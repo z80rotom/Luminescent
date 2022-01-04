@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Serialization_Formatters_Binary_BinaryMethodReturn___cctor (const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryMethodReturn___ctor (System_Runtime_Serialization_Formatters_Binary_BinaryMethodReturn_o* __this, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryMethodReturn__Write (System_Runtime_Serialization_Formatters_Binary_BinaryMethodReturn_o* __this, System_Runtime_Serialization_Formatters_Binary___BinaryWriter_o* sout, const MethodInfo* method);
+void System_Runtime_Serialization_Formatters_Binary_BinaryMethodReturn__Dump (System_Runtime_Serialization_Formatters_Binary_BinaryMethodReturn_o* __this, const MethodInfo* method);

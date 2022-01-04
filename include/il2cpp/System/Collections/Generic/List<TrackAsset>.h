@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_TrackAsset____ctor (System_Collections_Generic_List_TrackAsset__o* __this, const MethodInfo_2BAD0F0* method);
+void System_Collections_Generic_List_TrackAsset____ctor (System_Collections_Generic_List_TrackAsset__o* __this, int32_t capacity, const MethodInfo_2BAD1C0* method);
+void System_Collections_Generic_List_TrackAsset____ctor (System_Collections_Generic_List_TrackAsset__o* __this, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo_2BAD2E0* method);
+int32_t System_Collections_Generic_List_TrackAsset___get_Count (System_Collections_Generic_List_TrackAsset__o* __this, const MethodInfo_2BAD9C0* method);
+UnityEngine_Timeline_TrackAsset_o* System_Collections_Generic_List_TrackAsset___get_Item (System_Collections_Generic_List_TrackAsset__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
+void System_Collections_Generic_List_TrackAsset___Add (System_Collections_Generic_List_TrackAsset__o* __this, UnityEngine_Timeline_TrackAsset_o* item, const MethodInfo_2BADD00* method);
+void System_Collections_Generic_List_TrackAsset___AddRange (System_Collections_Generic_List_TrackAsset__o* __this, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo_2BADF50* method);
+void System_Collections_Generic_List_TrackAsset___Clear (System_Collections_Generic_List_TrackAsset__o* __this, const MethodInfo_2BAE0A0* method);
+UnityEngine_Timeline_TrackAsset_o* System_Collections_Generic_List_TrackAsset___Find (System_Collections_Generic_List_TrackAsset__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE580* method);
+UnityEngine_Timeline_TrackAsset_array* System_Collections_Generic_List_TrackAsset___ToArray (System_Collections_Generic_List_TrackAsset__o* __this, const MethodInfo_2BAFDA0* method);

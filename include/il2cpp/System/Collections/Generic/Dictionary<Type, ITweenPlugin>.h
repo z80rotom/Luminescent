@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_Type__ITweenPlugin____ctor (System_Collections_Generic_Dictionary_Type__ITweenPlugin__o* __this, int32_t capacity, const MethodInfo_29D3C20* method);
+void System_Collections_Generic_Dictionary_Type__ITweenPlugin___Add (System_Collections_Generic_Dictionary_Type__ITweenPlugin__o* __this, System_Type_o* key, DG_Tweening_Plugins_Core_ITweenPlugin_o* value, const MethodInfo_29D40C0* method);
+void System_Collections_Generic_Dictionary_Type__ITweenPlugin___Clear (System_Collections_Generic_Dictionary_Type__ITweenPlugin__o* __this, const MethodInfo_29D4280* method);
+bool System_Collections_Generic_Dictionary_Type__ITweenPlugin___TryGetValue (System_Collections_Generic_Dictionary_Type__ITweenPlugin__o* __this, System_Type_o* key, DG_Tweening_Plugins_Core_ITweenPlugin_o** value, const MethodInfo_29D5E10* method);

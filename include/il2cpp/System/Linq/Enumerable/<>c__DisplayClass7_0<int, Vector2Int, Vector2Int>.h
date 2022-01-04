@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Linq_Enumerable___c__DisplayClass7_0_int__Vector2Int__Vector2Int____ctor (System_Linq_Enumerable___c__DisplayClass7_0_int__Vector2Int__Vector2Int__o* __this, const MethodInfo_296FD60* method);
+UnityEngine_Vector2Int_o System_Linq_Enumerable___c__DisplayClass7_0_int__Vector2Int__Vector2Int____CombineSelectors_b__0 (System_Linq_Enumerable___c__DisplayClass7_0_int__Vector2Int__Vector2Int__o* __this, int32_t x, const MethodInfo_296FD70* method);

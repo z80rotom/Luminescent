@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_PokemonInfo_SheetCatalog____ctor (System_Collections_Generic_List_PokemonInfo_SheetCatalog__o* __this, const MethodInfo_2BAD0F0* method);
+void System_Collections_Generic_List_PokemonInfo_SheetCatalog___Add (System_Collections_Generic_List_PokemonInfo_SheetCatalog__o* __this, XLSXContent_PokemonInfo_SheetCatalog_o* item, const MethodInfo_2BADD00* method);
+XLSXContent_PokemonInfo_SheetCatalog_array* System_Collections_Generic_List_PokemonInfo_SheetCatalog___ToArray (System_Collections_Generic_List_PokemonInfo_SheetCatalog__o* __this, const MethodInfo_2BAFDA0* method);

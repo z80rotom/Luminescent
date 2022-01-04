@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_StyleValue____ctor (System_Array_InternalEnumerator_StyleValue__o __this, System_Array_o* array, const MethodInfo_2666790* method);
+void System_Array_InternalEnumerator_StyleValue___Dispose (System_Array_InternalEnumerator_StyleValue__o __this, const MethodInfo_26667C0* method);
+bool System_Array_InternalEnumerator_StyleValue___MoveNext (System_Array_InternalEnumerator_StyleValue__o __this, const MethodInfo_26667D0* method);
+UnityEngine_UIElements_StyleSheets_StyleValue_o System_Array_InternalEnumerator_StyleValue___get_Current (System_Array_InternalEnumerator_StyleValue__o __this, const MethodInfo_2666830* method);
+void System_Array_InternalEnumerator_StyleValue___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_StyleValue__o __this, const MethodInfo_2666990* method);
+Il2CppObject* System_Array_InternalEnumerator_StyleValue___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_StyleValue__o __this, const MethodInfo_26669A0* method);

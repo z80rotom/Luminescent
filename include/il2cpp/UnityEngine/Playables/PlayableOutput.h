@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+UnityEngine_Playables_PlayableOutput_o UnityEngine_Playables_PlayableOutput__get_Null (const MethodInfo* method);
+void UnityEngine_Playables_PlayableOutput___ctor (UnityEngine_Playables_PlayableOutput_o __this, UnityEngine_Playables_PlayableOutputHandle_o handle, const MethodInfo* method);
+UnityEngine_Playables_PlayableOutputHandle_o UnityEngine_Playables_PlayableOutput__GetHandle (UnityEngine_Playables_PlayableOutput_o __this, const MethodInfo* method);
+bool UnityEngine_Playables_PlayableOutput__IsPlayableOutputOfType_AudioPlayableOutput_ (UnityEngine_Playables_PlayableOutput_o __this, const MethodInfo_22F0C50* method);
+bool UnityEngine_Playables_PlayableOutput__Equals (UnityEngine_Playables_PlayableOutput_o __this, UnityEngine_Playables_PlayableOutput_o other, const MethodInfo* method);
+void UnityEngine_Playables_PlayableOutput___cctor (const MethodInfo* method);

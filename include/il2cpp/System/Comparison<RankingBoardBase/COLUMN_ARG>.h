@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Comparison_RankingBoardBase_COLUMN_ARG____ctor (System_Comparison_RankingBoardBase_COLUMN_ARG__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_29F5430* method);
+int32_t System_Comparison_RankingBoardBase_COLUMN_ARG___Invoke (System_Comparison_RankingBoardBase_COLUMN_ARG__o* __this, NexAssets_RankingBoardBase_COLUMN_ARG_o x, NexAssets_RankingBoardBase_COLUMN_ARG_o y, const MethodInfo_29F5450* method);
+System_IAsyncResult_o* System_Comparison_RankingBoardBase_COLUMN_ARG___BeginInvoke (System_Comparison_RankingBoardBase_COLUMN_ARG__o* __this, NexAssets_RankingBoardBase_COLUMN_ARG_o x, NexAssets_RankingBoardBase_COLUMN_ARG_o y, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_29F58B0* method);
+int32_t System_Comparison_RankingBoardBase_COLUMN_ARG___EndInvoke (System_Comparison_RankingBoardBase_COLUMN_ARG__o* __this, System_IAsyncResult_o* result, const MethodInfo_29F5960* method);

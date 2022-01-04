@@ -1,0 +1,38 @@
+#pragma once
+
+#include "il2cpp.h"
+
+bool System_Threading_ExecutionContext__get_isNewCapture (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+void System_Threading_ExecutionContext__set_isNewCapture (System_Threading_ExecutionContext_o* __this, bool value, const MethodInfo* method);
+bool System_Threading_ExecutionContext__get_isFlowSuppressed (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+void System_Threading_ExecutionContext__set_isFlowSuppressed (System_Threading_ExecutionContext_o* __this, bool value, const MethodInfo* method);
+System_Threading_ExecutionContext_o* System_Threading_ExecutionContext__get_PreAllocatedDefault (const MethodInfo* method);
+bool System_Threading_ExecutionContext__get_IsPreAllocatedDefault (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+void System_Threading_ExecutionContext___ctor (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+void System_Threading_ExecutionContext___ctor (System_Threading_ExecutionContext_o* __this, bool isPreAllocatedDefault, const MethodInfo* method);
+void System_Threading_ExecutionContext__OnAsyncLocalContextChanged (System_Threading_ExecutionContext_o* previous, System_Threading_ExecutionContext_o* current, const MethodInfo* method);
+System_Runtime_Remoting_Messaging_LogicalCallContext_o* System_Threading_ExecutionContext__get_LogicalCallContext (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+void System_Threading_ExecutionContext__set_LogicalCallContext (System_Threading_ExecutionContext_o* __this, System_Runtime_Remoting_Messaging_LogicalCallContext_o* value, const MethodInfo* method);
+System_Runtime_Remoting_Messaging_IllogicalCallContext_o* System_Threading_ExecutionContext__get_IllogicalCallContext (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+void System_Threading_ExecutionContext__set_IllogicalCallContext (System_Threading_ExecutionContext_o* __this, System_Runtime_Remoting_Messaging_IllogicalCallContext_o* value, const MethodInfo* method);
+System_Threading_SynchronizationContext_o* System_Threading_ExecutionContext__get_SynchronizationContext (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+void System_Threading_ExecutionContext__set_SynchronizationContext (System_Threading_ExecutionContext_o* __this, System_Threading_SynchronizationContext_o* value, const MethodInfo* method);
+System_Threading_SynchronizationContext_o* System_Threading_ExecutionContext__get_SynchronizationContextNoFlow (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+void System_Threading_ExecutionContext__set_SynchronizationContextNoFlow (System_Threading_ExecutionContext_o* __this, System_Threading_SynchronizationContext_o* value, const MethodInfo* method);
+void System_Threading_ExecutionContext__Dispose (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+void System_Threading_ExecutionContext__Run (System_Threading_ExecutionContext_o* executionContext, System_Threading_ContextCallback_o* callback, Il2CppObject* state, const MethodInfo* method);
+void System_Threading_ExecutionContext__Run (System_Threading_ExecutionContext_o* executionContext, System_Threading_ContextCallback_o* callback, Il2CppObject* state, bool preserveSyncCtx, const MethodInfo* method);
+void System_Threading_ExecutionContext__RunInternal (System_Threading_ExecutionContext_o* executionContext, System_Threading_ContextCallback_o* callback, Il2CppObject* state, bool preserveSyncCtx, const MethodInfo* method);
+void System_Threading_ExecutionContext__EstablishCopyOnWriteScope (System_Threading_ExecutionContextSwitcher_o* ecsw, const MethodInfo* method);
+void System_Threading_ExecutionContext__EstablishCopyOnWriteScope (System_Threading_Thread_o* currentThread, bool knownNullWindowsIdentity, System_Threading_ExecutionContextSwitcher_o* ecsw, const MethodInfo* method);
+System_Threading_ExecutionContextSwitcher_o System_Threading_ExecutionContext__SetExecutionContext (System_Threading_ExecutionContext_o* executionContext, bool preserveSyncCtx, const MethodInfo* method);
+System_Threading_ExecutionContext_o* System_Threading_ExecutionContext__CreateCopy (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+System_Threading_ExecutionContext_o* System_Threading_ExecutionContext__CreateMutableCopy (System_Threading_ExecutionContext_o* __this, const MethodInfo* method);
+bool System_Threading_ExecutionContext__IsFlowSuppressed (const MethodInfo* method);
+System_Threading_ExecutionContext_o* System_Threading_ExecutionContext__Capture (const MethodInfo* method);
+System_Threading_ExecutionContext_o* System_Threading_ExecutionContext__FastCapture (const MethodInfo* method);
+System_Threading_ExecutionContext_o* System_Threading_ExecutionContext__Capture (int32_t* stackMark, int32_t options, const MethodInfo* method);
+void System_Threading_ExecutionContext__GetObjectData (System_Threading_ExecutionContext_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
+void System_Threading_ExecutionContext___ctor (System_Threading_ExecutionContext_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
+bool System_Threading_ExecutionContext__IsDefaultFTContext (System_Threading_ExecutionContext_o* __this, bool ignoreSyncCtx, const MethodInfo* method);
+void System_Threading_ExecutionContext___cctor (const MethodInfo* method);

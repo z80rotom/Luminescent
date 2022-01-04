@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_ValueTuple_MonsNo__int_____ctor (System_Collections_Generic_List_ValueTuple_MonsNo__int___o* __this, int32_t capacity, const MethodInfo_2BC7360* method);
+int32_t System_Collections_Generic_List_ValueTuple_MonsNo__int____get_Count (System_Collections_Generic_List_ValueTuple_MonsNo__int___o* __this, const MethodInfo_2BC7B60* method);
+System_ValueTuple_MonsNo__int__o System_Collections_Generic_List_ValueTuple_MonsNo__int____get_Item (System_Collections_Generic_List_ValueTuple_MonsNo__int___o* __this, int32_t index, const MethodInfo_2BC7B90* method);
+void System_Collections_Generic_List_ValueTuple_MonsNo__int____Add (System_Collections_Generic_List_ValueTuple_MonsNo__int___o* __this, System_ValueTuple_MonsNo__int__o item, const MethodInfo_2BC7F50* method);
+void System_Collections_Generic_List_ValueTuple_MonsNo__int____Clear (System_Collections_Generic_List_ValueTuple_MonsNo__int___o* __this, const MethodInfo_2BC82F0* method);

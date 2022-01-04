@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Collections_Generic_ObjectComparer_Detail_AsyncResultInt___Compare (System_Collections_Generic_ObjectComparer_Detail_AsyncResultInt__o* __this, NexPlugin_Detail_AsyncResultInt_o x, NexPlugin_Detail_AsyncResultInt_o y, const MethodInfo_28B5990* method);
+bool System_Collections_Generic_ObjectComparer_Detail_AsyncResultInt___Equals (System_Collections_Generic_ObjectComparer_Detail_AsyncResultInt__o* __this, Il2CppObject* obj, const MethodInfo_28B5AB0* method);
+int32_t System_Collections_Generic_ObjectComparer_Detail_AsyncResultInt___GetHashCode (System_Collections_Generic_ObjectComparer_Detail_AsyncResultInt__o* __this, const MethodInfo_28B5B00* method);
+void System_Collections_Generic_ObjectComparer_Detail_AsyncResultInt____ctor (System_Collections_Generic_ObjectComparer_Detail_AsyncResultInt__o* __this, const MethodInfo_28B5B30* method);

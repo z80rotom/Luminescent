@@ -1,0 +1,11 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_RankEffect_CheckEffective___ctor (Dpr_Battle_Logic_Section_RankEffect_CheckEffective_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RankEffect_CheckEffective__Execute (Dpr_Battle_Logic_Section_RankEffect_CheckEffective_o* __this, Dpr_Battle_Logic_Section_RankEffect_CheckEffective_Result_o* pResult, Dpr_Battle_Logic_Section_RankEffect_CheckEffective_Description_o** description, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_RankEffect_CheckEffective__checkFail_GWall (Dpr_Battle_Logic_Section_RankEffect_CheckEffective_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_RankEffect_CheckEffective__isInvalidByLimit (Dpr_Battle_Logic_Section_RankEffect_CheckEffective_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, int32_t effect, int32_t volume, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RankEffect_CheckEffective__putFailMessage_GWall (Dpr_Battle_Logic_Section_RankEffect_CheckEffective_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RankEffect_CheckEffective__putFailMessage_Limit (Dpr_Battle_Logic_Section_RankEffect_CheckEffective_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, int32_t effect, int32_t volume, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_RankEffect_CheckEffective__putFailMessage_Migawari (Dpr_Battle_Logic_Section_RankEffect_CheckEffective_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, const MethodInfo* method);

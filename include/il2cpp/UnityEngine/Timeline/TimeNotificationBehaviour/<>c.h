@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void UnityEngine_Timeline_TimeNotificationBehaviour___c___cctor (const MethodInfo* method);
+void UnityEngine_Timeline_TimeNotificationBehaviour___c___ctor (UnityEngine_Timeline_TimeNotificationBehaviour___c_o* __this, const MethodInfo* method);
+int32_t UnityEngine_Timeline_TimeNotificationBehaviour___c___SortNotifications_b__12_0 (UnityEngine_Timeline_TimeNotificationBehaviour___c_o* __this, UnityEngine_Timeline_TimeNotificationBehaviour_NotificationEntry_o x, UnityEngine_Timeline_TimeNotificationBehaviour_NotificationEntry_o y, const MethodInfo* method);

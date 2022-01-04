@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Array_InternalEnumerator_Touch____ctor (System_Array_InternalEnumerator_Touch__o __this, System_Array_o* array, const MethodInfo_2664FC0* method);
+void System_Array_InternalEnumerator_Touch___Dispose (System_Array_InternalEnumerator_Touch__o __this, const MethodInfo_2664FF0* method);
+bool System_Array_InternalEnumerator_Touch___MoveNext (System_Array_InternalEnumerator_Touch__o __this, const MethodInfo_2665000* method);
+UnityEngine_Touch_o System_Array_InternalEnumerator_Touch___get_Current (System_Array_InternalEnumerator_Touch__o __this, const MethodInfo_2665060* method);
+void System_Array_InternalEnumerator_Touch___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_Touch__o __this, const MethodInfo_26651D0* method);
+Il2CppObject* System_Array_InternalEnumerator_Touch___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_Touch__o __this, const MethodInfo_26651E0* method);

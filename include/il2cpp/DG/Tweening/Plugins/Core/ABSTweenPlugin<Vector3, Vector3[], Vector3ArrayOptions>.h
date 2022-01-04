@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void DG_Tweening_Plugins_Core_ABSTweenPlugin_Vector3__Vector3____Vector3ArrayOptions____ctor (DG_Tweening_Plugins_Core_ABSTweenPlugin_Vector3__Vector3____Vector3ArrayOptions__o* __this, const MethodInfo_25AA420* method);

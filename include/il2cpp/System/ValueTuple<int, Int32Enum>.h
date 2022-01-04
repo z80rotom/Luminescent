@@ -1,0 +1,15 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_ValueTuple_int__Int32Enum____ctor (System_ValueTuple_int__Int32Enum__o __this, int32_t item1, int32_t item2, const MethodInfo_29AB9B0* method);
+bool System_ValueTuple_int__Int32Enum___Equals (System_ValueTuple_int__Int32Enum__o __this, Il2CppObject* obj, const MethodInfo_29AB9C0* method);
+bool System_ValueTuple_int__Int32Enum___Equals (System_ValueTuple_int__Int32Enum__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29ABAF0* method);
+bool System_ValueTuple_int__Int32Enum___System_Collections_IStructuralEquatable_Equals (System_ValueTuple_int__Int32Enum__o __this, Il2CppObject* other, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29ABBF0* method);
+int32_t System_ValueTuple_int__Int32Enum___System_IComparable_CompareTo (System_ValueTuple_int__Int32Enum__o __this, Il2CppObject* other, const MethodInfo_29ABEF0* method);
+int32_t System_ValueTuple_int__Int32Enum___CompareTo (System_ValueTuple_int__Int32Enum__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29AC0D0* method);
+int32_t System_ValueTuple_int__Int32Enum___System_Collections_IStructuralComparable_CompareTo (System_ValueTuple_int__Int32Enum__o __this, Il2CppObject* other, System_Collections_IComparer_o* comparer, const MethodInfo_29AC1D0* method);
+int32_t System_ValueTuple_int__Int32Enum___GetHashCode (System_ValueTuple_int__Int32Enum__o __this, const MethodInfo_29AC570* method);
+int32_t System_ValueTuple_int__Int32Enum___System_Collections_IStructuralEquatable_GetHashCode (System_ValueTuple_int__Int32Enum__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29AC610* method);
+int32_t System_ValueTuple_int__Int32Enum___GetHashCodeCore (System_ValueTuple_int__Int32Enum__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29AC660* method);
+System_String_o* System_ValueTuple_int__Int32Enum___ToString (System_ValueTuple_int__Int32Enum__o __this, const MethodInfo_29AC820* method);

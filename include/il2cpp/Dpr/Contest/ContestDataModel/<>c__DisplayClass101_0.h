@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Contest_ContestDataModel___c__DisplayClass101_0___ctor (Dpr_Contest_ContestDataModel___c__DisplayClass101_0_o* __this, const MethodInfo* method);
+bool Dpr_Contest_ContestDataModel___c__DisplayClass101_0___GetResultMotionData_b__0 (Dpr_Contest_ContestDataModel___c__DisplayClass101_0_o* __this, XLSXContent_ContestConfigDatas_SheetResultMotion_o* x, const MethodInfo* method);

@@ -1,0 +1,7 @@
+#pragma once
+
+#include "il2cpp.h"
+
+UnityEngine_Playables_ScriptPlayable_T__o UnityEngine_Playables_ScriptPlayable_AkEventPlayableBehavior___Create (UnityEngine_Playables_PlayableGraph_o graph, int32_t inputCount, const MethodInfo_2CC8260* method);
+AkEventPlayableBehavior_o* UnityEngine_Playables_ScriptPlayable_AkEventPlayableBehavior___GetBehaviour (UnityEngine_Playables_ScriptPlayable_AkEventPlayableBehavior__o __this, const MethodInfo_2CC9180* method);
+UnityEngine_Playables_Playable_o UnityEngine_Playables_ScriptPlayable_AkEventPlayableBehavior___op_Implicit (UnityEngine_Playables_ScriptPlayable_T__o playable, const MethodInfo_2CC91C0* method);

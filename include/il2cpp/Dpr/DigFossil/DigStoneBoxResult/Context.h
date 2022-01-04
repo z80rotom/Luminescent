@@ -1,0 +1,5 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_DigFossil_DigStoneBoxResult_Context___ctor (Dpr_DigFossil_DigStoneBoxResult_Context_o* __this, Dpr_DigFossil_DigMasterDataManager_StoneBoxData_o* boxData, UnityEngine_Transform_o* boxPos, Dpr_DigFossil_DigMasterDataManager_o* masterDataManager, Dpr_DigFossil_IDigMessage_o* message, Dpr_DigFossil_IDigFade_o* fade, Dpr_DigFossil_IDigAudioManager_o* audioManager, Dpr_DigFossil_IDigStatueCameraSelector_o* cameraSelector, Dpr_DigFossil_IDigBoard_o* digBoard, Dpr_DigFossil_DigFossilController_DigParam_o* digParam, Dpr_SecretBase_StatueModelLoader_o* statueModelLoader, Dpr_DigFossil_DigEffectManager_o* effectManager, const MethodInfo* method);

@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_Dictionary_string__AudioData____ctor (System_Collections_Generic_Dictionary_string__AudioData__o* __this, const MethodInfo_29D3C00* method);
+void System_Collections_Generic_Dictionary_string__AudioData___set_Item (System_Collections_Generic_Dictionary_string__AudioData__o* __this, System_String_o* key, Audio_AudioData_o* value, const MethodInfo_29D40A0* method);
+void System_Collections_Generic_Dictionary_string__AudioData___Add (System_Collections_Generic_Dictionary_string__AudioData__o* __this, System_String_o* key, Audio_AudioData_o* value, const MethodInfo_29D40C0* method);
+void System_Collections_Generic_Dictionary_string__AudioData___Clear (System_Collections_Generic_Dictionary_string__AudioData__o* __this, const MethodInfo_29D4280* method);
+System_Collections_Generic_Dictionary_Enumerator_TKey__TValue__o System_Collections_Generic_Dictionary_string__AudioData___GetEnumerator (System_Collections_Generic_Dictionary_string__AudioData__o* __this, const MethodInfo_29D46A0* method);
+bool System_Collections_Generic_Dictionary_string__AudioData___TryGetValue (System_Collections_Generic_Dictionary_string__AudioData__o* __this, System_String_o* key, Audio_AudioData_o** value, const MethodInfo_29D5E10* method);

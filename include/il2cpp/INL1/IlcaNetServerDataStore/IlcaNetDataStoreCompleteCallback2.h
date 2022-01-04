@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void INL1_IlcaNetServerDataStore_IlcaNetDataStoreCompleteCallback2___ctor (INL1_IlcaNetServerDataStore_IlcaNetDataStoreCompleteCallback2_o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method);
+void INL1_IlcaNetServerDataStore_IlcaNetDataStoreCompleteCallback2__Invoke (INL1_IlcaNetServerDataStore_IlcaNetDataStoreCompleteCallback2_o* __this, bool isSuccess, int32_t eve, NexPlugin_DataStoreMetaInfo_o* minfo, System_Collections_Generic_Dictionary_sbyte__DataStoreRatingInfo__o* rinfo, const MethodInfo* method);
+System_IAsyncResult_o* INL1_IlcaNetServerDataStore_IlcaNetDataStoreCompleteCallback2__BeginInvoke (INL1_IlcaNetServerDataStore_IlcaNetDataStoreCompleteCallback2_o* __this, bool isSuccess, int32_t eve, NexPlugin_DataStoreMetaInfo_o* minfo, System_Collections_Generic_Dictionary_sbyte__DataStoreRatingInfo__o* rinfo, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method);
+void INL1_IlcaNetServerDataStore_IlcaNetDataStoreCompleteCallback2__EndInvoke (INL1_IlcaNetServerDataStore_IlcaNetDataStoreCompleteCallback2_o* __this, System_IAsyncResult_o* result, const MethodInfo* method);

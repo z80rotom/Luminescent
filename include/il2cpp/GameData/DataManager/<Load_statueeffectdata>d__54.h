@@ -1,0 +1,10 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void GameData_DataManager__Load_statueeffectdata_d__54___ctor (GameData_DataManager__Load_statueeffectdata_d__54_o* __this, int32_t __1__state, const MethodInfo* method);
+void GameData_DataManager__Load_statueeffectdata_d__54__System_IDisposable_Dispose (GameData_DataManager__Load_statueeffectdata_d__54_o* __this, const MethodInfo* method);
+bool GameData_DataManager__Load_statueeffectdata_d__54__MoveNext (GameData_DataManager__Load_statueeffectdata_d__54_o* __this, const MethodInfo* method);
+Il2CppObject* GameData_DataManager__Load_statueeffectdata_d__54__System_Collections_Generic_IEnumerator_System_Object__get_Current (GameData_DataManager__Load_statueeffectdata_d__54_o* __this, const MethodInfo* method);
+void GameData_DataManager__Load_statueeffectdata_d__54__System_Collections_IEnumerator_Reset (GameData_DataManager__Load_statueeffectdata_d__54_o* __this, const MethodInfo* method);
+Il2CppObject* GameData_DataManager__Load_statueeffectdata_d__54__System_Collections_IEnumerator_get_Current (GameData_DataManager__Load_statueeffectdata_d__54_o* __this, const MethodInfo* method);

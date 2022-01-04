@@ -1,0 +1,12 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Runtime_Remoting_Channels_CrossAppDomainChannel__RegisterCrossAppDomainChannel (const MethodInfo* method);
+System_String_o* System_Runtime_Remoting_Channels_CrossAppDomainChannel__get_ChannelName (System_Runtime_Remoting_Channels_CrossAppDomainChannel_o* __this, const MethodInfo* method);
+int32_t System_Runtime_Remoting_Channels_CrossAppDomainChannel__get_ChannelPriority (System_Runtime_Remoting_Channels_CrossAppDomainChannel_o* __this, const MethodInfo* method);
+Il2CppObject* System_Runtime_Remoting_Channels_CrossAppDomainChannel__get_ChannelData (System_Runtime_Remoting_Channels_CrossAppDomainChannel_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_Channels_CrossAppDomainChannel__StartListening (System_Runtime_Remoting_Channels_CrossAppDomainChannel_o* __this, Il2CppObject* data, const MethodInfo* method);
+System_Runtime_Remoting_Messaging_IMessageSink_o* System_Runtime_Remoting_Channels_CrossAppDomainChannel__CreateMessageSink (System_Runtime_Remoting_Channels_CrossAppDomainChannel_o* __this, System_String_o* url, Il2CppObject* data, System_String_o** uri, const MethodInfo* method);
+void System_Runtime_Remoting_Channels_CrossAppDomainChannel___ctor (System_Runtime_Remoting_Channels_CrossAppDomainChannel_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_Channels_CrossAppDomainChannel___cctor (const MethodInfo* method);

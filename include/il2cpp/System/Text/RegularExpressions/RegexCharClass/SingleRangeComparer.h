@@ -1,0 +1,6 @@
+#pragma once
+
+#include "il2cpp.h"
+
+int32_t System_Text_RegularExpressions_RegexCharClass_SingleRangeComparer__Compare (System_Text_RegularExpressions_RegexCharClass_SingleRangeComparer_o* __this, System_Text_RegularExpressions_RegexCharClass_SingleRange_o* x, System_Text_RegularExpressions_RegexCharClass_SingleRange_o* y, const MethodInfo* method);
+void System_Text_RegularExpressions_RegexCharClass_SingleRangeComparer___ctor (System_Text_RegularExpressions_RegexCharClass_SingleRangeComparer_o* __this, const MethodInfo* method);

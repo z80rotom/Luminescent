@@ -1,0 +1,58 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void System_Collections_Generic_List_ulong____ctor (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBB740* method);
+void System_Collections_Generic_List_ulong____ctor (System_Collections_Generic_List_ulong__o* __this, int32_t capacity, const MethodInfo_2BBB810* method);
+void System_Collections_Generic_List_ulong____ctor (System_Collections_Generic_List_ulong__o* __this, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo_2BBB930* method);
+int32_t System_Collections_Generic_List_ulong___get_Capacity (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBBE80* method);
+void System_Collections_Generic_List_ulong___set_Capacity (System_Collections_Generic_List_ulong__o* __this, int32_t value, const MethodInfo_2BBBE90* method);
+int32_t System_Collections_Generic_List_ulong___get_Count (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBC010* method);
+bool System_Collections_Generic_List_ulong___System_Collections_Generic_ICollection_T__get_IsReadOnly (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBC020* method);
+bool System_Collections_Generic_List_ulong___System_Collections_IList_get_IsReadOnly (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBC030* method);
+uint64_t System_Collections_Generic_List_ulong___get_Item (System_Collections_Generic_List_ulong__o* __this, int32_t index, const MethodInfo_2BBC040* method);
+void System_Collections_Generic_List_ulong___set_Item (System_Collections_Generic_List_ulong__o* __this, int32_t index, uint64_t value, const MethodInfo_2BBC080* method);
+bool System_Collections_Generic_List_ulong___IsCompatibleObject (Il2CppObject* value, const MethodInfo_2BBC0F0* method);
+Il2CppObject* System_Collections_Generic_List_ulong___System_Collections_IList_get_Item (System_Collections_Generic_List_ulong__o* __this, int32_t index, const MethodInfo_2BBC1F0* method);
+void System_Collections_Generic_List_ulong___System_Collections_IList_set_Item (System_Collections_Generic_List_ulong__o* __this, int32_t index, Il2CppObject* value, const MethodInfo_2BBC250* method);
+void System_Collections_Generic_List_ulong___Add (System_Collections_Generic_List_ulong__o* __this, uint64_t item, const MethodInfo_2BBC400* method);
+int32_t System_Collections_Generic_List_ulong___System_Collections_IList_Add (System_Collections_Generic_List_ulong__o* __this, Il2CppObject* item, const MethodInfo_2BBC490* method);
+void System_Collections_Generic_List_ulong___AddRange (System_Collections_Generic_List_ulong__o* __this, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo_2BBC650* method);
+int32_t System_Collections_Generic_List_ulong___BinarySearch (System_Collections_Generic_List_ulong__o* __this, int32_t index, int32_t count, uint64_t item, System_Collections_Generic_IComparer_T__o* comparer, const MethodInfo_2BBC670* method);
+int32_t System_Collections_Generic_List_ulong___BinarySearch (System_Collections_Generic_List_ulong__o* __this, uint64_t item, System_Collections_Generic_IComparer_T__o* comparer, const MethodInfo_2BBC730* method);
+void System_Collections_Generic_List_ulong___Clear (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBC7A0* method);
+bool System_Collections_Generic_List_ulong___Contains (System_Collections_Generic_List_ulong__o* __this, uint64_t item, const MethodInfo_2BBC7F0* method);
+bool System_Collections_Generic_List_ulong___System_Collections_IList_Contains (System_Collections_Generic_List_ulong__o* __this, Il2CppObject* item, const MethodInfo_2BBC8B0* method);
+void System_Collections_Generic_List_ulong___CopyTo (System_Collections_Generic_List_ulong__o* __this, System_UInt64_array* array, const MethodInfo_2BBC9F0* method);
+void System_Collections_Generic_List_ulong___System_Collections_ICollection_CopyTo (System_Collections_Generic_List_ulong__o* __this, System_Array_o* array, int32_t arrayIndex, const MethodInfo_2BBCA10* method);
+void System_Collections_Generic_List_ulong___CopyTo (System_Collections_Generic_List_ulong__o* __this, int32_t index, System_UInt64_array* array, int32_t arrayIndex, int32_t count, const MethodInfo_2BBCB30* method);
+void System_Collections_Generic_List_ulong___CopyTo (System_Collections_Generic_List_ulong__o* __this, System_UInt64_array* array, int32_t arrayIndex, const MethodInfo_2BBCBA0* method);
+void System_Collections_Generic_List_ulong___EnsureCapacity (System_Collections_Generic_List_ulong__o* __this, int32_t min, const MethodInfo_2BBCBC0* method);
+bool System_Collections_Generic_List_ulong___Exists (System_Collections_Generic_List_ulong__o* __this, System_Predicate_T__o* match, const MethodInfo_2BBCC10* method);
+uint64_t System_Collections_Generic_List_ulong___Find (System_Collections_Generic_List_ulong__o* __this, System_Predicate_T__o* match, const MethodInfo_2BBCC40* method);
+System_Collections_Generic_List_T__o* System_Collections_Generic_List_ulong___FindAll (System_Collections_Generic_List_ulong__o* __this, System_Predicate_T__o* match, const MethodInfo_2BBCD20* method);
+int32_t System_Collections_Generic_List_ulong___FindIndex (System_Collections_Generic_List_ulong__o* __this, System_Predicate_T__o* match, const MethodInfo_2BBCE40* method);
+int32_t System_Collections_Generic_List_ulong___FindIndex (System_Collections_Generic_List_ulong__o* __this, int32_t startIndex, int32_t count, System_Predicate_T__o* match, const MethodInfo_2BBCE70* method);
+void System_Collections_Generic_List_ulong___ForEach (System_Collections_Generic_List_ulong__o* __this, System_Action_T__o* action, const MethodInfo_2BBCF80* method);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_ulong___GetEnumerator (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBD110* method);
+System_Collections_Generic_IEnumerator_T__o* System_Collections_Generic_List_ulong___System_Collections_Generic_IEnumerable_T__GetEnumerator (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBD170* method);
+System_Collections_IEnumerator_o* System_Collections_Generic_List_ulong___System_Collections_IEnumerable_GetEnumerator (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBD1F0* method);
+System_Collections_Generic_List_T__o* System_Collections_Generic_List_ulong___GetRange (System_Collections_Generic_List_ulong__o* __this, int32_t index, int32_t count, const MethodInfo_2BBD270* method);
+int32_t System_Collections_Generic_List_ulong___IndexOf (System_Collections_Generic_List_ulong__o* __this, uint64_t item, const MethodInfo_2BBD370* method);
+int32_t System_Collections_Generic_List_ulong___System_Collections_IList_IndexOf (System_Collections_Generic_List_ulong__o* __this, Il2CppObject* item, const MethodInfo_2BBD3A0* method);
+void System_Collections_Generic_List_ulong___Insert (System_Collections_Generic_List_ulong__o* __this, int32_t index, uint64_t item, const MethodInfo_2BBD4E0* method);
+void System_Collections_Generic_List_ulong___System_Collections_IList_Insert (System_Collections_Generic_List_ulong__o* __this, int32_t index, Il2CppObject* item, const MethodInfo_2BBD5E0* method);
+void System_Collections_Generic_List_ulong___InsertRange (System_Collections_Generic_List_ulong__o* __this, int32_t index, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo_2BBD790* method);
+bool System_Collections_Generic_List_ulong___Remove (System_Collections_Generic_List_ulong__o* __this, uint64_t item, const MethodInfo_2BBDC20* method);
+void System_Collections_Generic_List_ulong___System_Collections_IList_Remove (System_Collections_Generic_List_ulong__o* __this, Il2CppObject* item, const MethodInfo_2BBDC90* method);
+int32_t System_Collections_Generic_List_ulong___RemoveAll (System_Collections_Generic_List_ulong__o* __this, System_Predicate_T__o* match, const MethodInfo_2BBDDD0* method);
+void System_Collections_Generic_List_ulong___RemoveAt (System_Collections_Generic_List_ulong__o* __this, int32_t index, const MethodInfo_2BBDF80* method);
+void System_Collections_Generic_List_ulong___RemoveRange (System_Collections_Generic_List_ulong__o* __this, int32_t index, int32_t count, const MethodInfo_2BBE040* method);
+void System_Collections_Generic_List_ulong___Reverse (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBE130* method);
+void System_Collections_Generic_List_ulong___Reverse (System_Collections_Generic_List_ulong__o* __this, int32_t index, int32_t count, const MethodInfo_2BBE180* method);
+void System_Collections_Generic_List_ulong___Sort (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBE240* method);
+void System_Collections_Generic_List_ulong___Sort (System_Collections_Generic_List_ulong__o* __this, System_Collections_Generic_IComparer_T__o* comparer, const MethodInfo_2BBE2A0* method);
+void System_Collections_Generic_List_ulong___Sort (System_Collections_Generic_List_ulong__o* __this, int32_t index, int32_t count, System_Collections_Generic_IComparer_T__o* comparer, const MethodInfo_2BBE300* method);
+void System_Collections_Generic_List_ulong___Sort (System_Collections_Generic_List_ulong__o* __this, System_Comparison_T__o* comparison, const MethodInfo_2BBE3D0* method);
+System_UInt64_array* System_Collections_Generic_List_ulong___ToArray (System_Collections_Generic_List_ulong__o* __this, const MethodInfo_2BBE450* method);
+void System_Collections_Generic_List_ulong____cctor (const MethodInfo_2BBE4D0* method);

@@ -1,0 +1,14 @@
+#pragma once
+
+#include "il2cpp.h"
+
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultIrsensorUnavailable (const MethodInfo* method);
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultIrsensorUnconnected (const MethodInfo* method);
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultIrsensorUnsupported (const MethodInfo* method);
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultIrsensorDeviceError (const MethodInfo* method);
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultIrsensorFirmwareCheckIncompleted (const MethodInfo* method);
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultIrsensorNotReady (const MethodInfo* method);
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultIrsensorDeviceNotReady (const MethodInfo* method);
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultIrsensorDeviceResourceNotAvailable (const MethodInfo* method);
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultHandAnalysisError (const MethodInfo* method);
+nn_ErrorRange_o nn_irsensor_IrSensor__get_ResultHandAnalysisModeIncorrect (const MethodInfo* method);

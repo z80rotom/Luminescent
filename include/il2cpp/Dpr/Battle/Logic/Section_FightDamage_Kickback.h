@@ -1,0 +1,9 @@
+#pragma once
+
+#include "il2cpp.h"
+
+void Dpr_Battle_Logic_Section_FightDamage_Kickback___ctor (Dpr_Battle_Logic_Section_FightDamage_Kickback_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FightDamage_Kickback__Execute (Dpr_Battle_Logic_Section_FightDamage_Kickback_o* __this, Dpr_Battle_Logic_Section_FightDamage_Kickback_Result_o* pResult, Dpr_Battle_Logic_Section_FightDamage_Kickback_Description_o** description, const MethodInfo* method);
+uint32_t Dpr_Battle_Logic_Section_FightDamage_Kickback__calcKickBackDamage (Dpr_Battle_Logic_Section_FightDamage_Kickback_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_WazaParam_o* wazaParam, uint32_t wazaDamage, bool* pIsMustEnable, const MethodInfo* method);
+bool Dpr_Battle_Logic_Section_FightDamage_Kickback__isKickbackDamageEnable (Dpr_Battle_Logic_Section_FightDamage_Kickback_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, uint32_t damage, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FightDamage_Kickback__addDamage (Dpr_Battle_Logic_Section_FightDamage_Kickback_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, uint32_t damage, const MethodInfo* method);

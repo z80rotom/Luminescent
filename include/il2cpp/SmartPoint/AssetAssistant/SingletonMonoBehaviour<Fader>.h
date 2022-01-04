@@ -1,0 +1,8 @@
+#pragma once
+
+#include "il2cpp.h"
+
+SmartPoint_Components_Fader_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_Fader___get_Instance (const MethodInfo_26B9AB0* method);
+bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_Fader___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_Fader__o* __this, const MethodInfo_26BA7D0* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_Fader___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_Fader__o* __this, const MethodInfo_26BAB70* method);
+void SmartPoint_AssetAssistant_SingletonMonoBehaviour_Fader____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_Fader__o* __this, const MethodInfo_26BB510* method);
