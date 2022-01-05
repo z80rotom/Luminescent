@@ -16,6 +16,7 @@ build113/
 starlight_patch_113/
 linkerscripts/symstemp.ld
 *.zip
+*.nso
 script.json
 
 # IDEs and editors
