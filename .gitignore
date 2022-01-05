@@ -15,6 +15,8 @@ build.ninja
 build113/
 starlight_patch_113/
 linkerscripts/symstemp.ld
+*.zip
+script.json
 
 # IDEs and editors
 .idea/
