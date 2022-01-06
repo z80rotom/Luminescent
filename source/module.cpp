@@ -1,5 +1,5 @@
-#define MODULE_NAME "Dialga"
-#define MODULE_NAME_LEN 6
+#define STR(x) #x
+#define MODULE_NAME_STR STR(MODULE_NAME)
 
 // rtld working object
 __attribute__((section(".bss"))) char __nx_module_runtime[0xD0];
@@ -11,4 +11,4 @@ struct ModuleName {
 };
 
 __attribute__((section(".rodata.module_name")))
-ModuleName module_name = {.unknown = 0, .name_lengh = MODULE_NAME_LEN, .name = MODULE_NAME};
+ModuleName module_name = {.unknown = 0, .name_lengh = MODULE_NAME_LEN, .name = MODULE_NAME_STR};

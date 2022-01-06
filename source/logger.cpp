@@ -1,5 +1,7 @@
 #include "logger.hpp"
 
+#define STR(x) #x
+#define MODULE_NAME_STR STR(MODULE_NAME)
 #define HOST_IP          "0.0.0.0" // set your IP address here 
 #define PORT             (u16)0000 // set Port here
 
@@ -92,7 +94,7 @@ void socket_log_initialize()
     
     socket_log_state = SOCKET_LOG_CONNECTED;
 
-    LOG("Hello from Dialga!\n");
+    LOG("Hello from " MODULE_NAME_STR "!\n");
 
     return;
 }

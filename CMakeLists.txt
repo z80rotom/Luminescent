@@ -7,6 +7,13 @@ enable_language(ASM C CXX)
 
 set(BDSPVER 113)
 set(BDSPVERSTR 1.1.3)
+set(MODULE_NAME ${CMAKE_PROJECT_NAME})
+string(LENGTH ${MODULE_NAME} MODULE_NAME_LEN)
+
+add_compile_definitions(
+        MODULE_NAME="${MODULE_NAME}"
+        MODULE_NAME_LEN=${MODULE_NAME_LEN}
+)
 
 include(${PROJECT_SOURCE_DIR}/config.cmake)
 
