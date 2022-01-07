@@ -16,7 +16,7 @@ To get started, copy `config.cmake.template` to `config.cmake` and change the IP
 
 ## Building
 
-Build has only been tested on Arch Linux.
+The build has only been tested on Arch Linux and WSL, and is not designed for Windows.
 
 Simply run:
 ```

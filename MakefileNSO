@@ -13,6 +13,7 @@ $(error "Please set DEVKITPRO in your environment. export DEVKITPRO=<path to>/de
 endif
 
 TOPDIR ?= $(CURDIR)
+ROOT_DIR:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 include $(DEVKITPRO)/libnx/switch_rules
 
 #---------------------------------------------------------------------------------
@@ -24,7 +25,7 @@ include $(DEVKITPRO)/libnx/switch_rules
 #---------------------------------------------------------------------------------
 TARGET		?=	$(notdir $(CURDIR))$(BDSPVER)
 BUILD		?=	build$(BDSPVER)
-SOURCES		:=	$(shell find source/ -type d)
+SOURCES		:=	$(shell find $(ROOT_DIR)/source/ -type d)
 DATA		:=	data
 INCLUDES	:=	include
 

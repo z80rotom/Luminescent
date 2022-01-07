@@ -1,3 +1,6 @@
+# Devkitpro
+include($ENV{DEVKITPRO}/cmake/Switch.cmake)
+
 # Project sources
 include_directories(${PROJECT_SOURCE_DIR}/include/)
 file(GLOB_RECURSE SOURCES_ASM ${PROJECT_SOURCE_DIR}/source/*.s)
@@ -20,14 +23,14 @@ add_custom_target(
         # Compile
         COMMAND make all -f ${CMAKE_SOURCE_DIR}/MakefileNSO BDSPVER=${BDSPVER} BDSPVERSTR=${BDSPVERSTR} DEFINITIONS="${COMPILE_DEFS}"
 
-        # Remove old ELF
-        COMMAND rm ${CMAKE_SOURCE_DIR}/${CMAKE_PROJECT_NAME}${BDSPVER}.elf
-
         # Remove old output
         COMMAND rm -rf ${CMAKE_SOURCE_DIR}/starlight_patch_${BDSPVER}
 
         # Generate new patch
         COMMAND python3 ${CMAKE_SOURCE_DIR}/scripts/gen_patch.py ${BDSPVER}
+
+        # Remove old ELF
+        COMMAND rm ${CMAKE_SOURCE_DIR}/${CMAKE_PROJECT_NAME}${BDSPVER}.elf
 )
 
 # Set outputs for clean
