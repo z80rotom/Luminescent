@@ -171,7 +171,7 @@ def get_patch_bin(target, patch_address, patch_value_str):
         return bytearray(bytes(string_match.group(1), 'utf-8').decode('unicode_escape') + '\0', 'utf-8')
 
     # asm patch
-    branch_need_resolve_match = re.match(r'([Bb][Ll]?\s+)([^\#]+$)', patch_value_str)
+    branch_need_resolve_match = re.match(r'([Bb](?:[Ll]|\.ne)?\s+)([^\#]+$)', patch_value_str)
     if branch_need_resolve_match:
         target, to_addr = resolve_address_and_target(target, branch_need_resolve_match.group(2))
         patch_value_str = (branch_need_resolve_match.group(1) + '#' + hex(to_addr - patch_address))
