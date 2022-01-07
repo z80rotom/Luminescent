@@ -25,7 +25,7 @@ include $(DEVKITPRO)/libnx/switch_rules
 #---------------------------------------------------------------------------------
 TARGET		?=	$(notdir $(CURDIR))$(BDSPVER)
 BUILD		?=	build$(BDSPVER)
-SOURCES		:=	$(shell find $(ROOT_DIR)/source/ -type d)
+SOURCES		:=	$(shell find source/ -type d)
 DATA		:=	data
 INCLUDES	:=	include
 
