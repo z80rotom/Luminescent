@@ -10,7 +10,7 @@ PATCH_DIR = "patches"
 PATCH_EXTENSION = ".slpatch"
 
 NSO_HEADER_LEN = 0x100
-PATCH_CONFIG = os.path.join(PATCH_DIR, "maps.config")
+PATCH_CONFIG = os.path.join("data", "maps.config")
 
 IPS_OUT_DIR_NAME = "ips_patches"
 IPS_FORMAT = ".ips"
@@ -181,7 +181,6 @@ def add_patch_to_patchlist(target, patch_address, patch_content):
 
 
 def add_patch_from_file(patch_file_path):
-    patch_version_all = "all"
     patch_vars = {
         "version": None,
         "target": "main"

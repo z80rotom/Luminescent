@@ -1,0 +1,7 @@
+0214ef4c:  // Dpr.UI.SettingWindow.<OpOpen>d__11$$MoveNext : UnityEngine.Transform$$get_childCount
+    bl settingsChildCount
+0214ef90:
+    bl settingsChildCount
+
+0214efc4:  // Dpr.UI.SettingWindow.<OpOpen>d__11$$MoveNext : if (num != 1) { ... }
+    b.ne settingsCustomHook
