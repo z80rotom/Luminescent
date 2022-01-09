@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void Effect_EffectManager__Start_d__13___ctor (Effect_EffectManager__Start_d__13_o* __this, int32_t __1__state, const MethodInfo* method);
-void Effect_EffectManager__Start_d__13__System_IDisposable_Dispose (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method);
-bool Effect_EffectManager__Start_d__13__MoveNext (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method);
-Il2CppObject* Effect_EffectManager__Start_d__13__System_Collections_Generic_IEnumerator_System_Object__get_Current (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method);
-void Effect_EffectManager__Start_d__13__System_Collections_IEnumerator_Reset (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method);
-Il2CppObject* Effect_EffectManager__Start_d__13__System_Collections_IEnumerator_get_Current (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method);
+void Effect_EffectManager__Start_d__13___ctor (Effect_EffectManager__Start_d__13_o* __this, int32_t __1__state, const MethodInfo* method_info);
+void Effect_EffectManager__Start_d__13__System_IDisposable_Dispose (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method_info);
+bool Effect_EffectManager__Start_d__13__MoveNext (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method_info);
+Il2CppObject* Effect_EffectManager__Start_d__13__System_Collections_Generic_IEnumerator_System_Object__get_Current (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method_info);
+void Effect_EffectManager__Start_d__13__System_Collections_IEnumerator_Reset (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method_info);
+Il2CppObject* Effect_EffectManager__Start_d__13__System_Collections_IEnumerator_get_Current (Effect_EffectManager__Start_d__13_o* __this, const MethodInfo* method_info);

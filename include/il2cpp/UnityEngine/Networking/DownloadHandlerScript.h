@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-intptr_t UnityEngine_Networking_DownloadHandlerScript__Create (UnityEngine_Networking_DownloadHandlerScript_o* obj, const MethodInfo* method);
-intptr_t UnityEngine_Networking_DownloadHandlerScript__CreatePreallocated (UnityEngine_Networking_DownloadHandlerScript_o* obj, System_Byte_array* preallocatedBuffer, const MethodInfo* method);
-void UnityEngine_Networking_DownloadHandlerScript__InternalCreateScript (UnityEngine_Networking_DownloadHandlerScript_o* __this, const MethodInfo* method);
-void UnityEngine_Networking_DownloadHandlerScript__InternalCreateScript (UnityEngine_Networking_DownloadHandlerScript_o* __this, System_Byte_array* preallocatedBuffer, const MethodInfo* method);
-void UnityEngine_Networking_DownloadHandlerScript___ctor (UnityEngine_Networking_DownloadHandlerScript_o* __this, const MethodInfo* method);
-void UnityEngine_Networking_DownloadHandlerScript___ctor (UnityEngine_Networking_DownloadHandlerScript_o* __this, System_Byte_array* preallocatedBuffer, const MethodInfo* method);
+intptr_t UnityEngine_Networking_DownloadHandlerScript__Create (UnityEngine_Networking_DownloadHandlerScript_o* obj, const MethodInfo* method_info);
+intptr_t UnityEngine_Networking_DownloadHandlerScript__CreatePreallocated (UnityEngine_Networking_DownloadHandlerScript_o* obj, System_Byte_array* preallocatedBuffer, const MethodInfo* method_info);
+void UnityEngine_Networking_DownloadHandlerScript__InternalCreateScript (UnityEngine_Networking_DownloadHandlerScript_o* __this, const MethodInfo* method_info);
+void UnityEngine_Networking_DownloadHandlerScript__InternalCreateScript (UnityEngine_Networking_DownloadHandlerScript_o* __this, System_Byte_array* preallocatedBuffer, const MethodInfo* method_info);
+void UnityEngine_Networking_DownloadHandlerScript___ctor (UnityEngine_Networking_DownloadHandlerScript_o* __this, const MethodInfo* method_info);
+void UnityEngine_Networking_DownloadHandlerScript___ctor (UnityEngine_Networking_DownloadHandlerScript_o* __this, System_Byte_array* preallocatedBuffer, const MethodInfo* method_info);

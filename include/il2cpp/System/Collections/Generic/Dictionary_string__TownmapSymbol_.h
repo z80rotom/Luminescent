@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_Dictionary_string__TownmapSymbol____ctor (System_Collections_Generic_Dictionary_string__TownmapSymbol__o* __this, const MethodInfo_29D3C00* method);
-void System_Collections_Generic_Dictionary_string__TownmapSymbol___Add (System_Collections_Generic_Dictionary_string__TownmapSymbol__o* __this, System_String_o* key, Dpr_UI_TownmapSymbol_o* value, const MethodInfo_29D40C0* method);
-bool System_Collections_Generic_Dictionary_string__TownmapSymbol___TryGetValue (System_Collections_Generic_Dictionary_string__TownmapSymbol__o* __this, System_String_o* key, Dpr_UI_TownmapSymbol_o** value, const MethodInfo_29D5E10* method);
+void System_Collections_Generic_Dictionary_string__TownmapSymbol____ctor (System_Collections_Generic_Dictionary_string__TownmapSymbol__o* __this, const MethodInfo* method_info);
+void System_Collections_Generic_Dictionary_string__TownmapSymbol___Add (System_Collections_Generic_Dictionary_string__TownmapSymbol__o* __this, System_String_o* key, Dpr_UI_TownmapSymbol_o* value, const MethodInfo* method_info);
+bool System_Collections_Generic_Dictionary_string__TownmapSymbol___TryGetValue (System_Collections_Generic_Dictionary_string__TownmapSymbol__o* __this, System_String_o* key, Dpr_UI_TownmapSymbol_o** value, const MethodInfo* method_info);

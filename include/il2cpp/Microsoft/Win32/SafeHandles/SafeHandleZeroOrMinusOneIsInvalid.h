@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid___ctor (Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid_o* __this, bool ownsHandle, const MethodInfo* method);
-bool Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid__get_IsInvalid (Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid_o* __this, const MethodInfo* method);
+void Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid___ctor (Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid_o* __this, bool ownsHandle, const MethodInfo* method_info);
+bool Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid__get_IsInvalid (Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid_o* __this, const MethodInfo* method_info);

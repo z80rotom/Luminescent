@@ -2,18 +2,18 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_List_ItemInfo____ctor (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo_2BAD0F0* method);
-int32_t System_Collections_Generic_List_ItemInfo___get_Count (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo_2BAD9C0* method);
-Dpr_Item_ItemInfo_o* System_Collections_Generic_List_ItemInfo___get_Item (System_Collections_Generic_List_ItemInfo__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_ItemInfo___Add (System_Collections_Generic_List_ItemInfo__o* __this, Dpr_Item_ItemInfo_o* item, const MethodInfo_2BADD00* method);
-void System_Collections_Generic_List_ItemInfo___Clear (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo_2BAE0A0* method);
-bool System_Collections_Generic_List_ItemInfo___Exists (System_Collections_Generic_List_ItemInfo__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE550* method);
-System_Collections_Generic_List_T__o* System_Collections_Generic_List_ItemInfo___FindAll (System_Collections_Generic_List_ItemInfo__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE660* method);
-int32_t System_Collections_Generic_List_ItemInfo___FindIndex (System_Collections_Generic_List_ItemInfo__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE780* method);
-void System_Collections_Generic_List_ItemInfo___ForEach (System_Collections_Generic_List_ItemInfo__o* __this, System_Action_T__o* action, const MethodInfo_2BAE8C0* method);
-System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_ItemInfo___GetEnumerator (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo_2BAEA50* method);
-void System_Collections_Generic_List_ItemInfo___Insert (System_Collections_Generic_List_ItemInfo__o* __this, int32_t index, Dpr_Item_ItemInfo_o* item, const MethodInfo_2BAEE20* method);
-bool System_Collections_Generic_List_ItemInfo___Remove (System_Collections_Generic_List_ItemInfo__o* __this, Dpr_Item_ItemInfo_o* item, const MethodInfo_2BAF560* method);
-void System_Collections_Generic_List_ItemInfo___RemoveAt (System_Collections_Generic_List_ItemInfo__o* __this, int32_t index, const MethodInfo_2BAF8D0* method);
-void System_Collections_Generic_List_ItemInfo___Sort (System_Collections_Generic_List_ItemInfo__o* __this, System_Comparison_T__o* comparison, const MethodInfo_2BAFD20* method);
-Dpr_Item_ItemInfo_array* System_Collections_Generic_List_ItemInfo___ToArray (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo_2BAFDA0* method);
+void System_Collections_Generic_List_ItemInfo____ctor (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_ItemInfo___get_Count (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo* method_info);
+Dpr_Item_ItemInfo_o* System_Collections_Generic_List_ItemInfo___get_Item (System_Collections_Generic_List_ItemInfo__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_ItemInfo___Add (System_Collections_Generic_List_ItemInfo__o* __this, Dpr_Item_ItemInfo_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_ItemInfo___Clear (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo* method_info);
+bool System_Collections_Generic_List_ItemInfo___Exists (System_Collections_Generic_List_ItemInfo__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);
+System_Collections_Generic_List_T__o* System_Collections_Generic_List_ItemInfo___FindAll (System_Collections_Generic_List_ItemInfo__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_ItemInfo___FindIndex (System_Collections_Generic_List_ItemInfo__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);
+void System_Collections_Generic_List_ItemInfo___ForEach (System_Collections_Generic_List_ItemInfo__o* __this, System_Action_T__o* action, const MethodInfo* method_info);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_ItemInfo___GetEnumerator (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo* method_info);
+void System_Collections_Generic_List_ItemInfo___Insert (System_Collections_Generic_List_ItemInfo__o* __this, int32_t index, Dpr_Item_ItemInfo_o* item, const MethodInfo* method_info);
+bool System_Collections_Generic_List_ItemInfo___Remove (System_Collections_Generic_List_ItemInfo__o* __this, Dpr_Item_ItemInfo_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_ItemInfo___RemoveAt (System_Collections_Generic_List_ItemInfo__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_ItemInfo___Sort (System_Collections_Generic_List_ItemInfo__o* __this, System_Comparison_T__o* comparison, const MethodInfo* method_info);
+Dpr_Item_ItemInfo_array* System_Collections_Generic_List_ItemInfo___ToArray (System_Collections_Generic_List_ItemInfo__o* __this, const MethodInfo* method_info);

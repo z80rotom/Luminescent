@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void PiaPluginSync_SyncStartArgument___ctor (PiaPluginSync_SyncStartArgument_o* __this, const MethodInfo* method);
+void PiaPluginSync_SyncStartArgument___ctor (PiaPluginSync_SyncStartArgument_o* __this, const MethodInfo* method_info);

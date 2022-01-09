@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void DG_Tweening_DOTweenModulePhysics___c__DisplayClass7_0___ctor (DG_Tweening_DOTweenModulePhysics___c__DisplayClass7_0_o* __this, const MethodInfo* method);
-UnityEngine_Vector3_o DG_Tweening_DOTweenModulePhysics___c__DisplayClass7_0___DOPath_b__0 (DG_Tweening_DOTweenModulePhysics___c__DisplayClass7_0_o* __this, const MethodInfo* method);
+void DG_Tweening_DOTweenModulePhysics___c__DisplayClass7_0___ctor (DG_Tweening_DOTweenModulePhysics___c__DisplayClass7_0_o* __this, const MethodInfo* method_info);
+UnityEngine_Vector3_o DG_Tweening_DOTweenModulePhysics___c__DisplayClass7_0___DOPath_b__0 (DG_Tweening_DOTweenModulePhysics___c__DisplayClass7_0_o* __this, const MethodInfo* method_info);

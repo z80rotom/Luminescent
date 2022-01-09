@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-System_Attribute_o* System_Reflection_CustomAttributeExtensions__GetCustomAttribute (System_Reflection_Assembly_o* element, System_Type_o* attributeType, const MethodInfo* method);
-Il2CppObject* System_Reflection_CustomAttributeExtensions__GetCustomAttribute_object_ (System_Reflection_Assembly_o* element, const MethodInfo_23637D0* method);
-System_Resources_NeutralResourcesLanguageAttribute_o* System_Reflection_CustomAttributeExtensions__GetCustomAttribute_NeutralResourcesLanguageAttribute_ (System_Reflection_Assembly_o* element, const MethodInfo_23637D0* method);
+System_Attribute_o* System_Reflection_CustomAttributeExtensions__GetCustomAttribute (System_Reflection_Assembly_o* element, System_Type_o* attributeType, const MethodInfo* method_info);
+Il2CppObject* System_Reflection_CustomAttributeExtensions__GetCustomAttribute_object_ (System_Reflection_Assembly_o* element, const MethodInfo* method_info);
+System_Resources_NeutralResourcesLanguageAttribute_o* System_Reflection_CustomAttributeExtensions__GetCustomAttribute_NeutralResourcesLanguageAttribute_ (System_Reflection_Assembly_o* element, const MethodInfo* method_info);

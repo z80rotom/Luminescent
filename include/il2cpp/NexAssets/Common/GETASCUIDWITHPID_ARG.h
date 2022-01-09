@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void NexAssets_Common_GETASCUIDWITHPID_ARG___ctor (NexAssets_Common_GETASCUIDWITHPID_ARG_o* __this, const MethodInfo* method);
+void NexAssets_Common_GETASCUIDWITHPID_ARG___ctor (NexAssets_Common_GETASCUIDWITHPID_ARG_o* __this, const MethodInfo* method_info);

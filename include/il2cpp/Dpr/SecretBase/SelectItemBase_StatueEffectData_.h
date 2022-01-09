@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void Dpr_SecretBase_SelectItemBase_StatueEffectData___SetData (Dpr_SecretBase_SelectItemBase_StatueEffectData__o* __this, Dpr_SecretBase_StatueEffectData_o* value, const MethodInfo_26B43E0* method);
-Dpr_SecretBase_StatueEffectData_o* Dpr_SecretBase_SelectItemBase_StatueEffectData___GetData (Dpr_SecretBase_SelectItemBase_StatueEffectData__o* __this, const MethodInfo_26B43F0* method);
-void Dpr_SecretBase_SelectItemBase_StatueEffectData____ctor (Dpr_SecretBase_SelectItemBase_StatueEffectData__o* __this, const MethodInfo_26B4400* method);
+void Dpr_SecretBase_SelectItemBase_StatueEffectData___SetData (Dpr_SecretBase_SelectItemBase_StatueEffectData__o* __this, Dpr_SecretBase_StatueEffectData_o* value, const MethodInfo* method_info);
+Dpr_SecretBase_StatueEffectData_o* Dpr_SecretBase_SelectItemBase_StatueEffectData___GetData (Dpr_SecretBase_SelectItemBase_StatueEffectData__o* __this, const MethodInfo* method_info);
+void Dpr_SecretBase_SelectItemBase_StatueEffectData____ctor (Dpr_SecretBase_SelectItemBase_StatueEffectData__o* __this, const MethodInfo* method_info);

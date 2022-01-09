@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_List_XMenuTopItem____ctor (System_Collections_Generic_List_XMenuTopItem__o* __this, const MethodInfo_2BAD0F0* method);
-int32_t System_Collections_Generic_List_XMenuTopItem___get_Count (System_Collections_Generic_List_XMenuTopItem__o* __this, const MethodInfo_2BAD9C0* method);
-XMenuTopItem_o* System_Collections_Generic_List_XMenuTopItem___get_Item (System_Collections_Generic_List_XMenuTopItem__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_XMenuTopItem___Add (System_Collections_Generic_List_XMenuTopItem__o* __this, XMenuTopItem_o* item, const MethodInfo_2BADD00* method);
-void System_Collections_Generic_List_XMenuTopItem___Clear (System_Collections_Generic_List_XMenuTopItem__o* __this, const MethodInfo_2BAE0A0* method);
-int32_t System_Collections_Generic_List_XMenuTopItem___FindIndex (System_Collections_Generic_List_XMenuTopItem__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE780* method);
+void System_Collections_Generic_List_XMenuTopItem____ctor (System_Collections_Generic_List_XMenuTopItem__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_XMenuTopItem___get_Count (System_Collections_Generic_List_XMenuTopItem__o* __this, const MethodInfo* method_info);
+XMenuTopItem_o* System_Collections_Generic_List_XMenuTopItem___get_Item (System_Collections_Generic_List_XMenuTopItem__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_XMenuTopItem___Add (System_Collections_Generic_List_XMenuTopItem__o* __this, XMenuTopItem_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_XMenuTopItem___Clear (System_Collections_Generic_List_XMenuTopItem__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_XMenuTopItem___FindIndex (System_Collections_Generic_List_XMenuTopItem__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);

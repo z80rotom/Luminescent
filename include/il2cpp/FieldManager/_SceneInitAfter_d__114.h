@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void FieldManager__SceneInitAfter_d__114___ctor (FieldManager__SceneInitAfter_d__114_o* __this, int32_t __1__state, const MethodInfo* method);
-void FieldManager__SceneInitAfter_d__114__System_IDisposable_Dispose (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method);
-bool FieldManager__SceneInitAfter_d__114__MoveNext (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method);
-Il2CppObject* FieldManager__SceneInitAfter_d__114__System_Collections_Generic_IEnumerator_System_Object__get_Current (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method);
-void FieldManager__SceneInitAfter_d__114__System_Collections_IEnumerator_Reset (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method);
-Il2CppObject* FieldManager__SceneInitAfter_d__114__System_Collections_IEnumerator_get_Current (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method);
+void FieldManager__SceneInitAfter_d__114___ctor (FieldManager__SceneInitAfter_d__114_o* __this, int32_t __1__state, const MethodInfo* method_info);
+void FieldManager__SceneInitAfter_d__114__System_IDisposable_Dispose (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method_info);
+bool FieldManager__SceneInitAfter_d__114__MoveNext (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method_info);
+Il2CppObject* FieldManager__SceneInitAfter_d__114__System_Collections_Generic_IEnumerator_System_Object__get_Current (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method_info);
+void FieldManager__SceneInitAfter_d__114__System_Collections_IEnumerator_Reset (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method_info);
+Il2CppObject* FieldManager__SceneInitAfter_d__114__System_Collections_IEnumerator_get_Current (FieldManager__SceneInitAfter_d__114_o* __this, const MethodInfo* method_info);

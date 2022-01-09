@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void Dpr_UI_ReportWindowBase___c___cctor (const MethodInfo* method);
-void Dpr_UI_ReportWindowBase___c___ctor (Dpr_UI_ReportWindowBase___c_o* __this, const MethodInfo* method);
-void Dpr_UI_ReportWindowBase___c___Setup_b__17_1 (Dpr_UI_ReportWindowBase___c_o* __this, const MethodInfo* method);
-void Dpr_UI_ReportWindowBase___c___Setup_b__17_2 (Dpr_UI_ReportWindowBase___c_o* __this, const MethodInfo* method);
+void Dpr_UI_ReportWindowBase___c___cctor (const MethodInfo* method_info);
+void Dpr_UI_ReportWindowBase___c___ctor (Dpr_UI_ReportWindowBase___c_o* __this, const MethodInfo* method_info);
+void Dpr_UI_ReportWindowBase___c___Setup_b__17_1 (Dpr_UI_ReportWindowBase___c_o* __this, const MethodInfo* method_info);
+void Dpr_UI_ReportWindowBase___c___Setup_b__17_2 (Dpr_UI_ReportWindowBase___c_o* __this, const MethodInfo* method_info);

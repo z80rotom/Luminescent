@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-UnityEngine_Experimental_GlobalIllumination_LinearColor_o UnityEngine_Experimental_GlobalIllumination_LinearColor__Convert (UnityEngine_Color_o color, float intensity, const MethodInfo* method);
-UnityEngine_Experimental_GlobalIllumination_LinearColor_o UnityEngine_Experimental_GlobalIllumination_LinearColor__Black (const MethodInfo* method);
+UnityEngine_Experimental_GlobalIllumination_LinearColor_o UnityEngine_Experimental_GlobalIllumination_LinearColor__Convert (UnityEngine_Color_o color, float intensity, const MethodInfo* method_info);
+UnityEngine_Experimental_GlobalIllumination_LinearColor_o UnityEngine_Experimental_GlobalIllumination_LinearColor__Black (const MethodInfo* method_info);

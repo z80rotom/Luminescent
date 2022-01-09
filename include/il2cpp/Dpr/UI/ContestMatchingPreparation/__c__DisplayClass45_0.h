@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_UI_ContestMatchingPreparation___c__DisplayClass45_0___ctor (Dpr_UI_ContestMatchingPreparation___c__DisplayClass45_0_o* __this, const MethodInfo* method);
-void Dpr_UI_ContestMatchingPreparation___c__DisplayClass45_0___CheckLoadPlayerModel_b__0 (Dpr_UI_ContestMatchingPreparation___c__DisplayClass45_0_o* __this, UnityEngine_GameObject_o* model, const MethodInfo* method);
+void Dpr_UI_ContestMatchingPreparation___c__DisplayClass45_0___ctor (Dpr_UI_ContestMatchingPreparation___c__DisplayClass45_0_o* __this, const MethodInfo* method_info);
+void Dpr_UI_ContestMatchingPreparation___c__DisplayClass45_0___CheckLoadPlayerModel_b__0 (Dpr_UI_ContestMatchingPreparation___c__DisplayClass45_0_o* __this, UnityEngine_GameObject_o* model, const MethodInfo* method_info);

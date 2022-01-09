@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_Dictionary_Type__Object____ctor (System_Collections_Generic_Dictionary_Type__Object__o* __this, const MethodInfo_29D3C00* method);
-UnityEngine_Object_o* System_Collections_Generic_Dictionary_Type__Object___get_Item (System_Collections_Generic_Dictionary_Type__Object__o* __this, System_Type_o* key, const MethodInfo_29D3FD0* method);
-void System_Collections_Generic_Dictionary_Type__Object___Add (System_Collections_Generic_Dictionary_Type__Object__o* __this, System_Type_o* key, UnityEngine_Object_o* value, const MethodInfo_29D40C0* method);
-void System_Collections_Generic_Dictionary_Type__Object___Clear (System_Collections_Generic_Dictionary_Type__Object__o* __this, const MethodInfo_29D4280* method);
-bool System_Collections_Generic_Dictionary_Type__Object___ContainsKey (System_Collections_Generic_Dictionary_Type__Object__o* __this, System_Type_o* key, const MethodInfo_29D4320* method);
+void System_Collections_Generic_Dictionary_Type__Object____ctor (System_Collections_Generic_Dictionary_Type__Object__o* __this, const MethodInfo* method_info);
+UnityEngine_Object_o* System_Collections_Generic_Dictionary_Type__Object___get_Item (System_Collections_Generic_Dictionary_Type__Object__o* __this, System_Type_o* key, const MethodInfo* method_info);
+void System_Collections_Generic_Dictionary_Type__Object___Add (System_Collections_Generic_Dictionary_Type__Object__o* __this, System_Type_o* key, UnityEngine_Object_o* value, const MethodInfo* method_info);
+void System_Collections_Generic_Dictionary_Type__Object___Clear (System_Collections_Generic_Dictionary_Type__Object__o* __this, const MethodInfo* method_info);
+bool System_Collections_Generic_Dictionary_Type__Object___ContainsKey (System_Collections_Generic_Dictionary_Type__Object__o* __this, System_Type_o* key, const MethodInfo* method_info);

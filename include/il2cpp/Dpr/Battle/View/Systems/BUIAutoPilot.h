@@ -2,16 +2,16 @@
 
 #include "il2cpp.h"
 
-int32_t Dpr_Battle_View_Systems_BUIAutoPilot__get_State (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_Systems_BUIAutoPilot__set_State (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, int32_t value, const MethodInfo* method);
-bool Dpr_Battle_View_Systems_BUIAutoPilot__get_IsRunning (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_Systems_BUIAutoPilot__BeginAutoPilot (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, int32_t mode, float cursorWait, float executeWait, const MethodInfo* method);
-System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__ExecuteAutoPilot (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, const MethodInfo* method);
-System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForOpenUIWindow_ContextMenuWindow_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo_1E78F20* method);
-System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForOpenUIWindow_UIBag_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo_1E78F20* method);
-System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForOpenUIWindow_object_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo_1E78F20* method);
-System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForCloseUIWindow_UIBag_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo_1E78EB0* method);
-System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForCloseUIWindow_object_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo_1E78EB0* method);
-System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__PushUIWindowButton (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, Dpr_UI_UIWindow_o* uiWindow, int32_t button, float wait, const MethodInfo* method);
-void Dpr_Battle_View_Systems_BUIAutoPilot___ctor (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_Systems_BUIAutoPilot___cctor (const MethodInfo* method);
+int32_t Dpr_Battle_View_Systems_BUIAutoPilot__get_State (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_Systems_BUIAutoPilot__set_State (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, int32_t value, const MethodInfo* method_info);
+bool Dpr_Battle_View_Systems_BUIAutoPilot__get_IsRunning (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_Systems_BUIAutoPilot__BeginAutoPilot (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, int32_t mode, float cursorWait, float executeWait, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__ExecuteAutoPilot (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForOpenUIWindow_ContextMenuWindow_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForOpenUIWindow_UIBag_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForOpenUIWindow_object_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForCloseUIWindow_UIBag_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__WaitForCloseUIWindow_object_ (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, float wait, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_Battle_View_Systems_BUIAutoPilot__PushUIWindowButton (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, Dpr_UI_UIWindow_o* uiWindow, int32_t button, float wait, const MethodInfo* method_info);
+void Dpr_Battle_View_Systems_BUIAutoPilot___ctor (Dpr_Battle_View_Systems_BUIAutoPilot_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_Systems_BUIAutoPilot___cctor (const MethodInfo* method_info);

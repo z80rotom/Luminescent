@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-bool System_CLRConfig__CheckThrowUnobservedTaskExceptions (const MethodInfo* method);
+bool System_CLRConfig__CheckThrowUnobservedTaskExceptions (const MethodInfo* method_info);

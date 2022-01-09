@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Field_Walking_WalkingAIManager___c__DisplayClass14_1___ctor (Dpr_Field_Walking_WalkingAIManager___c__DisplayClass14_1_o* __this, const MethodInfo* method);
-bool Dpr_Field_Walking_WalkingAIManager___c__DisplayClass14_1___GetNearEmptyPosition_b__1 (Dpr_Field_Walking_WalkingAIManager___c__DisplayClass14_1_o* __this, UnityEngine_Vector2Int_o pos, const MethodInfo* method);
+void Dpr_Field_Walking_WalkingAIManager___c__DisplayClass14_1___ctor (Dpr_Field_Walking_WalkingAIManager___c__DisplayClass14_1_o* __this, const MethodInfo* method_info);
+bool Dpr_Field_Walking_WalkingAIManager___c__DisplayClass14_1___GetNearEmptyPosition_b__1 (Dpr_Field_Walking_WalkingAIManager___c__DisplayClass14_1_o* __this, UnityEngine_Vector2Int_o pos, const MethodInfo* method_info);

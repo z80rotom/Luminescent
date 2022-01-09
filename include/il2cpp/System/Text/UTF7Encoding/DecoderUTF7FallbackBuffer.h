@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-void System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer___ctor (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, System_Text_UTF7Encoding_DecoderUTF7Fallback_o* fallback, const MethodInfo* method);
-bool System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer__Fallback (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, System_Byte_array* bytesUnknown, int32_t index, const MethodInfo* method);
-uint16_t System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer__GetNextChar (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, const MethodInfo* method);
-void System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer__Reset (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, const MethodInfo* method);
-int32_t System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer__InternalFallback (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, System_Byte_array* bytes, uint8_t* pBytes, const MethodInfo* method);
+void System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer___ctor (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, System_Text_UTF7Encoding_DecoderUTF7Fallback_o* fallback, const MethodInfo* method_info);
+bool System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer__Fallback (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, System_Byte_array* bytesUnknown, int32_t index, const MethodInfo* method_info);
+uint16_t System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer__GetNextChar (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, const MethodInfo* method_info);
+void System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer__Reset (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, const MethodInfo* method_info);
+int32_t System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer__InternalFallback (System_Text_UTF7Encoding_DecoderUTF7FallbackBuffer_o* __this, System_Byte_array* bytes, uint8_t* pBytes, const MethodInfo* method_info);

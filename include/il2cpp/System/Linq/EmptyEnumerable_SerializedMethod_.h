@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void System_Linq_EmptyEnumerable_SerializedMethod____cctor (const MethodInfo_296EFC0* method);
+void System_Linq_EmptyEnumerable_SerializedMethod____cctor (const MethodInfo* method_info);

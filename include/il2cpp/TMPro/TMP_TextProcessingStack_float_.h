@@ -2,20 +2,20 @@
 
 #include "il2cpp.h"
 
-void TMPro_TMP_TextProcessingStack_float____ctor (TMPro_TMP_TextProcessingStack_float__o __this, System_Single_array* stack, const MethodInfo_2846130* method);
-void TMPro_TMP_TextProcessingStack_float____ctor (TMPro_TMP_TextProcessingStack_float__o __this, int32_t capacity, const MethodInfo_2846170* method);
-void TMPro_TMP_TextProcessingStack_float____ctor (TMPro_TMP_TextProcessingStack_float__o __this, int32_t capacity, int32_t rolloverSize, const MethodInfo_28461F0* method);
-int32_t TMPro_TMP_TextProcessingStack_float___get_Count (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo_2846270* method);
-float TMPro_TMP_TextProcessingStack_float___get_current (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo_2846280* method);
-int32_t TMPro_TMP_TextProcessingStack_float___get_rolloverSize (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo_28462E0* method);
-void TMPro_TMP_TextProcessingStack_float___set_rolloverSize (TMPro_TMP_TextProcessingStack_float__o __this, int32_t value, const MethodInfo_28462F0* method);
-void TMPro_TMP_TextProcessingStack_float___SetDefault (TMPro_TMP_TextProcessingStack_T__array* stack, float item, const MethodInfo_2846300* method);
-void TMPro_TMP_TextProcessingStack_float___Clear (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo_28463C0* method);
-void TMPro_TMP_TextProcessingStack_float___SetDefault (TMPro_TMP_TextProcessingStack_float__o __this, float item, const MethodInfo_28463D0* method);
-void TMPro_TMP_TextProcessingStack_float___Add (TMPro_TMP_TextProcessingStack_float__o __this, float item, const MethodInfo_2846480* method);
-float TMPro_TMP_TextProcessingStack_float___Remove (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo_28464D0* method);
-void TMPro_TMP_TextProcessingStack_float___Push (TMPro_TMP_TextProcessingStack_float__o __this, float item, const MethodInfo_2846540* method);
-float TMPro_TMP_TextProcessingStack_float___Pop (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo_2846650* method);
-float TMPro_TMP_TextProcessingStack_float___Peek (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo_28466E0* method);
-float TMPro_TMP_TextProcessingStack_float___CurrentItem (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo_2846730* method);
-float TMPro_TMP_TextProcessingStack_float___PreviousItem (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo_2846790* method);
+void TMPro_TMP_TextProcessingStack_float____ctor (TMPro_TMP_TextProcessingStack_float__o __this, System_Single_array* stack, const MethodInfo* method_info);
+void TMPro_TMP_TextProcessingStack_float____ctor (TMPro_TMP_TextProcessingStack_float__o __this, int32_t capacity, const MethodInfo* method_info);
+void TMPro_TMP_TextProcessingStack_float____ctor (TMPro_TMP_TextProcessingStack_float__o __this, int32_t capacity, int32_t rolloverSize, const MethodInfo* method_info);
+int32_t TMPro_TMP_TextProcessingStack_float___get_Count (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo* method_info);
+float TMPro_TMP_TextProcessingStack_float___get_current (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo* method_info);
+int32_t TMPro_TMP_TextProcessingStack_float___get_rolloverSize (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo* method_info);
+void TMPro_TMP_TextProcessingStack_float___set_rolloverSize (TMPro_TMP_TextProcessingStack_float__o __this, int32_t value, const MethodInfo* method_info);
+void TMPro_TMP_TextProcessingStack_float___SetDefault (TMPro_TMP_TextProcessingStack_T__array* stack, float item, const MethodInfo* method_info);
+void TMPro_TMP_TextProcessingStack_float___Clear (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo* method_info);
+void TMPro_TMP_TextProcessingStack_float___SetDefault (TMPro_TMP_TextProcessingStack_float__o __this, float item, const MethodInfo* method_info);
+void TMPro_TMP_TextProcessingStack_float___Add (TMPro_TMP_TextProcessingStack_float__o __this, float item, const MethodInfo* method_info);
+float TMPro_TMP_TextProcessingStack_float___Remove (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo* method_info);
+void TMPro_TMP_TextProcessingStack_float___Push (TMPro_TMP_TextProcessingStack_float__o __this, float item, const MethodInfo* method_info);
+float TMPro_TMP_TextProcessingStack_float___Pop (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo* method_info);
+float TMPro_TMP_TextProcessingStack_float___Peek (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo* method_info);
+float TMPro_TMP_TextProcessingStack_float___CurrentItem (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo* method_info);
+float TMPro_TMP_TextProcessingStack_float___PreviousItem (TMPro_TMP_TextProcessingStack_float__o __this, const MethodInfo* method_info);

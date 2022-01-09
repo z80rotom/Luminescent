@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass29_0_object____ctor (Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass29_0_object__o* __this, const MethodInfo_25AAF00* method);
-void Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass29_0_object____LoadAssetBundle_b__0 (Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass29_0_object__o* __this, int32_t type, System_String_o* name, UnityEngine_Object_o* content, const MethodInfo_25AAF10* method);
+void Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass29_0_object____ctor (Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass29_0_object__o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass29_0_object____LoadAssetBundle_b__0 (Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass29_0_object__o* __this, int32_t type, System_String_o* name, UnityEngine_Object_o* content, const MethodInfo* method_info);

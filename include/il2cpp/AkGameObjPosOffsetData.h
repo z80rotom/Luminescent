@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void AkGameObjPosOffsetData___ctor (AkGameObjPosOffsetData_o* __this, const MethodInfo* method);
+void AkGameObjPosOffsetData___ctor (AkGameObjPosOffsetData_o* __this, const MethodInfo* method_info);

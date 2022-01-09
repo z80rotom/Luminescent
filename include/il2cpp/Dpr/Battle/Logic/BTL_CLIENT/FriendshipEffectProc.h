@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc___ctor (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__Dispose (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__Start (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, Dpr_Battle_Logic_MainModule_o* mainModule, Dpr_Battle_Logic_POKECON_o* pokeCon, Dpr_Battle_Logic_BattleViewBase_o* viewCore, uint8_t myID, uint8_t numCoverPos, const MethodInfo* method);
-bool Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__Wait (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, const MethodInfo* method);
-int32_t Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__checkEffectNo (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, const MethodInfo* method);
-bool Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__S_IsEnable (Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, const MethodInfo* method);
+void Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc___ctor (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__Dispose (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__Start (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, Dpr_Battle_Logic_MainModule_o* mainModule, Dpr_Battle_Logic_POKECON_o* pokeCon, Dpr_Battle_Logic_BattleViewBase_o* viewCore, uint8_t myID, uint8_t numCoverPos, const MethodInfo* method_info);
+bool Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__Wait (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, const MethodInfo* method_info);
+int32_t Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__checkEffectNo (Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, const MethodInfo* method_info);
+bool Dpr_Battle_Logic_BTL_CLIENT_FriendshipEffectProc__S_IsEnable (Dpr_Battle_Logic_BTL_POKEPARAM_o* bpp, const MethodInfo* method_info);

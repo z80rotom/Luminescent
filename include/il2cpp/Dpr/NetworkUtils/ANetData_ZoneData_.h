@@ -2,20 +2,20 @@
 
 #include "il2cpp.h"
 
-uint8_t Dpr_NetworkUtils_ANetData_ZoneData___get_GetDataID (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo_26B28E0* method);
-void Dpr_NetworkUtils_ANetData_ZoneData____ctor (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo_26B2990* method);
-void Dpr_NetworkUtils_ANetData_ZoneData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo_26B29F0* method);
-void Dpr_NetworkUtils_ANetData_ZoneData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t idx, const MethodInfo_26B2C70* method);
-int32_t Dpr_NetworkUtils_ANetData_ZoneData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo_26B2C80* method);
-int32_t Dpr_NetworkUtils_ANetData_ZoneData___SendReliableData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_26B2C90* method);
-int32_t Dpr_NetworkUtils_ANetData_ZoneData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t transportType, const MethodInfo_26B2D40* method);
-int32_t Dpr_NetworkUtils_ANetData_ZoneData___SendUnReliableData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_26B2DE0* method);
-int32_t Dpr_NetworkUtils_ANetData_ZoneData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t transportType, const MethodInfo_26B2E80* method);
-INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_ZoneData___CreateReliableData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo_26B2F10* method);
-INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_ZoneData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo_26B2FD0* method);
-void Dpr_NetworkUtils_ANetData_ZoneData___WriteSendData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_26B3090* method);
-System_Byte_array* Dpr_NetworkUtils_ANetData_ZoneData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo_26B30E0* method);
-void Dpr_NetworkUtils_ANetData_ZoneData___ReceivePacket (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_26B3290* method);
-void Dpr_NetworkUtils_ANetData_ZoneData___ReadRecieveData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_26B32E0* method);
-Dpr_NetworkUtils_ZoneData_o Dpr_NetworkUtils_ANetData_ZoneData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_26B3320* method);
-void Dpr_NetworkUtils_ANetData_ZoneData____cctor (const MethodInfo_26B3610* method);
+uint8_t Dpr_NetworkUtils_ANetData_ZoneData___get_GetDataID (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_ZoneData____ctor (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_ZoneData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_ZoneData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t idx, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_ZoneData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_ZoneData___SendReliableData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_ZoneData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t transportType, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_ZoneData___SendUnReliableData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_ZoneData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, int32_t transportType, const MethodInfo* method_info);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_ZoneData___CreateReliableData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo* method_info);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_ZoneData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_ZoneData___WriteSendData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo* method_info);
+System_Byte_array* Dpr_NetworkUtils_ANetData_ZoneData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_ZoneData___ReceivePacket (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, INL1_PacketReader_o* pr, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_ZoneData___ReadRecieveData (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, INL1_PacketReader_o* pr, const MethodInfo* method_info);
+Dpr_NetworkUtils_ZoneData_o Dpr_NetworkUtils_ANetData_ZoneData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_ZoneData__o* __this, INL1_PacketReader_o* pr, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_ZoneData____cctor (const MethodInfo* method_info);

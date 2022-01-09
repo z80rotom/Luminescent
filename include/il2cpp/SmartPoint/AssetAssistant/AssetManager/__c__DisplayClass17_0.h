@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void SmartPoint_AssetAssistant_AssetManager___c__DisplayClass17_0___ctor (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass17_0_o* __this, const MethodInfo* method);
-bool SmartPoint_AssetAssistant_AssetManager___c__DisplayClass17_0___FindShader_b__0 (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass17_0_o* __this, UnityEngine_Shader_o* __, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetManager___c__DisplayClass17_0___ctor (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass17_0_o* __this, const MethodInfo* method_info);
+bool SmartPoint_AssetAssistant_AssetManager___c__DisplayClass17_0___FindShader_b__0 (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass17_0_o* __this, UnityEngine_Shader_o* __, const MethodInfo* method_info);

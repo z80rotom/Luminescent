@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void AkMacSettings___ctor (AkMacSettings_o* __this, const MethodInfo* method);
+void AkMacSettings___ctor (AkMacSettings_o* __this, const MethodInfo* method_info);

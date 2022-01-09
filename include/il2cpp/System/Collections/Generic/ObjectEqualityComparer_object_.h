@@ -2,10 +2,10 @@
 
 #include "il2cpp.h"
 
-bool System_Collections_Generic_ObjectEqualityComparer_object___Equals (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_2924630* method);
-int32_t System_Collections_Generic_ObjectEqualityComparer_object___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, Il2CppObject* obj, const MethodInfo_2924670* method);
-int32_t System_Collections_Generic_ObjectEqualityComparer_object___IndexOf (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, System_Object_array* array, Il2CppObject* value, int32_t startIndex, int32_t count, const MethodInfo_2924690* method);
-int32_t System_Collections_Generic_ObjectEqualityComparer_object___LastIndexOf (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, System_Object_array* array, Il2CppObject* value, int32_t startIndex, int32_t count, const MethodInfo_2924790* method);
-bool System_Collections_Generic_ObjectEqualityComparer_object___Equals (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, Il2CppObject* obj, const MethodInfo_2924880* method);
-int32_t System_Collections_Generic_ObjectEqualityComparer_object___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, const MethodInfo_29248D0* method);
-void System_Collections_Generic_ObjectEqualityComparer_object____ctor (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, const MethodInfo_2924900* method);
+bool System_Collections_Generic_ObjectEqualityComparer_object___Equals (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo* method_info);
+int32_t System_Collections_Generic_ObjectEqualityComparer_object___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, Il2CppObject* obj, const MethodInfo* method_info);
+int32_t System_Collections_Generic_ObjectEqualityComparer_object___IndexOf (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, System_Object_array* array, Il2CppObject* value, int32_t startIndex, int32_t count, const MethodInfo* method_info);
+int32_t System_Collections_Generic_ObjectEqualityComparer_object___LastIndexOf (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, System_Object_array* array, Il2CppObject* value, int32_t startIndex, int32_t count, const MethodInfo* method_info);
+bool System_Collections_Generic_ObjectEqualityComparer_object___Equals (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, Il2CppObject* obj, const MethodInfo* method_info);
+int32_t System_Collections_Generic_ObjectEqualityComparer_object___GetHashCode (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, const MethodInfo* method_info);
+void System_Collections_Generic_ObjectEqualityComparer_object____ctor (System_Collections_Generic_ObjectEqualityComparer_object__o* __this, const MethodInfo* method_info);

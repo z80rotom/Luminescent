@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_Logic_Section_WazaExec_Category_PushOut___ctor (Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_WazaExec_Category_PushOut__Execute (Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_o* __this, Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_Result_o* pResult, Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_Description_o** description, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_WazaExec_Category_PushOut__pushOut (Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_o* __this, bool* isSuccessed, bool* isFailMsgDisplayed, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, uint16_t effectNo, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_WazaExec_Category_PushOut___ctor (Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_WazaExec_Category_PushOut__Execute (Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_o* __this, Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_Result_o* pResult, Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_Description_o** description, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_WazaExec_Category_PushOut__pushOut (Dpr_Battle_Logic_Section_WazaExec_Category_PushOut_o* __this, bool* isSuccessed, bool* isFailMsgDisplayed, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, uint16_t effectNo, const MethodInfo* method_info);

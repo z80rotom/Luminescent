@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void SceneConnector__SetupOperation_d__10___ctor (SceneConnector__SetupOperation_d__10_o* __this, int32_t __1__state, const MethodInfo* method);
-void SceneConnector__SetupOperation_d__10__System_IDisposable_Dispose (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method);
-bool SceneConnector__SetupOperation_d__10__MoveNext (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method);
-Il2CppObject* SceneConnector__SetupOperation_d__10__System_Collections_Generic_IEnumerator_System_Object__get_Current (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method);
-void SceneConnector__SetupOperation_d__10__System_Collections_IEnumerator_Reset (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method);
-Il2CppObject* SceneConnector__SetupOperation_d__10__System_Collections_IEnumerator_get_Current (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method);
+void SceneConnector__SetupOperation_d__10___ctor (SceneConnector__SetupOperation_d__10_o* __this, int32_t __1__state, const MethodInfo* method_info);
+void SceneConnector__SetupOperation_d__10__System_IDisposable_Dispose (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method_info);
+bool SceneConnector__SetupOperation_d__10__MoveNext (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method_info);
+Il2CppObject* SceneConnector__SetupOperation_d__10__System_Collections_Generic_IEnumerator_System_Object__get_Current (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method_info);
+void SceneConnector__SetupOperation_d__10__System_Collections_IEnumerator_Reset (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method_info);
+Il2CppObject* SceneConnector__SetupOperation_d__10__System_Collections_IEnumerator_get_Current (SceneConnector__SetupOperation_d__10_o* __this, const MethodInfo* method_info);

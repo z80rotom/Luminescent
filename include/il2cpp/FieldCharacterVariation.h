@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void FieldCharacterVariation___ctor (FieldCharacterVariation_o* __this, const MethodInfo* method);
+void FieldCharacterVariation___ctor (FieldCharacterVariation_o* __this, const MethodInfo* method_info);

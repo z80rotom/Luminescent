@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-int32_t System_Collections_Generic_List_AWindowItem___get_Count (System_Collections_Generic_List_AWindowItem__o* __this, const MethodInfo_2BAD9C0* method);
-Dpr_UI_AWindowItem_o* System_Collections_Generic_List_AWindowItem___get_Item (System_Collections_Generic_List_AWindowItem__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_AWindowItem___Clear (System_Collections_Generic_List_AWindowItem__o* __this, const MethodInfo_2BAE0A0* method);
-System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_AWindowItem___GetEnumerator (System_Collections_Generic_List_AWindowItem__o* __this, const MethodInfo_2BAEA50* method);
-bool System_Collections_Generic_List_AWindowItem___Remove (System_Collections_Generic_List_AWindowItem__o* __this, Dpr_UI_AWindowItem_o* item, const MethodInfo_2BAF560* method);
+int32_t System_Collections_Generic_List_AWindowItem___get_Count (System_Collections_Generic_List_AWindowItem__o* __this, const MethodInfo* method_info);
+Dpr_UI_AWindowItem_o* System_Collections_Generic_List_AWindowItem___get_Item (System_Collections_Generic_List_AWindowItem__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_AWindowItem___Clear (System_Collections_Generic_List_AWindowItem__o* __this, const MethodInfo* method_info);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_AWindowItem___GetEnumerator (System_Collections_Generic_List_AWindowItem__o* __this, const MethodInfo* method_info);
+bool System_Collections_Generic_List_AWindowItem___Remove (System_Collections_Generic_List_AWindowItem__o* __this, Dpr_UI_AWindowItem_o* item, const MethodInfo* method_info);

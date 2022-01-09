@@ -2,10 +2,10 @@
 
 #include "il2cpp.h"
 
-bool System_Collections_Generic_GenericEqualityComparer_sbyte___Equals (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, int8_t x, int8_t y, const MethodInfo_2A239E0* method);
-int32_t System_Collections_Generic_GenericEqualityComparer_sbyte___GetHashCode (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, int8_t obj, const MethodInfo_2A23A10* method);
-int32_t System_Collections_Generic_GenericEqualityComparer_sbyte___IndexOf (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, System_SByte_array* array, int8_t value, int32_t startIndex, int32_t count, const MethodInfo_2A23A40* method);
-int32_t System_Collections_Generic_GenericEqualityComparer_sbyte___LastIndexOf (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, System_SByte_array* array, int8_t value, int32_t startIndex, int32_t count, const MethodInfo_2A23AF0* method);
-bool System_Collections_Generic_GenericEqualityComparer_sbyte___Equals (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, Il2CppObject* obj, const MethodInfo_2A23B90* method);
-int32_t System_Collections_Generic_GenericEqualityComparer_sbyte___GetHashCode (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, const MethodInfo_2A23BE0* method);
-void System_Collections_Generic_GenericEqualityComparer_sbyte____ctor (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, const MethodInfo_2A23C10* method);
+bool System_Collections_Generic_GenericEqualityComparer_sbyte___Equals (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, int8_t x, int8_t y, const MethodInfo* method_info);
+int32_t System_Collections_Generic_GenericEqualityComparer_sbyte___GetHashCode (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, int8_t obj, const MethodInfo* method_info);
+int32_t System_Collections_Generic_GenericEqualityComparer_sbyte___IndexOf (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, System_SByte_array* array, int8_t value, int32_t startIndex, int32_t count, const MethodInfo* method_info);
+int32_t System_Collections_Generic_GenericEqualityComparer_sbyte___LastIndexOf (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, System_SByte_array* array, int8_t value, int32_t startIndex, int32_t count, const MethodInfo* method_info);
+bool System_Collections_Generic_GenericEqualityComparer_sbyte___Equals (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, Il2CppObject* obj, const MethodInfo* method_info);
+int32_t System_Collections_Generic_GenericEqualityComparer_sbyte___GetHashCode (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, const MethodInfo* method_info);
+void System_Collections_Generic_GenericEqualityComparer_sbyte____ctor (System_Collections_Generic_GenericEqualityComparer_sbyte__o* __this, const MethodInfo* method_info);

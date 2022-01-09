@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_Logic_ServerSendData__CLIENT_LIMIT_TIME_Copy (Dpr_Battle_Logic_ServerSendData_CLIENT_LIMIT_TIME_o* dest, Dpr_Battle_Logic_ServerSendData_CLIENT_LIMIT_TIME_o* src, const MethodInfo* method);
-void Dpr_Battle_Logic_ServerSendData__RAIDBOSS_CAPTURE_RESULT_Copy (Dpr_Battle_Logic_ServerSendData_RAIDBOSS_CAPTURE_RESULT_o* dest, Dpr_Battle_Logic_ServerSendData_RAIDBOSS_CAPTURE_RESULT_o* src, const MethodInfo* method);
+void Dpr_Battle_Logic_ServerSendData__CLIENT_LIMIT_TIME_Copy (Dpr_Battle_Logic_ServerSendData_CLIENT_LIMIT_TIME_o* dest, Dpr_Battle_Logic_ServerSendData_CLIENT_LIMIT_TIME_o* src, const MethodInfo* method_info);
+void Dpr_Battle_Logic_ServerSendData__RAIDBOSS_CAPTURE_RESULT_Copy (Dpr_Battle_Logic_ServerSendData_RAIDBOSS_CAPTURE_RESULT_o* dest, Dpr_Battle_Logic_ServerSendData_RAIDBOSS_CAPTURE_RESULT_o* src, const MethodInfo* method_info);

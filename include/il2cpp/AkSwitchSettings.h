@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void AkSwitchSettings___ctor (AkSwitchSettings_o* __this, const MethodInfo* method);
+void AkSwitchSettings___ctor (AkSwitchSettings_o* __this, const MethodInfo* method_info);

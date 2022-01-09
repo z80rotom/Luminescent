@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void DG_Tweening_Core_DOTweenExternalCommand__add_SetOrientationOnPath (System_Action_PathOptions__Tween__Quaternion__Transform__o* value, const MethodInfo* method);
-void DG_Tweening_Core_DOTweenExternalCommand__remove_SetOrientationOnPath (System_Action_PathOptions__Tween__Quaternion__Transform__o* value, const MethodInfo* method);
-void DG_Tweening_Core_DOTweenExternalCommand__Dispatch_SetOrientationOnPath (DG_Tweening_Plugins_Options_PathOptions_o options, DG_Tweening_Tween_o* t, UnityEngine_Quaternion_o newRot, UnityEngine_Transform_o* trans, const MethodInfo* method);
+void DG_Tweening_Core_DOTweenExternalCommand__add_SetOrientationOnPath (System_Action_PathOptions__Tween__Quaternion__Transform__o* value, const MethodInfo* method_info);
+void DG_Tweening_Core_DOTweenExternalCommand__remove_SetOrientationOnPath (System_Action_PathOptions__Tween__Quaternion__Transform__o* value, const MethodInfo* method_info);
+void DG_Tweening_Core_DOTweenExternalCommand__Dispatch_SetOrientationOnPath (DG_Tweening_Plugins_Options_PathOptions_o options, DG_Tweening_Tween_o* t, UnityEngine_Quaternion_o newRot, UnityEngine_Transform_o* trans, const MethodInfo* method_info);

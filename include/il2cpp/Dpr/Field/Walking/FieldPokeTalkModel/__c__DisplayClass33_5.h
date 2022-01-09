@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_5___ctor (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_5_o* __this, const MethodInfo* method);
-bool Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_5___StartTalk_b__15 (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_5_o* __this, UnityEngine_AnimationClip_o* x, const MethodInfo* method);
+void Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_5___ctor (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_5_o* __this, const MethodInfo* method_info);
+bool Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_5___StartTalk_b__15 (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass33_5_o* __this, UnityEngine_AnimationClip_o* x, const MethodInfo* method_info);

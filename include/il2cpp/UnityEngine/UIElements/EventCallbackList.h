@@ -2,13 +2,13 @@
 
 #include "il2cpp.h"
 
-int32_t UnityEngine_UIElements_EventCallbackList__get_trickleDownCallbackCount (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method);
-void UnityEngine_UIElements_EventCallbackList__set_trickleDownCallbackCount (UnityEngine_UIElements_EventCallbackList_o* __this, int32_t value, const MethodInfo* method);
-int32_t UnityEngine_UIElements_EventCallbackList__get_bubbleUpCallbackCount (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method);
-void UnityEngine_UIElements_EventCallbackList__set_bubbleUpCallbackCount (UnityEngine_UIElements_EventCallbackList_o* __this, int32_t value, const MethodInfo* method);
-void UnityEngine_UIElements_EventCallbackList___ctor (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method);
-void UnityEngine_UIElements_EventCallbackList___ctor (UnityEngine_UIElements_EventCallbackList_o* __this, UnityEngine_UIElements_EventCallbackList_o* source, const MethodInfo* method);
-void UnityEngine_UIElements_EventCallbackList__AddRange (UnityEngine_UIElements_EventCallbackList_o* __this, UnityEngine_UIElements_EventCallbackList_o* list, const MethodInfo* method);
-int32_t UnityEngine_UIElements_EventCallbackList__get_Count (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method);
-UnityEngine_UIElements_EventCallbackFunctorBase_o* UnityEngine_UIElements_EventCallbackList__get_Item (UnityEngine_UIElements_EventCallbackList_o* __this, int32_t i, const MethodInfo* method);
-void UnityEngine_UIElements_EventCallbackList__Clear (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method);
+int32_t UnityEngine_UIElements_EventCallbackList__get_trickleDownCallbackCount (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventCallbackList__set_trickleDownCallbackCount (UnityEngine_UIElements_EventCallbackList_o* __this, int32_t value, const MethodInfo* method_info);
+int32_t UnityEngine_UIElements_EventCallbackList__get_bubbleUpCallbackCount (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventCallbackList__set_bubbleUpCallbackCount (UnityEngine_UIElements_EventCallbackList_o* __this, int32_t value, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventCallbackList___ctor (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventCallbackList___ctor (UnityEngine_UIElements_EventCallbackList_o* __this, UnityEngine_UIElements_EventCallbackList_o* source, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventCallbackList__AddRange (UnityEngine_UIElements_EventCallbackList_o* __this, UnityEngine_UIElements_EventCallbackList_o* list, const MethodInfo* method_info);
+int32_t UnityEngine_UIElements_EventCallbackList__get_Count (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method_info);
+UnityEngine_UIElements_EventCallbackFunctorBase_o* UnityEngine_UIElements_EventCallbackList__get_Item (UnityEngine_UIElements_EventCallbackList_o* __this, int32_t i, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventCallbackList__Clear (UnityEngine_UIElements_EventCallbackList_o* __this, const MethodInfo* method_info);

@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void UnityEngine_LowerResBlitTexture__LowerResBlitTextureDontStripMe (UnityEngine_LowerResBlitTexture_o* __this, const MethodInfo* method);
+void UnityEngine_LowerResBlitTexture__LowerResBlitTextureDontStripMe (UnityEngine_LowerResBlitTexture_o* __this, const MethodInfo* method_info);

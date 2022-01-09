@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_View_Objects_BOTrainer___c__DisplayClass19_0___ctor (Dpr_Battle_View_Objects_BOTrainer___c__DisplayClass19_0_o* __this, const MethodInfo* method);
-bool Dpr_Battle_View_Objects_BOTrainer___c__DisplayClass19_0___ChangeAnimState_b__0 (Dpr_Battle_View_Objects_BOTrainer___c__DisplayClass19_0_o* __this, System_Tuple_string__int__o* x, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BOTrainer___c__DisplayClass19_0___ctor (Dpr_Battle_View_Objects_BOTrainer___c__DisplayClass19_0_o* __this, const MethodInfo* method_info);
+bool Dpr_Battle_View_Objects_BOTrainer___c__DisplayClass19_0___ChangeAnimState_b__0 (Dpr_Battle_View_Objects_BOTrainer___c__DisplayClass19_0_o* __this, System_Tuple_string__int__o* x, const MethodInfo* method_info);

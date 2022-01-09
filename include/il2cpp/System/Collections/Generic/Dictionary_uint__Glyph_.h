@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_Dictionary_uint__Glyph____ctor (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, const MethodInfo_2A0F8E0* method);
-UnityEngine_TextCore_Glyph_o* System_Collections_Generic_Dictionary_uint__Glyph___get_Item (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, uint32_t key, const MethodInfo_2A0FCB0* method);
-void System_Collections_Generic_Dictionary_uint__Glyph___Add (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, uint32_t key, UnityEngine_TextCore_Glyph_o* value, const MethodInfo_2A0FDA0* method);
-void System_Collections_Generic_Dictionary_uint__Glyph___Clear (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, const MethodInfo_2A0FF60* method);
-bool System_Collections_Generic_Dictionary_uint__Glyph___ContainsKey (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, uint32_t key, const MethodInfo_2A10000* method);
-bool System_Collections_Generic_Dictionary_uint__Glyph___TryGetValue (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, uint32_t key, UnityEngine_TextCore_Glyph_o** value, const MethodInfo_2A11A30* method);
+void System_Collections_Generic_Dictionary_uint__Glyph____ctor (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, const MethodInfo* method_info);
+UnityEngine_TextCore_Glyph_o* System_Collections_Generic_Dictionary_uint__Glyph___get_Item (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, uint32_t key, const MethodInfo* method_info);
+void System_Collections_Generic_Dictionary_uint__Glyph___Add (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, uint32_t key, UnityEngine_TextCore_Glyph_o* value, const MethodInfo* method_info);
+void System_Collections_Generic_Dictionary_uint__Glyph___Clear (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, const MethodInfo* method_info);
+bool System_Collections_Generic_Dictionary_uint__Glyph___ContainsKey (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, uint32_t key, const MethodInfo* method_info);
+bool System_Collections_Generic_Dictionary_uint__Glyph___TryGetValue (System_Collections_Generic_Dictionary_uint__Glyph__o* __this, uint32_t key, UnityEngine_TextCore_Glyph_o** value, const MethodInfo* method_info);

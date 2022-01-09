@@ -2,12 +2,12 @@
 
 #include "il2cpp.h"
 
-Dpr_Battle_View_Objects_BOCamera_o* Dpr_Battle_View_Playables_CameraCommander__get_TargetCamera (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method);
-UnityEngine_Camera_o* Dpr_Battle_View_Playables_CameraCommander__get_Camera (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method);
-bool Dpr_Battle_View_Playables_CameraCommander__get_IsStop (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_Playables_CameraCommander__set_IsStop (Dpr_Battle_View_Playables_CameraCommander_o* __this, bool value, const MethodInfo* method);
-UnityEngine_Transform_o* Dpr_Battle_View_Playables_CameraCommander__get_AimTarget (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_Playables_CameraCommander__OnDestroy (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_Playables_CameraCommander__OnEnable (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_Playables_CameraCommander__Initialize (Dpr_Battle_View_Playables_CameraCommander_o* __this, Dpr_SequenceEditor_ISequenceViewSystem_o* viewSystem, Dpr_Battle_View_Playables_CameraData_o cameraData, UnityEngine_Transform_o* aimTarget, const MethodInfo* method);
-void Dpr_Battle_View_Playables_CameraCommander___ctor (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method);
+Dpr_Battle_View_Objects_BOCamera_o* Dpr_Battle_View_Playables_CameraCommander__get_TargetCamera (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method_info);
+UnityEngine_Camera_o* Dpr_Battle_View_Playables_CameraCommander__get_Camera (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method_info);
+bool Dpr_Battle_View_Playables_CameraCommander__get_IsStop (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_Playables_CameraCommander__set_IsStop (Dpr_Battle_View_Playables_CameraCommander_o* __this, bool value, const MethodInfo* method_info);
+UnityEngine_Transform_o* Dpr_Battle_View_Playables_CameraCommander__get_AimTarget (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_Playables_CameraCommander__OnDestroy (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_Playables_CameraCommander__OnEnable (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_Playables_CameraCommander__Initialize (Dpr_Battle_View_Playables_CameraCommander_o* __this, Dpr_SequenceEditor_ISequenceViewSystem_o* viewSystem, Dpr_Battle_View_Playables_CameraData_o cameraData, UnityEngine_Transform_o* aimTarget, const MethodInfo* method_info);
+void Dpr_Battle_View_Playables_CameraCommander___ctor (Dpr_Battle_View_Playables_CameraCommander_o* __this, const MethodInfo* method_info);

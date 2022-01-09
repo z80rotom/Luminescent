@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_Logic_Section_FromEvent_RankReset___ctor (Dpr_Battle_Logic_Section_FromEvent_RankReset_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_FromEvent_RankReset__Execute (Dpr_Battle_Logic_Section_FromEvent_RankReset_o* __this, Dpr_Battle_Logic_Section_FromEvent_RankReset_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_RankReset_Description_o** description, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_FromEvent_RankReset___ctor (Dpr_Battle_Logic_Section_FromEvent_RankReset_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_FromEvent_RankReset__Execute (Dpr_Battle_Logic_Section_FromEvent_RankReset_o* __this, Dpr_Battle_Logic_Section_FromEvent_RankReset_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_RankReset_Description_o** description, const MethodInfo* method_info);

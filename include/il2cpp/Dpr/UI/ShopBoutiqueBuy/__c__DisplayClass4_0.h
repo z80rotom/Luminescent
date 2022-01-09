@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-void Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___ctor (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, const MethodInfo* method);
-void Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___SequencePurchase_b__0 (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, const MethodInfo* method);
-bool Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___SequencePurchase_b__1 (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, Dpr_UI_ContextMenuItem_o* contextMenuItem, const MethodInfo* method);
-void Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___SequencePurchase_b__2 (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, const MethodInfo* method);
-bool Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___SequencePurchase_b__3 (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, Dpr_UI_ContextMenuItem_o* contextMenuItem_, const MethodInfo* method);
+void Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___ctor (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, const MethodInfo* method_info);
+void Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___SequencePurchase_b__0 (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, const MethodInfo* method_info);
+bool Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___SequencePurchase_b__1 (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, Dpr_UI_ContextMenuItem_o* contextMenuItem, const MethodInfo* method_info);
+void Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___SequencePurchase_b__2 (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, const MethodInfo* method_info);
+bool Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0___SequencePurchase_b__3 (Dpr_UI_ShopBoutiqueBuy___c__DisplayClass4_0_o* __this, Dpr_UI_ContextMenuItem_o* contextMenuItem_, const MethodInfo* method_info);

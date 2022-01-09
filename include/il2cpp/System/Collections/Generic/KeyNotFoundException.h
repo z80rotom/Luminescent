@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_KeyNotFoundException___ctor (System_Collections_Generic_KeyNotFoundException_o* __this, const MethodInfo* method);
-void System_Collections_Generic_KeyNotFoundException___ctor (System_Collections_Generic_KeyNotFoundException_o* __this, System_String_o* message, const MethodInfo* method);
-void System_Collections_Generic_KeyNotFoundException___ctor (System_Collections_Generic_KeyNotFoundException_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
+void System_Collections_Generic_KeyNotFoundException___ctor (System_Collections_Generic_KeyNotFoundException_o* __this, const MethodInfo* method_info);
+void System_Collections_Generic_KeyNotFoundException___ctor (System_Collections_Generic_KeyNotFoundException_o* __this, System_String_o* message, const MethodInfo* method_info);
+void System_Collections_Generic_KeyNotFoundException___ctor (System_Collections_Generic_KeyNotFoundException_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method_info);

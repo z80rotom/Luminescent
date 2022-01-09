@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Concurrent_CDSCollectionETWBCLProvider___ctor (System_Collections_Concurrent_CDSCollectionETWBCLProvider_o* __this, const MethodInfo* method);
-void System_Collections_Concurrent_CDSCollectionETWBCLProvider__ConcurrentDictionary_AcquiringAllLocks (System_Collections_Concurrent_CDSCollectionETWBCLProvider_o* __this, int32_t numOfBuckets, const MethodInfo* method);
-void System_Collections_Concurrent_CDSCollectionETWBCLProvider___cctor (const MethodInfo* method);
+void System_Collections_Concurrent_CDSCollectionETWBCLProvider___ctor (System_Collections_Concurrent_CDSCollectionETWBCLProvider_o* __this, const MethodInfo* method_info);
+void System_Collections_Concurrent_CDSCollectionETWBCLProvider__ConcurrentDictionary_AcquiringAllLocks (System_Collections_Concurrent_CDSCollectionETWBCLProvider_o* __this, int32_t numOfBuckets, const MethodInfo* method_info);
+void System_Collections_Concurrent_CDSCollectionETWBCLProvider___cctor (const MethodInfo* method_info);

@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_Logic_Section_WazaExec_Failed___ctor (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_WazaExec_Failed__Execute (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_Section_WazaExec_Failed_Result_o* pResult, Dpr_Battle_Logic_Section_WazaExec_Failed_Description_o** description, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_WazaExec_Failed__section_ConfDamage (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pPoke, const MethodInfo* method);
-bool Dpr_Battle_Logic_Section_WazaExec_Failed__section_CheckPokeDead (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pPoke, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_WazaExec_Failed__put_WazaFail (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pAttacker, int32_t waza, uint8_t failCause, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_WazaExec_Failed__event_CheckWazaExeFail (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pAttacker, int32_t waza, uint8_t failCause, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_WazaExec_Failed___ctor (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_WazaExec_Failed__Execute (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_Section_WazaExec_Failed_Result_o* pResult, Dpr_Battle_Logic_Section_WazaExec_Failed_Description_o** description, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_WazaExec_Failed__section_ConfDamage (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pPoke, const MethodInfo* method_info);
+bool Dpr_Battle_Logic_Section_WazaExec_Failed__section_CheckPokeDead (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pPoke, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_WazaExec_Failed__put_WazaFail (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pAttacker, int32_t waza, uint8_t failCause, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_WazaExec_Failed__event_CheckWazaExeFail (Dpr_Battle_Logic_Section_WazaExec_Failed_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* pAttacker, int32_t waza, uint8_t failCause, const MethodInfo* method_info);

@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void System_Runtime_Remoting_Channels_CrossAppDomainData___ctor (System_Runtime_Remoting_Channels_CrossAppDomainData_o* __this, int32_t domainId, const MethodInfo* method);
-int32_t System_Runtime_Remoting_Channels_CrossAppDomainData__get_DomainID (System_Runtime_Remoting_Channels_CrossAppDomainData_o* __this, const MethodInfo* method);
-System_String_o* System_Runtime_Remoting_Channels_CrossAppDomainData__get_ProcessID (System_Runtime_Remoting_Channels_CrossAppDomainData_o* __this, const MethodInfo* method);
+void System_Runtime_Remoting_Channels_CrossAppDomainData___ctor (System_Runtime_Remoting_Channels_CrossAppDomainData_o* __this, int32_t domainId, const MethodInfo* method_info);
+int32_t System_Runtime_Remoting_Channels_CrossAppDomainData__get_DomainID (System_Runtime_Remoting_Channels_CrossAppDomainData_o* __this, const MethodInfo* method_info);
+System_String_o* System_Runtime_Remoting_Channels_CrossAppDomainData__get_ProcessID (System_Runtime_Remoting_Channels_CrossAppDomainData_o* __this, const MethodInfo* method_info);

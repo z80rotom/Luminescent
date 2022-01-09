@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-void Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___ctor (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, const MethodInfo* method);
-void Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___PofinThrow_b__0 (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, UnityEngine_GameObject_o* x, const MethodInfo* method);
-float Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___PofinThrow_b__1 (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, const MethodInfo* method);
-void Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___PofinThrow_b__2 (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, float x, const MethodInfo* method);
-void Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___PofinThrow_b__3 (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, const MethodInfo* method);
+void Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___ctor (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, const MethodInfo* method_info);
+void Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___PofinThrow_b__0 (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, UnityEngine_GameObject_o* x, const MethodInfo* method_info);
+float Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___PofinThrow_b__1 (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, const MethodInfo* method_info);
+void Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___PofinThrow_b__2 (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, float x, const MethodInfo* method_info);
+void Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0___PofinThrow_b__3 (Dpr_Demo_Demo_PoffinEat___c__DisplayClass21_0_o* __this, const MethodInfo* method_info);

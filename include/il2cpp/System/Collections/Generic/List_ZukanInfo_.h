@@ -2,13 +2,13 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_List_ZukanInfo____ctor (System_Collections_Generic_List_ZukanInfo__o* __this, const MethodInfo_2BAD0F0* method);
-int32_t System_Collections_Generic_List_ZukanInfo___get_Count (System_Collections_Generic_List_ZukanInfo__o* __this, const MethodInfo_2BAD9C0* method);
-Dpr_UI_ZukanInfo_o* System_Collections_Generic_List_ZukanInfo___get_Item (System_Collections_Generic_List_ZukanInfo__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_ZukanInfo___Add (System_Collections_Generic_List_ZukanInfo__o* __this, Dpr_UI_ZukanInfo_o* item, const MethodInfo_2BADD00* method);
-void System_Collections_Generic_List_ZukanInfo___AddRange (System_Collections_Generic_List_ZukanInfo__o* __this, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo_2BADF50* method);
-void System_Collections_Generic_List_ZukanInfo___Clear (System_Collections_Generic_List_ZukanInfo__o* __this, const MethodInfo_2BAE0A0* method);
-int32_t System_Collections_Generic_List_ZukanInfo___FindIndex (System_Collections_Generic_List_ZukanInfo__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE780* method);
-int32_t System_Collections_Generic_List_ZukanInfo___IndexOf (System_Collections_Generic_List_ZukanInfo__o* __this, Dpr_UI_ZukanInfo_o* item, const MethodInfo_2BAECB0* method);
-void System_Collections_Generic_List_ZukanInfo___Sort (System_Collections_Generic_List_ZukanInfo__o* __this, System_Comparison_T__o* comparison, const MethodInfo_2BAFD20* method);
-Dpr_UI_ZukanInfo_array* System_Collections_Generic_List_ZukanInfo___ToArray (System_Collections_Generic_List_ZukanInfo__o* __this, const MethodInfo_2BAFDA0* method);
+void System_Collections_Generic_List_ZukanInfo____ctor (System_Collections_Generic_List_ZukanInfo__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_ZukanInfo___get_Count (System_Collections_Generic_List_ZukanInfo__o* __this, const MethodInfo* method_info);
+Dpr_UI_ZukanInfo_o* System_Collections_Generic_List_ZukanInfo___get_Item (System_Collections_Generic_List_ZukanInfo__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_ZukanInfo___Add (System_Collections_Generic_List_ZukanInfo__o* __this, Dpr_UI_ZukanInfo_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_ZukanInfo___AddRange (System_Collections_Generic_List_ZukanInfo__o* __this, System_Collections_Generic_IEnumerable_T__o* collection, const MethodInfo* method_info);
+void System_Collections_Generic_List_ZukanInfo___Clear (System_Collections_Generic_List_ZukanInfo__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_ZukanInfo___FindIndex (System_Collections_Generic_List_ZukanInfo__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_ZukanInfo___IndexOf (System_Collections_Generic_List_ZukanInfo__o* __this, Dpr_UI_ZukanInfo_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_ZukanInfo___Sort (System_Collections_Generic_List_ZukanInfo__o* __this, System_Comparison_T__o* comparison, const MethodInfo* method_info);
+Dpr_UI_ZukanInfo_array* System_Collections_Generic_List_ZukanInfo___ToArray (System_Collections_Generic_List_ZukanInfo__o* __this, const MethodInfo* method_info);

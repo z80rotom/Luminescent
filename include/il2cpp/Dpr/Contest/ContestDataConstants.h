@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void Dpr_Contest_ContestDataConstants___cctor (const MethodInfo* method);
+void Dpr_Contest_ContestDataConstants___cctor (const MethodInfo* method_info);

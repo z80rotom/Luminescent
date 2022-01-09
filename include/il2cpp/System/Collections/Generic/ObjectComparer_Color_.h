@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-int32_t System_Collections_Generic_ObjectComparer_Color___Compare (System_Collections_Generic_ObjectComparer_Color__o* __this, UnityEngine_Color_o x, UnityEngine_Color_o y, const MethodInfo_28BC210* method);
-bool System_Collections_Generic_ObjectComparer_Color___Equals (System_Collections_Generic_ObjectComparer_Color__o* __this, Il2CppObject* obj, const MethodInfo_28BC350* method);
-int32_t System_Collections_Generic_ObjectComparer_Color___GetHashCode (System_Collections_Generic_ObjectComparer_Color__o* __this, const MethodInfo_28BC3A0* method);
-void System_Collections_Generic_ObjectComparer_Color____ctor (System_Collections_Generic_ObjectComparer_Color__o* __this, const MethodInfo_28BC3D0* method);
+int32_t System_Collections_Generic_ObjectComparer_Color___Compare (System_Collections_Generic_ObjectComparer_Color__o* __this, UnityEngine_Color_o x, UnityEngine_Color_o y, const MethodInfo* method_info);
+bool System_Collections_Generic_ObjectComparer_Color___Equals (System_Collections_Generic_ObjectComparer_Color__o* __this, Il2CppObject* obj, const MethodInfo* method_info);
+int32_t System_Collections_Generic_ObjectComparer_Color___GetHashCode (System_Collections_Generic_ObjectComparer_Color__o* __this, const MethodInfo* method_info);
+void System_Collections_Generic_ObjectComparer_Color____ctor (System_Collections_Generic_ObjectComparer_Color__o* __this, const MethodInfo* method_info);

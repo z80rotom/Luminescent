@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-NexPlugin_SubscriberUserStatusInfo_o* NexPlugin_Detail_Subscriber_SubscriberUserStatusInfoInt__ExchangePtrToStruct (intptr_t src, const MethodInfo* method);
-NexPlugin_SubscriberUserStatusInfo_o* NexPlugin_Detail_Subscriber_SubscriberUserStatusInfoInt__ExchangeStruct (NexPlugin_Detail_Subscriber_SubscriberUserStatusInfoInt_o __this, const MethodInfo* method);
+NexPlugin_SubscriberUserStatusInfo_o* NexPlugin_Detail_Subscriber_SubscriberUserStatusInfoInt__ExchangePtrToStruct (intptr_t src, const MethodInfo* method_info);
+NexPlugin_SubscriberUserStatusInfo_o* NexPlugin_Detail_Subscriber_SubscriberUserStatusInfoInt__ExchangeStruct (NexPlugin_Detail_Subscriber_SubscriberUserStatusInfoInt_o __this, const MethodInfo* method_info);

@@ -2,16 +2,16 @@
 
 #include "il2cpp.h"
 
-void System_Security_Cryptography_AsnEncodedData___ctor (System_Security_Cryptography_AsnEncodedData_o* __this, const MethodInfo* method);
-void System_Security_Cryptography_AsnEncodedData__set_Oid (System_Security_Cryptography_AsnEncodedData_o* __this, System_Security_Cryptography_Oid_o* value, const MethodInfo* method);
-System_Byte_array* System_Security_Cryptography_AsnEncodedData__get_RawData (System_Security_Cryptography_AsnEncodedData_o* __this, const MethodInfo* method);
-void System_Security_Cryptography_AsnEncodedData__set_RawData (System_Security_Cryptography_AsnEncodedData_o* __this, System_Byte_array* value, const MethodInfo* method);
-void System_Security_Cryptography_AsnEncodedData__CopyFrom (System_Security_Cryptography_AsnEncodedData_o* __this, System_Security_Cryptography_AsnEncodedData_o* asnEncodedData, const MethodInfo* method);
-System_String_o* System_Security_Cryptography_AsnEncodedData__ToString (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method);
-System_String_o* System_Security_Cryptography_AsnEncodedData__Default (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method);
-System_String_o* System_Security_Cryptography_AsnEncodedData__BasicConstraintsExtension (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method);
-System_String_o* System_Security_Cryptography_AsnEncodedData__EnhancedKeyUsageExtension (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method);
-System_String_o* System_Security_Cryptography_AsnEncodedData__KeyUsageExtension (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method);
-System_String_o* System_Security_Cryptography_AsnEncodedData__SubjectKeyIdentifierExtension (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method);
-System_String_o* System_Security_Cryptography_AsnEncodedData__SubjectAltName (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method);
-System_String_o* System_Security_Cryptography_AsnEncodedData__NetscapeCertType (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method);
+void System_Security_Cryptography_AsnEncodedData___ctor (System_Security_Cryptography_AsnEncodedData_o* __this, const MethodInfo* method_info);
+void System_Security_Cryptography_AsnEncodedData__set_Oid (System_Security_Cryptography_AsnEncodedData_o* __this, System_Security_Cryptography_Oid_o* value, const MethodInfo* method_info);
+System_Byte_array* System_Security_Cryptography_AsnEncodedData__get_RawData (System_Security_Cryptography_AsnEncodedData_o* __this, const MethodInfo* method_info);
+void System_Security_Cryptography_AsnEncodedData__set_RawData (System_Security_Cryptography_AsnEncodedData_o* __this, System_Byte_array* value, const MethodInfo* method_info);
+void System_Security_Cryptography_AsnEncodedData__CopyFrom (System_Security_Cryptography_AsnEncodedData_o* __this, System_Security_Cryptography_AsnEncodedData_o* asnEncodedData, const MethodInfo* method_info);
+System_String_o* System_Security_Cryptography_AsnEncodedData__ToString (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method_info);
+System_String_o* System_Security_Cryptography_AsnEncodedData__Default (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method_info);
+System_String_o* System_Security_Cryptography_AsnEncodedData__BasicConstraintsExtension (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method_info);
+System_String_o* System_Security_Cryptography_AsnEncodedData__EnhancedKeyUsageExtension (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method_info);
+System_String_o* System_Security_Cryptography_AsnEncodedData__KeyUsageExtension (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method_info);
+System_String_o* System_Security_Cryptography_AsnEncodedData__SubjectKeyIdentifierExtension (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method_info);
+System_String_o* System_Security_Cryptography_AsnEncodedData__SubjectAltName (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method_info);
+System_String_o* System_Security_Cryptography_AsnEncodedData__NetscapeCertType (System_Security_Cryptography_AsnEncodedData_o* __this, bool multiLine, const MethodInfo* method_info);

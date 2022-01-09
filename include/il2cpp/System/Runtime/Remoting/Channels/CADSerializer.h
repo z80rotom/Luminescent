@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-System_Runtime_Remoting_Messaging_IMessage_o* System_Runtime_Remoting_Channels_CADSerializer__DeserializeMessage (System_IO_MemoryStream_o* mem, System_Runtime_Remoting_Messaging_IMethodCallMessage_o* msg, const MethodInfo* method);
-System_IO_MemoryStream_o* System_Runtime_Remoting_Channels_CADSerializer__SerializeMessage (System_Runtime_Remoting_Messaging_IMessage_o* msg, const MethodInfo* method);
-Il2CppObject* System_Runtime_Remoting_Channels_CADSerializer__DeserializeObjectSafe (System_Byte_array* mem, const MethodInfo* method);
-System_IO_MemoryStream_o* System_Runtime_Remoting_Channels_CADSerializer__SerializeObject (Il2CppObject* obj, const MethodInfo* method);
-Il2CppObject* System_Runtime_Remoting_Channels_CADSerializer__DeserializeObject (System_IO_MemoryStream_o* mem, const MethodInfo* method);
+System_Runtime_Remoting_Messaging_IMessage_o* System_Runtime_Remoting_Channels_CADSerializer__DeserializeMessage (System_IO_MemoryStream_o* mem, System_Runtime_Remoting_Messaging_IMethodCallMessage_o* msg, const MethodInfo* method_info);
+System_IO_MemoryStream_o* System_Runtime_Remoting_Channels_CADSerializer__SerializeMessage (System_Runtime_Remoting_Messaging_IMessage_o* msg, const MethodInfo* method_info);
+Il2CppObject* System_Runtime_Remoting_Channels_CADSerializer__DeserializeObjectSafe (System_Byte_array* mem, const MethodInfo* method_info);
+System_IO_MemoryStream_o* System_Runtime_Remoting_Channels_CADSerializer__SerializeObject (Il2CppObject* obj, const MethodInfo* method_info);
+Il2CppObject* System_Runtime_Remoting_Channels_CADSerializer__DeserializeObject (System_IO_MemoryStream_o* mem, const MethodInfo* method_info);

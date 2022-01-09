@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void System_Array_InternalEnumerator_uint____ctor (System_Array_InternalEnumerator_uint__o __this, System_Array_o* array, const MethodInfo_256EE50* method);
-void System_Array_InternalEnumerator_uint___Dispose (System_Array_InternalEnumerator_uint__o __this, const MethodInfo_256EE80* method);
-bool System_Array_InternalEnumerator_uint___MoveNext (System_Array_InternalEnumerator_uint__o __this, const MethodInfo_256EE90* method);
-uint32_t System_Array_InternalEnumerator_uint___get_Current (System_Array_InternalEnumerator_uint__o __this, const MethodInfo_256EEF0* method);
-void System_Array_InternalEnumerator_uint___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_uint__o __this, const MethodInfo_256F030* method);
-Il2CppObject* System_Array_InternalEnumerator_uint___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_uint__o __this, const MethodInfo_256F040* method);
+void System_Array_InternalEnumerator_uint____ctor (System_Array_InternalEnumerator_uint__o __this, System_Array_o* array, const MethodInfo* method_info);
+void System_Array_InternalEnumerator_uint___Dispose (System_Array_InternalEnumerator_uint__o __this, const MethodInfo* method_info);
+bool System_Array_InternalEnumerator_uint___MoveNext (System_Array_InternalEnumerator_uint__o __this, const MethodInfo* method_info);
+uint32_t System_Array_InternalEnumerator_uint___get_Current (System_Array_InternalEnumerator_uint__o __this, const MethodInfo* method_info);
+void System_Array_InternalEnumerator_uint___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_uint__o __this, const MethodInfo* method_info);
+Il2CppObject* System_Array_InternalEnumerator_uint___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_uint__o __this, const MethodInfo* method_info);

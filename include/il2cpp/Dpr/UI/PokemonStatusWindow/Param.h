@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void Dpr_UI_PokemonStatusWindow_Param___ctor (Dpr_UI_PokemonStatusWindow_Param_o* __this, const MethodInfo* method);
+void Dpr_UI_PokemonStatusWindow_Param___ctor (Dpr_UI_PokemonStatusWindow_Param_o* __this, const MethodInfo* method_info);

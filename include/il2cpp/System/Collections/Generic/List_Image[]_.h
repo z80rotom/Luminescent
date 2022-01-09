@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_List_Image______ctor (System_Collections_Generic_List_Image____o* __this, const MethodInfo_2BAD0F0* method);
-int32_t System_Collections_Generic_List_Image_____get_Count (System_Collections_Generic_List_Image____o* __this, const MethodInfo_2BAD9C0* method);
-UnityEngine_UI_Image_array* System_Collections_Generic_List_Image_____get_Item (System_Collections_Generic_List_Image____o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_Image_____Add (System_Collections_Generic_List_Image____o* __this, UnityEngine_UI_Image_array* item, const MethodInfo_2BADD00* method);
-void System_Collections_Generic_List_Image_____Clear (System_Collections_Generic_List_Image____o* __this, const MethodInfo_2BAE0A0* method);
-System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_Image_____GetEnumerator (System_Collections_Generic_List_Image____o* __this, const MethodInfo_2BAEA50* method);
+void System_Collections_Generic_List_Image______ctor (System_Collections_Generic_List_Image____o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_Image_____get_Count (System_Collections_Generic_List_Image____o* __this, const MethodInfo* method_info);
+UnityEngine_UI_Image_array* System_Collections_Generic_List_Image_____get_Item (System_Collections_Generic_List_Image____o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_Image_____Add (System_Collections_Generic_List_Image____o* __this, UnityEngine_UI_Image_array* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_Image_____Clear (System_Collections_Generic_List_Image____o* __this, const MethodInfo* method_info);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_Image_____GetEnumerator (System_Collections_Generic_List_Image____o* __this, const MethodInfo* method_info);

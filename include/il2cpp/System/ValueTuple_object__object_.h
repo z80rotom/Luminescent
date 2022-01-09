@@ -2,14 +2,14 @@
 
 #include "il2cpp.h"
 
-void System_ValueTuple_object__object____ctor (System_ValueTuple_object__object__o __this, Il2CppObject* item1, Il2CppObject* item2, const MethodInfo_29B2C40* method);
-bool System_ValueTuple_object__object___Equals (System_ValueTuple_object__object__o __this, Il2CppObject* obj, const MethodInfo_29B2C80* method);
-bool System_ValueTuple_object__object___Equals (System_ValueTuple_object__object__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29B2DB0* method);
-bool System_ValueTuple_object__object___System_Collections_IStructuralEquatable_Equals (System_ValueTuple_object__object__o __this, Il2CppObject* other, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29B2EB0* method);
-int32_t System_ValueTuple_object__object___System_IComparable_CompareTo (System_ValueTuple_object__object__o __this, Il2CppObject* other, const MethodInfo_29B30B0* method);
-int32_t System_ValueTuple_object__object___CompareTo (System_ValueTuple_object__object__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo_29B3290* method);
-int32_t System_ValueTuple_object__object___System_Collections_IStructuralComparable_CompareTo (System_ValueTuple_object__object__o __this, Il2CppObject* other, System_Collections_IComparer_o* comparer, const MethodInfo_29B3390* method);
-int32_t System_ValueTuple_object__object___GetHashCode (System_ValueTuple_object__object__o __this, const MethodInfo_29B3630* method);
-int32_t System_ValueTuple_object__object___System_Collections_IStructuralEquatable_GetHashCode (System_ValueTuple_object__object__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29B36A0* method);
-int32_t System_ValueTuple_object__object___GetHashCodeCore (System_ValueTuple_object__object__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo_29B36E0* method);
-System_String_o* System_ValueTuple_object__object___ToString (System_ValueTuple_object__object__o __this, const MethodInfo_29B3810* method);
+void System_ValueTuple_object__object____ctor (System_ValueTuple_object__object__o __this, Il2CppObject* item1, Il2CppObject* item2, const MethodInfo* method_info);
+bool System_ValueTuple_object__object___Equals (System_ValueTuple_object__object__o __this, Il2CppObject* obj, const MethodInfo* method_info);
+bool System_ValueTuple_object__object___Equals (System_ValueTuple_object__object__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo* method_info);
+bool System_ValueTuple_object__object___System_Collections_IStructuralEquatable_Equals (System_ValueTuple_object__object__o __this, Il2CppObject* other, System_Collections_IEqualityComparer_o* comparer, const MethodInfo* method_info);
+int32_t System_ValueTuple_object__object___System_IComparable_CompareTo (System_ValueTuple_object__object__o __this, Il2CppObject* other, const MethodInfo* method_info);
+int32_t System_ValueTuple_object__object___CompareTo (System_ValueTuple_object__object__o __this, System_ValueTuple_T1__T2__o other, const MethodInfo* method_info);
+int32_t System_ValueTuple_object__object___System_Collections_IStructuralComparable_CompareTo (System_ValueTuple_object__object__o __this, Il2CppObject* other, System_Collections_IComparer_o* comparer, const MethodInfo* method_info);
+int32_t System_ValueTuple_object__object___GetHashCode (System_ValueTuple_object__object__o __this, const MethodInfo* method_info);
+int32_t System_ValueTuple_object__object___System_Collections_IStructuralEquatable_GetHashCode (System_ValueTuple_object__object__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo* method_info);
+int32_t System_ValueTuple_object__object___GetHashCodeCore (System_ValueTuple_object__object__o __this, System_Collections_IEqualityComparer_o* comparer, const MethodInfo* method_info);
+System_String_o* System_ValueTuple_object__object___ToString (System_ValueTuple_object__object__o __this, const MethodInfo* method_info);

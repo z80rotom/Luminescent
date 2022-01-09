@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_DigFossil_DigMasterDataManager___c__DisplayClass21_0___ctor (Dpr_DigFossil_DigMasterDataManager___c__DisplayClass21_0_o* __this, const MethodInfo* method);
-bool Dpr_DigFossil_DigMasterDataManager___c__DisplayClass21_0___GetStatueEffectData_b__0 (Dpr_DigFossil_DigMasterDataManager___c__DisplayClass21_0_o* __this, XLSXContent_StatueEffectRawData_Sheettable_o* x, const MethodInfo* method);
+void Dpr_DigFossil_DigMasterDataManager___c__DisplayClass21_0___ctor (Dpr_DigFossil_DigMasterDataManager___c__DisplayClass21_0_o* __this, const MethodInfo* method_info);
+bool Dpr_DigFossil_DigMasterDataManager___c__DisplayClass21_0___GetStatueEffectData_b__0 (Dpr_DigFossil_DigMasterDataManager___c__DisplayClass21_0_o* __this, XLSXContent_StatueEffectRawData_Sheettable_o* x, const MethodInfo* method_info);

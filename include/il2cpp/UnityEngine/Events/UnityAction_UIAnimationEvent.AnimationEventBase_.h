@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void UnityEngine_Events_UnityAction_UIAnimationEvent_AnimationEventBase___Invoke (UnityEngine_Events_UnityAction_UIAnimationEvent_AnimationEventBase__o* __this, Dpr_UI_UIAnimationEvent_AnimationEventBase_o* arg0, const MethodInfo_284FA30* method);
+void UnityEngine_Events_UnityAction_UIAnimationEvent_AnimationEventBase___Invoke (UnityEngine_Events_UnityAction_UIAnimationEvent_AnimationEventBase__o* __this, Dpr_UI_UIAnimationEvent_AnimationEventBase_o* arg0, const MethodInfo* method_info);

@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void System_Collections_CaseInsensitiveHashCodeProvider___ctor (System_Collections_CaseInsensitiveHashCodeProvider_o* __this, const MethodInfo* method);
-void System_Collections_CaseInsensitiveHashCodeProvider___ctor (System_Collections_CaseInsensitiveHashCodeProvider_o* __this, System_Globalization_CultureInfo_o* culture, const MethodInfo* method);
-System_Collections_CaseInsensitiveHashCodeProvider_o* System_Collections_CaseInsensitiveHashCodeProvider__get_Default (const MethodInfo* method);
-int32_t System_Collections_CaseInsensitiveHashCodeProvider__GetHashCode (System_Collections_CaseInsensitiveHashCodeProvider_o* __this, Il2CppObject* obj, const MethodInfo* method);
+void System_Collections_CaseInsensitiveHashCodeProvider___ctor (System_Collections_CaseInsensitiveHashCodeProvider_o* __this, const MethodInfo* method_info);
+void System_Collections_CaseInsensitiveHashCodeProvider___ctor (System_Collections_CaseInsensitiveHashCodeProvider_o* __this, System_Globalization_CultureInfo_o* culture, const MethodInfo* method_info);
+System_Collections_CaseInsensitiveHashCodeProvider_o* System_Collections_CaseInsensitiveHashCodeProvider__get_Default (const MethodInfo* method_info);
+int32_t System_Collections_CaseInsensitiveHashCodeProvider__GetHashCode (System_Collections_CaseInsensitiveHashCodeProvider_o* __this, Il2CppObject* obj, const MethodInfo* method_info);

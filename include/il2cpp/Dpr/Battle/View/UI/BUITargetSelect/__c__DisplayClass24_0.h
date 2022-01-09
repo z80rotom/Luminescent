@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_View_UI_BUITargetSelect___c__DisplayClass24_0___ctor (Dpr_Battle_View_UI_BUITargetSelect___c__DisplayClass24_0_o* __this, const MethodInfo* method);
-bool Dpr_Battle_View_UI_BUITargetSelect___c__DisplayClass24_0___PreparaNextH_b__0 (Dpr_Battle_View_UI_BUITargetSelect___c__DisplayClass24_0_o* __this, Dpr_Battle_View_UI_BUITargetButton_o* x, const MethodInfo* method);
+void Dpr_Battle_View_UI_BUITargetSelect___c__DisplayClass24_0___ctor (Dpr_Battle_View_UI_BUITargetSelect___c__DisplayClass24_0_o* __this, const MethodInfo* method_info);
+bool Dpr_Battle_View_UI_BUITargetSelect___c__DisplayClass24_0___PreparaNextH_b__0 (Dpr_Battle_View_UI_BUITargetSelect___c__DisplayClass24_0_o* __this, Dpr_Battle_View_UI_BUITargetButton_o* x, const MethodInfo* method_info);

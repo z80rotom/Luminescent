@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_YieldInstructionCache___cctor (const MethodInfo* method);
+void Dpr_Battle_YieldInstructionCache___cctor (const MethodInfo* method_info);

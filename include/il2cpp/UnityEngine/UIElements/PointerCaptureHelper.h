@@ -2,13 +2,13 @@
 
 #include "il2cpp.h"
 
-UnityEngine_UIElements_PointerDispatchState_o* UnityEngine_UIElements_PointerCaptureHelper__GetStateFor (UnityEngine_UIElements_IEventHandler_o* handler, const MethodInfo* method);
-bool UnityEngine_UIElements_PointerCaptureHelper__HasPointerCapture (UnityEngine_UIElements_IEventHandler_o* handler, int32_t pointerId, const MethodInfo* method);
-void UnityEngine_UIElements_PointerCaptureHelper__CapturePointer (UnityEngine_UIElements_IEventHandler_o* handler, int32_t pointerId, const MethodInfo* method);
-void UnityEngine_UIElements_PointerCaptureHelper__ReleasePointer (UnityEngine_UIElements_IEventHandler_o* handler, int32_t pointerId, const MethodInfo* method);
-UnityEngine_UIElements_IEventHandler_o* UnityEngine_UIElements_PointerCaptureHelper__GetCapturingElement (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method);
-void UnityEngine_UIElements_PointerCaptureHelper__ReleasePointer (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method);
-void UnityEngine_UIElements_PointerCaptureHelper__ActivateCompatibilityMouseEvents (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method);
-void UnityEngine_UIElements_PointerCaptureHelper__PreventCompatibilityMouseEvents (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method);
-bool UnityEngine_UIElements_PointerCaptureHelper__ShouldSendCompatibilityMouseEvents (UnityEngine_UIElements_IPanel_o* panel, UnityEngine_UIElements_IPointerEvent_o* evt, const MethodInfo* method);
-void UnityEngine_UIElements_PointerCaptureHelper__ProcessPointerCapture (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method);
+UnityEngine_UIElements_PointerDispatchState_o* UnityEngine_UIElements_PointerCaptureHelper__GetStateFor (UnityEngine_UIElements_IEventHandler_o* handler, const MethodInfo* method_info);
+bool UnityEngine_UIElements_PointerCaptureHelper__HasPointerCapture (UnityEngine_UIElements_IEventHandler_o* handler, int32_t pointerId, const MethodInfo* method_info);
+void UnityEngine_UIElements_PointerCaptureHelper__CapturePointer (UnityEngine_UIElements_IEventHandler_o* handler, int32_t pointerId, const MethodInfo* method_info);
+void UnityEngine_UIElements_PointerCaptureHelper__ReleasePointer (UnityEngine_UIElements_IEventHandler_o* handler, int32_t pointerId, const MethodInfo* method_info);
+UnityEngine_UIElements_IEventHandler_o* UnityEngine_UIElements_PointerCaptureHelper__GetCapturingElement (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method_info);
+void UnityEngine_UIElements_PointerCaptureHelper__ReleasePointer (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method_info);
+void UnityEngine_UIElements_PointerCaptureHelper__ActivateCompatibilityMouseEvents (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method_info);
+void UnityEngine_UIElements_PointerCaptureHelper__PreventCompatibilityMouseEvents (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method_info);
+bool UnityEngine_UIElements_PointerCaptureHelper__ShouldSendCompatibilityMouseEvents (UnityEngine_UIElements_IPanel_o* panel, UnityEngine_UIElements_IPointerEvent_o* evt, const MethodInfo* method_info);
+void UnityEngine_UIElements_PointerCaptureHelper__ProcessPointerCapture (UnityEngine_UIElements_IPanel_o* panel, int32_t pointerId, const MethodInfo* method_info);

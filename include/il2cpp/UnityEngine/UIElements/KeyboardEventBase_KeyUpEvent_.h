@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent___Init (UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent__o* __this, const MethodInfo_2CCF1C0* method);
-UnityEngine_UIElements_KeyUpEvent_o* UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent___GetPooled (UnityEngine_Event_o* systemEvent, const MethodInfo_2CCF4E0* method);
-void UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent____ctor (UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent__o* __this, const MethodInfo_2CCF760* method);
+void UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent___Init (UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent__o* __this, const MethodInfo* method_info);
+UnityEngine_UIElements_KeyUpEvent_o* UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent___GetPooled (UnityEngine_Event_o* systemEvent, const MethodInfo* method_info);
+void UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent____ctor (UnityEngine_UIElements_KeyboardEventBase_KeyUpEvent__o* __this, const MethodInfo* method_info);

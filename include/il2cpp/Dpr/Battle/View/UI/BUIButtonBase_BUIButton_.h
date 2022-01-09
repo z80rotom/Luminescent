@@ -2,11 +2,11 @@
 
 #include "il2cpp.h"
 
-bool Dpr_Battle_View_UI_BUIButtonBase_BUIButton___get_IsSelected (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo_25AC3E0* method);
-int32_t Dpr_Battle_View_UI_BUIButtonBase_BUIButton___get_Index (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo_25AC480* method);
-void Dpr_Battle_View_UI_BUIButtonBase_BUIButton___OnDestroy (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo_25AC5D0* method);
-Dpr_Battle_View_UI_BUIButton_o* Dpr_Battle_View_UI_BUIButtonBase_BUIButton___SetOnSelected (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, System_Action_o* onSelected, const MethodInfo_25AC610* method);
-Dpr_Battle_View_UI_BUIButton_o* Dpr_Battle_View_UI_BUIButtonBase_BUIButton___SetOnSubmit (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, System_Action_o* onSubmit, const MethodInfo_25AC670* method);
-bool Dpr_Battle_View_UI_BUIButtonBase_BUIButton___Submit (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo_25AC6D0* method);
-void Dpr_Battle_View_UI_BUIButtonBase_BUIButton___OnChangeState (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, int32_t type, const MethodInfo_25AC810* method);
-void Dpr_Battle_View_UI_BUIButtonBase_BUIButton____ctor (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo_25ACA20* method);
+bool Dpr_Battle_View_UI_BUIButtonBase_BUIButton___get_IsSelected (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo* method_info);
+int32_t Dpr_Battle_View_UI_BUIButtonBase_BUIButton___get_Index (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_UI_BUIButtonBase_BUIButton___OnDestroy (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo* method_info);
+Dpr_Battle_View_UI_BUIButton_o* Dpr_Battle_View_UI_BUIButtonBase_BUIButton___SetOnSelected (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, System_Action_o* onSelected, const MethodInfo* method_info);
+Dpr_Battle_View_UI_BUIButton_o* Dpr_Battle_View_UI_BUIButtonBase_BUIButton___SetOnSubmit (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, System_Action_o* onSubmit, const MethodInfo* method_info);
+bool Dpr_Battle_View_UI_BUIButtonBase_BUIButton___Submit (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_UI_BUIButtonBase_BUIButton___OnChangeState (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, int32_t type, const MethodInfo* method_info);
+void Dpr_Battle_View_UI_BUIButtonBase_BUIButton____ctor (Dpr_Battle_View_UI_BUIButtonBase_BUIButton__o* __this, const MethodInfo* method_info);

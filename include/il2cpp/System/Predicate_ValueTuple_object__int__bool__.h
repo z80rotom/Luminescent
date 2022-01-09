@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void System_Predicate_ValueTuple_object__int__bool_____ctor (System_Predicate_ValueTuple_object__int__bool___o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_290B2A0* method);
-bool System_Predicate_ValueTuple_object__int__bool____Invoke (System_Predicate_ValueTuple_object__int__bool___o* __this, System_ValueTuple_object__int__bool__o obj, const MethodInfo_290B2C0* method);
-System_IAsyncResult_o* System_Predicate_ValueTuple_object__int__bool____BeginInvoke (System_Predicate_ValueTuple_object__int__bool___o* __this, System_ValueTuple_object__int__bool__o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_290B590* method);
-bool System_Predicate_ValueTuple_object__int__bool____EndInvoke (System_Predicate_ValueTuple_object__int__bool___o* __this, System_IAsyncResult_o* result, const MethodInfo_290B620* method);
+void System_Predicate_ValueTuple_object__int__bool_____ctor (System_Predicate_ValueTuple_object__int__bool___o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method_info);
+bool System_Predicate_ValueTuple_object__int__bool____Invoke (System_Predicate_ValueTuple_object__int__bool___o* __this, System_ValueTuple_object__int__bool__o obj, const MethodInfo* method_info);
+System_IAsyncResult_o* System_Predicate_ValueTuple_object__int__bool____BeginInvoke (System_Predicate_ValueTuple_object__int__bool___o* __this, System_ValueTuple_object__int__bool__o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method_info);
+bool System_Predicate_ValueTuple_object__int__bool____EndInvoke (System_Predicate_ValueTuple_object__int__bool___o* __this, System_IAsyncResult_o* result, const MethodInfo* method_info);

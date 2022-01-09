@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void Dpr_NetworkUtils_NetworkConstants___cctor (const MethodInfo* method);
+void Dpr_NetworkUtils_NetworkConstants___cctor (const MethodInfo* method_info);

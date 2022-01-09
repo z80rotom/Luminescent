@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0___ctor (Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0___Update_b__0 (Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0___Update_b__1 (Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0___ctor (Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0___Update_b__0 (Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0___Update_b__1 (Dpr_Battle_View_PokeReloadTask___c__DisplayClass13_0_o* __this, const MethodInfo* method_info);

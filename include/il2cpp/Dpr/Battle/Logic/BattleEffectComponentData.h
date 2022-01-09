@@ -2,16 +2,16 @@
 
 #include "il2cpp.h"
 
-int32_t Dpr_Battle_Logic_BattleEffectComponentData__get_effectBattleID (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_BattleEffectComponentData__set_effectBattleID (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, int32_t value, const MethodInfo* method);
-System_String_o* Dpr_Battle_Logic_BattleEffectComponentData__get_soundEventName (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_BattleEffectComponentData__set_soundEventName (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, System_String_o* value, const MethodInfo* method);
-System_String_o* Dpr_Battle_Logic_BattleEffectComponentData__get_battleBgm (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_BattleEffectComponentData__set_battleBgm (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, System_String_o* value, const MethodInfo* method);
-System_String_o* Dpr_Battle_Logic_BattleEffectComponentData__get_winBgm (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_BattleEffectComponentData__set_winBgm (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, System_String_o* value, const MethodInfo* method);
-int32_t Dpr_Battle_Logic_BattleEffectComponentData__get_fadeType (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method);
-System_String_o* Dpr_Battle_Logic_BattleEffectComponentData__ChooseCmdSeq (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, int32_t index, const MethodInfo* method);
-void Dpr_Battle_Logic_BattleEffectComponentData__SetUpBattleEffectComponentData (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, int32_t setupEffectId, int32_t effectBattleId, int32_t cmdSeqIndex, System_String_o* soundEventName, const MethodInfo* method);
-void Dpr_Battle_Logic_BattleEffectComponentData__SetUpBattleEffectComponentData_Tutorial (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_BattleEffectComponentData___ctor (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method);
+int32_t Dpr_Battle_Logic_BattleEffectComponentData__get_effectBattleID (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_BattleEffectComponentData__set_effectBattleID (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, int32_t value, const MethodInfo* method_info);
+System_String_o* Dpr_Battle_Logic_BattleEffectComponentData__get_soundEventName (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_BattleEffectComponentData__set_soundEventName (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, System_String_o* value, const MethodInfo* method_info);
+System_String_o* Dpr_Battle_Logic_BattleEffectComponentData__get_battleBgm (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_BattleEffectComponentData__set_battleBgm (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, System_String_o* value, const MethodInfo* method_info);
+System_String_o* Dpr_Battle_Logic_BattleEffectComponentData__get_winBgm (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_BattleEffectComponentData__set_winBgm (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, System_String_o* value, const MethodInfo* method_info);
+int32_t Dpr_Battle_Logic_BattleEffectComponentData__get_fadeType (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method_info);
+System_String_o* Dpr_Battle_Logic_BattleEffectComponentData__ChooseCmdSeq (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, int32_t index, const MethodInfo* method_info);
+void Dpr_Battle_Logic_BattleEffectComponentData__SetUpBattleEffectComponentData (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, int32_t setupEffectId, int32_t effectBattleId, int32_t cmdSeqIndex, System_String_o* soundEventName, const MethodInfo* method_info);
+void Dpr_Battle_Logic_BattleEffectComponentData__SetUpBattleEffectComponentData_Tutorial (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_BattleEffectComponentData___ctor (Dpr_Battle_Logic_BattleEffectComponentData_o* __this, const MethodInfo* method_info);

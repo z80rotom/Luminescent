@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_TreeWalkPredicate_object____ctor (System_Collections_Generic_TreeWalkPredicate_object__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_29EDC80* method);
-bool System_Collections_Generic_TreeWalkPredicate_object___Invoke (System_Collections_Generic_TreeWalkPredicate_object__o* __this, System_Collections_Generic_SortedSet_Node_T__o* node, const MethodInfo_29EDCA0* method);
-System_IAsyncResult_o* System_Collections_Generic_TreeWalkPredicate_object___BeginInvoke (System_Collections_Generic_TreeWalkPredicate_object__o* __this, System_Collections_Generic_SortedSet_Node_T__o* node, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_29EE060* method);
-bool System_Collections_Generic_TreeWalkPredicate_object___EndInvoke (System_Collections_Generic_TreeWalkPredicate_object__o* __this, System_IAsyncResult_o* result, const MethodInfo_29EE090* method);
+void System_Collections_Generic_TreeWalkPredicate_object____ctor (System_Collections_Generic_TreeWalkPredicate_object__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method_info);
+bool System_Collections_Generic_TreeWalkPredicate_object___Invoke (System_Collections_Generic_TreeWalkPredicate_object__o* __this, System_Collections_Generic_SortedSet_Node_T__o* node, const MethodInfo* method_info);
+System_IAsyncResult_o* System_Collections_Generic_TreeWalkPredicate_object___BeginInvoke (System_Collections_Generic_TreeWalkPredicate_object__o* __this, System_Collections_Generic_SortedSet_Node_T__o* node, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method_info);
+bool System_Collections_Generic_TreeWalkPredicate_object___EndInvoke (System_Collections_Generic_TreeWalkPredicate_object__o* __this, System_IAsyncResult_o* result, const MethodInfo* method_info);

@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-uint32_t TMPro_TMP_GlyphAdjustmentRecord__get_glyphIndex (TMPro_TMP_GlyphAdjustmentRecord_o __this, const MethodInfo* method);
-void TMPro_TMP_GlyphAdjustmentRecord__set_glyphIndex (TMPro_TMP_GlyphAdjustmentRecord_o __this, uint32_t value, const MethodInfo* method);
-TMPro_TMP_GlyphValueRecord_o TMPro_TMP_GlyphAdjustmentRecord__get_glyphValueRecord (TMPro_TMP_GlyphAdjustmentRecord_o __this, const MethodInfo* method);
-void TMPro_TMP_GlyphAdjustmentRecord__set_glyphValueRecord (TMPro_TMP_GlyphAdjustmentRecord_o __this, TMPro_TMP_GlyphValueRecord_o value, const MethodInfo* method);
-void TMPro_TMP_GlyphAdjustmentRecord___ctor (TMPro_TMP_GlyphAdjustmentRecord_o __this, uint32_t glyphIndex, TMPro_TMP_GlyphValueRecord_o glyphValueRecord, const MethodInfo* method);
-void TMPro_TMP_GlyphAdjustmentRecord___ctor (TMPro_TMP_GlyphAdjustmentRecord_o __this, UnityEngine_TextCore_LowLevel_GlyphAdjustmentRecord_o adjustmentRecord, const MethodInfo* method);
+uint32_t TMPro_TMP_GlyphAdjustmentRecord__get_glyphIndex (TMPro_TMP_GlyphAdjustmentRecord_o __this, const MethodInfo* method_info);
+void TMPro_TMP_GlyphAdjustmentRecord__set_glyphIndex (TMPro_TMP_GlyphAdjustmentRecord_o __this, uint32_t value, const MethodInfo* method_info);
+TMPro_TMP_GlyphValueRecord_o TMPro_TMP_GlyphAdjustmentRecord__get_glyphValueRecord (TMPro_TMP_GlyphAdjustmentRecord_o __this, const MethodInfo* method_info);
+void TMPro_TMP_GlyphAdjustmentRecord__set_glyphValueRecord (TMPro_TMP_GlyphAdjustmentRecord_o __this, TMPro_TMP_GlyphValueRecord_o value, const MethodInfo* method_info);
+void TMPro_TMP_GlyphAdjustmentRecord___ctor (TMPro_TMP_GlyphAdjustmentRecord_o __this, uint32_t glyphIndex, TMPro_TMP_GlyphValueRecord_o glyphValueRecord, const MethodInfo* method_info);
+void TMPro_TMP_GlyphAdjustmentRecord___ctor (TMPro_TMP_GlyphAdjustmentRecord_o __this, UnityEngine_TextCore_LowLevel_GlyphAdjustmentRecord_o adjustmentRecord, const MethodInfo* method_info);

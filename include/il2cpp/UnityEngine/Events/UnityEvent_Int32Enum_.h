@@ -2,10 +2,10 @@
 
 #include "il2cpp.h"
 
-void UnityEngine_Events_UnityEvent_Int32Enum____ctor (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, const MethodInfo_2855DD0* method);
-void UnityEngine_Events_UnityEvent_Int32Enum___AddListener (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, UnityEngine_Events_UnityAction_T0__o* call, const MethodInfo_2855E00* method);
-void UnityEngine_Events_UnityEvent_Int32Enum___RemoveListener (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, UnityEngine_Events_UnityAction_T0__o* call, const MethodInfo_2855E50* method);
-System_Reflection_MethodInfo_o* UnityEngine_Events_UnityEvent_Int32Enum___FindMethod_Impl (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, System_String_o* name, Il2CppObject* targetObj, const MethodInfo_2855E90* method);
-UnityEngine_Events_BaseInvokableCall_o* UnityEngine_Events_UnityEvent_Int32Enum___GetDelegate (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, Il2CppObject* target, System_Reflection_MethodInfo_o* theFunction, const MethodInfo_2855F90* method);
-UnityEngine_Events_BaseInvokableCall_o* UnityEngine_Events_UnityEvent_Int32Enum___GetDelegate (UnityEngine_Events_UnityAction_T0__o* action, const MethodInfo_2856010* method);
-void UnityEngine_Events_UnityEvent_Int32Enum___Invoke (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, int32_t arg0, const MethodInfo_28560D0* method);
+void UnityEngine_Events_UnityEvent_Int32Enum____ctor (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, const MethodInfo* method_info);
+void UnityEngine_Events_UnityEvent_Int32Enum___AddListener (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, UnityEngine_Events_UnityAction_T0__o* call, const MethodInfo* method_info);
+void UnityEngine_Events_UnityEvent_Int32Enum___RemoveListener (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, UnityEngine_Events_UnityAction_T0__o* call, const MethodInfo* method_info);
+System_Reflection_MethodInfo_o* UnityEngine_Events_UnityEvent_Int32Enum___FindMethod_Impl (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, System_String_o* name, Il2CppObject* targetObj, const MethodInfo* method_info);
+UnityEngine_Events_BaseInvokableCall_o* UnityEngine_Events_UnityEvent_Int32Enum___GetDelegate (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, Il2CppObject* target, System_Reflection_MethodInfo_o* theFunction, const MethodInfo* method_info);
+UnityEngine_Events_BaseInvokableCall_o* UnityEngine_Events_UnityEvent_Int32Enum___GetDelegate (UnityEngine_Events_UnityAction_T0__o* action, const MethodInfo* method_info);
+void UnityEngine_Events_UnityEvent_Int32Enum___Invoke (UnityEngine_Events_UnityEvent_Int32Enum__o* __this, int32_t arg0, const MethodInfo* method_info);

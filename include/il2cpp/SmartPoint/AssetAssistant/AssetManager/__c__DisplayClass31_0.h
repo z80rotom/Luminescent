@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void SmartPoint_AssetAssistant_AssetManager___c__DisplayClass31_0___ctor (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass31_0_o* __this, const MethodInfo* method);
-bool SmartPoint_AssetAssistant_AssetManager___c__DisplayClass31_0___Install_b__0 (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass31_0_o* __this, SmartPoint_AssetAssistant_AssetBundleRecord_o* __, const MethodInfo* method);
+void SmartPoint_AssetAssistant_AssetManager___c__DisplayClass31_0___ctor (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass31_0_o* __this, const MethodInfo* method_info);
+bool SmartPoint_AssetAssistant_AssetManager___c__DisplayClass31_0___Install_b__0 (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass31_0_o* __this, SmartPoint_AssetAssistant_AssetBundleRecord_o* __, const MethodInfo* method_info);

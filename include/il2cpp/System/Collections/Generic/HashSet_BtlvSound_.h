@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_HashSet_BtlvSound____ctor (System_Collections_Generic_HashSet_BtlvSound__o* __this, const MethodInfo_2A2FE40* method);
-System_Collections_Generic_HashSet_Enumerator_T__o System_Collections_Generic_HashSet_BtlvSound___GetEnumerator (System_Collections_Generic_HashSet_BtlvSound__o* __this, const MethodInfo_2A308F0* method);
-bool System_Collections_Generic_HashSet_BtlvSound___Add (System_Collections_Generic_HashSet_BtlvSound__o* __this, Dpr_Battle_View_Objects_BtlvSound_o* item, const MethodInfo_2A30F50* method);
+void System_Collections_Generic_HashSet_BtlvSound____ctor (System_Collections_Generic_HashSet_BtlvSound__o* __this, const MethodInfo* method_info);
+System_Collections_Generic_HashSet_Enumerator_T__o System_Collections_Generic_HashSet_BtlvSound___GetEnumerator (System_Collections_Generic_HashSet_BtlvSound__o* __this, const MethodInfo* method_info);
+bool System_Collections_Generic_HashSet_BtlvSound___Add (System_Collections_Generic_HashSet_BtlvSound__o* __this, Dpr_Battle_View_Objects_BtlvSound_o* item, const MethodInfo* method_info);

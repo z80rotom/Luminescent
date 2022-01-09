@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_FureaiHiroba_FureaiManager___c__DisplayClass73_0___ctor (Dpr_FureaiHiroba_FureaiManager___c__DisplayClass73_0_o* __this, const MethodInfo* method);
-bool Dpr_FureaiHiroba_FureaiManager___c__DisplayClass73_0___PlayVoice_TemotiID_b__0 (Dpr_FureaiHiroba_FureaiManager___c__DisplayClass73_0_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiManager___c__DisplayClass73_0___ctor (Dpr_FureaiHiroba_FureaiManager___c__DisplayClass73_0_o* __this, const MethodInfo* method_info);
+bool Dpr_FureaiHiroba_FureaiManager___c__DisplayClass73_0___PlayVoice_TemotiID_b__0 (Dpr_FureaiHiroba_FureaiManager___c__DisplayClass73_0_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method_info);

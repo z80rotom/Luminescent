@@ -2,14 +2,14 @@
 
 #include "il2cpp.h"
 
-void DG_Tweening_Plugins_SpiralPlugin__Reset (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, const MethodInfo* method);
-void DG_Tweening_Plugins_SpiralPlugin__SetFrom (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, bool isRelative, const MethodInfo* method);
-void DG_Tweening_Plugins_SpiralPlugin__SetFrom (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, UnityEngine_Vector3_o fromValue, bool setImmediately, const MethodInfo* method);
-DG_Tweening_Plugins_Core_ABSTweenPlugin_Vector3__Vector3__SpiralOptions__o* DG_Tweening_Plugins_SpiralPlugin__Get (const MethodInfo* method);
-UnityEngine_Vector3_o DG_Tweening_Plugins_SpiralPlugin__ConvertToStartValue (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, UnityEngine_Vector3_o value, const MethodInfo* method);
-void DG_Tweening_Plugins_SpiralPlugin__SetRelativeEndValue (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, const MethodInfo* method);
-void DG_Tweening_Plugins_SpiralPlugin__SetChangeValue (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, const MethodInfo* method);
-float DG_Tweening_Plugins_SpiralPlugin__GetSpeedBasedDuration (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Plugins_SpiralOptions_o options, float unitsXSecond, UnityEngine_Vector3_o changeValue, const MethodInfo* method);
-void DG_Tweening_Plugins_SpiralPlugin__EvaluateAndApply (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Plugins_SpiralOptions_o options, DG_Tweening_Tween_o* t, bool isRelative, DG_Tweening_Core_DOGetter_Vector3__o* getter, DG_Tweening_Core_DOSetter_Vector3__o* setter, float elapsed, UnityEngine_Vector3_o startValue, UnityEngine_Vector3_o changeValue, float duration, bool usingInversePosition, int32_t updateNotice, const MethodInfo* method);
-void DG_Tweening_Plugins_SpiralPlugin___ctor (DG_Tweening_Plugins_SpiralPlugin_o* __this, const MethodInfo* method);
-void DG_Tweening_Plugins_SpiralPlugin___cctor (const MethodInfo* method);
+void DG_Tweening_Plugins_SpiralPlugin__Reset (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, const MethodInfo* method_info);
+void DG_Tweening_Plugins_SpiralPlugin__SetFrom (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, bool isRelative, const MethodInfo* method_info);
+void DG_Tweening_Plugins_SpiralPlugin__SetFrom (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, UnityEngine_Vector3_o fromValue, bool setImmediately, const MethodInfo* method_info);
+DG_Tweening_Plugins_Core_ABSTweenPlugin_Vector3__Vector3__SpiralOptions__o* DG_Tweening_Plugins_SpiralPlugin__Get (const MethodInfo* method_info);
+UnityEngine_Vector3_o DG_Tweening_Plugins_SpiralPlugin__ConvertToStartValue (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, UnityEngine_Vector3_o value, const MethodInfo* method_info);
+void DG_Tweening_Plugins_SpiralPlugin__SetRelativeEndValue (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, const MethodInfo* method_info);
+void DG_Tweening_Plugins_SpiralPlugin__SetChangeValue (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Core_TweenerCore_Vector3__Vector3__SpiralOptions__o* t, const MethodInfo* method_info);
+float DG_Tweening_Plugins_SpiralPlugin__GetSpeedBasedDuration (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Plugins_SpiralOptions_o options, float unitsXSecond, UnityEngine_Vector3_o changeValue, const MethodInfo* method_info);
+void DG_Tweening_Plugins_SpiralPlugin__EvaluateAndApply (DG_Tweening_Plugins_SpiralPlugin_o* __this, DG_Tweening_Plugins_SpiralOptions_o options, DG_Tweening_Tween_o* t, bool isRelative, DG_Tweening_Core_DOGetter_Vector3__o* getter, DG_Tweening_Core_DOSetter_Vector3__o* setter, float elapsed, UnityEngine_Vector3_o startValue, UnityEngine_Vector3_o changeValue, float duration, bool usingInversePosition, int32_t updateNotice, const MethodInfo* method_info);
+void DG_Tweening_Plugins_SpiralPlugin___ctor (DG_Tweening_Plugins_SpiralPlugin_o* __this, const MethodInfo* method_info);
+void DG_Tweening_Plugins_SpiralPlugin___cctor (const MethodInfo* method_info);

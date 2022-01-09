@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Field_Walking_CorSystemContainer___c__DisplayClass16_0___ctor (Dpr_Field_Walking_CorSystemContainer___c__DisplayClass16_0_o* __this, const MethodInfo* method);
-bool Dpr_Field_Walking_CorSystemContainer___c__DisplayClass16_0___SubCancel_b__0 (Dpr_Field_Walking_CorSystemContainer___c__DisplayClass16_0_o* __this, Dpr_Field_Walking_CorSystem_o* x, const MethodInfo* method);
+void Dpr_Field_Walking_CorSystemContainer___c__DisplayClass16_0___ctor (Dpr_Field_Walking_CorSystemContainer___c__DisplayClass16_0_o* __this, const MethodInfo* method_info);
+bool Dpr_Field_Walking_CorSystemContainer___c__DisplayClass16_0___SubCancel_b__0 (Dpr_Field_Walking_CorSystemContainer___c__DisplayClass16_0_o* __this, Dpr_Field_Walking_CorSystem_o* x, const MethodInfo* method_info);

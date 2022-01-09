@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0___ctor (Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0_o* __this, const MethodInfo* method);
-void Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0___Load_b__1 (Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0_o* __this, Effect_EffectData_o* data, bool isAllLoaded, const MethodInfo* method);
-bool Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0___Load_b__2 (Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0_o* __this, const MethodInfo* method);
+void Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0___ctor (Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0_o* __this, const MethodInfo* method_info);
+void Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0___Load_b__1 (Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0_o* __this, Effect_EffectData_o* data, bool isAllLoaded, const MethodInfo* method_info);
+bool Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0___Load_b__2 (Dpr_SecretBase_SecretBaseEffectManager___c__DisplayClass4_0_o* __this, const MethodInfo* method_info);

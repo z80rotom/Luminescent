@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void System_Linq_Buffer_UIManager_AtlasSpriteKey____ctor (System_Linq_Buffer_UIManager_AtlasSpriteKey__o __this, System_Collections_Generic_IEnumerable_TElement__o* source, const MethodInfo_2AB7C70* method);
-Dpr_UI_UIManager_AtlasSpriteKey_array* System_Linq_Buffer_UIManager_AtlasSpriteKey___ToArray (System_Linq_Buffer_UIManager_AtlasSpriteKey__o __this, const MethodInfo_2AB8250* method);
+void System_Linq_Buffer_UIManager_AtlasSpriteKey____ctor (System_Linq_Buffer_UIManager_AtlasSpriteKey__o __this, System_Collections_Generic_IEnumerable_TElement__o* source, const MethodInfo* method_info);
+Dpr_UI_UIManager_AtlasSpriteKey_array* System_Linq_Buffer_UIManager_AtlasSpriteKey___ToArray (System_Linq_Buffer_UIManager_AtlasSpriteKey__o __this, const MethodInfo* method_info);

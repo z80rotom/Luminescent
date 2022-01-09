@@ -41,7 +41,7 @@ def main():
                                         + ".h")
         if not exists:
             fp.write('#pragma once\n\n#include "il2cpp.h"\n\n')
-        fp.write(method["Signature"] + "\n")
+        fp.write(re.sub(r"MethodInfo_\d[A-Z\d]+", "MethodInfo", method["Signature"]).replace("MethodInfo* method", "MethodInfo* method_info") + "\n")
         fp.close()
 
 

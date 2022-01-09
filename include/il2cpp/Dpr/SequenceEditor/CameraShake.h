@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void Dpr_SequenceEditor_CameraShake___ctor (Dpr_SequenceEditor_CameraShake_o* __this, Dpr_SequenceEditor_Macro_o* macro, const MethodInfo* method);
+void Dpr_SequenceEditor_CameraShake___ctor (Dpr_SequenceEditor_CameraShake_o* __this, Dpr_SequenceEditor_Macro_o* macro, const MethodInfo* method_info);

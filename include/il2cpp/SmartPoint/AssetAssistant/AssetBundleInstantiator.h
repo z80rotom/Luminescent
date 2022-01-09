@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-System_Collections_IEnumerator_o* SmartPoint_AssetAssistant_AssetBundleInstantiator__RestoreOperation (SmartPoint_AssetAssistant_AssetBundleInstantiator_o* __this, SmartPoint_AssetAssistant_SceneEntity_o* entity, const MethodInfo* method);
-void SmartPoint_AssetAssistant_AssetBundleInstantiator__OnFinished (SmartPoint_AssetAssistant_AssetBundleInstantiator_o* __this, const MethodInfo* method);
-void SmartPoint_AssetAssistant_AssetBundleInstantiator___ctor (SmartPoint_AssetAssistant_AssetBundleInstantiator_o* __this, const MethodInfo* method);
-void SmartPoint_AssetAssistant_AssetBundleInstantiator___RestoreOperation_b__1_0 (SmartPoint_AssetAssistant_AssetBundleInstantiator_o* __this, int32_t eventType, System_String_o* name, UnityEngine_Object_o* asset, const MethodInfo* method);
+System_Collections_IEnumerator_o* SmartPoint_AssetAssistant_AssetBundleInstantiator__RestoreOperation (SmartPoint_AssetAssistant_AssetBundleInstantiator_o* __this, SmartPoint_AssetAssistant_SceneEntity_o* entity, const MethodInfo* method_info);
+void SmartPoint_AssetAssistant_AssetBundleInstantiator__OnFinished (SmartPoint_AssetAssistant_AssetBundleInstantiator_o* __this, const MethodInfo* method_info);
+void SmartPoint_AssetAssistant_AssetBundleInstantiator___ctor (SmartPoint_AssetAssistant_AssetBundleInstantiator_o* __this, const MethodInfo* method_info);
+void SmartPoint_AssetAssistant_AssetBundleInstantiator___RestoreOperation_b__1_0 (SmartPoint_AssetAssistant_AssetBundleInstantiator_o* __this, int32_t eventType, System_String_o* name, UnityEngine_Object_o* asset, const MethodInfo* method_info);

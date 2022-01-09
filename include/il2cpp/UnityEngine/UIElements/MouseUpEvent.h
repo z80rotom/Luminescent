@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-UnityEngine_UIElements_MouseUpEvent_o* UnityEngine_UIElements_MouseUpEvent__MakeFromPointerEvent (UnityEngine_UIElements_IPointerEvent_o* pointerEvent, const MethodInfo* method);
-UnityEngine_UIElements_MouseUpEvent_o* UnityEngine_UIElements_MouseUpEvent__GetPooled (UnityEngine_UIElements_PointerUpEvent_o* pointerEvent, const MethodInfo* method);
-UnityEngine_UIElements_MouseUpEvent_o* UnityEngine_UIElements_MouseUpEvent__GetPooled (UnityEngine_UIElements_PointerMoveEvent_o* pointerEvent, const MethodInfo* method);
-UnityEngine_UIElements_MouseUpEvent_o* UnityEngine_UIElements_MouseUpEvent__GetPooled (UnityEngine_UIElements_PointerCancelEvent_o* pointerEvent, const MethodInfo* method);
-void UnityEngine_UIElements_MouseUpEvent___ctor (UnityEngine_UIElements_MouseUpEvent_o* __this, const MethodInfo* method);
+UnityEngine_UIElements_MouseUpEvent_o* UnityEngine_UIElements_MouseUpEvent__MakeFromPointerEvent (UnityEngine_UIElements_IPointerEvent_o* pointerEvent, const MethodInfo* method_info);
+UnityEngine_UIElements_MouseUpEvent_o* UnityEngine_UIElements_MouseUpEvent__GetPooled (UnityEngine_UIElements_PointerUpEvent_o* pointerEvent, const MethodInfo* method_info);
+UnityEngine_UIElements_MouseUpEvent_o* UnityEngine_UIElements_MouseUpEvent__GetPooled (UnityEngine_UIElements_PointerMoveEvent_o* pointerEvent, const MethodInfo* method_info);
+UnityEngine_UIElements_MouseUpEvent_o* UnityEngine_UIElements_MouseUpEvent__GetPooled (UnityEngine_UIElements_PointerCancelEvent_o* pointerEvent, const MethodInfo* method_info);
+void UnityEngine_UIElements_MouseUpEvent___ctor (UnityEngine_UIElements_MouseUpEvent_o* __this, const MethodInfo* method_info);

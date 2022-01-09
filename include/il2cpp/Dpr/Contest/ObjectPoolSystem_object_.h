@@ -2,19 +2,19 @@
 
 #include "il2cpp.h"
 
-void Dpr_Contest_ObjectPoolSystem_object___Finalize (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25ADBC0* method);
-int32_t Dpr_Contest_ObjectPoolSystem_object___get_PoolCount (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25ADC70* method);
-System_Collections_Generic_List_T__o* Dpr_Contest_ObjectPoolSystem_object___get_PrefabPoolList (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25ADC90* method);
-void Dpr_Contest_ObjectPoolSystem_object___GeneratePoolFromPrefab (Dpr_Contest_ObjectPoolSystem_object__o* __this, Il2CppObject* prefab, int32_t count, const MethodInfo_25ADCA0* method);
-void Dpr_Contest_ObjectPoolSystem_object___GeneratePoolFromPrefab (Dpr_Contest_ObjectPoolSystem_object__o* __this, Il2CppObject* prefab, int32_t count, UnityEngine_Transform_o* parent, const MethodInfo_25ADCC0* method);
-int32_t Dpr_Contest_ObjectPoolSystem_object___SetPoolCount (Dpr_Contest_ObjectPoolSystem_object__o* __this, int32_t count, const MethodInfo_25ADD20* method);
-Il2CppObject* Dpr_Contest_ObjectPoolSystem_object___AddPoolFromPrefab (Dpr_Contest_ObjectPoolSystem_object__o* __this, Il2CppObject* prefab, const MethodInfo_25ADDC0* method);
-Il2CppObject* Dpr_Contest_ObjectPoolSystem_object___Get (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25ADEE0* method);
-Il2CppObject* Dpr_Contest_ObjectPoolSystem_object___GetCurrentlyUsed (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25AE150* method);
-System_Collections_Generic_List_T__o* Dpr_Contest_ObjectPoolSystem_object___GetAllCurrentlyUsed (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25AE330* method);
-System_Collections_Generic_List_T__o* Dpr_Contest_ObjectPoolSystem_object___GetAllDeactived (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25AE540* method);
-void Dpr_Contest_ObjectPoolSystem_object___RemoveFromPool (Dpr_Contest_ObjectPoolSystem_object__o* __this, Il2CppObject* prefab, const MethodInfo_25AE770* method);
-void Dpr_Contest_ObjectPoolSystem_object___RemoveAllNullElement (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25AE820* method);
-void Dpr_Contest_ObjectPoolSystem_object___DeactivateAll (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25AEA00* method);
-void Dpr_Contest_ObjectPoolSystem_object___ClearPool (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25AEBC0* method);
-void Dpr_Contest_ObjectPoolSystem_object____ctor (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo_25AEBE0* method);
+void Dpr_Contest_ObjectPoolSystem_object___Finalize (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+int32_t Dpr_Contest_ObjectPoolSystem_object___get_PoolCount (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+System_Collections_Generic_List_T__o* Dpr_Contest_ObjectPoolSystem_object___get_PrefabPoolList (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ObjectPoolSystem_object___GeneratePoolFromPrefab (Dpr_Contest_ObjectPoolSystem_object__o* __this, Il2CppObject* prefab, int32_t count, const MethodInfo* method_info);
+void Dpr_Contest_ObjectPoolSystem_object___GeneratePoolFromPrefab (Dpr_Contest_ObjectPoolSystem_object__o* __this, Il2CppObject* prefab, int32_t count, UnityEngine_Transform_o* parent, const MethodInfo* method_info);
+int32_t Dpr_Contest_ObjectPoolSystem_object___SetPoolCount (Dpr_Contest_ObjectPoolSystem_object__o* __this, int32_t count, const MethodInfo* method_info);
+Il2CppObject* Dpr_Contest_ObjectPoolSystem_object___AddPoolFromPrefab (Dpr_Contest_ObjectPoolSystem_object__o* __this, Il2CppObject* prefab, const MethodInfo* method_info);
+Il2CppObject* Dpr_Contest_ObjectPoolSystem_object___Get (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+Il2CppObject* Dpr_Contest_ObjectPoolSystem_object___GetCurrentlyUsed (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+System_Collections_Generic_List_T__o* Dpr_Contest_ObjectPoolSystem_object___GetAllCurrentlyUsed (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+System_Collections_Generic_List_T__o* Dpr_Contest_ObjectPoolSystem_object___GetAllDeactived (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ObjectPoolSystem_object___RemoveFromPool (Dpr_Contest_ObjectPoolSystem_object__o* __this, Il2CppObject* prefab, const MethodInfo* method_info);
+void Dpr_Contest_ObjectPoolSystem_object___RemoveAllNullElement (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ObjectPoolSystem_object___DeactivateAll (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ObjectPoolSystem_object___ClearPool (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ObjectPoolSystem_object____ctor (Dpr_Contest_ObjectPoolSystem_object__o* __this, const MethodInfo* method_info);

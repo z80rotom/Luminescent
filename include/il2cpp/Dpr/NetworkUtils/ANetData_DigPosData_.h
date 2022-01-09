@@ -2,20 +2,20 @@
 
 #include "il2cpp.h"
 
-uint8_t Dpr_NetworkUtils_ANetData_DigPosData___get_GetDataID (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo_2AC3080* method);
-void Dpr_NetworkUtils_ANetData_DigPosData____ctor (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo_2AC3130* method);
-void Dpr_NetworkUtils_ANetData_DigPosData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo_2AC31B0* method);
-void Dpr_NetworkUtils_ANetData_DigPosData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t idx, const MethodInfo_2AC3450* method);
-int32_t Dpr_NetworkUtils_ANetData_DigPosData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo_2AC3460* method);
-int32_t Dpr_NetworkUtils_ANetData_DigPosData___SendReliableData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AC3470* method);
-int32_t Dpr_NetworkUtils_ANetData_DigPosData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t transportType, const MethodInfo_2AC3520* method);
-int32_t Dpr_NetworkUtils_ANetData_DigPosData___SendUnReliableData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AC35C0* method);
-int32_t Dpr_NetworkUtils_ANetData_DigPosData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t transportType, const MethodInfo_2AC3660* method);
-INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_DigPosData___CreateReliableData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo_2AC36F0* method);
-INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_DigPosData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo_2AC37B0* method);
-void Dpr_NetworkUtils_ANetData_DigPosData___WriteSendData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_2AC3870* method);
-System_Byte_array* Dpr_NetworkUtils_ANetData_DigPosData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo_2AC38C0* method);
-void Dpr_NetworkUtils_ANetData_DigPosData___ReceivePacket (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC3AA0* method);
-void Dpr_NetworkUtils_ANetData_DigPosData___ReadRecieveData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC3AF0* method);
-Dpr_NetworkUtils_DigPosData_o Dpr_NetworkUtils_ANetData_DigPosData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC3B40* method);
-void Dpr_NetworkUtils_ANetData_DigPosData____cctor (const MethodInfo_2AC3E40* method);
+uint8_t Dpr_NetworkUtils_ANetData_DigPosData___get_GetDataID (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_DigPosData____ctor (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_DigPosData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_DigPosData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t idx, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_DigPosData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_DigPosData___SendReliableData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_DigPosData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t transportType, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_DigPosData___SendUnReliableData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_DigPosData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, int32_t transportType, const MethodInfo* method_info);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_DigPosData___CreateReliableData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo* method_info);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_DigPosData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_DigPosData___WriteSendData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo* method_info);
+System_Byte_array* Dpr_NetworkUtils_ANetData_DigPosData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_DigPosData___ReceivePacket (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, INL1_PacketReader_o* pr, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_DigPosData___ReadRecieveData (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, INL1_PacketReader_o* pr, const MethodInfo* method_info);
+Dpr_NetworkUtils_DigPosData_o Dpr_NetworkUtils_ANetData_DigPosData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_DigPosData__o* __this, INL1_PacketReader_o* pr, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_DigPosData____cctor (const MethodInfo* method_info);

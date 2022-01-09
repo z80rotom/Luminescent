@@ -2,12 +2,12 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_Logic_Section_Root_FirstPokeIn___ctor (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_Root_FirstPokeIn__Execute (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_Section_Root_FirstPokeIn_Result_o* pResult, Dpr_Battle_Logic_Section_Root_FirstPokeIn_Description_o** description, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_Root_FirstPokeIn__changeWeather (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_Root_FirstPokeIn__changeGround (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_Root_FirstPokeIn__memberInAll (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_Root_FirstPokeIn__memberInAll (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_PokeIDRegister_o* inPokeIDRegister, uint8_t clientID, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_Root_FirstPokeIn__memberIn (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_PokeIDRegister_o* inPokeIDRegister, uint8_t clientID, uint8_t posIdx, uint8_t nextPokeIdx, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_Root_FirstPokeIn__afterMemberIn (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_PokeIDRegister_o* inPokeIDRegister, const MethodInfo* method);
-void Dpr_Battle_Logic_Section_Root_FirstPokeIn__firstPokeInEnd (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, const MethodInfo* method);
+void Dpr_Battle_Logic_Section_Root_FirstPokeIn___ctor (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_Root_FirstPokeIn__Execute (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_Section_Root_FirstPokeIn_Result_o* pResult, Dpr_Battle_Logic_Section_Root_FirstPokeIn_Description_o** description, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_Root_FirstPokeIn__changeWeather (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_Root_FirstPokeIn__changeGround (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_Root_FirstPokeIn__memberInAll (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_Root_FirstPokeIn__memberInAll (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_PokeIDRegister_o* inPokeIDRegister, uint8_t clientID, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_Root_FirstPokeIn__memberIn (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_PokeIDRegister_o* inPokeIDRegister, uint8_t clientID, uint8_t posIdx, uint8_t nextPokeIdx, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_Root_FirstPokeIn__afterMemberIn (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, Dpr_Battle_Logic_PokeIDRegister_o* inPokeIDRegister, const MethodInfo* method_info);
+void Dpr_Battle_Logic_Section_Root_FirstPokeIn__firstPokeInEnd (Dpr_Battle_Logic_Section_Root_FirstPokeIn_o* __this, const MethodInfo* method_info);

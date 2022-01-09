@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-void System_Text_UTF8Encoding_UTF8Decoder___ctor (System_Text_UTF8Encoding_UTF8Decoder_o* __this, System_Text_UTF8Encoding_o* encoding, const MethodInfo* method);
-void System_Text_UTF8Encoding_UTF8Decoder___ctor (System_Text_UTF8Encoding_UTF8Decoder_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
-void System_Text_UTF8Encoding_UTF8Decoder__System_Runtime_Serialization_ISerializable_GetObjectData (System_Text_UTF8Encoding_UTF8Decoder_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method);
-void System_Text_UTF8Encoding_UTF8Decoder__Reset (System_Text_UTF8Encoding_UTF8Decoder_o* __this, const MethodInfo* method);
-bool System_Text_UTF8Encoding_UTF8Decoder__get_HasState (System_Text_UTF8Encoding_UTF8Decoder_o* __this, const MethodInfo* method);
+void System_Text_UTF8Encoding_UTF8Decoder___ctor (System_Text_UTF8Encoding_UTF8Decoder_o* __this, System_Text_UTF8Encoding_o* encoding, const MethodInfo* method_info);
+void System_Text_UTF8Encoding_UTF8Decoder___ctor (System_Text_UTF8Encoding_UTF8Decoder_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method_info);
+void System_Text_UTF8Encoding_UTF8Decoder__System_Runtime_Serialization_ISerializable_GetObjectData (System_Text_UTF8Encoding_UTF8Decoder_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method_info);
+void System_Text_UTF8Encoding_UTF8Decoder__Reset (System_Text_UTF8Encoding_UTF8Decoder_o* __this, const MethodInfo* method_info);
+bool System_Text_UTF8Encoding_UTF8Decoder__get_HasState (System_Text_UTF8Encoding_UTF8Decoder_o* __this, const MethodInfo* method_info);

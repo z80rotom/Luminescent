@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_bool___get_Default (const MethodInfo_2872EE0* method);
-System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_bool___CreateComparer (const MethodInfo_2872FF0* method);
-int32_t System_Collections_Generic_Comparer_bool___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_bool__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo_28733F0* method);
-void System_Collections_Generic_Comparer_bool____ctor (System_Collections_Generic_Comparer_bool__o* __this, const MethodInfo_2873570* method);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_bool___get_Default (const MethodInfo* method_info);
+System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_bool___CreateComparer (const MethodInfo* method_info);
+int32_t System_Collections_Generic_Comparer_bool___System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_bool__o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo* method_info);
+void System_Collections_Generic_Comparer_bool____ctor (System_Collections_Generic_Comparer_bool__o* __this, const MethodInfo* method_info);

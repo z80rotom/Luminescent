@@ -2,13 +2,13 @@
 
 #include "il2cpp.h"
 
-UnityEngine_UIElements_PointerDispatchState_o* UnityEngine_UIElements_EventDispatcher__get_pointerState (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method);
-void UnityEngine_UIElements_EventDispatcher___ctor (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method);
-bool UnityEngine_UIElements_EventDispatcher__get_dispatchImmediately (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method);
-void UnityEngine_UIElements_EventDispatcher__Dispatch (UnityEngine_UIElements_EventDispatcher_o* __this, UnityEngine_UIElements_EventBase_o* evt, UnityEngine_UIElements_IPanel_o* panel, int32_t dispatchMode, const MethodInfo* method);
-void UnityEngine_UIElements_EventDispatcher__CloseGate (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method);
-void UnityEngine_UIElements_EventDispatcher__OpenGate (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method);
-void UnityEngine_UIElements_EventDispatcher__ProcessEventQueue (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method);
-void UnityEngine_UIElements_EventDispatcher__ProcessEvent (UnityEngine_UIElements_EventDispatcher_o* __this, UnityEngine_UIElements_EventBase_o* evt, UnityEngine_UIElements_IPanel_o* panel, const MethodInfo* method);
-void UnityEngine_UIElements_EventDispatcher__ApplyDispatchingStrategies (UnityEngine_UIElements_EventDispatcher_o* __this, UnityEngine_UIElements_EventBase_o* evt, UnityEngine_UIElements_IPanel_o* panel, bool imguiEventIsInitiallyUsed, const MethodInfo* method);
-void UnityEngine_UIElements_EventDispatcher___cctor (const MethodInfo* method);
+UnityEngine_UIElements_PointerDispatchState_o* UnityEngine_UIElements_EventDispatcher__get_pointerState (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventDispatcher___ctor (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method_info);
+bool UnityEngine_UIElements_EventDispatcher__get_dispatchImmediately (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventDispatcher__Dispatch (UnityEngine_UIElements_EventDispatcher_o* __this, UnityEngine_UIElements_EventBase_o* evt, UnityEngine_UIElements_IPanel_o* panel, int32_t dispatchMode, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventDispatcher__CloseGate (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventDispatcher__OpenGate (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventDispatcher__ProcessEventQueue (UnityEngine_UIElements_EventDispatcher_o* __this, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventDispatcher__ProcessEvent (UnityEngine_UIElements_EventDispatcher_o* __this, UnityEngine_UIElements_EventBase_o* evt, UnityEngine_UIElements_IPanel_o* panel, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventDispatcher__ApplyDispatchingStrategies (UnityEngine_UIElements_EventDispatcher_o* __this, UnityEngine_UIElements_EventBase_o* evt, UnityEngine_UIElements_IPanel_o* panel, bool imguiEventIsInitiallyUsed, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventDispatcher___cctor (const MethodInfo* method_info);

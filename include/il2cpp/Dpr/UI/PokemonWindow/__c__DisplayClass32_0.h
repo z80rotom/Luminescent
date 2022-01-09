@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-void Dpr_UI_PokemonWindow___c__DisplayClass32_0___ctor (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, const MethodInfo* method);
-void Dpr_UI_PokemonWindow___c__DisplayClass32_0___CheckFormChange_b__0 (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, Pml_PokePara_PokemonParam_o* pp, const MethodInfo* method);
-void Dpr_UI_PokemonWindow___c__DisplayClass32_0___CheckFormChange_b__1 (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, Pml_PokePara_PokemonParam_o* pp, const MethodInfo* method);
-void Dpr_UI_PokemonWindow___c__DisplayClass32_0___CheckFormChange_b__3 (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, const MethodInfo* method);
-System_Collections_IEnumerator_o* Dpr_UI_PokemonWindow___c__DisplayClass32_0___CheckFormChange_g__LoadModel_2 (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, const MethodInfo* method);
+void Dpr_UI_PokemonWindow___c__DisplayClass32_0___ctor (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, const MethodInfo* method_info);
+void Dpr_UI_PokemonWindow___c__DisplayClass32_0___CheckFormChange_b__0 (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, Pml_PokePara_PokemonParam_o* pp, const MethodInfo* method_info);
+void Dpr_UI_PokemonWindow___c__DisplayClass32_0___CheckFormChange_b__1 (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, Pml_PokePara_PokemonParam_o* pp, const MethodInfo* method_info);
+void Dpr_UI_PokemonWindow___c__DisplayClass32_0___CheckFormChange_b__3 (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_UI_PokemonWindow___c__DisplayClass32_0___CheckFormChange_g__LoadModel_2 (Dpr_UI_PokemonWindow___c__DisplayClass32_0_o* __this, const MethodInfo* method_info);

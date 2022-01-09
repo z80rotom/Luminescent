@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_Queue_EmitHeartData____ctor (System_Collections_Generic_Queue_EmitHeartData__o* __this, const MethodInfo_2934A70* method);
-int32_t System_Collections_Generic_Queue_EmitHeartData___get_Count (System_Collections_Generic_Queue_EmitHeartData__o* __this, const MethodInfo_2934AC0* method);
-void System_Collections_Generic_Queue_EmitHeartData___Clear (System_Collections_Generic_Queue_EmitHeartData__o* __this, const MethodInfo_2934AD0* method);
-void System_Collections_Generic_Queue_EmitHeartData___Enqueue (System_Collections_Generic_Queue_EmitHeartData__o* __this, Dpr_Contest_EmitHeartData_o* item, const MethodInfo_2934E10* method);
-Dpr_Contest_EmitHeartData_o* System_Collections_Generic_Queue_EmitHeartData___Dequeue (System_Collections_Generic_Queue_EmitHeartData__o* __this, const MethodInfo_2935060* method);
+void System_Collections_Generic_Queue_EmitHeartData____ctor (System_Collections_Generic_Queue_EmitHeartData__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_Queue_EmitHeartData___get_Count (System_Collections_Generic_Queue_EmitHeartData__o* __this, const MethodInfo* method_info);
+void System_Collections_Generic_Queue_EmitHeartData___Clear (System_Collections_Generic_Queue_EmitHeartData__o* __this, const MethodInfo* method_info);
+void System_Collections_Generic_Queue_EmitHeartData___Enqueue (System_Collections_Generic_Queue_EmitHeartData__o* __this, Dpr_Contest_EmitHeartData_o* item, const MethodInfo* method_info);
+Dpr_Contest_EmitHeartData_o* System_Collections_Generic_Queue_EmitHeartData___Dequeue (System_Collections_Generic_Queue_EmitHeartData__o* __this, const MethodInfo* method_info);

@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void System_Func_ValueTuple_int__object___Vector2Int____ctor (System_Func_ValueTuple_int__object___Vector2Int__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_2AAE5C0* method);
-UnityEngine_Vector2Int_o System_Func_ValueTuple_int__object___Vector2Int___Invoke (System_Func_ValueTuple_int__object___Vector2Int__o* __this, System_ValueTuple_int__object__o arg, const MethodInfo_2AAE5E0* method);
-System_IAsyncResult_o* System_Func_ValueTuple_int__object___Vector2Int___BeginInvoke (System_Func_ValueTuple_int__object___Vector2Int__o* __this, System_ValueTuple_int__object__o arg, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_2AAE8A0* method);
-UnityEngine_Vector2Int_o System_Func_ValueTuple_int__object___Vector2Int___EndInvoke (System_Func_ValueTuple_int__object___Vector2Int__o* __this, System_IAsyncResult_o* result, const MethodInfo_2AAE930* method);
+void System_Func_ValueTuple_int__object___Vector2Int____ctor (System_Func_ValueTuple_int__object___Vector2Int__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method_info);
+UnityEngine_Vector2Int_o System_Func_ValueTuple_int__object___Vector2Int___Invoke (System_Func_ValueTuple_int__object___Vector2Int__o* __this, System_ValueTuple_int__object__o arg, const MethodInfo* method_info);
+System_IAsyncResult_o* System_Func_ValueTuple_int__object___Vector2Int___BeginInvoke (System_Func_ValueTuple_int__object___Vector2Int__o* __this, System_ValueTuple_int__object__o arg, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method_info);
+UnityEngine_Vector2Int_o System_Func_ValueTuple_int__object___Vector2Int___EndInvoke (System_Func_ValueTuple_int__object___Vector2Int__o* __this, System_IAsyncResult_o* result, const MethodInfo* method_info);

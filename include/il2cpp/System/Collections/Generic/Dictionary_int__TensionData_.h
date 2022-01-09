@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_Dictionary_int__TensionData____ctor (System_Collections_Generic_Dictionary_int__TensionData__o* __this, const MethodInfo_2A44B60* method);
-Dpr_Contest_TensionData_o* System_Collections_Generic_Dictionary_int__TensionData___get_Item (System_Collections_Generic_Dictionary_int__TensionData__o* __this, int32_t key, const MethodInfo_2A44F30* method);
-void System_Collections_Generic_Dictionary_int__TensionData___Add (System_Collections_Generic_Dictionary_int__TensionData__o* __this, int32_t key, Dpr_Contest_TensionData_o* value, const MethodInfo_2A45020* method);
+void System_Collections_Generic_Dictionary_int__TensionData____ctor (System_Collections_Generic_Dictionary_int__TensionData__o* __this, const MethodInfo* method_info);
+Dpr_Contest_TensionData_o* System_Collections_Generic_Dictionary_int__TensionData___get_Item (System_Collections_Generic_Dictionary_int__TensionData__o* __this, int32_t key, const MethodInfo* method_info);
+void System_Collections_Generic_Dictionary_int__TensionData___Add (System_Collections_Generic_Dictionary_int__TensionData__o* __this, int32_t key, Dpr_Contest_TensionData_o* value, const MethodInfo* method_info);

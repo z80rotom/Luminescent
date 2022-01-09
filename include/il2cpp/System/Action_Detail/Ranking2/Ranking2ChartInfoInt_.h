@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void System_Action_Detail_Ranking2_Ranking2ChartInfoInt____ctor (System_Action_Detail_Ranking2_Ranking2ChartInfoInt__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_26C6620* method);
-void System_Action_Detail_Ranking2_Ranking2ChartInfoInt___Invoke (System_Action_Detail_Ranking2_Ranking2ChartInfoInt__o* __this, NexPlugin_Detail_Ranking2_Ranking2ChartInfoInt_o obj, const MethodInfo_26C6640* method);
-System_IAsyncResult_o* System_Action_Detail_Ranking2_Ranking2ChartInfoInt___BeginInvoke (System_Action_Detail_Ranking2_Ranking2ChartInfoInt__o* __this, NexPlugin_Detail_Ranking2_Ranking2ChartInfoInt_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_26C6B30* method);
-void System_Action_Detail_Ranking2_Ranking2ChartInfoInt___EndInvoke (System_Action_Detail_Ranking2_Ranking2ChartInfoInt__o* __this, System_IAsyncResult_o* result, const MethodInfo_26C6BD0* method);
+void System_Action_Detail_Ranking2_Ranking2ChartInfoInt____ctor (System_Action_Detail_Ranking2_Ranking2ChartInfoInt__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method_info);
+void System_Action_Detail_Ranking2_Ranking2ChartInfoInt___Invoke (System_Action_Detail_Ranking2_Ranking2ChartInfoInt__o* __this, NexPlugin_Detail_Ranking2_Ranking2ChartInfoInt_o obj, const MethodInfo* method_info);
+System_IAsyncResult_o* System_Action_Detail_Ranking2_Ranking2ChartInfoInt___BeginInvoke (System_Action_Detail_Ranking2_Ranking2ChartInfoInt__o* __this, NexPlugin_Detail_Ranking2_Ranking2ChartInfoInt_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method_info);
+void System_Action_Detail_Ranking2_Ranking2ChartInfoInt___EndInvoke (System_Action_Detail_Ranking2_Ranking2ChartInfoInt__o* __this, System_IAsyncResult_o* result, const MethodInfo* method_info);

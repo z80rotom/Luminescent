@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void PiaPluginSession_SessionSearchCriteriaNative__Reset (PiaPluginSession_SessionSearchCriteriaNative_o __this, const MethodInfo* method);
-void PiaPluginSession_SessionSearchCriteriaNative___ctor (PiaPluginSession_SessionSearchCriteriaNative_o __this, PiaPluginSession_SessionSearchCriteria_o* criteria, const MethodInfo* method);
-void PiaPluginSession_SessionSearchCriteriaNative__Dispose (PiaPluginSession_SessionSearchCriteriaNative_o __this, const MethodInfo* method);
+void PiaPluginSession_SessionSearchCriteriaNative__Reset (PiaPluginSession_SessionSearchCriteriaNative_o __this, const MethodInfo* method_info);
+void PiaPluginSession_SessionSearchCriteriaNative___ctor (PiaPluginSession_SessionSearchCriteriaNative_o __this, PiaPluginSession_SessionSearchCriteria_o* criteria, const MethodInfo* method_info);
+void PiaPluginSession_SessionSearchCriteriaNative__Dispose (PiaPluginSession_SessionSearchCriteriaNative_o __this, const MethodInfo* method_info);

@@ -2,17 +2,17 @@
 
 #include "il2cpp.h"
 
-void System_Threading_Tasks_AwaitTaskContinuation___ctor (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Action_o* action, bool flowExecutionContext, int32_t* stackMark, const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation___ctor (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Action_o* action, bool flowExecutionContext, const MethodInfo* method);
-System_Threading_Tasks_Task_o* System_Threading_Tasks_AwaitTaskContinuation__CreateTask (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Action_object__o* action, Il2CppObject* state, System_Threading_Tasks_TaskScheduler_o* scheduler, const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation__Run (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Threading_Tasks_Task_o* task, bool canInlineContinuationTask, const MethodInfo* method);
-bool System_Threading_Tasks_AwaitTaskContinuation__get_IsValidLocationForInlining (const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation__ExecuteWorkItemHelper (System_Threading_Tasks_AwaitTaskContinuation_o* __this, const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation__System_Threading_IThreadPoolWorkItem_ExecuteWorkItem (System_Threading_Tasks_AwaitTaskContinuation_o* __this, const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation__System_Threading_IThreadPoolWorkItem_MarkAborted (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Threading_ThreadAbortException_o* tae, const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation__InvokeAction (Il2CppObject* state, const MethodInfo* method);
-System_Threading_ContextCallback_o* System_Threading_Tasks_AwaitTaskContinuation__GetInvokeActionCallback (const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation__RunCallback (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Threading_ContextCallback_o* callback, Il2CppObject* state, System_Threading_Tasks_Task_o** currentTask, const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation__RunOrScheduleAction (System_Action_o* action, bool allowInlining, System_Threading_Tasks_Task_o** currentTask, const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation__UnsafeScheduleAction (System_Action_o* action, System_Threading_Tasks_Task_o* task, const MethodInfo* method);
-void System_Threading_Tasks_AwaitTaskContinuation__ThrowAsyncIfNecessary (System_Exception_o* exc, const MethodInfo* method);
+void System_Threading_Tasks_AwaitTaskContinuation___ctor (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Action_o* action, bool flowExecutionContext, int32_t* stackMark, const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation___ctor (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Action_o* action, bool flowExecutionContext, const MethodInfo* method_info);
+System_Threading_Tasks_Task_o* System_Threading_Tasks_AwaitTaskContinuation__CreateTask (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Action_object__o* action, Il2CppObject* state, System_Threading_Tasks_TaskScheduler_o* scheduler, const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation__Run (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Threading_Tasks_Task_o* task, bool canInlineContinuationTask, const MethodInfo* method_info);
+bool System_Threading_Tasks_AwaitTaskContinuation__get_IsValidLocationForInlining (const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation__ExecuteWorkItemHelper (System_Threading_Tasks_AwaitTaskContinuation_o* __this, const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation__System_Threading_IThreadPoolWorkItem_ExecuteWorkItem (System_Threading_Tasks_AwaitTaskContinuation_o* __this, const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation__System_Threading_IThreadPoolWorkItem_MarkAborted (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Threading_ThreadAbortException_o* tae, const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation__InvokeAction (Il2CppObject* state, const MethodInfo* method_info);
+System_Threading_ContextCallback_o* System_Threading_Tasks_AwaitTaskContinuation__GetInvokeActionCallback (const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation__RunCallback (System_Threading_Tasks_AwaitTaskContinuation_o* __this, System_Threading_ContextCallback_o* callback, Il2CppObject* state, System_Threading_Tasks_Task_o** currentTask, const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation__RunOrScheduleAction (System_Action_o* action, bool allowInlining, System_Threading_Tasks_Task_o** currentTask, const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation__UnsafeScheduleAction (System_Action_o* action, System_Threading_Tasks_Task_o* task, const MethodInfo* method_info);
+void System_Threading_Tasks_AwaitTaskContinuation__ThrowAsyncIfNecessary (System_Exception_o* exc, const MethodInfo* method_info);

@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void System_Threading_Tasks_Shared_CancellationTokenRegistration____ctor (System_Threading_Tasks_Shared_CancellationTokenRegistration__o* __this, System_Threading_CancellationTokenRegistration_o value, const MethodInfo_2916F00* method);
+void System_Threading_Tasks_Shared_CancellationTokenRegistration____ctor (System_Threading_Tasks_Shared_CancellationTokenRegistration__o* __this, System_Threading_CancellationTokenRegistration_o value, const MethodInfo* method_info);

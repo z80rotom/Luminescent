@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void XLSXContent_FieldWalkingPokeTalk_SheetSheet1___ctor (XLSXContent_FieldWalkingPokeTalk_SheetSheet1_o* __this, const MethodInfo* method);
+void XLSXContent_FieldWalkingPokeTalk_SheetSheet1___ctor (XLSXContent_FieldWalkingPokeTalk_SheetSheet1_o* __this, const MethodInfo* method_info);

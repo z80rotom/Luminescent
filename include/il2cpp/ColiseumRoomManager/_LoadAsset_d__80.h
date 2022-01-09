@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void ColiseumRoomManager__LoadAsset_d__80___ctor (ColiseumRoomManager__LoadAsset_d__80_o* __this, int32_t __1__state, const MethodInfo* method);
-void ColiseumRoomManager__LoadAsset_d__80__System_IDisposable_Dispose (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method);
-bool ColiseumRoomManager__LoadAsset_d__80__MoveNext (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method);
-Il2CppObject* ColiseumRoomManager__LoadAsset_d__80__System_Collections_Generic_IEnumerator_System_Object__get_Current (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method);
-void ColiseumRoomManager__LoadAsset_d__80__System_Collections_IEnumerator_Reset (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method);
-Il2CppObject* ColiseumRoomManager__LoadAsset_d__80__System_Collections_IEnumerator_get_Current (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method);
+void ColiseumRoomManager__LoadAsset_d__80___ctor (ColiseumRoomManager__LoadAsset_d__80_o* __this, int32_t __1__state, const MethodInfo* method_info);
+void ColiseumRoomManager__LoadAsset_d__80__System_IDisposable_Dispose (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method_info);
+bool ColiseumRoomManager__LoadAsset_d__80__MoveNext (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method_info);
+Il2CppObject* ColiseumRoomManager__LoadAsset_d__80__System_Collections_Generic_IEnumerator_System_Object__get_Current (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method_info);
+void ColiseumRoomManager__LoadAsset_d__80__System_Collections_IEnumerator_Reset (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method_info);
+Il2CppObject* ColiseumRoomManager__LoadAsset_d__80__System_Collections_IEnumerator_get_Current (ColiseumRoomManager__LoadAsset_d__80_o* __this, const MethodInfo* method_info);

@@ -2,17 +2,17 @@
 
 #include "il2cpp.h"
 
-void System_Runtime_InteropServices_SafeHandle___ctor (System_Runtime_InteropServices_SafeHandle_o* __this, intptr_t invalidHandleValue, bool ownsHandle, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__Finalize (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__SetHandle (System_Runtime_InteropServices_SafeHandle_o* __this, intptr_t handle, const MethodInfo* method);
-intptr_t System_Runtime_InteropServices_SafeHandle__DangerousGetHandle (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method);
-bool System_Runtime_InteropServices_SafeHandle__get_IsClosed (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__Close (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__Dispose (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__Dispose (System_Runtime_InteropServices_SafeHandle_o* __this, bool disposing, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__SetHandleAsInvalid (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__DangerousAddRef (System_Runtime_InteropServices_SafeHandle_o* __this, bool* success, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__DangerousRelease (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__InternalDispose (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__InternalFinalize (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method);
-void System_Runtime_InteropServices_SafeHandle__DangerousReleaseInternal (System_Runtime_InteropServices_SafeHandle_o* __this, bool dispose, const MethodInfo* method);
+void System_Runtime_InteropServices_SafeHandle___ctor (System_Runtime_InteropServices_SafeHandle_o* __this, intptr_t invalidHandleValue, bool ownsHandle, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__Finalize (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__SetHandle (System_Runtime_InteropServices_SafeHandle_o* __this, intptr_t handle, const MethodInfo* method_info);
+intptr_t System_Runtime_InteropServices_SafeHandle__DangerousGetHandle (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method_info);
+bool System_Runtime_InteropServices_SafeHandle__get_IsClosed (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__Close (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__Dispose (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__Dispose (System_Runtime_InteropServices_SafeHandle_o* __this, bool disposing, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__SetHandleAsInvalid (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__DangerousAddRef (System_Runtime_InteropServices_SafeHandle_o* __this, bool* success, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__DangerousRelease (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__InternalDispose (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__InternalFinalize (System_Runtime_InteropServices_SafeHandle_o* __this, const MethodInfo* method_info);
+void System_Runtime_InteropServices_SafeHandle__DangerousReleaseInternal (System_Runtime_InteropServices_SafeHandle_o* __this, bool dispose, const MethodInfo* method_info);

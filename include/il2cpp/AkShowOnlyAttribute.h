@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void AkShowOnlyAttribute___ctor (AkShowOnlyAttribute_o* __this, const MethodInfo* method);
+void AkShowOnlyAttribute___ctor (AkShowOnlyAttribute_o* __this, const MethodInfo* method_info);

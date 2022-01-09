@@ -2,20 +2,20 @@
 
 #include "il2cpp.h"
 
-uint8_t Dpr_NetworkUtils_ANetData_EmotionData___get_GetDataID (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo_2AC4B90* method);
-void Dpr_NetworkUtils_ANetData_EmotionData____ctor (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo_2AC4C40* method);
-void Dpr_NetworkUtils_ANetData_EmotionData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo_2AC4CA0* method);
-void Dpr_NetworkUtils_ANetData_EmotionData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t idx, const MethodInfo_2AC4F20* method);
-int32_t Dpr_NetworkUtils_ANetData_EmotionData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo_2AC4F30* method);
-int32_t Dpr_NetworkUtils_ANetData_EmotionData___SendReliableData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AC4F40* method);
-int32_t Dpr_NetworkUtils_ANetData_EmotionData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t transportType, const MethodInfo_2AC4FF0* method);
-int32_t Dpr_NetworkUtils_ANetData_EmotionData___SendUnReliableData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo_2AC5090* method);
-int32_t Dpr_NetworkUtils_ANetData_EmotionData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t transportType, const MethodInfo_2AC5130* method);
-INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_EmotionData___CreateReliableData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo_2AC51C0* method);
-INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_EmotionData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo_2AC5280* method);
-void Dpr_NetworkUtils_ANetData_EmotionData___WriteSendData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo_2AC5340* method);
-System_Byte_array* Dpr_NetworkUtils_ANetData_EmotionData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo_2AC5390* method);
-void Dpr_NetworkUtils_ANetData_EmotionData___ReceivePacket (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC5540* method);
-void Dpr_NetworkUtils_ANetData_EmotionData___ReadRecieveData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC5590* method);
-Dpr_NetworkUtils_EmotionData_o Dpr_NetworkUtils_ANetData_EmotionData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, INL1_PacketReader_o* pr, const MethodInfo_2AC55D0* method);
-void Dpr_NetworkUtils_ANetData_EmotionData____cctor (const MethodInfo_2AC58C0* method);
+uint8_t Dpr_NetworkUtils_ANetData_EmotionData___get_GetDataID (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_EmotionData____ctor (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_EmotionData___CreateDataBuffer (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_EmotionData____Debug_ChangeFromStarionIndex (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t idx, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_EmotionData___get_FromStationIndex (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_EmotionData___SendReliableData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_EmotionData___SendReliableDataToAll (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t transportType, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_EmotionData___SendUnReliableData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t sendStationIndex, int32_t transportType, const MethodInfo* method_info);
+int32_t Dpr_NetworkUtils_ANetData_EmotionData___SendUnReliableDataToAll (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, int32_t transportType, const MethodInfo* method_info);
+INL1_PacketWriterRe_o* Dpr_NetworkUtils_ANetData_EmotionData___CreateReliableData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo* method_info);
+INL1_PacketWriter_o* Dpr_NetworkUtils_ANetData_EmotionData___CreateUnReliableData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_EmotionData___WriteSendData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, INL1_PacketWriter_o* appendTarget, const MethodInfo* method_info);
+System_Byte_array* Dpr_NetworkUtils_ANetData_EmotionData___ConvertStructToBytes (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_EmotionData___ReceivePacket (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, INL1_PacketReader_o* pr, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_EmotionData___ReadRecieveData (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, INL1_PacketReader_o* pr, const MethodInfo* method_info);
+Dpr_NetworkUtils_EmotionData_o Dpr_NetworkUtils_ANetData_EmotionData___ConvertBytesToStruct (Dpr_NetworkUtils_ANetData_EmotionData__o* __this, INL1_PacketReader_o* pr, const MethodInfo* method_info);
+void Dpr_NetworkUtils_ANetData_EmotionData____cctor (const MethodInfo* method_info);

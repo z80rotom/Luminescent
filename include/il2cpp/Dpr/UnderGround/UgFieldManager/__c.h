@@ -2,22 +2,22 @@
 
 #include "il2cpp.h"
 
-void Dpr_UnderGround_UgFieldManager___c___cctor (const MethodInfo* method);
-void Dpr_UnderGround_UgFieldManager___c___ctor (Dpr_UnderGround_UgFieldManager___c_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_UgFieldManager___c___InputUpdate_b__84_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_UgFieldManager___c___CloseMsgWindows_b__91_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___CreateDigPoints_b__93_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgDigFossilePosZoneData_o* x, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___CreateDigPoints_b__93_2 (Dpr_UnderGround_UgFieldManager___c_o* __this, XLSXContent_UnderGroundFossilNum_SheetData_o* x, const MethodInfo* method);
-void Dpr_UnderGround_UgFieldManager___c___DeleteAllDigPoints_b__94_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, Dpr_UnderGround_UgFieldManager_DigPointModel_o* x, const MethodInfo* method);
-void Dpr_UnderGround_UgFieldManager___c___OnDestroy_b__104_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, Dpr_UnderGround_UgFieldManager_DigPointModel_o* x, const MethodInfo* method);
-int32_t Dpr_UnderGround_UgFieldManager___c___DebugDrawPokeRate_b__108_2 (Dpr_UnderGround_UgFieldManager___c_o* __this, System_ValueTuple_int__int__o a, System_ValueTuple_int__int__o b, const MethodInfo* method);
-void Dpr_UnderGround_UgFieldManager___c___SearchDigPoint_b__126_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, Effect_EffectInstance_o* eff, const MethodInfo* method);
-void Dpr_UnderGround_UgFieldManager___c___Anahori_b__154_2 (Dpr_UnderGround_UgFieldManager___c_o* __this, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___CreateSecretBase_Immidiate_b__158_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, Dpr_UnderGround_UgFieldManager_SecretBaseModel_o* model, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___CreateNPC_b__182_2 (Dpr_UnderGround_UgFieldManager___c_o* __this, XLSXContent_UgNpcList_SheetSheet1_o* x, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___CheckAroundWalls_b__199_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, bool x, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___CreateSecretBaseRandom_b__203_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgDrillUsablePosition_o* x, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___DebugCreateTonarihori_b__205_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgDigFossilePosZoneData_o* x, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___DebugCreateTonarihori_b__205_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgDigFossilePosGroup_o* x, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___CreateTonarihoriGrids_b__206_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgAllDigFossilePosData_o* x, const MethodInfo* method);
-bool Dpr_UnderGround_UgFieldManager___c___DeleteTargetTonarihori_b__209_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, Dpr_UnderGround_UgFieldManager_DigPointModel_o* x, const MethodInfo* method);
+void Dpr_UnderGround_UgFieldManager___c___cctor (const MethodInfo* method_info);
+void Dpr_UnderGround_UgFieldManager___c___ctor (Dpr_UnderGround_UgFieldManager___c_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFieldManager___c___InputUpdate_b__84_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFieldManager___c___CloseMsgWindows_b__91_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___CreateDigPoints_b__93_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgDigFossilePosZoneData_o* x, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___CreateDigPoints_b__93_2 (Dpr_UnderGround_UgFieldManager___c_o* __this, XLSXContent_UnderGroundFossilNum_SheetData_o* x, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFieldManager___c___DeleteAllDigPoints_b__94_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, Dpr_UnderGround_UgFieldManager_DigPointModel_o* x, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFieldManager___c___OnDestroy_b__104_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, Dpr_UnderGround_UgFieldManager_DigPointModel_o* x, const MethodInfo* method_info);
+int32_t Dpr_UnderGround_UgFieldManager___c___DebugDrawPokeRate_b__108_2 (Dpr_UnderGround_UgFieldManager___c_o* __this, System_ValueTuple_int__int__o a, System_ValueTuple_int__int__o b, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFieldManager___c___SearchDigPoint_b__126_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, Effect_EffectInstance_o* eff, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFieldManager___c___Anahori_b__154_2 (Dpr_UnderGround_UgFieldManager___c_o* __this, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___CreateSecretBase_Immidiate_b__158_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, Dpr_UnderGround_UgFieldManager_SecretBaseModel_o* model, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___CreateNPC_b__182_2 (Dpr_UnderGround_UgFieldManager___c_o* __this, XLSXContent_UgNpcList_SheetSheet1_o* x, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___CheckAroundWalls_b__199_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, bool x, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___CreateSecretBaseRandom_b__203_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgDrillUsablePosition_o* x, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___DebugCreateTonarihori_b__205_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgDigFossilePosZoneData_o* x, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___DebugCreateTonarihori_b__205_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgDigFossilePosGroup_o* x, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___CreateTonarihoriGrids_b__206_0 (Dpr_UnderGround_UgFieldManager___c_o* __this, UgAllDigFossilePosData_o* x, const MethodInfo* method_info);
+bool Dpr_UnderGround_UgFieldManager___c___DeleteTargetTonarihori_b__209_1 (Dpr_UnderGround_UgFieldManager___c_o* __this, Dpr_UnderGround_UgFieldManager_DigPointModel_o* x, const MethodInfo* method_info);

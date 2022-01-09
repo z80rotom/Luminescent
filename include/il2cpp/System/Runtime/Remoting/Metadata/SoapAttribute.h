@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void System_Runtime_Remoting_Metadata_SoapAttribute___ctor (System_Runtime_Remoting_Metadata_SoapAttribute_o* __this, const MethodInfo* method);
-bool System_Runtime_Remoting_Metadata_SoapAttribute__get_UseAttribute (System_Runtime_Remoting_Metadata_SoapAttribute_o* __this, const MethodInfo* method);
-System_String_o* System_Runtime_Remoting_Metadata_SoapAttribute__get_XmlNamespace (System_Runtime_Remoting_Metadata_SoapAttribute_o* __this, const MethodInfo* method);
-void System_Runtime_Remoting_Metadata_SoapAttribute__SetReflectionObject (System_Runtime_Remoting_Metadata_SoapAttribute_o* __this, Il2CppObject* reflectionObject, const MethodInfo* method);
+void System_Runtime_Remoting_Metadata_SoapAttribute___ctor (System_Runtime_Remoting_Metadata_SoapAttribute_o* __this, const MethodInfo* method_info);
+bool System_Runtime_Remoting_Metadata_SoapAttribute__get_UseAttribute (System_Runtime_Remoting_Metadata_SoapAttribute_o* __this, const MethodInfo* method_info);
+System_String_o* System_Runtime_Remoting_Metadata_SoapAttribute__get_XmlNamespace (System_Runtime_Remoting_Metadata_SoapAttribute_o* __this, const MethodInfo* method_info);
+void System_Runtime_Remoting_Metadata_SoapAttribute__SetReflectionObject (System_Runtime_Remoting_Metadata_SoapAttribute_o* __this, Il2CppObject* reflectionObject, const MethodInfo* method_info);

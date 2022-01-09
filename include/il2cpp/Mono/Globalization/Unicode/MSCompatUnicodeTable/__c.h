@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void Mono_Globalization_Unicode_MSCompatUnicodeTable___c___cctor (const MethodInfo* method);
-void Mono_Globalization_Unicode_MSCompatUnicodeTable___c___ctor (Mono_Globalization_Unicode_MSCompatUnicodeTable___c_o* __this, const MethodInfo* method);
-int32_t Mono_Globalization_Unicode_MSCompatUnicodeTable___c___BuildTailoringTables_b__17_0 (Mono_Globalization_Unicode_MSCompatUnicodeTable___c_o* __this, Mono_Globalization_Unicode_Level2Map_o* a, Mono_Globalization_Unicode_Level2Map_o* b, const MethodInfo* method);
+void Mono_Globalization_Unicode_MSCompatUnicodeTable___c___cctor (const MethodInfo* method_info);
+void Mono_Globalization_Unicode_MSCompatUnicodeTable___c___ctor (Mono_Globalization_Unicode_MSCompatUnicodeTable___c_o* __this, const MethodInfo* method_info);
+int32_t Mono_Globalization_Unicode_MSCompatUnicodeTable___c___BuildTailoringTables_b__17_0 (Mono_Globalization_Unicode_MSCompatUnicodeTable___c_o* __this, Mono_Globalization_Unicode_Level2Map_o* a, Mono_Globalization_Unicode_Level2Map_o* b, const MethodInfo* method_info);

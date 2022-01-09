@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_List_RectTransform____ctor (System_Collections_Generic_List_RectTransform__o* __this, const MethodInfo_2BAD0F0* method);
-int32_t System_Collections_Generic_List_RectTransform___get_Count (System_Collections_Generic_List_RectTransform__o* __this, const MethodInfo_2BAD9C0* method);
-UnityEngine_RectTransform_o* System_Collections_Generic_List_RectTransform___get_Item (System_Collections_Generic_List_RectTransform__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_RectTransform___Add (System_Collections_Generic_List_RectTransform__o* __this, UnityEngine_RectTransform_o* item, const MethodInfo_2BADD00* method);
-void System_Collections_Generic_List_RectTransform___Clear (System_Collections_Generic_List_RectTransform__o* __this, const MethodInfo_2BAE0A0* method);
+void System_Collections_Generic_List_RectTransform____ctor (System_Collections_Generic_List_RectTransform__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_RectTransform___get_Count (System_Collections_Generic_List_RectTransform__o* __this, const MethodInfo* method_info);
+UnityEngine_RectTransform_o* System_Collections_Generic_List_RectTransform___get_Item (System_Collections_Generic_List_RectTransform__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_RectTransform___Add (System_Collections_Generic_List_RectTransform__o* __this, UnityEngine_RectTransform_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_RectTransform___Clear (System_Collections_Generic_List_RectTransform__o* __this, const MethodInfo* method_info);

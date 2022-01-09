@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_Dictionary_BtlGround__string____ctor (System_Collections_Generic_Dictionary_BtlGround__string__o* __this, const MethodInfo_2996500* method);
-System_String_o* System_Collections_Generic_Dictionary_BtlGround__string___get_Item (System_Collections_Generic_Dictionary_BtlGround__string__o* __this, uint8_t key, const MethodInfo_29968D0* method);
-void System_Collections_Generic_Dictionary_BtlGround__string___Add (System_Collections_Generic_Dictionary_BtlGround__string__o* __this, uint8_t key, System_String_o* value, const MethodInfo_29969C0* method);
-bool System_Collections_Generic_Dictionary_BtlGround__string___ContainsKey (System_Collections_Generic_Dictionary_BtlGround__string__o* __this, uint8_t key, const MethodInfo_2996C20* method);
+void System_Collections_Generic_Dictionary_BtlGround__string____ctor (System_Collections_Generic_Dictionary_BtlGround__string__o* __this, const MethodInfo* method_info);
+System_String_o* System_Collections_Generic_Dictionary_BtlGround__string___get_Item (System_Collections_Generic_Dictionary_BtlGround__string__o* __this, uint8_t key, const MethodInfo* method_info);
+void System_Collections_Generic_Dictionary_BtlGround__string___Add (System_Collections_Generic_Dictionary_BtlGround__string__o* __this, uint8_t key, System_String_o* value, const MethodInfo* method_info);
+bool System_Collections_Generic_Dictionary_BtlGround__string___ContainsKey (System_Collections_Generic_Dictionary_BtlGround__string__o* __this, uint8_t key, const MethodInfo* method_info);

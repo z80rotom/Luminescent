@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-UnityEngine_Timeline_TimelineClip_o* UnityEngine_Timeline_AudioTrack__CreateClip (UnityEngine_Timeline_AudioTrack_o* __this, UnityEngine_AudioClip_o* clip, const MethodInfo* method);
-UnityEngine_Playables_Playable_o UnityEngine_Timeline_AudioTrack__CompileClips (UnityEngine_Timeline_AudioTrack_o* __this, UnityEngine_Playables_PlayableGraph_o graph, UnityEngine_GameObject_o* go, System_Collections_Generic_IList_TimelineClip__o* timelineClips, UnityEngine_Timeline_IntervalTree_RuntimeElement__o* tree, const MethodInfo* method);
-System_Collections_Generic_IEnumerable_PlayableBinding__o* UnityEngine_Timeline_AudioTrack__get_outputs (UnityEngine_Timeline_AudioTrack_o* __this, const MethodInfo* method);
-void UnityEngine_Timeline_AudioTrack__OnValidate (UnityEngine_Timeline_AudioTrack_o* __this, const MethodInfo* method);
-void UnityEngine_Timeline_AudioTrack___ctor (UnityEngine_Timeline_AudioTrack_o* __this, const MethodInfo* method);
+UnityEngine_Timeline_TimelineClip_o* UnityEngine_Timeline_AudioTrack__CreateClip (UnityEngine_Timeline_AudioTrack_o* __this, UnityEngine_AudioClip_o* clip, const MethodInfo* method_info);
+UnityEngine_Playables_Playable_o UnityEngine_Timeline_AudioTrack__CompileClips (UnityEngine_Timeline_AudioTrack_o* __this, UnityEngine_Playables_PlayableGraph_o graph, UnityEngine_GameObject_o* go, System_Collections_Generic_IList_TimelineClip__o* timelineClips, UnityEngine_Timeline_IntervalTree_RuntimeElement__o* tree, const MethodInfo* method_info);
+System_Collections_Generic_IEnumerable_PlayableBinding__o* UnityEngine_Timeline_AudioTrack__get_outputs (UnityEngine_Timeline_AudioTrack_o* __this, const MethodInfo* method_info);
+void UnityEngine_Timeline_AudioTrack__OnValidate (UnityEngine_Timeline_AudioTrack_o* __this, const MethodInfo* method_info);
+void UnityEngine_Timeline_AudioTrack___ctor (UnityEngine_Timeline_AudioTrack_o* __this, const MethodInfo* method_info);

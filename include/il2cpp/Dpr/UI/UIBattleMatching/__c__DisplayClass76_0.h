@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void Dpr_UI_UIBattleMatching___c__DisplayClass76_0___ctor (Dpr_UI_UIBattleMatching___c__DisplayClass76_0_o* __this, const MethodInfo* method);
-void Dpr_UI_UIBattleMatching___c__DisplayClass76_0___ShowConfirmLeaveSessionMsg_b__0 (Dpr_UI_UIBattleMatching___c__DisplayClass76_0_o* __this, const MethodInfo* method);
-void Dpr_UI_UIBattleMatching___c__DisplayClass76_0___ShowConfirmLeaveSessionMsg_b__1 (Dpr_UI_UIBattleMatching___c__DisplayClass76_0_o* __this, int32_t select, const MethodInfo* method);
+void Dpr_UI_UIBattleMatching___c__DisplayClass76_0___ctor (Dpr_UI_UIBattleMatching___c__DisplayClass76_0_o* __this, const MethodInfo* method_info);
+void Dpr_UI_UIBattleMatching___c__DisplayClass76_0___ShowConfirmLeaveSessionMsg_b__0 (Dpr_UI_UIBattleMatching___c__DisplayClass76_0_o* __this, const MethodInfo* method_info);
+void Dpr_UI_UIBattleMatching___c__DisplayClass76_0___ShowConfirmLeaveSessionMsg_b__1 (Dpr_UI_UIBattleMatching___c__DisplayClass76_0_o* __this, int32_t select, const MethodInfo* method_info);

@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-System_Configuration_ConfigurationPropertyCollection_o* System_Configuration_ConfigurationElement__get_Properties (System_Configuration_ConfigurationElement_o* __this, const MethodInfo* method);
-bool System_Configuration_ConfigurationElement__IsModified (System_Configuration_ConfigurationElement_o* __this, const MethodInfo* method);
-void System_Configuration_ConfigurationElement__Reset (System_Configuration_ConfigurationElement_o* __this, System_Configuration_ConfigurationElement_o* parentElement, const MethodInfo* method);
-void System_Configuration_ConfigurationElement__ResetModified (System_Configuration_ConfigurationElement_o* __this, const MethodInfo* method);
+System_Configuration_ConfigurationPropertyCollection_o* System_Configuration_ConfigurationElement__get_Properties (System_Configuration_ConfigurationElement_o* __this, const MethodInfo* method_info);
+bool System_Configuration_ConfigurationElement__IsModified (System_Configuration_ConfigurationElement_o* __this, const MethodInfo* method_info);
+void System_Configuration_ConfigurationElement__Reset (System_Configuration_ConfigurationElement_o* __this, System_Configuration_ConfigurationElement_o* parentElement, const MethodInfo* method_info);
+void System_Configuration_ConfigurationElement__ResetModified (System_Configuration_ConfigurationElement_o* __this, const MethodInfo* method_info);

@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-int64_t UnityEngine_UIElements_EventBase_MouseMoveEvent___TypeId (const MethodInfo_2CCE2A0* method);
-void UnityEngine_UIElements_EventBase_MouseMoveEvent___Acquire (UnityEngine_UIElements_EventBase_MouseMoveEvent__o* __this, const MethodInfo_2CCE960* method);
-void UnityEngine_UIElements_EventBase_MouseMoveEvent___Dispose (UnityEngine_UIElements_EventBase_MouseMoveEvent__o* __this, const MethodInfo_2CCE970* method);
-int64_t UnityEngine_UIElements_EventBase_MouseMoveEvent___get_eventTypeId (UnityEngine_UIElements_EventBase_MouseMoveEvent__o* __this, const MethodInfo_2CCEA80* method);
+int64_t UnityEngine_UIElements_EventBase_MouseMoveEvent___TypeId (const MethodInfo* method_info);
+void UnityEngine_UIElements_EventBase_MouseMoveEvent___Acquire (UnityEngine_UIElements_EventBase_MouseMoveEvent__o* __this, const MethodInfo* method_info);
+void UnityEngine_UIElements_EventBase_MouseMoveEvent___Dispose (UnityEngine_UIElements_EventBase_MouseMoveEvent__o* __this, const MethodInfo* method_info);
+int64_t UnityEngine_UIElements_EventBase_MouseMoveEvent___get_eventTypeId (UnityEngine_UIElements_EventBase_MouseMoveEvent__o* __this, const MethodInfo* method_info);

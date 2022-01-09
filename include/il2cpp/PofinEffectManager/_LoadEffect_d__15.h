@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void PofinEffectManager__LoadEffect_d__15___ctor (PofinEffectManager__LoadEffect_d__15_o* __this, int32_t __1__state, const MethodInfo* method);
-void PofinEffectManager__LoadEffect_d__15__System_IDisposable_Dispose (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method);
-bool PofinEffectManager__LoadEffect_d__15__MoveNext (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method);
-Il2CppObject* PofinEffectManager__LoadEffect_d__15__System_Collections_Generic_IEnumerator_System_Object__get_Current (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method);
-void PofinEffectManager__LoadEffect_d__15__System_Collections_IEnumerator_Reset (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method);
-Il2CppObject* PofinEffectManager__LoadEffect_d__15__System_Collections_IEnumerator_get_Current (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method);
+void PofinEffectManager__LoadEffect_d__15___ctor (PofinEffectManager__LoadEffect_d__15_o* __this, int32_t __1__state, const MethodInfo* method_info);
+void PofinEffectManager__LoadEffect_d__15__System_IDisposable_Dispose (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method_info);
+bool PofinEffectManager__LoadEffect_d__15__MoveNext (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method_info);
+Il2CppObject* PofinEffectManager__LoadEffect_d__15__System_Collections_Generic_IEnumerator_System_Object__get_Current (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method_info);
+void PofinEffectManager__LoadEffect_d__15__System_Collections_IEnumerator_Reset (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method_info);
+Il2CppObject* PofinEffectManager__LoadEffect_d__15__System_Collections_IEnumerator_get_Current (PofinEffectManager__LoadEffect_d__15_o* __this, const MethodInfo* method_info);

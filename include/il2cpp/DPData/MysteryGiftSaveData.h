@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void DPData_MysteryGiftSaveData__Clear (DPData_MysteryGiftSaveData_o __this, const MethodInfo* method);
+void DPData_MysteryGiftSaveData__Clear (DPData_MysteryGiftSaveData_o __this, const MethodInfo* method_info);

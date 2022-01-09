@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void EncEffectSeqDataTable___ctor (EncEffectSeqDataTable_o* __this, const MethodInfo* method);
+void EncEffectSeqDataTable___ctor (EncEffectSeqDataTable_o* __this, const MethodInfo* method_info);

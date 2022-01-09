@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-UnityEngine_Playables_PlayableOutputHandle_o UnityEngine_Experimental_Playables_TexturePlayableOutput__GetHandle (UnityEngine_Experimental_Playables_TexturePlayableOutput_o __this, const MethodInfo* method);
+UnityEngine_Playables_PlayableOutputHandle_o UnityEngine_Experimental_Playables_TexturePlayableOutput__GetHandle (UnityEngine_Experimental_Playables_TexturePlayableOutput_o __this, const MethodInfo* method_info);

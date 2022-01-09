@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void System_Array_InternalEnumerator_bool____ctor (System_Array_InternalEnumerator_bool__o __this, System_Array_o* array, const MethodInfo_2680180* method);
-void System_Array_InternalEnumerator_bool___Dispose (System_Array_InternalEnumerator_bool__o __this, const MethodInfo_26801B0* method);
-bool System_Array_InternalEnumerator_bool___MoveNext (System_Array_InternalEnumerator_bool__o __this, const MethodInfo_26801C0* method);
-bool System_Array_InternalEnumerator_bool___get_Current (System_Array_InternalEnumerator_bool__o __this, const MethodInfo_2680220* method);
-void System_Array_InternalEnumerator_bool___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_bool__o __this, const MethodInfo_2680360* method);
-Il2CppObject* System_Array_InternalEnumerator_bool___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_bool__o __this, const MethodInfo_2680370* method);
+void System_Array_InternalEnumerator_bool____ctor (System_Array_InternalEnumerator_bool__o __this, System_Array_o* array, const MethodInfo* method_info);
+void System_Array_InternalEnumerator_bool___Dispose (System_Array_InternalEnumerator_bool__o __this, const MethodInfo* method_info);
+bool System_Array_InternalEnumerator_bool___MoveNext (System_Array_InternalEnumerator_bool__o __this, const MethodInfo* method_info);
+bool System_Array_InternalEnumerator_bool___get_Current (System_Array_InternalEnumerator_bool__o __this, const MethodInfo* method_info);
+void System_Array_InternalEnumerator_bool___System_Collections_IEnumerator_Reset (System_Array_InternalEnumerator_bool__o __this, const MethodInfo* method_info);
+Il2CppObject* System_Array_InternalEnumerator_bool___System_Collections_IEnumerator_get_Current (System_Array_InternalEnumerator_bool__o __this, const MethodInfo* method_info);

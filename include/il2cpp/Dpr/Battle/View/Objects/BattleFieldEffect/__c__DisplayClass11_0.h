@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_View_Objects_BattleFieldEffect___c__DisplayClass11_0___ctor (Dpr_Battle_View_Objects_BattleFieldEffect___c__DisplayClass11_0_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_Objects_BattleFieldEffect___c__DisplayClass11_0___Play_b__0 (Dpr_Battle_View_Objects_BattleFieldEffect___c__DisplayClass11_0_o* __this, Effect_EffectInstance_o* __, const MethodInfo* method);
+void Dpr_Battle_View_Objects_BattleFieldEffect___c__DisplayClass11_0___ctor (Dpr_Battle_View_Objects_BattleFieldEffect___c__DisplayClass11_0_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_Objects_BattleFieldEffect___c__DisplayClass11_0___Play_b__0 (Dpr_Battle_View_Objects_BattleFieldEffect___c__DisplayClass11_0_o* __this, Effect_EffectInstance_o* __, const MethodInfo* method_info);

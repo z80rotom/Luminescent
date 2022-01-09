@@ -2,12 +2,12 @@
 
 #include "il2cpp.h"
 
-int32_t System_Collections_Generic_List_StatueItem___get_Count (System_Collections_Generic_List_StatueItem__o* __this, const MethodInfo_2BAD9C0* method);
-Dpr_SecretBase_StatueItem_o* System_Collections_Generic_List_StatueItem___get_Item (System_Collections_Generic_List_StatueItem__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_StatueItem___set_Item (System_Collections_Generic_List_StatueItem__o* __this, int32_t index, Dpr_SecretBase_StatueItem_o* value, const MethodInfo_2BADA30* method);
-Dpr_SecretBase_StatueItem_o* System_Collections_Generic_List_StatueItem___Find (System_Collections_Generic_List_StatueItem__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE580* method);
-System_Collections_Generic_List_T__o* System_Collections_Generic_List_StatueItem___FindAll (System_Collections_Generic_List_StatueItem__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE660* method);
-void System_Collections_Generic_List_StatueItem___ForEach (System_Collections_Generic_List_StatueItem__o* __this, System_Action_T__o* action, const MethodInfo_2BAE8C0* method);
-System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_StatueItem___GetEnumerator (System_Collections_Generic_List_StatueItem__o* __this, const MethodInfo_2BAEA50* method);
-bool System_Collections_Generic_List_StatueItem___Remove (System_Collections_Generic_List_StatueItem__o* __this, Dpr_SecretBase_StatueItem_o* item, const MethodInfo_2BAF560* method);
-void System_Collections_Generic_List_StatueItem___Sort (System_Collections_Generic_List_StatueItem__o* __this, int32_t index, int32_t count, System_Collections_Generic_IComparer_T__o* comparer, const MethodInfo_2BAFC50* method);
+int32_t System_Collections_Generic_List_StatueItem___get_Count (System_Collections_Generic_List_StatueItem__o* __this, const MethodInfo* method_info);
+Dpr_SecretBase_StatueItem_o* System_Collections_Generic_List_StatueItem___get_Item (System_Collections_Generic_List_StatueItem__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_StatueItem___set_Item (System_Collections_Generic_List_StatueItem__o* __this, int32_t index, Dpr_SecretBase_StatueItem_o* value, const MethodInfo* method_info);
+Dpr_SecretBase_StatueItem_o* System_Collections_Generic_List_StatueItem___Find (System_Collections_Generic_List_StatueItem__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);
+System_Collections_Generic_List_T__o* System_Collections_Generic_List_StatueItem___FindAll (System_Collections_Generic_List_StatueItem__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);
+void System_Collections_Generic_List_StatueItem___ForEach (System_Collections_Generic_List_StatueItem__o* __this, System_Action_T__o* action, const MethodInfo* method_info);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_StatueItem___GetEnumerator (System_Collections_Generic_List_StatueItem__o* __this, const MethodInfo* method_info);
+bool System_Collections_Generic_List_StatueItem___Remove (System_Collections_Generic_List_StatueItem__o* __this, Dpr_SecretBase_StatueItem_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_StatueItem___Sort (System_Collections_Generic_List_StatueItem__o* __this, int32_t index, int32_t count, System_Collections_Generic_IComparer_T__o* comparer, const MethodInfo* method_info);

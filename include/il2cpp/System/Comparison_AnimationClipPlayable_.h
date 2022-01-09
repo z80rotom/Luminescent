@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void System_Comparison_AnimationClipPlayable____ctor (System_Comparison_AnimationClipPlayable__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_2A99D60* method);
-int32_t System_Comparison_AnimationClipPlayable___Invoke (System_Comparison_AnimationClipPlayable__o* __this, UnityEngine_Animations_AnimationClipPlayable_o x, UnityEngine_Animations_AnimationClipPlayable_o y, const MethodInfo_2A99D80* method);
-System_IAsyncResult_o* System_Comparison_AnimationClipPlayable___BeginInvoke (System_Comparison_AnimationClipPlayable__o* __this, UnityEngine_Animations_AnimationClipPlayable_o x, UnityEngine_Animations_AnimationClipPlayable_o y, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_2A9A090* method);
-int32_t System_Comparison_AnimationClipPlayable___EndInvoke (System_Comparison_AnimationClipPlayable__o* __this, System_IAsyncResult_o* result, const MethodInfo_2A9A130* method);
+void System_Comparison_AnimationClipPlayable____ctor (System_Comparison_AnimationClipPlayable__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method_info);
+int32_t System_Comparison_AnimationClipPlayable___Invoke (System_Comparison_AnimationClipPlayable__o* __this, UnityEngine_Animations_AnimationClipPlayable_o x, UnityEngine_Animations_AnimationClipPlayable_o y, const MethodInfo* method_info);
+System_IAsyncResult_o* System_Comparison_AnimationClipPlayable___BeginInvoke (System_Comparison_AnimationClipPlayable__o* __this, UnityEngine_Animations_AnimationClipPlayable_o x, UnityEngine_Animations_AnimationClipPlayable_o y, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method_info);
+int32_t System_Comparison_AnimationClipPlayable___EndInvoke (System_Comparison_AnimationClipPlayable__o* __this, System_IAsyncResult_o* result, const MethodInfo* method_info);

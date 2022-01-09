@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0___ctor (Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0___Play_b__1 (Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0_o* __this, const MethodInfo* method);
-void Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0___Play_b__0 (Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0_o* __this, const MethodInfo* method);
+void Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0___ctor (Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0___Play_b__1 (Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0_o* __this, const MethodInfo* method_info);
+void Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0___Play_b__0 (Dpr_Battle_View_UI_BUIBallPlate___c__DisplayClass14_0_o* __this, const MethodInfo* method_info);

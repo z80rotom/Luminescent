@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void UnityEngine_Experimental_Audio_AudioSampleProvider__InvokeSampleFramesAvailable (UnityEngine_Experimental_Audio_AudioSampleProvider_o* __this, int32_t sampleFrameCount, const MethodInfo* method);
-void UnityEngine_Experimental_Audio_AudioSampleProvider__InvokeSampleFramesOverflow (UnityEngine_Experimental_Audio_AudioSampleProvider_o* __this, int32_t droppedSampleFrameCount, const MethodInfo* method);
+void UnityEngine_Experimental_Audio_AudioSampleProvider__InvokeSampleFramesAvailable (UnityEngine_Experimental_Audio_AudioSampleProvider_o* __this, int32_t sampleFrameCount, const MethodInfo* method_info);
+void UnityEngine_Experimental_Audio_AudioSampleProvider__InvokeSampleFramesOverflow (UnityEngine_Experimental_Audio_AudioSampleProvider_o* __this, int32_t droppedSampleFrameCount, const MethodInfo* method_info);

@@ -2,12 +2,12 @@
 
 #include "il2cpp.h"
 
-System_Collections_IEnumerator_o* Dpr_UnderGround_UgFather_UgFatherManager__Start (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_UgFather_UgFatherManager__OnDestroy (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_UgFather_UgFatherManager__InputUpdate (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, float deltaTime, const MethodInfo* method);
-Dpr_UnderGround_UgFather_UgFatherBase_o* Dpr_UnderGround_UgFather_UgFatherManager__GetContactFather (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_UgFather_UgFatherManager__Setup (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method);
-System_Collections_IEnumerator_o* Dpr_UnderGround_UgFather_UgFatherManager__DelaySetup (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_UgFather_UgFatherManager__OnEventEnd (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_UgFather_UgFatherManager__Clear (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_UgFather_UgFatherManager___ctor (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method);
+System_Collections_IEnumerator_o* Dpr_UnderGround_UgFather_UgFatherManager__Start (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFather_UgFatherManager__OnDestroy (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFather_UgFatherManager__InputUpdate (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, float deltaTime, const MethodInfo* method_info);
+Dpr_UnderGround_UgFather_UgFatherBase_o* Dpr_UnderGround_UgFather_UgFatherManager__GetContactFather (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFather_UgFatherManager__Setup (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_UnderGround_UgFather_UgFatherManager__DelaySetup (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFather_UgFatherManager__OnEventEnd (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFather_UgFatherManager__Clear (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_UgFather_UgFatherManager___ctor (Dpr_UnderGround_UgFather_UgFatherManager_o* __this, const MethodInfo* method_info);

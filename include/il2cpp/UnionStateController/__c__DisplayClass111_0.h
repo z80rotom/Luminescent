@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void UnionStateController___c__DisplayClass111_0___ctor (UnionStateController___c__DisplayClass111_0_o* __this, const MethodInfo* method);
-void UnionStateController___c__DisplayClass111_0___ShowJoinRecodeCheck_g__OpenYesNoWindow_0 (UnionStateController___c__DisplayClass111_0_o* __this, const MethodInfo* method);
-void UnionStateController___c__DisplayClass111_0___ShowJoinRecodeCheck_b__1 (UnionStateController___c__DisplayClass111_0_o* __this, int32_t selectIndex, const MethodInfo* method);
+void UnionStateController___c__DisplayClass111_0___ctor (UnionStateController___c__DisplayClass111_0_o* __this, const MethodInfo* method_info);
+void UnionStateController___c__DisplayClass111_0___ShowJoinRecodeCheck_g__OpenYesNoWindow_0 (UnionStateController___c__DisplayClass111_0_o* __this, const MethodInfo* method_info);
+void UnionStateController___c__DisplayClass111_0___ShowJoinRecodeCheck_b__1 (UnionStateController___c__DisplayClass111_0_o* __this, int32_t selectIndex, const MethodInfo* method_info);

@@ -2,9 +2,9 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_List_FieldEventEntity____ctor (System_Collections_Generic_List_FieldEventEntity__o* __this, int32_t capacity, const MethodInfo_2BAD1C0* method);
-int32_t System_Collections_Generic_List_FieldEventEntity___get_Count (System_Collections_Generic_List_FieldEventEntity__o* __this, const MethodInfo_2BAD9C0* method);
-FieldEventEntity_o* System_Collections_Generic_List_FieldEventEntity___get_Item (System_Collections_Generic_List_FieldEventEntity__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_FieldEventEntity___Add (System_Collections_Generic_List_FieldEventEntity__o* __this, FieldEventEntity_o* item, const MethodInfo_2BADD00* method);
-void System_Collections_Generic_List_FieldEventEntity___Clear (System_Collections_Generic_List_FieldEventEntity__o* __this, const MethodInfo_2BAE0A0* method);
-bool System_Collections_Generic_List_FieldEventEntity___Contains (System_Collections_Generic_List_FieldEventEntity__o* __this, FieldEventEntity_o* item, const MethodInfo_2BAE0F0* method);
+void System_Collections_Generic_List_FieldEventEntity____ctor (System_Collections_Generic_List_FieldEventEntity__o* __this, int32_t capacity, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_FieldEventEntity___get_Count (System_Collections_Generic_List_FieldEventEntity__o* __this, const MethodInfo* method_info);
+FieldEventEntity_o* System_Collections_Generic_List_FieldEventEntity___get_Item (System_Collections_Generic_List_FieldEventEntity__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_FieldEventEntity___Add (System_Collections_Generic_List_FieldEventEntity__o* __this, FieldEventEntity_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_FieldEventEntity___Clear (System_Collections_Generic_List_FieldEventEntity__o* __this, const MethodInfo* method_info);
+bool System_Collections_Generic_List_FieldEventEntity___Contains (System_Collections_Generic_List_FieldEventEntity__o* __this, FieldEventEntity_o* item, const MethodInfo* method_info);

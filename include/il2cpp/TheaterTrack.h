@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void TheaterTrack___ctor (TheaterTrack_o* __this, const MethodInfo* method);
+void TheaterTrack___ctor (TheaterTrack_o* __this, const MethodInfo* method_info);

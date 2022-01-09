@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-UnityEngine_AsyncOperation_o* UnityEngine_SceneManagement_SceneManagerAPIInternal__LoadSceneAsyncNameIndexInternal (System_String_o* sceneName, int32_t sceneBuildIndex, UnityEngine_SceneManagement_LoadSceneParameters_o parameters, bool mustCompleteNextFrame, const MethodInfo* method);
-UnityEngine_AsyncOperation_o* UnityEngine_SceneManagement_SceneManagerAPIInternal__UnloadSceneNameIndexInternal (System_String_o* sceneName, int32_t sceneBuildIndex, bool immediately, int32_t options, bool* outSuccess, const MethodInfo* method);
-UnityEngine_AsyncOperation_o* UnityEngine_SceneManagement_SceneManagerAPIInternal__LoadSceneAsyncNameIndexInternal_Injected (System_String_o* sceneName, int32_t sceneBuildIndex, UnityEngine_SceneManagement_LoadSceneParameters_o* parameters, bool mustCompleteNextFrame, const MethodInfo* method);
+UnityEngine_AsyncOperation_o* UnityEngine_SceneManagement_SceneManagerAPIInternal__LoadSceneAsyncNameIndexInternal (System_String_o* sceneName, int32_t sceneBuildIndex, UnityEngine_SceneManagement_LoadSceneParameters_o parameters, bool mustCompleteNextFrame, const MethodInfo* method_info);
+UnityEngine_AsyncOperation_o* UnityEngine_SceneManagement_SceneManagerAPIInternal__UnloadSceneNameIndexInternal (System_String_o* sceneName, int32_t sceneBuildIndex, bool immediately, int32_t options, bool* outSuccess, const MethodInfo* method_info);
+UnityEngine_AsyncOperation_o* UnityEngine_SceneManagement_SceneManagerAPIInternal__LoadSceneAsyncNameIndexInternal_Injected (System_String_o* sceneName, int32_t sceneBuildIndex, UnityEngine_SceneManagement_LoadSceneParameters_o* parameters, bool mustCompleteNextFrame, const MethodInfo* method_info);

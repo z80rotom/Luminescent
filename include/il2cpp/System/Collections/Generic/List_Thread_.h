@@ -2,10 +2,10 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_List_Thread____ctor (System_Collections_Generic_List_Thread__o* __this, const MethodInfo_2BAD0F0* method);
-int32_t System_Collections_Generic_List_Thread___get_Count (System_Collections_Generic_List_Thread__o* __this, const MethodInfo_2BAD9C0* method);
-System_Threading_Thread_o* System_Collections_Generic_List_Thread___get_Item (System_Collections_Generic_List_Thread__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_Thread___Add (System_Collections_Generic_List_Thread__o* __this, System_Threading_Thread_o* item, const MethodInfo_2BADD00* method);
-System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_Thread___GetEnumerator (System_Collections_Generic_List_Thread__o* __this, const MethodInfo_2BAEA50* method);
-int32_t System_Collections_Generic_List_Thread___IndexOf (System_Collections_Generic_List_Thread__o* __this, System_Threading_Thread_o* item, const MethodInfo_2BAECB0* method);
-bool System_Collections_Generic_List_Thread___Remove (System_Collections_Generic_List_Thread__o* __this, System_Threading_Thread_o* item, const MethodInfo_2BAF560* method);
+void System_Collections_Generic_List_Thread____ctor (System_Collections_Generic_List_Thread__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_Thread___get_Count (System_Collections_Generic_List_Thread__o* __this, const MethodInfo* method_info);
+System_Threading_Thread_o* System_Collections_Generic_List_Thread___get_Item (System_Collections_Generic_List_Thread__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_Thread___Add (System_Collections_Generic_List_Thread__o* __this, System_Threading_Thread_o* item, const MethodInfo* method_info);
+System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_Thread___GetEnumerator (System_Collections_Generic_List_Thread__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_Thread___IndexOf (System_Collections_Generic_List_Thread__o* __this, System_Threading_Thread_o* item, const MethodInfo* method_info);
+bool System_Collections_Generic_List_Thread___Remove (System_Collections_Generic_List_Thread__o* __this, System_Threading_Thread_o* item, const MethodInfo* method_info);

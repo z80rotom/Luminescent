@@ -2,11 +2,11 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_List_EventSystem____ctor (System_Collections_Generic_List_EventSystem__o* __this, const MethodInfo_2BAD0F0* method);
-int32_t System_Collections_Generic_List_EventSystem___get_Count (System_Collections_Generic_List_EventSystem__o* __this, const MethodInfo_2BAD9C0* method);
-UnityEngine_EventSystems_EventSystem_o* System_Collections_Generic_List_EventSystem___get_Item (System_Collections_Generic_List_EventSystem__o* __this, int32_t index, const MethodInfo_2BAD9F0* method);
-void System_Collections_Generic_List_EventSystem___Add (System_Collections_Generic_List_EventSystem__o* __this, UnityEngine_EventSystems_EventSystem_o* item, const MethodInfo_2BADD00* method);
-int32_t System_Collections_Generic_List_EventSystem___IndexOf (System_Collections_Generic_List_EventSystem__o* __this, UnityEngine_EventSystems_EventSystem_o* item, const MethodInfo_2BAECB0* method);
-void System_Collections_Generic_List_EventSystem___Insert (System_Collections_Generic_List_EventSystem__o* __this, int32_t index, UnityEngine_EventSystems_EventSystem_o* item, const MethodInfo_2BAEE20* method);
-bool System_Collections_Generic_List_EventSystem___Remove (System_Collections_Generic_List_EventSystem__o* __this, UnityEngine_EventSystems_EventSystem_o* item, const MethodInfo_2BAF560* method);
-void System_Collections_Generic_List_EventSystem___RemoveAt (System_Collections_Generic_List_EventSystem__o* __this, int32_t index, const MethodInfo_2BAF8D0* method);
+void System_Collections_Generic_List_EventSystem____ctor (System_Collections_Generic_List_EventSystem__o* __this, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_EventSystem___get_Count (System_Collections_Generic_List_EventSystem__o* __this, const MethodInfo* method_info);
+UnityEngine_EventSystems_EventSystem_o* System_Collections_Generic_List_EventSystem___get_Item (System_Collections_Generic_List_EventSystem__o* __this, int32_t index, const MethodInfo* method_info);
+void System_Collections_Generic_List_EventSystem___Add (System_Collections_Generic_List_EventSystem__o* __this, UnityEngine_EventSystems_EventSystem_o* item, const MethodInfo* method_info);
+int32_t System_Collections_Generic_List_EventSystem___IndexOf (System_Collections_Generic_List_EventSystem__o* __this, UnityEngine_EventSystems_EventSystem_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_EventSystem___Insert (System_Collections_Generic_List_EventSystem__o* __this, int32_t index, UnityEngine_EventSystems_EventSystem_o* item, const MethodInfo* method_info);
+bool System_Collections_Generic_List_EventSystem___Remove (System_Collections_Generic_List_EventSystem__o* __this, UnityEngine_EventSystems_EventSystem_o* item, const MethodInfo* method_info);
+void System_Collections_Generic_List_EventSystem___RemoveAt (System_Collections_Generic_List_EventSystem__o* __this, int32_t index, const MethodInfo* method_info);

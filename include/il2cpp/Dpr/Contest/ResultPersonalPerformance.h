@@ -2,25 +2,25 @@
 
 #include "il2cpp.h"
 
-void Dpr_Contest_ResultPersonalPerformance__Initialize (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__ResetParam (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__OnFinalize (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__Setup (Dpr_Contest_ResultPersonalPerformance_o* __this, Dpr_Contest_ResultDataModel_o* resultDataModel, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__SettingCameraTweenParam (Dpr_Contest_ResultPersonalPerformance_o* __this, XLSXContent_ContestConfigDatas_SheetResultCameraTween_o* cameraParam, const MethodInfo* method);
-System_String_o* Dpr_Contest_ResultPersonalPerformance__GetBestTimingCntStr (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, const MethodInfo* method);
-System_String_o* Dpr_Contest_ResultPersonalPerformance__GetGreatTimingCntStr (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, const MethodInfo* method);
-System_String_o* Dpr_Contest_ResultPersonalPerformance__GetNiceTimingCntStr (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, const MethodInfo* method);
-System_String_o* Dpr_Contest_ResultPersonalPerformance__GetMissTimingCntStr (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, const MethodInfo* method);
-System_String_o* Dpr_Contest_ResultPersonalPerformance__PerseCntText (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, System_String_o* labelName, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__StartAnimation (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-System_Collections_IEnumerator_o* Dpr_Contest_ResultPersonalPerformance__IE_StartAnimation (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__PlayVoice (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__ChangeUserPokeAnimation (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t motionState, const MethodInfo* method);
-int32_t Dpr_Contest_ResultPersonalPerformance__GetMotionStateByScoreRanking (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__OpenKeyguid (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__CloseKeyguid (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__ChangeState (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t nextState, const MethodInfo* method);
-bool Dpr_Contest_ResultPersonalPerformance__OnUpdate (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__UpdateKeywait (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance__UpdatePokeMotion (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
-void Dpr_Contest_ResultPersonalPerformance___ctor (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method);
+void Dpr_Contest_ResultPersonalPerformance__Initialize (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__ResetParam (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__OnFinalize (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__Setup (Dpr_Contest_ResultPersonalPerformance_o* __this, Dpr_Contest_ResultDataModel_o* resultDataModel, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__SettingCameraTweenParam (Dpr_Contest_ResultPersonalPerformance_o* __this, XLSXContent_ContestConfigDatas_SheetResultCameraTween_o* cameraParam, const MethodInfo* method_info);
+System_String_o* Dpr_Contest_ResultPersonalPerformance__GetBestTimingCntStr (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, const MethodInfo* method_info);
+System_String_o* Dpr_Contest_ResultPersonalPerformance__GetGreatTimingCntStr (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, const MethodInfo* method_info);
+System_String_o* Dpr_Contest_ResultPersonalPerformance__GetNiceTimingCntStr (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, const MethodInfo* method_info);
+System_String_o* Dpr_Contest_ResultPersonalPerformance__GetMissTimingCntStr (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, const MethodInfo* method_info);
+System_String_o* Dpr_Contest_ResultPersonalPerformance__PerseCntText (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t count, System_String_o* labelName, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__StartAnimation (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+System_Collections_IEnumerator_o* Dpr_Contest_ResultPersonalPerformance__IE_StartAnimation (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__PlayVoice (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__ChangeUserPokeAnimation (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t motionState, const MethodInfo* method_info);
+int32_t Dpr_Contest_ResultPersonalPerformance__GetMotionStateByScoreRanking (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__OpenKeyguid (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__CloseKeyguid (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__ChangeState (Dpr_Contest_ResultPersonalPerformance_o* __this, int32_t nextState, const MethodInfo* method_info);
+bool Dpr_Contest_ResultPersonalPerformance__OnUpdate (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__UpdateKeywait (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance__UpdatePokeMotion (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);
+void Dpr_Contest_ResultPersonalPerformance___ctor (Dpr_Contest_ResultPersonalPerformance_o* __this, const MethodInfo* method_info);

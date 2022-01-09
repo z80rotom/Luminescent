@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void System_ValueTuple_MessageTextParseDataModel__MsgShowParam____ctor (System_ValueTuple_MessageTextParseDataModel__MsgShowParam__o __this, Dpr_Message_MessageTextParseDataModel_o* item1, Dpr_Battle_View_Systems_MsgShowParam_o item2, const MethodInfo_29B0C30* method);
+void System_ValueTuple_MessageTextParseDataModel__MsgShowParam____ctor (System_ValueTuple_MessageTextParseDataModel__MsgShowParam__o __this, Dpr_Message_MessageTextParseDataModel_o* item1, Dpr_Battle_View_Systems_MsgShowParam_o item2, const MethodInfo* method_info);

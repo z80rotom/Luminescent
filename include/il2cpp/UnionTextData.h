@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void UnionTextData___cctor (const MethodInfo* method);
+void UnionTextData___cctor (const MethodInfo* method_info);

@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_1___ctor (Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_1_o* __this, const MethodInfo* method);
-bool Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_1___DoAction_b__2 (Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_1_o* __this, const MethodInfo* method);
+void Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_1___ctor (Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_1_o* __this, const MethodInfo* method_info);
+bool Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_1___DoAction_b__2 (Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_1_o* __this, const MethodInfo* method_info);

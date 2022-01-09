@@ -2,7 +2,7 @@
 
 #include "il2cpp.h"
 
-void System_Action_UgFieldDataManager_FossilPosData____ctor (System_Action_UgFieldDataManager_FossilPosData__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo_26BFFD0* method);
-void System_Action_UgFieldDataManager_FossilPosData___Invoke (System_Action_UgFieldDataManager_FossilPosData__o* __this, Dpr_UnderGround_UgFieldDataManager_FossilPosData_o obj, const MethodInfo_26BFFF0* method);
-System_IAsyncResult_o* System_Action_UgFieldDataManager_FossilPosData___BeginInvoke (System_Action_UgFieldDataManager_FossilPosData__o* __this, Dpr_UnderGround_UgFieldDataManager_FossilPosData_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo_26C02B0* method);
-void System_Action_UgFieldDataManager_FossilPosData___EndInvoke (System_Action_UgFieldDataManager_FossilPosData__o* __this, System_IAsyncResult_o* result, const MethodInfo_26C0340* method);
+void System_Action_UgFieldDataManager_FossilPosData____ctor (System_Action_UgFieldDataManager_FossilPosData__o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method_info);
+void System_Action_UgFieldDataManager_FossilPosData___Invoke (System_Action_UgFieldDataManager_FossilPosData__o* __this, Dpr_UnderGround_UgFieldDataManager_FossilPosData_o obj, const MethodInfo* method_info);
+System_IAsyncResult_o* System_Action_UgFieldDataManager_FossilPosData___BeginInvoke (System_Action_UgFieldDataManager_FossilPosData__o* __this, Dpr_UnderGround_UgFieldDataManager_FossilPosData_o obj, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method_info);
+void System_Action_UgFieldDataManager_FossilPosData___EndInvoke (System_Action_UgFieldDataManager_FossilPosData__o* __this, System_IAsyncResult_o* result, const MethodInfo* method_info);

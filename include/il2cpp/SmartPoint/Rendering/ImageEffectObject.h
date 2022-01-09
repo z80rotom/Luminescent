@@ -2,16 +2,16 @@
 
 #include "il2cpp.h"
 
-UnityEngine_RenderTexture_o* SmartPoint_Rendering_ImageEffectObject__get_temporaryRT (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method);
-void SmartPoint_Rendering_ImageEffectObject__set_temporaryRT (SmartPoint_Rendering_ImageEffectObject_o* __this, UnityEngine_RenderTexture_o* value, const MethodInfo* method);
-bool SmartPoint_Rendering_ImageEffectObject__get_enabled (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method);
-void SmartPoint_Rendering_ImageEffectObject__set_enabled (SmartPoint_Rendering_ImageEffectObject_o* __this, bool value, const MethodInfo* method);
-UnityEngine_Camera_o* SmartPoint_Rendering_ImageEffectObject__get_camera (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method);
-void SmartPoint_Rendering_ImageEffectObject__set_camera (SmartPoint_Rendering_ImageEffectObject_o* __this, UnityEngine_Camera_o* value, const MethodInfo* method);
-UnityEngine_Transform_o* SmartPoint_Rendering_ImageEffectObject__get_target (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method);
-void SmartPoint_Rendering_ImageEffectObject__set_target (SmartPoint_Rendering_ImageEffectObject_o* __this, UnityEngine_Transform_o* value, const MethodInfo* method);
-UnityEngine_Rendering_CommandBuffer_o* SmartPoint_Rendering_ImageEffectObject__Build (SmartPoint_Rendering_ImageEffectObject_o* __this, UnityEngine_Rendering_RenderTargetIdentifier_o sourceRT, UnityEngine_Rendering_RenderTargetIdentifier_o* resultRT, bool feedbackCameraTarget, const MethodInfo* method);
-void SmartPoint_Rendering_ImageEffectObject__InstantiateMaterials (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method);
-void SmartPoint_Rendering_ImageEffectObject__Update (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method);
-void SmartPoint_Rendering_ImageEffectObject__Destroy (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method);
-void SmartPoint_Rendering_ImageEffectObject___ctor (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method);
+UnityEngine_RenderTexture_o* SmartPoint_Rendering_ImageEffectObject__get_temporaryRT (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method_info);
+void SmartPoint_Rendering_ImageEffectObject__set_temporaryRT (SmartPoint_Rendering_ImageEffectObject_o* __this, UnityEngine_RenderTexture_o* value, const MethodInfo* method_info);
+bool SmartPoint_Rendering_ImageEffectObject__get_enabled (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method_info);
+void SmartPoint_Rendering_ImageEffectObject__set_enabled (SmartPoint_Rendering_ImageEffectObject_o* __this, bool value, const MethodInfo* method_info);
+UnityEngine_Camera_o* SmartPoint_Rendering_ImageEffectObject__get_camera (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method_info);
+void SmartPoint_Rendering_ImageEffectObject__set_camera (SmartPoint_Rendering_ImageEffectObject_o* __this, UnityEngine_Camera_o* value, const MethodInfo* method_info);
+UnityEngine_Transform_o* SmartPoint_Rendering_ImageEffectObject__get_target (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method_info);
+void SmartPoint_Rendering_ImageEffectObject__set_target (SmartPoint_Rendering_ImageEffectObject_o* __this, UnityEngine_Transform_o* value, const MethodInfo* method_info);
+UnityEngine_Rendering_CommandBuffer_o* SmartPoint_Rendering_ImageEffectObject__Build (SmartPoint_Rendering_ImageEffectObject_o* __this, UnityEngine_Rendering_RenderTargetIdentifier_o sourceRT, UnityEngine_Rendering_RenderTargetIdentifier_o* resultRT, bool feedbackCameraTarget, const MethodInfo* method_info);
+void SmartPoint_Rendering_ImageEffectObject__InstantiateMaterials (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method_info);
+void SmartPoint_Rendering_ImageEffectObject__Update (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method_info);
+void SmartPoint_Rendering_ImageEffectObject__Destroy (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method_info);
+void SmartPoint_Rendering_ImageEffectObject___ctor (SmartPoint_Rendering_ImageEffectObject_o* __this, const MethodInfo* method_info);

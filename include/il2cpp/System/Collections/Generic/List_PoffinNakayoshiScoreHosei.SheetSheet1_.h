@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-XLSXContent_PoffinNakayoshiScoreHosei_SheetSheet1_o* System_Collections_Generic_List_PoffinNakayoshiScoreHosei_SheetSheet1___Find (System_Collections_Generic_List_PoffinNakayoshiScoreHosei_SheetSheet1__o* __this, System_Predicate_T__o* match, const MethodInfo_2BAE580* method);
+XLSXContent_PoffinNakayoshiScoreHosei_SheetSheet1_o* System_Collections_Generic_List_PoffinNakayoshiScoreHosei_SheetSheet1___Find (System_Collections_Generic_List_PoffinNakayoshiScoreHosei_SheetSheet1__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);

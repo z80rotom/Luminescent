@@ -2,4 +2,4 @@
 
 #include "il2cpp.h"
 
-void NexPlugin_Detail_DataStore_DataStoreChangeMetaCompareParamInt___ctor (NexPlugin_Detail_DataStore_DataStoreChangeMetaCompareParamInt_o __this, System_Collections_Generic_List_IntPtr__o* useptr, NexPlugin_DataStoreChangeMetaCompareParam_o* param, const MethodInfo* method);
+void NexPlugin_Detail_DataStore_DataStoreChangeMetaCompareParamInt___ctor (NexPlugin_Detail_DataStore_DataStoreChangeMetaCompareParamInt_o __this, System_Collections_Generic_List_IntPtr__o* useptr, NexPlugin_DataStoreChangeMetaCompareParam_o* param, const MethodInfo* method_info);

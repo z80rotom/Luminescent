@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void System_Collections_Generic_Dictionary_Mesh__List_int_____ctor (System_Collections_Generic_Dictionary_Mesh__List_int___o* __this, const MethodInfo_29D3C00* method);
-void System_Collections_Generic_Dictionary_Mesh__List_int____Add (System_Collections_Generic_Dictionary_Mesh__List_int___o* __this, UnityEngine_Mesh_o* key, System_Collections_Generic_List_int__o* value, const MethodInfo_29D40C0* method);
-bool System_Collections_Generic_Dictionary_Mesh__List_int____TryGetValue (System_Collections_Generic_Dictionary_Mesh__List_int___o* __this, UnityEngine_Mesh_o* key, System_Collections_Generic_List_int__o** value, const MethodInfo_29D5E10* method);
+void System_Collections_Generic_Dictionary_Mesh__List_int_____ctor (System_Collections_Generic_Dictionary_Mesh__List_int___o* __this, const MethodInfo* method_info);
+void System_Collections_Generic_Dictionary_Mesh__List_int____Add (System_Collections_Generic_Dictionary_Mesh__List_int___o* __this, UnityEngine_Mesh_o* key, System_Collections_Generic_List_int__o* value, const MethodInfo* method_info);
+bool System_Collections_Generic_Dictionary_Mesh__List_int____TryGetValue (System_Collections_Generic_Dictionary_Mesh__List_int___o* __this, UnityEngine_Mesh_o* key, System_Collections_Generic_List_int__o** value, const MethodInfo* method_info);

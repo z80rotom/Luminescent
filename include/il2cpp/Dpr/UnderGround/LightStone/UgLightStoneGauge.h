@@ -2,8 +2,8 @@
 
 #include "il2cpp.h"
 
-void Dpr_UnderGround_LightStone_UgLightStoneGauge__Start (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_LightStone_UgLightStoneGauge__Initialize (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_LightStone_UgLightStoneGauge__UpdateStoneNum (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_LightStone_UgLightStoneGauge__UpdateBonusState (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method);
-void Dpr_UnderGround_LightStone_UgLightStoneGauge___ctor (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method);
+void Dpr_UnderGround_LightStone_UgLightStoneGauge__Start (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_LightStone_UgLightStoneGauge__Initialize (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_LightStone_UgLightStoneGauge__UpdateStoneNum (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_LightStone_UgLightStoneGauge__UpdateBonusState (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method_info);
+void Dpr_UnderGround_LightStone_UgLightStoneGauge___ctor (Dpr_UnderGround_LightStone_UgLightStoneGauge_o* __this, const MethodInfo* method_info);

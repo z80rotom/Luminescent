@@ -2,6 +2,6 @@
 
 #include "il2cpp.h"
 
-void UnityEngine_Timeline_AnimationTrack_AnimationTrackUpgrade__ConvertRotationsToEuler (UnityEngine_Timeline_AnimationTrack_o* track, const MethodInfo* method);
-void UnityEngine_Timeline_AnimationTrack_AnimationTrackUpgrade__ConvertRootMotion (UnityEngine_Timeline_AnimationTrack_o* track, const MethodInfo* method);
-void UnityEngine_Timeline_AnimationTrack_AnimationTrackUpgrade__ConvertInfiniteTrack (UnityEngine_Timeline_AnimationTrack_o* track, const MethodInfo* method);
+void UnityEngine_Timeline_AnimationTrack_AnimationTrackUpgrade__ConvertRotationsToEuler (UnityEngine_Timeline_AnimationTrack_o* track, const MethodInfo* method_info);
+void UnityEngine_Timeline_AnimationTrack_AnimationTrackUpgrade__ConvertRootMotion (UnityEngine_Timeline_AnimationTrack_o* track, const MethodInfo* method_info);
+void UnityEngine_Timeline_AnimationTrack_AnimationTrackUpgrade__ConvertInfiniteTrack (UnityEngine_Timeline_AnimationTrack_o* track, const MethodInfo* method_info);

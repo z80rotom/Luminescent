@@ -2,5 +2,5 @@
 
 #include "il2cpp.h"
 
-void Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass11_0___ctor (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass11_0_o* __this, const MethodInfo* method);
-bool Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass11_0___OnTalk_b__0 (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass11_0_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method);
+void Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass11_0___ctor (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass11_0_o* __this, const MethodInfo* method_info);
+bool Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass11_0___OnTalk_b__0 (Dpr_FureaiHiroba_FureaiHiroba_PokeFactory___c__DisplayClass11_0_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method_info);

@@ -2,10 +2,10 @@
 
 #include "il2cpp.h"
 
-void Dpr_SecretBase_StateMachine_object__object____ctor (Dpr_SecretBase_StateMachine_object__object__o* __this, Il2CppObject* owner, const MethodInfo_26B4E70* method);
-void Dpr_SecretBase_StateMachine_object__object___AddState (Dpr_SecretBase_StateMachine_object__object__o* __this, Dpr_SecretBase_StateBase_T__Owner__o* state, const MethodInfo_26B4F60* method);
-void Dpr_SecretBase_StateMachine_object__object___ChangeState (Dpr_SecretBase_StateMachine_object__object__o* __this, Il2CppObject* type, const MethodInfo_26B4FC0* method);
-void Dpr_SecretBase_StateMachine_object__object___OverlapState (Dpr_SecretBase_StateMachine_object__object__o* __this, Il2CppObject* type, const MethodInfo_26B5060* method);
-void Dpr_SecretBase_StateMachine_object__object___ChangePrevState (Dpr_SecretBase_StateMachine_object__object__o* __this, const MethodInfo_26B50F0* method);
-void Dpr_SecretBase_StateMachine_object__object___Update (Dpr_SecretBase_StateMachine_object__object__o* __this, const MethodInfo_26B5140* method);
-Il2CppObject* Dpr_SecretBase_StateMachine_object__object___GetCurrentType (Dpr_SecretBase_StateMachine_object__object__o* __this, const MethodInfo_26B5160* method);
+void Dpr_SecretBase_StateMachine_object__object____ctor (Dpr_SecretBase_StateMachine_object__object__o* __this, Il2CppObject* owner, const MethodInfo* method_info);
+void Dpr_SecretBase_StateMachine_object__object___AddState (Dpr_SecretBase_StateMachine_object__object__o* __this, Dpr_SecretBase_StateBase_T__Owner__o* state, const MethodInfo* method_info);
+void Dpr_SecretBase_StateMachine_object__object___ChangeState (Dpr_SecretBase_StateMachine_object__object__o* __this, Il2CppObject* type, const MethodInfo* method_info);
+void Dpr_SecretBase_StateMachine_object__object___OverlapState (Dpr_SecretBase_StateMachine_object__object__o* __this, Il2CppObject* type, const MethodInfo* method_info);
+void Dpr_SecretBase_StateMachine_object__object___ChangePrevState (Dpr_SecretBase_StateMachine_object__object__o* __this, const MethodInfo* method_info);
+void Dpr_SecretBase_StateMachine_object__object___Update (Dpr_SecretBase_StateMachine_object__object__o* __this, const MethodInfo* method_info);
+Il2CppObject* Dpr_SecretBase_StateMachine_object__object___GetCurrentType (Dpr_SecretBase_StateMachine_object__object__o* __this, const MethodInfo* method_info);

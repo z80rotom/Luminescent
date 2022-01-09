@@ -2,13 +2,13 @@
 
 #include "il2cpp.h"
 
-int32_t SmartPoint_Components_ToggleButtonRawGroup__get_activeIndex (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method);
-void SmartPoint_Components_ToggleButtonRawGroup__set_activeIndex (SmartPoint_Components_ToggleButtonRawGroup_o* __this, int32_t value, const MethodInfo* method);
-SmartPoint_Components_ToggleButtonRaw_o* SmartPoint_Components_ToggleButtonRawGroup__get_activeToggle (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method);
-void SmartPoint_Components_ToggleButtonRawGroup__OnEnable (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method);
-void SmartPoint_Components_ToggleButtonRawGroup__Previous (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method);
-void SmartPoint_Components_ToggleButtonRawGroup__Next (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method);
-void SmartPoint_Components_ToggleButtonRawGroup__OnDisable (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method);
-void SmartPoint_Components_ToggleButtonRawGroup__OnClick (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method);
-void SmartPoint_Components_ToggleButtonRawGroup__OnSubmit (SmartPoint_Components_ToggleButtonRawGroup_o* __this, int32_t value, const MethodInfo* method);
-void SmartPoint_Components_ToggleButtonRawGroup___ctor (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method);
+int32_t SmartPoint_Components_ToggleButtonRawGroup__get_activeIndex (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method_info);
+void SmartPoint_Components_ToggleButtonRawGroup__set_activeIndex (SmartPoint_Components_ToggleButtonRawGroup_o* __this, int32_t value, const MethodInfo* method_info);
+SmartPoint_Components_ToggleButtonRaw_o* SmartPoint_Components_ToggleButtonRawGroup__get_activeToggle (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method_info);
+void SmartPoint_Components_ToggleButtonRawGroup__OnEnable (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method_info);
+void SmartPoint_Components_ToggleButtonRawGroup__Previous (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method_info);
+void SmartPoint_Components_ToggleButtonRawGroup__Next (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method_info);
+void SmartPoint_Components_ToggleButtonRawGroup__OnDisable (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method_info);
+void SmartPoint_Components_ToggleButtonRawGroup__OnClick (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method_info);
+void SmartPoint_Components_ToggleButtonRawGroup__OnSubmit (SmartPoint_Components_ToggleButtonRawGroup_o* __this, int32_t value, const MethodInfo* method_info);
+void SmartPoint_Components_ToggleButtonRawGroup___ctor (SmartPoint_Components_ToggleButtonRawGroup_o* __this, const MethodInfo* method_info);

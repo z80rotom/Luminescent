@@ -2,11 +2,11 @@
 
 #include "il2cpp.h"
 
-void System_Threading_Tasks_ThreadPoolTaskScheduler___ctor (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, const MethodInfo* method);
-void System_Threading_Tasks_ThreadPoolTaskScheduler__LongRunningThreadWork (Il2CppObject* obj, const MethodInfo* method);
-void System_Threading_Tasks_ThreadPoolTaskScheduler__QueueTask (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, System_Threading_Tasks_Task_o* task, const MethodInfo* method);
-bool System_Threading_Tasks_ThreadPoolTaskScheduler__TryExecuteTaskInline (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, System_Threading_Tasks_Task_o* task, bool taskWasPreviouslyQueued, const MethodInfo* method);
-bool System_Threading_Tasks_ThreadPoolTaskScheduler__TryDequeue (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, System_Threading_Tasks_Task_o* task, const MethodInfo* method);
-void System_Threading_Tasks_ThreadPoolTaskScheduler__NotifyWorkItemProgress (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, const MethodInfo* method);
-bool System_Threading_Tasks_ThreadPoolTaskScheduler__get_RequiresAtomicStartTransition (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, const MethodInfo* method);
-void System_Threading_Tasks_ThreadPoolTaskScheduler___cctor (const MethodInfo* method);
+void System_Threading_Tasks_ThreadPoolTaskScheduler___ctor (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, const MethodInfo* method_info);
+void System_Threading_Tasks_ThreadPoolTaskScheduler__LongRunningThreadWork (Il2CppObject* obj, const MethodInfo* method_info);
+void System_Threading_Tasks_ThreadPoolTaskScheduler__QueueTask (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, System_Threading_Tasks_Task_o* task, const MethodInfo* method_info);
+bool System_Threading_Tasks_ThreadPoolTaskScheduler__TryExecuteTaskInline (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, System_Threading_Tasks_Task_o* task, bool taskWasPreviouslyQueued, const MethodInfo* method_info);
+bool System_Threading_Tasks_ThreadPoolTaskScheduler__TryDequeue (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, System_Threading_Tasks_Task_o* task, const MethodInfo* method_info);
+void System_Threading_Tasks_ThreadPoolTaskScheduler__NotifyWorkItemProgress (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, const MethodInfo* method_info);
+bool System_Threading_Tasks_ThreadPoolTaskScheduler__get_RequiresAtomicStartTransition (System_Threading_Tasks_ThreadPoolTaskScheduler_o* __this, const MethodInfo* method_info);
+void System_Threading_Tasks_ThreadPoolTaskScheduler___cctor (const MethodInfo* method_info);
