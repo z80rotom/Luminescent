@@ -16,4 +16,4 @@ file(GLOB_RECURSE SOURCES_CXX ${PROJECT_SOURCE_DIR}/src/*.cpp)
 file(GLOB_RECURSE SOURCES_SLPATCH ${PROJECT_SOURCE_DIR}/patches/*.slpatch)
 
 # Include nx tools
-include(${CMAKE_SOURCE_DIR}/cmake/switch-cmake/cmake/SwitchTools.cmake)
+include(${CMAKE_SOURCE_DIR}/cmake/switch/SwitchTools.cmake)

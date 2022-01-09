@@ -1,4 +1,5 @@
 ## Toolchain file for Nintendo Switch homebrew with devkitA64 & libnx.
+# Adapted from https://github.com/vbe0201/switch-cmake
 
 ## Generic settings
 
@@ -73,7 +74,7 @@ set(CMAKE_PREFIX_PATH ${PORTLIBS} CACHE PATH "Find libraries in the portlibs dir
 ## Options for code generation
 
 # Technically, the Switch does support shared libraries, but the toolchain doesn't.
-set_property(GLOBAL PROPERTY TARGET_SUPPORTS_SHARED_LIBS TRUE)
+set_property(GLOBAL PROPERTY TARGET_SUPPORTS_SHARED_LIBS FALSE)
 
 add_definitions(-DSWITCH -D__SWITCH__)
 
