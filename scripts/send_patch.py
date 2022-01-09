@@ -28,6 +28,7 @@ def ensure_directory(connection, root, path):
 
 def main():
     console_ip = sys.argv[1]
+    root_dir = sys.argv[2]
     if '.' not in console_ip:
         print(sys.argv[0], "ERROR: Please specify with `IP=[Your console's IP]`")
         sys.exit(-1)
@@ -44,19 +45,17 @@ def main():
 
     patch_directories = []
 
-    # Find patch folder
-    root, dirs, _ = next(os.walk(cur_dir))
-    for dir_name in dirs:
-        if dir_name.startswith("starlight_patch_"):
-            patch_directories.append((os.path.join(root, dir_name), dir_name))
+    # # Find patch folder
+    # root, dirs, _ = next(os.walk(cur_dir))
+    # for dir_name in dirs:
+    #     if dir_name.startswith("starlight_patch_"):
+    #         patch_directories.append((os.path.join(root, dir_name), dir_name))
+    patch_directories.append(root_dir)
 
     # Copy over the entire patch tree
-    for patch_dir in patch_directories:
-        dir_path = patch_dir[0]
-        root_dir_name = patch_dir[1]
-
+    for dir_path in patch_directories:
         for root, dirs, files in os.walk(dir_path):
-            root = root[len(root_dir_name) + 2:].strip() or "/"
+            root = root.replace(root_dir, "")
 
             for dir_name in dirs:
                 ensure_directory(ftp, root, dir_name)

@@ -149,8 +149,8 @@ def get_patch_bin(target, patch_address, patch_value_str):
     # bytes patch
     try:
         patch_bin = bytearray.fromhex(patch_value_str)
-        print(hex(patch_address))
-        print(patch_value_str)
+        # print(hex(patch_address))
+        # print(patch_value_str)
         return patch_bin
     except ValueError:
         pass
@@ -165,8 +165,8 @@ def get_patch_bin(target, patch_address, patch_value_str):
         target, to_addr = resolve_address_and_target(target, branch_need_resolve_match.group(2))
         patch_value_str = (branch_need_resolve_match.group(1) + '#' + hex(to_addr - patch_address))
 
-    print(hex(patch_address))
-    print(patch_value_str)
+    # print(hex(patch_address))
+    # print(patch_value_str)
     ks = Ks(KS_ARCH_ARM64, KS_MODE_LITTLE_ENDIAN)
     encoded_bytes, ins_count = ks.asm(patch_value_str)
     return bytearray(encoded_bytes)

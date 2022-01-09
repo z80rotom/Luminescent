@@ -1,6 +1,7 @@
 # Uses il2cppdumper output to generate header stubs
 import json
 import os.path
+import re
 
 
 def mkdir_recurse(path: str):
@@ -26,7 +27,18 @@ def main():
 
     for method in data["ScriptMethod"]:
         clazz, meth = method["Name"].split("$$")
-        exists, fp = get_or_create_file("include/il2cpp/" + clazz.replace(".", "/") + ".h")
+
+        # Twice because my regex is bad
+        matches = re.findall(r"(?<![<a-zA-Z., ])\s*[a-zA-Z0-9.]+\s*(?![>a-zA-Z., ])", clazz)
+        for m in matches:
+            clazz = clazz.replace(m, m.replace(".", "/"))
+
+        exists, fp = get_or_create_file("include/il2cpp/" + clazz
+                                        .replace("<", "_")
+                                        .replace(">", "_")
+                                        .replace(",", "_")
+                                        .replace(" ", "_")
+                                        + ".h")
         if not exists:
             fp.write('#pragma once\n\n#include "il2cpp.h"\n\n')
         fp.write(method["Signature"] + "\n")

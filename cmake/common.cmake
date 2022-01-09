@@ -12,6 +12,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include/)
 file(GLOB_RECURSE SOURCES_ASM ${PROJECT_SOURCE_DIR}/src/*.s)
 file(GLOB_RECURSE SOURCES_C ${PROJECT_SOURCE_DIR}/src/*.c)
 file(GLOB_RECURSE SOURCES_CXX ${PROJECT_SOURCE_DIR}/src/*.cpp)
+file(GLOB_RECURSE SOURCES_SLPATCH ${PROJECT_SOURCE_DIR}/patches/*.slpatch)
 
 # Include nx tools
 include(${CMAKE_SOURCE_DIR}/cmake/switch-cmake/cmake/SwitchTools.cmake)

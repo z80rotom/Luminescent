@@ -2,6 +2,7 @@
 CMakeFiles
 CMakeCache.txt
 cmake_install.cmake
+cmake-build-*/
 .cmake/
 Testing/
 
@@ -12,12 +13,8 @@ Makefile
 build.ninja
 
 # Build outputs
-build113/
-starlight_patch_113/
 linkerscripts/symstemp.ld
-*.zip
-*.nso
-*.elf
+release/
 script.json
 
 # IDEs and editors

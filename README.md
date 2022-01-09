@@ -4,9 +4,10 @@ This repository contains a fork of [Starlight](https://github.com/shadowninja108
 based on [Dialga](https://github.com/CraftyBoss/Dialga). 
 
 It has been modified to use CMake and supports importing in CLion.
-Additionally, it has tasks to easily integrate with [SimpleModManager](https://github.com/nadrino/SimpleModManager).
+Additionally, it has tasks to easily integrate with [SimpleModManager](https://github.com/nadrino/SimpleModManager),
+as well as export to common emulators.
 
-To get started, copy `config.cmake.template` to `config.cmake` and change the IP to the IP of your switch.
+To get started, copy `config.cmake.template` to `config.cmake` and, if you wish to use FTP, change the IP to the IP of your switch.
 
 ## Prerequisites
 
@@ -20,17 +21,21 @@ The build has only been tested on Arch Linux and WSL, and is not designed for Wi
 
 Simply run:
 ```
-$ cmake .           # Configure tasks
-$ make starlight    # build tree
-$ make send         # optional: send to switch using ftp 
+$ cmake . -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain.cmake  # Configure tasks
+$ make release_atmosphere                               # build tree
+$ make zip_atmosphere                                   # export as zip
+$ make send_atmosphere                                  # optional: send to switch using ftp 
 ```
 
 To use SimpleModManager:
 ```
-$ cmake .                      # Configure tasks
-$ make starlight_modmanager    # build tree
-$ make send_modmanager         # optional: send to switch using ftp 
+$ cmake . -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain.cmake  # Configure tasks
+$ make release_modmanager                               # build tree
+$ make zip_modmanager                                   # export as zip
+$ make send_modmanager                                  # optional: send to switch using ftp 
 ```
+
+There's also targets for Ryujinx and Yuzu (without the send_ target).
 
 ## Installing (Atmosphère)
 

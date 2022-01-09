@@ -1,7 +1,7 @@
 #include "il2cpp/UnityEngine/Transform.h"
-#include "il2cpp/UnityEngine/Events/UnityAction<SettingMenuItem>.h"
+#include "il2cpp/UnityEngine/Events/UnityAction_SettingMenuItem_.h"
 #include "il2cpp/Dpr/UI/SettingMenuItem.h"
-#include "il2cpp/System/Collections/Generic/List<SettingMenuItem>.h"
+#include "il2cpp/System/Collections/Generic/List_SettingMenuItem_.h"
 #include "il2cpp/System/String.h"
 #include "il2cpp-api.h"
 
