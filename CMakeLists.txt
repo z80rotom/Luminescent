@@ -28,3 +28,9 @@ include(${CMAKE_SOURCE_DIR}/cmake/main_target.cmake)
 
 # Release folder structures
 include(${CMAKE_SOURCE_DIR}/cmake/releases.cmake)
+
+# Logger
+add_custom_target(
+        logger
+        COMMAND python3 ${CMAKE_SOURCE_DIR}/scripts/logger_server.py ${LOGGER_PORT}
+)

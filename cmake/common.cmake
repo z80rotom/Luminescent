@@ -6,6 +6,8 @@ string(LENGTH ${MODULE_NAME} MODULE_NAME_LEN)
 add_compile_definitions(
         MODULE_NAME=${CMAKE_PROJECT_NAME}
         MODULE_NAME_LEN=${MODULE_NAME_LEN}
+        LOGGER_IP="${LOGGER_IP}"
+        LOGGER_PORT=${LOGGER_PORT}
 )
 
 # Project sources

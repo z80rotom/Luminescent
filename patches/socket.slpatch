@@ -1,0 +1,3 @@
+[target=main]
+002c2108:  // nnMain : FUN_0030FAC0()
+    bl tryInitSocket

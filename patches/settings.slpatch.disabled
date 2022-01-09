@@ -1,3 +1,4 @@
+[target=main]
 0214ef4c:  // Dpr.UI.SettingWindow.<OpOpen>d__11$$MoveNext : UnityEngine.Transform$$get_childCount
     bl settingsChildCount
 0214ef90:

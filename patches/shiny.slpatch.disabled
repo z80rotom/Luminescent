@@ -1,3 +1,4 @@
+[target=main]
 02808660:  // Pml.PokePara.CalcTool$$IsRareColor
     b shinyPatch
 
