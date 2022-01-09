@@ -1,7 +1,7 @@
 function(add_nso_target target)
     # Build the NSO file.
     add_custom_command(
-            OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${target}.nso
+            OUTPUT ${CMAKE_BINARY_DIR}/${target}.nso
             COMMAND ${elf2nso} $<TARGET_FILE:${target}> ${CMAKE_CURRENT_BINARY_DIR}/${target}.nso
             DEPENDS ${target}
             VERBATIM
@@ -18,23 +18,35 @@ function(nso_target target)
 endfunction()
 
 function(release_target target patches exefs romfs)
-    add_custom_target(
-            release_${target}
+    add_custom_command(
+            OUTPUT ${CMAKE_SOURCE_DIR}/release/${target}
             COMMAND mkdir -p "${CMAKE_SOURCE_DIR}/release/${target}/${patches}"
             COMMAND mkdir -p "${CMAKE_SOURCE_DIR}/release/${target}/${exefs}"
             COMMAND mkdir -p "${CMAKE_SOURCE_DIR}/release/${target}/${romfs}"
-            COMMAND sh -c "mv ${CMAKE_BINARY_DIR}/ips_patches/*.ips ${CMAKE_SOURCE_DIR}/release/${target}/${patches}"
-            COMMAND mv ${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}.nso ${CMAKE_SOURCE_DIR}/release/${target}/${exefs}/subsdk1
-            DEPENDS ${CMAKE_PROJECT_NAME}_nso ${CMAKE_PROJECT_NAME}_ips
+            COMMAND sh -c 'cp ${CMAKE_BINARY_DIR}/ips_patches/*.ips ${CMAKE_SOURCE_DIR}/release/${target}/${patches}'
+            COMMAND cp "${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}.nso" "${CMAKE_SOURCE_DIR}/release/${target}/${exefs}/subsdk1"
+            DEPENDS ${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}.nso ${CMAKE_BINARY_DIR}/ips_patches
+    )
+
+    add_custom_target(
+            release_${target}
+            DEPENDS ${CMAKE_SOURCE_DIR}/release/${target}
+            COMMAND mkdir -p "${CMAKE_SOURCE_DIR}/release/${target}/${patches}"
+            COMMAND mkdir -p "${CMAKE_SOURCE_DIR}/release/${target}/${exefs}"
+            COMMAND mkdir -p "${CMAKE_SOURCE_DIR}/release/${target}/${romfs}"
     )
 endfunction()
 
 function(zip_target target)
+    add_custom_command(
+            WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/release/${target}
+            COMMAND sh -c 'zip -r ../mod_${target}.zip *'
+            OUTPUT ${CMAKE_SOURCE_DIR}/release/mod_${target}.zip
+            DEPENDS ${CMAKE_SOURCE_DIR}/release/${target}
+    )
     add_custom_target(
             zip_${target}
-            WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/release/${target}
-            COMMAND zip -r ../mod_${target}.zip *
-            DEPENDS release_${target}
+            DEPENDS ${CMAKE_SOURCE_DIR}/release/mod_${target}.zip
     )
 endfunction()
 
@@ -42,6 +54,6 @@ function(ftp_target target)
     add_custom_target(
             send_${target}
             COMMAND python3 ${CMAKE_SOURCE_DIR}/scripts/send_patch.py ${SWITCH_IP} ${CMAKE_SOURCE_DIR}/release/${target}
-            DEPENDS release_${target}
+            DEPENDS ${CMAKE_SOURCE_DIR}/release/${target}
     )
 endfunction()

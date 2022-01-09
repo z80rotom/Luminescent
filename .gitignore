@@ -13,7 +13,6 @@ Makefile
 build.ninja
 
 # Build outputs
-linkerscripts/symstemp.ld
 release/
 script.json
 

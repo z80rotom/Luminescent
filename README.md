@@ -7,8 +7,6 @@ It has been modified to use CMake and supports importing in CLion.
 Additionally, it has tasks to easily integrate with [SimpleModManager](https://github.com/nadrino/SimpleModManager),
 as well as export to common emulators.
 
-To get started, copy `config.cmake.template` to `config.cmake` and, if you wish to use FTP, change the IP to the IP of your switch.
-
 ## Prerequisites
 
 - [devkitPro](https://devkitpro.org/) 

@@ -1,3 +1,4 @@
+# Used for the module name on the switch
 set(MODULE_NAME ${CMAKE_PROJECT_NAME})
 string(LENGTH ${MODULE_NAME} MODULE_NAME_LEN)
 
