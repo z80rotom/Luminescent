@@ -1,17 +1,4 @@
-function(create_transfer TRANSFER_NAME)
-    add_custom_target(
-            send_${TRANSFER_NAME}
-            COMMAND python3 ${CMAKE_SOURCE_DIR}/scripts/send_patch.py ${SWITCH_IP}
-            DEPENDS starlight_${TRANSFER_NAME}
-    )
-endfunction()
-
-function(create_export EXPORT_NAME)
-    add_custom_target(
-            export_${EXPORT_NAME}
-            WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/starlight_patch_${BDSPVER}
-            COMMAND zip -r ../mod_${EXPORT_NAME}.zip *
-            DEPENDS starlight_${EXPORT_NAME}
-            BYPRODUCTS ${CMAKE_SOURCE_DIR}/mod_${EXPORT_NAME}.zip
-    )
+function(nso_target target)
+    add_nso_target(${target})
+    set_target_properties(${target} PROPERTIES LINK_FLAGS "-specs ${CMAKE_BINARY_DIR}/switch.specs -g ${ARCH} -Wl,-init=__custom_init -Wl,-fini=__custom_fini -Wl,-Map,${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}.map -Wl,-init=__custom_init -Wl,-fini=__custom_fini -Wl,--version-script=${CMAKE_BINARY_DIR}/exported.txt")
 endfunction()

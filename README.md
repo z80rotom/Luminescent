@@ -1,4 +1,4 @@
-# Starlight - BDSP Example 
+# Starlight - Luminescent 
 
 This repository contains a fork of [Starlight](https://github.com/shadowninja108/Starlight), a switch modding template,
 based on [Dialga](https://github.com/CraftyBoss/Dialga). 

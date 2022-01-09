@@ -1,0 +1,3 @@
+[submodule "cmake/switch-cmake"]
+	path = cmake/switch-cmake
+	url = https://github.com/vbe0201/switch-cmake

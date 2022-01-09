@@ -10,17 +10,14 @@ PATCH_DIR = "patches"
 PATCH_EXTENSION = ".slpatch"
 
 NSO_HEADER_LEN = 0x100
-PATCH_CONFIG_DIR = os.path.join(PATCH_DIR, "configs")
-PATCH_NSO_MAP_DIR = os.path.join(PATCH_DIR, "maps")
-PATCH_CONFIG_EXTENSION = ".config"
+PATCH_CONFIG = os.path.join(PATCH_DIR, "maps.config")
 
-IPS_OUT_DIR_NAME = "starlight_patch_{0}"
+IPS_OUT_DIR_NAME = "ips_patches"
 IPS_FORMAT = ".ips"
 IPS_HEADER_MAGIC = b"IPS32"
 IPS_EOF_MAGIC = b"EEOF"
 
 # globals
-build_version = ""
 sl_map_file = ""
 patch_config = {
     "build_id": {},
@@ -37,10 +34,9 @@ class Patch:
         self.content = content
 
 
-def init_config():
-    config_path = os.path.join(PATCH_CONFIG_DIR, build_version + PATCH_CONFIG_EXTENSION)
+def init_config(root_path):
     # read config file
-    with open(config_path) as config_file:
+    with open(os.path.join(root_path, PATCH_CONFIG)) as config_file:
         cur_config_name = None
         for line in config_file:
             line = line.strip()
@@ -57,13 +53,6 @@ def init_config():
                     print("gen_patch.py error:", line, "awaits implementation")
                     sys.exit(-1)
                 patch_config[cur_config_name][config_nso] = config_value
-
-    # read nso map files
-    cur_ver_map_dir = os.path.join(PATCH_NSO_MAP_DIR, build_version)
-    for filename in os.listdir(cur_ver_map_dir):
-        if filename.endswith('.map'):
-            with open(os.path.join(cur_ver_map_dir, filename), 'r') as fp:
-                patch_config['map_file'][filename[:-4]] = fp.read()
 
 
 def get_symbol_addr_from_map(target, regex_str, sym_str):
@@ -221,10 +210,6 @@ def add_patch_from_file(patch_file_path):
                     patch_vars[match[0]] = match[1]
                 continue
 
-            # skip all lines not for our version
-            if patch_vars["version"] != build_version and patch_vars["version"] != patch_version_all:
-                continue
-
             # parse patches
             address_split = line.split(' ', 1)
             is_in_multi_patch = address_split[0].endswith(':')
@@ -252,32 +237,23 @@ def add_patch_from_file(patch_file_path):
             add_patch_to_patchlist(patch_target, patch_address, patch_content)
 
 
-def main():
-    if len(sys.argv) < 2:
-        print('Usage: ' + sys.argv[0] + ' [version]')
-        sys.exit(-1)
-
-    global build_version
-    build_version = sys.argv[1]
-
-    init_config()
-    sl_map_file_path = os.path.join("build" + build_version, os.path.basename(os.getcwd()) + build_version + ".map")
-    with open(sl_map_file_path, 'r') as f:
+def main(root_path, map_path):
+    init_config(root_path)
+    with open(map_path, 'r') as f:
         global sl_map_file
         sl_map_file = f.read()
 
-    for file in os.listdir(PATCH_DIR):
+    for file in os.listdir(os.path.join(root_path, PATCH_DIR)):
         if file.endswith(PATCH_EXTENSION):
-            add_patch_from_file(os.path.join(PATCH_DIR, file))
+            add_patch_from_file(os.path.join(root_path, os.path.join(PATCH_DIR, file)))
 
-    ips_out_dir = IPS_OUT_DIR_NAME.format(build_version)
     try:
-        os.mkdir(ips_out_dir)
+        os.mkdir(IPS_OUT_DIR_NAME)
     except FileExistsError:
         pass
 
     for nso in patch_list:
-        ips_out_path = os.path.join(ips_out_dir, patch_config["build_id"][nso] + IPS_FORMAT)
+        ips_out_path = os.path.join(IPS_OUT_DIR_NAME, patch_config["build_id"][nso] + IPS_FORMAT)
         with open(ips_out_path, 'wb') as ipsFile:
             ipsFile.write(IPS_HEADER_MAGIC)
             for patch in patch_list[nso]:
@@ -289,4 +265,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(*sys.argv[1:])
