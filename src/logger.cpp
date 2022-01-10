@@ -71,7 +71,7 @@ void socket_log_initialize() {
         return;
     }
 
-    nn::socket::InetAton("192.168.1.96", &hostAddress);
+    nn::socket::InetAton(LOGGER_IP, &hostAddress);
 
     serverAddress.address = hostAddress;
     serverAddress.port = nn::socket::InetHtons(LOGGER_PORT);
