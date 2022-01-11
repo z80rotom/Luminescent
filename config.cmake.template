@@ -1,8 +1,8 @@
 # Used for FTP
-set(SWITCH_IP 192.168.1.41)
+set(SWITCH_IP 192.168.1.1)
 
 # Used for logging
-set(LOGGER_IP 192.168.1.96)
+set(LOGGER_IP 192.168.1.1)
 set(LOGGER_PORT 5123)
 
 add_compile_definitions(
