@@ -1,0 +1,15 @@
+[target=main]
+0237ccf0:
+    b PlayerWork_get_defaultPokeNo
+    ret
+
+0237d070:
+    b PlayerWork_get_rivalPokeNo
+    ret
+
+0237d2e0:
+    b PlayerWork_get_supportPokeNo
+    ret
+
+0237ceb0:
+    b PlayerWork_get_rivalPokeType

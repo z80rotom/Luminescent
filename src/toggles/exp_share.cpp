@@ -1,5 +1,6 @@
-#include "il2cpp.h"
+#include "Dpr/Battle/Logic/MainModule.h"
+#include "PlayerWork.hpp"
 
-bool expShare(Dpr_Battle_Logic_MainModule_o* mainModule) {
-    return EXP_SHARE_ENABLED;
+bool expShare(Dpr::Battle::Logic::MainModule *mainModule) {
+    return PlayerWork::GetBool(2198, (MethodInfo *) nullptr);
 }

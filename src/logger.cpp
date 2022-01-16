@@ -1,5 +1,7 @@
 #include "logger.hpp"
 
+#define RELEASE 1
+
 #define	MSG_DONTWAIT	 0x00000080
 
 // ---------------------------- Socket Setup
@@ -16,6 +18,9 @@ s32 socket_log_socket = -1;
 u8 socket_data_pool[0x600000+0x20000] __attribute__((aligned(0x1000)));
 
 void socket_log(const char* str) {
+#ifdef RELEASE
+    return;
+#endif
     if (socket_log_state != SOCKET_LOG_CONNECTED)
         return;
 
@@ -50,6 +55,9 @@ s32 socket_read_char(char *out) {
 }
 
 void socket_log_initialize() {
+#ifdef RELEASE
+    return;
+#endif
     in_addr hostAddress = { 0 };
     sockaddr serverAddress = { 0 };
 
@@ -71,10 +79,10 @@ void socket_log_initialize() {
         return;
     }
 
-    nn::socket::InetAton(LOGGER_IP, &hostAddress);
+    nn::socket::InetAton("192.168.1.198", &hostAddress);
 
     serverAddress.address = hostAddress;
-    serverAddress.port = nn::socket::InetHtons(LOGGER_PORT);
+    serverAddress.port = nn::socket::InetHtons(8888);
     serverAddress.family = 2;
 
     if (nn::socket::Connect(socket_log_socket, &serverAddress, sizeof(serverAddress)) != 0) {

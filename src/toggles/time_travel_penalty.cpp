@@ -1,5 +1,5 @@
-#include "il2cpp.h"
+// #include "il2cpp.h"
 
-bool penalty(SystemTimeWork_o* timework) {
-    return TIME_PENALTY_ENABLED;
-}
+// bool penalty(SystemTimeWork_o* timework) {
+//     return TIME_PENALTY_ENABLED;
+// }

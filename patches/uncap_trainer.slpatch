@@ -1,0 +1,32 @@
+[target=main]
+01d3d260:
+    b TrainerWork_Reset
+    ret
+
+01d3d410:
+    b TrainerWork_ResetWinFlag
+    ret
+
+01d3d340:
+    b TrainerWork_SetWinFlag
+    ret
+
+01d3d4e0:
+    b TrainerWork_GetWinFlag
+    ret
+
+01d3d610:
+    b TrainerWork_SetBattleSaercher
+    ret
+
+01d3d6e0:
+    b TrainerWork_ReSetBattleSaercher
+    ret
+
+01d3d7a0:
+    b TrainerWork_AllResetBattleSaercher
+    ret
+
+01d3d880:
+    b TrainerWork_GetBattleSearcher
+    ret
