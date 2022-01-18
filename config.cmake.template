@@ -5,6 +5,8 @@ set(SWITCH_IP 192.168.1.1)
 set(LOGGER_IP 192.168.1.1)
 set(LOGGER_PORT 5123)
 
+set(SWITCH_TARGET bd_113)
+
 add_compile_definitions(
         AFFECTION_ENABLED=true
         EXP_SHARE_ENABLED=true

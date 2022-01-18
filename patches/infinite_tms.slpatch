@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_113]
 020fd490:  // Dpr.UI.UIBag.<>c__DisplayClass130_0$$<UseWazaMachine>b__5
     ret
 

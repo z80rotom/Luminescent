@@ -10,7 +10,6 @@ PATCH_DIR = "patches"
 PATCH_EXTENSION = ".slpatch"
 
 NSO_HEADER_LEN = 0x100
-PATCH_CONFIG = os.path.join("data", "maps.config")
 
 IPS_OUT_DIR_NAME = "ips_patches"
 IPS_FORMAT = ".ips"
@@ -34,9 +33,9 @@ class Patch:
         self.content = content
 
 
-def init_config(root_path):
+def init_config(root_path, version):
     # read config file
-    with open(os.path.join(root_path, PATCH_CONFIG)) as config_file:
+    with open(os.path.join(root_path, os.path.join("data", f"maps.{version}.config"))) as config_file:
         cur_config_name = None
         for line in config_file:
             line = line.strip()
@@ -180,7 +179,7 @@ def add_patch_to_patchlist(target, patch_address, patch_content):
         len(patch_content), patch_content))
 
 
-def add_patch_from_file(patch_file_path):
+def add_patch_from_file(patch_file_path, version):
     print(f"Applying patches from {patch_file_path}")
     patch_vars = {
         "version": None,
@@ -210,6 +209,9 @@ def add_patch_from_file(patch_file_path):
                     patch_vars[match[0]] = match[1]
                 continue
 
+            if "version" in patch_vars and patch_vars["version"] not in (version, "all"):
+                continue
+
             # parse patches
             address_split = line.split(' ', 1)
             is_in_multi_patch = address_split[0].endswith(':')
@@ -237,15 +239,15 @@ def add_patch_from_file(patch_file_path):
             add_patch_to_patchlist(patch_target, patch_address, patch_content)
 
 
-def main(root_path, map_path):
-    init_config(root_path)
+def main(root_path, map_path, version):
+    init_config(root_path, version)
     with open(map_path, 'r') as f:
         global sl_map_file
         sl_map_file = f.read()
 
     for file in os.listdir(os.path.join(root_path, PATCH_DIR)):
         if file.endswith(PATCH_EXTENSION):
-            add_patch_from_file(os.path.join(root_path, os.path.join(PATCH_DIR, file)))
+            add_patch_from_file(os.path.join(root_path, os.path.join(PATCH_DIR, file)), version)
 
     try:
         os.mkdir(IPS_OUT_DIR_NAME)
