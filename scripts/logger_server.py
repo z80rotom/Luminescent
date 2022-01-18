@@ -2,7 +2,6 @@ import asyncio
 import logging
 import sys
 
-
 logging.basicConfig(format="{message}",
                     style='{',
                     datefmt="%H:%M:%S",
@@ -37,6 +36,7 @@ async def main(port: str = "5123"):
 
     async with server:
         await server.serve_forever()
+
 
 if __name__ == "__main__":
     asyncio.run(main(*sys.argv[1:]))

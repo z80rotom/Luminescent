@@ -45,7 +45,8 @@ def gen_il2cpp():
                                         + ".h")
         if not exists:
             fp.write('#pragma once\n\n#include "il2cpp.h"\n\n')
-        fp.write(re.sub(r"MethodInfo_\d[A-Z\d]+", "MethodInfo", method["Signature"]).replace("MethodInfo* method", "MethodInfo* method_info") + "\n")
+        fp.write(re.sub(r"MethodInfo_\d[A-Z\d]+", "MethodInfo", method["Signature"]).replace("MethodInfo* method",
+                                                                                             "MethodInfo* method_info") + "\n")
         fp.close()
 
 
@@ -68,7 +69,8 @@ def gen_sdk():
         addr = int(parts[0], 16)
         func = cxxfilt.demangle(parts[5])
 
-        if any(x in func for x in ("<", "typeinfo for", "vtable for", "typeinfo name", ".protected", "thunk", "guard variable")):
+        if any(x in func for x in
+               ("<", "typeinfo for", "vtable for", "typeinfo name", ".protected", "thunk", "guard variable")):
             continue
 
         if "(" not in func:

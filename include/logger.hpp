@@ -14,7 +14,7 @@
 #define log(fmt, ...) LOG("[" MODULE_NAME_STR "] " fmt "\n", __VA_ARGS__)
 #define log0(fmt) LOG("[" MODULE_NAME_STR "] " fmt "\n")
 
-void socket_log(const char* str);
+void socket_log(const char *str);
 
 s32 socket_read_char(char *out);
 

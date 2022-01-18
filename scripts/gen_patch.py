@@ -218,7 +218,9 @@ def add_patch_from_file(patch_file_path, version):
             if len(address_split) < 2 and not is_in_multi_patch:
                 continue
 
-            patch_target, patch_address = resolve_address_and_target(patch_vars["target"], address_split[0] if not is_in_multi_patch else address_split[0][:-1])
+            patch_target, patch_address = resolve_address_and_target(patch_vars["target"],
+                                                                     address_split[0] if not is_in_multi_patch else
+                                                                     address_split[0][:-1])
             patch_content = bytearray()
 
             if is_in_multi_patch:

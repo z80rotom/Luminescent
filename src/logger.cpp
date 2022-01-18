@@ -1,21 +1,20 @@
 #include "logger.hpp"
 
-#define	MSG_DONTWAIT	 0x00000080
+#define    MSG_DONTWAIT     0x00000080
 
 // ---------------------------- Socket Setup
 
-enum SocketLogState
-{
-    SOCKET_LOG_UNINITIALIZED    = 0,
-    SOCKET_LOG_CONNECTED        = 1,
-    SOCKET_LOG_UNAVAILABLE      = 2
+enum SocketLogState {
+    SOCKET_LOG_UNINITIALIZED = 0,
+    SOCKET_LOG_CONNECTED = 1,
+    SOCKET_LOG_UNAVAILABLE = 2
 };
 
 u8 socket_log_state = SOCKET_LOG_UNINITIALIZED;
 s32 socket_log_socket = -1;
-u8 socket_data_pool[0x600000+0x20000] __attribute__((aligned(0x1000)));
+u8 socket_data_pool[0x600000 + 0x20000] __attribute__((aligned(0x1000)));
 
-void socket_log(const char* str) {
+void socket_log(const char *str) {
     if (socket_log_state != SOCKET_LOG_CONNECTED)
         return;
 
@@ -35,7 +34,7 @@ s32 socket_read_char(char *out) {
     while (true) {
         valread = nn::socket::Recv(socket_log_socket, buf, strlen(buf), MSG_DONTWAIT);
 
-        if( valread <= 0) {
+        if (valread <= 0) {
             break;
         } else {
 
@@ -50,8 +49,8 @@ s32 socket_read_char(char *out) {
 }
 
 void socket_log_initialize() {
-    in_addr hostAddress = { 0 };
-    sockaddr serverAddress = { 0 };
+    in_addr hostAddress = {0};
+    sockaddr serverAddress = {0};
 
     if (socket_log_state != SOCKET_LOG_UNINITIALIZED)
         return;
@@ -59,7 +58,7 @@ void socket_log_initialize() {
     nn::nifm::Initialize();
     nn::nifm::SubmitNetworkRequest();
 
-    while (nn::nifm::IsNetworkRequestOnHold()) { }
+    while (nn::nifm::IsNetworkRequestOnHold()) {}
 
     if (!nn::nifm::IsNetworkAvailable()) {
         socket_log_state = SOCKET_LOG_UNAVAILABLE;
