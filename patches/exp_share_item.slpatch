@@ -1,0 +1,4 @@
+[target=main]
+018f8dd8:
+    ldr x2, [x23] // bpp
+    bl CONFRONT_REC_IsMatch

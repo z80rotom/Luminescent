@@ -1,6 +1,8 @@
+#include "nn.h"
+#include "log.h"
 #include "logger.hpp"
 
-#define RELEASE 1
+// #define RELEASE 1
 
 #define	MSG_DONTWAIT	 0x00000080
 
@@ -92,7 +94,7 @@ void socket_log_initialize() {
 
     socket_log_state = SOCKET_LOG_CONNECTED;
 
-    log0("Hello from " MODULE_NAME_STR "!");
+    // log0("Hello from " MODULE_NAME_STR "!");
 }
 
 int tryInitSocket() {

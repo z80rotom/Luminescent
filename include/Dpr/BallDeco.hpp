@@ -66,5 +66,14 @@ namespace Dpr
         struct SaveBallDecoData_o {
             SaveBallDecoData_Fields fields;
         };
+
+        struct SaveBallDecoExtraData_Fields {
+            struct System_Int32_array* AttachCapsuleTrays;
+            struct System_Int32_array* AttachCapsulePositions;
+        };
+
+        struct SaveBallDecoExtraData_o {
+            SaveBallDecoExtraData_Fields fields;
+        };
     }
 }

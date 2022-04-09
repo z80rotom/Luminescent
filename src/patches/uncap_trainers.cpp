@@ -10,23 +10,6 @@
 const int32_t MAX_TRAINERS = 5656;
 const int32_t MAX_TRAINER_STRUCTS = 1414;
 
-extern "C"
-{
-
-struct TrBattleData
-{
-  bool IsWin1:1;
-  bool IsBattleSearcher1:1;
-  bool IsWin2:1;
-  bool IsBattleSearcher2:1;
-  bool IsWin3:1;
-  bool IsBattleSearcher3:1;
-  bool IsWin4:1;
-  bool IsBattleSearcher4:1;
-};
-
-}
-
 typedef void(*OnPreSaveMethodPointer)(PlayerWork *this_, const MethodInfo *method);
 
 void TrainerWork_ReSetBattleSaercher(int32_t id)

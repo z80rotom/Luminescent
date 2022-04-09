@@ -1,0 +1,8 @@
+[target=main]
+// 01e225d0:
+02cd9ab0:
+    b HoneyWork_GetMonsNo
+
+// 01b34c04:
+02c72e14:
+    bl HoneyWork_GetLevel

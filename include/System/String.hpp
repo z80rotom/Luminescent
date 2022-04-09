@@ -54,7 +54,17 @@ namespace System
     {
     public:
         static String * CtorCharPtr(uint16_t *ptr);
+        static String * CreateString(int8_t *value);
+        // 02942cb0
+        // int32_t Compare(String *strB, int32_t comparisonType, MethodInfo *method);
+        // 0293ed20
+        bool Equals(String *value,MethodInfo *method);
+        // 02940db0
+        static bool IsNullOrEmpty(MethodInfo *method);
+
         String * _CtorCharPtr(uint16_t *ptr,MethodInfo *method);
+        // 02948980
+        String * _CreateString(int8_t *value,MethodInfo *method);
         System_String_c *klass;
         void *monitor;
         System_String_Fields fields;

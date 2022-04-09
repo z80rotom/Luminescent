@@ -1,0 +1,43 @@
+[target=main]
+// Dpr.UI.PokemonWindow$$OpenContextMenu
+// 1.3
+019fa08c:
+    mov x0, x21
+    mov x1, x23
+    mov x2, x19
+    bl patchContextMenu2
+
+// Dpr.UI.PokemonWindow.<>c__DisplayClass25_0$$<OpenContextMenu>b__1
+// 1.3
+// bl Dpr.UI.PokemonWindow$$FieldWaza
+019fbf7c:
+    nop
+    nop
+    nop
+    mov x0, x19
+    mov x1, x8 //
+
+// bool Dpr.UI.PokemonWindow.<>c__DisplayClass25_0$$<OpenContextMenu>b__1
+019fbf98:
+    bl patchFieldWaza
+
+// 1.3
+02ca6ea0:
+    b EvDataManager_EvCmdCallWazaOmoidashiUi_b__1539_0
+
+// 1.3
+019ae540:
+    b EvDataManager_EvCmdCallWazaOshieUi_b__0
+
+// Dpr.UI.UIWazaManage$$SetupPokemonInfo
+01dd4510:
+    bl CoreParam_CollectRemindableWaza
+
+// 1.3
+019aef00:
+    b DisplayClass772_0_EvCmdNameInPoke_b__1
+
+// 1.3
+// Dpr.UI.PokemonWindow$$OnUpdate
+019f85cc:
+    bl IsPushButton_Patch

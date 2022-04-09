@@ -1,3 +1,4 @@
 [target=main]
-024814e0:  // Dpr.Battle.Logic.MainModule$$HasPlayerGakusyuSouti
+// 024814e0:  // Dpr.Battle.Logic.MainModule$$HasPlayerGakusyuSouti
+020397f0:
     b expShare

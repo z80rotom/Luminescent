@@ -1,0 +1,1074 @@
+// Copyright 2017 plutoo
+#include "libnx/fs.h"
+#include "libnx/service.h"
+#include "libnx/result.h"
+#include <string.h>
+#include "libnx/services/service_guard.h"
+#include "libnx/sf/sessionmgr.h"
+// #include "runtime/hosversion.h"
+#include "libnx/arm/tls.h"
+
+__attribute__((weak)) uint32_t __nx_fs_num_sessions = 3;
+
+static Service g_fsSrv;
+static SessionMgr g_fsSessionMgr;
+
+static __thread uint32_t g_fsPriority = FsPriority_Normal;
+
+NX_INLINE bool _fsObjectIsChild(Service* s)
+{
+    return s->session == g_fsSrv.session;
+}
+
+static void _fsObjectClose(Service* s)
+{
+    if (!_fsObjectIsChild(s)) {
+        serviceClose(s);
+    }
+    else {
+        int slot = sessionmgrAttachClient(&g_fsSessionMgr);
+        uint32_t object_id = serviceGetObjectId(s);
+        serviceAssumeDomain(s);
+        cmifMakeCloseRequest(armGetTls(), object_id);
+        svcSendSyncRequest(sessionmgrGetClientSession(&g_fsSessionMgr, slot));
+        sessionmgrDetachClient(&g_fsSessionMgr, slot);
+    }
+}
+
+NX_INLINE Result _fsObjectDispatchImpl(
+    Service* s, uint32_t request_id,
+    const void* in_data, uint32_t in_data_size,
+    void* out_data, uint32_t out_data_size,
+    SfDispatchParams disp
+) {
+    int slot = -1;
+    if (_fsObjectIsChild(s)) {
+        slot = sessionmgrAttachClient(&g_fsSessionMgr);
+        if (slot < 0) __builtin_unreachable();
+        disp.target_session = sessionmgrGetClientSession(&g_fsSessionMgr, slot);
+        serviceAssumeDomain(s);
+    }
+
+    disp.context = g_fsPriority;
+    Result rc = serviceDispatchImpl(s, request_id, in_data, in_data_size, out_data, out_data_size, disp);
+
+    if (slot >= 0) {
+        sessionmgrDetachClient(&g_fsSessionMgr, slot);
+    }
+
+    return rc;
+}
+
+#define _fsObjectDispatch(_s,_rid,...) \
+    _fsObjectDispatchImpl((_s),(_rid),NULL,0,NULL,0,(SfDispatchParams){ __VA_ARGS__ })
+
+#define _fsObjectDispatchIn(_s,_rid,_in,...) \
+    _fsObjectDispatchImpl((_s),(_rid),&(_in),sizeof(_in),NULL,0,(SfDispatchParams){ __VA_ARGS__ })
+
+#define _fsObjectDispatchOut(_s,_rid,_out,...) \
+    _fsObjectDispatchImpl((_s),(_rid),NULL,0,&(_out),sizeof(_out),(SfDispatchParams){ __VA_ARGS__ })
+
+#define _fsObjectDispatchInOut(_s,_rid,_in,_out,...) \
+    _fsObjectDispatchImpl((_s),(_rid),&(_in),sizeof(_in),&(_out),sizeof(_out),(SfDispatchParams){ __VA_ARGS__ })
+
+NX_GENERATE_SERVICE_GUARD(fs);
+
+Result _fsInitialize(void) {
+    Result rc = smGetService(&g_fsSrv, "fsp-srv");
+
+    if (R_SUCCEEDED(rc)) {
+        rc = serviceConvertToDomain(&g_fsSrv);
+    }
+
+    if (R_SUCCEEDED(rc)) {
+        uint64_t pid_placeholder = 0;
+        serviceAssumeDomain(&g_fsSrv);
+        // What even is that in Standard C?
+        // rc = serviceDispatchIn(&g_fsSrv, 1, pid_placeholder, .in_send_pid = true);
+    }
+
+    if (R_SUCCEEDED(rc))
+        rc = sessionmgrCreate(&g_fsSessionMgr, g_fsSrv.session, __nx_fs_num_sessions);
+
+    return rc;
+}
+
+void _fsCleanup(void) {
+    // Close extra sessions
+    sessionmgrClose(&g_fsSessionMgr);
+
+    // We can't assume g_fsSrv is a domain here because serviceConvertToDomain might have failed
+    serviceClose(&g_fsSrv);
+}
+
+Service* fsGetServiceSession(void) {
+    return &g_fsSrv;
+}
+
+void fsSetPriority(FsPriority prio) {
+    if (hosversionAtLeast(5,0,0))
+        g_fsPriority = prio;
+}
+
+static Result _fsCmdGetSession(Service* srv, Service* srv_out, uint32_t cmd_id) {
+    return _fsObjectDispatch(srv, cmd_id,
+        .out_num_objects = 1,
+        .out_objects = srv_out,
+    );
+}
+
+static Result _fsCmdNoIO(Service* srv, uint32_t cmd_id) {
+    return _fsObjectDispatch(srv, cmd_id);
+}
+
+static Result _fsCmdNoInOutU8(Service* srv, uint8_t *out, uint32_t cmd_id) {
+    return _fsObjectDispatchOut(srv, cmd_id, *out);
+}
+
+static Result _fsCmdNoInOutBool(Service* srv, bool *out, uint32_t cmd_id) {
+    uint8_t tmp=0;
+    Result rc = _fsCmdNoInOutU8(srv, &tmp, cmd_id);
+    if (R_SUCCEEDED(rc) && out) *out = tmp & 1;
+    return rc;
+}
+
+//-----------------------------------------------------------------------------
+// IFileSystemProxy
+//-----------------------------------------------------------------------------
+
+Result fsOpenFileSystem(FsFileSystem* out, FsFileSystemType fsType, const char* contentPath) {
+    return fsOpenFileSystemWithId(out, 0, fsType, contentPath);
+}
+
+static Result _fsOpenFileSystem(FsFileSystem* out, FsFileSystemType fsType, const char* contentPath) {
+    uint32_t tmp=fsType;
+    return _fsObjectDispatchIn(&g_fsSrv, 0, tmp,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { contentPath, FS_MAX_PATH } },
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenDataFileSystemByCurrentProcess(FsFileSystem *out) {
+    return _fsCmdGetSession(&g_fsSrv, &out->s, 2);
+}
+
+Result fsOpenFileSystemWithPatch(FsFileSystem* out, uint64_t id, FsFileSystemType fsType) {
+    if (hosversionBefore(2,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    const struct {
+        uint32_t fsType;
+        uint64_t id;
+    } in = { fsType, id };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 7, in,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+static Result _fsOpenFileSystemWithId(FsFileSystem* out, uint64_t id, FsFileSystemType fsType, const char* contentPath) {
+    const struct {
+        uint32_t fsType;
+        uint64_t id;
+    } in = { fsType, id };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 8, in,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { contentPath, FS_MAX_PATH } },
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenDataFileSystemByProgramId(FsFileSystem *out, uint64_t program_id) {
+    if (hosversionBefore(3,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    return _fsObjectDispatchIn(&g_fsSrv, 9, program_id,
+        .out_num_objects = 1,
+        .out_objects     = &out->s,
+    );
+}
+
+Result fsOpenFileSystemWithId(FsFileSystem* out, uint64_t id, FsFileSystemType fsType, const char* contentPath) {
+    char sendStr[FS_MAX_PATH] = {0};
+    strncpy(sendStr, contentPath, sizeof(sendStr)-1);
+
+    if (hosversionAtLeast(2,0,0))
+        return _fsOpenFileSystemWithId(out, id, fsType, sendStr);
+    else
+        return _fsOpenFileSystem(out, fsType, sendStr);
+}
+
+Result fsOpenBisFileSystem(FsFileSystem* out, FsBisPartitionId partitionId, const char* string) {
+    char tmpstr[FS_MAX_PATH] = {0};
+    strncpy(tmpstr, string, sizeof(tmpstr)-1);
+
+    uint32_t tmp=partitionId;
+    return _fsObjectDispatchIn(&g_fsSrv, 11, tmp,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { tmpstr, sizeof(tmpstr) } },
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenBisStorage(FsStorage* out, FsBisPartitionId partitionId) {
+    uint32_t tmp=partitionId;
+    return _fsObjectDispatchIn(&g_fsSrv, 12, tmp,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenSdCardFileSystem(FsFileSystem* out) {
+    return _fsCmdGetSession(&g_fsSrv, &out->s, 18);
+}
+
+Result fsOpenHostFileSystem(FsFileSystem* out, const char *path) {
+    char tmpstr[FS_MAX_PATH] = {0};
+    strncpy(tmpstr, path, sizeof(tmpstr)-1);
+
+    return _fsObjectDispatch(&g_fsSrv, 17,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { tmpstr, sizeof(tmpstr) } },
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenHostFileSystemWithOption(FsFileSystem* out, const char *path, uint32_t flags) {
+    if (hosversionBefore(9,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    char tmpstr[FS_MAX_PATH] = {0};
+    strncpy(tmpstr, path, sizeof(tmpstr)-1);
+
+    return _fsObjectDispatchIn(&g_fsSrv, 36, flags,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { tmpstr, sizeof(tmpstr) } },
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsDeleteSaveDataFileSystem(uint64_t application_id) {
+    return _fsObjectDispatchIn(&g_fsSrv, 21, application_id);
+}
+
+Result fsCreateSaveDataFileSystem(const FsSaveDataAttribute* attr, const FsSaveDataCreationInfo* creation_info, const FsSaveDataMetaInfo* meta) {
+    const struct {
+        FsSaveDataAttribute attr;
+        FsSaveDataCreationInfo creation_info;
+        FsSaveDataMetaInfo meta;
+    } in = { *attr, *creation_info, *meta };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 22, in);
+}
+
+Result fsCreateSaveDataFileSystemBySystemSaveDataId(const FsSaveDataAttribute* attr, const FsSaveDataCreationInfo* creation_info) {
+    const struct {
+        FsSaveDataAttribute attr;
+        FsSaveDataCreationInfo creation_info;
+    } in = { *attr, *creation_info };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 23, in);
+}
+
+Result fsDeleteSaveDataFileSystemBySaveDataSpaceId(FsSaveDataSpaceId save_data_space_id, uint64_t saveID) {
+    if (hosversionBefore(2,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    const struct {
+        uint8_t save_data_space_id;
+        uint64_t saveID;
+    } in = { (uint8_t)save_data_space_id, saveID };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 25, in);
+}
+
+Result fsDeleteSaveDataFileSystemBySaveDataAttribute(FsSaveDataSpaceId save_data_space_id, const FsSaveDataAttribute* attr) {
+    if (hosversionBefore(4,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    const struct {
+        uint8_t save_data_space_id;
+        FsSaveDataAttribute attr;
+    } in = { (uint8_t)save_data_space_id, *attr };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 28, in);
+}
+
+Result fsIsExFatSupported(bool* out) {
+    if (hosversionBefore(2,0,0)) {
+        *out = false;
+        return 0;
+    }
+
+    return _fsCmdNoInOutBool(&g_fsSrv, out, 27);
+}
+
+Result fsOpenGameCardFileSystem(FsFileSystem* out, const FsGameCardHandle* handle, FsGameCardPartition partition) {
+    const struct {
+        FsGameCardHandle handle;
+        uint32_t partition;
+    } in = { *handle, partition };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 31, in,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsExtendSaveDataFileSystem(FsSaveDataSpaceId save_data_space_id, uint64_t saveID, int64_t data_size, int64_t journal_size) {
+    if (hosversionBefore(3,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    const struct {
+        uint8_t save_data_space_id;
+        uint8_t pad[7];
+        uint64_t saveID;
+        int64_t data_size;
+        int64_t journal_size;
+    } in = { (uint8_t)save_data_space_id, {0}, saveID, data_size, journal_size };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 32, in);
+}
+
+Result fsOpenSaveDataFileSystem(FsFileSystem* out, FsSaveDataSpaceId save_data_space_id, const FsSaveDataAttribute *attr) {
+    const struct {
+        uint8_t save_data_space_id;
+        uint8_t pad[7];
+        FsSaveDataAttribute attr;
+    } in = { (uint8_t)save_data_space_id, {0}, *attr };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 51, in,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenSaveDataFileSystemBySystemSaveDataId(FsFileSystem* out, FsSaveDataSpaceId save_data_space_id, const FsSaveDataAttribute *attr) {
+    const struct {
+        uint8_t save_data_space_id;
+        uint8_t pad[7];
+        FsSaveDataAttribute attr;
+    } in = { (uint8_t)save_data_space_id, {0}, *attr };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 52, in,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenReadOnlySaveDataFileSystem(FsFileSystem* out, FsSaveDataSpaceId save_data_space_id, const FsSaveDataAttribute *attr) {
+    if (hosversionBefore(2,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    const struct {
+        uint8_t save_data_space_id;
+        uint8_t pad[7];
+        FsSaveDataAttribute attr;
+    } in = { (uint8_t)save_data_space_id, {0}, *attr };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 53, in,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsReadSaveDataFileSystemExtraDataBySaveDataSpaceId(void* buf, size_t len, FsSaveDataSpaceId save_data_space_id, uint64_t saveID) {
+    if (hosversionBefore(3,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    const struct {
+        uint8_t save_data_space_id;
+        uint64_t saveID;
+    } in = { (uint8_t)save_data_space_id, saveID };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 57, in,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_Out },
+        .buffers = { { buf, len } },
+    );
+}
+
+Result fsReadSaveDataFileSystemExtraData(void* buf, size_t len, uint64_t saveID) {
+    return _fsObjectDispatchIn(&g_fsSrv, 58, saveID,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_Out },
+        .buffers = { { buf, len } },
+    );
+}
+
+Result fsWriteSaveDataFileSystemExtraData(const void* buf, size_t len, FsSaveDataSpaceId save_data_space_id, uint64_t saveID) {
+    if (hosversionBefore(2,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    const struct {
+        uint8_t save_data_space_id;
+        uint64_t saveID;
+    } in = { (uint8_t)save_data_space_id, saveID };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 59, in,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_In },
+        .buffers = { { buf, len } },
+    );
+}
+
+static Result _fsOpenSaveDataInfoReader(FsSaveDataInfoReader* out) {
+    return _fsCmdGetSession(&g_fsSrv, &out->s, 60);
+}
+
+static Result _fsOpenSaveDataInfoReaderBySaveDataSpaceId(FsSaveDataInfoReader* out, FsSaveDataSpaceId save_data_space_id) {
+    uint8_t in = (uint8_t)save_data_space_id;
+    return _fsObjectDispatchIn(&g_fsSrv, 61, in,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+
+}
+
+Result fsOpenSaveDataInfoReader(FsSaveDataInfoReader* out, FsSaveDataSpaceId save_data_space_id) {
+    if (save_data_space_id == FsSaveDataSpaceId_All) {
+        return _fsOpenSaveDataInfoReader(out);
+    } else {
+        return _fsOpenSaveDataInfoReaderBySaveDataSpaceId(out, save_data_space_id);
+    }
+}
+
+Result fsOpenImageDirectoryFileSystem(FsFileSystem* out, FsImageDirectoryId image_directory_id) {
+    uint32_t tmp=image_directory_id;
+    return _fsObjectDispatchIn(&g_fsSrv, 100, tmp,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenContentStorageFileSystem(FsFileSystem* out, FsContentStorageId content_storage_id) {
+    uint32_t tmp=content_storage_id;
+    return _fsObjectDispatchIn(&g_fsSrv, 110, tmp,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenCustomStorageFileSystem(FsFileSystem* out, FsCustomStorageId custom_storage_id) {
+    if (hosversionBefore(7,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    uint32_t tmp=custom_storage_id;
+    return _fsObjectDispatchIn(&g_fsSrv, 130, tmp,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenDataStorageByCurrentProcess(FsStorage* out) {
+    return _fsCmdGetSession(&g_fsSrv, &out->s, 200);
+}
+
+Result fsOpenDataStorageByProgramId(FsStorage *out, uint64_t program_id) {
+    if (hosversionBefore(3,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    return _fsObjectDispatchIn(&g_fsSrv, 201, program_id,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenDataStorageByDataId(FsStorage* out, uint64_t dataId, NcmStorageId storageId) {
+    const struct {
+        uint8_t storage_id;
+        uint64_t data_id;
+    } in = { storageId, dataId };
+
+    return _fsObjectDispatchIn(&g_fsSrv, 202, in,
+        .out_num_objects = 1,
+        .out_objects = &out->s,
+    );
+}
+
+Result fsOpenPatchDataStorageByCurrentProcess(FsStorage* out) {
+    return _fsCmdGetSession(&g_fsSrv, &out->s, 203);
+}
+
+Result fsOpenDeviceOperator(FsDeviceOperator* out) {
+    return _fsCmdGetSession(&g_fsSrv, &out->s, 400);
+}
+
+Result fsOpenSdCardDetectionEventNotifier(FsEventNotifier* out) {
+    return _fsCmdGetSession(&g_fsSrv, &out->s, 500);
+}
+
+Result fsIsSignedSystemPartitionOnSdCardValid(bool *out) {
+    if (!hosversionBetween(4, 8))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    return _fsCmdNoInOutBool(&g_fsSrv, out, 640);
+}
+
+Result fsGetRightsIdByPath(const char* path, FsRightsId* out_rights_id) {
+    if (hosversionBefore(2,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    char send_path[FS_MAX_PATH] = {0};
+    strncpy(send_path, path, FS_MAX_PATH-1);
+
+    return _fsObjectDispatchOut(&g_fsSrv, 609, *out_rights_id,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { send_path, sizeof(send_path) } },
+    );
+}
+
+Result fsGetRightsIdAndKeyGenerationByPath(const char* path, uint8_t* out_key_generation, FsRightsId* out_rights_id) {
+    if (hosversionBefore(3,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    char send_path[FS_MAX_PATH] = {0};
+    strncpy(send_path, path, FS_MAX_PATH-1);
+
+    struct {
+        uint8_t key_generation;
+        uint8_t padding[0x7];
+        FsRightsId rights_id;
+    } out;
+
+    Result rc = _fsObjectDispatchOut(&g_fsSrv, 610, out,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { send_path, sizeof(send_path) } },
+    );
+
+    if (R_SUCCEEDED(rc)) {
+        if (out_key_generation) *out_key_generation = out.key_generation;
+        if (out_rights_id) *out_rights_id = out.rights_id;
+    }
+
+    return rc;
+}
+
+Result fsDisableAutoSaveDataCreation(void) {
+    return _fsCmdNoIO(&g_fsSrv, 1003);
+}
+
+Result fsSetGlobalAccessLogMode(uint32_t mode) {
+    return _fsObjectDispatchIn(&g_fsSrv, 1004, mode);
+}
+
+Result fsGetGlobalAccessLogMode(uint32_t* out_mode) {
+    return _fsObjectDispatchOut(&g_fsSrv, 1005, *out_mode);
+}
+
+Result fsOutputAccessLogToSdCard(const char *log, size_t size) {
+    return _fsObjectDispatch(&g_fsSrv, 1006,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_In },
+        .buffers = { { log, size } },
+    );
+}
+
+Result fsGetProgramIndexForAccessLog(uint32_t *out_program_index, uint32_t *out_program_count) {
+    if (hosversionBefore(7,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    struct {
+        uint32_t index;
+        uint32_t count;
+    } out;
+
+    Result rc = _fsObjectDispatchOut(&g_fsSrv, 1007, out);
+    if (R_SUCCEEDED(rc)) {
+        if (out_program_index) *out_program_index = out.index;
+        if (out_program_count) *out_program_count = out.count;
+    }
+    return rc;
+}
+
+// Wrapper(s) for fsCreateSaveDataFileSystem.
+Result fsCreate_TemporaryStorage(uint64_t application_id, uint64_t owner_id, int64_t size, uint32_t flags) {
+    FsSaveDataAttribute attr = {
+        .application_id = application_id,
+        .save_data_type = FsSaveDataType_Temporary,
+    };
+    FsSaveDataCreationInfo create = {
+        .save_data_size = size,
+        .journal_size = 0,
+        .available_size = 0x4000,
+        .owner_id = owner_id,
+        .flags = flags,
+        .save_data_space_id = FsSaveDataSpaceId_Temporary,
+    };
+    FsSaveDataMetaInfo meta={};
+
+    return fsCreateSaveDataFileSystem(&attr, &create, &meta);
+}
+
+// Wrapper(s) for fsCreateSaveDataFileSystemBySystemSaveDataId.
+Result fsCreate_SystemSaveDataWithOwner(FsSaveDataSpaceId save_data_space_id, uint64_t system_save_data_id, AccountUid uid, uint64_t owner_id, int64_t size, int64_t journal_size, uint32_t flags) {
+    FsSaveDataAttribute attr = {
+        .uid = uid,
+        .system_save_data_id = system_save_data_id,
+    };
+    FsSaveDataCreationInfo create = {
+        .save_data_size = size,
+        .journal_size = journal_size,
+        .available_size = 0x4000,
+        .owner_id = owner_id,
+        .flags = flags,
+        .save_data_space_id = save_data_space_id,
+    };
+
+    return fsCreateSaveDataFileSystemBySystemSaveDataId(&attr, &create);
+}
+
+Result fsCreate_SystemSaveData(FsSaveDataSpaceId save_data_space_id, uint64_t system_save_data_id, int64_t size, int64_t journal_size, uint32_t flags) {
+    return fsCreate_SystemSaveDataWithOwner(save_data_space_id, system_save_data_id, (AccountUid){}, 0, size, journal_size, flags);
+}
+
+// Wrapper(s) for fsOpenSaveDataFileSystem.
+Result fsOpen_SaveData(FsFileSystem* out, uint64_t application_id, AccountUid uid) {
+    FsSaveDataAttribute attr;
+
+    memset(&attr, 0, sizeof(attr));
+    attr.application_id = application_id;
+    attr.uid = uid;
+    attr.save_data_type = FsSaveDataType_Account;
+
+    return fsOpenSaveDataFileSystem(out, FsSaveDataSpaceId_User, &attr);
+}
+
+Result fsOpen_SaveDataReadOnly(FsFileSystem* out, uint64_t application_id, AccountUid uid) {
+    FsSaveDataAttribute attr;
+
+    memset(&attr, 0, sizeof(attr));
+    attr.application_id = application_id;
+    attr.uid = uid;
+    attr.save_data_type = FsSaveDataType_Account;
+
+    return fsOpenReadOnlySaveDataFileSystem(out, FsSaveDataSpaceId_User, &attr);
+}
+
+Result fsOpen_BcatSaveData(FsFileSystem* out, uint64_t application_id) {
+    FsSaveDataAttribute attr;
+
+    memset(&attr, 0, sizeof(attr));
+    attr.application_id = application_id;
+    attr.save_data_type = FsSaveDataType_Bcat;
+
+    return fsOpenSaveDataFileSystem(out, FsSaveDataSpaceId_User, &attr);
+}
+
+Result fsOpen_DeviceSaveData(FsFileSystem* out, uint64_t application_id) {
+    FsSaveDataAttribute attr;
+
+    memset(&attr, 0, sizeof(attr));
+    attr.application_id = application_id;
+    attr.save_data_type = FsSaveDataType_Device;
+
+    return fsOpenSaveDataFileSystem(out, FsSaveDataSpaceId_User, &attr);
+}
+
+Result fsOpen_TemporaryStorage(FsFileSystem* out) {
+    if (hosversionBefore(3,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    FsSaveDataAttribute attr;
+
+    memset(&attr, 0, sizeof(attr));
+    attr.save_data_type = FsSaveDataType_Temporary;
+
+    return fsOpenSaveDataFileSystem(out, FsSaveDataSpaceId_Temporary, &attr);
+}
+
+Result fsOpen_CacheStorage(FsFileSystem* out, uint64_t application_id, uint16_t save_data_index) {
+    if (hosversionBefore(3,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    FsSaveDataAttribute attr;
+
+    memset(&attr, 0, sizeof(attr));
+    attr.application_id = application_id;
+    attr.save_data_type = FsSaveDataType_Cache;
+    attr.save_data_index = save_data_index;
+
+    return fsOpenSaveDataFileSystem(out, FsSaveDataSpaceId_User, &attr);
+}
+
+Result fsOpen_SystemSaveData(FsFileSystem* out, FsSaveDataSpaceId save_data_space_id, uint64_t system_save_data_id, AccountUid uid) {
+    FsSaveDataAttribute attr;
+
+    memset(&attr, 0, sizeof(attr));
+    attr.uid = uid;
+    attr.system_save_data_id = system_save_data_id;
+    attr.save_data_type = FsSaveDataType_System;
+
+    return fsOpenSaveDataFileSystemBySystemSaveDataId(out, save_data_space_id, &attr);
+}
+
+Result fsOpen_SystemBcatSaveData(FsFileSystem* out, uint64_t system_save_data_id) {
+    if (hosversionBefore(4,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    FsSaveDataAttribute attr;
+
+    memset(&attr, 0, sizeof(attr));
+    attr.system_save_data_id = system_save_data_id;
+    attr.save_data_type = FsSaveDataType_SystemBcat;
+
+    return fsOpenSaveDataFileSystemBySystemSaveDataId(out, FsSaveDataSpaceId_System, &attr);
+}
+
+//-----------------------------------------------------------------------------
+// IFileSystem
+//-----------------------------------------------------------------------------
+
+Result fsFsCreateFile(FsFileSystem* fs, const char* path, int64_t size, uint32_t option) {
+    const struct {
+        uint32_t option;
+        uint64_t size;
+    } in = { option, size };
+
+    return _fsObjectDispatchIn(&fs->s, 0, in,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { path, FS_MAX_PATH } },
+    );
+}
+
+static Result _fsFsCmdWithInPath(FsFileSystem* fs, const char* path, uint32_t cmd_id) {
+    return _fsObjectDispatch(&fs->s, cmd_id,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { path, FS_MAX_PATH } },
+    );
+}
+
+Result fsFsDeleteFile(FsFileSystem* fs, const char* path) {
+    return _fsFsCmdWithInPath(fs, path, 1);
+}
+
+Result fsFsCreateDirectory(FsFileSystem* fs, const char* path) {
+    return _fsFsCmdWithInPath(fs, path, 2);
+}
+
+Result fsFsDeleteDirectory(FsFileSystem* fs, const char* path) {
+    return _fsFsCmdWithInPath(fs, path, 3);
+}
+
+Result fsFsDeleteDirectoryRecursively(FsFileSystem* fs, const char* path) {
+    return _fsFsCmdWithInPath(fs, path, 4);
+}
+
+static Result _fsFsCmdWithTwoInPaths(FsFileSystem* fs, const char* cur_path, const char* new_path, uint32_t cmd_id) {
+    return _fsObjectDispatch(&fs->s, cmd_id,
+        .buffer_attrs = {
+            SfBufferAttr_HipcPointer | SfBufferAttr_In,
+            SfBufferAttr_HipcPointer | SfBufferAttr_In,
+        },
+        .buffers = {
+            { cur_path, FS_MAX_PATH },
+            { new_path, FS_MAX_PATH },
+        },
+    );
+}
+
+Result fsFsRenameFile(FsFileSystem* fs, const char* cur_path, const char* new_path) {
+    return _fsFsCmdWithTwoInPaths(fs, cur_path, new_path, 5);
+}
+
+Result fsFsRenameDirectory(FsFileSystem* fs, const char* cur_path, const char* new_path) {
+    return _fsFsCmdWithTwoInPaths(fs, cur_path, new_path, 6);
+}
+
+Result fsFsGetEntryType(FsFileSystem* fs, const char* path, FsDirEntryType* out) {
+    return _fsObjectDispatchOut(&fs->s, 7, *out,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { path, FS_MAX_PATH } },
+    );
+}
+
+static Result _fsFsOpenCommon(FsFileSystem* fs, const char* path, uint32_t flags, Service* out, uint32_t cmd_id) {
+    return _fsObjectDispatchIn(&fs->s, cmd_id, flags,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { path, FS_MAX_PATH } },
+        .out_num_objects = 1,
+        .out_objects = out,
+    );
+}
+
+Result fsFsOpenFile(FsFileSystem* fs, const char* path, uint32_t mode, FsFile* out) {
+    return _fsFsOpenCommon(fs, path, mode, &out->s, 8);
+}
+
+Result fsFsOpenDirectory(FsFileSystem* fs, const char* path, uint32_t mode, FsDir* out) {
+    return _fsFsOpenCommon(fs, path, mode, &out->s, 9);
+}
+
+Result fsFsCommit(FsFileSystem* fs) {
+    return _fsCmdNoIO(&fs->s, 10);
+}
+
+static Result _fsFsCmdWithInPathAndOutuint64_t(FsFileSystem* fs, const char* path, uint64_t* out, uint32_t cmd_id) {
+    return _fsObjectDispatchOut(&fs->s, cmd_id, *out,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { path, FS_MAX_PATH } },
+    );
+}
+
+Result fsFsGetFreeSpace(FsFileSystem* fs, const char* path, int64_t* out) {
+    return _fsFsCmdWithInPathAndOutuint64_t(fs, path, (uint64_t*)out, 11);
+}
+
+Result fsFsGetTotalSpace(FsFileSystem* fs, const char* path, int64_t* out) {
+    return _fsFsCmdWithInPathAndOutuint64_t(fs, path, (uint64_t*)out, 12);
+}
+
+Result fsFsCleanDirectoryRecursively(FsFileSystem* fs, const char* path) {
+    if (hosversionBefore(3,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    return _fsFsCmdWithInPath(fs, path, 13);
+}
+
+Result fsFsGetFileTimeStampRaw(FsFileSystem* fs, const char* path, FsTimeStampRaw *out) {
+    if (hosversionBefore(3,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    return _fsObjectDispatchOut(&fs->s, 14, *out,
+        .buffer_attrs = { SfBufferAttr_HipcPointer | SfBufferAttr_In },
+        .buffers = { { path, FS_MAX_PATH } },
+    );
+}
+
+Result fsFsQueryEntry(FsFileSystem* fs, void *out, size_t out_size, const void *in, size_t in_size, const char* path, FsFileSystemQueryId query_id) {
+    if (hosversionBefore(4,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    return _fsObjectDispatchIn(&fs->s, 15, query_id,
+        .buffer_attrs = {
+            SfBufferAttr_HipcPointer  | SfBufferAttr_In,
+            SfBufferAttr_HipcMapAlias | SfBufferAttr_In  | SfBufferAttr_HipcMapTransferAllowsNonSecure,
+            SfBufferAttr_HipcMapAlias | SfBufferAttr_Out | SfBufferAttr_HipcMapTransferAllowsNonSecure,
+        },
+        .buffers = {
+            { path, FS_MAX_PATH },
+            { in,   in_size     },
+            { out,  out_size    },
+        },
+    );
+}
+
+Result fsFsSetConcatenationFileAttribute(FsFileSystem* fs, const char *path) {
+    return fsFsQueryEntry(fs, NULL, 0, NULL, 0, path, FsFileSystemQueryId_SetConcatenationFileAttribute);
+}
+
+Result fsFsIsValidSignedSystemPartitionOnSdCard(FsFileSystem* fs, bool *out) {
+    if (hosversionBefore(8,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    uint8_t tmp=0;
+    char send_path[FS_MAX_PATH] = "/";
+    Result rc = fsFsQueryEntry(fs, &tmp, sizeof(tmp), NULL, 0, send_path, FsFileSystemQueryId_IsValidSignedSystemPartitionOnSdCard);
+    if (R_SUCCEEDED(rc) && out) *out = tmp & 1;
+    return rc;
+}
+
+void fsFsClose(FsFileSystem* fs) {
+    _fsObjectClose(&fs->s);
+}
+
+//-----------------------------------------------------------------------------
+// IFile
+//-----------------------------------------------------------------------------
+
+Result fsFileRead(FsFile* f, int64_t off, void* buf, uint64_t read_size, uint32_t option, uint64_t* bytes_read) {
+    const struct {
+        uint32_t option;
+        uint32_t pad;
+        int64_t offset;
+        uint64_t read_size;
+    } in = { option, 0, off, read_size };
+
+    return _fsObjectDispatchInOut(&f->s, 0, in, *bytes_read,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_Out | SfBufferAttr_HipcMapTransferAllowsNonSecure },
+        .buffers = { { buf, read_size } },
+    );
+}
+
+Result fsFileWrite(FsFile* f, int64_t off, const void* buf, uint64_t write_size, uint32_t option) {
+    const struct {
+        uint32_t option;
+        uint32_t pad;
+        int64_t offset;
+        uint64_t write_size;
+    } in = { option, 0, off, write_size };
+
+    return _fsObjectDispatchIn(&f->s, 1, in,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_In | SfBufferAttr_HipcMapTransferAllowsNonSecure },
+        .buffers = { { buf, write_size } },
+    );
+}
+
+Result fsFileFlush(FsFile* f) {
+    return _fsCmdNoIO(&f->s, 2);
+}
+
+Result fsFileSetSize(FsFile* f, int64_t sz) {
+    return _fsObjectDispatchIn(&f->s, 3, sz);
+}
+
+Result fsFileGetSize(FsFile* f, int64_t* out) {
+    return _fsObjectDispatchOut(&f->s, 4, *out);
+}
+
+Result fsFileOperateRange(FsFile* f, FsOperationId op_id, int64_t off, int64_t len, FsRangeInfo* out) {
+    if (hosversionBefore(4,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    const struct {
+        uint32_t op_id;
+        uint32_t pad;
+        int64_t off;
+        int64_t len;
+    } in = { op_id, 0, off, len };
+
+    return _fsObjectDispatchInOut(&f->s, 5, in, *out);
+}
+
+void fsFileClose(FsFile* f) {
+    _fsObjectClose(&f->s);
+}
+
+// IDirectory implementation
+void fsDirClose(FsDir* d) {
+    _fsObjectClose(&d->s);
+}
+
+Result fsDirRead(FsDir* d, int64_t* total_entries, size_t max_entries, FsDirectoryEntry *buf) {
+    return _fsObjectDispatchOut(&d->s, 0, *total_entries,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_Out },
+        .buffers = { { buf, max_entries*sizeof(FsDirectoryEntry) } },
+    );
+}
+
+Result fsDirGetEntryCount(FsDir* d, int64_t* count) {
+    return _fsObjectDispatchOut(&d->s, 1, *count);
+}
+
+//-----------------------------------------------------------------------------
+// IStorage
+//-----------------------------------------------------------------------------
+
+Result fsStorageRead(FsStorage* s, int64_t off, void* buf, uint64_t read_size) {
+    const struct {
+        int64_t offset;
+        uint64_t read_size;
+    } in = { off, read_size };
+
+    return _fsObjectDispatchIn(&s->s, 0, in,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_Out | SfBufferAttr_HipcMapTransferAllowsNonSecure },
+        .buffers = { { buf, read_size } },
+    );
+}
+
+Result fsStorageWrite(FsStorage* s, int64_t off, const void* buf, uint64_t write_size) {
+    const struct {
+        int64_t offset;
+        uint64_t write_size;
+    } in = { off, write_size };
+
+    return _fsObjectDispatchIn(&s->s, 1, in,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_In | SfBufferAttr_HipcMapTransferAllowsNonSecure },
+        .buffers = { { buf, write_size } },
+    );
+}
+
+Result fsStorageFlush(FsStorage* s) {
+    return _fsCmdNoIO(&s->s, 2);
+}
+
+Result fsStorageSetSize(FsStorage* s, int64_t sz) {
+    return _fsObjectDispatchIn(&s->s, 3, sz);
+}
+
+Result fsStorageGetSize(FsStorage* s, int64_t* out) {
+    return _fsObjectDispatchOut(&s->s, 4, *out);
+}
+
+Result fsStorageOperateRange(FsStorage* s, FsOperationId op_id, int64_t off, int64_t len, FsRangeInfo* out) {
+    if (hosversionBefore(4,0,0))
+        return MAKERESULT(Module_Libnx, LibnxError_IncompatSysVer);
+
+    const struct {
+        uint32_t op_id;
+        uint32_t pad;
+        int64_t off;
+        int64_t len;
+    } in = { op_id, 0, off, len };
+
+    return _fsObjectDispatchInOut(&s->s, 5, in, *out);
+}
+
+void fsStorageClose(FsStorage* s) {
+    _fsObjectClose(&s->s);
+}
+
+//-----------------------------------------------------------------------------
+// ISaveDataInfoReader
+//-----------------------------------------------------------------------------
+
+// Actually called ReadSaveDataInfo
+Result fsSaveDataInfoReaderRead(FsSaveDataInfoReader *s, FsSaveDataInfo* buf, size_t max_entries, int64_t* total_entries) {
+    return _fsObjectDispatchOut(&s->s, 0, *total_entries,
+        .buffer_attrs = { SfBufferAttr_HipcMapAlias | SfBufferAttr_Out },
+        .buffers = { { buf, max_entries*sizeof(FsSaveDataInfo) } },
+    );
+}
+
+void fsSaveDataInfoReaderClose(FsSaveDataInfoReader* s) {
+    _fsObjectClose(&s->s);
+}
+
+//-----------------------------------------------------------------------------
+// IEventNotifier
+//-----------------------------------------------------------------------------
+
+Result fsEventNotifierGetEventHandle(FsEventNotifier* e, Event* out, bool autoclear) {
+    Handle event = INVALID_HANDLE;
+    Result rc = _fsObjectDispatch(&e->s, 0,
+        .out_handle_attrs = { SfOutHandleAttr_HipcCopy },
+        .out_handles = &event,
+    );
+
+    if (R_SUCCEEDED(rc))
+        eventLoadRemote(out, event, autoclear);
+
+    return rc;
+}
+
+void fsEventNotifierClose(FsEventNotifier* e) {
+    _fsObjectClose(&e->s);
+}
+
+//-----------------------------------------------------------------------------
+// IDeviceOperator
+//-----------------------------------------------------------------------------
+
+Result fsDeviceOperatorIsSdCardInserted(FsDeviceOperator* d, bool* out) {
+    return _fsCmdNoInOutBool(&d->s, out, 0);
+}
+
+Result fsDeviceOperatorIsGameCardInserted(FsDeviceOperator* d, bool* out) {
+    return _fsCmdNoInOutBool(&d->s, out, 200);
+}
+
+Result fsDeviceOperatorGetGameCardHandle(FsDeviceOperator* d, FsGameCardHandle* out) {
+    return _fsObjectDispatchOut(&d->s, 202, *out);
+}
+
+Result fsDeviceOperatorGetGameCardAttribute(FsDeviceOperator* d, const FsGameCardHandle* handle, uint8_t *out) {
+    return _fsObjectDispatchInOut(&d->s, 205, *handle, *out);
+}
+
+void fsDeviceOperatorClose(FsDeviceOperator* d) {
+    _fsObjectClose(&d->s);
+}

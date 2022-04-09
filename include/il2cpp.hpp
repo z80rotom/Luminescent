@@ -169,12 +169,32 @@ struct UnityEngine_Vector3_Fields {
 	float z;
 };
 
+struct UnityEngine_Vector2_Fields {
+	float x;
+	float y;
+};
+
 struct UnityEngine_Vector2Int_o {
 	UnityEngine_Vector2Int_Fields fields;
 };
 
+struct UnityEngine_Vector2_o {
+	UnityEngine_Vector2_Fields fields;
+};
+
 struct UnityEngine_Vector3_o {
 	UnityEngine_Vector3_Fields fields;
+};
+
+struct UnityEngine_Quaternion_Fields {
+	float x;
+	float y;
+	float z;
+	float w;
+};
+
+struct UnityEngine_Quaternion_o {
+	UnityEngine_Quaternion_Fields fields;
 };
 
 struct UnityEngine_Vector3_array {
@@ -191,5 +211,18 @@ struct UnityEngine_Object_Fields {
 struct UnityEngine_ScriptableObject_Fields {
     UnityEngine_Object_Fields super;
 };
+
+struct UnityEngine_Component_Fields {
+ UnityEngine_Object_Fields super;
+};
+
+struct UnityEngine_Behaviour_Fields {
+ UnityEngine_Component_Fields super;
+};
+
+struct UnityEngine_MonoBehaviour_Fields {
+ UnityEngine_Behaviour_Fields super;
+};
+
 
 #endif

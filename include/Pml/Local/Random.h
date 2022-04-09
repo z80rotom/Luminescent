@@ -12,6 +12,7 @@ namespace Pml
         class Random {
             public:
                 static uint32_t GetValue(MethodInfo * method);
+                static uint32_t GetValue(uint32_t max, MethodInfo * method);
         };
     } // namespace Local
     

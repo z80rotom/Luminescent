@@ -1,0 +1,6 @@
+[target=main]
+01f6db20:
+    bl LocalKoukan_GetTargetData
+
+01f6db48:
+    bl LocalKoukan_CreateTradePokeParam

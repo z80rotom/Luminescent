@@ -26,7 +26,6 @@ patch_config = {
 }
 patch_list = {}
 
-
 class Patch:
     def __init__(self, offset, length, content):
         self.offset = offset

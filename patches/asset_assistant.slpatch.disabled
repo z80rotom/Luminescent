@@ -1,0 +1,9 @@
+[target=main]
+
+// Dpr.EvScript.EvDataManager$$InitScriptLoadWait
+01b624e0:
+    bl Lumi_AssetRequestOperation_get_assetBundleRequest
+
+// Dpr.EvScript.EvDataManager$$InitScriptLoad
+01b6243c:
+    bl Lumi_AssetManager_AppendAssetBundleRequest

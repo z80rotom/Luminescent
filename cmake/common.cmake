@@ -12,6 +12,11 @@ add_compile_definitions(
 
 # Project sources
 include_directories(${PROJECT_SOURCE_DIR}/include/)
+include_directories(${LIBNX}/include/)
+include_directories(${DEVKITPRO}/portlibs/switch/include/)
+# link_directories(${LIBNX}/lib/)
+link_directories(${PROJECT_SOURCE_DIR}/libs)
+link_directories(${DEVKITPRO}/portlibs/switch/lib)
 file(GLOB_RECURSE SOURCES_ASM ${PROJECT_SOURCE_DIR}/src/*.s)
 file(GLOB_RECURSE SOURCES_C ${PROJECT_SOURCE_DIR}/src/*.c)
 file(GLOB_RECURSE SOURCES_CXX ${PROJECT_SOURCE_DIR}/src/*.cpp)

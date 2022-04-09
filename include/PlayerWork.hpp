@@ -176,7 +176,7 @@ struct PlayerWork_SaveData_Fields {
 	DPData::_DENDOU_SAVEDATA_o dendoudata; // s/d
 	DPData::BadgeSaveData_o badgeSaveData; // d
 	DPData::BoukenNote_o boukenNote; // d
-	DPData::TV_DATA_o tvData;
+	System_Byte_array* tvDataOld;
 	DPData::UgSaveData_o ugSaveData; // s
 	DPData::GMS_DATA_o gmsdata; // s
 	DPData::PLAYER_NETWORK_DATA_o networkdata; // s/d // Most likely to be buggy
@@ -195,6 +195,8 @@ struct PlayerWork_SaveData_Fields {
 	struct PLAYREPORT_DATA_o playReportData; // s/d
 	struct MT_DATA_o mtData; // s/d
 	DPData::DENDOU_SAVE_ADD_o dendouSaveAdd; // s/d
+	DPData::TV_DATA_o tvData;
+	Dpr::BallDeco::SaveBallDecoExtraData_o ballDecoExtraData;
 };
 
 struct PlayerWork_SaveData_o {
@@ -262,8 +264,13 @@ public:
 
   static int32_t get_rivalPokeType(MethodInfo *method);
 
+
+  static int32_t get_zoneID(MethodInfo *method);
+
   // 0236e9f0
   static int32_t GetInt(int32_t index, MethodInfo *method);
+  // 02379290
+  static void SetInt(int32_t index, int32_t value, MethodInfo *method);
   // 0236fa10
   static bool GetBool(int32_t index, MethodInfo *method);
   // 023793a0
@@ -275,5 +282,22 @@ public:
 
 // 04e4ec58
 extern void * PlayerWork_TypeInfo;
+
+extern "C"
+{
+
+struct TrBattleData
+{
+  bool IsWin1:1;
+  bool IsBattleSearcher1:1;
+  bool IsWin2:1;
+  bool IsBattleSearcher2:1;
+  bool IsWin3:1;
+  bool IsBattleSearcher3:1;
+  bool IsWin4:1;
+  bool IsBattleSearcher4:1;
+};
+
+}
 
 #endif

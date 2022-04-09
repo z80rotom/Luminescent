@@ -1,0 +1,56 @@
+
+[target=main]
+02483e1c:
+    bl setSubProcForSetup
+
+024792e4:
+    bl setup_raid_srcParty
+
+024792ec:
+    bl setup_raid_trainerParam
+
+01afd750:
+    bl BATTLE_SETUP_Wild
+
+02479354:
+    bl setSrcPartyToBattleEnv
+
+024793bc:
+    bl setSrcPartyToBattleEnv
+
+021ea7e0:
+    bl GetClientCoverPosNum
+
+// Compare against 5 because I don't think it is doing what it should.
+021ea7a8:
+    cmp x20, #0x5
+
+01d71790:
+    bl expandPokePos_raid
+
+01e1d36c:
+    bl LoadFromFile
+
+028d20e0:
+    b DebugLog
+
+028d2b30:
+    b DebugLogWarning
+
+028d24c0:
+    b DebugLogError
+
+017f3724:
+    bl DebugLogAssetBundle
+
+017fe510:
+    bl ReadAllBytes
+
+017fd92c:
+    bl ReadAllBytes
+
+// 01ce4ea4:
+//     bl IndexOutOfRangeException
+
+// 00047b1c:
+//    b FUN_00047b1c

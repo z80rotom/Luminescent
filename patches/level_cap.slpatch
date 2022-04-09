@@ -1,4 +1,4 @@
 [target=main]
-01d72f40:
+// 01d72f40:
+018f8040:
     b Dpr_Battle_Logic_Exp_getexp_calc_adjust_level
-    ret

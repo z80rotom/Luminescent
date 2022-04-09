@@ -1,0 +1,23 @@
+[target=main]
+// 01e1a2e0:
+//    b GameManager_GetFieldEncountData
+01e4463c:
+    bl GameManager_GetFieldEncountData
+01e44710:
+    bl GameManager_GetFieldEncountData
+01e49778:
+    bl GameManager_GetFieldEncountData
+01e4661c:
+    bl GameManager_GetFieldEncountData
+01e4665c:
+    bl GameManager_GetFieldEncountData
+01e46f74:
+    bl GameManager_GetFieldEncountData
+01e4715c:
+    bl GameManager_GetFieldEncountData
+01e49c64:
+    bl GameManager_GetFieldEncountData
+01d48184:
+    bl GameManager_GetFieldEncountData
+01c1995c:
+    bl GameManager_GetFieldEncountData

@@ -1,11 +1,16 @@
 [target=main]
 // Force Sync saves
-02379054:
-    mov w0,#0x0
+// 02379054:
+//    mov w0,#0x0
 
-02377b18:
-    bl PlayerWork_CustomSaveAsyncOperation_NewHook
+// 02377b18:
+//    bl PlayerWork_CustomSaveAsyncOperation_NewHook
 
-023773f0:
+// 023773f0:
+02ceb850:
+    b PlayerWork_CustomLoadOperation
+    ret
+
+02cec1e0:
     b PlayerWork_CustomLoadOperation
     ret
