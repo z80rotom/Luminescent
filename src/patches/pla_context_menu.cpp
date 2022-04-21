@@ -51,6 +51,7 @@ extern MethodInfo ** PTR_System_Action_WazaNo__WazaNo__o_ctor;
 extern void ** PTR_DAT_04c2afd8;
 // 0x04b7beb0
 extern void ** PTR_DAT_04b7beb0;
+extern void ** PTR_DAT_04c2afe8;
 // 0x04c2b018
 extern void ** PTR_DAT_04c2b018;
 // 0x04b782f8
@@ -115,8 +116,12 @@ namespace Dpr
             UIWazaManage_Param_Fields fields;
         };
 
-        struct PokemonWindow_o;
         struct PokemonPartyItem_o;
+        struct PokemonWindow_o
+        {
+            void FieldWaza(int32_t fieldWazaNo, PokemonPartyItem_o * partyItem, int32_t selectIndex, MethodInfo * method);
+        };
+
         struct ContextMenuWindow_Param_o;
         struct PokemonWindow_DisplayClass25_0_Fields {
             PokemonWindow_o* __4__this;
@@ -419,16 +424,19 @@ void patchContextMenu2(List_ContextMenuItem_Param_o * list, ContextMenuItem_Para
 
     if (remindableWaza->fields._count > 0)
     {
+        socket_log_fmt("Adding move relearner\n");
         param = (ContextMenuItem_Param_o *) il2cpp_object_new(ContextMenuItem_Param_TypeInfo);
         param->ctor();
         param->fields.menuId = 112;
         ListXMenuTopItem_Add(list, param, *List_ContextMenuItem_Param_Add_MethodInfo);
     }
 
+    socket_log_fmt("Adding name rater\n");
     param = (ContextMenuItem_Param_o *) il2cpp_object_new(ContextMenuItem_Param_TypeInfo);
     param->ctor();
     param->fields.menuId = 113;
     ListXMenuTopItem_Add(list, param, *List_ContextMenuItem_Param_Add_MethodInfo);
+    socket_log_fmt("END patchContextMenu2\n");
 }
 
 void EvDataManager_EvCmdCallWazaOmoidashiUi_b__1539_0Orig(Dpr::EvScript::EvDataManager_o *__this, int32_t learnWazaNo, int32_t unlearnWazaNo, MethodInfo *method)
@@ -575,9 +583,13 @@ void patchPokemonSwap(PokemonWindow_DisplayClass25_0_o * displayClass, MethodInf
     socket_log_fmt("PTR_DAT_04b7beb0: %08X\n", PTR_DAT_04b7beb0);
     socket_log_fmt("*PTR_DAT_04b7beb0: %08X\n", *PTR_DAT_04b7beb0);
 
+    socket_log_fmt("PTR_DAT_04c2afe8: %08X\n", PTR_DAT_04c2afe8);
+    socket_log_fmt("*PTR_DAT_04c2afe8: %08X\n", *PTR_DAT_04c2afe8);
+
     // Dpr.EvScript.EvDataManager$$EvCmdCallWazaOmoidashiUi
     socket_log_fmt("PTR_DAT_04c2afd8: %08X\n", PTR_DAT_04c2afd8);
     socket_log_fmt("*PTR_DAT_04c2afd8: %08X\n", *PTR_DAT_04c2afd8);
+    system_load_typeinfo(*PTR_DAT_04c2afe8);
     system_load_typeinfo(*PTR_DAT_04c2afd8);
     system_load_typeinfo(*PTR_DAT_04b7beb0);
     socket_log_fmt("displayClass: %08X\n", displayClass);
@@ -647,7 +659,6 @@ void patchPokemonSwap(PokemonWindow_DisplayClass25_0_o * displayClass, MethodInf
     socket_log_fmt("uiWazaManage: %08X\n", uiWazaManage);
     socket_log_fmt("UIWazaManage_o::Open: %08X\n", 
                     &UIWazaManage_o::Open);
-    // Welp time for a nullptr I guess?
     uiWazaManage->Open(param, (MethodInfo *) nullptr);
 }
 
@@ -658,9 +669,16 @@ void DisplayClass772_0_EvCmdNameInPoke_b__1(Dpr::EvScript::EvDataManager_Display
     socket_log_fmt("nameRater_onComplete\n");
     socket_log_fmt("__this: %08X\n", __this);
 
+    if (!isSuccess)
+    {
+        socket_log_fmt("Game considered bad nickname\n");
+        // return;
+    }
+
     isSuccess &= resultText->IsNullOrEmpty((MethodInfo *) nullptr);
     if (!isSuccess)
     {
+        socket_log_fmt("Nickname is null or empty\n");
         return;
     }
 
@@ -750,12 +768,16 @@ void patchFieldWaza(PokemonWindow_DisplayClass25_0_o * displayClass, ContextMenu
     const int32_t MOVE_TUTOR = 112;
     const int32_t NAME_RATER = 113;
  
+    if ((ctxMenuParam->fields.menuId) - 0x23 < 4)
+    {
+        displayClass->fields.__4__this->FieldWaza(ctxMenuParam->fields.messageIndex, displayClass->fields.partyItem, displayClass->fields.selectIndex, (MethodInfo *) nullptr);
+    }
+
     if (ctxMenuParam->fields.menuId == MOVE_TUTOR)
     {
         patchPokemonSwap(displayClass, (MethodInfo *) nullptr);
     } else if (ctxMenuParam->fields.menuId == NAME_RATER)
     {
-        socket_log_fmt("TODO: NAME RATER\n");
         nameRater(displayClass, ctxMenuParam, (MethodInfo *) nullptr);
     }
 

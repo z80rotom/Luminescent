@@ -224,5 +224,23 @@ struct UnityEngine_MonoBehaviour_Fields {
  UnityEngine_Behaviour_Fields super;
 };
 
+struct System_Delegate_Fields {
+	intptr_t method_ptr;
+	intptr_t invoke_impl;
+	Il2CppObject* m_target;
+	intptr_t method;
+	intptr_t delegate_trampoline;
+	intptr_t extra_arg;
+	intptr_t method_code;
+	struct System_Reflection_MethodInfo_o* method_info;
+	struct System_Reflection_MethodInfo_o* original_method_info;
+	struct System_DelegateData_o* data;
+	bool method_is_virtual;
+};
+
+struct System_MulticastDelegate_Fields {
+	System_Delegate_Fields super;
+	struct System_Delegate_array* delegates;
+};
 
 #endif

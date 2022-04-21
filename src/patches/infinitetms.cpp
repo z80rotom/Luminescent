@@ -25,6 +25,8 @@ namespace Dpr
 
 void SkipTMBreak(Dpr::UI::UIBag::DisplayClass130 *__this, MethodInfo *method)
 {
+    // void Dpr.UI.UIBag.<>c__DisplayClass130_0$$<UseWazaMachine>b__3
+    // Dpr.UI.UIBag$$GetUseItemToNothingAction
     __this->UseWazaMachine3(0, (MethodInfo *) nullptr);
 }
 

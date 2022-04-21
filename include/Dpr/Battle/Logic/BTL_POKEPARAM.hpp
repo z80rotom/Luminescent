@@ -14,6 +14,10 @@ namespace Dpr
                 bool CONFRONT_REC_IsMatch(uint8_t pokeID, MethodInfo *method);
                 // 02429d60
                 uint16_t GetItem(MethodInfo *method);
+
+                uint32_t GetPokeSick(MethodInfo *method);
+
+                uint8_t GetFriendship(MethodInfo *method);
             };
         }
     }

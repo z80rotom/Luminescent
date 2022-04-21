@@ -39,5 +39,6 @@
 
 // 1.3
 // Dpr.UI.PokemonWindow$$OnUpdate
-019f85cc:
+// Patch the B button
+019f8460:
     bl IsPushButton_Patch

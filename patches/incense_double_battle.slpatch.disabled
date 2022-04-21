@@ -1,0 +1,6 @@
+[target=main]
+2c3ae60:
+    bl BATTLE_SETUP_Wild_DBIncense
+
+// 2031180:
+//    b setup_alone_double_multi_04

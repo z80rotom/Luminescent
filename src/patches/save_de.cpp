@@ -101,6 +101,25 @@ bool PlayerWork::CustomLoadAsyncOperation(MethodInfo *method)
     il2cpp_runtime_class_init(PlayerWork_TypeInfo);
 
     socket_log_fmt("CustomLoadAsyncOperation\n");
+    socket_log_fmt("_loadResult: %08\n", this->fields._loadResult);
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, tr_battleData)): %08X\n", offsetof(PlayerWork_SaveData_Fields, tr_battleData));
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, saveSeal)): %08X\n", offsetof(PlayerWork_SaveData_Fields, saveSeal));
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, kinomiGrowSaveData)): %08X\n", offsetof(PlayerWork_SaveData_Fields, kinomiGrowSaveData));
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, btlTowerSave)): %08X\n", offsetof(PlayerWork_SaveData_Fields, btlTowerSave));
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, systemData)): %08X\n", offsetof(PlayerWork_SaveData_Fields, systemData));
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, poketchData)): %08X\n", offsetof(PlayerWork_SaveData_Fields, poketchData));
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, azukariyaData)): %08X\n", offsetof(PlayerWork_SaveData_Fields, azukariyaData));
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, dendoudata)): %08X\n", offsetof(PlayerWork_SaveData_Fields, dendoudata));
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, tvDataOld)): %08X\n", offsetof(PlayerWork_SaveData_Fields, tvDataOld));
+    socket_log_fmt("offsetof(PlayerWork_SaveData_Fields, tvData)): %08X\n", offsetof(PlayerWork_SaveData_Fields, tvData));
+    socket_log_fmt("---------------------------------------------------\n");
+    socket_log_fmt("offsetof(SYSTEMDATA_Fields, SaveTime)): %08X\n", offsetof(DPData::SYSTEMDATA_Fields, SaveTime));
+    socket_log_fmt("offsetof(SYSTEMDATA_Fields, nxSnapshot)): %08X\n", offsetof(DPData::SYSTEMDATA_Fields, nxSnapshot));
+    socket_log_fmt("offsetof(SYSTEMDATA_Fields, reserved_long5)): %08X\n", offsetof(DPData::SYSTEMDATA_Fields, reserved_long5));
+    socket_log_fmt("---------------------------------------------------\n");
+    socket_log_fmt("offsetof(PlayerWork_Fields, _saveData)): %08X\n", offsetof(PlayerWork_Fields, _saveData));
+    socket_log_fmt("offsetof(PlayerWork_Fields, _loadResult)): %08X\n", offsetof(PlayerWork_Fields, _loadResult));
+    socket_log_fmt("offsetof(PlayerWork, fields)): %08X\n", offsetof(PlayerWork, fields));
     const int32_t SUCCESS = 0;
     const int32_t NOT_EXIST = 1;
     const int32_t CORRUPTED = 2;
@@ -108,22 +127,27 @@ bool PlayerWork::CustomLoadAsyncOperation(MethodInfo *method)
     const int32_t CURRENT_VERSION = 0x2C;
     save_obj = &this->fields._saveData;
 
+    // int32_t * _loadResult = (int32_t *) &this->fields._transitionLocation.fields.has_value;
+    // bool * _isBackupSave = (bool *) &this->fields._evolveRequets;
+
     socket_log_fmt("isBackupSave: %04X\n", this->fields._isBackupSave);
     socket_log_fmt("Dpr::Nx::SaveSystem::Load: %08X\n", &Dpr::Nx::SaveSystem::Load);
-    // A3C2270???
     bool success = Dpr::Nx::SaveSystem::Load(this->fields._isBackupSave != 0, (MethodInfo *) nullptr);
     socket_log_fmt("Dpr::Nx::SaveSystem::Load\n");
     if ((success & 1) == 0) {
       socket_log_fmt("No save data\n");
       bool saveExists = Dpr::Nx::SaveSystem::SaveDataExists((MethodInfo *) nullptr);
       if ((saveExists & 1) == 0) {
-        // socket_log_fmt("Save does not exist\n");
+        socket_log_fmt("Save does not exist\n");
         // this->fields._loadResult = NOT_EXIST;
       } else {
-          // socket_log_fmt("Save load failed\n");
+        socket_log_fmt("Save load failed\n");
         // this->fields._loadResult = FAILED;
       }
-      buffer = (System_Byte_array *) system_array_new(System_Byte_array_typeInfo, 0xEDC20);
+      buffer = (System_Byte_array *) system_array_new(System_Byte_array_typeInfo, 0xEF0A4);
+      // uint32_t version_newgame = 0xFFFF0000;
+      // memcpy(&buffer[0], &version_newgame, sizeof(uint32_t));
+      // this->Initialization((MethodInfo *) nullptr);
       this->LoadBytes(buffer, save_obj, *((MethodInfo **) PTR_Method_PlayerWork_LoadBytes));
       this->fields._loadResult = SUCCESS;
       this->fields._isBackupSave = false;
@@ -155,14 +179,14 @@ bool PlayerWork::CustomLoadAsyncOperation(MethodInfo *method)
     uint32_t version = 0;
     memcpy(&version, &buf[0], sizeof(uint32_t));
     bool vanillaSave = true;
-    if (version == 0x2C)
+    if (version == 0x34)
     {
       // socket_log_fmt("Current version\n");
     } else if (version == 0xFFFF0000)
     {
       vanillaSave = false;
     }
-    version = 0x2C;
+    version = 0x34;
     memcpy(&buf[0], &version, sizeof(uint32_t));
     this->LoadBytes(buffer, save_obj, *((MethodInfo **) PTR_Method_PlayerWork_LoadBytes));
     // deserializeSavedata(buffer, save_obj);
@@ -180,6 +204,39 @@ bool PlayerWork::CustomLoadAsyncOperation(MethodInfo *method)
     this->fields._isBackupSave = false;
     socket_log_fmt("END CustomLoadAsyncOperation\n");
     return true;
+}
+
+bool VerifySaveData(System_Byte_array * buffer, MethodInfo * method)
+{
+  return true;
+}
+
+void LoadBytes(PlayerWork * _this, System_Byte_array * buffer, PlayerWork_SaveData_o *save_obj, MethodInfo *method)
+{
+  socket_log_initialize();
+  uint32_t version = 0;
+  memcpy(&version, &buffer[0], sizeof(uint32_t));
+  bool vanillaSave = true;
+  if (version == 0x34)
+  {
+    // socket_log_fmt("Current version\n");
+  } else if (version & 0xFFFF0000)
+  {
+    vanillaSave = false;
+  }
+  version = 0x34;
+  memcpy(&buffer[0], &version, sizeof(uint32_t));
+  _this->LoadBytes(buffer, save_obj, method);
+  // deserializeSavedata(buffer, save_obj);
+  PlayerWork_SaveData_Fields * save = &save_obj->fields;
+  if (!vanillaSave)
+  {
+    socket_log_fmt("Existing Lumi save\n");
+    memcpy(&save->tr_battleData->m_Items, &buffer[0x7D3E0], 0x586); // 0x1618
+  } else {
+    socket_log_fmt("Vanilla save\n");
+    importTrainerSaveData(save_obj, buffer);
+  }
 }
 
 bool PlayerWork_CustomLoadOperation(PlayerWork *this_, MethodInfo *method)

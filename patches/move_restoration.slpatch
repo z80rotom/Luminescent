@@ -1,0 +1,7 @@
+[target=main]
+1804930:
+    b handler_Karagenki_AtkPow
+18049f0:
+    b handler_Karagenki_WazaPow
+18298a8:
+    bl Waza_system_array_new

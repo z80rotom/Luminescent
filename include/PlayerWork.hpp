@@ -195,6 +195,7 @@ struct PlayerWork_SaveData_Fields {
 	struct PLAYREPORT_DATA_o playReportData; // s/d
 	struct MT_DATA_o mtData; // s/d
 	DPData::DENDOU_SAVE_ADD_o dendouSaveAdd; // s/d
+	// v1.2 Additions
 	DPData::TV_DATA_o tvData;
 	Dpr::BallDeco::SaveBallDecoExtraData_o ballDecoExtraData;
 };
@@ -243,6 +244,7 @@ public:
   void ToBytes(PlayerWork_SaveData_o * obj, System_Byte_array ** bytes, uint64_t param_4);
   // 
   void LoadBytes(System_Byte_array *bytes, PlayerWork_SaveData_o *obj, MethodInfo *method);
+  void Initialization(MethodInfo *method);
   
   // 023775a0
   bool VerifySaveData(System_Byte_array *byteArray,MethodInfo *method);

@@ -17,9 +17,14 @@ namespace Pml
     struct PokeParty_o {
         // 0249e980
         void CopyFrom(PokeParty_o *src, MethodInfo *method);
+        Pml::PokePara::PokemonParam_o * GetMemberPointer(uint32_t idx, MethodInfo * method);
+
+        void ctor(MethodInfo* method);
 
         PokeParty_c *klass;
         void *monitor;
         PokeParty_Fields fields;
     };
+
+    extern void ** PTR_PokeParty_TypeInfo;
 }

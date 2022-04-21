@@ -47,6 +47,10 @@ namespace Pml
                 // 02490b20
                 void SetNickName(System::String * nickname, MethodInfo * method);
 
+                bool IsNull(MethodInfo * method);
+                bool IsEgg(int32_t type, MethodInfo * method);
+                uint16_t GetItem(MethodInfo * method);
+
                 System::Collections::Generic::HashSet_WazaNo__o * CollectRemindableWaza( MethodInfo *method );
             private:
                 // 0248f760

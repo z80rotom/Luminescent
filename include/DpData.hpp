@@ -680,6 +680,7 @@ namespace DPData
         int64_t reserved_long1;
         int64_t reserved_long2;
         int64_t reserved_long3;
+        // My numbers seem off so I'm just going to do this for the moment to see if that fixes things
         int64_t reserved_long4;
         int64_t reserved_long5;
     };

@@ -1,32 +1,36 @@
 [target=main]
-01d3d260:
+018c1580:
     b TrainerWork_Reset
     ret
 
-01d3d410:
+018c1740:
     b TrainerWork_ResetWinFlag
     ret
 
-01d3d340:
+018c1670:
     b TrainerWork_SetWinFlag
     ret
 
-01d3d4e0:
+018c1800:
     b TrainerWork_GetWinFlag
     ret
 
-01d3d610:
+018c18a0:
+    b TrainerWork_GetWinFlag
+    ret
+
+018c1940:
     b TrainerWork_SetBattleSaercher
     ret
 
-01d3d6e0:
+018c1a10:
     b TrainerWork_ReSetBattleSaercher
     ret
 
-01d3d7a0:
+018c1ac0:
     b TrainerWork_AllResetBattleSaercher
     ret
 
-01d3d880:
+018c1bb0:
     b TrainerWork_GetBattleSearcher
     ret
