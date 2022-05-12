@@ -11,10 +11,10 @@ String * String::CtorCharPtr(uint16_t *ptr)
     return ret;
 }
 
-String * String::CreateString(int8_t *value)
+String * String::CreateString(const char *value)
 {
     String * ret = nullptr;
-    ret = ret->_CreateString(value, (MethodInfo *) nullptr);
+    ret = ret->_CreateString((int8_t *) value, (MethodInfo *) nullptr);
     return ret;
 }
 

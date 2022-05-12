@@ -1,6 +1,7 @@
 #pragma once
 
 #include "il2cpp.hpp"
+#include "Pml/PokePara/CoreParam.h"
 
 namespace Dpr
 {
@@ -18,6 +19,8 @@ namespace Dpr
                 uint32_t GetPokeSick(MethodInfo *method);
 
                 uint8_t GetFriendship(MethodInfo *method);
+
+                Pml::PokePara::CoreParam * GetSrcDataConst(MethodInfo *method);
             };
         }
     }

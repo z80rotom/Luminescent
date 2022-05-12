@@ -47,6 +47,8 @@ namespace Pml
                 // 02490b20
                 void SetNickName(System::String * nickname, MethodInfo * method);
 
+                uint8_t GetMezapaType(MethodInfo *method);
+
                 bool IsNull(MethodInfo * method);
                 bool IsEgg(int32_t type, MethodInfo * method);
                 uint16_t GetItem(MethodInfo * method);

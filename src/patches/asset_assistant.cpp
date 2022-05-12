@@ -63,8 +63,8 @@ AssetRequestOperation_o * Lumi_AssetManager_AppendAssetBundleRequest(
     if (assetBundleName->Equals(StringLiteral_9235_ev_script, (MethodInfo *) nullptr))
     {
         socket_log_fmt("Got ev_script\n");
-        const char * cUri = "http://192.168.1.198:8080/api/ev_script";
-        System::String * uri = System::String::CreateString((int8_t *) cUri);
+        char * cUri = "http://192.168.1.198:8080/api/ev_script";
+        System::String * uri = System::String::CreateString(cUri);
         System::Array<uint8_t> * data = GetData(uri);
     }
     // socket_log_fmt("&AssetManager::AppendAssetBundleRequest %08X\n", &AssetManager::AppendAssetBundleRequest);

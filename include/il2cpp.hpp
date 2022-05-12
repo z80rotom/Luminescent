@@ -243,4 +243,12 @@ struct System_MulticastDelegate_Fields {
 	struct System_Delegate_array* delegates;
 };
 
+struct System_RuntimeFieldHandle_Fields {
+	intptr_t value;
+};
+
+struct System_RuntimeFieldHandle_o {
+	System_RuntimeFieldHandle_Fields fields;
+};
+
 #endif

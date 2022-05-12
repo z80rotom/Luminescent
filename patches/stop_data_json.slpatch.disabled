@@ -1,0 +1,3 @@
+[target=main]
+2cce4ec:
+    bl Dictionary_StopData_Add_Hook

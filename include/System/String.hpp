@@ -54,7 +54,7 @@ namespace System
     {
     public:
         static String * CtorCharPtr(uint16_t *ptr);
-        static String * CreateString(int8_t *value);
+        static String * CreateString(const char *value);
         // 02942cb0
         // int32_t Compare(String *strB, int32_t comparisonType, MethodInfo *method);
         // 0293ed20

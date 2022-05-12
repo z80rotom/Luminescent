@@ -1,0 +1,25 @@
+[target=main]
+// Dpr.UI.PokemonStatusWazaItem$$Setup
+// x21 = pokemonParam
+1da02bc:
+    mov x1, x21
+1da02c4:
+    bl WazaDataSystem_GetType
+// Dpr.Battle.View.UI.BUIWazaList$$Initialize
+// x23 = Dpr_Battle_Logic_BTL_POKEPARAM_o *bpp
+1d2badc:
+    mov x1, x19
+1d2bae4:
+    bl WAZADATA_GetType
+// Dpr.Battle.Logic.BattleViewBase$$GetUiDisplay_WazaType
+1888c78:
+    mov x1, x2
+    b WAZADATA_GetType
+// Dpr.UI.WazaManagePokemonStausPanel$$Setup
+1a41bd4:
+    mov x2, x0
+1a41bf8:
+    bl WazaManageSubWazaPanel_Setup
+// Dpr.UI.WazaManageSubWazaPanel$$Setup
+1a41d54:
+    bl WazaManageSubWazaPanel_GetType

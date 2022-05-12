@@ -2,7 +2,7 @@
 
 enum MonsNo
 {
-	NULL = 0,
+	MONSNO_NONE = 0,
 	HUSIGIDANE = 1,
 	HUSIGISOU = 2,
 	HUSIGIBANA = 3,

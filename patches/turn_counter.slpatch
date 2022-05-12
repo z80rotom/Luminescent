@@ -1,0 +1,10 @@
+[target=main]
+2173f1c:
+    bl IncBattleCount
+// Weird call happening here:
+// Dpr.Battle.Logic.BattleCounter$$.ctor
+18790d8:
+    b bc_init
+// Dpr.Battle.Logic.BattleEnv$$Initialize
+187c204:
+    bl bc_init

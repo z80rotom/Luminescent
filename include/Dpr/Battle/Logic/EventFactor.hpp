@@ -29,7 +29,20 @@ namespace Dpr
                 EventFactor_EventHandlerArgs_Fields fields;
             };
 
-            struct EventFactor_EventHandlerTable;
+            struct EventFactor_EventHandler_o;
+
+            struct EventFactor_EventHandlerTable_Fields {
+                uint16_t eventID;
+                struct EventFactor_EventHandler_o* eventHandler;
+            };
+
+            struct EventFactor_EventHandlerTable_c;
+
+            struct EventFactor_EventHandlerTable_o {
+                EventFactor_EventHandlerTable_c *klass;
+                void *monitor;
+                EventFactor_EventHandlerTable_Fields fields;
+            };
 
             // 4c5b148
             extern void * EventFactor_EventHandlerTable_Array_TypeInfo;
