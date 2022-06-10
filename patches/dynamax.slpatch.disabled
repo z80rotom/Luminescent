@@ -31,24 +31,6 @@
 01e1d36c:
     bl LoadFromFile
 
-028d20e0:
-    b DebugLog
-
-028d2b30:
-    b DebugLogWarning
-
-028d24c0:
-    b DebugLogError
-
-017f3724:
-    bl DebugLogAssetBundle
-
-017fe510:
-    bl ReadAllBytes
-
-017fd92c:
-    bl ReadAllBytes
-
 // 01ce4ea4:
 //     bl IndexOutOfRangeException
 

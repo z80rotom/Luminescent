@@ -27,6 +27,8 @@ namespace Pml
             System_Byte_array* m_calcData;
             Accessor * m_accessor;
         };
+
+        struct CoreParam_FormChangeResult_o;
         class CoreParam {
             public:
                 // RVA: 0x23AC870 Offset: 0x23AC971 VA: 0x23AC870
@@ -48,6 +50,9 @@ namespace Pml
                 void SetNickName(System::String * nickname, MethodInfo * method);
 
                 uint8_t GetMezapaType(MethodInfo *method);
+
+                void ChangeFormNo(uint16_t nextFormno, CoreParam_FormChangeResult_o *pResult, MethodInfo *method);
+
 
                 bool IsNull(MethodInfo * method);
                 bool IsEgg(int32_t type, MethodInfo * method);

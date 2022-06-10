@@ -189,10 +189,10 @@ _ZN3Dpr6Battle5Logic11ExPokePos_o18expandPokePos_raidEPNS1_24ExPokePos_ExpandRes
 _ZN3Pml11PokeParty_o8CopyFromEPS0_P10MethodInfo = 0x02056ec0 - 0x05708000;
 
 _ZN10SmartPoint14AssetAssistant17AssetBundleMemory12LoadFromFileEPN6System6StringEP10MethodInfo = 0x017f3640 - 0x056E6000;
-_ZN6System4Text12UTF8Encoding12GetByteCountEPNS_6StringEP10MethodInfo = 0x018fd760 - 0x056E6000;
-_ZN6System4Text12UTF8Encoding8GetBytesEPNS_6StringEiiPNS_5ArrayIhEEiP10MethodInfo = 0x018fd920 - 0x056E6000;
-_ZN6System4Text8Encoding8get_UTF8EP10MethodInfo = 0x01a0e5d0 - 0x056E6000;
-_ZN6System6Object8ToStringEP12Il2CppObjectP10MethodInfo = 0x01982dd0 - 0x056E6000;
+_ZN6System4Text12UTF8Encoding12GetByteCountEPNS_6StringEP10MethodInfo = 0x02588990 - 0x05708000;
+_ZN6System4Text12UTF8Encoding8GetBytesEPNS_6StringEiiPNS_5ArrayIhEEiP10MethodInfo = 0x02588b50 - 0x05708000;
+_ZN6System4Text8Encoding8get_UTF8EP10MethodInfo = 0x028626b0 - 0x05708000;
+_ZN6System6Object8ToStringEP12Il2CppObjectP10MethodInfo = 0x026d13a0 - 0x05708000;
 _ZN6System2IO4File12ReadAllBytesEPNS_6StringEP10MethodInfo = 0x02780c60 - 0x056E6000;
 _ZN3Pml22PTR_PokeParty_TypeInfoE = 0x04b7a6f8 - 0x05708000;
 _ZN3Pml11PokeParty_o4ctorEP10MethodInfo = 0x02055d10 - 0x05708000;
@@ -225,3 +225,8 @@ _ZN3Pml8PokePara9CoreParam13GetMezapaTypeEP10MethodInfo = 0x204b950 - 0x05708000
 _ZN3Pml8WazaData14WazaDataSystem7GetTypeEiP10MethodInfo = 0x20533a0 - 0x05708000;
 _ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o15GetSrcDataConstEP10MethodInfo = 0x1fdd5c0 - 0x05708000;
 _ZN3Dpr2UI24WazaManageSubWazaPanel_o5SetupEiP10MethodInfo = 0x1a41ca0 - 0x05708000;
+
+_ZN3Dpr11UnderGround15UgPokeLottery_o29CreatePokemonParam_by_TokuseiEihP10MethodInfo = 0x18bfea0 - 0x05708000;
+_ZN3Dpr11UnderGround15UgPokeLottery_o14GetEnablePokesEiiP10MethodInfo = 0x18bf210 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam12ChangeFormNoEtPNS0_28CoreParam_FormChangeResult_oEP10MethodInfo = 0x204a260 - 0x05708000;
+_ZN3Dpr6Battle5Logic5Setup17BTL_SETUP_TrainerEPNS1_20BATTLE_SETUP_PARAM_oEPN3Pml11PokeParty_oEiPNS1_21BTL_FIELD_SITUATION_oEiP10MethodInfo = 0x1f6f360 - 0x05708000;

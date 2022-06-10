@@ -13,6 +13,13 @@
     bl Karagenki_ctor
 182ccb4:
     bl YubiWoFuru_ctor
+// Should be fine to use the default handler for checkHide
+// 1805e80:
+//    b handler_Kaminari_checkHide
+// 1805f70:
+//    b handler_Kaminari_excuseHitCalc
+// 18060b0:
+//    b handler_Kaminari_hitRatio
 221f004:
     bl BTL_STRID_STD_system_array_new
 // 18048c0:

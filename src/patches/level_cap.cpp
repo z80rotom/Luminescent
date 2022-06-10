@@ -83,6 +83,7 @@ uint32_t Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(uint32_t base_exp,uin
     if (getpoke_lv >= maxLevel)
     {
         exp *= 0.0;
+        exp += 1.0;
     }
     return (uint32_t) exp;
 }

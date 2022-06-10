@@ -24,11 +24,18 @@ const uint16_t POKEID = 2;
 const uint16_t POKEID_ATK = 3;
 const uint16_t POKEPOS = 13;
 const uint16_t WAZAID = 18;
+const uint16_t CHECK_HIDE = 24; // Used Fly/Dig before
 const uint16_t WAZA_POWER = 51;
 const uint16_t WAZA_POWER_RATIO = 52;
 const uint16_t WORK_ADRS = 68;
+const uint16_t AVOID_FLAG = 73;
 const uint16_t GEN_FLAG = 89;
 const uint16_t DISABLE_BURN_FLAG = 90;
+// Refer to EventVar.Label = CHECK_HIDE
+const uint16_t HIDE_FLY = 3;
+const uint16_t HIDE_DIG = 5;
+// ContFlag
+const uint16_t IS_DIG = 5;
 
 constexpr size_t BTL_STRID_STD_Magnitude1 = 119;
 constexpr size_t BTL_STRID_STD_Magnitude2 = 120;
@@ -39,13 +46,19 @@ constexpr size_t BTL_STRID_STD_Magnitude6 = 124;
 constexpr size_t BTL_STRID_STD_Magnitude7 = 125;
 constexpr size_t BTL_STRID_STD_YubiWoFuru = 137;
 
-constexpr uint32_t NUM_NEW_MOVES = 3;
+constexpr uint32_t NUM_NEW_MOVES = 7;
 constexpr uint32_t NUM_KARAGENKI_MOVES = 2;
 constexpr uint32_t NUM_YUBI_WO_FURU_MOVES = 1;
 // WazaNo
+constexpr int32_t JUMPKICK_WAZANO = 26;
+constexpr int32_t THUNDER_WAZANO = 87;
+constexpr int32_t HIJUMPKICK_WAZANO = 136;
 constexpr int32_t RETURN_WAZANO = 216;
 constexpr int32_t FRUSTRATION_WAZANO = 218;
 constexpr int32_t MAGNITUDE_WAZANO = 222;
+constexpr int32_t SILVERWIND_WAZANO = 318;
+constexpr int32_t SKYUPPERCUT_WAZANO = 327;
+constexpr int32_t OMINIOUSWIND_WAZANO = 466;
 
 constexpr uint32_t NUM_NEW_BTL_STRID_SET = 6;
 constexpr uint32_t NUM_NEW_BTL_STRID_STD = 6;
@@ -293,6 +306,34 @@ Waza_HandlerGetFunc_o * Karagenki_ctor(Waza_HandlerGetFunc_o *_this, intptr_t m_
 
     return _this;
 }
+
+// Waza_HandlerGetFunc_o * Kaminari_ctor(Waza_HandlerGetFunc_o *_this, intptr_t m_target, MethodInfo *method)
+// {
+//     socket_log_fmt("Kaminari Method: %08X\n", method);
+//     _this->ctor(m_target, method);
+
+//     System::Array<Waza_GET_FUNC_TABLE_ELEM_o> * getFuncTable = (System::Array<Waza_GET_FUNC_TABLE_ELEM_o> *) gArrayPtr;
+//     for (uint32_t i = 0; i < NUM_KAMINARI_MOVES; i++)
+//     {
+//         socket_log_fmt("Registering new Waza Handler #: %i\n", i);
+//         int32_t wazaNo = KARAGENKI_ENTRIES[i];
+//         socket_log_fmt("Got WazaHandlerEntry at %i\n", i);
+
+//         Waza_GET_FUNC_TABLE_ELEM_o * elem = &getFuncTable->m_Items[gArrayLen+i];
+//         socket_log_fmt("Got GET_FUNC_TABLE_ELEM at %i\n", gArrayLen+i);
+//         Waza_HandlerGetFunc_o * func = (Waza_HandlerGetFunc_o *) il2cpp_object_new(Waza_HandlerGetFunc_TypeInfo);
+//         socket_log_fmt("Called initializer for Waza_HandlerGetFunc_o\n");
+//         socket_log_fmt("entry.method: %08X\n", method);
+//         func->ctor(0, method); 
+//         socket_log_fmt("Called constructor for Waza_HandlerGetFunc_o\n");
+//         elem->fields.waza = wazaNo;
+//         elem->fields.func = func;
+//         // Waza_GET_FUNC_TABLE_ELEM_o::ctor(elem, entry.wazaNo, func, (MethodInfo *) nullptr);
+//         // socket_log_fmt("Called constructor for Waza_GET_FUNC_TABLE_ELEM_o\n");
+//     }
+
+//     return _this;
+// }
 
 Waza_HandlerGetFunc_o * YubiWoFuru_ctor(Waza_HandlerGetFunc_o *_this, intptr_t m_target, MethodInfo *method)
 {

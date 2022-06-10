@@ -1,0 +1,27 @@
+[target=main]
+026a9c10:
+    b DebugLog
+
+026aa660:
+    b DebugLogWarning
+
+026a9ff0:
+    b DebugLogError
+
+26a9d50:
+    b DebugLogCtx
+
+26aa7a0:
+    b DebugLogWarningCtx
+
+26aa130:
+    b DebugLogErrorCtx
+
+26a16d0:
+    b DebugLogException
+
+26aa520:
+    b DebugLogExceptionCtx
+
+// 017f3724:
+//    bl DebugLogAssetBundle
