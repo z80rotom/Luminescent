@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 01f6db20:
     bl LocalKoukan_GetTargetData
 

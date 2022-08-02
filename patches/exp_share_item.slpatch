@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 018f8dd8:
     ldr x2, [x23] // bpp
     bl CONFRONT_REC_IsMatch

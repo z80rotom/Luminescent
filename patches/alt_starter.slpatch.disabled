@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 0237ccf0:
     b PlayerWork_get_defaultPokeNo
     ret

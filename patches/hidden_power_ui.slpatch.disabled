@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 // Dpr.UI.PokemonStatusWazaItem$$Setup
 // x21 = pokemonParam
 1da02bc:

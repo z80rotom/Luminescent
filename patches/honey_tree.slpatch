@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 // 01e225d0:
 02cd9ab0:
     b HoneyWork_GetMonsNo

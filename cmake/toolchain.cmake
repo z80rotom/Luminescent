@@ -16,16 +16,16 @@ set(SWITCH TRUE)
 
 # Define a few important devkitPro system paths.
 file(TO_CMAKE_PATH "$ENV{DEVKITPRO}" DEVKITPRO)
-if(NOT IS_DIRECTORY ${DEVKITPRO})
+if (NOT IS_DIRECTORY ${DEVKITPRO})
     message(FATAL_ERROR "Please install devkitA64 or set DEVKITPRO in your environment.")
-endif()
+endif ()
 
 set(DEVKITA64 "${DEVKITPRO}/devkitA64")
 set(LIBNX "${DEVKITPRO}/libnx")
 set(PORTLIBS "${DEVKITPRO}/portlibs/switch")
 
 # Add devkitA64 GCC tools to CMake.
-if(WIN32)
+if (WIN32)
     set(CMAKE_C_COMPILER "${DEVKITA64}/bin/aarch64-none-elf-gcc.exe")
     set(CMAKE_CXX_COMPILER "${DEVKITA64}/bin/aarch64-none-elf-g++.exe")
     set(CMAKE_LINKER "${DEVKITA64}/bin/aarch64-none-elf-ld.exe")
@@ -33,7 +33,7 @@ if(WIN32)
     set(CMAKE_AS "${DEVKITA64}/bin/aarch64-none-elf-as.exe" CACHE STRING "")
     set(CMAKE_NM "${DEVKITA64}/bin/aarch64-none-elf-gcc-nm.exe" CACHE STRING "")
     set(CMAKE_RANLIB "${DEVKITA64}/bin/aarch64-none-elf-gcc-ranlib.exe" CACHE STRING "")
-else()
+else ()
     set(CMAKE_C_COMPILER "${DEVKITA64}/bin/aarch64-none-elf-gcc")
     set(CMAKE_CXX_COMPILER "${DEVKITA64}/bin/aarch64-none-elf-g++")
     set(CMAKE_LINKER "${DEVKITA64}/bin/aarch64-none-elf-ld")
@@ -41,7 +41,7 @@ else()
     set(CMAKE_AS "${DEVKITA64}/bin/aarch64-none-elf-as" CACHE STRING "")
     set(CMAKE_NM "${DEVKITA64}/bin/aarch64-none-elf-gcc-nm" CACHE STRING "")
     set(CMAKE_RANLIB "${DEVKITA64}/bin/aarch64-none-elf-gcc-ranlib" CACHE STRING "")
-endif()
+endif ()
 
 # devkitPro and devkitA64 provide various tools for working with
 # Switch file formats, which should be made accessible from CMake.
@@ -57,11 +57,11 @@ set(WITH_PORTLIBS ON CACHE BOOL "Use portlibs?")
 
 ## Cross-compilation settings
 
-if(WITH_PORTLIBS)
+if (WITH_PORTLIBS)
     set(CMAKE_FIND_ROOT_PATH ${DEVKITPRO} ${DEVKITA64} ${PORTLIBS})
-else()
+else ()
     set(CMAKE_FIND_ROOT_PATH ${DEVKITPRO} ${DEVKITA64})
-endif()
+endif ()
 
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)

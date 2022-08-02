@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 018c1580:
     b TrainerWork_Reset
     ret

@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 // Doesn't matter
 // 01b39f70:
 //    b Dpr_EvScript_EvDataManager_EvCmdInitElecGym

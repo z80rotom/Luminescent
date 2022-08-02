@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 1804930:
     b handler_Karagenki_AtkPow
 18049f0:

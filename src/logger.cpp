@@ -2,22 +2,19 @@
 #include "log.h"
 #include "logger.hpp"
 
-#define RELEASE 1
-
 #define	MSG_DONTWAIT	 0x00000080
 
 // ---------------------------- Socket Setup
 
-enum SocketLogState
-{
-    SOCKET_LOG_UNINITIALIZED    = 0,
-    SOCKET_LOG_CONNECTED        = 1,
-    SOCKET_LOG_UNAVAILABLE      = 2
+enum SocketLogState {
+    SOCKET_LOG_UNINITIALIZED = 0,
+    SOCKET_LOG_CONNECTED = 1,
+    SOCKET_LOG_UNAVAILABLE = 2
 };
 
 u8 socket_log_state = SOCKET_LOG_UNINITIALIZED;
 s32 socket_log_socket = -1;
-u8 socket_data_pool[0x600000+0x20000] __attribute__((aligned(0x1000)));
+u8 socket_data_pool[0x600000 + 0x20000] __attribute__((aligned(0x1000)));
 
 void socket_log(const char* str) {
 #ifdef RELEASE
@@ -42,7 +39,7 @@ s32 socket_read_char(char *out) {
     while (true) {
         valread = nn::socket::Recv(socket_log_socket, buf, strlen(buf), MSG_DONTWAIT);
 
-        if( valread <= 0) {
+        if (valread <= 0) {
             break;
         } else {
 
@@ -69,7 +66,7 @@ void socket_log_initialize() {
     nn::nifm::Initialize();
     nn::nifm::SubmitNetworkRequest();
 
-    while (nn::nifm::IsNetworkRequestOnHold()) { }
+    while (nn::nifm::IsNetworkRequestOnHold()) {}
 
     if (!nn::nifm::IsNetworkAvailable()) {
         socket_log_state = SOCKET_LOG_UNAVAILABLE;
@@ -81,10 +78,10 @@ void socket_log_initialize() {
         return;
     }
 
-    nn::socket::InetAton("192.168.1.198", &hostAddress);
+    nn::socket::InetAton(LOGGER_IP, &hostAddress);
 
     serverAddress.address = hostAddress;
-    serverAddress.port = nn::socket::InetHtons(8888);
+    serverAddress.port = nn::socket::InetHtons(LOGGER_PORT);
     serverAddress.family = 2;
 
     if (nn::socket::Connect(socket_log_socket, &serverAddress, sizeof(serverAddress)) != 0) {

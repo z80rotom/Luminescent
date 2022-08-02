@@ -1,6 +1,6 @@
-from ftplib import FTP, error_perm
 import os
 import sys
+from ftplib import FTP, error_perm
 
 
 def list_dirs(connection, _path):

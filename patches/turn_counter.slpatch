@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 2173f1c:
     bl IncBattleCount
 // Weird call happening here:

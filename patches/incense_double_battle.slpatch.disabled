@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 2c3ae60:
     bl BATTLE_SETUP_Wild_DBIncense
 

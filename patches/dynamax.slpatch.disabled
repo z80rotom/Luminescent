@@ -1,5 +1,5 @@
 
-[target=main]
+[target=main, version=bd_13]
 02483e1c:
     bl setSubProcForSetup
 

@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 // 01d68a10:
 01d603e0:
     b BadgeWork_IsGet

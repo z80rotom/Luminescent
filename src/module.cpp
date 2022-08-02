@@ -1,5 +1,6 @@
 #define STR(x) #x
-#define MODULE_NAME_STR STR(MODULE_NAME)
+#define QUOTE(x) STR(x)
+#define MODULE_NAME_STR QUOTE(MODULE_NAME)
 
 // rtld working object
 __attribute__((section(".bss"))) char __nx_module_runtime[0xD0];

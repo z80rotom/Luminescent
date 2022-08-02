@@ -1,4 +1,4 @@
-[target=main]
+[target=main, version=bd_13]
 17dcd00:
     bl ZukanWork_GetFormFlags
 17dcd28:

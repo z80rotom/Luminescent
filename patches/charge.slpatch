@@ -1,0 +1,9 @@
+[target=main, version=bd_113]
+
+01b5aa80:  // Dpr.EvScript.EvDataManager$$EvCmd_POKETORE_GET_CHARGE
+    mov x0, #1
+    ret
+
+0237e270:  // PlayerWork$$get_BtlSearcherCharge
+    mov x0,#100
+    ret
