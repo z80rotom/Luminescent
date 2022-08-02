@@ -57,6 +57,8 @@ namespace Pml
                 bool IsNull(MethodInfo * method);
                 bool IsEgg(int32_t type, MethodInfo * method);
                 uint16_t GetItem(MethodInfo * method);
+                void SetItem(uint16_t itemno, MethodInfo *method);
+
 
                 System::Collections::Generic::HashSet_WazaNo__o * CollectRemindableWaza( MethodInfo *method );
             private:

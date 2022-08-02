@@ -10,6 +10,8 @@
 #include "Dpr/Message/MessageWordSetHelper.hpp"
 #include "Dpr/EvScript/EvDataManager.hpp"
 #include "PlayerWork.hpp"
+#include "Pml/Local/Random.h"
+#include "Dpr/EncountTools.hpp"
 
 const int32_t QUIVER_DANCE = 483;
 
@@ -409,34 +411,52 @@ ContextMenuItem_Param_o * patchContextMenu(void * typeInfo, List_ContextMenuItem
 
 void patchContextMenu2(List_ContextMenuItem_Param_o * list, ContextMenuItem_Param_o * argParam, PokemonWindow_DisplayClass25_0_o * dispClass)
 {
-    socket_log_fmt("patchContextMenu2\n");
+    // socket_log_fmt("patchContextMenu2\n");
     ContextMenuItem_Param_o * param;
     ListXMenuTopItem_Add(list, argParam, *List_ContextMenuItem_Param_Add_MethodInfo);
-    socket_log_fmt("Added default\n");
-    socket_log_fmt("Pml::PokePara::CoreParam::CollectRemindableWaza: %08X\n", &Pml::PokePara::CoreParam::CollectRemindableWaza);
+    // socket_log_fmt("Added default\n");
+    // socket_log_fmt("Pml::PokePara::CoreParam::CollectRemindableWaza: %08X\n", &Pml::PokePara::CoreParam::CollectRemindableWaza);
 
-    socket_log_fmt("dispClass: %08X\n", dispClass);
+    // socket_log_fmt("dispClass: %08X\n", dispClass);
     Pml::PokePara::CoreParam * pokemonParam;
     pokemonParam = (Pml::PokePara::CoreParam *) dispClass->fields.pokemonParam;
-    socket_log_fmt("pokemonParam: %08X\n", pokemonParam);
+    // socket_log_fmt("pokemonParam: %08X\n", pokemonParam);
     HashSet_WazaNo__o * remindableWaza = pokemonParam->CollectRemindableWaza( (MethodInfo *) nullptr );
-    socket_log_fmt("remindableWaza: %08X\n", remindableWaza);
+    // socket_log_fmt("remindableWaza: %08X\n", remindableWaza);
 
     if (remindableWaza->fields._count > 0)
     {
-        socket_log_fmt("Adding move relearner\n");
+        // socket_log_fmt("Adding move relearner\n");
         param = (ContextMenuItem_Param_o *) il2cpp_object_new(ContextMenuItem_Param_TypeInfo);
         param->ctor();
         param->fields.menuId = 112;
         ListXMenuTopItem_Add(list, param, *List_ContextMenuItem_Param_Add_MethodInfo);
     }
 
-    socket_log_fmt("Adding name rater\n");
+    // int32_t SPIRITOMB_MONSNO = 0x1BA;
+    // int32_t SPIRITOMB_ITEM = 0xE4;
+    // uint16_t itemNo = 0;
+    // for (int i = 0; i < 1000; i++)
+    // {
+    //     if (pokemonParam->GetMonsNo(nullptr) == SPIRITOMB_MONSNO)
+    //     {
+    //         pokemonParam->SetItem(0, nullptr);
+    //         int32_t itemRand = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % 100;
+    //         // socket_log_fmt("itemRand: %08X\n", itemRand);
+    //         itemNo = Dpr::EncountTools::SetWildPokemonItem(pokemonParam, itemRand, 0x32, 0x14, nullptr);
+    //         if (itemNo != SPIRITOMB_ITEM)
+    //         {
+    //             socket_log_fmt("God damn it, didn't set the item number correctly: %08X\n", itemNo);
+    //             break;
+    //         }
+    //     }
+    // }
+
+    // socket_log_fmt("Adding name rater\n");
     param = (ContextMenuItem_Param_o *) il2cpp_object_new(ContextMenuItem_Param_TypeInfo);
     param->ctor();
     param->fields.menuId = 113;
     ListXMenuTopItem_Add(list, param, *List_ContextMenuItem_Param_Add_MethodInfo);
-    socket_log_fmt("END patchContextMenu2\n");
 }
 
 void EvDataManager_EvCmdCallWazaOmoidashiUi_b__1539_0Orig(Dpr::EvScript::EvDataManager_o *__this, int32_t learnWazaNo, int32_t unlearnWazaNo, MethodInfo *method)

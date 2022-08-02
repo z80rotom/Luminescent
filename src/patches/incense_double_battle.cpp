@@ -16,7 +16,8 @@ void BATTLE_SETUP_Wild_DBIncense(Dpr::Battle::Logic::BATTLE_SETUP_PARAM_o *bp,
     const uint16_t ITEM_INCENSE = 216;
     // TODO: Check if partnerTrainerID != 0
     socket_log_fmt("BATTLE_SETUP_Wild_DBIncense\n");
-    Dpr::Battle::Logic::Setup::BATTLE_SETUP_Wild(bp, playerParty, partyEnemy, 0, sit, BTL_RULE_DOUBLE, method);
+    // 683
+    // Dpr::Battle::Logic::Setup::BATTLE_SETUP_Wild(bp, playerParty, partyEnemy, 0, sit, BTL_RULE_DOUBLE, method);
 
     // socket_log_fmt("Pml::PokeParty_o::GetMemberPointer: %08X\n", &Pml::PokeParty_o::GetMemberPointer);
     // socket_log_fmt("Pml::PokePara::CoreParam::IsNull: %08X\n", &Pml::PokePara::CoreParam::IsNull);
@@ -41,14 +42,21 @@ void BATTLE_SETUP_Wild_DBIncense(Dpr::Battle::Logic::BATTLE_SETUP_PARAM_o *bp,
     //     return;
     // }
     
-    bp->fields.multiMode = BTL_MULTIMODE_P_AA;
+
+    // Dpr::Battle::Logic::Setup::BATTLE_SETUP_Wild(bp, playerParty, partyEnemy, 0, sit, BTL_RULE_DOUBLE, method);
+	// const int32_t BTL_COMPETITOR_TRAINER = 1;
+	// const int32_t BTL_COMPETITOR_INST = 2;
+    Dpr::Battle::Logic::Setup::BTL_SETUP_Trainer(bp, playerParty, 683, sit, BTL_RULE_DOUBLE, (MethodInfo *) nullptr);
+    // bp->fields.multiMode = BTL_MULTIMODE_P_AA;
+    // bp->fields.competitor = 2;
+    // bp->fields.rule = BTL_RULE_DOUBLE;
     // 
-    for (size_t i = 2; i < 5; i++)
-    {
-        bp->fields.party->m_Items[i] = (Pml::PokeParty_o *) il2cpp_object_new(*Pml::PTR_PokeParty_TypeInfo);
-        bp->fields.party->m_Items[i]->ctor((MethodInfo *) nullptr);
-        bp->fields.party->m_Items[i]->CopyFrom(partyEnemy, (MethodInfo *) nullptr);
-    }
+    // for (size_t i = 2; i < 5; i++)
+    // {
+    //     bp->fields.party->m_Items[i] = (Pml::PokeParty_o *) il2cpp_object_new(*Pml::PTR_PokeParty_TypeInfo);
+    //     bp->fields.party->m_Items[i]->ctor((MethodInfo *) nullptr);
+    //     bp->fields.party->m_Items[i]->CopyFrom(partyEnemy, (MethodInfo *) nullptr);
+    // }
     // TODO: Check if you are using the incense on your first member in your party.
     // public const BtlRule BTL_RULE_DOUBLE = 1;
     // Multimode is either 2 or 4

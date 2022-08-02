@@ -11,8 +11,10 @@
     bl Waza_system_array_new
 182af30:
     bl Karagenki_ctor
-182ccb4:
-    bl YubiWoFuru_ctor
+// 182ccb4:
+//    bl YubiWoFuru_ctor
+182a530:
+    bl TripleKick_ctor
 // Should be fine to use the default handler for checkHide
 // 1805e80:
 //    b handler_Kaminari_checkHide

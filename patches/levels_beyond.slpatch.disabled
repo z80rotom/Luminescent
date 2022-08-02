@@ -1,0 +1,114 @@
+[target=main]
+// Dpr.Battle.Logic.MainModule$$GetCaptureLevelCap
+02034A04:
+	mov w0, #0xff
+
+// Dpr.Battle.Logic.MainModule$$GetExpLevelCap
+02034A14:
+	mov w0, #0xff
+
+// Dpr.Battle.Logic.MainModule$$GetMaxFollowPokeLevel
+020349E4:
+	mov w0, #0xff
+
+// Dpr.Battle.Logic.Setup$$GetCaptureLevelCap
+01F70510:
+	mov w0, #0xff
+
+// Dpr.Battle.Logic.Setup$$GetExpLevelCap
+01F70588:
+	mov w8, #0xff
+
+// Dpr.Battle.Logic.Setup$$GetMaxFollowPokeLevel
+01F704F0:
+	mov w0, #0xff
+
+// Dpr.EncountTools$$CreateFixPokeParam
+02C3D9A4:
+	cmp w8, #0xff
+
+// Dpr.EncountTools$$GetMonohiroiItem
+02C3D7D0:
+	mov w0, #0xff
+
+// Pml.Personal.GrowTableExtensions$$GetMinExp
+024A0894:
+	cmp w8, #0x100
+
+// Pml.Personal.PersonalSystem$$GetMinExp
+024A1A94:
+	cmp w8, #0x100
+
+// Pml.PokePara.CalcTool$$CalcLevel
+024AD178:
+	cmp w8, #0xff
+024AD184:
+	nop
+
+// Dpr.EvScript.EvDataManager$$EvCmd_POKE_LVUP_HOW_MANY
+02C9F714:
+	cmp w10, #0xfe
+
+// Dpr.UI.UIBag$$OnPokemonPartyClickedToUseItem
+0185CC00:
+	mov w25, #0xff
+
+// Dpr.Field.FieldEncount$$FieldEncount_Check
+019B340C:
+	cmp w25, #0xff
+
+// Dpr.Battle.Logic.Section_GetExp$$addExp_ByFaced
+01FBCEAC:
+	cmp w0, #0xfe
+
+// Dpr.Battle.Logic.Section_GetExp$$addExp_ByGakusyuSouti
+01FBCFB4:
+	cmp w0, #0xfe
+
+// Dpr.Battle.Logic.Section_GetExp$$checkRightsOfGettinExp
+01FBD18C:
+	cmp w0, #0xfe
+
+// Dpr.Battle.Logic.BTL_POKEPARAM$$AddExp
+01FE2EBC:
+	cmp w23, #0xfe
+
+// Dpr.Battle.Logic.BTL_POKEPARAM$$GetExpMargin
+01FE31A4:
+	mov w2, #0xff
+
+// Pml.PokePara.CoreParam$$SetExp
+02043FCC:
+	mov w1, #0xff
+
+// Pml.PokePara.CoreParam$$GetExpForNextLevel
+020442D8:
+	cmp w8, #0xff
+020442DC:
+    mov w8, #0xff
+
+// Pml.PokePara.CoreParam$$LevelUp
+020443E0:
+	mov w1, #0xff
+
+// Pml.PokePara.Factory$$FixInitSpec
+02053B0C:
+	cmp w8, #0x100
+02053B14:
+	mov w8, #0xff
+
+// Dpr.UI.LevelUpPokemonPanel$$AddExp
+01C5A9D4:
+	cmp w8, #0xff
+
+// Dpr.UI.LevelUpPokemonPanel$$LevelUp
+01C5AD80:
+	cmp w8, #0xff
+
+// Pml.PokePara.CalcTool$$CalcCorrectedPowerBySeikaku
+024AD380:
+	nop
+
+// Dpr.UI.LevelUpPokemonPanel.<AddExpCoroutine>d__64$$MoveNext
+01C5B7FC:
+	cmp w0, #0xff

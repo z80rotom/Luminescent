@@ -2,7 +2,7 @@
 #include "log.h"
 #include "logger.hpp"
 
-// #define RELEASE 1
+#define RELEASE 1
 
 #define	MSG_DONTWAIT	 0x00000080
 

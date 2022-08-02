@@ -1,7 +1,7 @@
 # Main executable
 set(CMAKE_EXECUTABLE_SUFFIX ".elf")
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCES_ASM} ${SOURCES_C} ${SOURCES_CXX})
-target_link_libraries(${CMAKE_PROJECT_NAME} PUBLIC curl nx)
+# target_link_libraries(${CMAKE_PROJECT_NAME} PUBLIC curl nx)
 
 # Generate exported.txt
 add_custom_command(

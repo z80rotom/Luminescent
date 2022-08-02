@@ -16,6 +16,7 @@ namespace Pml
                 static uint32_t CorrectColorRndForNormal(uint32_t id, uint32_t rnd, MethodInfo *method);
                 static uint32_t CorrectColorRndForRare(uint32_t id,uint32_t rnd,MethodInfo *method);
                 static uint8_t GetCorrectSexInPersonalData(int32_t monsno, uint16_t formno, uint8_t bothCase, MethodInfo *method);
+                static uint8_t GetAruseusuType(uint32_t itemno, MethodInfo *method);
         };
 
         extern void ** PTR_CalcTool_TypeInfo_04bd79d8;

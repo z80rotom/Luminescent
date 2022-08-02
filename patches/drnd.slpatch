@@ -1,3 +1,7 @@
 [target=main]
-17dbfc0:
-    b ZukanWork_GetFormFlags
+17dcd00:
+    bl ZukanWork_GetFormFlags
+17dcd28:
+    bl ZukanWork_GetFormFlags
+17dbf64:
+    bl ZukanWork_GetFormFlags
