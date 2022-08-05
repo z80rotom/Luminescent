@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_Systems_BattleViewUISystem___c__DisplayClass168_0___ctor (Dpr_Battle_View_Systems_BattleViewUISystem___c__DisplayClass168_0_o* __this, const MethodInfo* method_info);
-void Dpr_Battle_View_Systems_BattleViewUISystem___c__DisplayClass168_0___LoadAssetSelf_b__0 (Dpr_Battle_View_Systems_BattleViewUISystem___c__DisplayClass168_0_o* __this, int32_t eventType, System_String_o* name, UnityEngine_Object_o* asset, const MethodInfo* method_info);

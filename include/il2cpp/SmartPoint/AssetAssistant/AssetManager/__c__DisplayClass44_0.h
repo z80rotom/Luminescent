@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void SmartPoint_AssetAssistant_AssetManager___c__DisplayClass44_0___ctor (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass44_0_o* __this, const MethodInfo* method_info);
-bool SmartPoint_AssetAssistant_AssetManager___c__DisplayClass44_0___LoadAssetBundle_b__0 (SmartPoint_AssetAssistant_AssetManager___c__DisplayClass44_0_o* __this, System_String_o* __, const MethodInfo* method_info);

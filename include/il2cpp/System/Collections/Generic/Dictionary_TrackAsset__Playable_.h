@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_TrackAsset__Playable____ctor (System_Collections_Generic_Dictionary_TrackAsset__Playable__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_TrackAsset__Playable___set_Item (System_Collections_Generic_Dictionary_TrackAsset__Playable__o* __this, UnityEngine_Timeline_TrackAsset_o* key, UnityEngine_Playables_Playable_o value, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_TrackAsset__Playable___Clear (System_Collections_Generic_Dictionary_TrackAsset__Playable__o* __this, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_TrackAsset__Playable___ContainsKey (System_Collections_Generic_Dictionary_TrackAsset__Playable__o* __this, UnityEngine_Timeline_TrackAsset_o* key, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_TrackAsset__Playable___TryGetValue (System_Collections_Generic_Dictionary_TrackAsset__Playable__o* __this, UnityEngine_Timeline_TrackAsset_o* key, UnityEngine_Playables_Playable_o* value, const MethodInfo* method_info);

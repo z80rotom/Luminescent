@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_BattleMultipleCameraCompositor___c__DisplayClass25_0___ctor (Dpr_Battle_View_BattleMultipleCameraCompositor___c__DisplayClass25_0_o* __this, const MethodInfo* method_info);
-bool Dpr_Battle_View_BattleMultipleCameraCompositor___c__DisplayClass25_0___AddLayerCamera_b__0 (Dpr_Battle_View_BattleMultipleCameraCompositor___c__DisplayClass25_0_o* __this, UnityEngine_Camera_o* x, const MethodInfo* method_info);

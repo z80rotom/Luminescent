@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_Networking_PlayerConnection_PlayerEditorConnectionEvents_ConnectionChangeEvent___ctor (UnityEngine_Networking_PlayerConnection_PlayerEditorConnectionEvents_ConnectionChangeEvent_o* __this, const MethodInfo* method_info);

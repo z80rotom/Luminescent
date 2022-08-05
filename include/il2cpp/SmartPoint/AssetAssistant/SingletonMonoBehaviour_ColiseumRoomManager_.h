@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-ColiseumRoomManager_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_ColiseumRoomManager___get_Instance (const MethodInfo* method_info);
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_ColiseumRoomManager___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_ColiseumRoomManager__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_ColiseumRoomManager___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_ColiseumRoomManager__o* __this, const MethodInfo* method_info);

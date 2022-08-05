@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_TweenElement___Dispose (System_Collections_Generic_List_Enumerator_TweenElement__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_TweenElement___MoveNext (System_Collections_Generic_List_Enumerator_TweenElement__o __this, const MethodInfo* method_info);
-TweenElement_o* System_Collections_Generic_List_Enumerator_TweenElement___get_Current (System_Collections_Generic_List_Enumerator_TweenElement__o __this, const MethodInfo* method_info);

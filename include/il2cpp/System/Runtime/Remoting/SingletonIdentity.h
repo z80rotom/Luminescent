@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_Remoting_SingletonIdentity___ctor (System_Runtime_Remoting_SingletonIdentity_o* __this, System_String_o* objectUri, System_Runtime_Remoting_Contexts_Context_o* context, System_Type_o* objectType, const MethodInfo* method_info);
-System_MarshalByRefObject_o* System_Runtime_Remoting_SingletonIdentity__GetServerObject (System_Runtime_Remoting_SingletonIdentity_o* __this, const MethodInfo* method_info);
-System_Runtime_Remoting_Messaging_IMessage_o* System_Runtime_Remoting_SingletonIdentity__SyncObjectProcessMessage (System_Runtime_Remoting_SingletonIdentity_o* __this, System_Runtime_Remoting_Messaging_IMessage_o* msg, const MethodInfo* method_info);
-System_Runtime_Remoting_Messaging_IMessageCtrl_o* System_Runtime_Remoting_SingletonIdentity__AsyncObjectProcessMessage (System_Runtime_Remoting_SingletonIdentity_o* __this, System_Runtime_Remoting_Messaging_IMessage_o* msg, System_Runtime_Remoting_Messaging_IMessageSink_o* replySink, const MethodInfo* method_info);

@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_SubContents_RandomWithWeight___c__0_UgPokeLottery_PokeRate____cctor (const MethodInfo* method_info);
-void Dpr_SubContents_RandomWithWeight___c__0_UgPokeLottery_PokeRate____ctor (Dpr_SubContents_RandomWithWeight___c__0_UgPokeLottery_PokeRate__o* __this, const MethodInfo* method_info);
-float Dpr_SubContents_RandomWithWeight___c__0_UgPokeLottery_PokeRate____Lotto_b__0_0 (Dpr_SubContents_RandomWithWeight___c__0_UgPokeLottery_PokeRate__o* __this, Dpr_UnderGround_UgPokeLottery_PokeRate_o x, const MethodInfo* method_info);
-float Dpr_SubContents_RandomWithWeight___c__0_UgPokeLottery_PokeRate____Lotto_b__0_1 (Dpr_SubContents_RandomWithWeight___c__0_UgPokeLottery_PokeRate__o* __this, Dpr_UnderGround_UgPokeLottery_PokeRate_o x, const MethodInfo* method_info);

@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-int32_t System_Collections_Generic_List_BindModelSound___get_Count (System_Collections_Generic_List_BindModelSound__o* __this, const MethodInfo* method_info);
-Dpr_SubContents_BindModelSound_o* System_Collections_Generic_List_BindModelSound___get_Item (System_Collections_Generic_List_BindModelSound__o* __this, int32_t index, const MethodInfo* method_info);
-void System_Collections_Generic_List_BindModelSound___Clear (System_Collections_Generic_List_BindModelSound__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_List_BindModelSound___ForEach (System_Collections_Generic_List_BindModelSound__o* __this, System_Action_T__o* action, const MethodInfo* method_info);

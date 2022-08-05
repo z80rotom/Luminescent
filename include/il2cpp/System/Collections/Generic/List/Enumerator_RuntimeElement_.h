@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_RuntimeElement___Dispose (System_Collections_Generic_List_Enumerator_RuntimeElement__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_RuntimeElement___MoveNext (System_Collections_Generic_List_Enumerator_RuntimeElement__o __this, const MethodInfo* method_info);
-UnityEngine_Timeline_RuntimeElement_o* System_Collections_Generic_List_Enumerator_RuntimeElement___get_Current (System_Collections_Generic_List_Enumerator_RuntimeElement__o __this, const MethodInfo* method_info);

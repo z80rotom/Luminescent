@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void NexPlugin_Detail_SmartDeviceVoiceChat_SmartDeviceVoiceChatJoinRoomResultInt___ctor (NexPlugin_Detail_SmartDeviceVoiceChat_SmartDeviceVoiceChatJoinRoomResultInt_o __this, NexPlugin_SmartDeviceVoiceChatJoinRoomResult_o* param, const MethodInfo* method_info);
-NexPlugin_SmartDeviceVoiceChatJoinRoomResult_o* NexPlugin_Detail_SmartDeviceVoiceChat_SmartDeviceVoiceChatJoinRoomResultInt__ExchangePtrToStruct (intptr_t src, const MethodInfo* method_info);

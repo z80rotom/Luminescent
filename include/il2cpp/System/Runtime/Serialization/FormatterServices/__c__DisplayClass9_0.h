@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_Serialization_FormatterServices___c__DisplayClass9_0___ctor (System_Runtime_Serialization_FormatterServices___c__DisplayClass9_0_o* __this, const MethodInfo* method_info);
-System_Reflection_MemberInfo_array* System_Runtime_Serialization_FormatterServices___c__DisplayClass9_0___GetSerializableMembers_b__0 (System_Runtime_Serialization_FormatterServices___c__DisplayClass9_0_o* __this, System_Runtime_Serialization_MemberHolder_o* __, const MethodInfo* method_info);

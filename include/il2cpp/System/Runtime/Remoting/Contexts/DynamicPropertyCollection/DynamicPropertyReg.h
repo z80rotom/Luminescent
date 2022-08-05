@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_Remoting_Contexts_DynamicPropertyCollection_DynamicPropertyReg___ctor (System_Runtime_Remoting_Contexts_DynamicPropertyCollection_DynamicPropertyReg_o* __this, const MethodInfo* method_info);

@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-Dpr_Rendering_FeedbackBlur_o* Dpr_SequenceEditor_SequenceCameraObject_PostEffect_FeedbackBlur___get_EffectObject (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_FeedbackBlur__o* __this, const MethodInfo* method_info);
-void Dpr_SequenceEditor_SequenceCameraObject_PostEffect_FeedbackBlur____ctor (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_FeedbackBlur__o* __this, Dpr_Battle_View_BattlePostProcessFilter_o* filter, const MethodInfo* method_info);

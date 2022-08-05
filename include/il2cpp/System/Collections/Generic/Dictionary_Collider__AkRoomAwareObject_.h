@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_Collider__AkRoomAwareObject____ctor (System_Collections_Generic_Dictionary_Collider__AkRoomAwareObject__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_Collider__AkRoomAwareObject___Add (System_Collections_Generic_Dictionary_Collider__AkRoomAwareObject__o* __this, UnityEngine_Collider_o* key, AkRoomAwareObject_o* value, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_Collider__AkRoomAwareObject___Remove (System_Collections_Generic_Dictionary_Collider__AkRoomAwareObject__o* __this, UnityEngine_Collider_o* key, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_Collider__AkRoomAwareObject___TryGetValue (System_Collections_Generic_Dictionary_Collider__AkRoomAwareObject__o* __this, UnityEngine_Collider_o* key, AkRoomAwareObject_o** value, const MethodInfo* method_info);

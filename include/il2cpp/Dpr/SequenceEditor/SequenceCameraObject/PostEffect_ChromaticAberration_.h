@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-Dpr_Rendering_ChromaticAberration_o* Dpr_SequenceEditor_SequenceCameraObject_PostEffect_ChromaticAberration___get_EffectObject (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_ChromaticAberration__o* __this, const MethodInfo* method_info);
-void Dpr_SequenceEditor_SequenceCameraObject_PostEffect_ChromaticAberration____ctor (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_ChromaticAberration__o* __this, Dpr_Battle_View_BattlePostProcessFilter_o* filter, const MethodInfo* method_info);

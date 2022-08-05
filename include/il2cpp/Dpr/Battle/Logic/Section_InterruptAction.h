@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_InterruptAction___ctor (Dpr_Battle_Logic_Section_InterruptAction_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_InterruptAction__Execute (Dpr_Battle_Logic_Section_InterruptAction_o* __this, Dpr_Battle_Logic_Section_InterruptAction_Result_o* result, Dpr_Battle_Logic_Section_InterruptAction_Description_o** description, const MethodInfo* method_info);
-Dpr_Battle_Logic_PokeAction_o* Dpr_Battle_Logic_Section_InterruptAction__getInterruptPokeAction (Dpr_Battle_Logic_Section_InterruptAction_o* __this, uint8_t interruptPokeID, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_InterruptAction__processAction (Dpr_Battle_Logic_Section_InterruptAction_o* __this, Dpr_Battle_Logic_PokeAction_o* pokeAction, const MethodInfo* method_info);

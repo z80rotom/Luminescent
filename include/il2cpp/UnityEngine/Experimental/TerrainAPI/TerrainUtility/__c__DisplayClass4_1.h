@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_Experimental_TerrainAPI_TerrainUtility___c__DisplayClass4_1___ctor (UnityEngine_Experimental_TerrainAPI_TerrainUtility___c__DisplayClass4_1_o* __this, const MethodInfo* method_info);
-bool UnityEngine_Experimental_TerrainAPI_TerrainUtility___c__DisplayClass4_1___CollectTerrains_b__0 (UnityEngine_Experimental_TerrainAPI_TerrainUtility___c__DisplayClass4_1_o* __this, UnityEngine_Terrain_o* x, const MethodInfo* method_info);

@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass40_0___ctor (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass40_0_o* __this, const MethodInfo* method_info);
-bool Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass40_0___GetTableID_b__0 (Dpr_Field_Walking_FieldPokeTalkModel___c__DisplayClass40_0_o* __this, XLSXContent_FieldWalkingKinomiSeikakuTable_SheetSheet1_o* x, const MethodInfo* method_info);

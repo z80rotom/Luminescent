@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_String_o* System_Collections_Generic_KeyValuePair_string__AssetBundleCache___get_Key (System_Collections_Generic_KeyValuePair_string__AssetBundleCache__o __this, const MethodInfo* method_info);
-SmartPoint_AssetAssistant_AssetBundleCache_o* System_Collections_Generic_KeyValuePair_string__AssetBundleCache___get_Value (System_Collections_Generic_KeyValuePair_string__AssetBundleCache__o __this, const MethodInfo* method_info);

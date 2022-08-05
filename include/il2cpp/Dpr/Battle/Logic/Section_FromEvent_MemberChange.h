@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_FromEvent_MemberChange___ctor (Dpr_Battle_Logic_Section_FromEvent_MemberChange_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_MemberChange__Execute (Dpr_Battle_Logic_Section_FromEvent_MemberChange_o* __this, Dpr_Battle_Logic_Section_FromEvent_MemberChange_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_MemberChange_Description_o** description, const MethodInfo* method_info);
-bool Dpr_Battle_Logic_Section_FromEvent_MemberChange__canMemberChange (Dpr_Battle_Logic_Section_FromEvent_MemberChange_o* __this, uint8_t pokeID, const MethodInfo* method_info);
-bool Dpr_Battle_Logic_Section_FromEvent_MemberChange__memberOut (Dpr_Battle_Logic_Section_FromEvent_MemberChange_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* outPoke, bool isInterruptDisable, const MethodInfo* method_info);

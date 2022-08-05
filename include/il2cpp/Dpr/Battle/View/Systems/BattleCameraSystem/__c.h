@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_Systems_BattleCameraSystem___c___cctor (const MethodInfo* method_info);
-void Dpr_Battle_View_Systems_BattleCameraSystem___c___ctor (Dpr_Battle_View_Systems_BattleCameraSystem___c_o* __this, const MethodInfo* method_info);
-bool Dpr_Battle_View_Systems_BattleCameraSystem___c___InitializeWaitCamera_b__34_0 (Dpr_Battle_View_Systems_BattleCameraSystem___c_o* __this, XLSXContent_BattleWaitCameraData_SheetWaitCameraData_o* x, const MethodInfo* method_info);
-int32_t Dpr_Battle_View_Systems_BattleCameraSystem___c___LotteryWaitCamera_b__40_0 (Dpr_Battle_View_Systems_BattleCameraSystem___c_o* __this, XLSXContent_BattleWaitCameraData_SheetWaitCameraData_o* x, const MethodInfo* method_info);

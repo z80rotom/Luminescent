@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void NexPlugin_Detail_SmartDeviceVoiceChat_SmartDeviceVoiceChatChangeVoiceChatChannelParamInt___ctor (NexPlugin_Detail_SmartDeviceVoiceChat_SmartDeviceVoiceChatChangeVoiceChatChannelParamInt_o __this, NexPlugin_SmartDeviceVoiceChatChangeVoiceChatChannelParam_o* param, const MethodInfo* method_info);

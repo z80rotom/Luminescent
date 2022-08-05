@@ -7,3 +7,13 @@
 0237e270:  // PlayerWork$$get_BtlSearcherCharge
     mov x0,#100
     ret
+
+[target=main, version=bd_130]
+
+02c99650:  // Dpr.EvScript.EvDataManager$$EvCmd_POKETORE_GET_CHARGE
+    mov x0, #1
+    ret
+
+02cf2950:  // PlayerWork$$get_BtlSearcherCharge
+    mov x0,#100
+    ret

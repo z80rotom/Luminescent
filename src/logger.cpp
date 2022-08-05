@@ -1,5 +1,4 @@
 #include "nn.h"
-#include "log.h"
 #include "logger.hpp"
 
 #define	MSG_DONTWAIT	 0x00000080
@@ -17,13 +16,17 @@ s32 socket_log_socket = -1;
 u8 socket_data_pool[0x600000 + 0x20000] __attribute__((aligned(0x1000)));
 
 void socket_log(const char* str) {
-#ifdef RELEASE
-    return;
-#endif
+    if (RELEASE) return;
+
     if (socket_log_state != SOCKET_LOG_CONNECTED)
         return;
 
     nn::socket::Send(socket_log_socket, str, strlen(str), 0);
+
+    // Send newline for logger to display it
+    if (str[strlen(str)-1] != '\n') {
+        nn::socket::Send(socket_log_socket, "\n", 1, 0);
+    }
 }
 
 s32 socket_read_char(char *out) {
@@ -54,17 +57,20 @@ s32 socket_read_char(char *out) {
 }
 
 void socket_log_initialize() {
-#ifdef RELEASE
-    return;
-#endif
+    if (RELEASE) return;
+
     in_addr hostAddress = { 0 };
     sockaddr serverAddress = { 0 };
 
     if (socket_log_state != SOCKET_LOG_UNINITIALIZED)
         return;
 
-    nn::nifm::Initialize();
-    nn::nifm::SubmitNetworkRequest();
+    auto result = nn::nifm::Initialize();
+    if (result.isFailure()) {
+        return;
+    }
+
+    nn::nifm::SubmitNetworkRequestAndWait();
 
     while (nn::nifm::IsNetworkRequestOnHold()) {}
 
@@ -91,7 +97,7 @@ void socket_log_initialize() {
 
     socket_log_state = SOCKET_LOG_CONNECTED;
 
-    // log0("Hello from " MODULE_NAME_STR "!");
+    socket_log("Hello from " MODULE_NAME_STR "!\n");
 }
 
 int tryInitSocket() {

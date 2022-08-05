@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-UnityEngine_UIElements_FocusChangeDirection_o* UnityEngine_UIElements_VisualElementFocusChangeDirection__get_left (const MethodInfo* method_info);
-UnityEngine_UIElements_FocusChangeDirection_o* UnityEngine_UIElements_VisualElementFocusChangeDirection__get_right (const MethodInfo* method_info);
-void UnityEngine_UIElements_VisualElementFocusChangeDirection___ctor (UnityEngine_UIElements_VisualElementFocusChangeDirection_o* __this, int32_t value, const MethodInfo* method_info);
-void UnityEngine_UIElements_VisualElementFocusChangeDirection___cctor (const MethodInfo* method_info);

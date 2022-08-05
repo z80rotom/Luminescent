@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_UnderGround_LightStone_LightStone___c__DisplayClass26_0___ctor (Dpr_UnderGround_LightStone_LightStone___c__DisplayClass26_0_o* __this, const MethodInfo* method_info);
-void Dpr_UnderGround_LightStone_LightStone___c__DisplayClass26_0___PlayLightStoneEffect_b__0 (Dpr_UnderGround_LightStone_LightStone___c__DisplayClass26_0_o* __this, const MethodInfo* method_info);
-void Dpr_UnderGround_LightStone_LightStone___c__DisplayClass26_0___PlayLightStoneEffect_b__1 (Dpr_UnderGround_LightStone_LightStone___c__DisplayClass26_0_o* __this, Effect_EffectInstance_o* e, const MethodInfo* method_info);

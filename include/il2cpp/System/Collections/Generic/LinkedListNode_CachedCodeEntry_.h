@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_Collections_Generic_LinkedListNode_T__o* System_Collections_Generic_LinkedListNode_CachedCodeEntry___get_Next (System_Collections_Generic_LinkedListNode_CachedCodeEntry__o* __this, const MethodInfo* method_info);
-System_Text_RegularExpressions_CachedCodeEntry_o* System_Collections_Generic_LinkedListNode_CachedCodeEntry___get_Value (System_Collections_Generic_LinkedListNode_CachedCodeEntry__o* __this, const MethodInfo* method_info);

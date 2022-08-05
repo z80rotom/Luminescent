@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass23_0___ctor (Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass23_0_o* __this, const MethodInfo* method_info);
-void Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass23_0___LoadModel_b__0 (Dpr_Battle_View_BattleViewAssetManager___c__DisplayClass23_0_o* __this, UnityEngine_Object_o* x, const MethodInfo* method_info);

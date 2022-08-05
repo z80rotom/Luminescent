@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void SmartPoint_AssetAssistant_UnityExtensions_StringContainer__Add (SmartPoint_AssetAssistant_UnityExtensions_StringContainer_o* __this, System_String_o* text, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_UnityExtensions_StringContainer__Clear (SmartPoint_AssetAssistant_UnityExtensions_StringContainer_o* __this, const MethodInfo* method_info);
-System_String_array* SmartPoint_AssetAssistant_UnityExtensions_StringContainer__ToArray (SmartPoint_AssetAssistant_UnityExtensions_StringContainer_o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_UnityExtensions_StringContainer___ctor (SmartPoint_AssetAssistant_UnityExtensions_StringContainer_o* __this, const MethodInfo* method_info);

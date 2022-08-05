@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_EvScript_EvDataManager___c__DisplayClass1250_0_object____ctor (Dpr_EvScript_EvDataManager___c__DisplayClass1250_0_object__o* __this, const MethodInfo* method_info);
-void Dpr_EvScript_EvDataManager___c__DisplayClass1250_0_object____OpOpenSubContentsWindow_b__0 (Dpr_EvScript_EvDataManager___c__DisplayClass1250_0_object__o* __this, Dpr_UI_UIWindow_o* __, const MethodInfo* method_info);

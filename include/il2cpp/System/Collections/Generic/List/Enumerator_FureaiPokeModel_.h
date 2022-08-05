@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_FureaiPokeModel___Dispose (System_Collections_Generic_List_Enumerator_FureaiPokeModel__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_FureaiPokeModel___MoveNext (System_Collections_Generic_List_Enumerator_FureaiPokeModel__o __this, const MethodInfo* method_info);
-Dpr_FureaiHiroba_FureaiPokeModel_o* System_Collections_Generic_List_Enumerator_FureaiPokeModel___get_Current (System_Collections_Generic_List_Enumerator_FureaiPokeModel__o __this, const MethodInfo* method_info);

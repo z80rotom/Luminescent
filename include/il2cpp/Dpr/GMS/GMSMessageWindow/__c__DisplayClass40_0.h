@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_GMS_GMSMessageWindow___c__DisplayClass40_0___ctor (Dpr_GMS_GMSMessageWindow___c__DisplayClass40_0_o* __this, const MethodInfo* method_info);
-bool Dpr_GMS_GMSMessageWindow___c__DisplayClass40_0___OpenContextMenuFromUIManager_b__0 (Dpr_GMS_GMSMessageWindow___c__DisplayClass40_0_o* __this, Dpr_UI_ContextMenuItem_o* menuItem, const MethodInfo* method_info);
-void Dpr_GMS_GMSMessageWindow___c__DisplayClass40_0___OpenContextMenuFromUIManager_b__1 (Dpr_GMS_GMSMessageWindow___c__DisplayClass40_0_o* __this, Dpr_UI_UIWindow_o* window, const MethodInfo* method_info);

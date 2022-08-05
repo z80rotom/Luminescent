@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-UnityEngine_Playables_ScriptPlayable_T__o UnityEngine_Playables_ScriptPlayable_BasicPlayableBehaviour___Create (UnityEngine_Playables_PlayableGraph_o graph, UnityEngine_Timeline_BasicPlayableBehaviour_o* _template, int32_t inputCount, const MethodInfo* method_info);
-UnityEngine_Playables_Playable_o UnityEngine_Playables_ScriptPlayable_BasicPlayableBehaviour___op_Implicit (UnityEngine_Playables_ScriptPlayable_T__o playable, const MethodInfo* method_info);

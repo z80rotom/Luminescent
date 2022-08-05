@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-UnityEngine_Playables_ScriptPlayable_TimeNotificationBehaviour__o UnityEngine_Timeline_NotificationUtilities__CreateNotificationsPlayable (UnityEngine_Playables_PlayableGraph_o graph, System_Collections_Generic_IEnumerable_IMarker__o* markers, UnityEngine_GameObject_o* go, const MethodInfo* method_info);
-bool UnityEngine_Timeline_NotificationUtilities__TrackTypeSupportsNotifications (System_Type_o* type, const MethodInfo* method_info);

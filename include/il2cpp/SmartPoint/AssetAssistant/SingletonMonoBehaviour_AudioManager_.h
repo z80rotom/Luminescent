@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager___get_isInstantiated (const MethodInfo* method_info);
-Audio_AudioManager_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager___get_Instance (const MethodInfo* method_info);
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager__o* __this, const MethodInfo* method_info);

@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-int32_t System_Collections_Generic_ObjectComparer_UIVertex___Compare (System_Collections_Generic_ObjectComparer_UIVertex__o* __this, UnityEngine_UIVertex_o x, UnityEngine_UIVertex_o y, const MethodInfo* method_info);
-bool System_Collections_Generic_ObjectComparer_UIVertex___Equals (System_Collections_Generic_ObjectComparer_UIVertex__o* __this, Il2CppObject* obj, const MethodInfo* method_info);
-int32_t System_Collections_Generic_ObjectComparer_UIVertex___GetHashCode (System_Collections_Generic_ObjectComparer_UIVertex__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_ObjectComparer_UIVertex____ctor (System_Collections_Generic_ObjectComparer_UIVertex__o* __this, const MethodInfo* method_info);

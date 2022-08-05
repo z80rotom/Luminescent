@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_Serialization_Formatters_Binary_NameInfo___ctor (System_Runtime_Serialization_Formatters_Binary_NameInfo_o* __this, const MethodInfo* method_info);
-void System_Runtime_Serialization_Formatters_Binary_NameInfo__Init (System_Runtime_Serialization_Formatters_Binary_NameInfo_o* __this, const MethodInfo* method_info);
-bool System_Runtime_Serialization_Formatters_Binary_NameInfo__get_IsSealed (System_Runtime_Serialization_Formatters_Binary_NameInfo_o* __this, const MethodInfo* method_info);
-System_String_o* System_Runtime_Serialization_Formatters_Binary_NameInfo__get_NIname (System_Runtime_Serialization_Formatters_Binary_NameInfo_o* __this, const MethodInfo* method_info);
-void System_Runtime_Serialization_Formatters_Binary_NameInfo__set_NIname (System_Runtime_Serialization_Formatters_Binary_NameInfo_o* __this, System_String_o* value, const MethodInfo* method_info);

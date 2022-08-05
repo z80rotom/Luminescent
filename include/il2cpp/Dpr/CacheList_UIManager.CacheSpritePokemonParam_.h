@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_CacheList_UIManager_CacheSpritePokemonParam____ctor (Dpr_CacheList_UIManager_CacheSpritePokemonParam__o* __this, int32_t num, const MethodInfo* method_info);
-void Dpr_CacheList_UIManager_CacheSpritePokemonParam___Add (Dpr_CacheList_UIManager_CacheSpritePokemonParam__o* __this, Dpr_UI_UIManager_CacheSpritePokemonParam_o* item, const MethodInfo* method_info);
-Dpr_UI_UIManager_CacheSpritePokemonParam_o* Dpr_CacheList_UIManager_CacheSpritePokemonParam___Find (Dpr_CacheList_UIManager_CacheSpritePokemonParam__o* __this, System_Func_T__bool__o* onCompare, const MethodInfo* method_info);
-void Dpr_CacheList_UIManager_CacheSpritePokemonParam___MoveLast (Dpr_CacheList_UIManager_CacheSpritePokemonParam__o* __this, Dpr_UI_UIManager_CacheSpritePokemonParam_o* item, System_Func_T__bool__o* onRemove, const MethodInfo* method_info);

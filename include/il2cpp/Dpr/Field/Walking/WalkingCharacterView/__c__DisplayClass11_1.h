@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Field_Walking_WalkingCharacterView___c__DisplayClass11_1___ctor (Dpr_Field_Walking_WalkingCharacterView___c__DisplayClass11_1_o* __this, const MethodInfo* method_info);
-bool Dpr_Field_Walking_WalkingCharacterView___c__DisplayClass11_1___ChangeUpdateWhenOffScreen_b__0 (Dpr_Field_Walking_WalkingCharacterView___c__DisplayClass11_1_o* __this, UnityEngine_SkinnedMeshRenderer_o* x, const MethodInfo* method_info);

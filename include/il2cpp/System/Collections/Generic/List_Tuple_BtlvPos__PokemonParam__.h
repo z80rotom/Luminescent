@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Tuple_BtlvPos__PokemonParam_____ctor (System_Collections_Generic_List_Tuple_BtlvPos__PokemonParam___o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_List_Tuple_BtlvPos__PokemonParam____Add (System_Collections_Generic_List_Tuple_BtlvPos__PokemonParam___o* __this, System_Tuple_BtlvPos__PokemonParam__o* item, const MethodInfo* method_info);
-System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_Tuple_BtlvPos__PokemonParam____GetEnumerator (System_Collections_Generic_List_Tuple_BtlvPos__PokemonParam___o* __this, const MethodInfo* method_info);

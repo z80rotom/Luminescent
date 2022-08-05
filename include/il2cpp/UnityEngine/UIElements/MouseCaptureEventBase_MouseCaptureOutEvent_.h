@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_UIElements_MouseCaptureEventBase_MouseCaptureOutEvent___Init (UnityEngine_UIElements_MouseCaptureEventBase_MouseCaptureOutEvent__o* __this, const MethodInfo* method_info);
-void UnityEngine_UIElements_MouseCaptureEventBase_MouseCaptureOutEvent____ctor (UnityEngine_UIElements_MouseCaptureEventBase_MouseCaptureOutEvent__o* __this, const MethodInfo* method_info);

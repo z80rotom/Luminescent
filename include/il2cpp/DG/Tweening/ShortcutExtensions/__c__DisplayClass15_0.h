@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void DG_Tweening_ShortcutExtensions___c__DisplayClass15_0___ctor (DG_Tweening_ShortcutExtensions___c__DisplayClass15_0_o* __this, const MethodInfo* method_info);
-DG_Tweening_Color2_o DG_Tweening_ShortcutExtensions___c__DisplayClass15_0___DOColor_b__0 (DG_Tweening_ShortcutExtensions___c__DisplayClass15_0_o* __this, const MethodInfo* method_info);
-void DG_Tweening_ShortcutExtensions___c__DisplayClass15_0___DOColor_b__1 (DG_Tweening_ShortcutExtensions___c__DisplayClass15_0_o* __this, DG_Tweening_Color2_o x, const MethodInfo* method_info);

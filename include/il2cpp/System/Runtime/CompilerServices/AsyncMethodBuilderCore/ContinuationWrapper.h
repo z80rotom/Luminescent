@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_CompilerServices_AsyncMethodBuilderCore_ContinuationWrapper___ctor (System_Runtime_CompilerServices_AsyncMethodBuilderCore_ContinuationWrapper_o* __this, System_Action_o* continuation, System_Action_o* invokeAction, System_Threading_Tasks_Task_o* innerTask, const MethodInfo* method_info);
-void System_Runtime_CompilerServices_AsyncMethodBuilderCore_ContinuationWrapper__Invoke (System_Runtime_CompilerServices_AsyncMethodBuilderCore_ContinuationWrapper_o* __this, const MethodInfo* method_info);

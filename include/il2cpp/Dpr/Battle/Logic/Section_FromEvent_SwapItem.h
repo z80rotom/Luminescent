@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_FromEvent_SwapItem___ctor (Dpr_Battle_Logic_Section_FromEvent_SwapItem_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_SwapItem__Execute (Dpr_Battle_Logic_Section_FromEvent_SwapItem_o* __this, Dpr_Battle_Logic_Section_FromEvent_SwapItem_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_SwapItem_Description_o** description, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_SwapItem__changeItem (Dpr_Battle_Logic_Section_FromEvent_SwapItem_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, uint16_t nextItemID, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_SwapItem__checkItemReaction (Dpr_Battle_Logic_Section_FromEvent_SwapItem_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_SwapItem__incRecord_StealItemFromWildPoke (Dpr_Battle_Logic_Section_FromEvent_SwapItem_o* __this, uint8_t targetPokeID, uint16_t targetItem, const MethodInfo* method_info);

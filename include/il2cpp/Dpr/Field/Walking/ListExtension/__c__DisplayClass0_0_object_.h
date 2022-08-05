@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Field_Walking_ListExtension___c__DisplayClass0_0_object____ctor (Dpr_Field_Walking_ListExtension___c__DisplayClass0_0_object__o* __this, const MethodInfo* method_info);
-bool Dpr_Field_Walking_ListExtension___c__DisplayClass0_0_object____GetRandomofMaxpriority_b__1 (Dpr_Field_Walking_ListExtension___c__DisplayClass0_0_object__o* __this, Il2CppObject* x, const MethodInfo* method_info);

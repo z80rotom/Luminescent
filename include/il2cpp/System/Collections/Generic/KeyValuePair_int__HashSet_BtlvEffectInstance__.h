@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_Collections_Generic_HashSet_BtlvEffectInstance__o* System_Collections_Generic_KeyValuePair_int__HashSet_BtlvEffectInstance____get_Value (System_Collections_Generic_KeyValuePair_int__HashSet_BtlvEffectInstance___o __this, const MethodInfo* method_info);

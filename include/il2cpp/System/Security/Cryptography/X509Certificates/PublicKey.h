@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_Security_Cryptography_AsnEncodedData_o* System_Security_Cryptography_X509Certificates_PublicKey__get_EncodedKeyValue (System_Security_Cryptography_X509Certificates_PublicKey_o* __this, const MethodInfo* method_info);
-System_Security_Cryptography_AsnEncodedData_o* System_Security_Cryptography_X509Certificates_PublicKey__get_EncodedParameters (System_Security_Cryptography_X509Certificates_PublicKey_o* __this, const MethodInfo* method_info);
-System_Security_Cryptography_Oid_o* System_Security_Cryptography_X509Certificates_PublicKey__get_Oid (System_Security_Cryptography_X509Certificates_PublicKey_o* __this, const MethodInfo* method_info);
-void System_Security_Cryptography_X509Certificates_PublicKey___cctor (const MethodInfo* method_info);

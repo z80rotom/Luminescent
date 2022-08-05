@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void DG_Tweening_DOTweenModulePhysics___c__DisplayClass5_0___ctor (DG_Tweening_DOTweenModulePhysics___c__DisplayClass5_0_o* __this, const MethodInfo* method_info);
-UnityEngine_Quaternion_o DG_Tweening_DOTweenModulePhysics___c__DisplayClass5_0___DOLookAt_b__0 (DG_Tweening_DOTweenModulePhysics___c__DisplayClass5_0_o* __this, const MethodInfo* method_info);

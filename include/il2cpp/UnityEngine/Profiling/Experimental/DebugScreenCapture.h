@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_Profiling_Experimental_DebugScreenCapture__set_rawImageDataReference (UnityEngine_Profiling_Experimental_DebugScreenCapture_o __this, Unity_Collections_NativeArray_byte__o value, const MethodInfo* method_info);
-void UnityEngine_Profiling_Experimental_DebugScreenCapture__set_imageFormat (UnityEngine_Profiling_Experimental_DebugScreenCapture_o __this, int32_t value, const MethodInfo* method_info);
-void UnityEngine_Profiling_Experimental_DebugScreenCapture__set_width (UnityEngine_Profiling_Experimental_DebugScreenCapture_o __this, int32_t value, const MethodInfo* method_info);
-void UnityEngine_Profiling_Experimental_DebugScreenCapture__set_height (UnityEngine_Profiling_Experimental_DebugScreenCapture_o __this, int32_t value, const MethodInfo* method_info);

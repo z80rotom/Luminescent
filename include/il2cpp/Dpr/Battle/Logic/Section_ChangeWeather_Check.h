@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_ChangeWeather_Check___ctor (Dpr_Battle_Logic_Section_ChangeWeather_Check_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_ChangeWeather_Check__Execute (Dpr_Battle_Logic_Section_ChangeWeather_Check_o* __this, Dpr_Battle_Logic_Section_ChangeWeather_Check_Result_o* pResult, Dpr_Battle_Logic_Section_ChangeWeather_Check_Description_o** description, const MethodInfo* method_info);
-bool Dpr_Battle_Logic_Section_ChangeWeather_Check__canOverwrite (Dpr_Battle_Logic_Section_ChangeWeather_Check_o* __this, uint8_t nextWeather, const MethodInfo* method_info);

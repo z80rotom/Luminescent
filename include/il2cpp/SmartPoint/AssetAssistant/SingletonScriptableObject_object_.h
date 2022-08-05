@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_String_o* SmartPoint_AssetAssistant_SingletonScriptableObject_object___get_className (const MethodInfo* method_info);
-Il2CppObject* SmartPoint_AssetAssistant_SingletonScriptableObject_object___get_instance (const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonScriptableObject_object___OnEnable (SmartPoint_AssetAssistant_SingletonScriptableObject_object__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonScriptableObject_object____ctor (SmartPoint_AssetAssistant_SingletonScriptableObject_object__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonScriptableObject_object____cctor (const MethodInfo* method_info);

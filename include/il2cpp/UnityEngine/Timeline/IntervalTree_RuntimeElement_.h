@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_Timeline_IntervalTree_RuntimeElement___Add (UnityEngine_Timeline_IntervalTree_RuntimeElement__o* __this, UnityEngine_Timeline_RuntimeElement_o* item, const MethodInfo* method_info);
-void UnityEngine_Timeline_IntervalTree_RuntimeElement___IntersectsWith (UnityEngine_Timeline_IntervalTree_RuntimeElement__o* __this, int64_t value, System_Collections_Generic_List_T__o* results, const MethodInfo* method_info);
-void UnityEngine_Timeline_IntervalTree_RuntimeElement____ctor (UnityEngine_Timeline_IntervalTree_RuntimeElement__o* __this, const MethodInfo* method_info);

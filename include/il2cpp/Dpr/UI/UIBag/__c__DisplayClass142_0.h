@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_UI_UIBag___c__DisplayClass142_0___ctor (Dpr_UI_UIBag___c__DisplayClass142_0_o* __this, const MethodInfo* method_info);
-void Dpr_UI_UIBag___c__DisplayClass142_0___OnBattleBootPokemonPartyClickedToUseItem_g__UseItem_0 (Dpr_UI_UIBag___c__DisplayClass142_0_o* __this, bool isUsable, int32_t subSelectIndex, const MethodInfo* method_info);
-void Dpr_UI_UIBag___c__DisplayClass142_0___OnBattleBootPokemonPartyClickedToUseItem_b__2 (Dpr_UI_UIBag___c__DisplayClass142_0_o* __this, UnityEngine_Events_UnityAction_UIWindow__o* onClosed_, const MethodInfo* method_info);
-void Dpr_UI_UIBag___c__DisplayClass142_0___OnBattleBootPokemonPartyClickedToUseItem_b__1 (Dpr_UI_UIBag___c__DisplayClass142_0_o* __this, int32_t index2, const MethodInfo* method_info);

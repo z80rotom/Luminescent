@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_SecretBase_StatePedestalWindow___c__DisplayClass10_0___ctor (Dpr_SecretBase_StatePedestalWindow___c__DisplayClass10_0_o* __this, const MethodInfo* method_info);
-void Dpr_SecretBase_StatePedestalWindow___c__DisplayClass10_0___Exit_b__0 (Dpr_SecretBase_StatePedestalWindow___c__DisplayClass10_0_o* __this, const MethodInfo* method_info);

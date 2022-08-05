@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_BattleReadyPoint___Dispose (System_Collections_Generic_List_Enumerator_BattleReadyPoint__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_BattleReadyPoint___MoveNext (System_Collections_Generic_List_Enumerator_BattleReadyPoint__o __this, const MethodInfo* method_info);
-BattleReadyPoint_o* System_Collections_Generic_List_Enumerator_BattleReadyPoint___get_Current (System_Collections_Generic_List_Enumerator_BattleReadyPoint__o __this, const MethodInfo* method_info);

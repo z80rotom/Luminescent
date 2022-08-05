@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection___c__DisplayClass6_0___ctor (Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection___c__DisplayClass6_0_o* __this, const MethodInfo* method_info);
-void Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection___c__DisplayClass6_0___BoxOpenDirection_b__0 (Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection___c__DisplayClass6_0_o* __this, const MethodInfo* method_info);

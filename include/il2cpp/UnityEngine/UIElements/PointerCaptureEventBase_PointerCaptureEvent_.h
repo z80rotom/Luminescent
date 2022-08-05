@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_UIElements_PointerCaptureEventBase_PointerCaptureEvent___Init (UnityEngine_UIElements_PointerCaptureEventBase_PointerCaptureEvent__o* __this, const MethodInfo* method_info);
-UnityEngine_UIElements_PointerCaptureEvent_o* UnityEngine_UIElements_PointerCaptureEventBase_PointerCaptureEvent___GetPooled (UnityEngine_UIElements_IEventHandler_o* target, UnityEngine_UIElements_IEventHandler_o* relatedTarget, int32_t pointerId, const MethodInfo* method_info);
-void UnityEngine_UIElements_PointerCaptureEventBase_PointerCaptureEvent____ctor (UnityEngine_UIElements_PointerCaptureEventBase_PointerCaptureEvent__o* __this, const MethodInfo* method_info);

@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool UnityEngine_UI_MultipleDisplayUtilities__GetRelativeMousePositionForDrag (UnityEngine_EventSystems_PointerEventData_o* eventData, UnityEngine_Vector2_o* position, const MethodInfo* method_info);
-UnityEngine_Vector2_o UnityEngine_UI_MultipleDisplayUtilities__GetMousePositionRelativeToMainDisplayResolution (const MethodInfo* method_info);

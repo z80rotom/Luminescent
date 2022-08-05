@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_Mesh___Dispose (System_Collections_Generic_List_Enumerator_Mesh__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_Mesh___MoveNext (System_Collections_Generic_List_Enumerator_Mesh__o __this, const MethodInfo* method_info);
-UnityEngine_Mesh_o* System_Collections_Generic_List_Enumerator_Mesh___get_Current (System_Collections_Generic_List_Enumerator_Mesh__o __this, const MethodInfo* method_info);

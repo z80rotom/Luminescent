@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_Timeline_AnimationOutputWeightProcessor___ctor (UnityEngine_Timeline_AnimationOutputWeightProcessor_o* __this, UnityEngine_Animations_AnimationPlayableOutput_o output, const MethodInfo* method_info);
-void UnityEngine_Timeline_AnimationOutputWeightProcessor__FindMixers (UnityEngine_Timeline_AnimationOutputWeightProcessor_o* __this, const MethodInfo* method_info);
-void UnityEngine_Timeline_AnimationOutputWeightProcessor__FindMixers (UnityEngine_Timeline_AnimationOutputWeightProcessor_o* __this, UnityEngine_Playables_Playable_o parent, int32_t port, UnityEngine_Playables_Playable_o node, const MethodInfo* method_info);
-void UnityEngine_Timeline_AnimationOutputWeightProcessor__Evaluate (UnityEngine_Timeline_AnimationOutputWeightProcessor_o* __this, const MethodInfo* method_info);

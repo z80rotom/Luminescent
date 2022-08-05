@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_SecretBase_StatuePlacementUtility___c___cctor (const MethodInfo* method_info);
-void Dpr_SecretBase_StatuePlacementUtility___c___ctor (Dpr_SecretBase_StatuePlacementUtility___c_o* __this, const MethodInfo* method_info);
-int32_t Dpr_SecretBase_StatuePlacementUtility___c___CalcHighestStatueEffect_b__1_0 (Dpr_SecretBase_StatuePlacementUtility___c_o* __this, System_Collections_Generic_KeyValuePair_int__int__o a, System_Collections_Generic_KeyValuePair_int__int__o b, const MethodInfo* method_info);

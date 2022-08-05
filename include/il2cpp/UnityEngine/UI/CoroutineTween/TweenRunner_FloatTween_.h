@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_Collections_IEnumerator_o* UnityEngine_UI_CoroutineTween_TweenRunner_FloatTween___Start (UnityEngine_UI_CoroutineTween_FloatTween_o tweenInfo, const MethodInfo* method_info);
-void UnityEngine_UI_CoroutineTween_TweenRunner_FloatTween___Init (UnityEngine_UI_CoroutineTween_TweenRunner_FloatTween__o* __this, UnityEngine_MonoBehaviour_o* coroutineContainer, const MethodInfo* method_info);
-void UnityEngine_UI_CoroutineTween_TweenRunner_FloatTween___StartTween (UnityEngine_UI_CoroutineTween_TweenRunner_FloatTween__o* __this, UnityEngine_UI_CoroutineTween_FloatTween_o info, const MethodInfo* method_info);
-void UnityEngine_UI_CoroutineTween_TweenRunner_FloatTween___StopTween (UnityEngine_UI_CoroutineTween_TweenRunner_FloatTween__o* __this, const MethodInfo* method_info);
-void UnityEngine_UI_CoroutineTween_TweenRunner_FloatTween____ctor (UnityEngine_UI_CoroutineTween_TweenRunner_FloatTween__o* __this, const MethodInfo* method_info);

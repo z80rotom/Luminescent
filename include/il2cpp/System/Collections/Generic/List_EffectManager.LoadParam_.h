@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_EffectManager_LoadParam____ctor (System_Collections_Generic_List_EffectManager_LoadParam__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_List_EffectManager_LoadParam___Add (System_Collections_Generic_List_EffectManager_LoadParam__o* __this, Effect_EffectManager_LoadParam_o* item, const MethodInfo* method_info);
-Effect_EffectManager_LoadParam_array* System_Collections_Generic_List_EffectManager_LoadParam___ToArray (System_Collections_Generic_List_EffectManager_LoadParam__o* __this, const MethodInfo* method_info);

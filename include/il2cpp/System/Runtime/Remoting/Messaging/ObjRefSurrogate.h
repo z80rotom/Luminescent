@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_Remoting_Messaging_ObjRefSurrogate__GetObjectData (System_Runtime_Remoting_Messaging_ObjRefSurrogate_o* __this, Il2CppObject* obj, System_Runtime_Serialization_SerializationInfo_o* si, System_Runtime_Serialization_StreamingContext_o sc, const MethodInfo* method_info);
-Il2CppObject* System_Runtime_Remoting_Messaging_ObjRefSurrogate__SetObjectData (System_Runtime_Remoting_Messaging_ObjRefSurrogate_o* __this, Il2CppObject* obj, System_Runtime_Serialization_SerializationInfo_o* si, System_Runtime_Serialization_StreamingContext_o sc, System_Runtime_Serialization_ISurrogateSelector_o* selector, const MethodInfo* method_info);
-void System_Runtime_Remoting_Messaging_ObjRefSurrogate___ctor (System_Runtime_Remoting_Messaging_ObjRefSurrogate_o* __this, const MethodInfo* method_info);

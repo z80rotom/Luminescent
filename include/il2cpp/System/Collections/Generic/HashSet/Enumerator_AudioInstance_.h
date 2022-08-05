@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_HashSet_Enumerator_AudioInstance___Dispose (System_Collections_Generic_HashSet_Enumerator_AudioInstance__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_HashSet_Enumerator_AudioInstance___MoveNext (System_Collections_Generic_HashSet_Enumerator_AudioInstance__o __this, const MethodInfo* method_info);
-Audio_AudioInstance_o* System_Collections_Generic_HashSet_Enumerator_AudioInstance___get_Current (System_Collections_Generic_HashSet_Enumerator_AudioInstance__o __this, const MethodInfo* method_info);

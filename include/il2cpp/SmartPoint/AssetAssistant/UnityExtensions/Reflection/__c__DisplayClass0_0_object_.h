@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void SmartPoint_AssetAssistant_UnityExtensions_Reflection___c__DisplayClass0_0_object____ctor (SmartPoint_AssetAssistant_UnityExtensions_Reflection___c__DisplayClass0_0_object__o* __this, const MethodInfo* method_info);
-bool SmartPoint_AssetAssistant_UnityExtensions_Reflection___c__DisplayClass0_0_object____FindDelegateMethods_b__0 (SmartPoint_AssetAssistant_UnityExtensions_Reflection___c__DisplayClass0_0_object__o* __this, System_Reflection_AssemblyName_o* x, const MethodInfo* method_info);

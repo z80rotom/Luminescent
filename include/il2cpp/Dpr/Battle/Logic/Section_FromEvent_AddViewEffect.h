@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_FromEvent_AddViewEffect___ctor (Dpr_Battle_Logic_Section_FromEvent_AddViewEffect_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_AddViewEffect__Execute (Dpr_Battle_Logic_Section_FromEvent_AddViewEffect_o* __this, Dpr_Battle_Logic_Section_FromEvent_AddViewEffect_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_AddViewEffect_Description_o** description, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_AddViewEffect__addVewEffect (Dpr_Battle_Logic_Section_FromEvent_AddViewEffect_o* __this, uint16_t effectNo, uint8_t effectPos_from, uint8_t effectPos_to, bool isQueueReserved, uint32_t reservedQueuePos, const MethodInfo* method_info);

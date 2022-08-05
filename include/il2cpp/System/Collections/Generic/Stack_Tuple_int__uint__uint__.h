@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Stack_Tuple_int__uint__uint_____ctor (System_Collections_Generic_Stack_Tuple_int__uint__uint___o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_Stack_Tuple_int__uint__uint_____ctor (System_Collections_Generic_Stack_Tuple_int__uint__uint___o* __this, int32_t capacity, const MethodInfo* method_info);
-void System_Collections_Generic_Stack_Tuple_int__uint__uint____Push (System_Collections_Generic_Stack_Tuple_int__uint__uint___o* __this, System_Tuple_int__uint__uint__o* item, const MethodInfo* method_info);

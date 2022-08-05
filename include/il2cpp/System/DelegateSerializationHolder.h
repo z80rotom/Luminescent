@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_DelegateSerializationHolder___ctor (System_DelegateSerializationHolder_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o ctx, const MethodInfo* method_info);
-void System_DelegateSerializationHolder__GetDelegateData (System_Delegate_o* instance, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o ctx, const MethodInfo* method_info);
-void System_DelegateSerializationHolder__GetObjectData (System_DelegateSerializationHolder_o* __this, System_Runtime_Serialization_SerializationInfo_o* info, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method_info);
-Il2CppObject* System_DelegateSerializationHolder__GetRealObject (System_DelegateSerializationHolder_o* __this, System_Runtime_Serialization_StreamingContext_o context, const MethodInfo* method_info);

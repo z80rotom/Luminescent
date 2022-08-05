@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_Type__MonoCustomAttrs_AttributeInfo____ctor (System_Collections_Generic_Dictionary_Type__MonoCustomAttrs_AttributeInfo__o* __this, int32_t capacity, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_Type__MonoCustomAttrs_AttributeInfo___Add (System_Collections_Generic_Dictionary_Type__MonoCustomAttrs_AttributeInfo__o* __this, System_Type_o* key, System_MonoCustomAttrs_AttributeInfo_o* value, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_Type__MonoCustomAttrs_AttributeInfo___TryGetValue (System_Collections_Generic_Dictionary_Type__MonoCustomAttrs_AttributeInfo__o* __this, System_Type_o* key, System_MonoCustomAttrs_AttributeInfo_o** value, const MethodInfo* method_info);

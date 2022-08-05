@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_AudioSettings_AudioConfigurationChangeHandler___ctor (UnityEngine_AudioSettings_AudioConfigurationChangeHandler_o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method_info);
-void UnityEngine_AudioSettings_AudioConfigurationChangeHandler__Invoke (UnityEngine_AudioSettings_AudioConfigurationChangeHandler_o* __this, bool deviceWasChanged, const MethodInfo* method_info);
-System_IAsyncResult_o* UnityEngine_AudioSettings_AudioConfigurationChangeHandler__BeginInvoke (UnityEngine_AudioSettings_AudioConfigurationChangeHandler_o* __this, bool deviceWasChanged, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method_info);
-void UnityEngine_AudioSettings_AudioConfigurationChangeHandler__EndInvoke (UnityEngine_AudioSettings_AudioConfigurationChangeHandler_o* __this, System_IAsyncResult_o* result, const MethodInfo* method_info);

@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Threading_Tasks_Task_ContingentProperties__SetCompleted (System_Threading_Tasks_Task_ContingentProperties_o* __this, const MethodInfo* method_info);
-void System_Threading_Tasks_Task_ContingentProperties__DeregisterCancellationCallback (System_Threading_Tasks_Task_ContingentProperties_o* __this, const MethodInfo* method_info);
-void System_Threading_Tasks_Task_ContingentProperties___ctor (System_Threading_Tasks_Task_ContingentProperties_o* __this, const MethodInfo* method_info);

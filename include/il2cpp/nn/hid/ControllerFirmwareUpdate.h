@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-nn_Result_o nn_hid_ControllerFirmwareUpdate__Show (nn_hid_ControllerFirmwareUpdateArg_o showControllerFirmwareUpdateArg, const MethodInfo* method_info);
-nn_Result_o nn_hid_ControllerFirmwareUpdate__Show (nn_hid_ControllerFirmwareUpdateArg_o showControllerFirmwareUpdateArg, bool suspendUnityThreads, const MethodInfo* method_info);
-nn_ErrorRange_o nn_hid_ControllerFirmwareUpdate__get_ResultControllerFirmwareUpdateError (const MethodInfo* method_info);
-nn_ErrorRange_o nn_hid_ControllerFirmwareUpdate__get_ResultControllerFirmwareUpdateFailed (const MethodInfo* method_info);

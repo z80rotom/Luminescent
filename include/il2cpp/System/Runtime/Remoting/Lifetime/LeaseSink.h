@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_Remoting_Lifetime_LeaseSink___ctor (System_Runtime_Remoting_Lifetime_LeaseSink_o* __this, System_Runtime_Remoting_Messaging_IMessageSink_o* nextSink, const MethodInfo* method_info);
-System_Runtime_Remoting_Messaging_IMessage_o* System_Runtime_Remoting_Lifetime_LeaseSink__SyncProcessMessage (System_Runtime_Remoting_Lifetime_LeaseSink_o* __this, System_Runtime_Remoting_Messaging_IMessage_o* msg, const MethodInfo* method_info);
-System_Runtime_Remoting_Messaging_IMessageCtrl_o* System_Runtime_Remoting_Lifetime_LeaseSink__AsyncProcessMessage (System_Runtime_Remoting_Lifetime_LeaseSink_o* __this, System_Runtime_Remoting_Messaging_IMessage_o* msg, System_Runtime_Remoting_Messaging_IMessageSink_o* replySink, const MethodInfo* method_info);
-void System_Runtime_Remoting_Lifetime_LeaseSink__RenewLease (System_Runtime_Remoting_Lifetime_LeaseSink_o* __this, System_Runtime_Remoting_Messaging_IMessage_o* msg, const MethodInfo* method_info);

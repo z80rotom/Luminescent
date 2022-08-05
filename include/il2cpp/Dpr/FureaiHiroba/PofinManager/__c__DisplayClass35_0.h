@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_FureaiHiroba_PofinManager___c__DisplayClass35_0___ctor (Dpr_FureaiHiroba_PofinManager___c__DisplayClass35_0_o* __this, const MethodInfo* method_info);
-void Dpr_FureaiHiroba_PofinManager___c__DisplayClass35_0___EndCooking_b__0 (Dpr_FureaiHiroba_PofinManager___c__DisplayClass35_0_o* __this, const MethodInfo* method_info);
-void Dpr_FureaiHiroba_PofinManager___c__DisplayClass35_0___EndCooking_b__1 (Dpr_FureaiHiroba_PofinManager___c__DisplayClass35_0_o* __this, const MethodInfo* method_info);

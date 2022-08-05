@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_FieldKinomiGrowEntity____ctor (System_Collections_Generic_List_FieldKinomiGrowEntity__o* __this, int32_t capacity, const MethodInfo* method_info);
-void System_Collections_Generic_List_FieldKinomiGrowEntity___Add (System_Collections_Generic_List_FieldKinomiGrowEntity__o* __this, FieldKinomiGrowEntity_o* item, const MethodInfo* method_info);
-void System_Collections_Generic_List_FieldKinomiGrowEntity___Clear (System_Collections_Generic_List_FieldKinomiGrowEntity__o* __this, const MethodInfo* method_info);
-System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_FieldKinomiGrowEntity___GetEnumerator (System_Collections_Generic_List_FieldKinomiGrowEntity__o* __this, const MethodInfo* method_info);

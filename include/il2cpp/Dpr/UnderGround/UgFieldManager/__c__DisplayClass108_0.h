@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_UnderGround_UgFieldManager___c__DisplayClass108_0___ctor (Dpr_UnderGround_UgFieldManager___c__DisplayClass108_0_o* __this, const MethodInfo* method_info);
-bool Dpr_UnderGround_UgFieldManager___c__DisplayClass108_0___DebugDrawPokeRate_b__0 (Dpr_UnderGround_UgFieldManager___c__DisplayClass108_0_o* __this, XLSXContent_UgRandMark_Sheettable_o* x, const MethodInfo* method_info);
-void Dpr_UnderGround_UgFieldManager___c__DisplayClass108_0___DebugDrawPokeRate_b__1 (Dpr_UnderGround_UgFieldManager___c__DisplayClass108_0_o* __this, Dpr_UnderGround_UgPokeLottery_PokeSlot_o* x, const MethodInfo* method_info);

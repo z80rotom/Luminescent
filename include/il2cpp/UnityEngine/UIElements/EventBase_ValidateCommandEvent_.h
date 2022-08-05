@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_UIElements_EventBase_ValidateCommandEvent___Acquire (UnityEngine_UIElements_EventBase_ValidateCommandEvent__o* __this, const MethodInfo* method_info);
-void UnityEngine_UIElements_EventBase_ValidateCommandEvent___Dispose (UnityEngine_UIElements_EventBase_ValidateCommandEvent__o* __this, const MethodInfo* method_info);
-int64_t UnityEngine_UIElements_EventBase_ValidateCommandEvent___get_eventTypeId (UnityEngine_UIElements_EventBase_ValidateCommandEvent__o* __this, const MethodInfo* method_info);

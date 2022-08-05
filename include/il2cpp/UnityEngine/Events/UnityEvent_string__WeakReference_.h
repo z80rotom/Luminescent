@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_Events_UnityEvent_string__WeakReference____ctor (UnityEngine_Events_UnityEvent_string__WeakReference__o* __this, const MethodInfo* method_info);
-void UnityEngine_Events_UnityEvent_string__WeakReference___AddListener (UnityEngine_Events_UnityEvent_string__WeakReference__o* __this, UnityEngine_Events_UnityAction_T0__T1__o* call, const MethodInfo* method_info);
-System_Reflection_MethodInfo_o* UnityEngine_Events_UnityEvent_string__WeakReference___FindMethod_Impl (UnityEngine_Events_UnityEvent_string__WeakReference__o* __this, System_String_o* name, Il2CppObject* targetObj, const MethodInfo* method_info);
-UnityEngine_Events_BaseInvokableCall_o* UnityEngine_Events_UnityEvent_string__WeakReference___GetDelegate (UnityEngine_Events_UnityEvent_string__WeakReference__o* __this, Il2CppObject* target, System_Reflection_MethodInfo_o* theFunction, const MethodInfo* method_info);
-void UnityEngine_Events_UnityEvent_string__WeakReference___Invoke (UnityEngine_Events_UnityEvent_string__WeakReference__o* __this, System_String_o* arg0, System_WeakReference_o* arg1, const MethodInfo* method_info);

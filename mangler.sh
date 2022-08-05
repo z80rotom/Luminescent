@@ -29,5 +29,5 @@ do
 done
 
 #echo "$prefix$middle$suffix $rettype $1{}"
-echo "#include \"il2cpp.h\"
+echo "#include \"il2cpp.hpp\"
 $prefix$middle$suffix $rettype $1{}" | g++ -Iinclude/ -x c++ -S - -o- | grep "^_.*:$" | sed -e 's/:$//'

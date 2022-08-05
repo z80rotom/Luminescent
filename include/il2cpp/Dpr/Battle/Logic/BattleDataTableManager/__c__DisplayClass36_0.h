@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_BattleDataTableManager___c__DisplayClass36_0___ctor (Dpr_Battle_Logic_BattleDataTableManager___c__DisplayClass36_0_o* __this, const MethodInfo* method_info);
-bool Dpr_Battle_Logic_BattleDataTableManager___c__DisplayClass36_0___GetRuleEff_b__0 (Dpr_Battle_Logic_BattleDataTableManager___c__DisplayClass36_0_o* __this, XLSXContent_BattleSetupEffectLots_SheetRuleEffTable_o* record, const MethodInfo* method_info);

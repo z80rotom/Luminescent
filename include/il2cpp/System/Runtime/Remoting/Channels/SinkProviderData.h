@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_Remoting_Channels_SinkProviderData___ctor (System_Runtime_Remoting_Channels_SinkProviderData_o* __this, System_String_o* name, const MethodInfo* method_info);
-System_Collections_IList_o* System_Runtime_Remoting_Channels_SinkProviderData__get_Children (System_Runtime_Remoting_Channels_SinkProviderData_o* __this, const MethodInfo* method_info);
-System_Collections_IDictionary_o* System_Runtime_Remoting_Channels_SinkProviderData__get_Properties (System_Runtime_Remoting_Channels_SinkProviderData_o* __this, const MethodInfo* method_info);

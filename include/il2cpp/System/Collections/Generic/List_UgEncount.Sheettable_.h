@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_UgEncount_Sheettable____ctor (System_Collections_Generic_List_UgEncount_Sheettable__o* __this, const MethodInfo* method_info);
-int32_t System_Collections_Generic_List_UgEncount_Sheettable___get_Count (System_Collections_Generic_List_UgEncount_Sheettable__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_List_UgEncount_Sheettable___Add (System_Collections_Generic_List_UgEncount_Sheettable__o* __this, XLSXContent_UgEncount_Sheettable_o* item, const MethodInfo* method_info);
-XLSXContent_UgEncount_Sheettable_array* System_Collections_Generic_List_UgEncount_Sheettable___ToArray (System_Collections_Generic_List_UgEncount_Sheettable__o* __this, const MethodInfo* method_info);

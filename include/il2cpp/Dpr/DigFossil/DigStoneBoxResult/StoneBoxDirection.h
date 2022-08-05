@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection__Init (Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection_o* __this, UnityEngine_AnimationClip_o* clip, Dpr_DigFossil_DigStoneBoxResult_Context_o* context, const MethodInfo* method_info);
-void Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection__BoxOpen (Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection_o* __this, UnityEngine_Vector3_o effectPos, System_Action_o* onCompletedCallback, const MethodInfo* method_info);
-void Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection__PlayBoxOpenAnimation (Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection_o* __this, const MethodInfo* method_info);
-System_Collections_IEnumerator_o* Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection__BoxOpenDirection (Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection_o* __this, UnityEngine_Vector3_o effectPos, System_Action_o* onCompletedCallback, const MethodInfo* method_info);
-void Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection___ctor (Dpr_DigFossil_DigStoneBoxResult_StoneBoxDirection_o* __this, const MethodInfo* method_info);

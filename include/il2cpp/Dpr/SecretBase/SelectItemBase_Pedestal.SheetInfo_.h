@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_SecretBase_SelectItemBase_Pedestal_SheetInfo___SetData (Dpr_SecretBase_SelectItemBase_Pedestal_SheetInfo__o* __this, XLSXContent_Pedestal_SheetInfo_o* value, const MethodInfo* method_info);
-XLSXContent_Pedestal_SheetInfo_o* Dpr_SecretBase_SelectItemBase_Pedestal_SheetInfo___GetData (Dpr_SecretBase_SelectItemBase_Pedestal_SheetInfo__o* __this, const MethodInfo* method_info);
-void Dpr_SecretBase_SelectItemBase_Pedestal_SheetInfo____ctor (Dpr_SecretBase_SelectItemBase_Pedestal_SheetInfo__o* __this, const MethodInfo* method_info);

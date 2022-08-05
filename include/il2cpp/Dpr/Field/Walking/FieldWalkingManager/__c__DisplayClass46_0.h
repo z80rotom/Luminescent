@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Field_Walking_FieldWalkingManager___c__DisplayClass46_0___ctor (Dpr_Field_Walking_FieldWalkingManager___c__DisplayClass46_0_o* __this, const MethodInfo* method_info);
-void Dpr_Field_Walking_FieldWalkingManager___c__DisplayClass46_0___ChangePositionNPC_b__0 (Dpr_Field_Walking_FieldWalkingManager___c__DisplayClass46_0_o* __this, const MethodInfo* method_info);
-void Dpr_Field_Walking_FieldWalkingManager___c__DisplayClass46_0___ChangePositionNPC_b__1 (Dpr_Field_Walking_FieldWalkingManager___c__DisplayClass46_0_o* __this, const MethodInfo* method_info);

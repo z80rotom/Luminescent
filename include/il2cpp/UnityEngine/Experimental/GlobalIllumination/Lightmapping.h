@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_Experimental_GlobalIllumination_Lightmapping__SetDelegate (UnityEngine_Experimental_GlobalIllumination_Lightmapping_RequestLightsDelegate_o* del, const MethodInfo* method_info);
-UnityEngine_Experimental_GlobalIllumination_Lightmapping_RequestLightsDelegate_o* UnityEngine_Experimental_GlobalIllumination_Lightmapping__GetDelegate (const MethodInfo* method_info);
-void UnityEngine_Experimental_GlobalIllumination_Lightmapping__ResetDelegate (const MethodInfo* method_info);
-void UnityEngine_Experimental_GlobalIllumination_Lightmapping__RequestLights (UnityEngine_Light_array* lights, intptr_t outLightsPtr, int32_t outLightsCount, const MethodInfo* method_info);
-void UnityEngine_Experimental_GlobalIllumination_Lightmapping___cctor (const MethodInfo* method_info);

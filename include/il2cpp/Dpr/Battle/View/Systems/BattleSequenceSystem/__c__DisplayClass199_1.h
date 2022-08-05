@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass199_1___ctor (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass199_1_o* __this, const MethodInfo* method_info);
-void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass199_1___BTL_SEQ_FUNC_DEF_DprModelParticlePlay_b__0 (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass199_1_o* __this, const MethodInfo* method_info);

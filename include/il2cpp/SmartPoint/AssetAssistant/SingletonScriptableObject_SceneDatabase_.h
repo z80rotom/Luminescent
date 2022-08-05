@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-SmartPoint_AssetAssistant_SceneDatabase_o* SmartPoint_AssetAssistant_SingletonScriptableObject_SceneDatabase___get_instance (const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonScriptableObject_SceneDatabase___OnEnable (SmartPoint_AssetAssistant_SingletonScriptableObject_SceneDatabase__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonScriptableObject_SceneDatabase____ctor (SmartPoint_AssetAssistant_SingletonScriptableObject_SceneDatabase__o* __this, const MethodInfo* method_info);

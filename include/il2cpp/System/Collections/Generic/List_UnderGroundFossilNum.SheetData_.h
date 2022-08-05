@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_UnderGroundFossilNum_SheetData___Clear (System_Collections_Generic_List_UnderGroundFossilNum_SheetData__o* __this, const MethodInfo* method_info);
-XLSXContent_UnderGroundFossilNum_SheetData_o* System_Collections_Generic_List_UnderGroundFossilNum_SheetData___Find (System_Collections_Generic_List_UnderGroundFossilNum_SheetData__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);

@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_Timeline_TimelineCreateUtilities___c__DisplayClass0_0___ctor (UnityEngine_Timeline_TimelineCreateUtilities___c__DisplayClass0_0_o* __this, const MethodInfo* method_info);
-bool UnityEngine_Timeline_TimelineCreateUtilities___c__DisplayClass0_0___GenerateUniqueActorName_b__0 (UnityEngine_Timeline_TimelineCreateUtilities___c__DisplayClass0_0_o* __this, UnityEngine_ScriptableObject_o* x, const MethodInfo* method_info);

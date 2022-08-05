@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter____ctor (System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter___Add (System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter__o* __this, uint32_t key, TMPro_TMP_SpriteCharacter_o* value, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter___Clear (System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter__o* __this, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter___ContainsKey (System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter__o* __this, uint32_t key, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter___TryGetValue (System_Collections_Generic_Dictionary_uint__TMP_SpriteCharacter__o* __this, uint32_t key, TMPro_TMP_SpriteCharacter_o** value, const MethodInfo* method_info);

@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_string__MapWarp____ctor (System_Collections_Generic_Dictionary_string__MapWarp__o* __this, const MethodInfo* method_info);
-XLSXContent_MapWarp_o* System_Collections_Generic_Dictionary_string__MapWarp___get_Item (System_Collections_Generic_Dictionary_string__MapWarp__o* __this, System_String_o* key, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_string__MapWarp___set_Item (System_Collections_Generic_Dictionary_string__MapWarp__o* __this, System_String_o* key, XLSXContent_MapWarp_o* value, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_string__MapWarp___Add (System_Collections_Generic_Dictionary_string__MapWarp__o* __this, System_String_o* key, XLSXContent_MapWarp_o* value, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_string__MapWarp___ContainsKey (System_Collections_Generic_Dictionary_string__MapWarp__o* __this, System_String_o* key, const MethodInfo* method_info);

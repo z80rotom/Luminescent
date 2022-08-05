@@ -1,4 +1,8 @@
-[target=main, version=bd_13]
+[target=main, version=bd_113]
+024814e0:  // Dpr.Battle.Logic.MainModule$$HasPlayerGakusyuSouti
+    b expShare
+
+[target=main, version=bd_130]
 // 024814e0:  // Dpr.Battle.Logic.MainModule$$HasPlayerGakusyuSouti
 020397f0:
     b expShare

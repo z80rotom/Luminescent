@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-Dpr_Rendering_BtlvPfx_o* Dpr_SequenceEditor_SequenceCameraObject_PostEffect_BtlvPfx___get_EffectObject (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_BtlvPfx__o* __this, const MethodInfo* method_info);
-void Dpr_SequenceEditor_SequenceCameraObject_PostEffect_BtlvPfx____ctor (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_BtlvPfx__o* __this, Dpr_Battle_View_BattlePostProcessFilter_o* filter, const MethodInfo* method_info);

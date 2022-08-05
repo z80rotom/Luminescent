@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_CompilerServices_AsyncMethodBuilderCore___c___cctor (const MethodInfo* method_info);
-void System_Runtime_CompilerServices_AsyncMethodBuilderCore___c___ctor (System_Runtime_CompilerServices_AsyncMethodBuilderCore___c_o* __this, const MethodInfo* method_info);
-void System_Runtime_CompilerServices_AsyncMethodBuilderCore___c___ThrowAsync_b__6_0 (System_Runtime_CompilerServices_AsyncMethodBuilderCore___c_o* __this, Il2CppObject* state, const MethodInfo* method_info);
-void System_Runtime_CompilerServices_AsyncMethodBuilderCore___c___ThrowAsync_b__6_1 (System_Runtime_CompilerServices_AsyncMethodBuilderCore___c_o* __this, Il2CppObject* state, const MethodInfo* method_info);

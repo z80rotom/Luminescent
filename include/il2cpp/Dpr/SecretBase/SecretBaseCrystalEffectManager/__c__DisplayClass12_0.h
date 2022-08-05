@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_SecretBase_SecretBaseCrystalEffectManager___c__DisplayClass12_0___ctor (Dpr_SecretBase_SecretBaseCrystalEffectManager___c__DisplayClass12_0_o* __this, const MethodInfo* method_info);
-void Dpr_SecretBase_SecretBaseCrystalEffectManager___c__DisplayClass12_0___Load_b__0 (Dpr_SecretBase_SecretBaseCrystalEffectManager___c__DisplayClass12_0_o* __this, Effect_EffectData_o* data, bool isAllLoaded, const MethodInfo* method_info);

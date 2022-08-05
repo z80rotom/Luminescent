@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_WazaExec_Category_SimpleEffect___ctor (Dpr_Battle_Logic_Section_WazaExec_Category_SimpleEffect_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_WazaExec_Category_SimpleEffect__Execute (Dpr_Battle_Logic_Section_WazaExec_Category_SimpleEffect_o* __this, Dpr_Battle_Logic_Section_WazaExec_Category_SimpleEffect_Result_o* pResult, Dpr_Battle_Logic_Section_WazaExec_Category_SimpleEffect_Description_o** description, const MethodInfo* method_info);
-bool Dpr_Battle_Logic_Section_WazaExec_Category_SimpleEffect__rankEffect (Dpr_Battle_Logic_Section_WazaExec_Category_SimpleEffect_o* __this, Dpr_Battle_Logic_ActionDesc_o* actionDesc, Dpr_Battle_Logic_WazaParam_o* wazaParam, Dpr_Battle_Logic_BTL_POKEPARAM_o* attacker, Dpr_Battle_Logic_BTL_POKEPARAM_o* target, const MethodInfo* method_info);

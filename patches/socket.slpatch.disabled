@@ -1,3 +1,7 @@
 [target=main, version=bd_113]
 002c2108:  // nnMain : FUN_0030FAC0()
     bl tryInitSocket
+
+[target=main, version=bd_130]
+002c2204:  // nnMain : FUN_71002bc670
+    bl tryInitSocket

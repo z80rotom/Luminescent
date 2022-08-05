@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_SecretBase_SecretBaseMasterDataManager___c__DisplayClass11_0___ctor (Dpr_SecretBase_SecretBaseMasterDataManager___c__DisplayClass11_0_o* __this, const MethodInfo* method_info);
-bool Dpr_SecretBase_SecretBaseMasterDataManager___c__DisplayClass11_0___GetStatueEffectData_b__0 (Dpr_SecretBase_SecretBaseMasterDataManager___c__DisplayClass11_0_o* __this, Dpr_SecretBase_StatueEffectData_o* x, const MethodInfo* method_info);

@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-int32_t System_Collections_Generic_KeyValuePair_int__PointerEventData___get_Key (System_Collections_Generic_KeyValuePair_int__PointerEventData__o __this, const MethodInfo* method_info);
-UnityEngine_EventSystems_PointerEventData_o* System_Collections_Generic_KeyValuePair_int__PointerEventData___get_Value (System_Collections_Generic_KeyValuePair_int__PointerEventData__o __this, const MethodInfo* method_info);
-System_String_o* System_Collections_Generic_KeyValuePair_int__PointerEventData___ToString (System_Collections_Generic_KeyValuePair_int__PointerEventData__o __this, const MethodInfo* method_info);

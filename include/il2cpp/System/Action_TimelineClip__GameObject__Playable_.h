@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Action_TimelineClip__GameObject__Playable___Invoke (System_Action_TimelineClip__GameObject__Playable__o* __this, UnityEngine_Timeline_TimelineClip_o* arg1, UnityEngine_GameObject_o* arg2, UnityEngine_Playables_Playable_o arg3, const MethodInfo* method_info);

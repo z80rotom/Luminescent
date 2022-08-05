@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_GameManager___get_isInstantiated (const MethodInfo* method_info);
-GameManager_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_GameManager___get_Instance (const MethodInfo* method_info);
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_GameManager___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_GameManager__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_GameManager___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_GameManager__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_GameManager____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_GameManager__o* __this, const MethodInfo* method_info);

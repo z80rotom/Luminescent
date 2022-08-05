@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_FromEvent_VanishMessageWindow___ctor (Dpr_Battle_Logic_Section_FromEvent_VanishMessageWindow_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_VanishMessageWindow__Execute (Dpr_Battle_Logic_Section_FromEvent_VanishMessageWindow_o* __this, Dpr_Battle_Logic_Section_FromEvent_VanishMessageWindow_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_VanishMessageWindow_Description_o** description, const MethodInfo* method_info);

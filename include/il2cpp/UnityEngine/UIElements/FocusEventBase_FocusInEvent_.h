@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-UnityEngine_UIElements_Focusable_o* UnityEngine_UIElements_FocusEventBase_FocusInEvent___get_relatedTarget (UnityEngine_UIElements_FocusEventBase_FocusInEvent__o* __this, const MethodInfo* method_info);
-void UnityEngine_UIElements_FocusEventBase_FocusInEvent___Init (UnityEngine_UIElements_FocusEventBase_FocusInEvent__o* __this, const MethodInfo* method_info);
-UnityEngine_UIElements_FocusInEvent_o* UnityEngine_UIElements_FocusEventBase_FocusInEvent___GetPooled (UnityEngine_UIElements_IEventHandler_o* target, UnityEngine_UIElements_Focusable_o* relatedTarget, UnityEngine_UIElements_FocusChangeDirection_o* direction, UnityEngine_UIElements_FocusController_o* focusController, const MethodInfo* method_info);
-void UnityEngine_UIElements_FocusEventBase_FocusInEvent____ctor (UnityEngine_UIElements_FocusEventBase_FocusInEvent__o* __this, const MethodInfo* method_info);

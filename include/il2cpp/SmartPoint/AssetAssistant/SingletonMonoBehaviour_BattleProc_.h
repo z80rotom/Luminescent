@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_BattleProc___get_isInstantiated (const MethodInfo* method_info);
-Dpr_Battle_Logic_BattleProc_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_BattleProc___get_Instance (const MethodInfo* method_info);
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_BattleProc___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_BattleProc__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_BattleProc___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_BattleProc__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_BattleProc____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_BattleProc__o* __this, const MethodInfo* method_info);

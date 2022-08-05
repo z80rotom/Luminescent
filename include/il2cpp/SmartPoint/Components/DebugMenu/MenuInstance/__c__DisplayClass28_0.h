@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void SmartPoint_Components_DebugMenu_MenuInstance___c__DisplayClass28_0___ctor (SmartPoint_Components_DebugMenu_MenuInstance___c__DisplayClass28_0_o* __this, const MethodInfo* method_info);
-bool SmartPoint_Components_DebugMenu_MenuInstance___c__DisplayClass28_0___Update_b__1 (SmartPoint_Components_DebugMenu_MenuInstance___c__DisplayClass28_0_o* __this, SmartPoint_Components_LayoutScrollView_Cell_o* x, const MethodInfo* method_info);

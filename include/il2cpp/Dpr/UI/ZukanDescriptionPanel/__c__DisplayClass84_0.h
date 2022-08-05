@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_UI_ZukanDescriptionPanel___c__DisplayClass84_0___ctor (Dpr_UI_ZukanDescriptionPanel___c__DisplayClass84_0_o* __this, const MethodInfo* method_info);
-void Dpr_UI_ZukanDescriptionPanel___c__DisplayClass84_0___HideModelViewOnly_b__0 (Dpr_UI_ZukanDescriptionPanel___c__DisplayClass84_0_o* __this, const MethodInfo* method_info);
-void Dpr_UI_ZukanDescriptionPanel___c__DisplayClass84_0___HideModelViewOnly_b__1 (Dpr_UI_ZukanDescriptionPanel___c__DisplayClass84_0_o* __this, const MethodInfo* method_info);
-void Dpr_UI_ZukanDescriptionPanel___c__DisplayClass84_0___HideModelViewOnly_b__2 (Dpr_UI_ZukanDescriptionPanel___c__DisplayClass84_0_o* __this, const MethodInfo* method_info);

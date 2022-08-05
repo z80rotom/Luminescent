@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_UI_UIBattleMatchingTeamSelect___c__DisplayClass59_1___ctor (Dpr_UI_UIBattleMatchingTeamSelect___c__DisplayClass59_1_o* __this, const MethodInfo* method_info);
-void Dpr_UI_UIBattleMatchingTeamSelect___c__DisplayClass59_1___CheckIllegal_b__0 (Dpr_UI_UIBattleMatchingTeamSelect___c__DisplayClass59_1_o* __this, Dpr_NetworkUtils_ValidateCheckPluralResult_o res, const MethodInfo* method_info);

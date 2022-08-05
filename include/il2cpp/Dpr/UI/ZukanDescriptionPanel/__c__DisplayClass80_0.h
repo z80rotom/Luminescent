@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_UI_ZukanDescriptionPanel___c__DisplayClass80_0___ctor (Dpr_UI_ZukanDescriptionPanel___c__DisplayClass80_0_o* __this, const MethodInfo* method_info);
-void Dpr_UI_ZukanDescriptionPanel___c__DisplayClass80_0___SetModelView_b__0 (Dpr_UI_ZukanDescriptionPanel___c__DisplayClass80_0_o* __this, Pml_PokePara_PokemonParam_o* pp, const MethodInfo* method_info);
-System_Collections_IEnumerator_o* Dpr_UI_ZukanDescriptionPanel___c__DisplayClass80_0___SetModelView_g__OnUpdate_1 (Dpr_UI_ZukanDescriptionPanel___c__DisplayClass80_0_o* __this, const MethodInfo* method_info);

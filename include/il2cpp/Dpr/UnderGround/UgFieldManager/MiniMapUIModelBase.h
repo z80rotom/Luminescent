@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_UnderGround_UgFieldManager_MiniMapUIModelBase__ToOverAllSizeUI (Dpr_UnderGround_UgFieldManager_MiniMapUIModelBase_o* __this, const MethodInfo* method_info);
-void Dpr_UnderGround_UgFieldManager_MiniMapUIModelBase__ToAroundSizeUI (Dpr_UnderGround_UgFieldManager_MiniMapUIModelBase_o* __this, const MethodInfo* method_info);
-void Dpr_UnderGround_UgFieldManager_MiniMapUIModelBase___ctor (Dpr_UnderGround_UgFieldManager_MiniMapUIModelBase_o* __this, const MethodInfo* method_info);

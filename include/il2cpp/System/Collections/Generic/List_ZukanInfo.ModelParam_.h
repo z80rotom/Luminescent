@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_ZukanInfo_ModelParam____ctor (System_Collections_Generic_List_ZukanInfo_ModelParam__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_List_ZukanInfo_ModelParam___Add (System_Collections_Generic_List_ZukanInfo_ModelParam__o* __this, Dpr_UI_ZukanInfo_ModelParam_o* item, const MethodInfo* method_info);
-Dpr_UI_ZukanInfo_ModelParam_o* System_Collections_Generic_List_ZukanInfo_ModelParam___Find (System_Collections_Generic_List_ZukanInfo_ModelParam__o* __this, System_Predicate_T__o* match, const MethodInfo* method_info);
-Dpr_UI_ZukanInfo_ModelParam_array* System_Collections_Generic_List_ZukanInfo_ModelParam___ToArray (System_Collections_Generic_List_ZukanInfo_ModelParam__o* __this, const MethodInfo* method_info);

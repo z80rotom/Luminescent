@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_CompilerServices_TaskAwaiter_VoidTaskResult____ctor (System_Runtime_CompilerServices_TaskAwaiter_VoidTaskResult__o __this, System_Threading_Tasks_Task_TResult__o* task, const MethodInfo* method_info);
-void System_Runtime_CompilerServices_TaskAwaiter_VoidTaskResult___UnsafeOnCompleted (System_Runtime_CompilerServices_TaskAwaiter_VoidTaskResult__o __this, System_Action_o* continuation, const MethodInfo* method_info);
-System_Threading_Tasks_VoidTaskResult_o System_Runtime_CompilerServices_TaskAwaiter_VoidTaskResult___GetResult (System_Runtime_CompilerServices_TaskAwaiter_VoidTaskResult__o __this, const MethodInfo* method_info);

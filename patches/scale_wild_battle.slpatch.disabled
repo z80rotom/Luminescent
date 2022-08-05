@@ -1,4 +1,4 @@
-[target=main, version=bd_13]
+[target=main, version=bd_130]
 // 01e1a2e0:
 //    b GameManager_GetFieldEncountData
 01e4463c:

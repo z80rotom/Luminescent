@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-int64_t UnityEngine_UIElements_EventBase_PointerCaptureEvent___TypeId (const MethodInfo* method_info);
-void UnityEngine_UIElements_EventBase_PointerCaptureEvent___Acquire (UnityEngine_UIElements_EventBase_PointerCaptureEvent__o* __this, const MethodInfo* method_info);
-void UnityEngine_UIElements_EventBase_PointerCaptureEvent___Dispose (UnityEngine_UIElements_EventBase_PointerCaptureEvent__o* __this, const MethodInfo* method_info);
-int64_t UnityEngine_UIElements_EventBase_PointerCaptureEvent___get_eventTypeId (UnityEngine_UIElements_EventBase_PointerCaptureEvent__o* __this, const MethodInfo* method_info);

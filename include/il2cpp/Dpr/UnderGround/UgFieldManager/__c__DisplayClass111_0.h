@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_UnderGround_UgFieldManager___c__DisplayClass111_0___ctor (Dpr_UnderGround_UgFieldManager___c__DisplayClass111_0_o* __this, const MethodInfo* method_info);
-bool Dpr_UnderGround_UgFieldManager___c__DisplayClass111_0___CheckWall_b__0 (Dpr_UnderGround_UgFieldManager___c__DisplayClass111_0_o* __this, Dpr_UnderGround_UgFieldDataManager_FossilPosData_o x, const MethodInfo* method_info);
-bool Dpr_UnderGround_UgFieldManager___c__DisplayClass111_0___CheckWall_b__1 (Dpr_UnderGround_UgFieldManager___c__DisplayClass111_0_o* __this, Dpr_UnderGround_UgFieldManager_DigPointModel_o* x, const MethodInfo* method_info);
-bool Dpr_UnderGround_UgFieldManager___c__DisplayClass111_0___CheckWall_b__2 (Dpr_UnderGround_UgFieldManager___c__DisplayClass111_0_o* __this, Dpr_UnderGround_UgFieldManager_SecretBaseModel_o* x, const MethodInfo* method_info);

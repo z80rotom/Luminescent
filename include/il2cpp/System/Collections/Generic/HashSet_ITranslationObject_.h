@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_HashSet_ITranslationObject____ctor (System_Collections_Generic_HashSet_ITranslationObject__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_HashSet_ITranslationObject___Clear (System_Collections_Generic_HashSet_ITranslationObject__o* __this, const MethodInfo* method_info);
-bool System_Collections_Generic_HashSet_ITranslationObject___Remove (System_Collections_Generic_HashSet_ITranslationObject__o* __this, Dpr_Battle_View_ITranslationObject_o* item, const MethodInfo* method_info);
-System_Collections_Generic_HashSet_Enumerator_T__o System_Collections_Generic_HashSet_ITranslationObject___GetEnumerator (System_Collections_Generic_HashSet_ITranslationObject__o* __this, const MethodInfo* method_info);
-bool System_Collections_Generic_HashSet_ITranslationObject___Add (System_Collections_Generic_HashSet_ITranslationObject__o* __this, Dpr_Battle_View_ITranslationObject_o* item, const MethodInfo* method_info);

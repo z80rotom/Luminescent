@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void SmartPoint_AssetAssistant_UnityExtensions_Pair_Renderer__Renderer____ctor (SmartPoint_AssetAssistant_UnityExtensions_Pair_Renderer__Renderer__o* __this, UnityEngine_Renderer_o* first, UnityEngine_Renderer_o* second, const MethodInfo* method_info);
-UnityEngine_Renderer_o* SmartPoint_AssetAssistant_UnityExtensions_Pair_Renderer__Renderer___get_First (SmartPoint_AssetAssistant_UnityExtensions_Pair_Renderer__Renderer__o* __this, const MethodInfo* method_info);
-UnityEngine_Renderer_o* SmartPoint_AssetAssistant_UnityExtensions_Pair_Renderer__Renderer___get_Second (SmartPoint_AssetAssistant_UnityExtensions_Pair_Renderer__Renderer__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_UnityExtensions_Pair_Renderer__Renderer___set_Second (SmartPoint_AssetAssistant_UnityExtensions_Pair_Renderer__Renderer__o* __this, UnityEngine_Renderer_o* value, const MethodInfo* method_info);

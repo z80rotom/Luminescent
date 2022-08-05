@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_string__Stopwatch____ctor (System_Collections_Generic_Dictionary_string__Stopwatch__o* __this, const MethodInfo* method_info);
-System_Diagnostics_Stopwatch_o* System_Collections_Generic_Dictionary_string__Stopwatch___get_Item (System_Collections_Generic_Dictionary_string__Stopwatch__o* __this, System_String_o* key, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_string__Stopwatch___Add (System_Collections_Generic_Dictionary_string__Stopwatch__o* __this, System_String_o* key, System_Diagnostics_Stopwatch_o* value, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_string__Stopwatch___ContainsKey (System_Collections_Generic_Dictionary_string__Stopwatch__o* __this, System_String_o* key, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_string__Stopwatch___TryGetValue (System_Collections_Generic_Dictionary_string__Stopwatch__o* __this, System_String_o* key, System_Diagnostics_Stopwatch_o** value, const MethodInfo* method_info);

@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_Collections_Generic_Dictionary_KeyCollection_Enumerator_TKey__TValue__o System_Collections_Generic_Dictionary_KeyCollection_GameObject__MessageBoxResult___GetEnumerator (System_Collections_Generic_Dictionary_KeyCollection_GameObject__MessageBoxResult__o* __this, const MethodInfo* method_info);

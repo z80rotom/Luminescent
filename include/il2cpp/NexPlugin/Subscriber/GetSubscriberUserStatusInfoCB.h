@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void NexPlugin_Subscriber_GetSubscriberUserStatusInfoCB___ctor (NexPlugin_Subscriber_GetSubscriberUserStatusInfoCB_o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method_info);
-void NexPlugin_Subscriber_GetSubscriberUserStatusInfoCB__Invoke (NexPlugin_Subscriber_GetSubscriberUserStatusInfoCB_o* __this, NexPlugin_AsyncResult_o* asyncResult, System_Collections_Generic_List_SubscriberUserStatusInfo__o* infos, const MethodInfo* method_info);
-System_IAsyncResult_o* NexPlugin_Subscriber_GetSubscriberUserStatusInfoCB__BeginInvoke (NexPlugin_Subscriber_GetSubscriberUserStatusInfoCB_o* __this, NexPlugin_AsyncResult_o* asyncResult, System_Collections_Generic_List_SubscriberUserStatusInfo__o* infos, System_AsyncCallback_o* callback, Il2CppObject* object, const MethodInfo* method_info);
-void NexPlugin_Subscriber_GetSubscriberUserStatusInfoCB__EndInvoke (NexPlugin_Subscriber_GetSubscriberUserStatusInfoCB_o* __this, System_IAsyncResult_o* result, const MethodInfo* method_info);

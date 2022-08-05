@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-int32_t System_Collections_Generic_List_TMP_SpriteAsset___get_Count (System_Collections_Generic_List_TMP_SpriteAsset__o* __this, const MethodInfo* method_info);
-TMPro_TMP_SpriteAsset_o* System_Collections_Generic_List_TMP_SpriteAsset___get_Item (System_Collections_Generic_List_TMP_SpriteAsset__o* __this, int32_t index, const MethodInfo* method_info);

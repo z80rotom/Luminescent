@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_EventSystems_BaseEventData___ctor (UnityEngine_EventSystems_BaseEventData_o* __this, UnityEngine_EventSystems_EventSystem_o* eventSystem, const MethodInfo* method_info);
-UnityEngine_EventSystems_BaseInputModule_o* UnityEngine_EventSystems_BaseEventData__get_currentInputModule (UnityEngine_EventSystems_BaseEventData_o* __this, const MethodInfo* method_info);
-UnityEngine_GameObject_o* UnityEngine_EventSystems_BaseEventData__get_selectedObject (UnityEngine_EventSystems_BaseEventData_o* __this, const MethodInfo* method_info);
-void UnityEngine_EventSystems_BaseEventData__set_selectedObject (UnityEngine_EventSystems_BaseEventData_o* __this, UnityEngine_GameObject_o* value, const MethodInfo* method_info);

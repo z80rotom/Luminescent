@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Threading_SparselyPopulatedArray_object____ctor (System_Threading_SparselyPopulatedArray_object__o* __this, int32_t initialSize, const MethodInfo* method_info);
-System_Threading_SparselyPopulatedArrayFragment_T__o* System_Threading_SparselyPopulatedArray_object___get_Tail (System_Threading_SparselyPopulatedArray_object__o* __this, const MethodInfo* method_info);
-System_Threading_SparselyPopulatedArrayAddInfo_T__o System_Threading_SparselyPopulatedArray_object___Add (System_Threading_SparselyPopulatedArray_object__o* __this, Il2CppObject* element, const MethodInfo* method_info);

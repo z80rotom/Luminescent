@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation___c___cctor (const MethodInfo* method_info);
-void System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation___c___ctor (System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation___c_o* __this, const MethodInfo* method_info);
-void System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation___c____cctor_b__7_0 (System_Threading_Tasks_SynchronizationContextAwaitTaskContinuation___c_o* __this, Il2CppObject* state, const MethodInfo* method_info);

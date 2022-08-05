@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_UIElements_EventBase_MouseOutEvent___Acquire (UnityEngine_UIElements_EventBase_MouseOutEvent__o* __this, const MethodInfo* method_info);
-void UnityEngine_UIElements_EventBase_MouseOutEvent___Dispose (UnityEngine_UIElements_EventBase_MouseOutEvent__o* __this, const MethodInfo* method_info);
-int64_t UnityEngine_UIElements_EventBase_MouseOutEvent___get_eventTypeId (UnityEngine_UIElements_EventBase_MouseOutEvent__o* __this, const MethodInfo* method_info);

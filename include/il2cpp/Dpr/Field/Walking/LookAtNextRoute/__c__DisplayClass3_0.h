@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Field_Walking_LookAtNextRoute___c__DisplayClass3_0___ctor (Dpr_Field_Walking_LookAtNextRoute___c__DisplayClass3_0_o* __this, const MethodInfo* method_info);
-bool Dpr_Field_Walking_LookAtNextRoute___c__DisplayClass3_0___DoAction_b__0 (Dpr_Field_Walking_LookAtNextRoute___c__DisplayClass3_0_o* __this, const MethodInfo* method_info);
-void Dpr_Field_Walking_LookAtNextRoute___c__DisplayClass3_0___DoAction_b__1 (Dpr_Field_Walking_LookAtNextRoute___c__DisplayClass3_0_o* __this, const MethodInfo* method_info);

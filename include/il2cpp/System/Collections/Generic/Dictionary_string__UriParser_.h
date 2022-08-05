@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_string__UriParser____ctor (System_Collections_Generic_Dictionary_string__UriParser__o* __this, int32_t capacity, const MethodInfo* method_info);
-int32_t System_Collections_Generic_Dictionary_string__UriParser___get_Count (System_Collections_Generic_Dictionary_string__UriParser__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_string__UriParser___set_Item (System_Collections_Generic_Dictionary_string__UriParser__o* __this, System_String_o* key, System_UriParser_o* value, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_string__UriParser___TryGetValue (System_Collections_Generic_Dictionary_string__UriParser__o* __this, System_String_o* key, System_UriParser_o** value, const MethodInfo* method_info);

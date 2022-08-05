@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_string__ResourceLocator____ctor (System_Collections_Generic_Dictionary_string__ResourceLocator__o* __this, System_Collections_Generic_IEqualityComparer_TKey__o* comparer, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_string__ResourceLocator___set_Item (System_Collections_Generic_Dictionary_string__ResourceLocator__o* __this, System_String_o* key, System_Resources_ResourceLocator_o value, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_string__ResourceLocator___Add (System_Collections_Generic_Dictionary_string__ResourceLocator__o* __this, System_String_o* key, System_Resources_ResourceLocator_o value, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_string__ResourceLocator___TryGetValue (System_Collections_Generic_Dictionary_string__ResourceLocator__o* __this, System_String_o* key, System_Resources_ResourceLocator_o* value, const MethodInfo* method_info);

@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-UnityEngine_Playables_PlayableHandle_o UnityEngine_Experimental_Video_VideoClipPlayable__GetHandle (UnityEngine_Experimental_Video_VideoClipPlayable_o __this, const MethodInfo* method_info);
-bool UnityEngine_Experimental_Video_VideoClipPlayable__Equals (UnityEngine_Experimental_Video_VideoClipPlayable_o __this, UnityEngine_Experimental_Video_VideoClipPlayable_o other, const MethodInfo* method_info);

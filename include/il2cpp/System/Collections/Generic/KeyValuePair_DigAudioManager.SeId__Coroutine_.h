@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-UnityEngine_Coroutine_o* System_Collections_Generic_KeyValuePair_DigAudioManager_SeId__Coroutine___get_Value (System_Collections_Generic_KeyValuePair_DigAudioManager_SeId__Coroutine__o __this, const MethodInfo* method_info);

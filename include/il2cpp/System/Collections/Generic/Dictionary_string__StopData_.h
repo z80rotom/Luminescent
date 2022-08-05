@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_string__StopData____ctor (System_Collections_Generic_Dictionary_string__StopData__o* __this, const MethodInfo* method_info);
-XLSXContent_StopData_o* System_Collections_Generic_Dictionary_string__StopData___get_Item (System_Collections_Generic_Dictionary_string__StopData__o* __this, System_String_o* key, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_string__StopData___set_Item (System_Collections_Generic_Dictionary_string__StopData__o* __this, System_String_o* key, XLSXContent_StopData_o* value, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_string__StopData___Add (System_Collections_Generic_Dictionary_string__StopData__o* __this, System_String_o* key, XLSXContent_StopData_o* value, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_string__StopData___ContainsKey (System_Collections_Generic_Dictionary_string__StopData__o* __this, System_String_o* key, const MethodInfo* method_info);

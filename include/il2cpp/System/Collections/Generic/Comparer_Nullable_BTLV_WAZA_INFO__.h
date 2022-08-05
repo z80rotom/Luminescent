@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Nullable_BTLV_WAZA_INFO____get_Default (const MethodInfo* method_info);
-System_Collections_Generic_Comparer_T__o* System_Collections_Generic_Comparer_Nullable_BTLV_WAZA_INFO____CreateComparer (const MethodInfo* method_info);
-int32_t System_Collections_Generic_Comparer_Nullable_BTLV_WAZA_INFO____System_Collections_IComparer_Compare (System_Collections_Generic_Comparer_Nullable_BTLV_WAZA_INFO___o* __this, Il2CppObject* x, Il2CppObject* y, const MethodInfo* method_info);
-void System_Collections_Generic_Comparer_Nullable_BTLV_WAZA_INFO_____ctor (System_Collections_Generic_Comparer_Nullable_BTLV_WAZA_INFO___o* __this, const MethodInfo* method_info);

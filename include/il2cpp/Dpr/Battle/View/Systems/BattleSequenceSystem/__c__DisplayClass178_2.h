@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass178_2___ctor (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass178_2_o* __this, const MethodInfo* method_info);
-void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass178_2___BTL_SEQ_FUNC_DEF_DprCameraLookAtPath_b__0 (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass178_2_o* __this, float x, const MethodInfo* method_info);

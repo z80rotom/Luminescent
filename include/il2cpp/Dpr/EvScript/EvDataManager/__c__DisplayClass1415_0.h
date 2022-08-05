@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_EvScript_EvDataManager___c__DisplayClass1415_0___ctor (Dpr_EvScript_EvDataManager___c__DisplayClass1415_0_o* __this, const MethodInfo* method_info);
-void Dpr_EvScript_EvDataManager___c__DisplayClass1415_0___EvCmdNaturalParkPokeSelectMenu_b__0 (Dpr_EvScript_EvDataManager___c__DisplayClass1415_0_o* __this, int32_t temoti, const MethodInfo* method_info);
-void Dpr_EvScript_EvDataManager___c__DisplayClass1415_0___EvCmdNaturalParkPokeSelectMenu_b__1 (Dpr_EvScript_EvDataManager___c__DisplayClass1415_0_o* __this, Dpr_UI_UIWindow_o* win, const MethodInfo* method_info);

@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_FromEvent_CalcAgilityOrder___ctor (Dpr_Battle_Logic_Section_FromEvent_CalcAgilityOrder_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_CalcAgilityOrder__Execute (Dpr_Battle_Logic_Section_FromEvent_CalcAgilityOrder_o* __this, Dpr_Battle_Logic_Section_FromEvent_CalcAgilityOrder_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_CalcAgilityOrder_Description_o** description, const MethodInfo* method_info);
-uint16_t Dpr_Battle_Logic_Section_FromEvent_CalcAgilityOrder__calcAgility (Dpr_Battle_Logic_Section_FromEvent_CalcAgilityOrder_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, bool isTrickRoomApply, const MethodInfo* method_info);

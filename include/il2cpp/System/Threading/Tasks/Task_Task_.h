@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Threading_Tasks_Task_Task____ctor (System_Threading_Tasks_Task_Task__o* __this, const MethodInfo* method_info);
-bool System_Threading_Tasks_Task_Task___TrySetResult (System_Threading_Tasks_Task_Task__o* __this, System_Threading_Tasks_Task_o* result, const MethodInfo* method_info);
-System_Threading_Tasks_Task_o* System_Threading_Tasks_Task_Task___get_Result (System_Threading_Tasks_Task_Task__o* __this, const MethodInfo* method_info);
-void System_Threading_Tasks_Task_Task___InnerInvoke (System_Threading_Tasks_Task_Task__o* __this, const MethodInfo* method_info);
-System_Runtime_CompilerServices_ConfiguredTaskAwaitable_TResult__o System_Threading_Tasks_Task_Task___ConfigureAwait (System_Threading_Tasks_Task_Task__o* __this, bool continueOnCapturedContext, const MethodInfo* method_info);

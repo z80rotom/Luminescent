@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_TownMapTable_SheetData____ctor (System_Collections_Generic_List_TownMapTable_SheetData__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_List_TownMapTable_SheetData___Add (System_Collections_Generic_List_TownMapTable_SheetData__o* __this, XLSXContent_TownMapTable_SheetData_o* item, const MethodInfo* method_info);

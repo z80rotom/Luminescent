@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass191_0___ctor (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass191_0_o* __this, const MethodInfo* method_info);
-void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass191_0___BTL_SEQ_FUNC_DEF_DprParticleCreateSeal_b__1 (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass191_0_o* __this, const MethodInfo* method_info);

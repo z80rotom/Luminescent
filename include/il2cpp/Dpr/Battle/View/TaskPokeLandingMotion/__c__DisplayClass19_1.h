@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_TaskPokeLandingMotion___c__DisplayClass19_1___ctor (Dpr_Battle_View_TaskPokeLandingMotion___c__DisplayClass19_1_o* __this, const MethodInfo* method_info);
-bool Dpr_Battle_View_TaskPokeLandingMotion___c__DisplayClass19_1___Update_b__5 (Dpr_Battle_View_TaskPokeLandingMotion___c__DisplayClass19_1_o* __this, System_Tuple_string__EffectData__o* x, const MethodInfo* method_info);
-void Dpr_Battle_View_TaskPokeLandingMotion___c__DisplayClass19_1___Update_b__6 (Dpr_Battle_View_TaskPokeLandingMotion___c__DisplayClass19_1_o* __this, Effect_EffectInstance_o* x, const MethodInfo* method_info);

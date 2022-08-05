@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool UnityEngine_Experimental_TerrainAPI_TerrainUtility__HasValidTerrains (const MethodInfo* method_info);
-void UnityEngine_Experimental_TerrainAPI_TerrainUtility__ClearConnectivity (const MethodInfo* method_info);
-UnityEngine_Experimental_TerrainAPI_TerrainUtility_TerrainGroups_o* UnityEngine_Experimental_TerrainAPI_TerrainUtility__CollectTerrains (bool onlyAutoConnectedTerrains, const MethodInfo* method_info);
-void UnityEngine_Experimental_TerrainAPI_TerrainUtility__AutoConnect (const MethodInfo* method_info);

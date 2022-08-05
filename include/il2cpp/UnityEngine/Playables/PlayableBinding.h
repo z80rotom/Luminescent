@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-UnityEngine_Object_o* UnityEngine_Playables_PlayableBinding__get_sourceObject (UnityEngine_Playables_PlayableBinding_o __this, const MethodInfo* method_info);
-UnityEngine_Playables_PlayableOutput_o UnityEngine_Playables_PlayableBinding__CreateOutput (UnityEngine_Playables_PlayableBinding_o __this, UnityEngine_Playables_PlayableGraph_o graph, const MethodInfo* method_info);
-UnityEngine_Playables_PlayableBinding_o UnityEngine_Playables_PlayableBinding__CreateInternal (System_String_o* name, UnityEngine_Object_o* sourceObject, System_Type_o* sourceType, UnityEngine_Playables_PlayableBinding_CreateOutputMethod_o* createFunction, const MethodInfo* method_info);
-void UnityEngine_Playables_PlayableBinding___cctor (const MethodInfo* method_info);

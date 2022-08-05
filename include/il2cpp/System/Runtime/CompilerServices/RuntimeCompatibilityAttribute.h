@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_CompilerServices_RuntimeCompatibilityAttribute___ctor (System_Runtime_CompilerServices_RuntimeCompatibilityAttribute_o* __this, const MethodInfo* method_info);
-void System_Runtime_CompilerServices_RuntimeCompatibilityAttribute__set_WrapNonExceptionThrows (System_Runtime_CompilerServices_RuntimeCompatibilityAttribute_o* __this, bool value, const MethodInfo* method_info);

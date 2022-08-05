@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_UIElements_CommandEventBase_object___set_commandName (UnityEngine_UIElements_CommandEventBase_object__o* __this, System_String_o* value, const MethodInfo* method_info);
-void UnityEngine_UIElements_CommandEventBase_object___Init (UnityEngine_UIElements_CommandEventBase_object__o* __this, const MethodInfo* method_info);
-void UnityEngine_UIElements_CommandEventBase_object___LocalInit (UnityEngine_UIElements_CommandEventBase_object__o* __this, const MethodInfo* method_info);
-Il2CppObject* UnityEngine_UIElements_CommandEventBase_object___GetPooled (UnityEngine_Event_o* systemEvent, const MethodInfo* method_info);
-void UnityEngine_UIElements_CommandEventBase_object____ctor (UnityEngine_UIElements_CommandEventBase_object__o* __this, const MethodInfo* method_info);

@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_2___ctor (Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_2_o* __this, const MethodInfo* method_info);
-bool Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_2___DoAction_b__3 (Dpr_Field_Walking_SanpoPairActionCommon___c__DisplayClass6_2_o* __this, const MethodInfo* method_info);

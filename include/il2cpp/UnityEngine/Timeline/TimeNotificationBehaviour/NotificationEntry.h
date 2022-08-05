@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool UnityEngine_Timeline_TimeNotificationBehaviour_NotificationEntry__get_triggerInEditor (UnityEngine_Timeline_TimeNotificationBehaviour_NotificationEntry_o __this, const MethodInfo* method_info);
-bool UnityEngine_Timeline_TimeNotificationBehaviour_NotificationEntry__get_prewarm (UnityEngine_Timeline_TimeNotificationBehaviour_NotificationEntry_o __this, const MethodInfo* method_info);
-bool UnityEngine_Timeline_TimeNotificationBehaviour_NotificationEntry__get_triggerOnce (UnityEngine_Timeline_TimeNotificationBehaviour_NotificationEntry_o __this, const MethodInfo* method_info);

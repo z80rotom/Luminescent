@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgFatherManager___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgFatherManager__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgFatherManager___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgFatherManager__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgFatherManager____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_UgFatherManager__o* __this, const MethodInfo* method_info);

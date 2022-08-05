@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_UnderGround_UgFieldManager___c__DisplayClass182_0___ctor (Dpr_UnderGround_UgFieldManager___c__DisplayClass182_0_o* __this, const MethodInfo* method_info);
-bool Dpr_UnderGround_UgFieldManager___c__DisplayClass182_0___CreateNPC_b__0 (Dpr_UnderGround_UgFieldManager___c__DisplayClass182_0_o* __this, XLSXContent_UgNpcList_SheetSheet1_o* x, const MethodInfo* method_info);
-void Dpr_UnderGround_UgFieldManager___c__DisplayClass182_0___CreateNPC_b__1 (Dpr_UnderGround_UgFieldManager___c__DisplayClass182_0_o* __this, FieldObjectEntity_o* entity, const MethodInfo* method_info);

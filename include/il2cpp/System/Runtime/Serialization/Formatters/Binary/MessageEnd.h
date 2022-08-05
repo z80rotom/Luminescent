@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_Serialization_Formatters_Binary_MessageEnd___ctor (System_Runtime_Serialization_Formatters_Binary_MessageEnd_o* __this, const MethodInfo* method_info);
-void System_Runtime_Serialization_Formatters_Binary_MessageEnd__Write (System_Runtime_Serialization_Formatters_Binary_MessageEnd_o* __this, System_Runtime_Serialization_Formatters_Binary___BinaryWriter_o* sout, const MethodInfo* method_info);
-void System_Runtime_Serialization_Formatters_Binary_MessageEnd__Read (System_Runtime_Serialization_Formatters_Binary_MessageEnd_o* __this, System_Runtime_Serialization_Formatters_Binary___BinaryParser_o* input, const MethodInfo* method_info);
-void System_Runtime_Serialization_Formatters_Binary_MessageEnd__Dump (System_Runtime_Serialization_Formatters_Binary_MessageEnd_o* __this, const MethodInfo* method_info);
-void System_Runtime_Serialization_Formatters_Binary_MessageEnd__Dump (System_Runtime_Serialization_Formatters_Binary_MessageEnd_o* __this, System_IO_Stream_o* sout, const MethodInfo* method_info);

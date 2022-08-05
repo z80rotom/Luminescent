@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Reflection_CustomAttributeNamedArgument___ctor (System_Reflection_CustomAttributeNamedArgument_o __this, System_Reflection_MemberInfo_o* memberInfo, Il2CppObject* value, const MethodInfo* method_info);
-System_String_o* System_Reflection_CustomAttributeNamedArgument__ToString (System_Reflection_CustomAttributeNamedArgument_o __this, const MethodInfo* method_info);
-bool System_Reflection_CustomAttributeNamedArgument__Equals (System_Reflection_CustomAttributeNamedArgument_o __this, Il2CppObject* obj, const MethodInfo* method_info);
-int32_t System_Reflection_CustomAttributeNamedArgument__GetHashCode (System_Reflection_CustomAttributeNamedArgument_o __this, const MethodInfo* method_info);

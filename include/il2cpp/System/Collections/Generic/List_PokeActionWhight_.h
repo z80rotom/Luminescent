@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_PokeActionWhight____ctor (System_Collections_Generic_List_PokeActionWhight__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_List_PokeActionWhight___Add (System_Collections_Generic_List_PokeActionWhight__o* __this, Dpr_FureaiHiroba_PokeActionWhight_o* item, const MethodInfo* method_info);
-void System_Collections_Generic_List_PokeActionWhight___Clear (System_Collections_Generic_List_PokeActionWhight__o* __this, const MethodInfo* method_info);

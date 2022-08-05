@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-UnityEngine_UIElements_IVisualTreeUpdater_o* UnityEngine_UIElements_VisualTreeUpdater_UpdaterArray__get_Item (UnityEngine_UIElements_VisualTreeUpdater_UpdaterArray_o* __this, int32_t phase, const MethodInfo* method_info);
-UnityEngine_UIElements_IVisualTreeUpdater_o* UnityEngine_UIElements_VisualTreeUpdater_UpdaterArray__get_Item (UnityEngine_UIElements_VisualTreeUpdater_UpdaterArray_o* __this, int32_t index, const MethodInfo* method_info);

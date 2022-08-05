@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_TurnCheck_Event___ctor (Dpr_Battle_Logic_Section_TurnCheck_Event_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_TurnCheck_Event__Execute (Dpr_Battle_Logic_Section_TurnCheck_Event_o* __this, Dpr_Battle_Logic_Section_TurnCheck_Event_Result_o* pResult, Dpr_Battle_Logic_Section_TurnCheck_Event_Description_o** description, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_TurnCheck_Event__storeFrontPokeByAgilityOrder (Dpr_Battle_Logic_Section_TurnCheck_Event_o* __this, Dpr_Battle_Logic_PokeSet_o* pokeSet, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_TurnCheck_Event__checkPokeDead (Dpr_Battle_Logic_Section_TurnCheck_Event_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method_info);
-bool Dpr_Battle_Logic_Section_TurnCheck_Event__checkExpGet (Dpr_Battle_Logic_Section_TurnCheck_Event_o* __this, const MethodInfo* method_info);

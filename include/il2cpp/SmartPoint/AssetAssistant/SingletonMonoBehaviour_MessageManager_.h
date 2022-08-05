@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_MessageManager___get_isInstantiated (const MethodInfo* method_info);
-Dpr_Message_MessageManager_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_MessageManager___get_Instance (const MethodInfo* method_info);
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_MessageManager___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_MessageManager__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_MessageManager___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_MessageManager__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_MessageManager____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_MessageManager__o* __this, const MethodInfo* method_info);

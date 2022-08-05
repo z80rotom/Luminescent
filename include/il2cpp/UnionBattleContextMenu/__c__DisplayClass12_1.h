@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnionBattleContextMenu___c__DisplayClass12_1___ctor (UnionBattleContextMenu___c__DisplayClass12_1_o* __this, const MethodInfo* method_info);
-void UnionBattleContextMenu___c__DisplayClass12_1___ShowBattleJoinYesNoWindow_b__1 (UnionBattleContextMenu___c__DisplayClass12_1_o* __this, int32_t battleMode, const MethodInfo* method_info);
-void UnionBattleContextMenu___c__DisplayClass12_1___ShowBattleJoinYesNoWindow_b__2 (UnionBattleContextMenu___c__DisplayClass12_1_o* __this, const MethodInfo* method_info);

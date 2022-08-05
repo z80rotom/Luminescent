@@ -1,4 +1,4 @@
-[target=main, version=bd_13]
+[target=main, version=bd_130]
 // Force Sync saves
 // 02379054:
 //    mov w0,#0x0

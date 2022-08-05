@@ -1,4 +1,4 @@
-[target=main, version=bd_13]
+[target=main, version=bd_130]
 
 // Dpr.EvScript.EvDataManager$$InitScriptLoadWait
 01b624e0:

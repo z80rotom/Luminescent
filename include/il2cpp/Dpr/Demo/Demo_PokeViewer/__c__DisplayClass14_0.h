@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0___ctor (Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0_o* __this, const MethodInfo* method_info);
-void Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0___Enter_b__0 (Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0_o* __this, UnityEngine_Object_o* asset, const MethodInfo* method_info);
-void Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0___Enter_b__1 (Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0_o* __this, UnityEngine_Object_o* asset, const MethodInfo* method_info);
-void Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0___Enter_b__2 (Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0_o* __this, UnityEngine_Object_o* asset, const MethodInfo* method_info);
-void Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0___Enter_b__3 (Dpr_Demo_Demo_PokeViewer___c__DisplayClass14_0_o* __this, const MethodInfo* method_info);

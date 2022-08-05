@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_DigMasterDataManager_StoneBoxData____ctor (System_Collections_Generic_List_DigMasterDataManager_StoneBoxData__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_List_DigMasterDataManager_StoneBoxData___Add (System_Collections_Generic_List_DigMasterDataManager_StoneBoxData__o* __this, Dpr_DigFossil_DigMasterDataManager_StoneBoxData_o* item, const MethodInfo* method_info);
-void System_Collections_Generic_List_DigMasterDataManager_StoneBoxData___Clear (System_Collections_Generic_List_DigMasterDataManager_StoneBoxData__o* __this, const MethodInfo* method_info);

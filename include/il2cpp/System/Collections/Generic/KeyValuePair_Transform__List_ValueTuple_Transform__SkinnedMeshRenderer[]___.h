@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_Collections_Generic_List_ValueTuple_Transform__SkinnedMeshRenderer_____o* System_Collections_Generic_KeyValuePair_Transform__List_ValueTuple_Transform__SkinnedMeshRenderer_______get_Value (System_Collections_Generic_KeyValuePair_Transform__List_ValueTuple_Transform__SkinnedMeshRenderer______o __this, const MethodInfo* method_info);

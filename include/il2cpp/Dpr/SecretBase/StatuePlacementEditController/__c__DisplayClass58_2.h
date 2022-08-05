@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_SecretBase_StatuePlacementEditController___c__DisplayClass58_2___ctor (Dpr_SecretBase_StatuePlacementEditController___c__DisplayClass58_2_o* __this, const MethodInfo* method_info);
-void Dpr_SecretBase_StatuePlacementEditController___c__DisplayClass58_2___ApplyRoom_b__1 (Dpr_SecretBase_StatuePlacementEditController___c__DisplayClass58_2_o* __this, UnityEngine_GameObject_o* gameObject, const MethodInfo* method_info);

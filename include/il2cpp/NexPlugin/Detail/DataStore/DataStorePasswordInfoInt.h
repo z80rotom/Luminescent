@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-NexPlugin_DataStorePasswordInfo_o* NexPlugin_Detail_DataStore_DataStorePasswordInfoInt__ExchangeStruct (NexPlugin_Detail_DataStore_DataStorePasswordInfoInt_o __this, const MethodInfo* method_info);
-NexPlugin_DataStorePasswordInfo_o* NexPlugin_Detail_DataStore_DataStorePasswordInfoInt__ExchangePtrToStruct (intptr_t src, const MethodInfo* method_info);
-void NexPlugin_Detail_DataStore_DataStorePasswordInfoInt___ctor (NexPlugin_Detail_DataStore_DataStorePasswordInfoInt_o __this, NexPlugin_DataStorePasswordInfo_o* param, const MethodInfo* method_info);

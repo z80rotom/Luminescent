@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_Seal3DObject___Dispose (System_Collections_Generic_List_Enumerator_Seal3DObject__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_Seal3DObject___MoveNext (System_Collections_Generic_List_Enumerator_Seal3DObject__o __this, const MethodInfo* method_info);
-Dpr_UI_Seal3DObject_o* System_Collections_Generic_List_Enumerator_Seal3DObject___get_Current (System_Collections_Generic_List_Enumerator_Seal3DObject__o __this, const MethodInfo* method_info);

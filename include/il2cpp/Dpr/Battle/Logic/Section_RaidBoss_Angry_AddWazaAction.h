@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction___ctor (Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction__Execute (Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction_o* __this, Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction_Result_o* pResult, Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction_Description_o** description, const MethodInfo* method_info);
-uint8_t Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction__calcTargetPos (Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, int32_t wazano, const MethodInfo* method_info);
-uint32_t Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction__calcActionPriority (Dpr_Battle_Logic_Section_RaidBoss_Angry_AddWazaAction_o* __this, Dpr_Battle_Logic_PokeAction_o* pokeAction, uint8_t dominantPriority, const MethodInfo* method_info);

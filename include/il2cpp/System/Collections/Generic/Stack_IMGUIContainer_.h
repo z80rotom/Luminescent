@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Stack_IMGUIContainer____ctor (System_Collections_Generic_Stack_IMGUIContainer__o* __this, const MethodInfo* method_info);
-int32_t System_Collections_Generic_Stack_IMGUIContainer___get_Count (System_Collections_Generic_Stack_IMGUIContainer__o* __this, const MethodInfo* method_info);
-UnityEngine_UIElements_IMGUIContainer_o* System_Collections_Generic_Stack_IMGUIContainer___Peek (System_Collections_Generic_Stack_IMGUIContainer__o* __this, const MethodInfo* method_info);
-UnityEngine_UIElements_IMGUIContainer_o* System_Collections_Generic_Stack_IMGUIContainer___Pop (System_Collections_Generic_Stack_IMGUIContainer__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_Stack_IMGUIContainer___Push (System_Collections_Generic_Stack_IMGUIContainer__o* __this, UnityEngine_UIElements_IMGUIContainer_o* item, const MethodInfo* method_info);

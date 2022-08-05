@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Threading_SemaphoreSlim__WaitUntilCountOrTimeoutAsync_d__31__MoveNext (System_Threading_SemaphoreSlim__WaitUntilCountOrTimeoutAsync_d__31_o __this, const MethodInfo* method_info);
-void System_Threading_SemaphoreSlim__WaitUntilCountOrTimeoutAsync_d__31__SetStateMachine (System_Threading_SemaphoreSlim__WaitUntilCountOrTimeoutAsync_d__31_o __this, System_Runtime_CompilerServices_IAsyncStateMachine_o* stateMachine, const MethodInfo* method_info);

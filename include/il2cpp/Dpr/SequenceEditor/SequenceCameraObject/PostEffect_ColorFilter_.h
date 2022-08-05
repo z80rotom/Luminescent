@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-Dpr_Rendering_ColorFilter_o* Dpr_SequenceEditor_SequenceCameraObject_PostEffect_ColorFilter___get_EffectObject (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_ColorFilter__o* __this, const MethodInfo* method_info);
-void Dpr_SequenceEditor_SequenceCameraObject_PostEffect_ColorFilter____ctor (Dpr_SequenceEditor_SequenceCameraObject_PostEffect_ColorFilter__o* __this, Dpr_Rendering_ColorFilter_o* effectObject, const MethodInfo* method_info);

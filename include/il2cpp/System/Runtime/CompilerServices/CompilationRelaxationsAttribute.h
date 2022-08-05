@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_CompilerServices_CompilationRelaxationsAttribute___ctor (System_Runtime_CompilerServices_CompilationRelaxationsAttribute_o* __this, int32_t relaxations, const MethodInfo* method_info);
-void System_Runtime_CompilerServices_CompilationRelaxationsAttribute___ctor (System_Runtime_CompilerServices_CompilationRelaxationsAttribute_o* __this, int32_t relaxations, const MethodInfo* method_info);
-int32_t System_Runtime_CompilerServices_CompilationRelaxationsAttribute__get_CompilationRelaxations (System_Runtime_CompilerServices_CompilationRelaxationsAttribute_o* __this, const MethodInfo* method_info);

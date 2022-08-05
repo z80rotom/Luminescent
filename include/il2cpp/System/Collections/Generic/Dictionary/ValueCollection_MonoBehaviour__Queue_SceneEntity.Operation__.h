@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_Collections_Generic_Dictionary_ValueCollection_Enumerator_TKey__TValue__o System_Collections_Generic_Dictionary_ValueCollection_MonoBehaviour__Queue_SceneEntity_Operation____GetEnumerator (System_Collections_Generic_Dictionary_ValueCollection_MonoBehaviour__Queue_SceneEntity_Operation___o* __this, const MethodInfo* method_info);

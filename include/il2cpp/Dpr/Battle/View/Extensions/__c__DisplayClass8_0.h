@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_Extensions___c__DisplayClass8_0___ctor (Dpr_Battle_View_Extensions___c__DisplayClass8_0_o* __this, const MethodInfo* method_info);
-bool Dpr_Battle_View_Extensions___c__DisplayClass8_0___GetDefaultCameraPlacementData_b__0 (Dpr_Battle_View_Extensions___c__DisplayClass8_0_o* __this, XLSXContent_BattleDefaultPlacementData_SheetDefaultCameraPlacementData_o* x, const MethodInfo* method_info);

@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_FureaiHiroba_FureaiManager___c__DisplayClass48_0___ctor (Dpr_FureaiHiroba_FureaiManager___c__DisplayClass48_0_o* __this, const MethodInfo* method_info);
-float Dpr_FureaiHiroba_FureaiManager___c__DisplayClass48_0___MyUpdate_b__3 (Dpr_FureaiHiroba_FureaiManager___c__DisplayClass48_0_o* __this, Dpr_FureaiHiroba_FureaiPokeModel_o* x, const MethodInfo* method_info);
-void Dpr_FureaiHiroba_FureaiManager___c__DisplayClass48_0___MyUpdate_b__4 (Dpr_FureaiHiroba_FureaiManager___c__DisplayClass48_0_o* __this, const MethodInfo* method_info);

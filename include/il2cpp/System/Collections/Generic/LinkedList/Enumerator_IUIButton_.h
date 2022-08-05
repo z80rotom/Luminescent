@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-Dpr_UI_IUIButton_o* System_Collections_Generic_LinkedList_Enumerator_IUIButton___get_Current (System_Collections_Generic_LinkedList_Enumerator_IUIButton__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_LinkedList_Enumerator_IUIButton___MoveNext (System_Collections_Generic_LinkedList_Enumerator_IUIButton__o __this, const MethodInfo* method_info);
-void System_Collections_Generic_LinkedList_Enumerator_IUIButton___Dispose (System_Collections_Generic_LinkedList_Enumerator_IUIButton__o __this, const MethodInfo* method_info);

@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_StatueItem___Dispose (System_Collections_Generic_List_Enumerator_StatueItem__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_StatueItem___MoveNext (System_Collections_Generic_List_Enumerator_StatueItem__o __this, const MethodInfo* method_info);
-Dpr_SecretBase_StatueItem_o* System_Collections_Generic_List_Enumerator_StatueItem___get_Current (System_Collections_Generic_List_Enumerator_StatueItem__o __this, const MethodInfo* method_info);

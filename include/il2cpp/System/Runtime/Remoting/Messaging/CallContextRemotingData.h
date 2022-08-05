@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_String_o* System_Runtime_Remoting_Messaging_CallContextRemotingData__get_LogicalCallID (System_Runtime_Remoting_Messaging_CallContextRemotingData_o* __this, const MethodInfo* method_info);
-void System_Runtime_Remoting_Messaging_CallContextRemotingData__set_LogicalCallID (System_Runtime_Remoting_Messaging_CallContextRemotingData_o* __this, System_String_o* value, const MethodInfo* method_info);
-bool System_Runtime_Remoting_Messaging_CallContextRemotingData__get_HasInfo (System_Runtime_Remoting_Messaging_CallContextRemotingData_o* __this, const MethodInfo* method_info);
-Il2CppObject* System_Runtime_Remoting_Messaging_CallContextRemotingData__Clone (System_Runtime_Remoting_Messaging_CallContextRemotingData_o* __this, const MethodInfo* method_info);
-void System_Runtime_Remoting_Messaging_CallContextRemotingData___ctor (System_Runtime_Remoting_Messaging_CallContextRemotingData_o* __this, const MethodInfo* method_info);

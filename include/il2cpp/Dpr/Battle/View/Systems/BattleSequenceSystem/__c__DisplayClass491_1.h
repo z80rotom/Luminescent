@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass491_1___ctor (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass491_1_o* __this, const MethodInfo* method_info);
-bool Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass491_1___PreloadParticleSeal_b__1 (Dpr_Battle_View_Systems_BattleSequenceSystem___c__DisplayClass491_1_o* __this, XLSXContent_EffectDatabase_SheetBattleEffectData_o* x, const MethodInfo* method_info);

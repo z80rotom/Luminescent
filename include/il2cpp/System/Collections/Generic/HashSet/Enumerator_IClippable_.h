@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_HashSet_Enumerator_IClippable___Dispose (System_Collections_Generic_HashSet_Enumerator_IClippable__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_HashSet_Enumerator_IClippable___MoveNext (System_Collections_Generic_HashSet_Enumerator_IClippable__o __this, const MethodInfo* method_info);
-UnityEngine_UI_IClippable_o* System_Collections_Generic_HashSet_Enumerator_IClippable___get_Current (System_Collections_Generic_HashSet_Enumerator_IClippable__o __this, const MethodInfo* method_info);

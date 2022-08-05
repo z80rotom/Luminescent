@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-UnityEngine_Experimental_TerrainAPI_TerrainUtility_TerrainMap_TileCoord_o System_Collections_Generic_KeyValuePair_TerrainUtility_TerrainMap_TileCoord__Terrain___get_Key (System_Collections_Generic_KeyValuePair_TerrainUtility_TerrainMap_TileCoord__Terrain__o __this, const MethodInfo* method_info);

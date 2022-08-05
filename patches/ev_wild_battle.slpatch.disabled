@@ -1,4 +1,4 @@
-[target=main, version=bd_13]
+[target=main, version=bd_130]
 // Set battle return
 // 01b34118:
 //    bl 

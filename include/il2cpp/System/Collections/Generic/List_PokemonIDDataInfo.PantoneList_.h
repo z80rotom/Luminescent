@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_PokemonIDDataInfo_PantoneList____ctor (System_Collections_Generic_List_PokemonIDDataInfo_PantoneList__o* __this, const MethodInfo* method_info);
-PokemonIDDataInfo_PantoneList_o* System_Collections_Generic_List_PokemonIDDataInfo_PantoneList___get_Item (System_Collections_Generic_List_PokemonIDDataInfo_PantoneList__o* __this, int32_t index, const MethodInfo* method_info);
-void System_Collections_Generic_List_PokemonIDDataInfo_PantoneList___Add (System_Collections_Generic_List_PokemonIDDataInfo_PantoneList__o* __this, PokemonIDDataInfo_PantoneList_o* item, const MethodInfo* method_info);
-void System_Collections_Generic_List_PokemonIDDataInfo_PantoneList___Clear (System_Collections_Generic_List_PokemonIDDataInfo_PantoneList__o* __this, const MethodInfo* method_info);

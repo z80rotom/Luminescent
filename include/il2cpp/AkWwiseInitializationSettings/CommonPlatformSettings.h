@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-AkCommonUserSettings_o* AkWwiseInitializationSettings_CommonPlatformSettings__GetUserSettings (AkWwiseInitializationSettings_CommonPlatformSettings_o* __this, const MethodInfo* method_info);
-AkCommonAdvancedSettings_o* AkWwiseInitializationSettings_CommonPlatformSettings__GetAdvancedSettings (AkWwiseInitializationSettings_CommonPlatformSettings_o* __this, const MethodInfo* method_info);
-AkCommonCommSettings_o* AkWwiseInitializationSettings_CommonPlatformSettings__GetCommsSettings (AkWwiseInitializationSettings_CommonPlatformSettings_o* __this, const MethodInfo* method_info);
-void AkWwiseInitializationSettings_CommonPlatformSettings___ctor (AkWwiseInitializationSettings_CommonPlatformSettings_o* __this, const MethodInfo* method_info);

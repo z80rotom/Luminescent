@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-SmartPoint_Components_DebugMenu_o* SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMenu___get_Instance (const MethodInfo* method_info);
-bool SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMenu___Awake (SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMenu__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMenu___OnApplicationQuit (SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMenu__o* __this, const MethodInfo* method_info);
-void SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMenu____ctor (SmartPoint_AssetAssistant_SingletonMonoBehaviour_DebugMenu__o* __this, const MethodInfo* method_info);

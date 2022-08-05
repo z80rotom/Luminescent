@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_EffectFieldID___Dispose (System_Collections_Generic_List_Enumerator_EffectFieldID__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_EffectFieldID___MoveNext (System_Collections_Generic_List_Enumerator_EffectFieldID__o __this, const MethodInfo* method_info);
-int32_t System_Collections_Generic_List_Enumerator_EffectFieldID___get_Current (System_Collections_Generic_List_Enumerator_EffectFieldID__o __this, const MethodInfo* method_info);

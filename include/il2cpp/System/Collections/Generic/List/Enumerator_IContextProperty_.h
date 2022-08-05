@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_IContextProperty___Dispose (System_Collections_Generic_List_Enumerator_IContextProperty__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_IContextProperty___MoveNext (System_Collections_Generic_List_Enumerator_IContextProperty__o __this, const MethodInfo* method_info);
-System_Runtime_Remoting_Contexts_IContextProperty_o* System_Collections_Generic_List_Enumerator_IContextProperty___get_Current (System_Collections_Generic_List_Enumerator_IContextProperty__o __this, const MethodInfo* method_info);

@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_Canvas__IndexedSet_Graphic_____ctor (System_Collections_Generic_Dictionary_Canvas__IndexedSet_Graphic___o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_Canvas__IndexedSet_Graphic____Add (System_Collections_Generic_Dictionary_Canvas__IndexedSet_Graphic___o* __this, UnityEngine_Canvas_o* key, UnityEngine_UI_Collections_IndexedSet_Graphic__o* value, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_Canvas__IndexedSet_Graphic____Remove (System_Collections_Generic_Dictionary_Canvas__IndexedSet_Graphic___o* __this, UnityEngine_Canvas_o* key, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_Canvas__IndexedSet_Graphic____TryGetValue (System_Collections_Generic_Dictionary_Canvas__IndexedSet_Graphic___o* __this, UnityEngine_Canvas_o* key, UnityEngine_UI_Collections_IndexedSet_Graphic__o** value, const MethodInfo* method_info);

@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-int32_t System_Tuple_BtlvPos__TRAINER_DATA__TrainerSimpleParam___get_Item1 (System_Tuple_BtlvPos__TRAINER_DATA__TrainerSimpleParam__o* __this, const MethodInfo* method_info);
-Dpr_Battle_Logic_TRAINER_DATA_o* System_Tuple_BtlvPos__TRAINER_DATA__TrainerSimpleParam___get_Item2 (System_Tuple_BtlvPos__TRAINER_DATA__TrainerSimpleParam__o* __this, const MethodInfo* method_info);
-Dpr_Battle_View_TrainerSimpleParam_o System_Tuple_BtlvPos__TRAINER_DATA__TrainerSimpleParam___get_Item3 (System_Tuple_BtlvPos__TRAINER_DATA__TrainerSimpleParam__o* __this, const MethodInfo* method_info);
-void System_Tuple_BtlvPos__TRAINER_DATA__TrainerSimpleParam____ctor (System_Tuple_BtlvPos__TRAINER_DATA__TrainerSimpleParam__o* __this, int32_t item1, Dpr_Battle_Logic_TRAINER_DATA_o* item2, Dpr_Battle_View_TrainerSimpleParam_o item3, const MethodInfo* method_info);

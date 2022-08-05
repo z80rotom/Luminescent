@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Runtime_Serialization_ObjectHolderListEnumerator___ctor (System_Runtime_Serialization_ObjectHolderListEnumerator_o* __this, System_Runtime_Serialization_ObjectHolderList_o* list, bool isFixupEnumerator, const MethodInfo* method_info);
-bool System_Runtime_Serialization_ObjectHolderListEnumerator__MoveNext (System_Runtime_Serialization_ObjectHolderListEnumerator_o* __this, const MethodInfo* method_info);
-System_Runtime_Serialization_ObjectHolder_o* System_Runtime_Serialization_ObjectHolderListEnumerator__get_Current (System_Runtime_Serialization_ObjectHolderListEnumerator_o* __this, const MethodInfo* method_info);

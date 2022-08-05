@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-int32_t System_Collections_Generic_ObjectComparer_UgSecretBase___Compare (System_Collections_Generic_ObjectComparer_UgSecretBase__o* __this, DPData_UgSecretBase_o x, DPData_UgSecretBase_o y, const MethodInfo* method_info);
-bool System_Collections_Generic_ObjectComparer_UgSecretBase___Equals (System_Collections_Generic_ObjectComparer_UgSecretBase__o* __this, Il2CppObject* obj, const MethodInfo* method_info);
-int32_t System_Collections_Generic_ObjectComparer_UgSecretBase___GetHashCode (System_Collections_Generic_ObjectComparer_UgSecretBase__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_ObjectComparer_UgSecretBase____ctor (System_Collections_Generic_ObjectComparer_UgSecretBase__o* __this, const MethodInfo* method_info);

@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_SecretBase_StatuePlacementEditController___c__DisplayClass69_0___ctor (Dpr_SecretBase_StatuePlacementEditController___c__DisplayClass69_0_o* __this, const MethodInfo* method_info);
-bool Dpr_SecretBase_StatuePlacementEditController___c__DisplayClass69_0___GetPlacementData_b__0 (Dpr_SecretBase_StatuePlacementEditController___c__DisplayClass69_0_o* __this, Dpr_SecretBase_PlacementData_o* __, const MethodInfo* method_info);

@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_ItemInfo_CategoryType____ctor (System_Collections_Generic_List_ItemInfo_CategoryType__o* __this, const MethodInfo* method_info);
-void System_Collections_Generic_List_ItemInfo_CategoryType___Add (System_Collections_Generic_List_ItemInfo_CategoryType__o* __this, int32_t item, const MethodInfo* method_info);
-bool System_Collections_Generic_List_ItemInfo_CategoryType___Contains (System_Collections_Generic_List_ItemInfo_CategoryType__o* __this, int32_t item, const MethodInfo* method_info);
-Dpr_Item_ItemInfo_CategoryType_array* System_Collections_Generic_List_ItemInfo_CategoryType___ToArray (System_Collections_Generic_List_ItemInfo_CategoryType__o* __this, const MethodInfo* method_info);

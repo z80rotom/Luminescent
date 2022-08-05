@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item___ctor (Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item__Execute (Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item_o* __this, Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item_Result_o* pResult, Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item_Description_o** desc, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item__checkItemReaction (Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item__onKintyoukanMoved (Dpr_Battle_Logic_Section_AfterTokuseiChanged_Item_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method_info);

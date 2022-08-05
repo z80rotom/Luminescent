@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool System_Collections_Generic_NonRandomizedStringEqualityComparer__Equals (System_Collections_Generic_NonRandomizedStringEqualityComparer_o* __this, System_String_o* x, System_String_o* y, const MethodInfo* method_info);
-int32_t System_Collections_Generic_NonRandomizedStringEqualityComparer__GetHashCode (System_Collections_Generic_NonRandomizedStringEqualityComparer_o* __this, System_String_o* obj, const MethodInfo* method_info);
-void System_Collections_Generic_NonRandomizedStringEqualityComparer___ctor (System_Collections_Generic_NonRandomizedStringEqualityComparer_o* __this, const MethodInfo* method_info);

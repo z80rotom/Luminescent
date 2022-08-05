@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Playables_AnimationLayer___c__DisplayClass48_0___ctor (Dpr_Playables_AnimationLayer___c__DisplayClass48_0_o* __this, const MethodInfo* method_info);
-UnityEngine_Animations_AnimationClipPlayable_o Dpr_Playables_AnimationLayer___c__DisplayClass48_0___Initialzie_b__0 (Dpr_Playables_AnimationLayer___c__DisplayClass48_0_o* __this, UnityEngine_AnimationClip_o* x, const MethodInfo* method_info);

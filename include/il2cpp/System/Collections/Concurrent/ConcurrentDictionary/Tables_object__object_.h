@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Concurrent_ConcurrentDictionary_Tables_object__object____ctor (System_Collections_Concurrent_ConcurrentDictionary_Tables_object__object__o* __this, System_Collections_Concurrent_ConcurrentDictionary_Node_TKey__TValue__array* buckets, System_Object_array* locks, System_Int32_array* countPerLock, const MethodInfo* method_info);

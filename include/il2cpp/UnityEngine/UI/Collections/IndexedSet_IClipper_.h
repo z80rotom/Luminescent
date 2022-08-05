@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-bool UnityEngine_UI_Collections_IndexedSet_IClipper___AddUnique (UnityEngine_UI_Collections_IndexedSet_IClipper__o* __this, UnityEngine_UI_IClipper_o* item, const MethodInfo* method_info);
-bool UnityEngine_UI_Collections_IndexedSet_IClipper___Remove (UnityEngine_UI_Collections_IndexedSet_IClipper__o* __this, UnityEngine_UI_IClipper_o* item, const MethodInfo* method_info);
-int32_t UnityEngine_UI_Collections_IndexedSet_IClipper___get_Count (UnityEngine_UI_Collections_IndexedSet_IClipper__o* __this, const MethodInfo* method_info);
-UnityEngine_UI_IClipper_o* UnityEngine_UI_Collections_IndexedSet_IClipper___get_Item (UnityEngine_UI_Collections_IndexedSet_IClipper__o* __this, int32_t index, const MethodInfo* method_info);
-void UnityEngine_UI_Collections_IndexedSet_IClipper____ctor (UnityEngine_UI_Collections_IndexedSet_IClipper__o* __this, const MethodInfo* method_info);

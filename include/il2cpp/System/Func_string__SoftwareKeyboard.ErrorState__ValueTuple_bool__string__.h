@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Func_string__SoftwareKeyboard_ErrorState__ValueTuple_bool__string_____ctor (System_Func_string__SoftwareKeyboard_ErrorState__ValueTuple_bool__string___o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method_info);
-System_ValueTuple_bool__string__o System_Func_string__SoftwareKeyboard_ErrorState__ValueTuple_bool__string____Invoke (System_Func_string__SoftwareKeyboard_ErrorState__ValueTuple_bool__string___o* __this, System_String_o* arg1, int32_t arg2, const MethodInfo* method_info);

@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_FromEvent_Hensin___ctor (Dpr_Battle_Logic_Section_FromEvent_Hensin_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_Hensin__Execute (Dpr_Battle_Logic_Section_FromEvent_Hensin_o* __this, Dpr_Battle_Logic_Section_FromEvent_Hensin_Result_o* result, Dpr_Battle_Logic_Section_FromEvent_Hensin_Description_o** description, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_Hensin__afterTokuseiChanged_Event (Dpr_Battle_Logic_Section_FromEvent_Hensin_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_FromEvent_Hensin__afterTokuseiChanged_Item (Dpr_Battle_Logic_Section_FromEvent_Hensin_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* poke, int32_t prevTokusei, int32_t nextTokusei, const MethodInfo* method_info);

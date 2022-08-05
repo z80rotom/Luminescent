@@ -1,9 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void Dpr_Battle_Logic_Section_RaidBoss_BreakGWall___ctor (Dpr_Battle_Logic_Section_RaidBoss_BreakGWall_o* __this, Dpr_Battle_Logic_Section_CommonParam_o** commonParam, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_RaidBoss_BreakGWall__Execute (Dpr_Battle_Logic_Section_RaidBoss_BreakGWall_o* __this, Dpr_Battle_Logic_Section_RaidBoss_BreakGWall_Result_o* pResult, Dpr_Battle_Logic_Section_RaidBoss_BreakGWall_Description_o** desc, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_RaidBoss_BreakGWall__addDamage (Dpr_Battle_Logic_Section_RaidBoss_BreakGWall_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_RaidBoss_BreakGWall__rankDown (Dpr_Battle_Logic_Section_RaidBoss_BreakGWall_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, const MethodInfo* method_info);
-void Dpr_Battle_Logic_Section_RaidBoss_BreakGWall__rankDown (Dpr_Battle_Logic_Section_RaidBoss_BreakGWall_o* __this, Dpr_Battle_Logic_BTL_POKEPARAM_o* boss, int32_t effect, const MethodInfo* method_info);

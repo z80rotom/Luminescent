@@ -2,6 +2,7 @@
 #include "Pml/PokePara/CoreParam.h"
 #include "Pml/PokePara/Accessor.h"
 #include "PlayerWork.hpp"
+#include "logger.hpp"
 #include "Dpr/Battle/Logic/Exp.h"
 
 #include <math.h>
@@ -20,32 +21,10 @@ uint32_t GetBadgeCount()
          (bVar7 & 1) + (bVar8 & 1);
 }
 
-uint32_t Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(uint32_t base_exp,uint16_t getpoke_lv,uint16_t deadpoke_lv,MethodInfo *method )
-{
-    float fVar4;
-    float fVar5;
-    fVar5 = (float)(uint64_t)deadpoke_lv;
-    fVar4 = fVar5 + fVar5 + 10.0;
-    fVar5 = (float)(uint64_t)getpoke_lv + fVar5 + 10.0;
-    
-    float exp = (((fVar4 * fVar4 * sqrt(fVar4)) / (fVar5 * fVar5 * sqrt(fVar5))) *
-               (float)(uint64_t)base_exp + 1.0);
-
-    // Game clear
-    if (PlayerWork::GetSytemFlag(5, (MethodInfo *) nullptr))
-    {
-        return (uint32_t) exp;
-    }
-
-    // 
-    if (!PlayerWork::GetBool(2197, (MethodInfo *) nullptr))
-    {
-        return (uint32_t) exp;
-    }
-
-    uint32_t badgeCount = GetBadgeCount();
+uint32_t getMaxLevel() {
     uint32_t maxLevel = 100;
-    switch (badgeCount)
+    uint32_t numBadges = GetBadgeCount();
+    switch (numBadges)
     {
         case 0: // Roark
             maxLevel = 16;
@@ -76,9 +55,36 @@ uint32_t Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(uint32_t base_exp,uin
             // to remove level 78 cap. For the moment, they can just disable
             // the cap if you want to overlevel in post game.
             maxLevel = 78;
-            default:
-        break;
+        default:
+            break;
     }
+    return maxLevel;
+}
+
+uint32_t Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(uint32_t base_exp,uint16_t getpoke_lv,uint16_t deadpoke_lv,MethodInfo *method )
+{
+    float fVar4;
+    float fVar5;
+    fVar5 = (float)(uint64_t)deadpoke_lv;
+    fVar4 = fVar5 + fVar5 + 10.0;
+    fVar5 = (float)(uint64_t)getpoke_lv + fVar5 + 10.0;
+    
+    float exp = (((fVar4 * fVar4 * sqrt(fVar4)) / (fVar5 * fVar5 * sqrt(fVar5))) *
+               (float)(uint64_t)base_exp + 1.0);
+
+    // Game clear
+    if (PlayerWork::GetSytemFlag(5, (MethodInfo *) nullptr))
+    {
+        return (uint32_t) exp;
+    }
+
+    // 
+    if (!PlayerWork::GetBool(2197, (MethodInfo *) nullptr))
+    {
+        return (uint32_t) exp;
+    }
+
+    uint32_t maxLevel = getMaxLevel();
 
     if (getpoke_lv >= maxLevel)
     {
@@ -91,4 +97,9 @@ uint32_t Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(uint32_t base_exp,uin
 uint32_t Dpr_Battle_Logic_Exp_getexp_calc_adjust_level(uint32_t base_exp,uint16_t getpoke_lv,uint16_t deadpoke_lv,MethodInfo *method )
 {
     return Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(base_exp, getpoke_lv, deadpoke_lv, method );
+}
+
+void getMaxLevelPatch() {
+    uint32_t x = getMaxLevel();
+    asm("mov w25,%w0;" : : "r"(x));
 }

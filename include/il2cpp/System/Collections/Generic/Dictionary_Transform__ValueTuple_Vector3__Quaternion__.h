@@ -1,5 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_Transform__ValueTuple_Vector3__Quaternion_____ctor (System_Collections_Generic_Dictionary_Transform__ValueTuple_Vector3__Quaternion___o* __this, const MethodInfo* method_info);

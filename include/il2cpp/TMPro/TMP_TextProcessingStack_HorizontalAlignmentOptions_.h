@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void TMPro_TMP_TextProcessingStack_HorizontalAlignmentOptions____ctor (TMPro_TMP_TextProcessingStack_HorizontalAlignmentOptions__o __this, TMPro_HorizontalAlignmentOptions_array* stack, const MethodInfo* method_info);
-void TMPro_TMP_TextProcessingStack_HorizontalAlignmentOptions___SetDefault (TMPro_TMP_TextProcessingStack_HorizontalAlignmentOptions__o __this, int32_t item, const MethodInfo* method_info);
-void TMPro_TMP_TextProcessingStack_HorizontalAlignmentOptions___Add (TMPro_TMP_TextProcessingStack_HorizontalAlignmentOptions__o __this, int32_t item, const MethodInfo* method_info);
-int32_t TMPro_TMP_TextProcessingStack_HorizontalAlignmentOptions___Remove (TMPro_TMP_TextProcessingStack_HorizontalAlignmentOptions__o __this, const MethodInfo* method_info);

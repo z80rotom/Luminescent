@@ -1,8 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_Dictionary_int__List_int_____ctor (System_Collections_Generic_Dictionary_int__List_int___o* __this, const MethodInfo* method_info);
-System_Collections_Generic_List_int__o* System_Collections_Generic_Dictionary_int__List_int____get_Item (System_Collections_Generic_Dictionary_int__List_int___o* __this, int32_t key, const MethodInfo* method_info);
-void System_Collections_Generic_Dictionary_int__List_int____Add (System_Collections_Generic_Dictionary_int__List_int___o* __this, int32_t key, System_Collections_Generic_List_int__o* value, const MethodInfo* method_info);
-bool System_Collections_Generic_Dictionary_int__List_int____ContainsKey (System_Collections_Generic_Dictionary_int__List_int___o* __this, int32_t key, const MethodInfo* method_info);

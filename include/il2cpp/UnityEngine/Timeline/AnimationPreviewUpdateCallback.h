@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void UnityEngine_Timeline_AnimationPreviewUpdateCallback___ctor (UnityEngine_Timeline_AnimationPreviewUpdateCallback_o* __this, UnityEngine_Animations_AnimationPlayableOutput_o output, const MethodInfo* method_info);
-void UnityEngine_Timeline_AnimationPreviewUpdateCallback__Evaluate (UnityEngine_Timeline_AnimationPreviewUpdateCallback_o* __this, const MethodInfo* method_info);
-void UnityEngine_Timeline_AnimationPreviewUpdateCallback__FetchPreviewComponents (UnityEngine_Timeline_AnimationPreviewUpdateCallback_o* __this, const MethodInfo* method_info);

@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-void System_Collections_Generic_List_Enumerator_LabelTagDataModel___Dispose (System_Collections_Generic_List_Enumerator_LabelTagDataModel__o __this, const MethodInfo* method_info);
-bool System_Collections_Generic_List_Enumerator_LabelTagDataModel___MoveNext (System_Collections_Generic_List_Enumerator_LabelTagDataModel__o __this, const MethodInfo* method_info);
-Dpr_Message_LabelTagDataModel_o* System_Collections_Generic_List_Enumerator_LabelTagDataModel___get_Current (System_Collections_Generic_List_Enumerator_LabelTagDataModel__o __this, const MethodInfo* method_info);

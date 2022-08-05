@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-System_String_o* System_Collections_Generic_KeyValuePair_string__List_MapInfo_SheetZoneData____get_Key (System_Collections_Generic_KeyValuePair_string__List_MapInfo_SheetZoneData___o __this, const MethodInfo* method_info);
-System_Collections_Generic_List_MapInfo_SheetZoneData__o* System_Collections_Generic_KeyValuePair_string__List_MapInfo_SheetZoneData____get_Value (System_Collections_Generic_KeyValuePair_string__List_MapInfo_SheetZoneData___o __this, const MethodInfo* method_info);

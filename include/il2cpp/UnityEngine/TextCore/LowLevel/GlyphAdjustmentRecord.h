@@ -1,6 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-uint32_t UnityEngine_TextCore_LowLevel_GlyphAdjustmentRecord__get_glyphIndex (UnityEngine_TextCore_LowLevel_GlyphAdjustmentRecord_o __this, const MethodInfo* method_info);
-UnityEngine_TextCore_LowLevel_GlyphValueRecord_o UnityEngine_TextCore_LowLevel_GlyphAdjustmentRecord__get_glyphValueRecord (UnityEngine_TextCore_LowLevel_GlyphAdjustmentRecord_o __this, const MethodInfo* method_info);

@@ -1,7 +1,0 @@
-#pragma once
-
-#include "il2cpp.h"
-
-int32_t System_Collections_Generic_List_DigStoneBoxResult_LotteryInfo___get_Count (System_Collections_Generic_List_DigStoneBoxResult_LotteryInfo__o* __this, const MethodInfo* method_info);
-Dpr_DigFossil_DigStoneBoxResult_LotteryInfo_o* System_Collections_Generic_List_DigStoneBoxResult_LotteryInfo___get_Item (System_Collections_Generic_List_DigStoneBoxResult_LotteryInfo__o* __this, int32_t index, const MethodInfo* method_info);
-System_Collections_Generic_List_Enumerator_T__o System_Collections_Generic_List_DigStoneBoxResult_LotteryInfo___GetEnumerator (System_Collections_Generic_List_DigStoneBoxResult_LotteryInfo__o* __this, const MethodInfo* method_info);
