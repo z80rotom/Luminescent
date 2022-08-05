@@ -8,10 +8,6 @@ void infinite_candies(int itemId, int useCount) {
     }
 }
 
-extern "C" void do_log(int a, int b) {
-    socket_log_fmt("subsPatch(%d, %d)\n", a, b);
-}
-
 void subsPatch() {
     asm(R"(
 subs w22,w25,w22
