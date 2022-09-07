@@ -1,7 +1,169 @@
 [target=main, version=bd_130]
+// Commenting out for the moment
 17dcd00:
     bl ZukanWork_GetFormFlags
 17dcd28:
     bl ZukanWork_GetFormFlags
 17dbf64:
     bl ZukanWork_GetFormFlags
+
+17dcbd0:
+    b ZukanWork_GetStatus
+
+17dc990:
+    b ZukanWork_IsGet1
+
+17dcc90:
+    b ZukanWork_IsGet2
+
+17dca50:
+    b ZukanWork_IsSee
+
+17dcb10:
+    b ZukanWork_IsUwasa
+
+17dbce0:
+    b ZukanWork_SetPoke
+
+17db8f0:
+    b ZukanWork_SeeCount
+
+17dba80:
+    b ZukanWork_SeeSinouCount
+
+// ZukanWork$$IsGet Returns true above limit
+// 017DCA28:
+//    mov w0, #0x1
+
+// ZukanWork$$IsSee Returns true above limit
+// 017DCAE8:
+//    mov w0, #0x1
+
+// ZukanWork$$IsUwasa Returns true above limit
+// 017DCBA8:
+//    mov w0, #0x1
+
+// ZukanWork$$GetStatus Returns true above limit
+// 017DCC60:
+//    mov w0, #0x3
+
+// ZukanWork$$IsGet Returns true above limit
+// 017DCD8C:
+//    mov w0, #0x1
+
+// 0x381 = 898, the current max number of pokemon in the dex
+// ZukanWork$$GetViewModelUniqueID
+017DCF78:
+    cmp w19, #0x381
+
+// ZukanWork$$SetViewModelUniqueID
+017DD030:
+    cmp w20, #0x381
+
+// ZukanWork$$.cctor
+017DDEE0:
+    mov w1, #0x382
+
+// UgMainProc$$CreatePoke
+018D372C:
+    cmp w0, #0
+
+// PokemonSelector$$Update
+0199CA48:
+    cmp w9, #0x383
+
+0199CA54:
+    sub w8, w8, #0x381
+
+0199CA88:
+    sub w8, w8, #0x381
+
+// Dpr.UI.UIZukan$$SetupZukan
+01A39760:
+    cmp w22, #0x383
+
+// Dpr.Field.Walking.FieldWalkingManager$$UpdatePartnerPokeIndex
+01CD637C:
+    cmp w8, #0x381
+
+// Dpr.Field.Walking.FieldWalkingManager$$IsPokeParaOK
+01CD6494:
+    cmp w8, #0x382
+
+// Dpr.Field.Walking.FieldWalkingManager$$LoadPartnerPoke
+01CD6628:
+    cmp w8, #0x381
+
+// Dpr.Field.Walking.FieldWalkingManager$$CheckPartnerPokeChange
+01CD6ECC:
+    cmp w8, #0x381
+
+// Dpr.Field.Walking.FieldWalkingManager$$IsCanTurearuki
+01CD799C:
+    cmp w8, #0x381
+
+// Dpr.Field.Walking.FieldWalkingManager.<CreatePartner>d__43$$MoveNext
+01CD8B1C:
+    cmp w8, #0x381
+01CD8CD8:
+    cmp w8, #0x381
+01CD8F68:
+    cmp w8, #0x381
+
+// Dpr.Battle.Logic.tables$$.cctor
+01F7B440:
+    mov w8, #0x382
+
+// Dpr.Battle.Logic.MainModule$$setupCommon_ClientPublicInformation
+0202FAF0:
+    mov w26, #0x383
+
+// Pml.PokePara.CoreParam$$ChangeEgg
+020494EC:
+    mov w0, #0x383
+
+// Pml.PokePara.EggGenerator$$SetupEggParam
+0204EA40:
+    mov w0, #0x383
+
+// Pml.PokePara.EggGenerator$$IsWazaMachineAbleToUse
+02051BA0:
+    cmp w21, #0x383
+
+// Pml.PokePara.InitialSpec$$.ctor
+02052220:
+    mov w8, #0x383
+
+// Pml.Personal.PersonalSystem$$GetMonsLabel
+024A09B4:
+    cmp w8, #0x383
+024A09C4:
+    cmp w0, #0x382
+
+// Pml.Personal.PersonalSystem$$GetMonsName
+024A0A5C:
+    cmp  w8, #0x383
+    mov  w8, #0x382
+024A0B64:
+    cmp  w8, #0x383
+    mov  w8, #0x382
+
+// Pml.Personal.PersonalSystem$$GetDataID
+024A0EAC:
+    cmp w19, #0x382
+024A0F54:
+    cmp w19, #0x382
+
+// Pml.Personal.PersonalSystem$$GetDataID_AddPersonal
+024A2ACC:
+    cmp w19, #0x382
+024A2BC8:
+    cmp w19, #0x382
+
+// Pml.PokePara.Accessor$$Initialize
+024A3B48:
+    mov w9, #0x383
+
+// Pml.PokePara.Accessor$$GetNickName
+024A6B38:
+    mov w0, #0x383

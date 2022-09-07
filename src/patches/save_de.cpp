@@ -7,10 +7,6 @@
 #include "Save.hpp"
 #include "util.hpp"
 
-#include "md5.h"
-
-// #include "switch.h"
-// #include <curl/curl.h>
 
 void segfault()
 {
@@ -32,11 +28,8 @@ extern MethodInfo ** PTR_Method_PlayerWork_LoadBytes;
 
 void importTrainerSaveData(PlayerWork_SaveData_o * save_obj, System_Byte_array * buffer)
 {
-  // socket_log_fmt("importTrainerSaveData");
-  // uint8_t * buf = (uint8_t *) &buffer->m_Items;
   PlayerWork_SaveData_Fields save = save_obj->fields;
 
-  // DPData::TR_BATTLE_DATA * src = (DPData::TR_BATTLE_DATA *) buf[0x7D3E0];
   DPData::TR_BATTLE_DATA * src = (DPData::TR_BATTLE_DATA * ) malloc(sizeof(DPData::TR_BATTLE_DATA) * 707);
   memcpy(src, &save.tr_battleData->m_Items, sizeof(DPData::TR_BATTLE_DATA) * 707);
   TrBattleData * dst = (TrBattleData *) &save.tr_battleData->m_Items;
@@ -88,6 +81,161 @@ void importTrainerSaveData(PlayerWork_SaveData_o * save_obj, System_Byte_array *
   }
 
   free(src);
+}
+
+void importZukanSaveData(PlayerWork_SaveData_o * save_obj, System_Byte_array * buffer)
+{
+  PlayerWork_SaveData_Fields save = save_obj->fields;
+
+  int32_t * srcStatus = (int32_t * ) malloc(sizeof(int32_t) * 0x1ed);
+  bool * srcMaleColorFlag = (bool * ) malloc(sizeof(bool) * 0x1ed);
+  bool * srcFemaleColorFlag = (bool * ) malloc(sizeof(bool) * 0x1ed);
+  bool * srcMaleFlag = (bool * ) malloc(sizeof(bool) * 0x1ed);
+  bool * srcFemaleFlag = (bool * ) malloc(sizeof(bool) * 0x1ed);
+
+  memcpy(srcStatus, &save.zukanData.fields.get_status->m_Items, sizeof(int32_t) * 0x1ed);
+  memcpy(srcMaleColorFlag, &save.zukanData.fields.male_color_flag->m_Items, sizeof(bool) * 0x1ed);
+  memcpy(srcFemaleColorFlag, &save.zukanData.fields.female_color_flag->m_Items, sizeof(bool) * 0x1ed);
+  memcpy(srcMaleFlag, &save.zukanData.fields.male_flag->m_Items, sizeof(bool) * 0x1ed);
+  memcpy(srcFemaleFlag, &save.zukanData.fields.female_flag->m_Items, sizeof(bool) * 0x1ed);
+
+  GetStatusBitfield * dstStatus = (GetStatusBitfield *) &save.zukanData.fields.get_status->m_Items;
+  FlagBitfield * dstMaleColorFlag = (FlagBitfield * ) &save.zukanData.fields.male_color_flag->m_Items;
+  FlagBitfield * dstFemaleColorFlag = (FlagBitfield * ) &save.zukanData.fields.female_color_flag->m_Items;
+  FlagBitfield * dstMaleFlag = (FlagBitfield * ) &save.zukanData.fields.male_flag->m_Items;
+  FlagBitfield * dstFemaleFlag = (FlagBitfield * ) &save.zukanData.fields.female_flag->m_Items;
+
+  for (int id = 0; id < 0x1ed; id++)
+  {
+    switch (id % 8)
+    {
+      case 0:
+        dstStatus[id/8].status1 = srcStatus[id];
+        dstMaleColorFlag[id/8].flag1 = srcMaleColorFlag[id];
+        dstFemaleColorFlag[id/8].flag1 = srcFemaleColorFlag[id];
+        dstMaleFlag[id/8].flag1 = srcMaleFlag[id];
+        dstFemaleFlag[id/8].flag1 = srcFemaleFlag[id];
+        break;
+      case 1:
+        dstStatus[id/8].status2 = srcStatus[id];
+        dstMaleColorFlag[id/8].flag2 = srcMaleColorFlag[id];
+        dstFemaleColorFlag[id/8].flag2 = srcFemaleColorFlag[id];
+        dstMaleFlag[id/8].flag2 = srcMaleFlag[id];
+        dstFemaleFlag[id/8].flag2 = srcFemaleFlag[id];
+        break;
+      case 2:
+        dstStatus[id/8].status3 = srcStatus[id];
+        dstMaleColorFlag[id/8].flag3 = srcMaleColorFlag[id];
+        dstFemaleColorFlag[id/8].flag3 = srcFemaleColorFlag[id];
+        dstMaleFlag[id/8].flag3 = srcMaleFlag[id];
+        dstFemaleFlag[id/8].flag3 = srcFemaleFlag[id];
+        break;
+      case 3:
+        dstStatus[id/8].status4 = srcStatus[id];
+        dstMaleColorFlag[id/8].flag4 = srcMaleColorFlag[id];
+        dstFemaleColorFlag[id/8].flag4 = srcFemaleColorFlag[id];
+        dstMaleFlag[id/8].flag4 = srcMaleFlag[id];
+        dstFemaleFlag[id/8].flag4 = srcFemaleFlag[id];
+        break;
+      case 4:
+        dstStatus[id/8].status5 = srcStatus[id];
+        dstMaleColorFlag[id/8].flag5 = srcMaleColorFlag[id];
+        dstFemaleColorFlag[id/8].flag5 = srcFemaleColorFlag[id];
+        dstMaleFlag[id/8].flag5 = srcMaleFlag[id];
+        dstFemaleFlag[id/8].flag5 = srcFemaleFlag[id];
+        break;
+      case 5:
+        dstStatus[id/8].status6 = srcStatus[id];
+        dstMaleColorFlag[id/8].flag6 = srcMaleColorFlag[id];
+        dstFemaleColorFlag[id/8].flag6 = srcFemaleColorFlag[id];
+        dstMaleFlag[id/8].flag6 = srcMaleFlag[id];
+        dstFemaleFlag[id/8].flag6 = srcFemaleFlag[id];
+        break;
+      case 6:
+        dstStatus[id/8].status7 = srcStatus[id];
+        dstMaleColorFlag[id/8].flag7 = srcMaleColorFlag[id];
+        dstFemaleColorFlag[id/8].flag7 = srcFemaleColorFlag[id];
+        dstMaleFlag[id/8].flag7 = srcMaleFlag[id];
+        dstFemaleFlag[id/8].flag7 = srcFemaleFlag[id];
+        break;
+      case 7:
+        dstStatus[id/8].status8 = srcStatus[id];
+        dstMaleColorFlag[id/8].flag8 = srcMaleColorFlag[id];
+        dstFemaleColorFlag[id/8].flag8 = srcFemaleColorFlag[id];
+        dstMaleFlag[id/8].flag8 = srcMaleFlag[id];
+        dstFemaleFlag[id/8].flag8 = srcFemaleFlag[id];
+        break;
+    }
+  }
+
+  for (int id = 0x1ed; id < (0x1ed * 8); id++)
+  {
+    switch (id % 8)
+    {
+      case 0:
+        dstStatus[id/8].status1 = 0;
+        dstMaleColorFlag[id/8].flag1 = false;
+        dstFemaleColorFlag[id/8].flag1 = false;
+        dstMaleFlag[id/8].flag1 = false;
+        dstFemaleFlag[id/8].flag1 = false;
+        break;
+      case 1:
+        dstStatus[id/8].status2 = 0;
+        dstMaleColorFlag[id/8].flag2 = false;
+        dstFemaleColorFlag[id/8].flag2 = false;
+        dstMaleFlag[id/8].flag2 = false;
+        dstFemaleFlag[id/8].flag2 = false;
+        break;
+      case 2:
+        dstStatus[id/8].status3 = 0;
+        dstMaleColorFlag[id/8].flag3 = false;
+        dstFemaleColorFlag[id/8].flag3 = false;
+        dstMaleFlag[id/8].flag3 = false;
+        dstFemaleFlag[id/8].flag3 = false;
+        break;
+      case 3:
+        dstStatus[id/8].status4 = 0;
+        dstMaleColorFlag[id/8].flag4 = false;
+        dstFemaleColorFlag[id/8].flag4 = false;
+        dstMaleFlag[id/8].flag4 = false;
+        dstFemaleFlag[id/8].flag4 = false;
+        break;
+      case 4:
+        dstStatus[id/8].status5 = 0;
+        dstMaleColorFlag[id/8].flag5 = false;
+        dstFemaleColorFlag[id/8].flag5 = false;
+        dstMaleFlag[id/8].flag5 = false;
+        dstFemaleFlag[id/8].flag5 = false;
+        break;
+      case 5:
+        dstStatus[id/8].status6 = 0;
+        dstMaleColorFlag[id/8].flag6 = false;
+        dstFemaleColorFlag[id/8].flag6 = false;
+        dstMaleFlag[id/8].flag6 = false;
+        dstFemaleFlag[id/8].flag6 = false;
+        break;
+      case 6:
+        dstStatus[id/8].status7 = 0;
+        dstMaleColorFlag[id/8].flag7 = false;
+        dstFemaleColorFlag[id/8].flag7 = false;
+        dstMaleFlag[id/8].flag7 = false;
+        dstFemaleFlag[id/8].flag7 = false;
+        break;
+      case 7:
+        dstStatus[id/8].status8 = 0;
+        dstMaleColorFlag[id/8].flag8 = false;
+        dstFemaleColorFlag[id/8].flag8 = false;
+        dstMaleFlag[id/8].flag8 = false;
+        dstFemaleFlag[id/8].flag8 = false;
+        break;
+    }
+  }
+
+  free(srcStatus);
+  free(srcMaleColorFlag);
+  free(srcFemaleColorFlag);
+  free(srcMaleFlag);
+  free(srcFemaleFlag);
 }
 
 
@@ -179,13 +327,17 @@ bool PlayerWork::CustomLoadAsyncOperation(MethodInfo *method)
     uint32_t version = 0;
     memcpy(&version, &buf[0], sizeof(uint32_t));
     bool vanillaSave = true;
+    bool natdexSave = false;
     if (version == 0x34)
     {
       // socket_log_fmt("Current version\n");
-    } else if (version == 0xFFFF0000)
+    } else if ((version & 0xFFFF0000) == 0xFFFF0000)
     {
       vanillaSave = false;
     }
+
+    natdexSave = (version & 0x0100) == 0x0100;
+
     version = 0x34;
     memcpy(&buf[0], &version, sizeof(uint32_t));
     this->LoadBytes(buffer, save_obj, *((MethodInfo **) PTR_Method_PlayerWork_LoadBytes));
@@ -198,6 +350,17 @@ bool PlayerWork::CustomLoadAsyncOperation(MethodInfo *method)
     } else {
       socket_log_fmt("Vanilla save\n");
       importTrainerSaveData(save_obj, buffer);
+    }
+
+    if (natdexSave)
+    {
+      memcpy(&save.zukanData.fields.get_status->m_Items, &buf[0x7A328], 0x1ed * sizeof(int32_t));
+      memcpy(&save.zukanData.fields.male_color_flag->m_Items, &buf[0x7aadc], 0x1ed); 
+      memcpy(&save.zukanData.fields.female_color_flag->m_Items, &buf[0x7acc9], 0x1ed);
+      memcpy(&save.zukanData.fields.male_flag->m_Items, &buf[0x7aeb6], 0x1ed); 
+      memcpy(&save.zukanData.fields.female_flag->m_Items, &buf[0x7b0a3], 0x1ed);
+    } else {
+      importZukanSaveData(save_obj, buffer);
     }
     
     this->fields._loadResult = SUCCESS;

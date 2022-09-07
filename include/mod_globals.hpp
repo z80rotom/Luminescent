@@ -5,5 +5,5 @@ enum playerwork_flags {
 };
 
 enum playerwork_values {
-    DS_SLOT_TYPE = 485;
+    DS_SLOT_TYPE = 485,
 };

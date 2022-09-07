@@ -1,6 +1,7 @@
 #ifndef _GUARD_HPP_
 #define _GUARD_HPP_
 
+#include "System/Array.hpp"
 #include "System/String.hpp"
 #include "il2cpp.hpp"
 
@@ -245,36 +246,36 @@ namespace DPData
 
     struct ZUKAN_WORK_Fields {
         struct GET_STATUS_array* get_status;
-        struct System_Boolean_array* male_color_flag;
-        struct System_Boolean_array* female_color_flag;
-        struct System_Boolean_array* male_flag;
-        struct System_Boolean_array* female_flag;
-        struct System_Boolean_array* UnknownTurn;
-        struct System_Boolean_array* UnknownColor;
-        struct System_Boolean_array* PowarunTurn;
-        struct System_Boolean_array* PowarunColor;
-        struct System_Boolean_array* DeokisisuTurn;
-        struct System_Boolean_array* DeokisisuColor;
-        struct System_Boolean_array* MinomuttiTurn;
-        struct System_Boolean_array* MinomuttiColor;
-        struct System_Boolean_array* MinomadamTurn;
-        struct System_Boolean_array* MinomadamColor;
-        struct System_Boolean_array* GaameiruTurn;
-        struct System_Boolean_array* GaameiruColor;
-        struct System_Boolean_array* TherimuTurn;
-        struct System_Boolean_array* TherimuColor;
-        struct System_Boolean_array* KaranakusiTurn;
-        struct System_Boolean_array* KaranakusiColor;
-        struct System_Boolean_array* ToritodonTurn;
-        struct System_Boolean_array* ToritodonColor;
-        struct System_Boolean_array* RotomTurn;
-        struct System_Boolean_array* RotomColor;
-        struct System_Boolean_array* GirathinaTurn;
-        struct System_Boolean_array* GirathinaColor;
-        struct System_Boolean_array* SheimiTurn;
-        struct System_Boolean_array* SheimiColor;
-        struct System_Boolean_array* AruseusuTurn;
-        struct System_Boolean_array* AruseusuColor;
+        System::Array<bool> * male_color_flag;
+        System::Array<bool> * female_color_flag;
+        System::Array<bool> * male_flag;
+        System::Array<bool> * female_flag;
+        System::Array<bool> * UnknownTurn;
+        System::Array<bool> * UnknownColor;
+        System::Array<bool> * PowarunTurn;
+        System::Array<bool> * PowarunColor;
+        System::Array<bool> * DeokisisuTurn;
+        System::Array<bool> * DeokisisuColor;
+        System::Array<bool> * MinomuttiTurn;
+        System::Array<bool> * MinomuttiColor;
+        System::Array<bool> * MinomadamTurn;
+        System::Array<bool> * MinomadamColor;
+        System::Array<bool> * GaameiruTurn;
+        System::Array<bool> * GaameiruColor;
+        System::Array<bool> * TherimuTurn;
+        System::Array<bool> * TherimuColor;
+        System::Array<bool> * KaranakusiTurn;
+        System::Array<bool> * KaranakusiColor;
+        System::Array<bool> * ToritodonTurn;
+        System::Array<bool> * ToritodonColor;
+        System::Array<bool> * RotomTurn;
+        System::Array<bool> * RotomColor;
+        System::Array<bool> * GirathinaTurn;
+        System::Array<bool> * GirathinaColor;
+        System::Array<bool> * SheimiTurn;
+        System::Array<bool> * SheimiColor;
+        System::Array<bool> * AruseusuTurn;
+        System::Array<bool> * AruseusuColor;
         struct System_Int32_array* TextVersionUp;
         bool zukan_get;
         bool zenkoku_flag;
@@ -728,7 +729,7 @@ namespace DPData
         int32_t color_type;
         int8_t app_count;
         int8_t app_index;
-        struct System_Boolean_array* app_flag;
+        System::Array<bool> * app_flag;
         uint32_t pedometer;
         struct System_Byte_array* dotart_data;
         struct System_UInt32_array* calendar_markbit;
@@ -815,7 +816,7 @@ namespace DPData
         int32_t reserved_int1;
         int32_t reserved_int2;
         int32_t reserved_int3;
-        struct System_Boolean_array* view_flag;
+        System::Array<bool> * view_flag;
         uint8_t reserved_byte1;
         uint8_t reserved_byte2;
         uint8_t reserved_byte3;

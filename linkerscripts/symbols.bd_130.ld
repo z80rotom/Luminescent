@@ -243,4 +243,5 @@ _ZN3Pml8PokePara9CoreParam7SetItemEtP10MethodInfo = 0x2049680 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common24CheckUnbreakablePokeItemEttP10MethodInfo = 0x1d0d780 - 0x05708000;
 _ZN14FieldManager_o9GetFormNoEiiiP10MethodInfo = 0x179f560 - 0x05708000;
 
-_Z17ItemWork__SubItemiiPv = 0x01aea450 - 0x05708000;
+_ZN8ItemWork7SubItemEiiPv = 0x01aea450 - 0x05708000;
+_ZN10PlayerWork9get_zukanEPN6DPData12ZUKAN_WORK_oEP10MethodInfo = 0x2cf1040 - 0x05708000;

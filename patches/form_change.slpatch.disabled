@@ -1,0 +1,21 @@
+[target=main, version=bd_130]
+24aeb90:
+    b DecideFormNoFromHoldItem
+1d0d938:
+    bl CheckUnbreakablePokeItem
+1d0db44:
+    bl CheckUnbreakablePokeItem
+1954440:
+    bl CheckUnbreakablePokeItem
+195fa0c:
+    bl CheckUnbreakablePokeItem
+195fa48:
+    bl CheckUnbreakablePokeItem
+1808174:
+    bl CheckUnbreakablePokeItem
+18081a0:
+    bl CheckUnbreakablePokeItem
+18081cc:
+    bl CheckUnbreakablePokeItem
+18081f8:
+    bl CheckUnbreakablePokeItem

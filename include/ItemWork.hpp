@@ -2,4 +2,8 @@
 
 #include "il2cpp.hpp"
 
-void ItemWork__SubItem(int itemno, int num, void *method);
+class ItemWork
+{
+public:
+    static void SubItem(int itemno, int num, void * method);
+};

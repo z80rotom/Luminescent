@@ -269,6 +269,8 @@ public:
 
   static int32_t get_zoneID(MethodInfo *method);
 
+  static DPData::ZUKAN_WORK_o get_zukan(DPData::ZUKAN_WORK_o *__return_storage_ptr__, MethodInfo * method);
+
   // 0236e9f0
   static int32_t GetInt(int32_t index, MethodInfo *method);
   // 02379290
@@ -298,6 +300,30 @@ struct TrBattleData
   bool IsBattleSearcher3:1;
   bool IsWin4:1;
   bool IsBattleSearcher4:1;
+};
+
+struct GetStatusBitfield
+{
+    int32_t status1: 4;
+    int32_t status2: 4;
+    int32_t status3: 4;
+    int32_t status4: 4;
+    int32_t status5: 4;
+    int32_t status6: 4;
+    int32_t status7: 4;
+    int32_t status8: 4;
+};
+
+struct FlagBitfield
+{
+    bool flag1: 1;
+    bool flag2: 1;
+    bool flag3: 1;
+    bool flag4: 1;
+    bool flag5: 1;
+    bool flag6: 1;
+    bool flag7: 1;
+    bool flag8: 1;
 };
 
 }
