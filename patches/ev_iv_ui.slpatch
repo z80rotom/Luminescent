@@ -1,0 +1,11 @@
+[target=main, version=bd_130]
+// 1cb2380:
+//    b displayPower1
+
+// 1d99c20:
+//    b displaySummaryPower
+1cba4f4:
+    mov x0, #0x1
+
+1cb1e40:
+    b Dpr_UI_BoxStatusPanel_GetJudgeTextCode

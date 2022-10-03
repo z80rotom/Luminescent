@@ -3,6 +3,5 @@
     b affection
 
 [target=main, version=bd_130]
-// 0247f5c0:  // Dpr.Battle.Logic.MainModule$$IsFriendshipActive
 020378d0:
     b affection

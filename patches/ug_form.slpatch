@@ -3,5 +3,5 @@
     b Dpr_UnderGround_UgPokeLottery_LotteryPoke
 // 18bec98:
 //    bl Dpr_UnderGround_UgPokeLottery_GetEnablePokes
-1efc790:
-    b GetEnablePokes_b0
+// 1efc790:
+//    b GetEnablePokes_b0

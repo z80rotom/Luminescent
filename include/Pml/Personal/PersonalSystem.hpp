@@ -8,7 +8,7 @@ namespace Pml
     {
         struct PersonalSystem
         {
-            // 027fbdc0
+            // 0x024a0ca0
             static XLSXContent::PersonalTable::SheetPersonal_o * GetPersonalData(int32_t monsno,uint16_t formno,MethodInfo *method);
             // 0x027fbe70
             static void LoadPersonalData(int32_t monsno, uint16_t formno, MethodInfo *method);

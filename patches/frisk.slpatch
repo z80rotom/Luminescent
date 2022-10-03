@@ -1,0 +1,13 @@
+[target=main, version=bd_130]
+// w8=ability number
+// w22=rnd1
+// Reroute to a function to allow more abilities to boost held item chance.
+// FieldManager$$CheckEncount
+179df3c:
+    mov w0, w8
+    bl getRnd1
+    mov w22, w0
+    nop
+    nop
+    nop
+    nop

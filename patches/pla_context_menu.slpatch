@@ -21,14 +21,6 @@
 019fbf98:
     bl patchFieldWaza
 
-// 1.3
-02ca6ea0:
-    b EvDataManager_EvCmdCallWazaOmoidashiUi_b__1539_0
-
-// 1.3
-019ae540:
-    b EvDataManager_EvCmdCallWazaOshieUi_b__0
-
 // Dpr.UI.UIWazaManage$$SetupPokemonInfo
 01dd4510:
     bl CoreParam_CollectRemindableWaza

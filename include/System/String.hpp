@@ -65,6 +65,8 @@ namespace System
         String * _CtorCharPtr(uint16_t *ptr,MethodInfo *method);
         // 02948980
         String * _CreateString(int8_t *value,MethodInfo *method);
+        // 26f8fc0
+        static String * Concat(Il2CppObject * arg0, Il2CppObject * arg1, MethodInfo * method);
         System_String_c *klass;
         void *monitor;
         System_String_Fields fields;

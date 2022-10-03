@@ -4,22 +4,9 @@
 #include "PlayerWork.hpp"
 #include "logger.hpp"
 #include "Dpr/Battle/Logic/Exp.h"
+#include "util.hpp"
 
 #include <math.h>
-
-uint32_t GetBadgeCount()
-{
-  bool bVar1 = PlayerWork::GetSytemFlag(0x81, (MethodInfo *)nullptr);
-  bool bVar2 = PlayerWork::GetSytemFlag(0x7c, (MethodInfo *)nullptr);
-  bool bVar3 = PlayerWork::GetSytemFlag(0x7d, (MethodInfo *)nullptr);
-  bool bVar4 = PlayerWork::GetSytemFlag(0x80, (MethodInfo *)nullptr);
-  bool bVar5 = PlayerWork::GetSytemFlag(0x7f, (MethodInfo *)nullptr);
-  bool bVar6 = PlayerWork::GetSytemFlag(0x7e, (MethodInfo *)nullptr);
-  bool bVar7 = PlayerWork::GetSytemFlag(0x83, (MethodInfo *)nullptr);
-  bool bVar8 = PlayerWork::GetSytemFlag(0x82, (MethodInfo *)nullptr);
-  return (bVar2 & 1) + (bVar1 & 1) + (bVar3 & 1) + (bVar4 & 1) + (bVar5 & 1) + (bVar6 & 1) +
-         (bVar7 & 1) + (bVar8 & 1);
-}
 
 uint32_t getMaxLevel() {
     uint32_t maxLevel = 100;
@@ -78,7 +65,7 @@ uint32_t Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(uint32_t base_exp,uin
         return (uint32_t) exp;
     }
 
-    // 
+    // Is Level Cap enabled
     if (!PlayerWork::GetBool(2197, (MethodInfo *) nullptr))
     {
         return (uint32_t) exp;
@@ -97,9 +84,4 @@ uint32_t Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(uint32_t base_exp,uin
 uint32_t Dpr_Battle_Logic_Exp_getexp_calc_adjust_level(uint32_t base_exp,uint16_t getpoke_lv,uint16_t deadpoke_lv,MethodInfo *method )
 {
     return Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(base_exp, getpoke_lv, deadpoke_lv, method );
-}
-
-void getMaxLevelPatch() {
-    uint32_t x = getMaxLevel();
-    asm("mov w25,%w0;" : : "r"(x));
 }

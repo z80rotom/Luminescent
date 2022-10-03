@@ -1,26 +1,30 @@
 #include "il2cpp.hpp"
 #include "PlayerWork.hpp"
+#include "ZukanWork.hpp"
+#include "Dpr/UI/ZukanInfo.hpp"
 #include "System/Array.hpp"
+#include "logger.hpp"
+#include "util.hpp"
 
 const int32_t IS_UWASU = 1;
 const int32_t IS_SEE = 2;
 const int32_t IS_GET = 3;
-const uint32_t MAX_MONS = 898;
+const uint32_t MAX_MONS = 905;
 
 struct ZukanWork
 {
     static System::Array<bool> * GetFormFlags(uint32_t monsno,uint8_t sex,bool color,MethodInfo *method);
 };
 
-System::Array<bool> * ZukanWork_GetFormFlags(uint32_t monsno,uint8_t sex,bool color,MethodInfo *method)
-{
-    return nullptr;
-}
+// External links
+extern MethodInfo * Array_IndexOf_MethodInfo;
+int32_t Array_IndexOf(System::Array<int32_t> * array, int32_t value, MethodInfo * method);
+// End external links
 
 int32_t GetZukanStatus(DPData::ZUKAN_WORK_o * zukanWork, uint32_t monsno)
 {
     DPData::GET_STATUS_array * get_status = zukanWork->fields.get_status;
-    GetStatusBitfield * bitfields = (GetStatusBitfield *) get_status->m_Items;
+    GetStatusBitfield * bitfields = (GetStatusBitfield *) &get_status->m_Items[0];
     size_t idx = monsno / 8;
     GetStatusBitfield bitfield = bitfields[idx];
     switch (monsno % 8)
@@ -49,7 +53,7 @@ int32_t GetZukanStatus(DPData::ZUKAN_WORK_o * zukanWork, uint32_t monsno)
 void SetZukanStatus(DPData::ZUKAN_WORK_o * zukanWork, uint32_t monsno, int32_t get)
 {
     DPData::GET_STATUS_array * get_status = zukanWork->fields.get_status;
-    GetStatusBitfield * bitfields = (GetStatusBitfield *) get_status->m_Items;
+    GetStatusBitfield * bitfields = (GetStatusBitfield *) &get_status->m_Items[0];
     size_t idx = monsno / 8;
     GetStatusBitfield * bitfield = &bitfields[idx];
     switch (monsno % 8)
@@ -85,7 +89,7 @@ void SetZukanStatus(DPData::ZUKAN_WORK_o * zukanWork, uint32_t monsno, int32_t g
 
 bool GetZukanFlag(System::Array<bool> * flags, uint32_t monsno)
 {
-    FlagBitfield * bitfields = (FlagBitfield *) flags->m_Items;
+    FlagBitfield * bitfields = (FlagBitfield *) &flags->m_Items[0];
     size_t idx = monsno / 8;
     FlagBitfield bitfield = bitfields[idx];
     
@@ -113,7 +117,7 @@ bool GetZukanFlag(System::Array<bool> * flags, uint32_t monsno)
 
 void SetZukanFlag(System::Array<bool> * flags, uint32_t monsno, bool flag)
 {
-    FlagBitfield * bitfields = (FlagBitfield *) flags->m_Items;
+    FlagBitfield * bitfields = (FlagBitfield *) &flags->m_Items[0];
     size_t idx = monsno / 8;
     FlagBitfield * bitfield = &bitfields[idx];
     
@@ -149,6 +153,7 @@ void SetZukanFlag(System::Array<bool> * flags, uint32_t monsno, bool flag)
 
 bool ZukanWork_IsGet1(uint32_t monsno,MethodInfo *method)
 {
+    monsno -= 1; // Real mons no
     if (monsno > MAX_MONS)
     {
         return false;
@@ -162,6 +167,7 @@ bool ZukanWork_IsGet1(uint32_t monsno,MethodInfo *method)
 
 bool ZukanWork_IsGet2(uint32_t monsno,uint8_t sex,int32_t form,bool color,MethodInfo *method)
 {
+    monsno -= 1;
     System::Array<bool> * formFlags = ZukanWork::GetFormFlags(monsno, sex, color, (MethodInfo *) nullptr);
     if (formFlags != nullptr)
     {
@@ -173,15 +179,15 @@ bool ZukanWork_IsGet2(uint32_t monsno,uint8_t sex,int32_t form,bool color,Method
     if (sex == 1)
     {
         if (color == 0) {
-            flags = zukanWork.fields.male_flag;
-        } else {
-            flags = zukanWork.fields.male_color_flag;
-        }
-    } else {
-        if (color == 0) {
             flags = zukanWork.fields.female_flag;
         } else {
             flags = zukanWork.fields.female_color_flag;
+        }
+    } else {
+        if (color == 0) {
+            flags = zukanWork.fields.male_flag;
+        } else {
+            flags = zukanWork.fields.male_color_flag;
         }
     }
 
@@ -195,6 +201,7 @@ bool ZukanWork_IsGet2(uint32_t monsno,uint8_t sex,int32_t form,bool color,Method
 
 int32_t ZukanWork_GetStatus(uint32_t monsno, MethodInfo *method)
 {
+    monsno -= 1;
     if (monsno > MAX_MONS)
     {
         return 0;
@@ -207,6 +214,7 @@ int32_t ZukanWork_GetStatus(uint32_t monsno, MethodInfo *method)
 
 bool ZukanWork_IsSee(uint32_t monsno, MethodInfo *method)
 {
+    monsno -= 1;
     if (monsno > MAX_MONS)
     {
         return false;
@@ -220,6 +228,7 @@ bool ZukanWork_IsSee(uint32_t monsno, MethodInfo *method)
 
 bool ZukanWork_IsUwasa(uint32_t monsno, MethodInfo *method)
 {
+    monsno -= 1;
     if (monsno > MAX_MONS)
     {
         return false;
@@ -233,6 +242,7 @@ bool ZukanWork_IsUwasa(uint32_t monsno, MethodInfo *method)
 
 void ZukanWork_SetPoke(uint32_t monsno, int32_t get, uint8_t sex, int32_t form, bool color, MethodInfo *method)
 {
+    monsno -= 1;
     if (monsno > MAX_MONS)
     {
         return;
@@ -256,15 +266,15 @@ void ZukanWork_SetPoke(uint32_t monsno, int32_t get, uint8_t sex, int32_t form, 
     if (sex == 1)
     {
         if (color == 0) {
-            flags = zukanWork.fields.male_flag;
-        } else {
-            flags = zukanWork.fields.male_color_flag;
-        }
-    } else {
-        if (color == 0) {
             flags = zukanWork.fields.female_flag;
         } else {
             flags = zukanWork.fields.female_color_flag;
+        }
+    } else {
+        if (color == 0) {
+            flags = zukanWork.fields.male_flag;
+        } else {
+            flags = zukanWork.fields.male_color_flag;
         }
     }
 
@@ -277,10 +287,148 @@ void ZukanWork_SetPoke(uint32_t monsno, int32_t get, uint8_t sex, int32_t form, 
 
 int32_t ZukanWork_SeeCount(bool isRating, MethodInfo *method)
 {
-    return 0;
+    DPData::ZUKAN_WORK_o zukanWork = PlayerWork::get_zukan(nullptr, nullptr);
+    if (!zukanWork.fields.zukan_get)
+    {
+        return 0;
+    }
+
+    int32_t seeCount = 0;
+    for (uint32_t monsno = 0; monsno < MAX_MONS; monsno++)
+    {
+        if (isRating)
+        {
+            int32_t index = Array_IndexOf(ZukanWork_TypeInfo->static_fields->ZukanRatingExcludeNos, monsno+1, Array_IndexOf_MethodInfo);
+            if (index >= 0)
+            {
+                continue;
+            }
+        }
+
+        int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno);
+        if (zukanStatus == IS_SEE)
+        {
+            seeCount += 1;
+        }
+    }
+
+    return seeCount;
 }
 
-int32_t ZukanWork_SeeSinouCount(bool isRating,MethodInfo *method)
+int32_t ZukanWork_SeeSinouCount(bool isRating, MethodInfo *method)
 {
-    return 0;
+    DPData::ZUKAN_WORK_o zukanWork = PlayerWork::get_zukan(nullptr, nullptr);
+    if (!zukanWork.fields.zukan_get)
+    {
+        return 0;
+    }
+
+    int32_t seeCount = 0;
+    System::Array<int32_t> * ShinouZukanNos = ZukanWork_TypeInfo->static_fields->ShinouZukanNos;
+    for (il2cpp_array_size_t i = 0; i < ShinouZukanNos->max_length; i++)
+    {
+        int32_t monsno = ShinouZukanNos->m_Items[i];
+        if (isRating)
+        {
+            int32_t index = Array_IndexOf(ZukanWork_TypeInfo->static_fields->ZukanRatingExcludeNos, monsno+1, Array_IndexOf_MethodInfo);
+            if (index >= 0)
+            {
+                continue;
+            }
+        }
+
+        int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno);
+        if (zukanStatus == IS_SEE)
+        {
+            seeCount += 1;
+        }
+    }
+
+    return seeCount;
+}
+
+int32_t ZukanWork_GetCount(bool isRating, MethodInfo *method)
+{
+    DPData::ZUKAN_WORK_o zukanWork = PlayerWork::get_zukan(nullptr, nullptr);
+    if (!zukanWork.fields.zukan_get)
+    {
+        return 0;
+    }
+
+    int32_t seeCount = 0;
+    for (uint32_t monsno = 0; monsno < MAX_MONS; monsno++)
+    {
+        if (isRating)
+        {
+            int32_t index = Array_IndexOf(ZukanWork_TypeInfo->static_fields->ZukanRatingExcludeNos, monsno+1, Array_IndexOf_MethodInfo);
+            if (index >= 0)
+            {
+                continue;
+            }
+        }
+
+        int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno);
+        if (zukanStatus == IS_GET)
+        {
+            seeCount += 1;
+        }
+    }
+
+    return seeCount;
+}
+
+int32_t ZukanWork_GetSinouCount(bool isRating, MethodInfo *method)
+{
+    DPData::ZUKAN_WORK_o zukanWork = PlayerWork::get_zukan(nullptr, nullptr);
+    if (!zukanWork.fields.zukan_get)
+    {
+        return 0;
+    }
+
+    int32_t seeCount = 0;
+    System::Array<int32_t> * ShinouZukanNos = ZukanWork_TypeInfo->static_fields->ShinouZukanNos;
+    for (il2cpp_array_size_t i = 0; i < ShinouZukanNos->max_length; i++)
+    {
+        int32_t monsno = ShinouZukanNos->m_Items[i];
+        if (isRating)
+        {
+            int32_t index = Array_IndexOf(ZukanWork_TypeInfo->static_fields->ZukanRatingExcludeNos, monsno+1, Array_IndexOf_MethodInfo);
+            if (index >= 0)
+            {
+                continue;
+            }
+        }
+
+        int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno);
+        if (zukanStatus == IS_GET)
+        {
+            seeCount += 1;
+        }
+    }
+
+    return seeCount;
+}
+
+// TODO: bool ZukanWork$$CheckShinouZukanCompSee(MethodInfo *method)
+// TODO: bool ZukanWork$$CheckZenkokuZukanCompGet(MethodInfo *method)
+
+struct Dpr_UI_UIText_o
+{
+    void SetupMessage(System::String * messageFile, int32_t messageIndex, MethodInfo * method);
+};
+
+void DescText_SetupMessage(Dpr_UI_UIText_o * __this, System::String * messageFile, int32_t monsno, Dpr::UI::ZukanInfo_o * zukanInfo)
+{
+    int32_t currentIndex = zukanInfo->fields.modelIndexSelector->fields.currentIndex;
+    Dpr::UI::ZukanInfo_ModelParam_o * modelParam = zukanInfo->fields.modelParams->m_Items[currentIndex];
+
+    int32_t messageIndex;
+    if (modelParam->fields.FormNo == 0 || zukanInfo->fields.formIndex == 0)
+    {
+        messageIndex = monsno;
+    } else {
+        messageIndex = zukanInfo->fields.formIndex + modelParam->fields.FormNo - 1;
+    }
+
+    __this->SetupMessage(messageFile, messageIndex, nullptr);
 }

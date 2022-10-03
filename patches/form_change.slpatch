@@ -2,9 +2,9 @@
 24aeb90:
     b DecideFormNoFromHoldItem
 1d0d938:
-    bl CheckUnbreakablePokeItem
+    b CheckUnbreakablePokeItem
 1d0db44:
-    bl CheckUnbreakablePokeItem
+    b CheckUnbreakablePokeItem
 1954440:
     bl CheckUnbreakablePokeItem
 195fa0c:

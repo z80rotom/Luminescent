@@ -41,6 +41,8 @@ namespace Pml
             InitialSpec_VTable vtable;
         };
         struct InitialSpec_o {
+            void ctor(MethodInfo * method);
+
             InitialSpec_c *klass;
             void *monitor;
             InitialSpec_Fields fields;

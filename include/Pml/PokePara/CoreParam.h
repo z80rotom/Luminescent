@@ -29,7 +29,7 @@ namespace Pml
         };
 
         struct CoreParam_FormChangeResult_o;
-        class CoreParam {
+        struct CoreParam {
             public:
                 // RVA: 0x23AC870 Offset: 0x23AC971 VA: 0x23AC870
 	            // void Evolve(MonsNo nextMonsno, uint routeIndex);
@@ -52,6 +52,13 @@ namespace Pml
                 uint8_t GetMezapaType(MethodInfo *method);
 
                 void ChangeFormNo(uint16_t nextFormno, CoreParam_FormChangeResult_o *pResult, MethodInfo *method);
+                uint32_t GetPower(int32_t powerId, MethodInfo *method);
+                // 2044680
+                bool IsTrainingDone(int32_t powerId, MethodInfo *method);
+                // 2044610
+                uint32_t GetTalentPower(int32_t powerId, MethodInfo *method);
+                // 204a5a0
+                uint8_t GetRareType(MethodInfo * method);
 
 
                 bool IsNull(MethodInfo * method);
@@ -61,15 +68,14 @@ namespace Pml
 
 
                 System::Collections::Generic::HashSet_WazaNo__o * CollectRemindableWaza( MethodInfo *method );
-            private:
-                // 0248f760
-                System::Collections::Generic::HashSet_WazaNo__o * _CollectRemindableWaza( MethodInfo *method );
 
 
-            private:
                 CoreParam_c *klass;
                 void *monitor;
                 CoreParam_Fields fields;
+            private:
+                // 0248f760
+                System::Collections::Generic::HashSet_WazaNo__o * _CollectRemindableWaza( MethodInfo *method );
         };
     } // namespace PokePara
     

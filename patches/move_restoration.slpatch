@@ -3,10 +3,10 @@
     b handler_Karagenki_AtkPow
 18049f0:
     b handler_Karagenki_WazaPow
-1818940:
-    b handler_YubiWoFuru
-1818aa0:
-    b handler_YubiWoFuru_Msg
+//1818940:
+//    b handler_YubiWoFuru
+// 1818aa0:
+//    b handler_YubiWoFuru_Msg
 18298a8:
     bl Waza_system_array_new
 182af30:

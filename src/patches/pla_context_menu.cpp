@@ -69,6 +69,8 @@ extern System::String ** PTR_StringLiteral_9186_SS_strinput_007;
 
 static Pml::PokePara::PokemonParam_o* sPokemonParam = nullptr;
 static bool sCloseWindow = false;
+static MethodInfo * EvCmdCallWazaOshieUi_b__0_MethodInfo = nullptr;
+static MethodInfo * EvCmdCallWazaOmoidashiUi_b__1539_0_MethodInfo = nullptr;
 
 struct System_Func_string__SoftwareKeyboard_ErrorState__ValueTuple_bool__string___o;
 struct UnityEngine_Events_UnityAction_bool__string__o;
@@ -492,6 +494,16 @@ void EvDataManager_EvCmdCallWazaOshieUi_b__0(Dpr::EvScript::EvDataManager_Displa
     __this->fields.__4__this->LearnWaza(__this->fields.param, learnWazaNo, unlearnWazaNo, (MethodInfo *) nullptr);
 }
 
+MethodInfo * EvCmdCallWazaOshieUi_b__0_getMethodInfo()
+{
+    if (EvCmdCallWazaOshieUi_b__0_MethodInfo == nullptr)
+    {
+        EvCmdCallWazaOshieUi_b__0_MethodInfo = copyMethodInfo(*PTR_EvCmdCallWazaOshieUi_b__0, (Il2CppMethodPointer) &EvDataManager_EvCmdCallWazaOshieUi_b__0);
+    }
+
+    return EvCmdCallWazaOshieUi_b__0_MethodInfo;
+}
+
 void EvDataManager_EvCmdCallWazaOmoidashiUi_b__1539_0(Dpr::EvScript::EvDataManager_o *__this, int32_t learnWazaNo, int32_t unlearnWazaNo, MethodInfo *method)
 {
     socket_log_fmt("WazaOmoidashiUi\n");
@@ -536,11 +548,12 @@ void EvDataManager_EvCmdCallWazaOmoidashiUi_b__1539_0(Dpr::EvScript::EvDataManag
     resultCallback = (System_Action_WazaNo__WazaNo__o *) 
         il2cpp_object_new(*PTR_System_Action_WazaNo__WazaNo__TypeInfo);  
     
-    socket_log_fmt("PTR_EvCmdCallWazaOshieUi_b__0: %08X\n", PTR_EvCmdCallWazaOshieUi_b__0);
-    socket_log_fmt("*PTR_EvCmdCallWazaOshieUi_b__0: %08X\n", *PTR_EvCmdCallWazaOshieUi_b__0);
+    // socket_log_fmt("PTR_EvCmdCallWazaOshieUi_b__0: %08X\n", PTR_EvCmdCallWazaOshieUi_b__0);
+    // socket_log_fmt("*PTR_EvCmdCallWazaOshieUi_b__0: %08X\n", *PTR_EvCmdCallWazaOshieUi_b__0);
+    // socket_log_fmt("PTR_EvCmdCallWazaOshieUi_b__0->methodPointer: %08X\n", (void *) (*PTR_EvCmdCallWazaOshieUi_b__0)->methodPointer);
     // PTR_Method$Dpr.EvScript.EvDataManager.<>c__DisplayClass1541_0.<EvCmdCallWazaOshi eUi>b__0()_04b79660
     resultCallback->ctor(evDataManagerDispClass, 
-                        *PTR_EvCmdCallWazaOshieUi_b__0,
+                        EvCmdCallWazaOshieUi_b__0_getMethodInfo(),// *PTR_EvCmdCallWazaOshieUi_b__0,
                         *PTR_System_Action_WazaNo__WazaNo__o_ctor);
 
     socket_log_fmt("resultCallback: %08X\n", resultCallback);
@@ -590,6 +603,17 @@ void EvDataManager_EvCmdCallWazaOmoidashiUi_b__1539_0(Dpr::EvScript::EvDataManag
     // EvDataManager_EvCmdCallWazaOmoidashiUi_b__1539_0Orig(__this, learnWazaNo, unlearnWazaNo, method);
 }
 
+
+MethodInfo * EvCmdCallWazaOmoidashiUi_b__1539_0_getMethodInfo()
+{
+    if (EvCmdCallWazaOmoidashiUi_b__1539_0_MethodInfo == nullptr)
+    {
+        EvCmdCallWazaOmoidashiUi_b__1539_0_MethodInfo = copyMethodInfo(*PTR_EvCmdCallWazaOmoidashiUi_b__1539_0, (Il2CppMethodPointer) &EvDataManager_EvCmdCallWazaOmoidashiUi_b__1539_0);
+    }
+
+    return EvCmdCallWazaOmoidashiUi_b__1539_0_MethodInfo;
+}
+
 void patchPokemonSwap(PokemonWindow_DisplayClass25_0_o * displayClass, MethodInfo *method)
 {
     socket_log_fmt("Patched Pokemon Swap\n");
@@ -632,7 +656,7 @@ void patchPokemonSwap(PokemonWindow_DisplayClass25_0_o * displayClass, MethodInf
     socket_log_fmt("evDataManager: %08X\n", evDataManager);
 
     resultCallback->ctor(evDataManager, 
-                        *PTR_EvCmdCallWazaOmoidashiUi_b__1539_0,
+                        EvCmdCallWazaOmoidashiUi_b__1539_0_getMethodInfo(),// *PTR_EvCmdCallWazaOmoidashiUi_b__1539_0,
                         *PTR_System_Action_WazaNo__WazaNo__o_ctor);
 
     socket_log_fmt("resultCallback: %08X\n", resultCallback);

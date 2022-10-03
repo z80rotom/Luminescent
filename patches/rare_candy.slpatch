@@ -1,9 +1,0 @@
-[target=main, version=bd_130]
-0185eb8c:
-    bl infinite_candies
-
-0185cc00:
-    bl getMaxLevelPatch
-
-0185cc98:
-    bl subsPatch

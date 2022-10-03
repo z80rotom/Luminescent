@@ -16,10 +16,8 @@
     mov x1, x2
     b WAZADATA_GetType
 // Dpr.UI.WazaManagePokemonStausPanel$$Setup
-1a41bd4:
-    mov x2, x0
-1a41bf8:
-    bl WazaManageSubWazaPanel_Setup
+1a41bd8:
+    bl WazaManagePokemonStausPanel_GetWazaNo
 // Dpr.UI.WazaManageSubWazaPanel$$Setup
 1a41d54:
     bl WazaManageSubWazaPanel_GetType

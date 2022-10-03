@@ -2,6 +2,7 @@
 
 #include "il2cpp.hpp"
 #include "System/String.hpp"
+#include "System/Array.hpp"
 
 struct System_Action_EvDataManager_EntityParam__o;
 struct System_Collections_Generic_Stack_EvDataManager_EvCallData__o;

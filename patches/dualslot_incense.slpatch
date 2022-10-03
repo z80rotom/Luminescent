@@ -1,0 +1,37 @@
+[target=main, version=bd_130]
+// Don't display message to make things play nice
+1bdeefc:
+    nop
+
+// void Dpr.UI.UIBag.<>c__DisplayClass127_1$$<ShowItemContextMenu>b__11(Dpr_UI_UIBag___c__DisplayClass127_1_o *__this,MethodInfo *method)
+1bdedfc:
+    mov x1, x19
+    bl UIManager_UseDSPlayerItem
+
+// 2cf2e30:
+//    b PlayerWork_get_DoubleSlot
+
+19b3bd4:
+    ldr x0, [sp, #0xB0]
+    bl PlayerWork_set_DoubleSlot
+
+019b31fc:
+    bl Incense_GameManager_GetFieldEncountData
+019b32d0:
+    bl Incense_GameManager_GetFieldEncountData
+019b8338:
+    bl Incense_GameManager_GetFieldEncountData
+019b51dc:
+    bl Incense_GameManager_GetFieldEncountData
+019b521c:
+    bl Incense_GameManager_GetFieldEncountData
+019b5b34:
+    bl Incense_GameManager_GetFieldEncountData
+019b5d1c:
+    bl Incense_GameManager_GetFieldEncountData
+019b8824:
+    bl Incense_GameManager_GetFieldEncountData
+018cc5d4:
+    bl Incense_GameManager_GetFieldEncountData
+017da7dc:
+    bl Incense_GameManager_GetFieldEncountData

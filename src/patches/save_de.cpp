@@ -354,12 +354,14 @@ bool PlayerWork::CustomLoadAsyncOperation(MethodInfo *method)
 
     if (natdexSave)
     {
+      socket_log_fmt("Nat Dex Save\n");
       memcpy(&save.zukanData.fields.get_status->m_Items, &buf[0x7A328], 0x1ed * sizeof(int32_t));
       memcpy(&save.zukanData.fields.male_color_flag->m_Items, &buf[0x7aadc], 0x1ed); 
       memcpy(&save.zukanData.fields.female_color_flag->m_Items, &buf[0x7acc9], 0x1ed);
       memcpy(&save.zukanData.fields.male_flag->m_Items, &buf[0x7aeb6], 0x1ed); 
       memcpy(&save.zukanData.fields.female_flag->m_Items, &buf[0x7b0a3], 0x1ed);
     } else {
+      socket_log_fmt("Old Lumi Save\n");
       importZukanSaveData(save_obj, buffer);
     }
     

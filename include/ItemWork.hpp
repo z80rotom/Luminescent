@@ -5,5 +5,7 @@
 class ItemWork
 {
 public:
-    static void SubItem(int itemno, int num, void * method);
+    static int32_t SubItem(int32_t itemno, int32_t num, MethodInfo * method);
+    // 1aeb550
+    static bool IsDsPlayer(MethodInfo *method);
 };

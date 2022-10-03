@@ -134,16 +134,18 @@ void Dpr_UnderGround_UgPokeLottery_LotteryPoke(UgPokeLottery_o *__this,
         socket_log_fmt("Slot: %i\n", i);
         uint32_t origListIdx = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % origList->max_length;
         socket_log_fmt("origListIdx: %X\n", origListIdx);
-        int32_t version = origList->m_Items[origListIdx]->fields.version;
-        int32_t monsNo = origList->m_Items[origListIdx]->fields.monsno;
-        socket_log_fmt("Version: %X\n", version);
+        // int32_t version = origList->m_Items[origListIdx]->fields.version;
+        int32_t inMonsNo = origList->m_Items[origListIdx]->fields.monsno;
+        int32_t monsNo = inMonsNo & 0x0000FFFF;
+        int32_t formNo = (inMonsNo & 0xFFFF0000) >> 16;
+        // socket_log_fmt("Version: %X\n", version);
         socket_log_fmt("MonsNo: %X\n", monsNo);
         Pml::PokePara::CoreParam * poke_param = __this->CreatePokemonParam_by_Tokusei(monsNo, rareTryCount, (MethodInfo *) nullptr);
         socket_log_fmt("Poke Param: %X\n", poke_param);
-        if (version != 0)
+        if (formNo != 0)
         {
             socket_log_fmt("Changing form of pokemon\n");
-            poke_param->ChangeFormNo((uint16_t) version, nullptr, (MethodInfo *) nullptr);
+            poke_param->ChangeFormNo((uint16_t) formNo, nullptr, (MethodInfo *) nullptr);
         }
         slots->fields._items->m_Items[i]->fields.param = poke_param;
     }

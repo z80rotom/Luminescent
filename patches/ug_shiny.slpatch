@@ -1,0 +1,20 @@
+[target=main, version=bd_130]
+// UgResManager$$AppendAsset
+// mov sex into x25 so that I can still access x21 for pokemon param
+1b1b230:
+    mov x25, x0
+
+// UgResManager$$AppendAsset
+// x21 = pokeParam
+// x3 = rare
+// x0, x22 = monsno
+// x2, x25 = sex
+// w1, w23 = formNo
+1b1b24c:
+    mov x0, x21
+    bl CoreParam_GetRareType
+    mov w3, w0
+    mov w0, w22
+    mov w1, w23
+    mov w2, w25
+    bl DataManager_GetPokemonCatalog

@@ -61,6 +61,7 @@ using namespace Dpr::Field::FieldEncount;
 
 void LastProc(EncountResult_o ** pResult, ENC_FLD_SPA_o * pSpa, MethodInfo *method)
 {
+    socket_log_fmt("LastProc\n");
     EncountResult_Fields * result = &((*pResult)->fields);
     ENC_FLD_SPA_Fields * spa = &pSpa->fields;
 
@@ -77,19 +78,29 @@ void LastProc(EncountResult_o ** pResult, ENC_FLD_SPA_o * pSpa, MethodInfo *meth
 
     int32_t UNOWN_ID = 0xC9;
 
+    int32_t cacheKaranaForm = 0;
     for (il2cpp_array_size_t i = 0; i < result->Enemy->max_length; i++)
     {
-        int32_t enemy = result->Enemy->m_Items[i];
+        socket_log_fmt("[LastProc] result->Enemy->m_Items[i]: %08X\n", result->Enemy->m_Items[i]);
+        int32_t enemy = result->Enemy->m_Items[i] & 0x0000FFFF;
+        int32_t karanaForm = (result->Enemy->m_Items[i] & 0xFFFF0000) >> 16;
+        if (karanaForm != 0)
+        {
+            cacheKaranaForm = karanaForm;
+        }
+        result->Enemy->m_Items[i] = enemy;
         if (enemy == UNOWN_ID) {
             result->annoForm = spa->AnnoonTblType;
         } else {
-            result->karanaForm = spa->FormProb->m_Items[i];
+            socket_log_fmt("[LastProc] karanaForm: %08X\n", cacheKaranaForm);
+            result->karanaForm = cacheKaranaForm;
         }
     }
 }
 
 uint16_t GetFormNo(FieldManager_o *__this, int32_t mons, int32_t karana, int32_t anno, MethodInfo *method)
 {
+    socket_log_fmt("[GetFormNo] karana: %08X\n", karana);
     // Should be enough to just round robin through this function to get the form number.
     int32_t UNOWN_ID = 0xC9;
     if (UNOWN_ID != mons)

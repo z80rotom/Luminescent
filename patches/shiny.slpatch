@@ -1,44 +1,52 @@
-[target=main, version=bd_113]
-02808660:  // Pml.PokePara.CalcTool$$IsRareColor
-    b shinyPatch
-
-028086f0:  // Pml.PokePara.CalcTool$$CalcRareCheckValue
-    b shinyPatch2
-
-02808b24:  // Pml.PokePara.CalcTool$$CalcRareColorTypeByID
-    mov w19, w0
-    mov w20, w1
-    bl shinyPatch3
-    ldp x29,x30,[sp, #0x20]
-    ldp x20,x19,[sp, #0x10]
-    ldp x22,x21,[sp], #0x30
-    ret
-
-02808710:  // Pml.PokePara.CalcTool$$CorrectColorRndForNormal | TODO
-    mov w0, w1
-    ret
-
-02808870:  // Pml.PokePara.CalcTool$$CorrectColorRndForRare | TODO
-    mov w0, w1
-    ret
-
-
 [target=main, version=bd_130]
 // x21 = spec
 // x19 = pFixSpec
 
-// 0x3ffffffff
+// != 0xffffffffffffffff
+2053938:
+    mov x0, x19
+    bl Pml_Local_Random_GetValue_Hook
 
-// 1.1.3
-// 0249b614:
-// 1.3
+2053914:
+    mov x0, x20
+    mov x1, x19
+    bl Pml_Local_RandomGenerator_GetRand_Hook
+
+// 0xffffffffffffffff
+2053924:
+    mov x0, x19
+    bl Pml_Local_Random_GetValue_Hook
+
+20538f0:
+    mov x0, x20
+    mov x1, x19
+    bl Pml_Local_RandomGenerator_GetRand_Hook
+
+// 0x1ffffffff
+2053aac:
+    mov x0, x19
+    bl Pml_Local_Random_GetValue_Hook
+
+2053a50:
+    mov x0, x20
+    mov x1, x19
+    bl Pml_Local_RandomGenerator_GetRand_Hook
+
+// 0x2ffffffff
+2053ad8:
+    mov x0, x19
+    bl Pml_Local_Random_GetValue_Hook
+
+2053a80:
+    mov x0, x20
+    mov x1, x19
+    bl Pml_Local_RandomGenerator_GetRand_Hook
+
+// 0x3ffffffff
 02053a04:
     mov x0, x19
     bl Pml_Local_Random_GetValue_Hook
 
-// 1.1.3
-// 0249b5a8:
-// 1.2, might be the wrong set call
 02053998:
     mov x0, x20
     mov x1, x19

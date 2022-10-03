@@ -108,6 +108,34 @@ struct Il2CppObject
     void *monitor;
 };
 
+typedef void(*Il2CppMethodPointer)();
+
+struct MethodInfo
+{
+    Il2CppMethodPointer methodPointer;
+    void* invoker_method;
+    const char* name;
+    Il2CppClass *klass;
+    const Il2CppType *return_type;
+    const void* parameters;
+    union
+    {
+        const Il2CppRGCTXData* rgctx_data;
+        const void* methodDefinition;
+    };
+    union
+    {
+        const void* genericMethod;
+        const void* genericContainer;
+    };
+    uint32_t token;
+    uint16_t flags;
+    uint16_t iflags;
+    uint16_t slot;
+    uint8_t parameters_count;
+    uint8_t bitflags;
+};
+
 typedef uintptr_t il2cpp_array_size_t;
 typedef int32_t il2cpp_array_lower_bound_t;
 struct Il2CppArrayBounds
