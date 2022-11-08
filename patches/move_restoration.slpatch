@@ -1,20 +1,20 @@
 [target=main, version=bd_130]
-1804930:
-    b handler_Karagenki_AtkPow
-18049f0:
-    b handler_Karagenki_WazaPow
+// 1804930:
+//     b handler_Karagenki_AtkPow
+// 18049f0:
+//    b handler_Karagenki_WazaPow
 //1818940:
 //    b handler_YubiWoFuru
 // 1818aa0:
 //    b handler_YubiWoFuru_Msg
 18298a8:
     bl Waza_system_array_new
-182af30:
-    bl Karagenki_ctor
+// 182af30:
+//    bl Karagenki_ctor
 // 182ccb4:
 //    bl YubiWoFuru_ctor
-182a530:
-    bl TripleKick_ctor
+// 182a530:
+//    bl TripleKick_ctor
 // Should be fine to use the default handler for checkHide
 // 1805e80:
 //    b handler_Kaminari_checkHide

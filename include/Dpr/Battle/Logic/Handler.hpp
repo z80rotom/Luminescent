@@ -19,6 +19,7 @@ namespace Dpr
 
                 struct Waza_HandlerGetFunc_o {
                     void ctor(intptr_t m_target, MethodInfo * method);
+                    void ctor(Il2CppMethodPointer methodPointer);
                     Waza_HandlerGetFunc_c *klass;
                     void *monitor;
                     Waza_HandlerGetFunc_Fields fields;
