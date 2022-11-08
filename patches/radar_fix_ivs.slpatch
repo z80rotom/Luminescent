@@ -1,0 +1,29 @@
+[target=main, version=bd_130]
+
+019BD19C:  // Dpr.Field.SwayGrass$$RensaTalent
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+
+019BD1C8:
+    cmp  w8, #0x28
+    b.hs #0x40
+
+019BD1D4:
+    b.lt #0x54
+
+019BD1DC:
+    b.lo #0x5c
+
+019BD208:
+    nop
+    nop
+
+019BD214:
+    b.lo #0x34

@@ -1,0 +1,25 @@
+[target=main, version=bd_130]
+
+019BB344:  // Dpr.Field.SwayGrass$$GetChainFlg
+    movz w8, #0x1c
+
+019BB2F8:
+    movz w8, #0x58
+
+019BB33C:
+    movz w8, #0x44
+
+019BB334:
+    movz w8, #0x30
+
+019BB310:
+    movz w8, #0x26
+
+019BB318:
+    movz w8, #0x3a
+
+019BB324:
+    movz w8, #0x4e
+    
+019BB350:
+    movz w8, #0x62
