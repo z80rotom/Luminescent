@@ -1,6 +1,7 @@
 #include "Dpr/Battle/Logic/Common.hpp"
 #include "Dpr/Battle/Logic/Calc.hpp"
 #include "Dpr/Battle/Logic/EventFactor.hpp"
+#include "Dpr/Battle/Logic/EventID.hpp"
 #include "Dpr/Battle/Logic/Handler.hpp"
 #include "Dpr/Battle/Logic/Tables.hpp"
 #include "Dpr/Battle/Logic/StrParam.hpp"
@@ -66,6 +67,8 @@ constexpr uint32_t NUM_NEW_BTL_STRID_SET = 6;
 constexpr uint32_t NUM_NEW_BTL_STRID_STD = 6;
 constexpr uint32_t NUM_BTL_STRID_STD = 547;
 
+extern void * DAT_03a6bb14;
+
 static uint32_t gMagnitude = 6;
 int32_t MAGNITUDE_POWER_TABLE[7] = {
     10,
@@ -129,6 +132,10 @@ void handler_Magnitude_WazaPow(EventFactor_EventHandlerArgs_o **args, uint8_t po
 
 void handler_Magnitude_Msg(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
 {
+    system_load_typeinfo(DAT_03a6bb14);
+    system_load_typeinfo((void *)0xa9bf);
+    il2cpp_runtime_class_init(Common_TypeInfo);
+
     // TODO: Stubbed
     socket_log_fmt("handler_Magnitude_Msg\n");
     int32_t evPokeID = Common::GetEventVar(args, POKEID_ATK, (MethodInfo *) nullptr);
@@ -137,6 +144,13 @@ void handler_Magnitude_Msg(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID
     {
         return;
     }
+
+    socket_log_fmt("DAT_03a6bb14 %08X\n", DAT_03a6bb14);
+    socket_log_fmt("Common_TypeInfo: %08X\n", Common_TypeInfo);
+    socket_log_fmt("Section_FromEvent_Message::Description_TypeInfo: %08X\n", Section_FromEvent_Message::Description_TypeInfo);
+    socket_log_fmt("Common::Message: %08X\n", &Common::Message);
+    socket_log_fmt("Section_FromEvent_Message::Description_o::ctor: %08X\n", &Section_FromEvent_Message::Description_o::ctor);
+    socket_log_fmt("StrParam_o::Setup: %08X\n", &StrParam_o::Setup);
 
     gMagnitude = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % 7;
     Section_FromEvent_Message::Description_o * desc = (Section_FromEvent_Message::Description_o *) il2cpp_object_new(Section_FromEvent_Message::Description_TypeInfo);
@@ -164,7 +178,6 @@ int32_t YUBI_WO_FURU_ENTRIES[NUM_YUBI_WO_FURU_MOVES] = {
 };
 
 // 4c7a3b0
-extern MethodInfo * Handler_Karagenki_WazaPowMethodInfo;
 
 // static MethodInfo * sAddReturnMethodInfo = nullptr;
 // static MethodInfo * sAddFrustrationMethodInfo = nullptr;
@@ -174,21 +187,8 @@ static System::Array<EventFactor_EventHandlerTable_o *> * sReturnEventHandlerTab
 static System::Array<EventFactor_EventHandlerTable_o *> * sFrustrationEventHandlerTable = nullptr;
 static System::Array<EventFactor_EventHandlerTable_o *> * sMagnitudeEventHandlerTable = nullptr;
 
-const int16_t EVENT_ID_REQWAZA_MSG = 26;
+const int16_t EVENT_ID_REQWAZA_MSG = 27;
 const int16_t EVENT_ID_WAZA_POWER = 70;
-
-
-EventFactor_EventHandlerTable_o * createEventHandlerTable(uint16_t eventID, Il2CppMethodPointer methodPointer)
-{
-    MethodInfo * method = copyMethodInfo(Handler_Karagenki_WazaPowMethodInfo, methodPointer);
-    EventFactor_EventHandlerTable_o * evtHandlerTable = (EventFactor_EventHandlerTable_o *) il2cpp_object_new(EventFactor_EventHandlerTable_TypeInfo);
-    EventFactor_EventHandler_o * evtHandler = (EventFactor_EventHandler_o *) il2cpp_object_new(EventFactor_EventHandler_TypeInfo);
-    evtHandler->ctor(0, method);
-    evtHandlerTable->fields.eventID = eventID;
-    evtHandlerTable->fields.eventHandler = evtHandler;
-
-    return evtHandlerTable;
-}
 
 // Dpr.Battle.Logic.Handler.Waza$$
 System::Array<EventFactor_EventHandlerTable_o *> * ADD_Return(MethodInfo *method)
@@ -220,7 +220,7 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_Magnitude(MethodInfo *met
     socket_log_fmt("ADD_Magnitude\n");
     if (sMagnitudeEventHandlerTable == nullptr) {
         // socket_log_fmt("ADD_Magnitude init\n");
-        sMagnitudeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
+        sMagnitudeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
         sMagnitudeEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, (Il2CppMethodPointer) &handler_Magnitude_WazaPow);
         sMagnitudeEventHandlerTable->m_Items[1] = createEventHandlerTable(EVENT_ID_REQWAZA_MSG, (Il2CppMethodPointer) &handler_Magnitude_Msg);
     }

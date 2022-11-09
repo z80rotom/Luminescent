@@ -1,5 +1,8 @@
 #include "util.hpp"
+#include "il2cpp-api.h"
 #include "PlayerWork.hpp"
+
+extern MethodInfo * Handler_Karagenki_WazaPowMethodInfo;
 
 void system_load_typeinfo(void * typeInfo)
 {
@@ -40,4 +43,16 @@ uint32_t GetBadgeCount()
   bool bVar8 = PlayerWork::GetSytemFlag(0x82, (MethodInfo *)nullptr);
   return (bVar2 & 1) + (bVar1 & 1) + (bVar3 & 1) + (bVar4 & 1) + (bVar5 & 1) + (bVar6 & 1) +
          (bVar7 & 1) + (bVar8 & 1);
+}
+
+Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * createEventHandlerTable(uint16_t eventID, Il2CppMethodPointer methodPointer)
+{
+    MethodInfo * method = copyMethodInfo(Handler_Karagenki_WazaPowMethodInfo, methodPointer);
+    Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * evtHandlerTable = (Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *) il2cpp_object_new(Dpr::Battle::Logic::EventFactor_EventHandlerTable_TypeInfo);
+    Dpr::Battle::Logic::EventFactor_EventHandler_o * evtHandler = (Dpr::Battle::Logic::EventFactor_EventHandler_o *) il2cpp_object_new(Dpr::Battle::Logic::EventFactor_EventHandler_TypeInfo);
+    evtHandler->ctor(0, method);
+    evtHandlerTable->fields.eventID = eventID;
+    evtHandlerTable->fields.eventHandler = evtHandler;
+
+    return evtHandlerTable;
 }

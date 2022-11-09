@@ -295,3 +295,7 @@ _ZN3Dpr6Battle5Logic38EventFactor_EventHandlerTable_TypeInfoE = 0x04c5b158 - 0x0
 _ZN3Dpr6Battle5Logic33EventFactor_EventHandler_TypeInfoE = 0x04c5b150 - 0x05708000;
 _ZN3Dpr6Battle5Logic26EventFactor_EventHandler_o4ctorElP10MethodInfo = 0x1d12b60 - 0x05708000;
 _ZN3Dpr6Battle5Logic7Handler21Waza_HandlerGetFunc_o4ctorElP10MethodInfo = 0x202bc70 - 0x05708000;
+DAT_03a6bb14 = 0x03a6bb14 - 0x05708000;
+_ZN3Dpr6Battle5Logic12BTL_CLIENT_o29checkForbidChangeEscapeCommonEPNS1_15BTL_POKEPARAM_oEPhPtP10MethodInfo = 0x01f574e0 - 0x05708000;
+_ZN3Dpr6Battle5Logic7Handler24Tokusei_HandlerGetFunc_o4ctorElP10MethodInfo = 0x017f9150 - 0x05708000;
+_ZN3Dpr6Battle5Logic7Handler31Tokusei_HandlerGetFunc_TypeInfoE = 0x04c5b330 - 0x05708000;
