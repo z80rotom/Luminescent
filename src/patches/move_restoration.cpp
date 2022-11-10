@@ -68,6 +68,7 @@ constexpr uint32_t NUM_NEW_BTL_STRID_STD = 6;
 constexpr uint32_t NUM_BTL_STRID_STD = 547;
 
 extern void * DAT_03a6bb14;
+extern MethodInfo * Handler_Karagenki_WazaPowMethodInfo;
 
 static uint32_t gMagnitude = 6;
 int32_t MAGNITUDE_POWER_TABLE[7] = {
@@ -197,7 +198,7 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_Return(MethodInfo *method
     if (sReturnEventHandlerTable == nullptr) {
         // socket_log_fmt("ADD_Return init\n");
         sReturnEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
-        sReturnEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, (Il2CppMethodPointer) &handler_Return_WazaPow);
+        sReturnEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Return_WazaPow);
     }
 
     return sReturnEventHandlerTable;
@@ -209,7 +210,7 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_Frustration(MethodInfo *m
     if (sFrustrationEventHandlerTable == nullptr) {
         // socket_log_fmt("ADD_Frustration init\n");
         sFrustrationEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
-        sFrustrationEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, (Il2CppMethodPointer) &handler_Frustration_WazaPow);
+        sFrustrationEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Frustration_WazaPow);
     }
 
     return sFrustrationEventHandlerTable;
@@ -221,8 +222,8 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_Magnitude(MethodInfo *met
     if (sMagnitudeEventHandlerTable == nullptr) {
         // socket_log_fmt("ADD_Magnitude init\n");
         sMagnitudeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
-        sMagnitudeEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, (Il2CppMethodPointer) &handler_Magnitude_WazaPow);
-        sMagnitudeEventHandlerTable->m_Items[1] = createEventHandlerTable(EVENT_ID_REQWAZA_MSG, (Il2CppMethodPointer) &handler_Magnitude_Msg);
+        sMagnitudeEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_WazaPow);
+        sMagnitudeEventHandlerTable->m_Items[1] = createEventHandlerTable(EVENT_ID_REQWAZA_MSG, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_Msg);
     }
 
     return sMagnitudeEventHandlerTable;

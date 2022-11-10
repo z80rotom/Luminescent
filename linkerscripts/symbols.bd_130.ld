@@ -214,6 +214,7 @@ _ZN3Dpr6Battle5Logic6Common12GetPokeParamEPPNS1_30EventFactor_EventHandlerArgs_o
 _ZN3Dpr6Battle5Logic6Common15RewriteEventVarEPPNS1_30EventFactor_EventHandlerArgs_oEtiP10MethodInfo = 0x01d09c90 - 0x05708000;
 _ZN3Dpr6Battle5Logic7Handler26Waza_GET_FUNC_TABLE_ELEM_o4ctorES3_iPNS2_21Waza_HandlerGetFunc_oEP10MethodInfo = 0x0202bc50 - 0x05708000;
 _ZN3Dpr6Battle5Logic7Handler20Method_ADD_KaragenkiE = 0x4c6a1c0 - 0x05708000;
+_ZN3Dpr6Battle5Logic7Handler23Method_ADD_TetunoKobusiE = 0x4c69db8 - 0x05708000;
 _ZN3Dpr6Battle5Logic7Handler28Waza_HandlerGetFunc_TypeInfoE = 0x4c5b448 - 0x05708000;
 _ZN3Dpr6Battle5Logic7Handler13Waza_TypeInfoE = 0x4c5b348 - 0x05708000;
 PTR_DAT_04b7f588 = 0x04b7f588 - 0x05708000;
@@ -290,6 +291,7 @@ _ZN11GameManager22get_currentPeriodOfDayEP10MethodInfo = 0x2cd0c60 - 0x05708000;
 _ZN3Pml8PokePara13InitialSpec_o4ctorEP10MethodInfo = 0x20521d0 - 0x05708000;
 _ZN3Dpr8EvScript15EvDataManager_o9JumpLabelEPN6System6StringEPNS0_18EventEndDelegate_oEP10MethodInfo = 0x02c423c0 - 0x05708000;
 Handler_Karagenki_WazaPowMethodInfo = 0x04c7a3b0 - 0x05708000;
+Method_handler_TetunoKobusi = 0x4c79da0 - 0x05708000;
 _ZN3Dpr6Battle5Logic44EventFactor_EventHandlerTable_Array_TypeInfoE = 0x4c5b148 - 0x05708000;
 _ZN3Dpr6Battle5Logic38EventFactor_EventHandlerTable_TypeInfoE = 0x04c5b158 - 0x05708000;
 _ZN3Dpr6Battle5Logic33EventFactor_EventHandler_TypeInfoE = 0x04c5b150 - 0x05708000;

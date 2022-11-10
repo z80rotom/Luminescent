@@ -594,6 +594,9 @@ namespace Dpr
                 extern void * Tokusei_HandlerGetFunc_TypeInfo;
 
                 extern MethodInfo * Method_ADD_Karagenki;
+
+                // 4c69db8
+                extern MethodInfo * Method_ADD_TetunoKobusi;
             }
         }
     }
