@@ -1,25 +1,23 @@
 [target=main, version=bd_130]
 
-019BB344:  // Dpr.Field.SwayGrass$$GetChainFlg
-    movz w8, #0x1c
+// this function got inlined and isn't called
+// 019BB2B0:  // Dpr.Field.SwayGrass$$GetChainFlg
+//    b Dpr_Field_SwayGrass_GetChainFlg
 
-019BB2F8:
-    movz w8, #0x58
+// Pokemon caught Fields 1/2 - #0x3f=63 +73?
+// 019bcfbc:
+//     orr w10, wzr, #0x64
 
-019BB33C:
-    movz w8, #0x44
+// caught Field4+ :: #0x5d=93 ->95
+019bd0a4:
+    mov w8, #0x5F
 
-019BB334:
-    movz w8, #0x30
+Pokemon fought Fields 1/2
+// fought: #0x35=53 +63?
+// 019bcf68:
+//     add w9, w8, #0x35
 
-019BB310:
-    movz w8, #0x26
+// fought Field4+ :: #0x53=83->100
+019bd098:
+    mov w8, #0x64 
 
-019BB318:
-    movz w8, #0x3a
-
-019BB324:
-    movz w8, #0x4e
-    
-019BB350:
-    movz w8, #0x62
