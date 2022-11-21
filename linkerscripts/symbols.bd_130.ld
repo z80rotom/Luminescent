@@ -289,4 +289,5 @@ DAT_7103a679b8 = 0x3a679b8 - 0x05708000;
 _ZN11GameManager22get_currentPeriodOfDayEP10MethodInfo = 0x2cd0c60 - 0x05708000;
 _ZN3Pml8PokePara13InitialSpec_o4ctorEP10MethodInfo = 0x20521d0 - 0x05708000;
 
+DAT_7104cbc6f7 = 0x04cbc6f7 - 0x05708000;
 _ZN3Dpr5Field18SwayGrass_InfoTypeE = 0x04cbc6f7 - 0x05708000;
