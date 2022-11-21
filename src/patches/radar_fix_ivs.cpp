@@ -33,23 +33,24 @@ uint8_t Dpr_Field_SwayGrass_RensaTalent(MethodInfo *method)
     }
 
     // checks if the SwayGrass_InfoType chain is active
+    // returns IVs based on chain length
     if (isSwaying != '\0') {
-        if (chainLength<10){ // 
+        if (chainLength<20){ // 
             return 0;
         }
-        if (chainLength<20){ // 20-30
+        if (chainLength<30){ // 20-30
             return 1;
         }
-        if (chainLength<30){ // 30-40
+        if (chainLength<40){ // 30-40
             return 2;
         }
-        if (chainLength<40){// 40-70
+        if (chainLength<70){// 40-70
             return 3;
         }
-        if (chainLength<50){// 70-100
+        if (chainLength<100){// 70-100
             return 4;
         }
-        if (chainLength>50){
+        if (chainLength>100){
             return 5;
         }
     }

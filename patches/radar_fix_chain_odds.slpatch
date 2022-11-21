@@ -1,21 +1,8 @@
 [target=main, version=bd_130]
 
-// this function got inlined and isn't called
-// 019BB2B0:  // Dpr.Field.SwayGrass$$GetChainFlg
-//    b Dpr_Field_SwayGrass_GetChainFlg
-
-// Pokemon caught Fields 1/2 - #0x3f=63 +73?
-// 019bcfbc:
-//     orr w10, wzr, #0x64
-
 // caught Field4+ :: #0x5d=93 ->100
 019bd0a4:
     mov w8, #0x64
-
-// Pokemon fought Fields 1/2
-// fought: #0x35=53 +63?
-// 019bcf68:
-//     add w9, w8, #0x35
 
 // fought Field4+ :: #0x53=83->95
 019bd098:
