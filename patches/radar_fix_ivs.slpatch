@@ -1,14 +1,22 @@
 [target=main, version=bd_130]
 
-019BD1D4:
-    b.lt #0x54
+// 019BD1D4:
+//     b.lt #0x54
 
-019BD1DC:
-    b.lo #0x5c
+// 019BD1DC:
+//     b.lo #0x5c
 
-019BD208:
-    nop
-    nop
+// 019BD208:
+//     nop
+//     nop
 
-019BD214:
-    b.lo #0x34
+// 019BD214:
+//     b.lo #0x34
+
+
+0179edc8:  // Dpr.Field.SwayGrass$$RensaTalent
+    bl Dpr_Field_SwayGrass_RensaTalent  
+
+
+019bd110:  // Dpr.Field.SwayGrass$$RensaTalent
+    b Dpr_Field_SwayGrass_RensaTalent  

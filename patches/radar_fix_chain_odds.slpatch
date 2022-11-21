@@ -8,16 +8,16 @@
 // 019bcfbc:
 //     orr w10, wzr, #0x64
 
-// caught Field4+ :: #0x5d=93 ->95
+// caught Field4+ :: #0x5d=93 ->100
 019bd0a4:
-    mov w8, #0x5F
+    mov w8, #0x64
 
-Pokemon fought Fields 1/2
+// Pokemon fought Fields 1/2
 // fought: #0x35=53 +63?
 // 019bcf68:
 //     add w9, w8, #0x35
 
-// fought Field4+ :: #0x53=83->100
+// fought Field4+ :: #0x53=83->95
 019bd098:
-    mov w8, #0x64 
+    mov w8, #0x5f 
 
