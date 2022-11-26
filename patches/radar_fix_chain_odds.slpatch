@@ -4,7 +4,7 @@
 019bd0a4:
     mov w8, #0x64
 
-// fought Field4+ :: #0x53=83->95
+// fought Field4+ :: #0x53=83->97
 019bd098:
-    mov w8, #0x5f 
+    mov w8, #0x61 
 
