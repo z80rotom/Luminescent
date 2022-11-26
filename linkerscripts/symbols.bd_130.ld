@@ -12,7 +12,7 @@ _Znwm = 0x00584220 - 0x05708000;
 _Znam = 0x00584560 - 0x05708000;
 _ZdlPv = 0x005845c0 - 0x05708000;
 _ZdaPv = 0x005848d0 - 0x05708000;
-
+ 
 _ZN10PlayerWork10get_zoneIDEP10MethodInfo = 0x02ceea50 - 0x05708000;
 _ZN3Pml5Local6Random8GetValueEP10MethodInfo = 0x024a00a0 - 0x05708000;
 _ZN3Pml8PokePara8CalcTool11IsRareColorEjjP10MethodInfo = 0x024ad790 - 0x05708000;
@@ -288,3 +288,6 @@ _ZN3Pml8PokePara9CoreParam11GetRareTypeEP10MethodInfo = 0x204a5a0 - 0x05708000;
 DAT_7103a679b8 = 0x3a679b8 - 0x05708000;
 _ZN11GameManager22get_currentPeriodOfDayEP10MethodInfo = 0x2cd0c60 - 0x05708000;
 _ZN3Pml8PokePara13InitialSpec_o4ctorEP10MethodInfo = 0x20521d0 - 0x05708000;
+
+DAT_7104cbc6f7 = 0x04cbc6f7 - 0x05708000;
+_ZN3Dpr5Field18SwayGrass_InfoTypeE = 0x4c5ac58 - 0x05708000;

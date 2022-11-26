@@ -1,0 +1,10 @@
+[target=main, version=bd_130]
+
+// caught Field4+ :: #0x5d=93 ->100
+019bd0a4:
+    mov w8, #0x64
+
+// fought Field4+ :: #0x53=83->97
+019bd098:
+    mov w8, #0x61 
+

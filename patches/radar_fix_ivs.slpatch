@@ -1,0 +1,7 @@
+[target=main, version=bd_130]
+
+// 0179edc8:  // Dpr.Field.SwayGrass$$RensaTalent
+//     bl Dpr_Field_SwayGrass_RensaTalent  
+
+019bd110:  // Dpr.Field.SwayGrass$$RensaTalent
+    b Dpr_Field_SwayGrass_RensaTalent  
