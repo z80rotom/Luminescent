@@ -12,7 +12,7 @@ _Znwm = 0x00584220 - 0x05708000;
 _Znam = 0x00584560 - 0x05708000;
 _ZdlPv = 0x005845c0 - 0x05708000;
 _ZdaPv = 0x005848d0 - 0x05708000;
-
+ 
 _ZN10PlayerWork10get_zoneIDEP10MethodInfo = 0x02ceea50 - 0x05708000;
 _ZN3Pml5Local6Random8GetValueEP10MethodInfo = 0x024a00a0 - 0x05708000;
 _ZN3Pml8PokePara8CalcTool11IsRareColorEjjP10MethodInfo = 0x024ad790 - 0x05708000;
@@ -289,6 +289,7 @@ _ZN3Pml8PokePara9CoreParam11GetRareTypeEP10MethodInfo = 0x204a5a0 - 0x05708000;
 DAT_7103a679b8 = 0x3a679b8 - 0x05708000;
 _ZN11GameManager22get_currentPeriodOfDayEP10MethodInfo = 0x2cd0c60 - 0x05708000;
 _ZN3Pml8PokePara13InitialSpec_o4ctorEP10MethodInfo = 0x20521d0 - 0x05708000;
+
 _ZN3Dpr8EvScript15EvDataManager_o9JumpLabelEPN6System6StringEPNS0_18EventEndDelegate_oEP10MethodInfo = 0x02c423c0 - 0x05708000;
 Handler_Karagenki_WazaPowMethodInfo = 0x04c7a3b0 - 0x05708000;
 Method_handler_TetunoKobusi = 0x4c79da0 - 0x05708000;
@@ -301,3 +302,6 @@ DAT_03a6bb14 = 0x03a6bb14 - 0x05708000;
 _ZN3Dpr6Battle5Logic12BTL_CLIENT_o29checkForbidChangeEscapeCommonEPNS1_15BTL_POKEPARAM_oEPhPtP10MethodInfo = 0x01f574e0 - 0x05708000;
 _ZN3Dpr6Battle5Logic7Handler24Tokusei_HandlerGetFunc_o4ctorElP10MethodInfo = 0x017f9150 - 0x05708000;
 _ZN3Dpr6Battle5Logic7Handler31Tokusei_HandlerGetFunc_TypeInfoE = 0x04c5b330 - 0x05708000;
+
+DAT_7104cbc6f7 = 0x04cbc6f7 - 0x05708000;
+_ZN3Dpr5Field18SwayGrass_InfoTypeE = 0x4c5ac58 - 0x05708000;
