@@ -1,0 +1,15 @@
+[target=main, version=bd_130]
+// Update references to checkForbidChangeEscapeCommon so that run away allows switch outs
+// Dpr.Battle.Logic.BTL_CLIENT$$isForbidEscape
+01f56f64:
+    bl checkForbidChangeEscapeCommon
+// Dpr.Battle.Logic.BTL_CLIENT$$isForbidPokeChange
+01f55ba8:
+    b checkForbidChangeEscapeCommon
+// Dpr.Battle.Logic.BTL_CLIENT$$selact_SelectChangePokemon
+01f5583c:
+    bl checkForbidChangeEscapeCommon
+// Treat HP as always full so gale wings is like Gen 6
+// void Dpr.Battle.Logic.Handler.Tokusei$$handler_HayateNoTsubasa
+0195ec70:
+    mov x0, #1

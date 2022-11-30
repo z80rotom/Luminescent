@@ -1,6 +1,7 @@
 #include "Dpr/Battle/Logic/Common.hpp"
 #include "Dpr/Battle/Logic/Calc.hpp"
 #include "Dpr/Battle/Logic/EventFactor.hpp"
+#include "Dpr/Battle/Logic/EventID.hpp"
 #include "Dpr/Battle/Logic/Handler.hpp"
 #include "Dpr/Battle/Logic/Tables.hpp"
 #include "Dpr/Battle/Logic/StrParam.hpp"
@@ -66,6 +67,9 @@ constexpr uint32_t NUM_NEW_BTL_STRID_SET = 6;
 constexpr uint32_t NUM_NEW_BTL_STRID_STD = 6;
 constexpr uint32_t NUM_BTL_STRID_STD = 547;
 
+extern void * DAT_03a6bb14;
+extern MethodInfo * Handler_Karagenki_WazaPowMethodInfo;
+
 static uint32_t gMagnitude = 6;
 int32_t MAGNITUDE_POWER_TABLE[7] = {
     10,
@@ -76,44 +80,6 @@ int32_t MAGNITUDE_POWER_TABLE[7] = {
     110,
     150,
 };
-
-System::Array<EventFactor_EventHandlerTable_o> * ADD_Karagenki(MethodInfo *method)
-{
-    socket_log_fmt("ADD_Karagenki\n");
-    il2cpp_runtime_class_init((void *) Waza_TypeInfo);
-    socket_log_fmt("Waza_TypeInfo->static_fields->HandlerTable_Karagenki->max_length: %08X\n", Waza_TypeInfo->static_fields->HandlerTable_Karagenki->max_length);
-    return Waza_TypeInfo->static_fields->HandlerTable_Karagenki;
-}
-
-void handler_Karagenki_AtkPow_Orig(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
-{
-    socket_log_fmt("handler_Karagenki_AtkPow_Orig\n");
-    int32_t evPokeID = Common::GetEventVar(args, POKEID_ATK, (MethodInfo *) nullptr);
-
-    if (evPokeID != pokeID)
-    {
-        return;
-    }
-
-    Common::RewriteEventVar(args, DISABLE_BURN_FLAG, 1, (MethodInfo *) nullptr);
-}
-
-void handler_Karagenki_WazaPow_Orig(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
-{
-    socket_log_fmt("handler_Karagenki_WazaPow_Orig\n");
-    int32_t evPokeID = Common::GetEventVar(args, POKEID_ATK, (MethodInfo *) nullptr);
-    
-    if (evPokeID != pokeID)
-    {
-        return;
-    }
-
-    BTL_POKEPARAM_o * bpp = Common::GetPokeParam(args, pokeID, (MethodInfo *) nullptr);
-    uint32_t pokeSick = bpp->GetPokeSick((MethodInfo *) nullptr);
-    if ((pokeSick < 6) && ((1 << (uint64_t)(pokeSick & 0x1f) & 0x32U) != 0)) {
-        Common::MulEventVar(args, WAZA_POWER_RATIO, 0x2000, (MethodInfo *) nullptr);
-    }
-}
 
 void handler_Return_WazaPow(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
 {
@@ -147,50 +113,10 @@ void handler_Frustration_WazaPow(EventFactor_EventHandlerArgs_o **args, uint8_t 
     Common::RewriteEventVar(args, WAZA_POWER, waza_power, (MethodInfo *) nullptr);
 }
 
-void handler_Karagenki_AtkPow(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
-{
-    socket_log_fmt("handler_Karagenki_AtkPow\n");
-    int32_t wazaID = Common::GetEventVar(args, WAZAID, (MethodInfo *) nullptr);
-    switch (wazaID)
-    {
-        case RETURN_WAZANO:
-            return;
-        case FRUSTRATION_WAZANO:
-            return;
-        default:
-            handler_Karagenki_AtkPow_Orig(args, pokeID, method);
-            return;
-    }
-}
-
-extern void ** PTR_DAT_04b7f588;
-
-void handler_Karagenki_WazaPow(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
-{
-    socket_log_fmt("handler_Karagenki_WazaPow\n");
-
-    system_load_typeinfo(*PTR_DAT_04b7f588);
-    il2cpp_runtime_class_init(Common_TypeInfo);
-
-    int32_t wazaID = Common::GetEventVar(args, WAZAID, (MethodInfo *) nullptr);
-    switch (wazaID)
-    {
-        case RETURN_WAZANO:
-            handler_Return_WazaPow(args, pokeID, method);
-            break;
-        case FRUSTRATION_WAZANO:
-            handler_Frustration_WazaPow(args, pokeID, method);
-            break;
-        default:
-            handler_Karagenki_WazaPow_Orig(args, pokeID, method);
-            break;
-    }
-}
-
-void handler_Magnitude(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
+void handler_Magnitude_WazaPow(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
 {
     // TODO: Stubbed
-    socket_log_fmt("handler_Magnitude\n");
+    socket_log_fmt("handler_Magnitude_WazaPow\n");
     int32_t evPokeID = Common::GetEventVar(args, POKEID_ATK, (MethodInfo *) nullptr);
 
     if (evPokeID != pokeID)
@@ -198,7 +124,7 @@ void handler_Magnitude(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, Me
         return;
     }
 
-    gMagnitude = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % 7;
+    // gMagnitude = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % 7;
     socket_log_fmt("Magnitude: %08X\n", gMagnitude);
     int32_t waza_power = MAGNITUDE_POWER_TABLE[gMagnitude];
     socket_log_fmt("waza_power: %08X\n", waza_power);
@@ -207,6 +133,10 @@ void handler_Magnitude(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, Me
 
 void handler_Magnitude_Msg(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
 {
+    system_load_typeinfo(DAT_03a6bb14);
+    system_load_typeinfo((void *)0xa9bf);
+    il2cpp_runtime_class_init(Common_TypeInfo);
+
     // TODO: Stubbed
     socket_log_fmt("handler_Magnitude_Msg\n");
     int32_t evPokeID = Common::GetEventVar(args, POKEID_ATK, (MethodInfo *) nullptr);
@@ -216,6 +146,14 @@ void handler_Magnitude_Msg(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID
         return;
     }
 
+    socket_log_fmt("DAT_03a6bb14 %08X\n", DAT_03a6bb14);
+    socket_log_fmt("Common_TypeInfo: %08X\n", Common_TypeInfo);
+    socket_log_fmt("Section_FromEvent_Message::Description_TypeInfo: %08X\n", Section_FromEvent_Message::Description_TypeInfo);
+    socket_log_fmt("Common::Message: %08X\n", &Common::Message);
+    socket_log_fmt("Section_FromEvent_Message::Description_o::ctor: %08X\n", &Section_FromEvent_Message::Description_o::ctor);
+    socket_log_fmt("StrParam_o::Setup: %08X\n", &StrParam_o::Setup);
+
+    gMagnitude = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % 7;
     Section_FromEvent_Message::Description_o * desc = (Section_FromEvent_Message::Description_o *) il2cpp_object_new(Section_FromEvent_Message::Description_TypeInfo);
     desc->ctor((MethodInfo *) nullptr);
     desc->fields.pokeID = pokeID;
@@ -230,76 +168,6 @@ void handler_Magnitude_Msg(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID
     // Common::RewriteEventVar(args, GEN_FLAG, 1, (MethodInfo *) nullptr);
 }
 
-void handler_YubiWoFuru_Orig(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
-{
-    // TODO: Stubbed
-    socket_log_fmt("handler_YubiWoFuru_Orig\n");
-    int32_t evPokeID = Common::GetEventVar(args, POKEID_ATK, (MethodInfo *) nullptr);
-
-    if (evPokeID != pokeID)
-    {
-        return;
-    }
-
-    System::Array<uint16_t> * yubiFuruPermitTable = Tables::GetYubiFuruPermitTable((MethodInfo *) nullptr);
-    uint32_t idx = Calc::GetRand(yubiFuruPermitTable->max_length, (MethodInfo *) nullptr);
-    uint16_t wazaNo = yubiFuruPermitTable->m_Items[idx];
-    uint8_t pokepos = Common::DecideWazaTargetAuto(args, pokeID, (uint32_t) wazaNo, (MethodInfo *) nullptr);
-
-    Common::RewriteEventVar(args, WAZAID, wazaNo, (MethodInfo *) nullptr);
-    Common::RewriteEventVar(args, POKEPOS, pokepos, (MethodInfo *) nullptr);
-}
-
-void handler_YubiWoFuru_Msg_Orig(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
-{
-    // TODO: Stubbed
-    socket_log_fmt("handler_YubiWoFuru_Msg_Orig\n");
-    int32_t evPokeID = Common::GetEventVar(args, POKEID_ATK, (MethodInfo *) nullptr);
-
-    if (evPokeID != pokeID)
-    {
-        return;
-    }
-
-    StrParam_o * param = (StrParam_o *) Common::GetEventVarAddress(args, WORK_ADRS, (MethodInfo *) nullptr);
-    param->Setup(1, BTL_STRID_STD_YubiWoFuru, (MethodInfo *) nullptr);
-    int32_t arg = Common::GetEventVar(args, WAZAID, (MethodInfo *) nullptr);
-    param->AddArg(arg, (MethodInfo *) nullptr);
-
-    Common::RewriteEventVar(args, GEN_FLAG, 1, (MethodInfo *) nullptr);
-}
-
-void handler_YubiWoFuru(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
-{
-    socket_log_fmt("handler_YubiWoFuru\n");
-    // int32_t wazaID = Common::GetEventVar(args, WAZAID, (MethodInfo *) nullptr);
-    // switch (wazaID)
-    // {
-    //     case MAGNITUDE_WAZANO:
-    //         handler_Magnitude(args, pokeID, method);
-    //         break;
-    //     default:
-    //         handler_YubiWoFuru_Orig(args, pokeID, method);
-    //         break;
-    // }
-    handler_Magnitude(args, pokeID, method);
-}
-
-void handler_YubiWoFuru_Msg(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
-{
-    socket_log_fmt("handler_YubiWoFuru_Msg\n");
-    // int32_t wazaID = Common::GetEventVar(args, WAZAID, (MethodInfo *) nullptr);
-    // switch (wazaID)
-    // {
-    //     case MAGNITUDE_WAZANO:
-    //         handler_Magnitude_Msg(args, pokeID, method);
-    //         break;
-    //     default:
-    //         handler_YubiWoFuru_Msg_Orig(args, pokeID, method);
-    //         break;
-    // }
-    handler_Magnitude_Msg(args, pokeID, method);
-}
 
 int32_t KARAGENKI_ENTRIES[NUM_KARAGENKI_MOVES] = {
     RETURN_WAZANO,
@@ -310,146 +178,87 @@ int32_t YUBI_WO_FURU_ENTRIES[NUM_YUBI_WO_FURU_MOVES] = {
     MAGNITUDE_WAZANO
 };
 
-static void * gArrayPtr = nullptr;
-static uint32_t gArrayLen = 0;
+// 4c7a3b0
 
-Waza_HandlerGetFunc_o * Karagenki_ctor(Waza_HandlerGetFunc_o *_this, intptr_t m_target, MethodInfo *method)
+// static MethodInfo * sAddReturnMethodInfo = nullptr;
+// static MethodInfo * sAddFrustrationMethodInfo = nullptr;
+// static MethodInfo * sHandler_Return_WazaPowMethodInfo = nullptr;
+// static MethodInfo * sHandler_Frustration_WazaPowMethodInfo = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sReturnEventHandlerTable = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sFrustrationEventHandlerTable = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sMagnitudeEventHandlerTable = nullptr;
+
+const int16_t EVENT_ID_REQWAZA_MSG = 27;
+const int16_t EVENT_ID_WAZA_POWER = 70;
+
+// Dpr.Battle.Logic.Handler.Waza$$
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_Return(MethodInfo *method)
 {
-    socket_log_fmt("Karagenki Method: %08X\n", method);
-    _this->ctor(m_target, method);
-
-    System::Array<Waza_GET_FUNC_TABLE_ELEM_o> * getFuncTable = (System::Array<Waza_GET_FUNC_TABLE_ELEM_o> *) gArrayPtr;
-    for (uint32_t i = 0; i < NUM_KARAGENKI_MOVES; i++)
-    {
-        socket_log_fmt("Registering new Waza Handler #: %i\n", i);
-        int32_t wazaNo = KARAGENKI_ENTRIES[i];
-        socket_log_fmt("Got WazaHandlerEntry at %i\n", i);
-
-        Waza_GET_FUNC_TABLE_ELEM_o * elem = &getFuncTable->m_Items[gArrayLen+i];
-        socket_log_fmt("Got GET_FUNC_TABLE_ELEM at %i\n", gArrayLen+i);
-        Waza_HandlerGetFunc_o * func = (Waza_HandlerGetFunc_o *) il2cpp_object_new(Waza_HandlerGetFunc_TypeInfo);
-        socket_log_fmt("Called initializer for Waza_HandlerGetFunc_o\n");
-        socket_log_fmt("entry.method: %08X\n", method);
-        func->ctor(0, method); 
-        socket_log_fmt("Called constructor for Waza_HandlerGetFunc_o\n");
-        elem->fields.waza = wazaNo;
-        elem->fields.func = func;
-        // Waza_GET_FUNC_TABLE_ELEM_o::ctor(elem, entry.wazaNo, func, (MethodInfo *) nullptr);
-        // socket_log_fmt("Called constructor for Waza_GET_FUNC_TABLE_ELEM_o\n");
+    socket_log_fmt("ADD_Return\n");
+    if (sReturnEventHandlerTable == nullptr) {
+        // socket_log_fmt("ADD_Return init\n");
+        sReturnEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
+        sReturnEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Return_WazaPow);
     }
 
-    return _this;
+    return sReturnEventHandlerTable;
 }
 
-// Waza_HandlerGetFunc_o * Kaminari_ctor(Waza_HandlerGetFunc_o *_this, intptr_t m_target, MethodInfo *method)
-// {
-//     socket_log_fmt("Kaminari Method: %08X\n", method);
-//     _this->ctor(m_target, method);
-
-//     System::Array<Waza_GET_FUNC_TABLE_ELEM_o> * getFuncTable = (System::Array<Waza_GET_FUNC_TABLE_ELEM_o> *) gArrayPtr;
-//     for (uint32_t i = 0; i < NUM_KAMINARI_MOVES; i++)
-//     {
-//         socket_log_fmt("Registering new Waza Handler #: %i\n", i);
-//         int32_t wazaNo = KARAGENKI_ENTRIES[i];
-//         socket_log_fmt("Got WazaHandlerEntry at %i\n", i);
-
-//         Waza_GET_FUNC_TABLE_ELEM_o * elem = &getFuncTable->m_Items[gArrayLen+i];
-//         socket_log_fmt("Got GET_FUNC_TABLE_ELEM at %i\n", gArrayLen+i);
-//         Waza_HandlerGetFunc_o * func = (Waza_HandlerGetFunc_o *) il2cpp_object_new(Waza_HandlerGetFunc_TypeInfo);
-//         socket_log_fmt("Called initializer for Waza_HandlerGetFunc_o\n");
-//         socket_log_fmt("entry.method: %08X\n", method);
-//         func->ctor(0, method); 
-//         socket_log_fmt("Called constructor for Waza_HandlerGetFunc_o\n");
-//         elem->fields.waza = wazaNo;
-//         elem->fields.func = func;
-//         // Waza_GET_FUNC_TABLE_ELEM_o::ctor(elem, entry.wazaNo, func, (MethodInfo *) nullptr);
-//         // socket_log_fmt("Called constructor for Waza_GET_FUNC_TABLE_ELEM_o\n");
-//     }
-
-//     return _this;
-// }
-
-Waza_HandlerGetFunc_o * YubiWoFuru_ctor(Waza_HandlerGetFunc_o *_this, intptr_t m_target, MethodInfo *method)
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_Frustration(MethodInfo *method)
 {
-    socket_log_fmt("YubiWoFuru Method: %08X\n", method);
-    _this->ctor(m_target, method);
-
-    System::Array<Waza_GET_FUNC_TABLE_ELEM_o> * getFuncTable = (System::Array<Waza_GET_FUNC_TABLE_ELEM_o> *) gArrayPtr;
-    for (uint32_t i = 0; i < NUM_YUBI_WO_FURU_MOVES; i++)
-    {
-        socket_log_fmt("Registering new Waza Handler #: %i\n", i);
-        int32_t wazaNo = YUBI_WO_FURU_ENTRIES[i];
-        socket_log_fmt("Got WazaHandlerEntry at %i\n", i);
-
-        Waza_GET_FUNC_TABLE_ELEM_o * elem = &getFuncTable->m_Items[gArrayLen+i];
-        socket_log_fmt("Got GET_FUNC_TABLE_ELEM at %i\n", gArrayLen+i);
-        Waza_HandlerGetFunc_o * func = (Waza_HandlerGetFunc_o *) il2cpp_object_new(Waza_HandlerGetFunc_TypeInfo);
-        socket_log_fmt("Called initializer for Waza_HandlerGetFunc_o\n");
-        socket_log_fmt("entry.method: %08X\n", method);
-        func->ctor(0, method); 
-        socket_log_fmt("Called constructor for Waza_HandlerGetFunc_o\n");
-        elem->fields.waza = wazaNo;
-        elem->fields.func = func;
-        // Waza_GET_FUNC_TABLE_ELEM_o::ctor(elem, entry.wazaNo, func, (MethodInfo *) nullptr);
-        // socket_log_fmt("Called constructor for Waza_GET_FUNC_TABLE_ELEM_o\n");
+    socket_log_fmt("ADD_Frustration\n");
+    if (sFrustrationEventHandlerTable == nullptr) {
+        // socket_log_fmt("ADD_Frustration init\n");
+        sFrustrationEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
+        sFrustrationEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Frustration_WazaPow);
     }
 
-    return _this;
+    return sFrustrationEventHandlerTable;
 }
 
-Waza_HandlerGetFunc_o * TripleKick_ctor(Waza_HandlerGetFunc_o *_this, intptr_t m_target, MethodInfo *method)
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_Magnitude(MethodInfo *method)
 {
-    socket_log_fmt("TripleKick Method: %08X\n", method);
-    _this->ctor(m_target, method);
-
-    System::Array<Waza_GET_FUNC_TABLE_ELEM_o> * getFuncTable = (System::Array<Waza_GET_FUNC_TABLE_ELEM_o> *) gArrayPtr;
-    for (uint32_t i = 0; i < NUM_YUBI_WO_FURU_MOVES; i++)
-    {
-        socket_log_fmt("Registering new Waza Handler #: %i\n", i);
-        int32_t wazaNo = YUBI_WO_FURU_ENTRIES[i];
-        socket_log_fmt("Got WazaHandlerEntry at %i\n", i);
-
-        Waza_GET_FUNC_TABLE_ELEM_o * elem = &getFuncTable->m_Items[gArrayLen+i+2];
-        socket_log_fmt("Got GET_FUNC_TABLE_ELEM at %i\n", gArrayLen+i);
-        Waza_HandlerGetFunc_o * func = (Waza_HandlerGetFunc_o *) il2cpp_object_new(Waza_HandlerGetFunc_TypeInfo);
-        socket_log_fmt("Called initializer for Waza_HandlerGetFunc_o\n");
-        socket_log_fmt("entry.method: %08X\n", method);
-        func->ctor(0, method); 
-        socket_log_fmt("Called constructor for Waza_HandlerGetFunc_o\n");
-        elem->fields.waza = wazaNo;
-        elem->fields.func = func;
-        // Waza_GET_FUNC_TABLE_ELEM_o::ctor(elem, entry.wazaNo, func, (MethodInfo *) nullptr);
-        // socket_log_fmt("Called constructor for Waza_GET_FUNC_TABLE_ELEM_o\n");
+    socket_log_fmt("ADD_Magnitude\n");
+    if (sMagnitudeEventHandlerTable == nullptr) {
+        // socket_log_fmt("ADD_Magnitude init\n");
+        sMagnitudeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
+        sMagnitudeEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_WazaPow);
+        sMagnitudeEventHandlerTable->m_Items[1] = createEventHandlerTable(EVENT_ID_REQWAZA_MSG, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_Msg);
     }
 
-    return _this;
+    return sMagnitudeEventHandlerTable;
+}
+
+
+
+void AddHandler(System::Array<Waza_GET_FUNC_TABLE_ELEM_o> * getFuncTable, uint32_t * idx, int32_t wazaNo, Il2CppMethodPointer methodPointer)
+{
+
+    MethodInfo * method = copyMethodInfo(Method_ADD_Karagenki, methodPointer);
+    Waza_GET_FUNC_TABLE_ELEM_o * elem = &getFuncTable->m_Items[*idx];
+    socket_log_fmt("Got GET_FUNC_TABLE_ELEM at %i\n", *idx);
+    Waza_HandlerGetFunc_o * func = (Waza_HandlerGetFunc_o *) il2cpp_object_new(Waza_HandlerGetFunc_TypeInfo);
+    socket_log_fmt("entry.method: %08X\n", methodPointer);
+    func->ctor(0, method);
+    elem->fields.waza = wazaNo;
+    elem->fields.func = func;
+    *idx += 1;
 }
 
 void * Waza_system_array_new(void * typeInfo, uint32_t len)
 {
     socket_log_fmt("Waza_system_array_new\n");
-    gArrayLen = len;
-    gArrayPtr = system_array_new(typeInfo, gArrayLen + NUM_NEW_MOVES);
+    System::Array<Waza_GET_FUNC_TABLE_ELEM_o> * getFuncTable = (System::Array<Waza_GET_FUNC_TABLE_ELEM_o> *) system_array_new(typeInfo, len + NUM_NEW_MOVES);
+    uint32_t idx = len;
 
+    socket_log_fmt("Return idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, RETURN_WAZANO, (Il2CppMethodPointer) &ADD_Return);
+    socket_log_fmt("Frustration idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, FRUSTRATION_WAZANO, (Il2CppMethodPointer) &ADD_Frustration);
+    socket_log_fmt("Magnitude idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, MAGNITUDE_WAZANO, (Il2CppMethodPointer) &ADD_Magnitude);
 
-//     // _this->ctor(m_target, method);
-//     struct MethodInfo method;
-
-// //   (_this->fields).super.super.m_target = (Il2CppObject *)m_target;
-// //   (_this->fields).super.super.method_ptr = (intptr_t)method_ptr;
-// //   (_this->fields).super.super.method = (intptr_t)method;
-
-//     Waza_GET_FUNC_TABLE_ELEM_o * elem = &getFuncTable->m_Items[gArrayLen+i+3];
-//     socket_log_fmt("Got GET_FUNC_TABLE_ELEM at %i\n", gArrayLen+i);
-//     Waza_HandlerGetFunc_o * func = (Waza_HandlerGetFunc_o *) il2cpp_object_new(Waza_HandlerGetFunc_TypeInfo);
-//     socket_log_fmt("Called initializer for Waza_HandlerGetFunc_o\n");
-//     socket_log_fmt("entry.method: %08X\n", &method);
-//     func->ctor(0, &method); 
-//     socket_log_fmt("Called constructor for Waza_HandlerGetFunc_o\n");
-//     elem->fields.waza = MAGNITUDE_WAZANO;
-//     elem->fields.func = func;
-
-    return gArrayPtr;
+    return getFuncTable;
 }
 
 void * BTL_STRID_SET_system_array_new(void * typeInfo, uint32_t len)

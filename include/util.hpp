@@ -2,6 +2,7 @@
 
 #include <string>
 #include "il2cpp.hpp"
+#include "Dpr/Battle/Logic/EventFactor.hpp"
 
 // FUN_0009acf0
 void * _system_array_new(void * typeInfo, uint32_t len);
@@ -22,3 +23,4 @@ void * system_array_new(void * typeInfo, uint32_t len);
 
 MethodInfo * copyMethodInfo(MethodInfo * src, Il2CppMethodPointer methodPointer);
 uint32_t GetBadgeCount();
+Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * createEventHandlerTable(uint16_t eventID, Il2CppMethodPointer methodPointer);
