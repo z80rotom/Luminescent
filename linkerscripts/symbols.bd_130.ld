@@ -12,7 +12,7 @@ _Znwm = 0x00584220 - 0x05708000;
 _Znam = 0x00584560 - 0x05708000;
 _ZdlPv = 0x005845c0 - 0x05708000;
 _ZdaPv = 0x005848d0 - 0x05708000;
-
+ 
 _ZN10PlayerWork10get_zoneIDEP10MethodInfo = 0x02ceea50 - 0x05708000;
 _ZN3Pml5Local6Random8GetValueEP10MethodInfo = 0x024a00a0 - 0x05708000;
 _ZN3Pml8PokePara8CalcTool11IsRareColorEjjP10MethodInfo = 0x024ad790 - 0x05708000;
@@ -315,3 +315,5 @@ _ZN3Dpr6Battle5Logic30EventFactor_SkipCheckHandler_o4ctorElP10MethodInfo = 0x1d1
 _ZN3Dpr6Battle5Logic37EventFactor_SkipCheckHandler_TypeInfoE = 0x4c5b278 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common22AttachSkipCheckHandlerEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_30EventFactor_SkipCheckHandler_oEP10MethodInfo = 0x1d0a090 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common22DetachSkipCheckHandlerEPPNS1_30EventFactor_EventHandlerArgs_oEP10MethodInfo = 0x1d0a0c0 - 0x05708000;
+DAT_7104cbc6f7 = 0x04cbc6f7 - 0x05708000;
+_ZN3Dpr5Field18SwayGrass_InfoTypeE = 0x04cbc6f7 - 0x05708000;
