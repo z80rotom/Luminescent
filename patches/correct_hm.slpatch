@@ -1,0 +1,15 @@
+[target=main, version=bd_130]
+
+// FieldPlayerEntity$$CheckSwim
+1daca78:
+    mov x0, 0x81
+
+// Swap 0x81 to 0x80
+// FieldPoketch$$.cctor
+1dbc51c:
+    mov w1, 0x80
+
+// Swap 0x80 to 0x81
+// FieldPoketch$$.cctor
+1dbc4f8:
+    mov w1, 0x81
