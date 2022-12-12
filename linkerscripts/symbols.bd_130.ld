@@ -289,6 +289,7 @@ _ZN3Pml8PokePara9CoreParam11GetRareTypeEP10MethodInfo = 0x204a5a0 - 0x05708000;
 DAT_7103a679b8 = 0x3a679b8 - 0x05708000;
 _ZN11GameManager22get_currentPeriodOfDayEP10MethodInfo = 0x2cd0c60 - 0x05708000;
 _ZN3Pml8PokePara13InitialSpec_o4ctorEP10MethodInfo = 0x20521d0 - 0x05708000;
+
 _ZN3Dpr8EvScript15EvDataManager_o9JumpLabelEPN6System6StringEPNS0_18EventEndDelegate_oEP10MethodInfo = 0x02c423c0 - 0x05708000;
 Handler_Karagenki_WazaPowMethodInfo = 0x04c7a3b0 - 0x05708000;
 Method_handler_TetunoKobusi = 0x4c79da0 - 0x05708000;
@@ -316,4 +317,4 @@ _ZN3Dpr6Battle5Logic37EventFactor_SkipCheckHandler_TypeInfoE = 0x4c5b278 - 0x057
 _ZN3Dpr6Battle5Logic6Common22AttachSkipCheckHandlerEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_30EventFactor_SkipCheckHandler_oEP10MethodInfo = 0x1d0a090 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common22DetachSkipCheckHandlerEPPNS1_30EventFactor_EventHandlerArgs_oEP10MethodInfo = 0x1d0a0c0 - 0x05708000;
 DAT_7104cbc6f7 = 0x04cbc6f7 - 0x05708000;
-_ZN3Dpr5Field18SwayGrass_InfoTypeE = 0x04cbc6f7 - 0x05708000;
+_ZN3Dpr5Field18SwayGrass_InfoTypeE = 0x4c5ac58 - 0x05708000;

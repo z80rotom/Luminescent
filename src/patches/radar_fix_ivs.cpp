@@ -28,7 +28,7 @@ uint8_t Dpr_Field_SwayGrass_RensaTalent(MethodInfo *method)
     isSwaying = staticFields->is_swaygrass_flag;
     count = staticFields->rensa_count;
 
-    // ghidra extracted code. c hain length logic
+    // ghidra extracted code. chain length logic
     chainLength = 99999999;
     if (count + 1 < 99999999) {
       chainLength = count + 1;
@@ -37,22 +37,22 @@ uint8_t Dpr_Field_SwayGrass_RensaTalent(MethodInfo *method)
     // checks if the SwayGrass_InfoType chain is active
     // returns IVs based on chain length
     if (isSwaying != '\0') {
-        if (chainLength<2){ // 
+        if (chainLength<20){ // 0-20
             return 0;
         }
-        if (chainLength<3){ // 20-30
+        if (chainLength<40){ // 20-40
             return 1;
         }
-        if (chainLength<4){ // 30-40
+        if (chainLength<60){ // 40-60
             return 2;
         }
-        if (chainLength<7){// 40-70
+        if (chainLength<80){// 60-80
             return 3;
         }
-        if (chainLength<10){// 70-100
+        if (chainLength<100){// 80-100
             return 4;
         }
-        if (chainLength>10){
+        if (chainLength>=100){
             return 5;
         }
     }
