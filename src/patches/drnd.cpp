@@ -306,7 +306,7 @@ int32_t ZukanWork_SeeCount(bool isRating, MethodInfo *method)
         }
 
         int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno);
-        if (zukanStatus == IS_SEE)
+        if (zukanStatus >= IS_SEE)
         {
             seeCount += 1;
         }
@@ -338,7 +338,7 @@ int32_t ZukanWork_SeeSinouCount(bool isRating, MethodInfo *method)
         }
 
         int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno);
-        if (zukanStatus == IS_SEE)
+        if (zukanStatus >= IS_SEE)
         {
             seeCount += 1;
         }
