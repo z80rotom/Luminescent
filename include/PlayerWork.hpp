@@ -277,6 +277,8 @@ public:
   static void SetInt(int32_t index, int32_t value, MethodInfo *method);
   // 0236fa10
   static bool GetBool(int32_t index, MethodInfo *method);
+  // 2ced9a0
+  static void SetBool(int32_t index, bool flag, MethodInfo * method);
   // 023793a0
   static bool GetSytemFlag(int32_t index, MethodInfo *method);
   PlayerWork_c *klass;

@@ -1,6 +1,11 @@
 [target=main, version=bd_130]
+//    mov x1, x19
 2c6853c:
-    mov x1, x19
+    ldr x1, [x19 , #0x4c0 ]
+
+// Allow 6 IV pokemon
+2053b24:
+    cmp        w8,#0x7
 
 2c68544:
     bl FormAdd_InitialSpec_ctor

@@ -23,4 +23,4 @@ void * system_array_new(void * typeInfo, uint32_t len);
 
 MethodInfo * copyMethodInfo(MethodInfo * src, Il2CppMethodPointer methodPointer);
 uint32_t GetBadgeCount();
-Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * createEventHandlerTable(uint16_t eventID, Il2CppMethodPointer methodPointer);
+Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * createEventHandlerTable(uint16_t eventID, MethodInfo * src, Il2CppMethodPointer methodPointer);

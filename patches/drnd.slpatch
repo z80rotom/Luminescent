@@ -30,9 +30,9 @@
     b ZukanWork_GetSinouCount
 
 // 
-// 1bb1364:
-//    mov x3, x21
-//    bl DescText_SetupMessage
+1bb1364:
+    mov x3, x21
+    bl DescText_SetupMessage
 
 // 0x388 = 898, the current max number of pokemon in the dex
 // ZukanWork$$GetViewModelUniqueID

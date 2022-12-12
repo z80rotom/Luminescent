@@ -161,6 +161,7 @@ struct ContextMenuIDList
 };
 
 const int32_t DUAL_SLOT_INCENSE_ITEM_ID = 1833;
+const int32_t INFINITE_REPEL_ITEM_ID = 1835;
 // Refers to index in ContextMenu array in UIDatabase
 const int32_t BASE_CONTEXT_MENU_ID = DOUBLE_SLOT_CONTEXT_MENU_ID;
 
@@ -281,8 +282,8 @@ void UseDualSlotIncense(Dpr::UI::UIManager_o * uiManager, Dpr::UI::UIBag_Display
 
     for (int i = 1; i <= 5; i++)
     {
-        bool flowerEnabled = PlayerWork::GetBool(DOUBLE_SLOT_FLAG + i, nullptr);
-        if (i == work) // TODO: Gate behind flags: || !flowerEnabled)
+        bool flowerEnabled = PlayerWork::GetBool(DOUBLE_SLOT_FLAG + i - 1, nullptr);
+        if (i == work || !flowerEnabled)
         {
             continue;
         }
@@ -319,6 +320,14 @@ void UseDualSlotIncense(Dpr::UI::UIManager_o * uiManager, Dpr::UI::UIBag_Display
     sUIBag->fields.msgWindowController->OpenMsgWindow(0, SS_bag_368, false, true, nullptr, nullptr, nullptr);
 }
 
+bool UseInfiniteRepelItem()
+{
+    bool flag = PlayerWork::GetBool(INFINITE_REPEL_FLAG, nullptr);
+    flag = !flag;
+    PlayerWork::SetBool(INFINITE_REPEL_FLAG, flag, nullptr);
+    return flag;
+}
+
 void UIManager_UseDSPlayerItem(Dpr::UI::UIManager_o * __this, Dpr::UI::UIBag_Displayclass_o * dispClass)
 {
     system_load_typeinfo(DAT_7103a679b8);
@@ -330,9 +339,22 @@ void UIManager_UseDSPlayerItem(Dpr::UI::UIManager_o * __this, Dpr::UI::UIBag_Dis
     Dpr::Item::ItemInfo_o* item = dispClass->fields.locals->fields.item;
     sUIBag = uiBag;
     int32_t itemId = item->get_Id(nullptr);
-    if (true) // itemId == DUAL_SLOT_INCENSE_ITEM_ID)
+    if (itemId == DUAL_SLOT_INCENSE_ITEM_ID)
     {
         UseDualSlotIncense(__this, dispClass);
+    } else if (itemId == INFINITE_REPEL_ITEM_ID)
+    {
+        bool flag = UseInfiniteRepelItem();
+        System_Action_o * action = (System_Action_o *) il2cpp_object_new(System_Action_TypeInfo);
+        action->ctor(dispClass->fields.locals, ShowItemContextMenu_EndUseAction_MethodInfo, nullptr);
+        System::String * labelName;
+        if (flag)
+        {
+            labelName = System::String::CreateString("SS_bag_353");
+        } else {
+            labelName = System::String::CreateString("SS_bag_354");
+        }
+        uiBag->fields.msgWindowController->OpenMsgWindow(0, labelName, true, false, nullptr, action, nullptr);
     } else {
         __this->UseDSPlayerItem(nullptr);
         System_Action_o * action = (System_Action_o *) il2cpp_object_new(System_Action_TypeInfo);
@@ -413,6 +435,18 @@ int32_t PlayerWork_set_DoubleSlot(System::Array<MonsLv_o> * monsLv)
 XLSXContent::FieldEncountTable::Sheettable_o * Incense_GameManager_GetFieldEncountData(int32_t zoneID, MethodInfo *method)
 {
     XLSXContent::FieldEncountTable::Sheettable_o * inData = GameManager::GetFieldEncountData(zoneID, nullptr);
+
+    // Be careful returning nullptr from here. It stops fishing and swarms from working.
+    // Only return nullptr if not doing so will crash this function.
+    if (inData == nullptr)
+    {
+        return nullptr;
+    }
+
+    if (inData->fields.water_mons->max_length < 2)
+    {
+        return nullptr;
+    }
 
     if (sWaterMons[zoneID] == 0)
     {

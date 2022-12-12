@@ -2,6 +2,7 @@
 
 #include "il2cpp.hpp"
 #include "System/Array.hpp"
+#include "Dpr/Battle/Logic/BTL_SICKCONT.hpp"
 
 namespace Dpr
 {
@@ -329,6 +330,16 @@ namespace Dpr
                     Waza_RGCTXs* rgctx_data;
                     Il2CppClass_2 _2;
                     Waza_VTable vtable;
+                };
+
+                struct Waza_o {
+                    // 18114a0
+                    static bool common_SideEffectCore(EventFactor_EventHandlerArgs_o ** args, uint8_t pokeID, int32_t side, int32_t effect, BTL_SICKCONT_o * cont, 
+                                                int32_t strType, uint32_t strID, int32_t strArg, bool replaceStrArg0ByExpandSide, MethodInfo * method);
+
+                    Waza_c *klass;
+                    void *monitor;
+                    Waza_Fields fields;
                 };
 
                 struct Pml_WazaData_WazaRankEffect_array;

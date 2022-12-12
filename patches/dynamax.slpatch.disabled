@@ -1,35 +1,36 @@
 
 [target=main, version=bd_130]
-02483e1c:
-    bl setSubProcForSetup
+// 203c15c:
+//    bl setSubProcForSetup
 
-024792e4:
-    bl setup_raid_srcParty
+// 20315f4:
+//    bl setup_raid_srcParty
 
-024792ec:
-    bl setup_raid_trainerParam
+// 20315fc:
+//    bl setup_raid_trainerParam
 
-01afd750:
-    bl BATTLE_SETUP_Wild
+// Actually good to re-enable
+// 2c3ae60:
+//    bl BATTLE_SETUP_Wild
 
-02479354:
-    bl setSrcPartyToBattleEnv
+// 02479354:
+//    bl setSrcPartyToBattleEnv
 
-024793bc:
-    bl setSrcPartyToBattleEnv
+// 024793bc:
+//    bl setSrcPartyToBattleEnv
 
-021ea7e0:
-    bl GetClientCoverPosNum
+// 021ea7e0:
+//    bl GetClientCoverPosNum
 
 // Compare against 5 because I don't think it is doing what it should.
-021ea7a8:
-    cmp x20, #0x5
+// 021ea7a8:
+//    cmp x20, #0x5
 
-01d71790:
-    bl expandPokePos_raid
+// 18f6890:
+//    bl expandPokePos_raid
 
-01e1d36c:
-    bl LoadFromFile
+// 01e1d36c:
+//    bl LoadFromFile
 
 // 01ce4ea4:
 //     bl IndexOutOfRangeException

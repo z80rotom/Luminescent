@@ -80,57 +80,21 @@ namespace EvData
     };
 }
 
-namespace EvDataManager
+struct FieldObjectMove_o;
+struct FieldObjectRotateYaw_o;
+struct FieldFloatMove_o;
+
+namespace MsgWindow
 {
-    struct EntityParam_o;
-    struct UpdateDelegate_o;
-    struct EventEndDelegate_o;
+    struct MsgWindowParam_o;
+    struct MsgWindow_o;
+}
 
-    struct PlaySeData_Fields {
-        System::String * name;
-        Audio_AudioInstance_o* AudioInstance;
-        uint32_t playEventId;
-    };
-
-    struct PlaySeData_o {
-        PlaySeData_Fields fields;
-    };
-
-    struct WorpEventData_Fields {
-        FieldEventDoorEntity_o* Entity;
-        int32_t State;
-        float Time;
-    };
-
-    struct WorpEventData_o {
-        WorpEventData_Fields fields;
-    };
-
-    struct EvCallData_Fields {
-        int32_t EventListIndex;
-        int32_t LabelIndex;
-        int32_t CommandIndex;
-    };
-
-    struct EvCallData_o {
-        EvCallData_Fields fields;
-    };
-
-    struct MsgOpenParam_Fields {
-        System::String MsbtFile;
-        System::String Label;
-        int32_t LabelIndex;
-        int32_t WindowType;
-        bool Input;
-        System::Array<System::String *> * TrainerName;
-        int32_t EndType;
-        bool PlayTextFeedSe;
-    };
-
-    struct MsgOpenParam_o {
-        MsgOpenParam_Fields fields;
-    };
-};
+namespace UI
+{
+    struct FloorWindow_o;
+    struct MoneyWindow_o;
+}
 
 namespace Pml
 {
@@ -142,88 +106,123 @@ namespace Pml
 
 namespace Dpr
 {
-    struct FieldObjectMove_o;
-    struct FieldObjectRotateYaw_o;
-    struct FieldFloatMove_o;
-
-    namespace MsgWindow
-    {
-        struct MsgWindowParam_o;
-        struct MsgWindow_o;
-    }
-
-    namespace UI
-    {
-        struct FloorWindow_o;
-        struct MoneyWindow_o;
-    }
 
     namespace EvScript
     {
+
+        struct EntityParam_o;
+        struct UpdateDelegate_o;
+        struct EventEndDelegate_o;
+
+        struct PlaySeData_Fields {
+            System::String * name;
+            Audio_AudioInstance_o* AudioInstance;
+            uint32_t playEventId;
+        };
+
+        struct PlaySeData_o {
+            PlaySeData_Fields fields;
+        };
+
+        struct WorpEventData_Fields {
+            FieldEventDoorEntity_o* Entity;
+            int32_t State;
+            float Time;
+        };
+
+        struct WorpEventData_o {
+            WorpEventData_Fields fields;
+        };
+
+        struct EvCallData_Fields {
+            int32_t EventListIndex;
+            int32_t LabelIndex;
+            int32_t CommandIndex;
+        };
+
+        struct EvCallData_o {
+            EvCallData_Fields fields;
+        };
+
+        struct MsgOpenParam_Fields {
+            System::String MsbtFile;
+            System::String Label;
+            int32_t LabelIndex;
+            int32_t WindowType;
+            bool Input;
+            System::Array<System::String *> * TrainerName;
+            int32_t EndType;
+            bool PlayTextFeedSe;
+        };
+
+        struct MsgOpenParam_o {
+            MsgOpenParam_Fields fields;
+        };
+    
         struct EvDataManager_Fields {
-            System_Action_EvDataManager_EntityParam__o* OnTalkStartCallBack;
+            struct System_Action_EvDataManager_EntityParam__o* OnTalkStartCallBack;
             bool _isScriptLoad;
-            System::Array<EvScriptData_o *> * _eventList;
+            struct Dpr_EvScript_EvScriptData_array* _eventList;
             int32_t _eventListIndex;
-            System_Collections_Generic_Stack_EvDataManager_EvCallData__o* _callQueue;
-            System_Collections_Generic_Dictionary_string__int____o* _findAllLabel;
-            FieldObjectEntity_o* _hit_object;
-            FieldObjectEntity_o* _hit_object_sub;
-            UnityEngine_Vector3_o _hit_position;
+            struct System_Collections_Generic_Stack_EvDataManager_EvCallData__o* _callQueue;
+            struct System_Collections_Generic_Dictionary_string__int____o* _findAllLabel;
+            struct FieldObjectEntity_o* _hit_object;
+            struct FieldObjectEntity_o* _hit_object_sub;
+            struct UnityEngine_Vector3_o _hit_position;
             int32_t _cmp_flag;
-            SmartPoint::AssetAssistant::AssetRequestOperation_o* _scriptOperation;
+            struct SmartPoint_AssetAssistant_AssetRequestOperation_o* _scriptOperation;
             int32_t _areaID;
-            System_Collections_Generic_List_FieldEventEntity__o* _warpList;
-            XLSXContent::MapWarp_o* _warpData;
-            UnityEngine_GameObject_o* _warpRoot;
-            System::Array<EvDataManager::PlaySeData_o*> * _se_datas;
-            System::Array<EvDataManager::PlaySeData_o*> * _voice_datas;
-            UnityEngine_Vector2Int_o _eventEndPosition;
-            System::String* _posEventLabelReserve;
-            System::Array<EvDataManager::EntityParam_o *> * _entityParamList;
-            UnityEngine_GameObject_o* _stopRoot;
+            struct System_Collections_Generic_List_FieldEventEntity__o* _warpList;
+            struct XLSXContent_MapWarp_o* _warpData;
+            struct UnityEngine_GameObject_o* _warpRoot;
+            struct PlaySeData_array* _se_datas;
+            struct PlaySeData_array* _voice_datas;
+            struct UnityEngine_Vector2Int_o _eventEndPosition;
+            struct System_String_o* _posEventLabelReserve;
+            struct EntityParam_array* _entityParamList;
+            struct UnityEngine_GameObject_o* _stopRoot;
             bool _isInitFirstMap;
-            FieldObjectEntity_o* __dummyPlayer_k__BackingField;
-            EvDataManager::UpdateDelegate_o* _updateDelegate;
-            EvDataManager::EventEndDelegate_o* _eventEndDelegate;
-            FieldEventDoorEntity_o* _doorEntity;
-            EvDataManager::WorpEventData_o _worpEventData;
-            UnityEngine_Vector2Int_o _eqZoneWorpGrid;
+            struct FieldObjectEntity_o* __dummyPlayer_k__BackingField;
+            struct UpdateDelegate_o* _updateDelegate;
+            struct EventEndDelegate_o* _eventEndDelegate;
+            struct FieldEventDoorEntity_o* _doorEntity;
+            struct WorpEventData_o _worpEventData;
+            struct UnityEngine_Vector2Int_o _eqZoneWorpGrid;
             bool _isEqZoneWorp;
-            FieldEventLiftEntity_o* _liftEntity;
-            FieldTobariGymWallEntity_o* _tobariGymWallEntity;
-            FieldNagisaGymGearEntity_o* _nagisaGymGearEntity;
-            FieldNomoseGymSwitchEntity_o* _nomoseGymSwitchEntity;
-            FieldEyePaintingEntity_o* _eyePaintingEntity;
-            FieldEmbankmentEntity_o* _embankmentEntity;
-            FieldMistPlate_o* _mistPlate;
-            FieldPokemonCenter_o* _PokemonCenter_k__BackingField;
-            Telescope_o* _Telescope_k__BackingField;
-            TelescopeNagisa_o* _TelescopeNagisa_k__BackingField;
+            struct FieldEventLiftEntity_o* _liftEntity;
+            struct FieldTobariGymWallEntity_o* _tobariGymWallEntity;
+            struct FieldNagisaGymGearEntity_o* _nagisaGymGearEntity;
+            struct FieldNomoseGymSwitchEntity_o* _nomoseGymSwitchEntity;
+            struct FieldEyePaintingEntity_o* _eyePaintingEntity;
+            struct FieldEmbankmentEntity_o* _embankmentEntity;
+            struct FieldMistPlate_o* _mistPlate;
+            struct FieldPokemonCenter_o* _PokemonCenter_k__BackingField;
+            struct Telescope_o* _Telescope_k__BackingField;
+            struct TelescopeNagisa_o* _TelescopeNagisa_k__BackingField;
             bool AzukariyaInitEventFlag;
-            FieldWazaCutIn_o* _FieldWazaCutIn_k__BackingField;
-            InterviewWork_o* _InterviewWork_k__BackingField;
-            System::Array<int32_t> * TvCommercials;
+            struct FieldWazaCutIn_o* _FieldWazaCutIn_k__BackingField;
+            struct InterviewWork_o* _InterviewWork_k__BackingField;
+            struct System_Int32_array* TvCommercials;
             int32_t TvCommercialsCurrentIndex;
-            FieldShip_o* _FieldShip_k__BackingField;
-            System::String* _callLabel_SceneChange;
-            System::String* _callLabel_UpdateSP;
-            System::String* _callLabel_AdjustHeroPos;
-            System_Collections_Generic_List_FieldObjectMoveCode__o* FieldObjectMoveCodes;
+            struct FieldShip_o* _FieldShip_k__BackingField;
+            struct System_String_o* _callLabel_SceneChange;
+            struct System_String_o* _callLabel_UpdateSP;
+            struct System_String_o* _callLabel_AdjustHeroPos;
+            struct System_Collections_Generic_List_FieldObjectMoveCode__o* FieldObjectMoveCodes;
             bool _lateUpdateMoveCode;
             bool _isCall_TrainerBtl;
-            EvDataManager::EvCallData_o _battleReturnData;
-            FieldObjectEntity_o* _battleReturnHitObject;
-            FieldObjectMoveCode_array* _eyeEncountTarget;
-            Balloon_array* _eyeEncountBallon;
+            struct EvCallData_o _battleReturnData;
+            struct FieldObjectEntity_o* _battleReturnHitObject;
+            struct FieldObjectMoveCode_array* _eyeEncountTarget;
+            struct Balloon_array* _eyeEncountBallon;
             float _eyeEncountWait;
             int32_t _eyeEncountSeq;
-            System::Array<int32_t> * _talkTrinerIndex;
+            struct System_Int32_array* _talkTrinerIndex;
             int32_t Btl_TrainerType1;
             int32_t Btl_TrainerType2;
             int32_t _ugSeq;
-            UnityEngine_Vector3_o _ugEndPos;
-            UnityEngine_Vector3_o _ugHoleRot;
+            struct UnityEngine_Vector3_o _ugEndPos;
+            struct UnityEngine_Vector3_o _ugHoleRot;
             float _ugFallSpdCurrent;
             int32_t _ugDiveSeq;
             float _ugDiveUpdateTime;
@@ -234,70 +233,70 @@ namespace Dpr
             int32_t _ugFromSeq;
             float _ugFromJumpTime;
             float _ugFromRotSpdCurrent;
-            XLSXContent::UgJumpPos_SheetData_o* _ugNextJumpPos;
-            FieldToUgInvisibleObjects_o* _toUgInvisibleObjects;
+            struct XLSXContent_UgJumpPos_SheetData_o* _ugNextJumpPos;
+            struct FieldToUgInvisibleObjects_o* _toUgInvisibleObjects;
             int32_t _cacheZoneID_SceneChange;
             bool _pendingInitScripts;
             int32_t SorawotobuZoneId;
             int32_t SorawotobuLocatorIndex;
-            EventCameraTable_o* _evCameraTable;
-            TairyouHasseiPokeManager_o* _tairyouHasseiMane;
+            struct EventCameraTable_o* _evCameraTable;
+            struct TairyouHasseiPokeManager_o* _tairyouHasseiMane;
             bool _isFadeEventReturnInput;
             float _cloudSpeed;
             float _cloudTime;
             int32_t _switch_work_index;
             float _timeWait;
-            Dpr::MsgWindow::MsgWindowParam_o* _msgWindowParam;
-            Dpr::MsgWindow::MsgWindowParam_o* _msgWindowParamOther;
-            EvDataManager::MsgOpenParam_o _msgOpenParam;
+            struct Dpr_MsgWindow_MsgWindowParam_o* _msgWindowParam;
+            struct Dpr_MsgWindow_MsgWindowParam_o* _msgWindowParamOther;
+            struct MsgOpenParam_o _msgOpenParam;
             bool _isAutoMsg;
             int32_t _eMsgSpeed;
             float _autoTime;
             int32_t _boardState;
-            Dpr::MsgWindow::MsgWindow_o* _msgWindow;
-            Dpr::MsgWindow::MsgWindow_o* _msgWindowOther;
-            UnityEngine_Coroutine_o* _msgWindowCoroutine;
+            struct Dpr_MsgWindow_MsgWindow_o* _msgWindow;
+            struct Dpr_MsgWindow_MsgWindow_o* _msgWindowOther;
+            struct UnityEngine_Coroutine_o* _msgWindowCoroutine;
             int32_t _talkStart;
             int32_t _macroCmd;
             int32_t _procCmd;
-            System::String* _talkOpenMsbt;
-            System::String* _talkOpenLabel;
+            struct System_String_o* _talkOpenMsbt;
+            struct System_String_o* _talkOpenLabel;
             float _turnEndFrame_Hero;
             float _turnEndFrame_Obj;
-            System_Single_array* _turnTime;
-            System::Array<UnityEngine_Quaternion_o> * _turnEndQuaternion;
-            System::Array<bool> * _turnDiffFlag;
+            struct System_Single_array* _turnTime;
+            struct UnityEngine_Quaternion_array* _turnEndQuaternion;
+            struct System_Boolean_array* _turnDiffFlag;
             float _deltatime;
-            System::String* _mapChangeZoneID;
+            struct System_String_o* _mapChangeZoneID;
             int32_t _mapChangeIndex;
-            UnityEngine_Quaternion_o _moveGridCenterStart;
-            UnityEngine_Quaternion_o _moveGridCenterEnd;
+            struct UnityEngine_Quaternion_o _moveGridCenterStart;
+            struct UnityEngine_Quaternion_o _moveGridCenterEnd;
             bool _isOpenSubContentsMenu;
             bool _isWaitCheckOnlineAccount;
-            System::String* _custumWindow_msbt;
-            System_Collections_Generic_List_string__o* _custumWindow_Labels;
-            System_Collections_Generic_List_int__o* _custumWindow_RetIndex;
-            FieldEventEntity_o* _selectDoorObject;
+            struct System_String_o* _custumWindow_msbt;
+            struct System_Collections_Generic_List_string__o* _custumWindow_Labels;
+            struct System_Collections_Generic_List_int__o* _custumWindow_RetIndex;
+            struct FieldEventEntity_o* _selectDoorObject;
             float _fadeSpeed;
             int32_t _heroReqBit;
             int32_t _heroMoveGridCenterFrontDir;
             bool _heroMoveGridCenterFrontStat;
-            Dpr::FieldObjectMove_o* _fieldObjectMove;
-            Dpr::FieldObjectRotateYaw_o* _fieldObjectRotateYaw;
-            Dpr::FieldFloatMove_o* _fieldFloatMove;
+            struct Dpr_FieldObjectMove_o* _fieldObjectMove;
+            struct Dpr_FieldObjectRotateYaw_o* _fieldObjectRotateYaw;
+            struct Dpr_FieldFloatMove_o* _fieldFloatMove;
             int32_t _hidenSequence;
-            UnityEngine_Vector3_o _takiTargetPosition;
-            UnityEngine_Vector3_o _rockClimbingEndPos;
-            UnityEngine_Vector3_o _rockClimbingStandPos;
+            struct UnityEngine_Vector3_o _takiTargetPosition;
+            struct UnityEngine_Vector3_o _rockClimbingEndPos;
+            struct UnityEngine_Vector3_o _rockClimbingStandPos;
             bool _hidenEffectWait;
             bool _rideBicycleReserve;
-            FieldEventLiftEntity_o* _runEventLiftEntity;
+            struct FieldEventLiftEntity_o* _runEventLiftEntity;
             int32_t _liftSequence;
             int32_t _gearSequence;
             int32_t _waterSequence;
             int32_t _kinomiSequence;
             float _kinomiSequenceTime;
-            Effect_EffectInstance_o* _kinomiEffect;
+            struct Effect_EffectInstance_o* _kinomiEffect;
             int32_t _warpSequence;
             int32_t _warpSpeedSequence;
             float _warpSpeedSequenceTime;
@@ -315,59 +314,60 @@ namespace Dpr
             int32_t _cutinState;
             bool _isShopOpen;
             int32_t _bagSelectItemNo;
-            Dpr::UI::FloorWindow_o* _floorWindow;
-            Dpr::UI::MoneyWindow_o* _moneyWindow;
-            System_Text_StringBuilder_o* matchingPassword;
+            struct Dpr_UI_FloorWindow_o* _floorWindow;
+            struct Dpr_UI_MoneyWindow_o* _moneyWindow;
+            struct System_Text_StringBuilder_o* matchingPassword;
             int32_t _openTownMapSeq;
             bool _isOpenBtlTowerRecode;
             int32_t _softwareKeyboardSubState;
             int32_t _effSeq;
             bool _pc_window_close;
             int32_t _dendou;
-            FieldAnimatorController_array* _umaAnimatorCtr;
+            struct FieldAnimatorController_array* _umaAnimatorCtr;
             bool _isOpenCustomBallTrainer;
             int32_t _nicknamePlacementSequence;
-            System::Array<Effect_EffectInstance_o *> * _scriptEffects;
-            System::Array<UnityEngine_Coroutine_o *> * _scriptScaleCorutine;
-            System::Array<bool> * _scriptScaleVectol;
-            Pml::PokePara::PokemonParam_o* _temp_PokePara;
+            struct Effect_EffectInstance_array* _scriptEffects;
+            struct UnityEngine_Coroutine_array* _scriptScaleCorutine;
+            struct System_Boolean_array* _scriptScaleVectol;
+            struct Pml_PokePara_PokemonParam_o* _temp_PokePara;
             bool _isBattleTowerBtl;
             bool _isBattleTowerWin;
-            UnityEngine_Vector2_o _playerMoveGridCenterAngle;
-            EvScriptData_o* _evData;
-            EvData::Script_o* _evScript;
-            EvData::Command_o* _evCommand;
-            System::Array<EvData::Aregment_o> * _evArg;
+            struct UnityEngine_Vector2_o _playerMoveGridCenterAngle;
+            struct Dpr_EvScript_EvScriptData_o* _evData;
+            struct EvData_Script_o* _evScript;
+            struct EvData_Command_o* _evCommand;
+            struct System::Array<EvData::Aregment_o> * _evArg;
             int32_t btlsearchSeq;
-            Audio_AudioInstance_o* btlserchAudio;
+            struct Audio_AudioInstance_o* btlserchAudio;
             bool _isOpenHallOfFame;
-            UnityEngine_Coroutine_o* _cmdReportSaveCoroutine;
+            struct UnityEngine_Coroutine_o* _cmdReportSaveCoroutine;
             int32_t _seqRankingView;
             bool _isOpenCertificate;
             int32_t returnSequenceID;
             bool _boukennootoTipsOpen;
             int32_t _fashionLoadSeq;
-            System::String* _oldfashionAssetReqUri;
-            SmartPoint::AssetAssistant::AssetRequestOperation_o* _fashionAssetReqOp;
+            struct System_String_o* _oldfashionAssetReqUri;
+            struct SmartPoint_AssetAssistant_AssetRequestOperation_o* _fashionAssetReqOp;
             float _fashionYawAngle;
-            UnityEngine_Vector3_o _fashionWorldpos;
+            struct UnityEngine_Vector3_o _fashionWorldpos;
             bool _isTraining;
             bool _isOpenTraining;
-            System_Single_array* _setlight_timer;
-            System_Single_array* _setlight_timer_limit;
-            System_Single_array* _start_lightIntensity;
-            System_Single_array* _end_lightIntensity;
-            System::Array<bool> * _isRunningLight;
-            System_Collections_Generic_List_string__o* Debug_01_DebugLabel;
-            System_Collections_Generic_List_string__o* DebugSceneEventLabel;
-            System_Collections_Generic_List_FieldObjectEntity__o* _fieldObjectEntity;
-            System_Collections_Generic_List_FieldKinomiGrowEntity__o* _FieldKinomiGrowEntity;
-            System_Collections_Generic_List_EvDataManager_AssetReqOpeRef__o* _AssetReqOpeList;
-            System_Collections_Generic_List_EvDataManager_LoadObjectData__o* _loadObjectList;
+            struct System_Single_array* _setlight_timer;
+            struct System_Single_array* _setlight_timer_limit;
+            struct System_Single_array* _start_lightIntensity;
+            struct System_Single_array* _end_lightIntensity;
+            struct System_Boolean_array* _isRunningLight;
+            bool isSpBtlAruseus;
+            struct System_Collections_Generic_List_string__o* Debug_01_DebugLabel;
+            struct System_Collections_Generic_List_string__o* DebugSceneEventLabel;
+            struct System_Collections_Generic_List_FieldObjectEntity__o* _fieldObjectEntity;
+            struct System_Collections_Generic_List_FieldKinomiGrowEntity__o* _FieldKinomiGrowEntity;
+            struct System_Collections_Generic_List_EvDataManager_AssetReqOpeRef__o* _AssetReqOpeList;
+            struct System_Collections_Generic_List_EvDataManager_LoadObjectData__o* _loadObjectList;
             int32_t _loadObjectIndex;
-            UnityEngine_Transform_o* _loadObjectParent;
+            struct UnityEngine_Transform_o* _loadObjectParent;
             bool _nowInstantiate;
-            System_Collections_Generic_Dictionary_int__GameObject__o* _poolLoadObjects;
+            struct System_Collections_Generic_Dictionary_int__GameObject__o* _poolLoadObjects;
         };
 
         struct EvDataManager_c;
@@ -377,6 +377,8 @@ namespace Dpr
             static EvDataManager_o * get_Instanse(MethodInfo *method);
             // 01b54470
             void LearnWaza(Pml::PokePara::PokemonParam_o *param, int32_t learnWazaNo,int32_t unlearnWazaNo,MethodInfo *method);
+            // 02c423c0
+            bool JumpLabel(System::String *label, EventEndDelegate_o *callback, MethodInfo *method);
 
             EvDataManager_c *klass;
             void *monitor;

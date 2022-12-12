@@ -133,8 +133,10 @@ void BATTLE_SETUP_Wild(BATTLE_SETUP_PARAM_o *bp,
     socket_log_fmt("Setup::normalTrainer: %08X\n", &Setup::normalTrainer);
     socket_log_fmt("Pml::PokeParty_o::CopyFrom: %08X\n", &Pml::PokeParty_o::CopyFrom);
     // Forcing it to be zero for partner trainer id to make sure we don't both overwrite 2
+    const int BTL_MULTIMODE_RAID_P_A = 3;
+    const int BTL_MULTIMODE_RAID_PAAA_A = 5;
     Setup::BATTLE_SETUP_Wild(bp, playerParty, partyEnemy, 0, sit, RAID_BOSS_RULE, method);
-    bp->fields.multiMode = 5; // BTL_MULTIMODE_RAID_PAAA_A
+    bp->fields.multiMode = BTL_MULTIMODE_RAID_P_A; // BTL_MULTIMODE_RAID_PAAA_A
     bp->fields.raidBattleParam->fields.bossGrade = RAIDBOSS_GRADE_MAX;
     bossDesc = bp->fields.raidBattleParam->fields.bossDesc;
     socket_log_fmt("bossDesc: %08X\n", bossDesc);

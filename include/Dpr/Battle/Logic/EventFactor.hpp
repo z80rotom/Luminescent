@@ -58,6 +58,21 @@ namespace Dpr
                 EventFactor_EventHandlerTable_Fields fields;
             };
 
+            struct EventFactor_SkipCheckHandler_Fields {
+                System_MulticastDelegate_Fields super;
+            };
+
+            struct EventFactor_SkipCheckHandler_c;
+
+            struct EventFactor_SkipCheckHandler_o {
+                // 1d12f20
+                void ctor(intptr_t target, MethodInfo * method);
+
+                EventFactor_SkipCheckHandler_c *klass;
+                void *monitor;
+                EventFactor_SkipCheckHandler_Fields fields;
+            };
+
             // 4c5b150
             extern void * EventFactor_EventHandler_TypeInfo;
 
@@ -66,6 +81,9 @@ namespace Dpr
 
             // 4c5b158
             extern void * EventFactor_EventHandlerTable_TypeInfo;
+
+            // 4c5b278
+            extern void * EventFactor_SkipCheckHandler_TypeInfo;
         }
     }
 }

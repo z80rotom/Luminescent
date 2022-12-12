@@ -1,0 +1,8 @@
+[target=main, version=bd_130]
+// Force 4096 Capture Value Coefficient
+02177394:
+    b #0x44
+
+[target=main, version=sp_130]
+02579F54:
+    b #0x44
