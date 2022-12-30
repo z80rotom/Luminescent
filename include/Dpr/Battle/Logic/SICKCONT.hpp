@@ -13,6 +13,8 @@ namespace Dpr
             {
                 // 20d47d0
                 static BTL_SICKCONT_o MakePermanent(uint8_t causePokeID, MethodInfo * method);
+                // 20d4680
+                static BTL_SICKCONT_o MakeTurn(uint8_t causePokeID, uint8_t turns, MethodInfo * method);
             };
         }
     }

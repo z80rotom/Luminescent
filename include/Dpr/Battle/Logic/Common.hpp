@@ -5,6 +5,8 @@
 #include "Dpr/Battle/Logic/EventFactor.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_Message.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_FormChange.hpp"
+#include "Dpr/Battle/Logic/Section_FieldEffect_Add_Description.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_FieldEffect_Remove_Description.hpp"
 
 namespace Dpr
 {
@@ -14,6 +16,13 @@ namespace Dpr
         {
             struct Common
             {
+                // 1d0a260
+                static bool CheckFieldEffect(EventFactor_EventHandlerArgs_o ** args, int32_t * effType, MethodInfo * method);
+                // 1d0b730
+                static bool AddFieldEffect(EventFactor_EventHandlerArgs_o ** args, Section_FieldEffect_Add_Description_o ** desc, MethodInfo * method);
+                // 1d0b7c0
+                static bool RemoveFieldEffect(EventFactor_EventHandlerArgs_o * * args, Section_FromEvent_FieldEffect_Remove_Description_o ** desc, MethodInfo * method);
+
                 static int32_t GetEventVar(EventFactor_EventHandlerArgs_o **args, uint16_t label, MethodInfo *method);
                 static bool RewriteEventVar(EventFactor_EventHandlerArgs_o **args, uint16_t label, int32_t value, MethodInfo *method);
                 static void * GetEventVarAddress(EventFactor_EventHandlerArgs_o **args, uint16_t label, MethodInfo *method);

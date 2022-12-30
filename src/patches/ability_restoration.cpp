@@ -11,6 +11,7 @@
 #include "Dpr/Battle/Logic/StrParam.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_Message.hpp"
 #include "Dpr/Battle/Logic/WAZADATA.hpp"
+#include "Dpr/Battle/Logic/EffectType.hpp"
 
 #include "il2cpp-api.h"
 #include "il2cpp.hpp"
@@ -56,6 +57,9 @@ static System::Array<EventFactor_EventHandlerTable_o *> * sPurifyingSaltEventHan
 static System::Array<EventFactor_EventHandlerTable_o *> * sZeroToHeroEventHandlerTable = nullptr;
 static System::Array<EventFactor_EventHandlerTable_o *> * sOpportunistEventHandlerTable = nullptr;
 static System::Array<EventFactor_EventHandlerTable_o *> * sMyceliumMightEventHandlerTable = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sTrickySurgeEventHandlerTable = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sWonderSurgeEventHandlerTable = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sMagicSurgeEventHandlerTable = nullptr;
 
 
 const uint32_t NUM_BLADEMASTER_MOVES = 12;
@@ -358,6 +362,55 @@ void handler_MyceliumMight_End(EventFactor_EventHandlerArgs_o **args, uint8_t po
     Common::SetWorkValue(args, 0, 0, (MethodInfo *) nullptr);
 }
 
+void handle_EffectSurge(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, int32_t effType, MethodInfo *method)
+{
+    system_load_typeinfo((void *)0xaa75);
+    uint8_t arg = Common::GetEventVar(args, EventVar::POKEID, nullptr);
+
+    if (arg != pokeID)
+    {
+        return;
+    }
+
+    bool result = Common::CheckFieldEffect(args, &effType, nullptr);
+
+    if (result)
+    {
+        Section_FromEvent_FieldEffect_Remove_Description_o * desc = (Section_FromEvent_FieldEffect_Remove_Description_o *) il2cpp_object_new(Section_FromEvent_FieldEffect_Remove_Description_TypeInfo);
+        desc->ctor(nullptr);
+        desc->fields.effect = effType;
+        result = Common::RemoveFieldEffect(args, &desc, nullptr);
+    } else {
+        Section_FieldEffect_Add_Description_o * desc = (Section_FieldEffect_Add_Description_o *) il2cpp_object_new(Section_FieldEffect_Add_Description_TypeInfo);
+        desc->ctor(nullptr);
+        desc->fields.pokeID = pokeID;
+        desc->fields.effect = effType;
+        desc->fields.cont = SICKCONT::MakeTurn(pokeID, 5, nullptr);
+        desc->fields.successMessage->Setup(2, 0x488, nullptr);
+        desc->fields.successMessage->AddArg(arg, nullptr);
+        result = Common::AddFieldEffect(args, &desc, nullptr);
+    }
+
+    if (result)
+    {
+        Common::RewriteEventVar(args, EventVar::SUCCESS_FLAG, 1, nullptr);
+    }
+}
+
+void handler_TrickySurge(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
+{
+    handle_EffectSurge(args, pokeID, EffectType::EFF_TRICKROOM, method);
+}
+
+void handler_MagicSurge(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
+{
+    handle_EffectSurge(args, pokeID, EffectType::EFF_MAGICROOM, method);
+}
+
+void handler_WonderSurge(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
+{
+    handle_EffectSurge(args, pokeID, EffectType::EFF_WONDERROOM, method);
+}
 
 System::Array<EventFactor_EventHandlerTable_o *> * ADD_Blademaster(MethodInfo *method)
 {
@@ -449,6 +502,41 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_MyceliumMight(MethodInfo 
     }
 
     return sMyceliumMightEventHandlerTable;
+}
+
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_TrickySurge(MethodInfo * method)
+{
+    if (sTrickySurgeEventHandlerTable == nullptr) {
+        sTrickySurgeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
+        sTrickySurgeEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::MEMBER_IN, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_TrickySurge);
+        sTrickySurgeEventHandlerTable->m_Items[1] = createEventHandlerTable(EventID::CHANGE_TOKUSEI_AFTER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_TrickySurge);
+    }
+
+    return sTrickySurgeEventHandlerTable;
+}
+
+
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_WonderSurge(MethodInfo * method)
+{
+    if (sWonderSurgeEventHandlerTable == nullptr) {
+        sWonderSurgeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
+        sWonderSurgeEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::MEMBER_IN, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_WonderSurge);
+        sWonderSurgeEventHandlerTable->m_Items[1] = createEventHandlerTable(EventID::CHANGE_TOKUSEI_AFTER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_WonderSurge);
+    }
+
+    return sWonderSurgeEventHandlerTable;
+}
+
+
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_MagicSurge(MethodInfo * method)
+{
+    if (sMagicSurgeEventHandlerTable == nullptr) {
+        sMagicSurgeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
+        sMagicSurgeEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::MEMBER_IN, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MagicSurge);
+        sMagicSurgeEventHandlerTable->m_Items[1] = createEventHandlerTable(EventID::CHANGE_TOKUSEI_AFTER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MagicSurge);
+    }
+
+    return sMagicSurgeEventHandlerTable;
 }
 
 void AddHandler(System::Array<Tokusei_GET_FUNC_TABLE_ELEM_o> * getFuncTable, uint32_t * idx, int32_t tokusei, Il2CppMethodPointer methodPointer)
