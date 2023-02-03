@@ -256,6 +256,7 @@ _Z20thunk_FUN_7100252fd8PvS_ = 0x252fd8 - 0x05708000;
 _ZN3Pml8PokePara9CoreParam14GetTalentPowerEiP10MethodInfo = 0x2044610 - 0x05708000;
 _ZN3Pml8PokePara9CoreParam14IsTrainingDoneEiP10MethodInfo = 0x2044680 - 0x05708000;
 _ZN6System6String6ConcatEP12Il2CppObjectS2_P10MethodInfo = 0x26f8fc0 - 0x05708000;
+_ZN6System6String6ConcatEP12Il2CppObjectS2_S2_P10MethodInfo = 0x26ee6a0 - 0x05708000;
 ZukanWork_TypeInfo = 0x4c5b488 - 0x05708000;
 Array_IndexOf_MethodInfo = 0x4c72a08 - 0x05708000;
 _Z13Array_IndexOfPN6System5ArrayIiEEiP10MethodInfo = 0x26ca0c0 - 0x05708000;
@@ -290,6 +291,7 @@ DAT_7103a679b8 = 0x3a679b8 - 0x05708000;
 _ZN11GameManager22get_currentPeriodOfDayEP10MethodInfo = 0x2cd0c60 - 0x05708000;
 _ZN3Pml8PokePara13InitialSpec_o4ctorEP10MethodInfo = 0x20521d0 - 0x05708000;
 _ZN3Dpr8EvScript15EvDataManager_o9JumpLabelEPN6System6StringEPNS0_18EventEndDelegate_oEP10MethodInfo = 0x02c423c0 - 0x05708000;
+_ZN3Dpr8EvScript15EvDataManager_o12UpdateEvdataEfbP10MethodInfo = 0x02c42ea0 - 0x05708000;
 Handler_Karagenki_WazaPowMethodInfo = 0x04c7a3b0 - 0x05708000;
 Method_handler_TetunoKobusi = 0x4c79da0 - 0x05708000;
 _ZN3Dpr6Battle5Logic44EventFactor_EventHandlerTable_Array_TypeInfoE = 0x4c5b148 - 0x05708000;
@@ -326,3 +328,6 @@ _ZN3Dpr6Battle5Logic57Section_FromEvent_FieldEffect_Remove_Description_TypeInfoE
 _ZN3Dpr6Battle5Logic6Common14AddFieldEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_37Section_FieldEffect_Add_Description_oEP10MethodInfo = 0x1d0b730 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common16CheckFieldEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPiP10MethodInfo = 0x1d0a260 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common17RemoveFieldEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_50Section_FromEvent_FieldEffect_Remove_Description_oEP10MethodInfo = 0x1d0b7c0 - 0x05708000;
+
+StringLiteral_9194 = 0x4ca7d88 - 0x05708000;
+StringLiteral_9195 = 0x4ca7d90 - 0x05708000;

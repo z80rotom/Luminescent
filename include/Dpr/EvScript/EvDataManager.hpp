@@ -379,6 +379,8 @@ namespace Dpr
             void LearnWaza(Pml::PokePara::PokemonParam_o *param, int32_t learnWazaNo,int32_t unlearnWazaNo,MethodInfo *method);
             // 02c423c0
             bool JumpLabel(System::String *label, EventEndDelegate_o *callback, MethodInfo *method);
+            // 02c42ea0
+            bool UpdateEvdata(float time, bool sp_script, MethodInfo *method);
 
             EvDataManager_c *klass;
             void *monitor;
