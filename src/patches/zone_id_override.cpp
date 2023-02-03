@@ -686,8 +686,8 @@ void SpLabel_Init(Dpr::EvScript::EvDataManager_o *__this, int32_t id, MethodInfo
 
     if (id >= 0 && id < NUM_ZONE_ID)
     {
-        System::String * label = System::String::Concat((Il2CppObject *)StringLiteral_9194, (Il2CppObject *)(getZoneNames()[id]), (Il2CppObject *)StringLiteral_9195, (MethodInfo *) nullptr);
+        System::String * label = System::String::Concat(StringLiteral_9194, getZoneNames()[id], StringLiteral_9195, (MethodInfo *) nullptr);
         __this->JumpLabel(label, (Dpr::EvScript::EventEndDelegate_o *) nullptr, (MethodInfo *) nullptr);
-        __this->UpdateEvdata(0.0, '\x01', (MethodInfo *) nullptr);
+        __this->UpdateEvdata(0.0, true, (MethodInfo *) nullptr);
     }
 }
