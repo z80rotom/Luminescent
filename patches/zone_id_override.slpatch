@@ -1,15 +1,17 @@
 [target=main, version=bd_130]
 
-// Usage in Dpr.EvScript.EvDataManager$$SpLabel_Init
-// 02c42bbc:  # Stub out FUN_71002b8ab0
-//   bl FUN_71002b8ab0_Stub
-
-// 0173f60c:  # Obtain name for enum value
-//   bl getZoneIdName
-
-// 0173f610:  # Patch condition
-//   cbz x20, LAB_7102c42c3c_Stub
-
-// Rewrite Dpr.EvScript.EvDataManager$$SpLabel_Init instead
+// Rewrite Dpr.EvScript.EvDataManager$$SpLabel_Init
 02c42b70:
-  bl SpLabel_Init
+  b SpLabel_Init
+
+// Rewrite Dpr.EvScript.EvDataManager$$SpLabel_Obj
+02c42c40:
+  b SpLabel_Obj
+
+// Rewrite Dpr.EvScript.EvDataManager$$SpLabel_Flag
+02c42d10:
+  b SpLabel_Flag
+
+// Rewrite Dpr.EvScript.EvDataManager$$SpLabel_Scene
+02c42de0:
+  b SpLabel_Scene

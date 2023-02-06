@@ -331,3 +331,6 @@ _ZN3Dpr6Battle5Logic6Common17RemoveFieldEffectEPPNS1_30EventFactor_EventHandlerA
 
 StringLiteral_9194 = 0x4ca7d88 - 0x05708000;
 StringLiteral_9195 = 0x4ca7d90 - 0x05708000;
+StringLiteral_9196 = 0x4ca7d98 - 0x05708000;
+StringLiteral_9197 = 0x4ca7da0 - 0x05708000;
+StringLiteral_9198 = 0x4ca7da8 - 0x05708000;
