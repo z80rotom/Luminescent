@@ -693,18 +693,14 @@ void SpLabel_Init(Dpr::EvScript::EvDataManager_o *__this, int32_t id, MethodInfo
 {
     socket_log_fmt("SpLabel_Init: Init");
     system_load_typeinfo((void *)0x4645);
-    socket_log_fmt("SpLabel_Init: Type Info");
 
     if (id >= 0 && id < NUM_ZONE_ID)
     {
-        socket_log_fmt("SpLabel_Init: ID (" + std::to_string(id) + ") OK");
+        socket_log_fmt("  SpLabel_Init: ID (" + std::to_string(id) + ") OK");
         System::String * label = System::String::Concat(StringLiteral_9194, System::String::CreateString(&(getZoneNames()[id][0])), StringLiteral_9195, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Init: Zone Name is " + getZoneNames()[id]);
-        socket_log_fmt("SpLabel_Init: Label calculated");
+        socket_log_fmt("  SpLabel_Init: Zone Name is " + getZoneNames()[id]);
         __this->JumpLabel(label, (Dpr::EvScript::EventEndDelegate_o *) nullptr, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Init: Label jumped to");
         __this->UpdateEvdata(0.0, true, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Init: Evdata updated");
     }
 
     socket_log_fmt("SpLabel_Init: Method end");
@@ -714,18 +710,14 @@ void SpLabel_Obj(Dpr::EvScript::EvDataManager_o *__this, int32_t id, MethodInfo 
 {
     socket_log_fmt("SpLabel_Obj: Init");
     system_load_typeinfo((void *)0x4646);
-    socket_log_fmt("SpLabel_Obj: Type Info");
 
     if (id >= 0 && id < NUM_ZONE_ID)
     {
-        socket_log_fmt("SpLabel_Obj: ID (" + std::to_string(id) + ") OK");
+        socket_log_fmt("  SpLabel_Obj: ID (" + std::to_string(id) + ") OK");
         System::String * label = System::String::Concat(StringLiteral_9194, System::String::CreateString(&(getZoneNames()[id][0])), StringLiteral_9196, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Obj: Zone Name is " + getZoneNames()[id]);
-        socket_log_fmt("SpLabel_Obj: Label calculated");
+        socket_log_fmt("  SpLabel_Obj: Zone Name is " + getZoneNames()[id]);
         __this->JumpLabel(label, (Dpr::EvScript::EventEndDelegate_o *) nullptr, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Obj: Label jumped to");
         __this->UpdateEvdata(0.0, true, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Obj: Evdata updated");
     }
 
     socket_log_fmt("SpLabel_Obj: Method end");
@@ -735,18 +727,14 @@ void SpLabel_Flag(Dpr::EvScript::EvDataManager_o *__this, int32_t id, MethodInfo
 {
     socket_log_fmt("SpLabel_Flag: Init");
     system_load_typeinfo((void *)0x4644);
-    socket_log_fmt("SpLabel_Flag: Type Info");
 
     if (id >= 0 && id < NUM_ZONE_ID)
     {
-        socket_log_fmt("SpLabel_Flag: ID (" + std::to_string(id) + ") OK");
+        socket_log_fmt("  SpLabel_Flag: ID (" + std::to_string(id) + ") OK");
         System::String * label = System::String::Concat(StringLiteral_9194, System::String::CreateString(&(getZoneNames()[id][0])), StringLiteral_9198, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Flag: Zone Name is " + getZoneNames()[id]);
-        socket_log_fmt("SpLabel_Flag: Label calculated");
+        socket_log_fmt("  SpLabel_Flag: Zone Name is " + getZoneNames()[id]);
         __this->JumpLabel(label, (Dpr::EvScript::EventEndDelegate_o *) nullptr, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Flag: Label jumped to");
         __this->UpdateEvdata(0.0, true, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Flag: Evdata updated");
     }
 
     socket_log_fmt("SpLabel_Flag: Method end");
@@ -756,18 +744,14 @@ void SpLabel_Scene(Dpr::EvScript::EvDataManager_o *__this, int32_t id, MethodInf
 {
     socket_log_fmt("SpLabel_Scene: Init");
     system_load_typeinfo((void *)0x4647);
-    socket_log_fmt("SpLabel_Scene: Type Info");
 
     if (id >= 0 && id < NUM_ZONE_ID)
     {
-        socket_log_fmt("SpLabel_Scene: ID (" + std::to_string(id) + ") OK");
+        socket_log_fmt("  SpLabel_Scene: ID (" + std::to_string(id) + ") OK");
         System::String * label = System::String::Concat(StringLiteral_9194, System::String::CreateString(&(getZoneNames()[id][0])), StringLiteral_9197, (MethodInfo *) nullptr);
-        socket_log_fmt("SpLabel_Scene: Zone Name is " + getZoneNames()[id]);
-        socket_log_fmt("SpLabel_Scene: Label calculated");
+        socket_log_fmt("  SpLabel_Scene: Zone Name is " + getZoneNames()[id]);
         __this->fields._callLabel_UpdateSP = label;
-        socket_log_fmt("SpLabel_Scene: array initialized");
         _system_array_init(&(__this->fields)._callLabel_UpdateSP);
-        socket_log_fmt("SpLabel_Scene: _callLabel_UpdateSP changed");
     }
 
     socket_log_fmt("SpLabel_Scene: Method end");
