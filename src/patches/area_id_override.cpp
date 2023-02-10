@@ -702,48 +702,13 @@ std::string* getAreaNames()
 struct AreaID_Fields {
 	int32_t value__;
 };
-struct AreaID_RGCTXs {
-};
-struct AreaID_VTable {
-	VirtualInvokeData _0_Equals;
-	VirtualInvokeData _1_Finalize;
-	VirtualInvokeData _2_GetHashCode;
-	VirtualInvokeData _3_ToString;
-	VirtualInvokeData _4_CompareTo;
-	VirtualInvokeData _5_ToString;
-	VirtualInvokeData _6_GetTypeCode;
-	VirtualInvokeData _7_System_IConvertible_ToBoolean;
-	VirtualInvokeData _8_System_IConvertible_ToChar;
-	VirtualInvokeData _9_System_IConvertible_ToSByte;
-	VirtualInvokeData _10_System_IConvertible_ToByte;
-	VirtualInvokeData _11_System_IConvertible_ToInt16;
-	VirtualInvokeData _12_System_IConvertible_ToUInt16;
-	VirtualInvokeData _13_System_IConvertible_ToInt32;
-	VirtualInvokeData _14_System_IConvertible_ToUInt32;
-	VirtualInvokeData _15_System_IConvertible_ToInt64;
-	VirtualInvokeData _16_System_IConvertible_ToUInt64;
-	VirtualInvokeData _17_System_IConvertible_ToSingle;
-	VirtualInvokeData _18_System_IConvertible_ToDouble;
-	VirtualInvokeData _19_System_IConvertible_ToDecimal;
-	VirtualInvokeData _20_System_IConvertible_ToDateTime;
-	VirtualInvokeData _21_ToString;
-	VirtualInvokeData _22_System_IConvertible_ToType;
-};
-struct AreaID_c {
-	Il2CppClass_1 _1;
-	struct AreaID_StaticFields* static_fields;
-	AreaID_RGCTXs* rgctx_data;
-	Il2CppClass_2 _2;
-	AreaID_VTable vtable;
-};
 struct AreaID_o {
 	AreaID_Fields fields;
 };
 
-System::String * GetEnumName1(long param_1, long *param_2)
+System::String * GetEnumName(long param_1, long *param_2)
 {
-    socket_log_fmt("GetEnumName (StartUpCreate): Init");
-	il2cpp_runtime_class_init((void *)param_1);
+    socket_log_fmt("GetEnumName: Init");
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -751,260 +716,17 @@ System::String * GetEnumName1(long param_1, long *param_2)
 
     if (id >= 0 && id < NUM_AREA_ID)
     {
-        socket_log_fmt("  GetEnumName (StartUpCreate): ID (" + id_str + ") OK");
-        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
-        socket_log_fmt("  GetEnumName (StartUpCreate): Area Name is " + getAreaNames()[id]);
-        socket_log_fmt("GetEnumName (StartUpCreate): Method end");
+        socket_log_fmt("  GetEnumName: ID (" + id_str + ") OK");
+        System::String * label = System::String::CreateString(getAreaNames()[id].c_str());
+        socket_log_fmt("  GetEnumName: Area Name is " + getAreaNames()[id]);
         _system_array_init(label);
         return label;
     }
     else
     {
-        socket_log_fmt("  GetEnumName (StartUpCreate): ID (" + id_str + ") BAD");
-        socket_log_fmt("GetEnumName (StartUpCreate): Method end");
+        socket_log_fmt("  GetEnumName: ID (" + id_str + ") BAD");
         System::String * label = System::String::CreateString("");
         _system_array_init(label);
         return label;
     }
-}
-
-System::String * GetEnumName2(long param_1, long *param_2)
-{
-    socket_log_fmt("GetEnumName (PreRequestAssetSetUp): Init");
-	il2cpp_runtime_class_init((void *)param_1);
-    int id = ((AreaID_o *)param_2)->fields.value__;
-    char buff[100];
-    snprintf(buff, sizeof(buff), "%08X", id);
-    std::string id_str = buff;
-
-    if (id >= 0 && id < NUM_AREA_ID)
-    {
-        socket_log_fmt("  GetEnumName (PreRequestAssetSetUp): ID (" + id_str + ") OK");
-        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
-        socket_log_fmt("  GetEnumName (PreRequestAssetSetUp): Area Name is " + getAreaNames()[id]);
-        socket_log_fmt("GetEnumName (PreRequestAssetSetUp): Method end");
-        _system_array_init(label);
-        return label;
-    }
-    else
-    {
-        socket_log_fmt("  GetEnumName (PreRequestAssetSetUp): ID (" + id_str + ") BAD");
-        socket_log_fmt("GetEnumName (PreRequestAssetSetUp): Method end");
-        System::String * label = System::String::CreateString("");
-        _system_array_init(label);
-        return label;
-    }
-}
-
-System::String * GetEnumName3(long param_1, long *param_2)
-{
-    socket_log_fmt("GetEnumName (RequestAssetSetUp): Init");
-	il2cpp_runtime_class_init((void *)param_1);
-    int id = ((AreaID_o *)param_2)->fields.value__;
-    char buff[100];
-    snprintf(buff, sizeof(buff), "%08X", id);
-    std::string id_str = buff;
-
-    if (id >= 0 && id < NUM_AREA_ID)
-    {
-        socket_log_fmt("  GetEnumName (RequestAssetSetUp): ID (" + id_str + ") OK");
-        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
-        socket_log_fmt("  GetEnumName (RequestAssetSetUp): Area Name is " + getAreaNames()[id]);
-        socket_log_fmt("GetEnumName (RequestAssetSetUp): Method end");
-        _system_array_init(label);
-        return label;
-    }
-    else
-    {
-        socket_log_fmt("  GetEnumName (RequestAssetSetUp): ID (" + id_str + ") BAD");
-        socket_log_fmt("GetEnumName (RequestAssetSetUp): Method end");
-        System::String * label = System::String::CreateString("");
-        _system_array_init(label);
-        return label;
-    }
-}
-
-System::String * GetEnumName4(long param_1, long *param_2)
-{
-    socket_log_fmt("GetEnumName (CreateWorpPoint): Init");
-	il2cpp_runtime_class_init((void *)param_1);
-    int id = ((AreaID_o *)param_2)->fields.value__;
-    char buff[100];
-    snprintf(buff, sizeof(buff), "%08X", id);
-    std::string id_str = buff;
-
-    if (id >= 0 && id < NUM_AREA_ID)
-    {
-        socket_log_fmt("  GetEnumName (CreateWorpPoint): ID (" + id_str + ") OK");
-        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
-        socket_log_fmt("  GetEnumName (CreateWorpPoint): Area Name is " + getAreaNames()[id]);
-        socket_log_fmt("GetEnumName (CreateWorpPoint): Method end");
-        _system_array_init(label);
-        return label;
-    }
-    else
-    {
-        socket_log_fmt("  GetEnumName (CreateWorpPoint): ID (" + id_str + ") BAD");
-        socket_log_fmt("GetEnumName (CreateWorpPoint): Method end");
-        System::String * label = System::String::CreateString("");
-        _system_array_init(label);
-        return label;
-    }
-}
-
-System::String * GetEnumName5(long param_1, long *param_2)
-{
-    socket_log_fmt("GetEnumName (CheckPlaceData): Init");
-	il2cpp_runtime_class_init((void *)param_1);
-    int id = ((AreaID_o *)param_2)->fields.value__;
-    char buff[100];
-    snprintf(buff, sizeof(buff), "%08X", id);
-    std::string id_str = buff;
-
-    if (id >= 0 && id < NUM_AREA_ID)
-    {
-        socket_log_fmt("  GetEnumName (CheckPlaceData): ID (" + id_str + ") OK");
-        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
-        socket_log_fmt("  GetEnumName (CheckPlaceData): Area Name is " + getAreaNames()[id]);
-        socket_log_fmt("GetEnumName (CheckPlaceData): Method end");
-        _system_array_init(label);
-        return label;
-    }
-    else
-    {
-        socket_log_fmt("  GetEnumName (CheckPlaceData): ID (" + id_str + ") BAD");
-        socket_log_fmt("GetEnumName (CheckPlaceData): Method end");
-        System::String * label = System::String::CreateString("");
-        _system_array_init(label);
-        return label;
-    }
-}
-
-System::String * GetEnumName6(long param_1, long *param_2)
-{
-    socket_log_fmt("GetEnumName (CreateWarpEntity): Init");
-	il2cpp_runtime_class_init((void *)param_1);
-    int id = ((AreaID_o *)param_2)->fields.value__;
-    char buff[100];
-    snprintf(buff, sizeof(buff), "%08X", id);
-    std::string id_str = buff;
-
-    if (id >= 0 && id < NUM_AREA_ID)
-    {
-        socket_log_fmt("  GetEnumName (CreateWarpEntity): ID (" + id_str + ") OK");
-        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
-        socket_log_fmt("  GetEnumName (CreateWarpEntity): Area Name is " + getAreaNames()[id]);
-        socket_log_fmt("GetEnumName (CreateWarpEntity): Method end");
-        _system_array_init(label);
-        return label;
-    }
-    else
-    {
-        socket_log_fmt("  GetEnumName (CreateWarpEntity): ID (" + id_str + ") BAD");
-        socket_log_fmt("GetEnumName (CreateWarpEntity): Method end");
-        System::String * label = System::String::CreateString("");
-        _system_array_init(label);
-        return label;
-    }
-}
-
-Il2CppObject * thunk_FUN_7100252fd8(void * typeInfo, void * data);
-void FUN_7100252044();
-long FUN_710025de78(uint param_1);
-long FUN_71002543b0(long param_1, uint param_2);
-void **FUN_7100266700(void *param_1);
-void thunk_FUN_71002926e0(void *param_1, size_t n);
-
-System::String * thunk_FUN_71002926e0_overwrite(void *param1, size_t n)
-{
-	socket_log_fmt("thunk_FUN_71002926e0_overwrite: Init");
-	if (n == 4)
-	{
-		int id = *(int *)param1;
-		char buff[100];
-    	snprintf(buff, sizeof(buff), "%08X", id);
-    	std::string id_str = buff;
-
-		if (id >= 0 && id < NUM_AREA_ID)
-		{
-			socket_log_fmt("  thunk_FUN_71002926e0_overwrite: ID (" + id_str + ") OK");
-			System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
-			socket_log_fmt("  thunk_FUN_71002926e0_overwrite: Area Name is " + getAreaNames()[id]);
-			socket_log_fmt("thunk_FUN_71002926e0_overwrite: Method end");
-			return label;
-		}
-		else
-		{
-			socket_log_fmt("  thunk_FUN_71002926e0_overwrite: ID (" + id_str + ") BAD");
-			socket_log_fmt("thunk_FUN_71002926e0_overwrite: Method end");
-			System::String * label = System::String::CreateString("");
-			return label;
-		}
-	}
-
-	socket_log_fmt("  thunk_FUN_71002926e0_overwrite: Size not 4");
-	socket_log_fmt("thunk_FUN_71002926e0_overwrite: Method end");
-	System::String * label = System::String::CreateString("");
-	return label;
-}
-
-Il2CppObject * thunk_FUN_7100252fd8_overwrite(void *typeInfo, void *data)
-{
-	int iVar1;
-	long lVar2;
-	size_t __n;
-
-	socket_log_fmt("thunk_FUN_7100252fd8_overwrite: Init");
-	
-	FUN_7100252044();
-	if ((*(byte *)(typeInfo + 0x12e) >> 1 & 1) == 0)
-	{
-		lVar2 = *(long *)data;
-	}
-	else
-	{
-		if ((*(uint **)(typeInfo + 0x60) != (uint *)0x0) && FUN_710025de78(**(uint **)(typeInfo + 0x60)) == *(long *)0x04cc7b50)
-		{
-			typeInfo = (void *)FUN_71002543b0(**(long **)(*(long *)(*(long *)(typeInfo + 0x60) + 8) + 8), 1);
-			FUN_7100252044();
-			if (*(char *)((long)data + ((ulong)*(uint *)(typeInfo + 0xf4) - 0x10)) == '\0')
-			{
-				return 0;
-			}
-		}
-
-		iVar1 = *(int *)(typeInfo + 0xf4);
-		lVar2 = (long)FUN_7100266700(typeInfo);
-		__n = (long)iVar1 - 0x10;
-		memcpy((void *)(lVar2 + 0x10), data, __n);
-
-		//System::String * label = thunk_FUN_71002926e0_overwrite((void *)(lVar2 + 0x10), __n);
-		//lVar2 = (long)label;
-		thunk_FUN_71002926e0((void *)(lVar2 + 0x10), __n);
-	}
-
-	char buff[100];
-    snprintf(buff, sizeof(buff), "%08lX", lVar2);
-    std::string lVar2_str = buff;
-	socket_log_fmt("thunk_FUN_7100252fd8_overwrite: Method end, returning " + lVar2_str + "...");
-
-  	return (Il2CppObject *)lVar2;
-}
-
-System::String * LoggingGetEnumName(long param_1, long *param_2)
-{
-	socket_log_fmt("LoggingGetEnumName: Init");
-	int id = ((AreaID_o *)param_2)->fields.value__;
-	char buff[100];
-    snprintf(buff, sizeof(buff), "%08X", id);
-    std::string id_str = buff;
-
-	socket_log_fmt("  LoggingGetEnumName: ID = " + id_str);
-	socket_log_fmt("  LoggingGetEnumName: Area Name should be " + getAreaNames()[id]);
-
-	Il2CppObject * enum_name = thunk_FUN_7100252fd8_overwrite((void *)param_1, (void *)param_2);
-	socket_log_fmt("  LoggingGetEnumName: thunk_FUN_7100252fd8 returned");
-
-	socket_log_fmt("LoggingGetEnumName: Method end");
-	return (System::String *)enum_name;
 }
