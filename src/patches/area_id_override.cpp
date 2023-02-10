@@ -743,7 +743,7 @@ struct AreaID_o {
 System::String * GetEnumName1(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (StartUpCreate): Init");
-	il2cpp_runtime_class_init(&param_1);
+	il2cpp_runtime_class_init((void *)param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -771,7 +771,7 @@ System::String * GetEnumName1(long param_1, long *param_2)
 System::String * GetEnumName2(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (PreRequestAssetSetUp): Init");
-	il2cpp_runtime_class_init(&param_1);
+	il2cpp_runtime_class_init((void *)param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -799,7 +799,7 @@ System::String * GetEnumName2(long param_1, long *param_2)
 System::String * GetEnumName3(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (RequestAssetSetUp): Init");
-	il2cpp_runtime_class_init(&param_1);
+	il2cpp_runtime_class_init((void *)param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -827,7 +827,7 @@ System::String * GetEnumName3(long param_1, long *param_2)
 System::String * GetEnumName4(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (CreateWorpPoint): Init");
-	il2cpp_runtime_class_init(&param_1);
+	il2cpp_runtime_class_init((void *)param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -855,7 +855,7 @@ System::String * GetEnumName4(long param_1, long *param_2)
 System::String * GetEnumName5(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (CheckPlaceData): Init");
-	il2cpp_runtime_class_init(&param_1);
+	il2cpp_runtime_class_init((void *)param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -883,7 +883,7 @@ System::String * GetEnumName5(long param_1, long *param_2)
 System::String * GetEnumName6(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (CreateWarpEntity): Init");
-	il2cpp_runtime_class_init(&param_1);
+	il2cpp_runtime_class_init((void *)param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -909,6 +909,87 @@ System::String * GetEnumName6(long param_1, long *param_2)
 }
 
 Il2CppObject * thunk_FUN_7100252fd8(void * typeInfo, void * data);
+void FUN_7100252044();
+long FUN_710025de78(uint param_1);
+long FUN_71002543b0(long param_1, uint param_2);
+void **FUN_7100266700(void *param_1);
+void thunk_FUN_71002926e0(void *param_1, size_t n);
+
+System::String * thunk_FUN_71002926e0_overwrite(void *param1, size_t n)
+{
+	socket_log_fmt("thunk_FUN_71002926e0_overwrite: Init");
+	if (n == 4)
+	{
+		int id = *(int *)param1;
+		char buff[100];
+    	snprintf(buff, sizeof(buff), "%08X", id);
+    	std::string id_str = buff;
+
+		if (id >= 0 && id < NUM_AREA_ID)
+		{
+			socket_log_fmt("  thunk_FUN_71002926e0_overwrite: ID (" + id_str + ") OK");
+			System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
+			socket_log_fmt("  thunk_FUN_71002926e0_overwrite: Area Name is " + getAreaNames()[id]);
+			socket_log_fmt("thunk_FUN_71002926e0_overwrite: Method end");
+			return label;
+		}
+		else
+		{
+			socket_log_fmt("  thunk_FUN_71002926e0_overwrite: ID (" + id_str + ") BAD");
+			socket_log_fmt("thunk_FUN_71002926e0_overwrite: Method end");
+			System::String * label = System::String::CreateString("");
+			return label;
+		}
+	}
+
+	socket_log_fmt("  thunk_FUN_71002926e0_overwrite: Size not 4");
+	socket_log_fmt("thunk_FUN_71002926e0_overwrite: Method end");
+	System::String * label = System::String::CreateString("");
+	return label;
+}
+
+Il2CppObject * thunk_FUN_7100252fd8_overwrite(void *typeInfo, void *data)
+{
+	int iVar1;
+	long lVar2;
+	size_t __n;
+
+	socket_log_fmt("thunk_FUN_7100252fd8_overwrite: Init");
+	
+	FUN_7100252044();
+	if ((*(byte *)(typeInfo + 0x12e) >> 1 & 1) == 0)
+	{
+		lVar2 = *(long *)data;
+	}
+	else
+	{
+		if ((*(uint **)(typeInfo + 0x60) != (uint *)0x0) && FUN_710025de78(**(uint **)(typeInfo + 0x60)) == *(long *)0x04cc7b50)
+		{
+			typeInfo = (void *)FUN_71002543b0(**(long **)(*(long *)(*(long *)(typeInfo + 0x60) + 8) + 8), 1);
+			FUN_7100252044();
+			if (*(char *)((long)data + ((ulong)*(uint *)(typeInfo + 0xf4) - 0x10)) == '\0')
+			{
+				return 0;
+			}
+		}
+
+		iVar1 = *(int *)(typeInfo + 0xf4);
+		lVar2 = (long)FUN_7100266700(typeInfo);
+		__n = (long)iVar1 - 0x10;
+		memcpy((void *)(lVar2 + 0x10), data, __n);
+
+		//System::String * label = thunk_FUN_71002926e0_overwrite((void *)(lVar2 + 0x10), __n);
+		//lVar2 = (long)label;
+		thunk_FUN_71002926e0((void *)(lVar2 + 0x10), __n);
+	}
+
+	char buff[100];
+    snprintf(buff, sizeof(buff), "%08lX", lVar2);
+    std::string lVar2_str = buff;
+	socket_log_fmt("thunk_FUN_7100252fd8_overwrite: Method end, returning " + lVar2_str + "...");
+
+  	return (Il2CppObject *)lVar2;
+}
 
 System::String * LoggingGetEnumName(long param_1, long *param_2)
 {
@@ -918,12 +999,12 @@ System::String * LoggingGetEnumName(long param_1, long *param_2)
     snprintf(buff, sizeof(buff), "%08X", id);
     std::string id_str = buff;
 
-	socket_log_fmt("  GetEnumName (CreateWarpEntity): ID = " + id_str);
-	socket_log_fmt("  GetEnumName (CreateWarpEntity): Area Name should be " + getAreaNames()[id]);
+	socket_log_fmt("  LoggingGetEnumName: ID = " + id_str);
+	socket_log_fmt("  LoggingGetEnumName: Area Name should be " + getAreaNames()[id]);
 
-	Il2CppObject * enum_name = thunk_FUN_7100252fd8((void *)param_1, (void *)param_2);
-	socket_log_fmt("LoggingGetEnumName: thunk_FUN_7100252fd8 called");
+	Il2CppObject * enum_name = thunk_FUN_7100252fd8_overwrite((void *)param_1, (void *)param_2);
+	socket_log_fmt("  LoggingGetEnumName: thunk_FUN_7100252fd8 returned");
 
-	socket_log_fmt("GetEnumName (CreateWarpEntity): Method end");
+	socket_log_fmt("LoggingGetEnumName: Method end");
 	return (System::String *)enum_name;
 }

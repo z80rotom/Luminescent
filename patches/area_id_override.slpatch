@@ -2,12 +2,12 @@
 
 // Change call to thunk_FUN_7100252fd8 in Dpr.EvScript.EvDataManager.<StartUpCreate>d__1783$$MoveNext
 019b1a34:
-  bl GetEnumName1
+  bl LoggingGetEnumName
 
 
 // Change call to thunk_FUN_7100252fd8 in Dpr.EvScript.EvDataManager.<PreRequestAssetSetUp>d__1779$$MoveNext
 019afe40:
-  bl GetEnumName2
+  bl LoggingGetEnumName
 
 //019afe50:
 //  mov x21,x22
@@ -18,7 +18,7 @@
 
 // Change call to thunk_FUN_7100252fd8 in Dpr.EvScript.EvDataManager.<RequestAssetSetUp>d__1778$$MoveNext
 019b07c0:
-  bl GetEnumName3
+  bl LoggingGetEnumName
 
 //019b07d0:
 //  mov x21,x22
@@ -29,12 +29,12 @@
 
 // Change call to thunk_FUN_7100252fd8 in Dpr.EvScript.EvDataManager$$CreateWorpPoint
 02c401a8:
-  bl GetEnumName4
+  bl LoggingGetEnumName
 
 
 // Change call to thunk_FUN_7100252fd8 in Dpr.EvScript.EvDataManager$$CheckPlaceData
 02c52db8:
-  bl GetEnumName5
+  bl LoggingGetEnumName
 
 //02c52dc8:
 //  mov x20,x21
@@ -45,4 +45,4 @@
 
 // Change call to thunk_FUN_7100252fd8 in Dpr.EvScript.EvDataManager$$CreateWarpEntity
 02ca2a94:
-  bl GetEnumName6
+  bl LoggingGetEnumName
