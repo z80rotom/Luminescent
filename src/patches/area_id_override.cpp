@@ -699,110 +699,205 @@ std::string* getAreaNames()
     return AREA_NAMES;
 }
 
+struct AreaID_Fields {
+	int32_t value__;
+};
+struct AreaID_RGCTXs {
+};
+struct AreaID_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_CompareTo;
+	VirtualInvokeData _5_ToString;
+	VirtualInvokeData _6_GetTypeCode;
+	VirtualInvokeData _7_System_IConvertible_ToBoolean;
+	VirtualInvokeData _8_System_IConvertible_ToChar;
+	VirtualInvokeData _9_System_IConvertible_ToSByte;
+	VirtualInvokeData _10_System_IConvertible_ToByte;
+	VirtualInvokeData _11_System_IConvertible_ToInt16;
+	VirtualInvokeData _12_System_IConvertible_ToUInt16;
+	VirtualInvokeData _13_System_IConvertible_ToInt32;
+	VirtualInvokeData _14_System_IConvertible_ToUInt32;
+	VirtualInvokeData _15_System_IConvertible_ToInt64;
+	VirtualInvokeData _16_System_IConvertible_ToUInt64;
+	VirtualInvokeData _17_System_IConvertible_ToSingle;
+	VirtualInvokeData _18_System_IConvertible_ToDouble;
+	VirtualInvokeData _19_System_IConvertible_ToDecimal;
+	VirtualInvokeData _20_System_IConvertible_ToDateTime;
+	VirtualInvokeData _21_ToString;
+	VirtualInvokeData _22_System_IConvertible_ToType;
+};
+struct AreaID_c {
+	Il2CppClass_1 _1;
+	struct AreaID_StaticFields* static_fields;
+	AreaID_RGCTXs* rgctx_data;
+	Il2CppClass_2 _2;
+	AreaID_VTable vtable;
+};
+struct AreaID_o {
+	AreaID_Fields fields;
+};
+
 System::String * GetEnumName1(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (StartUpCreate): Init");
-    int id = *param_2;
-
-    System::String * label = System::String::CreateString("");
+    int id = ((AreaID_o *)param_2)->fields.value__;
+    char buff[100];
+    snprintf(buff, sizeof(buff), "%08X", id);
+    std::string id_str = buff;
 
     if (id >= 0 && id < NUM_AREA_ID)
     {
-        socket_log_fmt("  GetEnumName (StartUpCreate): ID (" + std::to_string(id) + ") OK");
-        label = System::String::CreateString(&(getAreaNames()[id][0]));
+        socket_log_fmt("  GetEnumName (StartUpCreate): ID (" + id_str + ") OK");
+        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
         socket_log_fmt("  GetEnumName (StartUpCreate): Area Name is " + getAreaNames()[id]);
+        socket_log_fmt("GetEnumName (StartUpCreate): Method end");
+        _system_array_init(label);
+        return label;
     }
-
-    socket_log_fmt("GetEnumName (StartUpCreate): Method end");
-    return label;
+    else
+    {
+        socket_log_fmt("  GetEnumName (StartUpCreate): ID (" + id_str + ") BAD");
+        socket_log_fmt("GetEnumName (StartUpCreate): Method end");
+        System::String * label = System::String::CreateString("");
+        _system_array_init(label);
+        return label;
+    }
 }
 
 System::String * GetEnumName2(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (PreRequestAssetSetUp): Init");
-    int id = *param_2;
-
-    System::String * label = System::String::CreateString("");
+    int id = ((AreaID_o *)param_2)->fields.value__;
+    char buff[100];
+    snprintf(buff, sizeof(buff), "%08X", id);
+    std::string id_str = buff;
 
     if (id >= 0 && id < NUM_AREA_ID)
     {
-        socket_log_fmt("  GetEnumName (PreRequestAssetSetUp): ID (" + std::to_string(id) + ") OK");
-        label = System::String::CreateString(&(getAreaNames()[id][0]));
+        socket_log_fmt("  GetEnumName (PreRequestAssetSetUp): ID (" + id_str + ") OK");
+        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
         socket_log_fmt("  GetEnumName (PreRequestAssetSetUp): Area Name is " + getAreaNames()[id]);
+        socket_log_fmt("GetEnumName (PreRequestAssetSetUp): Method end");
+        _system_array_init(label);
+        return label;
     }
-
-    socket_log_fmt("GetEnumName (PreRequestAssetSetUp): Method end");
-    return label;
+    else
+    {
+        socket_log_fmt("  GetEnumName (PreRequestAssetSetUp): ID (" + id_str + ") BAD");
+        socket_log_fmt("GetEnumName (PreRequestAssetSetUp): Method end");
+        System::String * label = System::String::CreateString("");
+        _system_array_init(label);
+        return label;
+    }
 }
 
 System::String * GetEnumName3(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (RequestAssetSetUp): Init");
-    int id = *param_2;
-
-    System::String * label = System::String::CreateString("");
+    int id = ((AreaID_o *)param_2)->fields.value__;
+    char buff[100];
+    snprintf(buff, sizeof(buff), "%08X", id);
+    std::string id_str = buff;
 
     if (id >= 0 && id < NUM_AREA_ID)
     {
-        socket_log_fmt("  GetEnumName (RequestAssetSetUp): ID (" + std::to_string(id) + ") OK");
-        label = System::String::CreateString(&(getAreaNames()[id][0]));
+        socket_log_fmt("  GetEnumName (RequestAssetSetUp): ID (" + id_str + ") OK");
+        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
         socket_log_fmt("  GetEnumName (RequestAssetSetUp): Area Name is " + getAreaNames()[id]);
+        socket_log_fmt("GetEnumName (RequestAssetSetUp): Method end");
+        _system_array_init(label);
+        return label;
     }
-
-    socket_log_fmt("GetEnumName (RequestAssetSetUp): Method end");
-    return label;
+    else
+    {
+        socket_log_fmt("  GetEnumName (RequestAssetSetUp): ID (" + id_str + ") BAD");
+        socket_log_fmt("GetEnumName (RequestAssetSetUp): Method end");
+        System::String * label = System::String::CreateString("");
+        _system_array_init(label);
+        return label;
+    }
 }
 
 System::String * GetEnumName4(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (CreateWorpPoint): Init");
-    int id = *param_2;
-
-    System::String * label = System::String::CreateString("");
+    int id = ((AreaID_o *)param_2)->fields.value__;
+    char buff[100];
+    snprintf(buff, sizeof(buff), "%08X", id);
+    std::string id_str = buff;
 
     if (id >= 0 && id < NUM_AREA_ID)
     {
-        socket_log_fmt("  GetEnumName (CreateWorpPoint): ID (" + std::to_string(id) + ") OK");
-        label = System::String::CreateString(&(getAreaNames()[id][0]));
+        socket_log_fmt("  GetEnumName (CreateWorpPoint): ID (" + id_str + ") OK");
+        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
         socket_log_fmt("  GetEnumName (CreateWorpPoint): Area Name is " + getAreaNames()[id]);
+        socket_log_fmt("GetEnumName (CreateWorpPoint): Method end");
+        _system_array_init(label);
+        return label;
     }
-
-    socket_log_fmt("GetEnumName (CreateWorpPoint): Method end");
-    return label;
+    else
+    {
+        socket_log_fmt("  GetEnumName (CreateWorpPoint): ID (" + id_str + ") BAD");
+        socket_log_fmt("GetEnumName (CreateWorpPoint): Method end");
+        System::String * label = System::String::CreateString("");
+        _system_array_init(label);
+        return label;
+    }
 }
 
 System::String * GetEnumName5(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (CheckPlaceData): Init");
-    int id = *param_2;
-
-    System::String * label = System::String::CreateString("");
+    int id = ((AreaID_o *)param_2)->fields.value__;
+    char buff[100];
+    snprintf(buff, sizeof(buff), "%08X", id);
+    std::string id_str = buff;
 
     if (id >= 0 && id < NUM_AREA_ID)
     {
-        socket_log_fmt("  GetEnumName (CheckPlaceData): ID (" + std::to_string(id) + ") OK");
-        label = System::String::CreateString(&(getAreaNames()[id][0]));
+        socket_log_fmt("  GetEnumName (CheckPlaceData): ID (" + id_str + ") OK");
+        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
         socket_log_fmt("  GetEnumName (CheckPlaceData): Area Name is " + getAreaNames()[id]);
+        socket_log_fmt("GetEnumName (CheckPlaceData): Method end");
+        _system_array_init(label);
+        return label;
     }
-
-    socket_log_fmt("GetEnumName (CheckPlaceData): Method end");
-    return label;
+    else
+    {
+        socket_log_fmt("  GetEnumName (CheckPlaceData): ID (" + id_str + ") BAD");
+        socket_log_fmt("GetEnumName (CheckPlaceData): Method end");
+        System::String * label = System::String::CreateString("");
+        _system_array_init(label);
+        return label;
+    }
 }
 
 System::String * GetEnumName6(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (CreateWarpEntity): Init");
-    int id = *param_2;
-
-    System::String * label = System::String::CreateString("");
+    int id = ((AreaID_o *)param_2)->fields.value__;
+    char buff[100];
+    snprintf(buff, sizeof(buff), "%08X", id);
+    std::string id_str = buff;
 
     if (id >= 0 && id < NUM_AREA_ID)
     {
-        socket_log_fmt("  GetEnumName (CreateWarpEntity): ID (" + std::to_string(id) + ") OK");
-        label = System::String::CreateString(&(getAreaNames()[id][0]));
+        socket_log_fmt("  GetEnumName (CreateWarpEntity): ID (" + id_str + ") OK");
+        System::String * label = System::String::CreateString(&(getAreaNames()[id][0]));
         socket_log_fmt("  GetEnumName (CreateWarpEntity): Area Name is " + getAreaNames()[id]);
+        socket_log_fmt("GetEnumName (CreateWarpEntity): Method end");
+        _system_array_init(label);
+        return label;
     }
-
-    socket_log_fmt("GetEnumName (CreateWarpEntity): Method end");
-    return label;
+    else
+    {
+        socket_log_fmt("  GetEnumName (CreateWarpEntity): ID (" + id_str + ") BAD");
+        socket_log_fmt("GetEnumName (CreateWarpEntity): Method end");
+        System::String * label = System::String::CreateString("");
+        _system_array_init(label);
+        return label;
+    }
 }
