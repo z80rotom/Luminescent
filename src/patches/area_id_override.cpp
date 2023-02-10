@@ -743,6 +743,7 @@ struct AreaID_o {
 System::String * GetEnumName1(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (StartUpCreate): Init");
+	il2cpp_runtime_class_init(&param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -770,6 +771,7 @@ System::String * GetEnumName1(long param_1, long *param_2)
 System::String * GetEnumName2(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (PreRequestAssetSetUp): Init");
+	il2cpp_runtime_class_init(&param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -797,6 +799,7 @@ System::String * GetEnumName2(long param_1, long *param_2)
 System::String * GetEnumName3(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (RequestAssetSetUp): Init");
+	il2cpp_runtime_class_init(&param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -824,6 +827,7 @@ System::String * GetEnumName3(long param_1, long *param_2)
 System::String * GetEnumName4(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (CreateWorpPoint): Init");
+	il2cpp_runtime_class_init(&param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -851,6 +855,7 @@ System::String * GetEnumName4(long param_1, long *param_2)
 System::String * GetEnumName5(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (CheckPlaceData): Init");
+	il2cpp_runtime_class_init(&param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -878,6 +883,7 @@ System::String * GetEnumName5(long param_1, long *param_2)
 System::String * GetEnumName6(long param_1, long *param_2)
 {
     socket_log_fmt("GetEnumName (CreateWarpEntity): Init");
+	il2cpp_runtime_class_init(&param_1);
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -900,4 +906,24 @@ System::String * GetEnumName6(long param_1, long *param_2)
         _system_array_init(label);
         return label;
     }
+}
+
+Il2CppObject * thunk_FUN_7100252fd8(void * typeInfo, void * data);
+
+System::String * LoggingGetEnumName(long param_1, long *param_2)
+{
+	socket_log_fmt("LoggingGetEnumName: Init");
+	int id = ((AreaID_o *)param_2)->fields.value__;
+	char buff[100];
+    snprintf(buff, sizeof(buff), "%08X", id);
+    std::string id_str = buff;
+
+	socket_log_fmt("  GetEnumName (CreateWarpEntity): ID = " + id_str);
+	socket_log_fmt("  GetEnumName (CreateWarpEntity): Area Name should be " + getAreaNames()[id]);
+
+	Il2CppObject * enum_name = thunk_FUN_7100252fd8((void *)param_1, (void *)param_2);
+	socket_log_fmt("LoggingGetEnumName: thunk_FUN_7100252fd8 called");
+
+	socket_log_fmt("GetEnumName (CreateWarpEntity): Method end");
+	return (System::String *)enum_name;
 }
