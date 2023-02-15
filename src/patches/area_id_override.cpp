@@ -6,8 +6,6 @@
 
 #include <string>
 
-#include "logger.hpp"
-
 #define NUM_AREA_ID 675
 
 // TODO: Move this to an external JSON: https://github.com/rafagafe/tiny-json
@@ -708,7 +706,6 @@ struct AreaID_o {
 
 System::String * GetEnumName(long param_1, long *param_2)
 {
-    socket_log_fmt("GetEnumName: Init");
     int id = ((AreaID_o *)param_2)->fields.value__;
     char buff[100];
     snprintf(buff, sizeof(buff), "%08X", id);
@@ -716,15 +713,12 @@ System::String * GetEnumName(long param_1, long *param_2)
 
     if (id >= 0 && id < NUM_AREA_ID)
     {
-        socket_log_fmt("  GetEnumName: ID (" + id_str + ") OK");
         System::String * label = System::String::CreateString(getAreaNames()[id].c_str());
-        socket_log_fmt("  GetEnumName: Area Name is " + getAreaNames()[id]);
         _system_array_init(label);
         return label;
     }
     else
     {
-        socket_log_fmt("  GetEnumName: ID (" + id_str + ") BAD");
         System::String * label = System::String::CreateString("");
         _system_array_init(label);
         return label;
