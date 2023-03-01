@@ -9,7 +9,7 @@
 const int32_t IS_UWASU = 1;
 const int32_t IS_SEE = 2;
 const int32_t IS_GET = 3;
-const uint32_t MAX_MONS = 905;
+const uint32_t MAX_MONS = 1010;
 
 struct ZukanWork
 {
