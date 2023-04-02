@@ -35,3 +35,7 @@
     bl Incense_GameManager_GetFieldEncountData
 017da7dc:
     bl Incense_GameManager_GetFieldEncountData
+
+// Rewrite Repel step counter to allow infinite repel
+//01aeba30:
+//    b ItemWork_SubSprayCount

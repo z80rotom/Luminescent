@@ -388,6 +388,22 @@ int32_t PlayerWork_set_DoubleSlot(System::Array<MonsLv_o> * monsLv)
     int32_t zoneID = PlayerWork::get_zoneID((MethodInfo *) nullptr);
     XLSXContent::FieldEncountTable::Sheettable_o * inData = GameManager::GetFieldEncountData(zoneID, nullptr);
 
+    // Time of Day encounters on slots 11/12
+    int32_t periodOfDay = GameManager::get_currentPeriodOfDay(nullptr);
+    // Daytime
+    if (periodOfDay == 1 || periodOfDay == 2)
+    {
+        monsLv->m_Items[10] = inData->fields.day->m_Items[0];
+        monsLv->m_Items[11] = inData->fields.day->m_Items[1];
+    }
+    // Night
+    if (periodOfDay == 3)
+    {
+        monsLv->m_Items[10] = inData->fields.night->m_Items[0];
+        monsLv->m_Items[11] = inData->fields.night->m_Items[1];
+    }
+
+    // Dual Slot encounters on slots 3/4
     int32_t work = PlayerWork::GetInt(DOUBLE_SLOT_WORK, nullptr);
     System::Array<MonsLv_o>* gbaDualSlot;
     switch (work)
@@ -413,20 +429,6 @@ int32_t PlayerWork_set_DoubleSlot(System::Array<MonsLv_o> * monsLv)
 
     monsLv->m_Items[2] = gbaDualSlot->m_Items[0];
     monsLv->m_Items[3] = gbaDualSlot->m_Items[1];
-
-    int32_t periodOfDay = GameManager::get_currentPeriodOfDay(nullptr);
-    // Daytime
-    if (periodOfDay == 1 || periodOfDay == 2)
-    {
-        monsLv->m_Items[10] = inData->fields.day->m_Items[0];
-        monsLv->m_Items[11] = inData->fields.day->m_Items[1];
-    }
-    // Night
-    if (periodOfDay == 3)
-    {
-        monsLv->m_Items[10] = inData->fields.night->m_Items[0];
-        monsLv->m_Items[11] = inData->fields.night->m_Items[1];
-    }
 
     return 0;
 }
@@ -487,3 +489,26 @@ XLSXContent::FieldEncountTable::Sheettable_o * Incense_GameManager_GetFieldEncou
 
     return inData;
 }
+
+/*void ItemWork_SubSprayCount(int16_t subval, MethodInfo *method)
+{
+    socket_log_fmt("ItemWork_SubSprayCount\n");
+    system_load_typeinfo((void *)0x5701);
+    
+    socket_log_fmt("subval: %d\n", subval);
+    DPData::ENC_SV_DATA_o* enc_data = PlayerWork::get_Enc_SV_Data();
+    socket_log_fmt("encountWalkCount: %d\n", enc_data->fields.encountWalkCount);
+    socket_log_fmt("SafariRandSeed: %d\n", enc_data->fields.SafariRandSeed);
+    socket_log_fmt("GenerateRandSeed: %d\n", enc_data->fields.GenerateRandSeed);
+    socket_log_fmt("GenerateValid: %d\n", enc_data->fields.GenerateValid);
+    socket_log_fmt("SprayCount: %d\n", enc_data->fields.SprayCount);
+    socket_log_fmt("SprayType: %u\n", enc_data->fields.SprayType);
+    socket_log_fmt("BtlSearcherCharge: %u\n", enc_data->fields.BtlSearcherCharge);
+    socket_log_fmt("PokeToreCharge: %u\n", enc_data->fields.PokeToreCharge);
+    socket_log_fmt("VidroType: %u\n", enc_data->fields.VidroType);
+
+    enc_data->fields.SprayCount -= subval;
+    PlayerWork::set_Enc_SV_Data(*enc_data);
+
+    socket_log_fmt("ItemWork_SubSprayCount Done!\n", enc_data->fields.encountWalkCount);
+}*/
