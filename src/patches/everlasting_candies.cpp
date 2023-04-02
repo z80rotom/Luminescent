@@ -135,10 +135,10 @@ uint32_t isValidRareCandy(uint32_t level, Dpr::UI::UIBag_o *__this)
     socket_log_fmt("[isValidRareCandy] level: %08X\n", level);
     socket_log_fmt("[isValidRareCandy] __this: %08X\n", __this);
     il2cpp_runtime_class_init(PlayerWork_TypeInfo);
-    // Game clear
-    if (PlayerWork::GetSytemFlag(5, (MethodInfo *) nullptr))
+    // Beaten Stark Mountain
+    if (PlayerWork::GetBool(2538, (MethodInfo *) nullptr))
     {
-        socket_log_fmt("Game Clear!\n");
+        socket_log_fmt("Beaten Stark Mountain!\n");
         return 100 - level;
     }
 
