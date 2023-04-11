@@ -388,6 +388,22 @@ int32_t PlayerWork_set_DoubleSlot(System::Array<MonsLv_o> * monsLv)
     int32_t zoneID = PlayerWork::get_zoneID((MethodInfo *) nullptr);
     XLSXContent::FieldEncountTable::Sheettable_o * inData = GameManager::GetFieldEncountData(zoneID, nullptr);
 
+    // Time of Day encounters on slots 11/12
+    int32_t periodOfDay = GameManager::get_currentPeriodOfDay(nullptr);
+    // Daytime
+    if (periodOfDay == 1 || periodOfDay == 2)
+    {
+        monsLv->m_Items[10] = inData->fields.day->m_Items[0];
+        monsLv->m_Items[11] = inData->fields.day->m_Items[1];
+    }
+    // Night
+    if (periodOfDay == 3)
+    {
+        monsLv->m_Items[10] = inData->fields.night->m_Items[0];
+        monsLv->m_Items[11] = inData->fields.night->m_Items[1];
+    }
+
+    // Dual Slot encounters on slots 3/4
     int32_t work = PlayerWork::GetInt(DOUBLE_SLOT_WORK, nullptr);
     System::Array<MonsLv_o>* gbaDualSlot;
     switch (work)
@@ -413,20 +429,6 @@ int32_t PlayerWork_set_DoubleSlot(System::Array<MonsLv_o> * monsLv)
 
     monsLv->m_Items[2] = gbaDualSlot->m_Items[0];
     monsLv->m_Items[3] = gbaDualSlot->m_Items[1];
-
-    int32_t periodOfDay = GameManager::get_currentPeriodOfDay(nullptr);
-    // Daytime
-    if (periodOfDay == 1 || periodOfDay == 2)
-    {
-        monsLv->m_Items[10] = inData->fields.day->m_Items[0];
-        monsLv->m_Items[11] = inData->fields.day->m_Items[1];
-    }
-    // Night
-    if (periodOfDay == 3)
-    {
-        monsLv->m_Items[10] = inData->fields.night->m_Items[0];
-        monsLv->m_Items[11] = inData->fields.night->m_Items[1];
-    }
 
     return 0;
 }

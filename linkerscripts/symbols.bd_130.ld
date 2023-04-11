@@ -329,6 +329,9 @@ _ZN3Dpr6Battle5Logic6Common14AddFieldEffectEPPNS1_30EventFactor_EventHandlerArgs
 _ZN3Dpr6Battle5Logic6Common16CheckFieldEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPiP10MethodInfo = 0x1d0a260 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common17RemoveFieldEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_50Section_FromEvent_FieldEffect_Remove_Description_oEP10MethodInfo = 0x1d0b7c0 - 0x05708000;
 
+_ZN10PlayerWork15get_Enc_SV_DataEv = 0x02cf2840 - 0x05708000;
+_ZN10PlayerWork15set_Enc_SV_DataEN6DPData13ENC_SV_DATA_oE = 0x02cf27d0 - 0x05708000;
+
 StringLiteral_9194 = 0x4ca7d88 - 0x05708000;
 StringLiteral_9195 = 0x4ca7d90 - 0x05708000;
 StringLiteral_9196 = 0x4ca7d98 - 0x05708000;

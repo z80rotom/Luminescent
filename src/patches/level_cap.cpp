@@ -9,13 +9,17 @@
 #include <math.h>
 
 uint32_t getMaxLevel() {
-    constexpr size_t NUM_FLAGS = 2;
+    constexpr size_t NUM_FLAGS = 1;
+    constexpr size_t NUM_SYS_FLAGS = 1;
     uint32_t maxLevel = 100;
     uint32_t numEvents = GetBadgeCount();
 
     uint32_t flags[NUM_FLAGS] = {
-        2770, // Beating Cyrus at spear pillar
-        2538, // Beating Stark Mountain
+        2770 // Beating Cyrus at spear pillar
+    };
+
+    uint32_t sysflags[NUM_SYS_FLAGS] = {
+        5 // Game clear
     };
 
     for (size_t i = 0; i < NUM_FLAGS; i++)
@@ -26,6 +30,13 @@ uint32_t getMaxLevel() {
         }
     }
 
+    for (size_t i = 0; i < NUM_SYS_FLAGS; i++)
+    {
+        if (PlayerWork::GetSytemFlag(sysflags[i], nullptr))
+        {
+            numEvents += 1;
+        }
+    }
 
     switch (numEvents)
     {
@@ -52,16 +63,16 @@ uint32_t getMaxLevel() {
             break;
         case 7: // Spear Pillar
             maxLevel = 60;
+            break;
         case 8: // Volkner
             maxLevel = 62;
             break;
         case 9: // Cynthia
-            // Should add a check for if game beaten
-            // to remove level 78 cap. For the moment, they can just disable
-            // the cap if you want to overlevel in post game.
             maxLevel = 78;
-        case 10:
+            break;
+        case 10: // Stark Mountain
             maxLevel = 85;
+            break;
         default:
             break;
     }
@@ -80,8 +91,8 @@ uint32_t Dpr::Battle::Logic::Exp::getexp_calc_adjust_level(uint32_t base_exp,uin
     float exp = (((fVar4 * fVar4 * sqrt(fVar4)) / (fVar5 * fVar5 * sqrt(fVar5))) *
                (float)(uint64_t)base_exp + 1.0);
 
-    // Game clear
-    if (PlayerWork::GetSytemFlag(5, (MethodInfo *) nullptr))
+    // Beaten Stark Mountain
+    if (PlayerWork::GetBool(2538, (MethodInfo *) nullptr))
     {
         return (uint32_t) exp;
     }

@@ -258,6 +258,10 @@ public:
   bool CustomLoadAsyncOperation(MethodInfo *method);
   void OnPreSave(MethodInfo *method);
 
+
+  static DPData::ENC_SV_DATA_o * get_Enc_SV_Data();
+  static void set_Enc_SV_Data(DPData::ENC_SV_DATA_o value);
+
   static int32_t get_defaultPokeNo(MethodInfo *method);
 
   static int32_t get_rivalPokeNo(MethodInfo *method);
