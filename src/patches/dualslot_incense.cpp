@@ -489,26 +489,3 @@ XLSXContent::FieldEncountTable::Sheettable_o * Incense_GameManager_GetFieldEncou
 
     return inData;
 }
-
-/*void ItemWork_SubSprayCount(int16_t subval, MethodInfo *method)
-{
-    socket_log_fmt("ItemWork_SubSprayCount\n");
-    system_load_typeinfo((void *)0x5701);
-    
-    socket_log_fmt("subval: %d\n", subval);
-    DPData::ENC_SV_DATA_o* enc_data = PlayerWork::get_Enc_SV_Data();
-    socket_log_fmt("encountWalkCount: %d\n", enc_data->fields.encountWalkCount);
-    socket_log_fmt("SafariRandSeed: %d\n", enc_data->fields.SafariRandSeed);
-    socket_log_fmt("GenerateRandSeed: %d\n", enc_data->fields.GenerateRandSeed);
-    socket_log_fmt("GenerateValid: %d\n", enc_data->fields.GenerateValid);
-    socket_log_fmt("SprayCount: %d\n", enc_data->fields.SprayCount);
-    socket_log_fmt("SprayType: %u\n", enc_data->fields.SprayType);
-    socket_log_fmt("BtlSearcherCharge: %u\n", enc_data->fields.BtlSearcherCharge);
-    socket_log_fmt("PokeToreCharge: %u\n", enc_data->fields.PokeToreCharge);
-    socket_log_fmt("VidroType: %u\n", enc_data->fields.VidroType);
-
-    enc_data->fields.SprayCount -= subval;
-    PlayerWork::set_Enc_SV_Data(*enc_data);
-
-    socket_log_fmt("ItemWork_SubSprayCount Done!\n", enc_data->fields.encountWalkCount);
-}*/
