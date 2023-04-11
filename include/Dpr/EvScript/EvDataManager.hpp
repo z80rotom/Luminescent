@@ -178,7 +178,7 @@ namespace Dpr
             struct PlaySeData_array* _se_datas;
             struct PlaySeData_array* _voice_datas;
             struct UnityEngine_Vector2Int_o _eventEndPosition;
-            struct System_String_o* _posEventLabelReserve;
+            struct System::String* _posEventLabelReserve;
             struct EntityParam_array* _entityParamList;
             struct UnityEngine_GameObject_o* _stopRoot;
             bool _isInitFirstMap;
@@ -205,9 +205,9 @@ namespace Dpr
             struct System_Int32_array* TvCommercials;
             int32_t TvCommercialsCurrentIndex;
             struct FieldShip_o* _FieldShip_k__BackingField;
-            struct System_String_o* _callLabel_SceneChange;
-            struct System_String_o* _callLabel_UpdateSP;
-            struct System_String_o* _callLabel_AdjustHeroPos;
+            struct System::String* _callLabel_SceneChange;
+            struct System::String* _callLabel_UpdateSP;
+            struct System::String* _callLabel_AdjustHeroPos;
             struct System_Collections_Generic_List_FieldObjectMoveCode__o* FieldObjectMoveCodes;
             bool _lateUpdateMoveCode;
             bool _isCall_TrainerBtl;
@@ -259,21 +259,21 @@ namespace Dpr
             int32_t _talkStart;
             int32_t _macroCmd;
             int32_t _procCmd;
-            struct System_String_o* _talkOpenMsbt;
-            struct System_String_o* _talkOpenLabel;
+            struct System::String* _talkOpenMsbt;
+            struct System::String* _talkOpenLabel;
             float _turnEndFrame_Hero;
             float _turnEndFrame_Obj;
             struct System_Single_array* _turnTime;
             struct UnityEngine_Quaternion_array* _turnEndQuaternion;
             struct System_Boolean_array* _turnDiffFlag;
             float _deltatime;
-            struct System_String_o* _mapChangeZoneID;
+            struct System::String* _mapChangeZoneID;
             int32_t _mapChangeIndex;
             struct UnityEngine_Quaternion_o _moveGridCenterStart;
             struct UnityEngine_Quaternion_o _moveGridCenterEnd;
             bool _isOpenSubContentsMenu;
             bool _isWaitCheckOnlineAccount;
-            struct System_String_o* _custumWindow_msbt;
+            struct System::String* _custumWindow_msbt;
             struct System_Collections_Generic_List_string__o* _custumWindow_Labels;
             struct System_Collections_Generic_List_int__o* _custumWindow_RetIndex;
             struct FieldEventEntity_o* _selectDoorObject;
@@ -346,7 +346,7 @@ namespace Dpr
             int32_t returnSequenceID;
             bool _boukennootoTipsOpen;
             int32_t _fashionLoadSeq;
-            struct System_String_o* _oldfashionAssetReqUri;
+            struct System::String* _oldfashionAssetReqUri;
             struct SmartPoint_AssetAssistant_AssetRequestOperation_o* _fashionAssetReqOp;
             float _fashionYawAngle;
             struct UnityEngine_Vector3_o _fashionWorldpos;
@@ -379,6 +379,8 @@ namespace Dpr
             void LearnWaza(Pml::PokePara::PokemonParam_o *param, int32_t learnWazaNo,int32_t unlearnWazaNo,MethodInfo *method);
             // 02c423c0
             bool JumpLabel(System::String *label, EventEndDelegate_o *callback, MethodInfo *method);
+            // 02c42ea0
+            bool UpdateEvdata(float time, bool sp_script, MethodInfo *method);
 
             EvDataManager_c *klass;
             void *monitor;

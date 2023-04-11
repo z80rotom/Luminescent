@@ -660,5 +660,6 @@ enum ZoneID
     D10R0501B = 655,
     D10R0502B = 656,
     D10R0601B = 657,
-    MAX_ZONE_ID = 658,
+    NEWAREA = 658,
+    MAX_ZONE_ID = 659,
 };

@@ -1,0 +1,17 @@
+[target=main, version=bd_130]
+
+// Rewrite Dpr.EvScript.EvDataManager$$SpLabel_Init
+02c42b70:
+  b SpLabel_Init
+
+// Rewrite Dpr.EvScript.EvDataManager$$SpLabel_Obj
+02c42c40:
+  b SpLabel_Obj
+
+// Rewrite Dpr.EvScript.EvDataManager$$SpLabel_Flag
+02c42d10:
+  b SpLabel_Flag
+
+// Rewrite Dpr.EvScript.EvDataManager$$SpLabel_Scene
+02c42de0:
+  b SpLabel_Scene
