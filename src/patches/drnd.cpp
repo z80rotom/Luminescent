@@ -169,7 +169,7 @@ bool ZukanWork_IsGet2(uint32_t monsno,uint8_t sex,int32_t form,bool color,Method
 {
     monsno -= 1;
     System::Array<bool> * formFlags = ZukanWork::GetFormFlags(monsno, sex, color, (MethodInfo *) nullptr);
-    if (formFlags != nullptr)
+    if (formFlags != nullptr && form < formFlags->max_length)
     {
         return formFlags->m_Items[form];
     }
@@ -249,7 +249,7 @@ void ZukanWork_SetPoke(uint32_t monsno, int32_t get, uint8_t sex, int32_t form, 
     }
 
     System::Array<bool> * formFlags = ZukanWork::GetFormFlags(monsno, sex, color, (MethodInfo *) nullptr);
-    if (formFlags != nullptr)
+    if (formFlags != nullptr && form < formFlags->max_length)
     {
         formFlags->m_Items[form] = true;
     }
