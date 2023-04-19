@@ -24,25 +24,21 @@ namespace Pml {
 bool GetDprIllegalFlag(Pml::PokePara::Accessor *__this, MethodInfo *method)
 {
     // Always return valid
-    socket_log_fmt("Call to GetDprIllegalFlag");
     return false;
 }
 
 bool IsDuplicatedPokemonParam(Pml::PokePara::PokemonParam_o *pp0, System_Collections_Generic_List_PokemonParam__o *checkedParams, MethodInfo *method)
 {
     // Always return valid
-    socket_log_fmt("Call to IsDuplicatedPokemonParam");
     return false;
 }
 
 void SetDprIllegalFlag(Pml::PokePara::Accessor *__this, bool flag, MethodInfo *method)
 {
     // Do Nothing
-    socket_log_fmt("Call to SetDprIllegalFlag");
 }
 
 void set_fuseiTamagoFlag(Pml::PokePara::CoreDataHeader __this, bool value, MethodInfo *method)
 {
     // Do Nothing
-    socket_log_fmt("Call to set_fuseiTamagoFlag");
 }
