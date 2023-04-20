@@ -12,7 +12,8 @@ _Znwm = 0x00584220 - 0x05708000;
 _Znam = 0x00584560 - 0x05708000;
 _ZdlPv = 0x005845c0 - 0x05708000;
 _ZdaPv = 0x005848d0 - 0x05708000;
- 
+
+_ZN10PlayerWork15get_playerPartyEP10MethodInfo = 0x02ce2b50 - 0x05708000;
 _ZN10PlayerWork10get_zoneIDEP10MethodInfo = 0x02ceea50 - 0x05708000;
 _ZN3Pml5Local6Random8GetValueEP10MethodInfo = 0x024a00a0 - 0x05708000;
 _ZN3Pml8PokePara8CalcTool11IsRareColorEjjP10MethodInfo = 0x024ad790 - 0x05708000;
@@ -293,6 +294,8 @@ _ZN3Pml8PokePara13InitialSpec_o4ctorEP10MethodInfo = 0x20521d0 - 0x05708000;
 _ZN3Dpr8EvScript15EvDataManager_o9JumpLabelEPN6System6StringEPNS0_18EventEndDelegate_oEP10MethodInfo = 0x02c423c0 - 0x05708000;
 _ZN3Dpr8EvScript15EvDataManager_o12UpdateEvdataEfbP10MethodInfo = 0x02c42ea0 - 0x05708000;
 _ZN3Dpr8EvScript15EvDataManager_o8RunEvCmdEiP10MethodInfo = 0x02c5b290 - 0x05708000;
+_ZN3Dpr8EvScript15EvDataManager_o16GetPokemonFormNoEPN3Pml8PokePara14PokemonParam_oEP10MethodInfo = 0x02c67ff0 - 0x05708000;
+_ZN3Dpr8EvScript15EvDataManager_o15GetPokemonParamEiiP10MethodInfo =  0x02c67f20 - 0x05708000;
 Handler_Karagenki_WazaPowMethodInfo = 0x04c7a3b0 - 0x05708000;
 Method_handler_TetunoKobusi = 0x4c79da0 - 0x05708000;
 _ZN3Dpr6Battle5Logic44EventFactor_EventHandlerTable_Array_TypeInfoE = 0x4c5b148 - 0x05708000;
@@ -333,6 +336,7 @@ _ZN3Dpr6Battle5Logic6Common17RemoveFieldEffectEPPNS1_30EventFactor_EventHandlerA
 
 _ZN10PlayerWork15get_Enc_SV_DataEv = 0x02cf2840 - 0x05708000;
 _ZN10PlayerWork15set_Enc_SV_DataEN6DPData13ENC_SV_DATA_oE = 0x02cf27d0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam9GetFormNoEP10MethodInfo = 0x02ce2b50 - 0x05708000;
 
 StringLiteral_9194 = 0x4ca7d88 - 0x05708000;
 StringLiteral_9195 = 0x4ca7d90 - 0x05708000;

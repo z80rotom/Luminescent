@@ -159,7 +159,6 @@ namespace Dpr
             MsgOpenParam_Fields fields;
         };
 
-        #pragma pack (8)
         struct EvDataManager_Fields {
             struct System_Action_EvDataManager_EntityParam__o* OnTalkStartCallBack;
             bool _isScriptLoad;
@@ -370,7 +369,6 @@ namespace Dpr
             bool _nowInstantiate;
             struct System_Collections_Generic_Dictionary_int__GameObject__o* _poolLoadObjects;
         };
-        #pragma pack (0)
 
         struct EvDataManager_c;
 
@@ -385,6 +383,10 @@ namespace Dpr
             bool UpdateEvdata(float time, bool sp_script, MethodInfo *method);
             // 02c5b290
             bool RunEvCmd(int32_t index, MethodInfo *method);
+            // 02c67ff0
+            int32_t GetPokemonFormNo(Pml::PokePara::PokemonParam_o *param, MethodInfo *method);
+            // 02c67f20
+            Pml::PokePara::PokemonParam_o * GetPokemonParam(int32_t trayIndex, int32_t index, MethodInfo *method);
 
             EvDataManager_c *klass;
             void *monitor;
