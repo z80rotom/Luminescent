@@ -1,4 +1,5 @@
 #include "il2cpp.hpp"
+#include "Dpr/Box/BoxPokemonWork.hpp"
 #include "Dpr/EvScript/EvDataManager.hpp"
 #include "EvData/EvCmdID.hpp"
 #include "EvData/ArgType.hpp"
@@ -193,6 +194,38 @@ bool PartyBoxNature(Dpr::EvScript::EvDataManager_o * manager)
     return true;
 }
 
+// Releases the Pokémon at the given index and tray index.
+// Arguments:
+//   [Work, Number] index: The index that points to the given Pokémon.
+//   [Work, Number] trayIndex: The tray index in which to look for the given Pokémon.
+bool PartyBoxRelease(Dpr::EvScript::EvDataManager_o * manager)
+{
+    socket_log_fmt("_RELEASE_BOX_POKE\n");
+    System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
+
+    if (args->max_length >= 2)
+    {
+        int32_t index = GetWorkOrNumberValue(args->m_Items[1]);
+
+        if (args->max_length >= 3)
+        {
+            int32_t trayIndex = GetWorkOrNumberValue(args->m_Items[2]);
+
+            Pml::PokePara::PokemonParam_o * param = manager->GetPokemonParam(trayIndex, index, nullptr);
+
+            if (!IsNullOrEgg(param))
+            {
+                socket_log_fmt("Calling ClearPokemon with tray index %d and index %d\n", trayIndex, index);
+                Dpr::Box::BoxPokemonWork::ClearPokemon(trayIndex, index, nullptr);
+
+            }
+        }
+    }
+
+    return true;
+}
+
+// Handles overriden and new script commands, then calls the original method to handle the rest normally.
 bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID index, MethodInfo *method)
 {
     // Overriden/New Commands
@@ -206,6 +239,8 @@ bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID in
             return PartyBoxFormsNo(__this);
         case EvData::EvCmdID::_GET_BOX_POKE_SEIKAKU:
             return PartyBoxNature(__this);
+        case EvData::EvCmdID::_RELEASE_BOX_POKE:
+            return PartyBoxRelease(__this);
         default:
             break;
     }
