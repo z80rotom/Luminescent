@@ -288,6 +288,7 @@ _ZN3Dpr2UI7UIBag_o15OpenContextMenuEPN6System5ArrayIiEEP30System_Action_ContextM
 _ZN8ItemWork10IsDsPlayerEP10MethodInfo = 0x1aeb550 - 0x05708000;
 _ZN3Pml8Personal14PersonalSystem15GetPersonalDataEitP10MethodInfo = 0x024a0ca0 - 0x05708000;
 _ZN3Pml8PokePara9CoreParam11GetRareTypeEP10MethodInfo = 0x204a5a0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam10GetSeikakuEP10MethodInfo = 0x2048740 - 0x05708000;
 DAT_7103a679b8 = 0x3a679b8 - 0x05708000;
 _ZN11GameManager22get_currentPeriodOfDayEP10MethodInfo = 0x2cd0c60 - 0x05708000;
 _ZN3Pml8PokePara13InitialSpec_o4ctorEP10MethodInfo = 0x20521d0 - 0x05708000;

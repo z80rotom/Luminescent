@@ -19,7 +19,7 @@ float ConvertToFloat(int32_t value)
 
 bool SetWeather(Dpr::EvScript::EvDataManager_o * manager)
 {
-    socket_log_fmt("SetWeather\n");
+    socket_log_fmt("_SET_WEATHER\n");
     System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
 
     if (args->max_length >= 2)
@@ -49,7 +49,7 @@ bool SetWeather(Dpr::EvScript::EvDataManager_o * manager)
 
 bool PartyFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 {
-    socket_log_fmt("PartyFormsNo\n");
+    socket_log_fmt("_TEMOTI_FORMNO\n");
     system_load_typeinfo((void *)0x44f9);
     
     System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
@@ -105,7 +105,7 @@ bool PartyFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 
 bool PartyBoxFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 {
-    socket_log_fmt("PartyBoxFormsNo\n");
+    socket_log_fmt("_TEMOTI_BOX_FORMNO\n");
     System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
 
     if (args->max_length >= 2)
@@ -143,7 +143,7 @@ bool PartyBoxFormsNo(Dpr::EvScript::EvDataManager_o * manager)
                 default:
                     break;
             }
-            
+
             Pml::PokePara::PokemonParam_o * param = manager->GetPokemonParam(trayIndex, index, nullptr);
             Pml::PokePara::CoreParam * coreParam = (Pml::PokePara::CoreParam *)param;
 
@@ -175,6 +175,78 @@ bool PartyBoxFormsNo(Dpr::EvScript::EvDataManager_o * manager)
     return true;
 }
 
+bool PartyBoxAbility(Dpr::EvScript::EvDataManager_o * manager)
+{
+    socket_log_fmt("_GET_BOX_POKE_SEIKAKU\n");
+    System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
+
+    if (args->max_length >= 2)
+    {
+        int32_t argType = args->m_Items[1].fields.argType;
+        int32_t data = args->m_Items[1].fields.data;
+        int32_t index = 0;
+
+        switch (argType)
+        {
+            case EvData::ArgType::Work:
+                index = PlayerWork::GetInt(data, nullptr);
+                break;
+            case EvData::ArgType::Float:
+                index = (int32_t)ConvertToFloat(data);
+                break;
+            default:
+                break;
+        }
+
+        if (args->max_length >= 3)
+        {
+            argType = args->m_Items[2].fields.argType;
+            data = args->m_Items[2].fields.data;
+            int32_t trayIndex = 0;
+
+            switch (argType)
+            {
+                case EvData::ArgType::Work:
+                    trayIndex = PlayerWork::GetInt(data, nullptr);
+                    break;
+                case EvData::ArgType::Float:
+                    trayIndex = (int32_t)ConvertToFloat(data);
+                    break;
+                default:
+                    break;
+            }
+
+            Pml::PokePara::PokemonParam_o * param = manager->GetPokemonParam(trayIndex, index, nullptr);
+            Pml::PokePara::CoreParam * coreParam = (Pml::PokePara::CoreParam *)param;
+
+            int32_t result;
+            if (coreParam == nullptr || coreParam->IsNull(nullptr) || coreParam->IsEgg(2, nullptr))
+            {
+                result = -1;
+            }
+            else
+            {
+                socket_log_fmt("Calling GetSeikaku with tray index %d and index %d\n", trayIndex, index);
+                result = coreParam->GetSeikaku(nullptr);
+            }
+
+            if (args->max_length >= 4)
+            {
+                argType = args->m_Items[3].fields.argType;
+                data = args->m_Items[3].fields.data;
+
+                if (argType == EvData::ArgType::Work)
+                {
+                    socket_log_fmt("Setting work %d to result: %d\n", data, result);
+                    PlayerWork::SetInt(data, result, nullptr);
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
 bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID index, MethodInfo *method)
 {
     // Overriden/New Commands
@@ -186,6 +258,8 @@ bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID in
             return PartyFormsNo(__this);
         case EvData::EvCmdID::_TEMOTI_BOX_FORMNO:
             return PartyBoxFormsNo(__this);
+        case EvData::EvCmdID::_GET_BOX_POKE_SEIKAKU:
+            return PartyBoxAbility(__this);
         default:
             break;
     }
