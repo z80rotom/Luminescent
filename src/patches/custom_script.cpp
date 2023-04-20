@@ -10,6 +10,9 @@
 #include "util.hpp"
 #include "logger.hpp"
 
+// UTILITY METHODS
+
+// Converts the IEEE-754 formatted int32 into its proper float value.
 float ConvertToFloat(int32_t value)
 {
     float fresult;
@@ -17,6 +20,56 @@ float ConvertToFloat(int32_t value)
     return fresult;
 }
 
+// Returns either the value at the given work variable or the direct int value depending on the given argument's type.
+// Returns 0 for any other argument type.
+int32_t GetWorkOrNumberValue(EvData::Aregment_o arg)
+{
+    int32_t argType = arg.fields.argType;
+    int32_t data = arg.fields.data;
+    int32_t result = 0;
+
+    switch (argType)
+    {
+        case EvData::ArgType::Work:
+            result = PlayerWork::GetInt(data, nullptr);
+            break;
+        case EvData::ArgType::Float:
+            result = (int32_t)ConvertToFloat(data);
+            break;
+        default:
+            break;
+    }
+
+    return result;
+}
+
+// If the given argument is a work variable, set it to the given value.
+// Does nothing otherwise.
+void SetWorkToValue(EvData::Aregment_o arg, int32_t value)
+{
+    int32_t argType = arg.fields.argType;
+    int32_t data = arg.fields.data;
+
+    if (argType == EvData::ArgType::Work)
+    {
+        socket_log_fmt("Setting work %d to value %d\n", data, value);
+        PlayerWork::SetInt(data, value, nullptr);
+    }
+}
+
+// Checks if the given PokemonParam is null or an egg.
+bool IsNullOrEgg(Pml::PokePara::PokemonParam_o * param)
+{
+    Pml::PokePara::CoreParam * coreParam = (Pml::PokePara::CoreParam *)param;
+    return coreParam == nullptr || coreParam->IsNull(nullptr) || coreParam->IsEgg(2, nullptr);
+}
+
+
+// SCRIPT COMMAND METHODS
+
+// Sets the weather.
+// Arguments:
+//   [Work, Number] weather: The ID of the weather to change to.
 bool SetWeather(Dpr::EvScript::EvDataManager_o * manager)
 {
     socket_log_fmt("_SET_WEATHER\n");
@@ -24,22 +77,7 @@ bool SetWeather(Dpr::EvScript::EvDataManager_o * manager)
 
     if (args->max_length >= 2)
     {
-        int32_t argType = args->m_Items[1].fields.argType;
-        int32_t data = args->m_Items[1].fields.data;
-        int32_t weather = 0;
-
-        switch (argType)
-        {
-            case EvData::ArgType::Work:
-                weather = PlayerWork::GetInt(data, nullptr);
-                break;
-            case EvData::ArgType::Float:
-                weather = (int32_t)ConvertToFloat(data);
-                break;
-            default:
-                break;
-        }
-
+        int32_t weather = GetWorkOrNumberValue(args->m_Items[1]);
         socket_log_fmt("Calling set_WeatherID with weatherId: %d\n", weather);
         WeatherWork::set_WeatherID(weather, nullptr);
     }
@@ -47,6 +85,10 @@ bool SetWeather(Dpr::EvScript::EvDataManager_o * manager)
     return true;
 }
 
+// Returns the form id of the Pokémon at the given index in the party.
+// Arguments:
+//   [Work, Number] index: The index that points to the given Pokémon.
+//   [Work] result: The work in which to put the result in. -1 if the chosen Pokémon is null or an egg.
 bool PartyFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 {
     socket_log_fmt("_TEMOTI_FORMNO\n");
@@ -56,32 +98,13 @@ bool PartyFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 
     if (args->max_length >= 2)
     {
-        int32_t argType = args->m_Items[1].fields.argType;
-        int32_t data = args->m_Items[1].fields.data;
-        int32_t index = 0;
-
-        switch (argType)
-        {
-            case EvData::ArgType::Work:
-                index = PlayerWork::GetInt(data, nullptr);
-                break;
-            case EvData::ArgType::Float:
-                index = (int32_t)ConvertToFloat(data);
-                break;
-            default:
-                break;
-        }
+        int32_t index = GetWorkOrNumberValue(args->m_Items[1]);
 
         Pml::PokeParty_o * party = PlayerWork::get_playerParty(nullptr);
         Pml::PokePara::PokemonParam_o * param = party->GetMemberPointer(index, nullptr);
-        Pml::PokePara::CoreParam * coreParam = (Pml::PokePara::CoreParam *)param;
+        int32_t result = -1;
 
-        int32_t result;
-        if (coreParam == nullptr || coreParam->IsNull(nullptr) || coreParam->IsEgg(2, nullptr))
-        {
-            result = -1;
-        }
-        else
+        if (!IsNullOrEgg(param))
         {
             socket_log_fmt("Calling GetPokemonFormNo with party index: %d\n", index);
             result = manager->GetPokemonFormNo(param, nullptr);
@@ -89,20 +112,18 @@ bool PartyFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 
         if (args->max_length >= 3)
         {
-            argType = args->m_Items[2].fields.argType;
-            data = args->m_Items[2].fields.data;
-
-            if (argType == EvData::ArgType::Work)
-            {
-                socket_log_fmt("Setting work %d to result: %d\n", data, result);
-                PlayerWork::SetInt(data, result, nullptr);
-            }
+            SetWorkToValue(args->m_Items[2], result);
         }
     }
 
     return true;
 }
 
+// Returns the form id of the Pokémon at the given index and tray index.
+// Arguments:
+//   [Work, Number] index: The index that points to the given Pokémon.
+//   [Work, Number] trayIndex: The tray index in which to look for the given Pokémon.
+//   [Work] result: The work in which to put the result in. -1 if the chosen Pokémon is null or an egg.
 bool PartyBoxFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 {
     socket_log_fmt("_TEMOTI_BOX_FORMNO\n");
@@ -110,49 +131,16 @@ bool PartyBoxFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 
     if (args->max_length >= 2)
     {
-        int32_t argType = args->m_Items[1].fields.argType;
-        int32_t data = args->m_Items[1].fields.data;
-        int32_t index = 0;
-
-        switch (argType)
-        {
-            case EvData::ArgType::Work:
-                index = PlayerWork::GetInt(data, nullptr);
-                break;
-            case EvData::ArgType::Float:
-                index = (int32_t)ConvertToFloat(data);
-                break;
-            default:
-                break;
-        }
+        int32_t index = GetWorkOrNumberValue(args->m_Items[1]);
 
         if (args->max_length >= 3)
         {
-            argType = args->m_Items[2].fields.argType;
-            data = args->m_Items[2].fields.data;
-            int32_t trayIndex = 0;
-
-            switch (argType)
-            {
-                case EvData::ArgType::Work:
-                    trayIndex = PlayerWork::GetInt(data, nullptr);
-                    break;
-                case EvData::ArgType::Float:
-                    trayIndex = (int32_t)ConvertToFloat(data);
-                    break;
-                default:
-                    break;
-            }
+            int32_t trayIndex = GetWorkOrNumberValue(args->m_Items[2]);
 
             Pml::PokePara::PokemonParam_o * param = manager->GetPokemonParam(trayIndex, index, nullptr);
-            Pml::PokePara::CoreParam * coreParam = (Pml::PokePara::CoreParam *)param;
+            int32_t result = -1;
 
-            int32_t result;
-            if (coreParam == nullptr || coreParam->IsNull(nullptr) || coreParam->IsEgg(2, nullptr))
-            {
-                result = -1;
-            }
-            else
+            if (!IsNullOrEgg(param))
             {
                 socket_log_fmt("Calling GetPokemonFormNo with tray index %d and index %d\n", trayIndex, index);
                 result = manager->GetPokemonFormNo(param, nullptr);
@@ -160,14 +148,7 @@ bool PartyBoxFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 
             if (args->max_length >= 4)
             {
-                argType = args->m_Items[3].fields.argType;
-                data = args->m_Items[3].fields.data;
-
-                if (argType == EvData::ArgType::Work)
-                {
-                    socket_log_fmt("Setting work %d to result: %d\n", data, result);
-                    PlayerWork::SetInt(data, result, nullptr);
-                }
+                SetWorkToValue(args->m_Items[3], result);
             }
         }
     }
@@ -175,71 +156,36 @@ bool PartyBoxFormsNo(Dpr::EvScript::EvDataManager_o * manager)
     return true;
 }
 
-bool PartyBoxAbility(Dpr::EvScript::EvDataManager_o * manager)
+// Returns the nature id of the Pokémon at the given index and tray index.
+// Arguments:
+//   [Work, Number] index: The index that points to the given Pokémon.
+//   [Work, Number] trayIndex: The tray index in which to look for the given Pokémon.
+//   [Work] result: The work in which to put the result in. -1 if the chosen Pokémon is null or an egg.
+bool PartyBoxNature(Dpr::EvScript::EvDataManager_o * manager)
 {
     socket_log_fmt("_GET_BOX_POKE_SEIKAKU\n");
     System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
 
     if (args->max_length >= 2)
     {
-        int32_t argType = args->m_Items[1].fields.argType;
-        int32_t data = args->m_Items[1].fields.data;
-        int32_t index = 0;
-
-        switch (argType)
-        {
-            case EvData::ArgType::Work:
-                index = PlayerWork::GetInt(data, nullptr);
-                break;
-            case EvData::ArgType::Float:
-                index = (int32_t)ConvertToFloat(data);
-                break;
-            default:
-                break;
-        }
+        int32_t index = GetWorkOrNumberValue(args->m_Items[1]);
 
         if (args->max_length >= 3)
         {
-            argType = args->m_Items[2].fields.argType;
-            data = args->m_Items[2].fields.data;
-            int32_t trayIndex = 0;
-
-            switch (argType)
-            {
-                case EvData::ArgType::Work:
-                    trayIndex = PlayerWork::GetInt(data, nullptr);
-                    break;
-                case EvData::ArgType::Float:
-                    trayIndex = (int32_t)ConvertToFloat(data);
-                    break;
-                default:
-                    break;
-            }
+            int32_t trayIndex = GetWorkOrNumberValue(args->m_Items[2]);
 
             Pml::PokePara::PokemonParam_o * param = manager->GetPokemonParam(trayIndex, index, nullptr);
-            Pml::PokePara::CoreParam * coreParam = (Pml::PokePara::CoreParam *)param;
+            int32_t result = -1;
 
-            int32_t result;
-            if (coreParam == nullptr || coreParam->IsNull(nullptr) || coreParam->IsEgg(2, nullptr))
-            {
-                result = -1;
-            }
-            else
+            if (!IsNullOrEgg(param))
             {
                 socket_log_fmt("Calling GetSeikaku with tray index %d and index %d\n", trayIndex, index);
-                result = coreParam->GetSeikaku(nullptr);
+                result = ((Pml::PokePara::CoreParam *)param)->GetSeikaku(nullptr);
             }
 
             if (args->max_length >= 4)
             {
-                argType = args->m_Items[3].fields.argType;
-                data = args->m_Items[3].fields.data;
-
-                if (argType == EvData::ArgType::Work)
-                {
-                    socket_log_fmt("Setting work %d to result: %d\n", data, result);
-                    PlayerWork::SetInt(data, result, nullptr);
-                }
+                SetWorkToValue(args->m_Items[3], result);
             }
         }
     }
@@ -259,7 +205,7 @@ bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID in
         case EvData::EvCmdID::_TEMOTI_BOX_FORMNO:
             return PartyBoxFormsNo(__this);
         case EvData::EvCmdID::_GET_BOX_POKE_SEIKAKU:
-            return PartyBoxAbility(__this);
+            return PartyBoxNature(__this);
         default:
             break;
     }
