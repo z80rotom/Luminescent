@@ -59,7 +59,8 @@ namespace Pml
                 uint32_t GetTalentPower(int32_t powerId, MethodInfo *method);
                 // 204a5a0
                 uint8_t GetRareType(MethodInfo * method);
-
+                // 2048740
+                int32_t GetSeikaku(MethodInfo *method);
 
                 bool IsNull(MethodInfo * method);
                 bool IsEgg(int32_t type, MethodInfo * method);

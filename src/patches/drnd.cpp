@@ -11,11 +11,6 @@ const int32_t IS_SEE = 2;
 const int32_t IS_GET = 3;
 const uint32_t MAX_MONS = 1010;
 
-struct ZukanWork
-{
-    static System::Array<bool> * GetFormFlags(uint32_t monsno,uint8_t sex,bool color,MethodInfo *method);
-};
-
 // External links
 extern MethodInfo * Array_IndexOf_MethodInfo;
 int32_t Array_IndexOf(System::Array<int32_t> * array, int32_t value, MethodInfo * method);
@@ -167,7 +162,6 @@ bool ZukanWork_IsGet1(uint32_t monsno,MethodInfo *method)
 
 bool ZukanWork_IsGet2(uint32_t monsno,uint8_t sex,int32_t form,bool color,MethodInfo *method)
 {
-    monsno -= 1;
     System::Array<bool> * formFlags = ZukanWork::GetFormFlags(monsno, sex, color, (MethodInfo *) nullptr);
     if (formFlags != nullptr)
     {
@@ -196,6 +190,7 @@ bool ZukanWork_IsGet2(uint32_t monsno,uint8_t sex,int32_t form,bool color,Method
         return false;
     }
 
+    monsno -= 1;
     return GetZukanFlag(flags, monsno);
 }
 
@@ -242,7 +237,6 @@ bool ZukanWork_IsUwasa(uint32_t monsno, MethodInfo *method)
 
 void ZukanWork_SetPoke(uint32_t monsno, int32_t get, uint8_t sex, int32_t form, bool color, MethodInfo *method)
 {
-    monsno -= 1;
     if (monsno > MAX_MONS)
     {
         return;
@@ -254,6 +248,7 @@ void ZukanWork_SetPoke(uint32_t monsno, int32_t get, uint8_t sex, int32_t form, 
         formFlags->m_Items[form] = true;
     }
 
+    monsno -= 1;
     DPData::ZUKAN_WORK_o zukanWork = PlayerWork::get_zukan(nullptr, nullptr);
     int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno);
     if (zukanStatus <= get)

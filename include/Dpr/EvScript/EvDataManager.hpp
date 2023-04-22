@@ -34,7 +34,7 @@ struct TelescopeNagisa_o;
 struct FieldWazaCutIn_o;
 struct InterviewWork_o;
 struct FieldShip_o;
-struct FieldObjectMoveCode_array; // TODO: Make System.Array
+struct FieldObjectMoveCode_o;
 struct Balloon_array; // TODO: Make System.Array
 struct FieldAnimatorController_array; // TODO: Make System.Array
 struct FieldToUgInvisibleObjects_o;
@@ -145,12 +145,12 @@ namespace Dpr
         };
 
         struct MsgOpenParam_Fields {
-            System::String MsbtFile;
-            System::String Label;
+            System::String* MsbtFile;
+            System::String* Label;
             int32_t LabelIndex;
             int32_t WindowType;
             bool Input;
-            System::Array<System::String *> * TrainerName;
+            System::Array<System::String*>* TrainerName;
             int32_t EndType;
             bool PlayTextFeedSe;
         };
@@ -158,11 +158,11 @@ namespace Dpr
         struct MsgOpenParam_o {
             MsgOpenParam_Fields fields;
         };
-    
+
         struct EvDataManager_Fields {
             struct System_Action_EvDataManager_EntityParam__o* OnTalkStartCallBack;
             bool _isScriptLoad;
-            struct Dpr_EvScript_EvScriptData_array* _eventList;
+            struct System::Array<EvScriptData_o*>* _eventList;
             int32_t _eventListIndex;
             struct System_Collections_Generic_Stack_EvDataManager_EvCallData__o* _callQueue;
             struct System_Collections_Generic_Dictionary_string__int____o* _findAllLabel;
@@ -175,11 +175,11 @@ namespace Dpr
             struct System_Collections_Generic_List_FieldEventEntity__o* _warpList;
             struct XLSXContent_MapWarp_o* _warpData;
             struct UnityEngine_GameObject_o* _warpRoot;
-            struct PlaySeData_array* _se_datas;
-            struct PlaySeData_array* _voice_datas;
+            struct System::Array<PlaySeData_o*>* _se_datas;
+            struct System::Array<PlaySeData_o*>* _voice_datas;
             struct UnityEngine_Vector2Int_o _eventEndPosition;
             struct System::String* _posEventLabelReserve;
-            struct EntityParam_array* _entityParamList;
+            struct System::Array<EntityParam_o*>* _entityParamList;
             struct UnityEngine_GameObject_o* _stopRoot;
             bool _isInitFirstMap;
             struct FieldObjectEntity_o* __dummyPlayer_k__BackingField;
@@ -213,7 +213,7 @@ namespace Dpr
             bool _isCall_TrainerBtl;
             struct EvCallData_o _battleReturnData;
             struct FieldObjectEntity_o* _battleReturnHitObject;
-            struct FieldObjectMoveCode_array* _eyeEncountTarget;
+            struct System::Array<FieldObjectMoveCode_o*>* _eyeEncountTarget;
             struct Balloon_array* _eyeEncountBallon;
             float _eyeEncountWait;
             int32_t _eyeEncountSeq;
@@ -381,6 +381,12 @@ namespace Dpr
             bool JumpLabel(System::String *label, EventEndDelegate_o *callback, MethodInfo *method);
             // 02c42ea0
             bool UpdateEvdata(float time, bool sp_script, MethodInfo *method);
+            // 02c5b290
+            bool RunEvCmd(int32_t index, MethodInfo *method);
+            // 02c67ff0
+            int32_t GetPokemonFormNo(Pml::PokePara::PokemonParam_o *param, MethodInfo *method);
+            // 02c67f20
+            Pml::PokePara::PokemonParam_o * GetPokemonParam(int32_t trayIndex, int32_t index, MethodInfo *method);
 
             EvDataManager_c *klass;
             void *monitor;
