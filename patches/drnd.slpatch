@@ -29,6 +29,12 @@
 17db6a0:
     b ZukanWork_GetSinouCount
 
+17dd0b0:
+    b ZukanWork_CheckShinouZukanCompSee
+
+17dd260:
+    b ZukanWork_CheckZenkokuZukanCompGet
+
 // 
 1bb1364:
     mov x3, x21
