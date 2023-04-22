@@ -11,6 +11,11 @@ const int32_t IS_SEE = 2;
 const int32_t IS_GET = 3;
 const uint32_t MAX_MONS = 1010;
 
+const uint32_t NATDEX_MONS_COUNT = 11;
+uint32_t NATDEX_MONS[NATDEX_MONS_COUNT] = {
+    700, 862, 863, 864, 865, 866, 899, 900, 901, 903, 904
+};
+
 // External links
 extern MethodInfo * Array_IndexOf_MethodInfo;
 int32_t Array_IndexOf(System::Array<int32_t> * array, int32_t value, MethodInfo * method);
@@ -404,8 +409,80 @@ int32_t ZukanWork_GetSinouCount(bool isRating, MethodInfo *method)
     return seeCount;
 }
 
-// TODO: bool ZukanWork$$CheckShinouZukanCompSee(MethodInfo *method)
-// TODO: bool ZukanWork$$CheckZenkokuZukanCompGet(MethodInfo *method)
+bool ZukanWork_CheckShinouZukanCompSee(MethodInfo *method)
+{
+    system_load_typeinfo((void *)0xac6c);
+    
+    DPData::ZUKAN_WORK_o zukanWork = PlayerWork::get_zukan(nullptr, nullptr);
+    if (!zukanWork.fields.zukan_get)
+    {
+        return false;
+    }
+
+    System::Array<int32_t> * ShinouZukanNos = ZukanWork_TypeInfo->static_fields->ShinouZukanNos;
+    for (il2cpp_array_size_t i = 0; i < ShinouZukanNos->max_length; i++)
+    {
+        int32_t monsno = ShinouZukanNos->m_Items[i];
+        int32_t index = Array_IndexOf(ZukanWork_TypeInfo->static_fields->ZukanRatingExcludeNos, monsno+1, Array_IndexOf_MethodInfo);
+        if (index >= 0)
+        {
+            continue;
+        }
+
+        int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno);
+        if (zukanStatus < IS_SEE)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+bool ZukanWork_CheckZenkokuZukanCompGet(MethodInfo *method)
+{
+    system_load_typeinfo((void *)0xac6d);
+    
+    DPData::ZUKAN_WORK_o zukanWork = PlayerWork::get_zukan(nullptr, nullptr);
+    if (!zukanWork.fields.zukan_get)
+    {
+        return false;
+    }
+
+    for (uint32_t monsno = 0; monsno < 493; monsno++)
+    {
+        int32_t index = Array_IndexOf(ZukanWork_TypeInfo->static_fields->ZukanRatingExcludeNos, monsno+1, Array_IndexOf_MethodInfo);
+        
+        if (index >= 0)
+        {
+            continue;
+        }
+
+        int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno);
+        if (zukanStatus != IS_GET)
+        {
+            return false;
+        }
+    }
+
+    for (uint32_t i=0; i<NATDEX_MONS_COUNT; i++)
+    {
+        int32_t monsno = NATDEX_MONS[i];
+        int32_t index = Array_IndexOf(ZukanWork_TypeInfo->static_fields->ZukanRatingExcludeNos, monsno, Array_IndexOf_MethodInfo);
+        if (index >= 0)
+        {
+            continue;
+        }
+
+        int32_t zukanStatus = GetZukanStatus(&zukanWork, monsno-1);
+        if (zukanStatus != IS_GET)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
 
 struct Dpr_UI_UIText_o
 {
