@@ -248,6 +248,8 @@ _ZN14FieldManager_o9GetFormNoEiiiP10MethodInfo = 0x179f560 - 0x05708000;
 
 _ZN8ItemWork7SubItemEiiP10MethodInfo = 0x01aea450 - 0x05708000;
 _ZN3Dpr4Item10ItemInfo_o6get_IdEP10MethodInfo = 0x01ca61f0 - 0x05708000;
+_ZN8ItemWork11GetItemInfoEiP10MethodInfo = 0x01aea5b0 - 0x05708000;
+_ZN3Dpr4Item10ItemInfo_o9get_countEP10MethodInfo = 0x01ca5cc0 - 0x05708000;
 _ZN10PlayerWork9get_zukanEPN6DPData12ZUKAN_WORK_oEP10MethodInfo = 0x2cf1040 - 0x05708000;
 _ZN3Dpr7Message20MessageWordSetHelper12SetDigitWordEiiP10MethodInfo = 0x01f9a580 - 0x05708000;
 _ZN3Pml8PokePara9CoreParam8GetPowerEiP10MethodInfo = 0x20435c0 - 0x05708000;
