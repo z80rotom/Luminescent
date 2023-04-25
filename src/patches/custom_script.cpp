@@ -1,15 +1,33 @@
+#include <cmath>
+
 #include "il2cpp.hpp"
+
+#include "Audio/AudioManager.hpp"
 #include "Dpr/Box/BoxPokemonWork.hpp"
 #include "Dpr/EvScript/EvDataManager.hpp"
 #include "EvData/EvCmdID.hpp"
 #include "EvData/ArgType.hpp"
+#include "GameData/DataManager.hpp"
 #include "Pml/PokeParty.hpp"
 #include "Pml/PokePara/CoreParam.h"
+#include "SmartPoint/AssetAssistant/SingletonMonoBehavior.hpp"
+
+#include "AnimationPlayer.hpp"
+#include "areaID.hpp"
+#include "EntityManager.hpp"
+#include "FieldNagisaGymGearEntity.hpp"
+#include "FieldPlayerEntity.hpp"
+#include "GimmickWork.hpp"
 #include "PlayerWork.hpp"
 #include "WeatherWork.hpp"
 
 #include "util.hpp"
 #include "logger.hpp"
+
+// EXTERNAL
+
+extern void * AreaID_Array_TypeInfo;
+
 
 // UTILITY METHODS
 
@@ -65,6 +83,32 @@ bool IsNullOrEgg(Pml::PokePara::PokemonParam_o * param)
     return coreParam == nullptr || coreParam->IsNull(nullptr) || coreParam->IsEgg(2, nullptr);
 }
 
+// Virtual call to GetAnimationPlayer.
+typedef AnimationPlayer_o * (*GetAnimationPlayerPointer)(FieldPlayerEntity_o*, const MethodInfo*);
+AnimationPlayer_o * GetAnimationPlayerVirtual(FieldPlayerEntity_o * activePlayer)
+{
+    GetAnimationPlayerPointer methodPtr = (GetAnimationPlayerPointer)(activePlayer->klass->vtable)._5_GetAnimationPlayer.methodPtr;
+    return (AnimationPlayer_o *) (*methodPtr)(activePlayer,(activePlayer->klass->vtable)._5_GetAnimationPlayer.method);
+}
+
+
+// EXTRA OVERRIDEN METHODS
+
+// Rewrite GimmickWork$$.cctor
+// Adds Eterna gym to area id list for gears
+/*void GimmickWork_cctor(MethodInfo *method)
+{
+    system_load_typeinfo((void *)0x502f);
+
+    int32_t GEAR_AREAS_NUM = 4;
+    int32_t GEAR_AREAS[GEAR_AREAS_NUM] = {
+        C08GYM0101, C08GYM0102, C08GYM0103, C04GYM0102
+    };
+
+    System::Array<int32_t>* array = system_array_new(AreaID_Array_TypeInfo, GEAR_AREAS_NUM);
+    GimmickWork_TypeInfo->static_fields->GearAreaIdTable = array;
+}*/
+
 
 // SCRIPT COMMAND METHODS
 
@@ -84,6 +128,110 @@ bool SetWeather(Dpr::EvScript::EvDataManager_o * manager)
     }
 
     return true;
+}
+
+// Rotates a gear in the Sunyshore gym.
+// Arguments:
+//   [Label] gear: The gear to rotate.
+bool RotateSunyshoreGymGear(Dpr::EvScript::EvDataManager_o * manager)
+{
+    socket_log_fmt("_ROTATE_ELEC_GYM_GEAR\n");
+    system_load_typeinfo((void *)0x44ba);
+    system_load_typeinfo((void *)0x3f7e);
+
+    FieldPlayerEntity_o * activePlayer = EntityManager_TypeInfo->static_fields->_activeFieldPlayer_k__BackingField;
+    if (activePlayer == nullptr)
+    {
+        return true;
+    }
+
+    FieldNagisaGymGearEntity_o * gearEntitiy = manager->fields._nagisaGymGearEntity;
+    if (gearEntitiy == nullptr)
+    {
+        return true;
+    }
+
+    manager->fields._fieldObjectMove->Update(manager->fields._deltatime, nullptr);
+    manager->fields._fieldObjectRotateYaw->Update(manager->fields._deltatime, nullptr);
+
+    switch (manager->fields._gearSequence)
+    {
+        case 0:
+            {
+                activePlayer->PlayWalk(nullptr);
+                manager->fields._fieldObjectMove->SetObjectEntity((FieldObjectEntity_o*)activePlayer, nullptr);
+
+                float x = gearEntitiy->fields.super.super.super.worldPosition.fields.x +
+                    (-gearEntitiy->fields.super.offset.fields.x - gearEntitiy->fields.super.size.fields.x * 0.5);
+                float y = gearEntitiy->fields.super.super.super.worldPosition.fields.z +
+                    (gearEntitiy->fields.super.offset.fields.y - gearEntitiy->fields.super.size.fields.y * 0.5);
+                float z = gearEntitiy->fields.super.super.super.worldPosition.fields.z;
+
+                UnityEngine_Vector3_Fields vectorFields = { .x = x, .y = y, .z = z };
+                UnityEngine_Vector3_o vector = { .fields = vectorFields };
+                manager->fields._fieldObjectMove->MoveSpeed(vector, x, nullptr);
+                manager->fields._fieldObjectRotateYaw->SetObjectEntity((FieldObjectEntity_o*)activePlayer, nullptr);
+                double angleRad = atan2((double)x, (double)y);
+                float angleDegree = (float)angleRad * 57.29578;
+                manager->fields._fieldObjectRotateYaw->MoveTime(angleDegree, 0.1, nullptr);
+
+                Audio::AudioManager_o * audioManager = (Audio::AudioManager_o *)
+                    SmartPoint::AssetAssistant::SingletonMonoBehaviour::get_Instance
+                        (*SmartPoint::AssetAssistant::PTR_SingletonMonoBehaviour_AudioManager_get_Instance);
+                audioManager->PlaySe(0x2207d7db, nullptr, nullptr);
+
+                manager->fields._gearSequence += 1;
+            }
+            break;
+
+        case 1:
+            {
+                if (manager->fields._fieldObjectMove->get_IsBusy(nullptr)) return false;
+                if (manager->fields._fieldObjectRotateYaw->get_IsBusy(nullptr)) return false;
+
+                AnimationPlayer_o * animationPlayer = GetAnimationPlayerVirtual(activePlayer);
+                animationPlayer->Play(0, 0.0, 0.0, nullptr);
+
+                system_load_typeinfo((void *)0x3fb9);
+
+                System::Array<FieldNagisaGymGearEntity_o*>* gears = EntityManager_TypeInfo->static_fields->_fieldNagisaGymGears_k__BackingField;
+                for (int i=0; i<gears->max_length; i++)
+                {
+                    gears->m_Items[i]->Rotate(gearEntitiy->fields.GearRotateButton, gearEntitiy->fields.GearGroupNo, nullptr);
+                }
+
+                Audio::AudioManager_o * audioManager = (Audio::AudioManager_o *)
+                    SmartPoint::AssetAssistant::SingletonMonoBehaviour::get_Instance
+                        (*SmartPoint::AssetAssistant::PTR_SingletonMonoBehaviour_AudioManager_get_Instance);
+                audioManager->PlaySe(0x2107d669, nullptr, nullptr);
+
+                manager->fields._gearSequence += 1;
+            }
+            break;
+        
+        case 2:
+            {
+                if (gearEntitiy->IsRotating(nullptr)) return false;
+
+                float rotateType = FieldNagisaGymGearEntity_o::GetDegRotateType(gearEntitiy->fields.GearRotateButton, nullptr);
+                int32_t areaId = manager->fields._areaID;
+                if (gearEntitiy->fields.GearGroupNo != 0)
+                {
+                    rotateType = -rotateType;
+                }
+
+                int32_t gearRotate = GimmickWork_o::GetGearRotate(areaId, nullptr);
+                gearRotate = (int32_t)(rotateType + (float)gearRotate);
+                if (gearRotate < 0) gearRotate += 360;
+                if (gearRotate >= 360) gearRotate -= 360;
+                GimmickWork_o::SetGearRotate(areaId, gearRotate, nullptr);
+
+                manager->fields._gearSequence = -1;
+            }
+            break;
+    }
+
+    return manager->fields._gearSequence == -1;
 }
 
 // Returns the form id of the Pokémon at the given index in the party.
@@ -233,6 +381,8 @@ bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID in
     {
         case EvData::EvCmdID::_SET_WEATHER:
             return SetWeather(__this);
+        //case EvData::EvCmdID::_ROTATE_ELEC_GYM_GEAR:
+        //    return RotateSunyshoreGymGear(__this);
         case EvData::EvCmdID::_TEMOTI_FORMNO:
             return PartyFormsNo(__this);
         case EvData::EvCmdID::_TEMOTI_BOX_FORMNO:

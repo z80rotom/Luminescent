@@ -1,6 +1,8 @@
 #pragma once
 
 #include "il2cpp.hpp"
+#include "Dpr/FieldObjectMove.hpp"
+#include "Dpr/FieldObjectRotateYaw.hpp"
 #include "System/String.hpp"
 #include "System/Array.hpp"
 
@@ -281,8 +283,8 @@ namespace Dpr
             int32_t _heroReqBit;
             int32_t _heroMoveGridCenterFrontDir;
             bool _heroMoveGridCenterFrontStat;
-            struct Dpr_FieldObjectMove_o* _fieldObjectMove;
-            struct Dpr_FieldObjectRotateYaw_o* _fieldObjectRotateYaw;
+            struct Dpr::FieldObjectMove_o* _fieldObjectMove;
+            struct Dpr::FieldObjectRotateYaw_o* _fieldObjectRotateYaw;
             struct Dpr_FieldFloatMove_o* _fieldFloatMove;
             int32_t _hidenSequence;
             struct UnityEngine_Vector3_o _takiTargetPosition;
