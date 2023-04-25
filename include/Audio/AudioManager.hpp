@@ -2,6 +2,7 @@
 
 #include "il2cpp.hpp"
 #include "Audio/AudioInstance.hpp"
+#include "UnityEngine/GameObject.hpp"
 
 struct SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager__Fields {
 	UnityEngine_MonoBehaviour_Fields super;
@@ -12,7 +13,7 @@ namespace Audio
     struct AudioManager_Fields
     {
         SmartPoint_AssetAssistant_SingletonMonoBehaviour_AudioManager__Fields super;
-        struct UnityEngine_GameObject_o* _prefab;
+        struct UnityEngine::GameObject_o* _prefab;
         struct System_Int32_array* _poolCounts;
         struct UnityEngine_Transform_o* _listenerRoot;
         struct System_String_o* _commonBankName;

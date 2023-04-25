@@ -1,3 +1,6 @@
+#pragma once
+
+#include "UnityEngine/GameObject.hpp"
 
 struct UgMainProc_StaticFields {
 	struct Dpr_Field_Walking_UgWalkingAIManager_o* walkingManager;
@@ -12,7 +15,7 @@ struct UgMainProc_SimbolMons_Fields {
 	bool Active;
 	bool isLoaded;
 	int32_t moveType;
-	struct UnityEngine_GameObject_o* gameObject;
+	struct UnityEngine::GameObject_o* gameObject;
 	struct UnityEngine_Transform_o* transform;
 	struct FieldPokemonEntity_o* entity;
 };

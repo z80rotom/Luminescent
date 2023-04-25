@@ -2,14 +2,15 @@
 
 #include "il2cpp.hpp"
 #include "FieldCharacterEntity.hpp"
+#include "UnityEngine/GameObject.hpp"
 
 struct FieldPlayerEntity_Fields
 {
 	FieldCharacterEntity_Fields super;
 	struct UnityEngine_Renderer_array* _hatRenderers;
 	struct UnityEngine_Renderer_array* _shoesRenderers;
-	struct UnityEngine_GameObject_o* _meshGroup;
-	struct UnityEngine_GameObject_o* _bicycleObject;
+	struct UnityEngine::GameObject_o* _meshGroup;
+	struct UnityEngine::GameObject_o* _bicycleObject;
 	struct UnityEngine_Renderer_array* _rodRenderers;
 	struct UnityEngine_Renderer_o* _podRenderer;
 	struct UnityEngine_Renderer_o* _beadaruRenderer;

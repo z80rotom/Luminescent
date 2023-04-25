@@ -1,6 +1,7 @@
 #pragma once
 
 #include "il2cpp.hpp"
+#include "UnityEngine/GameObject.hpp"
 
 namespace Dpr
 {
@@ -38,7 +39,7 @@ namespace Dpr
             int32_t rensa_mons;
             uint32_t rensa_lv;
             bool BattleEndRensaStart;
-            struct UnityEngine_GameObject_o* RootGrass;
+            struct UnityEngine::GameObject_o* RootGrass;
             bool _callSwayBGM;
             bool _callStopSwayBGM;
         };

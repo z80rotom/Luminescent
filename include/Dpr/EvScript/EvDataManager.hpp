@@ -3,8 +3,10 @@
 #include "il2cpp.hpp"
 #include "Dpr/FieldObjectMove.hpp"
 #include "Dpr/FieldObjectRotateYaw.hpp"
+#include "Dpr/EvScript/EvScriptData.hpp"
 #include "System/String.hpp"
 #include "System/Array.hpp"
+#include "UnityEngine/GameObject.hpp"
 
 struct System_Action_EvDataManager_EntityParam__o;
 struct System_Collections_Generic_Stack_EvDataManager_EvCallData__o;
@@ -18,8 +20,6 @@ struct System_Collections_Generic_List_FieldKinomiGrowEntity__o;
 struct System_Collections_Generic_List_EvDataManager_AssetReqOpeRef__o;
 struct System_Collections_Generic_List_EvDataManager_LoadObjectData__o;
 struct System_Collections_Generic_Dictionary_int__GameObject__o;
-
-struct UnityEngine_GameObject_o;
 
 struct FieldObjectEntity_o;
 struct FieldEventDoorEntity_o;
@@ -176,13 +176,13 @@ namespace Dpr
             int32_t _areaID;
             struct System_Collections_Generic_List_FieldEventEntity__o* _warpList;
             struct XLSXContent_MapWarp_o* _warpData;
-            struct UnityEngine_GameObject_o* _warpRoot;
+            struct UnityEngine::GameObject_o* _warpRoot;
             struct System::Array<PlaySeData_o*>* _se_datas;
             struct System::Array<PlaySeData_o*>* _voice_datas;
             struct UnityEngine_Vector2Int_o _eventEndPosition;
             struct System::String* _posEventLabelReserve;
             struct System::Array<EntityParam_o*>* _entityParamList;
-            struct UnityEngine_GameObject_o* _stopRoot;
+            struct UnityEngine::GameObject_o* _stopRoot;
             bool _isInitFirstMap;
             struct FieldObjectEntity_o* __dummyPlayer_k__BackingField;
             struct UpdateDelegate_o* _updateDelegate;
@@ -335,7 +335,7 @@ namespace Dpr
             bool _isBattleTowerBtl;
             bool _isBattleTowerWin;
             struct UnityEngine_Vector2_o _playerMoveGridCenterAngle;
-            struct Dpr_EvScript_EvScriptData_o* _evData;
+            struct EvScriptData_o* _evData;
             struct EvData_Script_o* _evScript;
             struct EvData_Command_o* _evCommand;
             struct System::Array<EvData::Aregment_o> * _evArg;

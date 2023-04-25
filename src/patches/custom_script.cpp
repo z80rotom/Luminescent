@@ -11,6 +11,8 @@
 #include "Pml/PokeParty.hpp"
 #include "Pml/PokePara/CoreParam.h"
 #include "SmartPoint/AssetAssistant/SingletonMonoBehavior.hpp"
+#include "UnityEngine/BoxCollider.hpp"
+#include "UnityEngine/GameObject.hpp"
 
 #include "AnimationPlayer.hpp"
 #include "areaID.hpp"
@@ -373,6 +375,45 @@ bool PartyBoxRelease(Dpr::EvScript::EvDataManager_o * manager)
     return true;
 }
 
+// Toggles a BoxCollider of the given name on the current map.
+// Arguments:
+//   [Label] label: The name of the BoxCollider to toggle.
+bool ToggleCollisionBox(Dpr::EvScript::EvDataManager_o * manager)
+{
+    socket_log_fmt("_TOGGLE_COLLISION_BOX\n");
+    system_load_typeinfo((void *)0x5b6);
+    System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
+    Dpr::EvScript::EvScriptData_o * evData = manager->fields._evData;
+
+    if (args->max_length >= 2)
+    {
+        if (args->m_Items[1].fields.argType == EvData::ArgType::String)
+        {
+            System::String * objectName = evData->fields.EvData->GetString(args->m_Items[1].fields.data, nullptr);
+            UnityEngine::GameObject_o* object = UnityEngine::GameObject_o::Find(objectName, nullptr);
+
+            if (object != nullptr)
+            {
+                UnityEngine::BoxCollider_o * boxCollider = (UnityEngine::BoxCollider_o *)object->GetComponent(*UnityEngine::PTR_GameObject_BoxCollider_GetComponent);
+
+                if (boxCollider != nullptr)
+                {
+                    UnityEngine::Collider_o * collider = (UnityEngine::Collider_o *)boxCollider;
+
+                    if (args->max_length >= 3)
+                    {
+                        int32_t value = GetWorkOrNumberValue(args->m_Items[2]);
+                        socket_log_fmt("Setting the collider to: %0d\n", value != 0);
+                        collider->set_enabled(value != 0, nullptr);
+                    }
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
 // Handles overriden and new script commands, then calls the original method to handle the rest normally.
 bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID index, MethodInfo *method)
 {
@@ -391,6 +432,8 @@ bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID in
             return PartyBoxNature(__this);
         case EvData::EvCmdID::_RELEASE_BOX_POKE:
             return PartyBoxRelease(__this);
+        case EvData::EvCmdID::_TOGGLE_COLLISION_BOX:
+            return ToggleCollisionBox(__this);
         default:
             break;
     }
