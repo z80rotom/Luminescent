@@ -354,3 +354,8 @@ _Z14FUN_710025de78j = 0x25de78 - 0x05708000;
 _Z14FUN_71002543b0lj = 0x2543b0 - 0x05708000;
 _Z14FUN_7100266700Pv = 0x266700 - 0x05708000;
 _Z20thunk_FUN_71002926e0Pvm = 0x2926e0 - 0x05708000;
+
+_ZN3Pml8Personal14PersonalSystem17GetTokuseiPatternEP10MethodInfo = 0x024a15d0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam15GetTokuseiIndexEP10MethodInfo = 0x02045ce0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam15SetTokuseiIndexEhP10MethodInfo = 0x02048ac0 - 0x05708000;
+_ZN3Dpr12EncountTools18SetupBattleTrainerEP37Dpr_Battle_Logic_BATTLE_SETUP_PARAM_oiiiiiiiP10MethodInfo = 0x02c3b800 - 0x05708000;
