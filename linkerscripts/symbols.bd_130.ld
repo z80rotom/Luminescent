@@ -354,3 +354,31 @@ _Z14FUN_710025de78j = 0x25de78 - 0x05708000;
 _Z14FUN_71002543b0lj = 0x2543b0 - 0x05708000;
 _Z14FUN_7100266700Pv = 0x266700 - 0x05708000;
 _Z20thunk_FUN_71002926e0Pvm = 0x2926e0 - 0x05708000;
+
+EntityManager_TypeInfo = 0x04c59d10 - 0x05708000;
+GimmickWork_TypeInfo = 0x04c5ee48 - 0x05708000;
+AreaID_Array_TypeInfo = 0x04c64060 - 0x05708000;
+
+_ZN3Dpr17FieldObjectMove_o6UpdateEfP10MethodInfo = 0x01a77b00 - 0x05708000;
+_ZN3Dpr22FieldObjectRotateYaw_o6UpdateEfP10MethodInfo = 0x01a783e0 - 0x05708000;
+_ZN26FieldNagisaGymGearEntity_o10IsRotatingEP10MethodInfo = 0x01d52b20 - 0x05708000;
+_ZN26FieldNagisaGymGearEntity_o16GetDegRotateTypeEiP10MethodInfo = 0x01d52990 - 0x05708000;
+_ZN26FieldNagisaGymGearEntity_o6RotateEiiP10MethodInfo = 0x01d529c0 - 0x05708000;
+_ZN13GimmickWork_o13GetGearRotateEiP10MethodInfo = 0x02cd72d0 - 0x05708000;
+_ZN13GimmickWork_o13SetGearRotateEiiP10MethodInfo = 0x02cd7470 - 0x05708000;
+_ZN3Dpr17FieldObjectMove_o10get_IsBusyEP10MethodInfo = 0x01a778d0 - 0x05708000;
+_ZN3Dpr22FieldObjectRotateYaw_o10get_IsBusyEP10MethodInfo = 0x01a781c0 - 0x05708000;
+_ZN17AnimationPlayer_o4PlayEiffP10MethodInfo = 0x0211e9b0 - 0x05708000;
+_ZN10SmartPoint14AssetAssistant52PTR_SingletonMonoBehaviour_AudioManager_get_InstanceE = 0x04b76380 - 0x05708000;
+_ZN5Audio14AudioManager_o6PlaySeEjPvP10MethodInfo = 0x021eb8d0 - 0x05708000;
+_ZN19FieldPlayerEntity_o8PlayWalkEP10MethodInfo = 0x01dad950 - 0x05708000;
+_ZN3Dpr17FieldObjectMove_o15SetObjectEntityEP19FieldObjectEntity_oP10MethodInfo = 0x01a779e0 - 0x05708000;
+_ZN3Dpr17FieldObjectMove_o9MoveSpeedE21UnityEngine_Vector3_ofP10MethodInfo = 0x01a77f40 - 0x05708000;
+_ZN3Dpr22FieldObjectRotateYaw_o15SetObjectEntityEP19FieldObjectEntity_oP10MethodInfo = 0x01a782d0 - 0x05708000;
+_ZN3Dpr22FieldObjectRotateYaw_o8MoveTimeEffP10MethodInfo = 0x01a785e0 - 0x05708000;
+
+_ZN8EvData_o9GetStringEiP10MethodInfo = 0x01f115b0 - 0x05708000;
+_ZN11UnityEngine12GameObject_o4FindEPN6System6StringEP10MethodInfo = 0x026b1ea0 - 0x05708000;
+_ZN11UnityEngine12GameObject_o12GetComponentEP10MethodInfo = 0x01f48980 - 0x05708000;
+_ZN11UnityEngine39PTR_GameObject_BoxCollider_GetComponentE = 0x04be4160 - 0x05708000;
+_ZN11UnityEngine10Collider_o11set_enabledEbP10MethodInfo = 0x02c1c600 - 0x05708000;

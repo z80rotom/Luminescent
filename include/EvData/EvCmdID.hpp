@@ -1236,5 +1236,6 @@ namespace EvData
         _TEMOTI_BOX_FORMNO = 1230,
         _GET_BOX_POKE_SEIKAKU = 1231,
         _RELEASE_BOX_POKE = 1232,
+        _TOGGLE_COLLISION_BOX = 1233,
     };
 }

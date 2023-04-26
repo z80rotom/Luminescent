@@ -3,3 +3,9 @@
 // Dpr.EvScript.EvDataManager$$RunEvCmd is called within
 02c43018:
     bl RunEvCmdExtended
+
+
+// Rewrite GimmickWork$$.cctor
+// Adds Eterna gym to area id list for gears
+//02cd76b0:
+//    b GimmickWork_cctor
