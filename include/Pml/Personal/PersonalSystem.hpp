@@ -14,6 +14,8 @@ namespace Pml
             static void LoadPersonalData(int32_t monsno, uint16_t formno, MethodInfo *method);
             // 0x027fc3a0
             static bool CheckPersonalWazaMachine(uint16_t machineNo, MethodInfo *method);
+            // 0x024a15d0
+            static int32_t GetTokuseiPattern(MethodInfo *method);
         };
     }
 }

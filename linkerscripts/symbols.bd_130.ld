@@ -382,3 +382,7 @@ _ZN11UnityEngine12GameObject_o4FindEPN6System6StringEP10MethodInfo = 0x026b1ea0 
 _ZN11UnityEngine12GameObject_o12GetComponentEP10MethodInfo = 0x01f48980 - 0x05708000;
 _ZN11UnityEngine39PTR_GameObject_BoxCollider_GetComponentE = 0x04be4160 - 0x05708000;
 _ZN11UnityEngine10Collider_o11set_enabledEbP10MethodInfo = 0x02c1c600 - 0x05708000;
+_ZN3Pml8Personal14PersonalSystem17GetTokuseiPatternEP10MethodInfo = 0x024a15d0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam15GetTokuseiIndexEP10MethodInfo = 0x02045ce0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam15SetTokuseiIndexEhP10MethodInfo = 0x02048ac0 - 0x05708000;
+_ZN3Dpr12EncountTools18SetupBattleTrainerEP37Dpr_Battle_Logic_BATTLE_SETUP_PARAM_oiiiiiiiP10MethodInfo = 0x02c3b800 - 0x05708000;
