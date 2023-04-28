@@ -1,0 +1,4 @@
+[target=main, version=bd_130]
+// Rewrite Dpr.Battle.Logic.Handler.Waza$$handler_Dorobou
+01807cb0:
+    b HandlerDorobou
