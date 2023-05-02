@@ -1,0 +1,10 @@
+// Changes GameData.DataManager$$GetUniqueID to allow for custom egg textures
+
+02cccf00:  // GameData.DataManager$$GetUniqueID
+    b GameData_DataManager_GetUniqueID
+
+02ccd050:  // GameData.DataManager$$GetUniqueID
+    b GameData_DataManager_GetUniqueID  
+
+02ccd170:  // GameData.DataManager$$GetUniqueID
+    b GameData_DataManager_GetUniqueID  
