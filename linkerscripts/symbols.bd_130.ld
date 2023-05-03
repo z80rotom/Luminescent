@@ -374,6 +374,8 @@ _ZN3Dpr17FieldObjectMove_o15SetObjectEntityEP19FieldObjectEntity_oP10MethodInfo 
 _ZN3Dpr17FieldObjectMove_o9MoveSpeedE21UnityEngine_Vector3_ofP10MethodInfo = 0x01a77f40 - 0x05708000;
 _ZN3Dpr22FieldObjectRotateYaw_o15SetObjectEntityEP19FieldObjectEntity_oP10MethodInfo = 0x01a782d0 - 0x05708000;
 _ZN3Dpr22FieldObjectRotateYaw_o8MoveTimeEffP10MethodInfo = 0x01a785e0 - 0x05708000;
+_ZN6Effect16EffectInstance_o4StopEfbP10MethodInfo = 0x01efe7b0 - 0x05708000;
+_ZN10SmartPoint14AssetAssistant9Sequencer4StopEPN11UnityEngine11Coroutine_oEP10MethodInfo = 0x02bc29b0 - 0x05708000;
 
 _ZN8EvData_o9GetStringEiP10MethodInfo = 0x01f115b0 - 0x05708000;
 _ZN11UnityEngine12GameObject_o4FindEPN6System6StringEP10MethodInfo = 0x026b1ea0 - 0x05708000;

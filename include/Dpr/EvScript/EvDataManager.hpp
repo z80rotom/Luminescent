@@ -4,8 +4,10 @@
 #include "Dpr/FieldObjectMove.hpp"
 #include "Dpr/FieldObjectRotateYaw.hpp"
 #include "Dpr/EvScript/EvScriptData.hpp"
+#include "Effect/EffectInstance.hpp"
 #include "System/String.hpp"
 #include "System/Array.hpp"
+#include "UnityEngine/Coroutine.hpp"
 #include "UnityEngine/GameObject.hpp"
 
 struct System_Action_EvDataManager_EntityParam__o;
@@ -42,11 +44,9 @@ struct FieldAnimatorController_array; // TODO: Make System.Array
 struct FieldToUgInvisibleObjects_o;
 struct EventCameraTable_o;
 struct TairyouHasseiPokeManager_o;
-struct UnityEngine_Coroutine_o;
 struct System_Single_array;
 struct FieldEventEntity_o;
 struct FieldEventLiftEntity_o;
-struct Effect_EffectInstance_o;
 struct System_Text_StringBuilder_o;
 struct Audio_AudioInstance_o;
 struct UnityEngine_Transform_o;
@@ -257,7 +257,7 @@ namespace Dpr
             int32_t _boardState;
             struct Dpr_MsgWindow_MsgWindow_o* _msgWindow;
             struct Dpr_MsgWindow_MsgWindow_o* _msgWindowOther;
-            struct UnityEngine_Coroutine_o* _msgWindowCoroutine;
+            UnityEngine::Coroutine_o* _msgWindowCoroutine;
             int32_t _talkStart;
             int32_t _macroCmd;
             int32_t _procCmd;
@@ -298,7 +298,7 @@ namespace Dpr
             int32_t _waterSequence;
             int32_t _kinomiSequence;
             float _kinomiSequenceTime;
-            struct Effect_EffectInstance_o* _kinomiEffect;
+            Effect::EffectInstance_o* _kinomiEffect;
             int32_t _warpSequence;
             int32_t _warpSpeedSequence;
             float _warpSpeedSequenceTime;
@@ -328,8 +328,8 @@ namespace Dpr
             struct FieldAnimatorController_array* _umaAnimatorCtr;
             bool _isOpenCustomBallTrainer;
             int32_t _nicknamePlacementSequence;
-            struct Effect_EffectInstance_array* _scriptEffects;
-            struct UnityEngine_Coroutine_array* _scriptScaleCorutine;
+            System::Array<Effect::EffectInstance_o*>* _scriptEffects;
+            System::Array<UnityEngine::Coroutine_o*>* _scriptScaleCorutine;
             struct System_Boolean_array* _scriptScaleVectol;
             struct Pml_PokePara_PokemonParam_o* _temp_PokePara;
             bool _isBattleTowerBtl;
@@ -342,7 +342,7 @@ namespace Dpr
             int32_t btlsearchSeq;
             struct Audio_AudioInstance_o* btlserchAudio;
             bool _isOpenHallOfFame;
-            struct UnityEngine_Coroutine_o* _cmdReportSaveCoroutine;
+            UnityEngine::Coroutine_o* _cmdReportSaveCoroutine;
             int32_t _seqRankingView;
             bool _isOpenCertificate;
             int32_t returnSequenceID;

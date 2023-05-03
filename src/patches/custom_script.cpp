@@ -11,6 +11,7 @@
 #include "Pml/PokeParty.hpp"
 #include "Pml/PokePara/CoreParam.h"
 #include "SmartPoint/AssetAssistant/SingletonMonoBehavior.hpp"
+#include "SmartPoint/AssetAssistant/Sequencer.hpp"
 #include "UnityEngine/BoxCollider.hpp"
 #include "UnityEngine/GameObject.hpp"
 
@@ -43,7 +44,7 @@ float ConvertToFloat(int32_t value)
 
 // Returns either the value at the given work variable or the direct int value depending on the given argument's type.
 // Returns 0 for any other argument type.
-int32_t GetWorkOrNumberValue(EvData::Aregment_o arg)
+int32_t GetWorkOrIntValue(EvData::Aregment_o arg)
 {
     int32_t argType = arg.fields.argType;
     int32_t data = arg.fields.data;
@@ -56,6 +57,29 @@ int32_t GetWorkOrNumberValue(EvData::Aregment_o arg)
             break;
         case EvData::ArgType::Float:
             result = (int32_t)ConvertToFloat(data);
+            break;
+        default:
+            break;
+    }
+
+    return result;
+}
+
+// Returns either the value at the given work variable or the direct float value depending on the given argument's type.
+// Returns 0 for any other argument type.
+float GetWorkOrFloatValue(EvData::Aregment_o arg)
+{
+    int32_t argType = arg.fields.argType;
+    int32_t data = arg.fields.data;
+    float result = 0;
+
+    switch (argType)
+    {
+        case EvData::ArgType::Work:
+            result = PlayerWork::GetInt(data, nullptr);
+            break;
+        case EvData::ArgType::Float:
+            result = ConvertToFloat(data);
             break;
         default:
             break;
@@ -124,7 +148,7 @@ bool SetWeather(Dpr::EvScript::EvDataManager_o * manager)
 
     if (args->max_length >= 2)
     {
-        int32_t weather = GetWorkOrNumberValue(args->m_Items[1]);
+        int32_t weather = GetWorkOrIntValue(args->m_Items[1]);
         socket_log_fmt("Calling set_WeatherID with weatherId: %d\n", weather);
         WeatherWork::set_WeatherID(weather, nullptr);
     }
@@ -236,6 +260,54 @@ bool RotateSunyshoreGymGear(Dpr::EvScript::EvDataManager_o * manager)
     return manager->fields._gearSequence == -1;
 }
 
+// Stops a Field Effect.
+// Arguments:
+//   [Work, Number] index: The index of the field effect to stop. 0-10
+//   [Work, Number] isForce: Unknown use.
+//   [Work, Number] fadeTime: The time in seconds it takes for the effect to fade.
+bool StopEffect(Dpr::EvScript::EvDataManager_o * manager)
+{
+    socket_log_fmt("_STOP_EFFECT\n");
+    system_load_typeinfo((void *)0x45a2);
+
+    System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
+
+    if (args->max_length >= 2)
+    {
+        int32_t index = GetWorkOrIntValue(args->m_Items[1]);
+
+        if (args->max_length >= 3)
+        {
+            int32_t isForce = GetWorkOrIntValue(args->m_Items[2]);
+
+            float fadeTime = 0;
+            if (args->max_length >= 4)
+            {
+                fadeTime = GetWorkOrFloatValue(args->m_Items[3]);
+            }
+
+            if (index < manager->fields._scriptEffects->max_length)
+            {
+                if (manager->fields._scriptEffects->m_Items[index] != nullptr)
+                {
+                    socket_log_fmt("Stopping Effect %d with isForce %d in %f seconds\n", index, isForce, fadeTime);
+                    manager->fields._scriptEffects->m_Items[index]->Stop(fadeTime, isForce == 1, nullptr);
+                }
+
+                if (index < manager->fields._scriptScaleCorutine->max_length)
+                {
+                    if (manager->fields._scriptScaleCorutine->m_Items[index] != nullptr)
+                    {
+                        SmartPoint::AssetAssistant::Sequencer::Stop(manager->fields._scriptScaleCorutine->m_Items[index], nullptr);
+                    }
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
 // Returns the form id of the Pokémon at the given index in the party.
 // Arguments:
 //   [Work, Number] index: The index that points to the given Pokémon.
@@ -249,7 +321,7 @@ bool PartyFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 
     if (args->max_length >= 2)
     {
-        int32_t index = GetWorkOrNumberValue(args->m_Items[1]);
+        int32_t index = GetWorkOrIntValue(args->m_Items[1]);
 
         Pml::PokeParty_o * party = PlayerWork::get_playerParty(nullptr);
         Pml::PokePara::PokemonParam_o * param = party->GetMemberPointer(index, nullptr);
@@ -282,11 +354,11 @@ bool PartyBoxFormsNo(Dpr::EvScript::EvDataManager_o * manager)
 
     if (args->max_length >= 2)
     {
-        int32_t index = GetWorkOrNumberValue(args->m_Items[1]);
+        int32_t index = GetWorkOrIntValue(args->m_Items[1]);
 
         if (args->max_length >= 3)
         {
-            int32_t trayIndex = GetWorkOrNumberValue(args->m_Items[2]);
+            int32_t trayIndex = GetWorkOrIntValue(args->m_Items[2]);
 
             Pml::PokePara::PokemonParam_o * param = manager->GetPokemonParam(trayIndex, index, nullptr);
             int32_t result = -1;
@@ -319,11 +391,11 @@ bool PartyBoxNature(Dpr::EvScript::EvDataManager_o * manager)
 
     if (args->max_length >= 2)
     {
-        int32_t index = GetWorkOrNumberValue(args->m_Items[1]);
+        int32_t index = GetWorkOrIntValue(args->m_Items[1]);
 
         if (args->max_length >= 3)
         {
-            int32_t trayIndex = GetWorkOrNumberValue(args->m_Items[2]);
+            int32_t trayIndex = GetWorkOrIntValue(args->m_Items[2]);
 
             Pml::PokePara::PokemonParam_o * param = manager->GetPokemonParam(trayIndex, index, nullptr);
             int32_t result = -1;
@@ -355,11 +427,11 @@ bool PartyBoxRelease(Dpr::EvScript::EvDataManager_o * manager)
 
     if (args->max_length >= 2)
     {
-        int32_t index = GetWorkOrNumberValue(args->m_Items[1]);
+        int32_t index = GetWorkOrIntValue(args->m_Items[1]);
 
         if (args->max_length >= 3)
         {
-            int32_t trayIndex = GetWorkOrNumberValue(args->m_Items[2]);
+            int32_t trayIndex = GetWorkOrIntValue(args->m_Items[2]);
 
             Pml::PokePara::PokemonParam_o * param = manager->GetPokemonParam(trayIndex, index, nullptr);
 
@@ -402,7 +474,7 @@ bool ToggleCollisionBox(Dpr::EvScript::EvDataManager_o * manager)
 
                     if (args->max_length >= 3)
                     {
-                        int32_t value = GetWorkOrNumberValue(args->m_Items[2]);
+                        int32_t value = GetWorkOrIntValue(args->m_Items[2]);
                         socket_log_fmt("Setting the collider to: %0d\n", value != 0);
                         collider->set_enabled(value != 0, nullptr);
                     }
@@ -424,6 +496,8 @@ bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID in
             return SetWeather(__this);
         //case EvData::EvCmdID::_ROTATE_ELEC_GYM_GEAR:
         //    return RotateSunyshoreGymGear(__this);
+        case EvData::EvCmdID::_STOP_EFFECT:
+            return StopEffect(__this);
         case EvData::EvCmdID::_TEMOTI_FORMNO:
             return PartyFormsNo(__this);
         case EvData::EvCmdID::_TEMOTI_BOX_FORMNO:
