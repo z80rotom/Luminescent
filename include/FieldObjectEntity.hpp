@@ -60,6 +60,9 @@ struct FieldObjectEntity_o
 	FieldObjectEntity_c *klass;
 	void *monitor;
 	FieldObjectEntity_Fields fields;
+
+    // 01d50aa0
+    UnityEngine_Vector2Int_o get_gridPosition(MethodInfo *method);
 };
 
 struct FieldObjectEntity_StaticFields

@@ -15,12 +15,12 @@
     ldr x0, [sp, #0xB0]
     bl PlayerWork_set_DoubleSlot
 
-019b31fc:
-    bl Incense_GameManager_GetFieldEncountData
-019b32d0:
-    bl Incense_GameManager_GetFieldEncountData
-019b8338:
-    bl Incense_GameManager_GetFieldEncountData
+//019b31fc:
+//    bl Incense_GameManager_GetFieldEncountData
+//019b32d0:
+//    bl Incense_GameManager_GetFieldEncountData
+//019b8338:
+//    bl Incense_GameManager_GetFieldEncountData
 019b51dc:
     bl Incense_GameManager_GetFieldEncountData
 019b521c:
