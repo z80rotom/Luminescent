@@ -14,24 +14,3 @@
 19b3bd4:
     ldr x0, [sp, #0xB0]
     bl PlayerWork_set_DoubleSlot
-
-019b31fc:
-    bl Incense_GameManager_GetFieldEncountData
-019b32d0:
-    bl Incense_GameManager_GetFieldEncountData
-019b8338:
-    bl Incense_GameManager_GetFieldEncountData
-019b51dc:
-    bl Incense_GameManager_GetFieldEncountData
-019b521c:
-    bl Incense_GameManager_GetFieldEncountData
-019b5b34:
-    bl Incense_GameManager_GetFieldEncountData
-019b5d1c:
-    bl Incense_GameManager_GetFieldEncountData
-019b8824:
-    bl Incense_GameManager_GetFieldEncountData
-018cc5d4:
-    bl Incense_GameManager_GetFieldEncountData
-017da7dc:
-    bl Incense_GameManager_GetFieldEncountData

@@ -3,6 +3,7 @@
 
 #include "System/Array.hpp"
 #include "System/String.hpp"
+#include "Pml/PokePara/SavePokeParty.hpp"
 #include "il2cpp.hpp"
 
 namespace DPData
@@ -936,7 +937,7 @@ namespace DPData
         int32_t ReturnGridPosZ;
         struct LOCATION_WORK_o ReturnZenmetsu_Ground;
         struct DigPos_array* DigPoints;
-        struct Pml::PokePara::SerializedPokemonFull_array* EncountPokes;
+        Pml::PokePara::SerializedPokemonFull_array* EncountPokes;
         struct UnityEngine_Vector3_array* EncountPokePositions;
         int32_t ReturnUgZoneID;
         struct UGRecord_o ugRecord;

@@ -71,6 +71,10 @@ namespace Pml
                 uint16_t GetItem(MethodInfo * method);
                 void SetItem(uint16_t itemno, MethodInfo *method);
 
+                // 2043bd0
+                bool IsHpZero(MethodInfo *method);
+                // 2043e30
+                uint32_t GetLevel(MethodInfo *method);
 
                 System::Collections::Generic::HashSet_WazaNo__o * CollectRemindableWaza( MethodInfo *method );
 

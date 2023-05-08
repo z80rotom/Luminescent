@@ -47,6 +47,8 @@ struct ItemWork {
     static bool IsAddItem(int32_t itemno, int32_t num, MethodInfo *method);
     // 1aea3a0
     static int32_t AddItem(int32_t itemno, int32_t num, MethodInfo *method);
+    // 1aeb720
+    static bool IsUseSpray(uint16_t *itemno, MethodInfo *method);
 };
 
 struct ItemWork_StaticFields {

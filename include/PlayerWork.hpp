@@ -9,6 +9,7 @@
 #include "Dpr/Box.hpp"
 #include "Dpr/Item.hpp"
 #include "DpData.hpp"
+#include "System/String.hpp"
 
 struct AzukariyaData_Fields {
 	struct Pml::PokePara::SerializedPokemonFull_array* pokemonParam;
@@ -132,6 +133,50 @@ struct PlayerWork_VTable {
 };
 
 struct PlayerWork_RGCTXs {
+};
+
+struct PlayerWork_StaticFields {
+	bool _NoSavePlayerPos_k__BackingField;
+	int32_t _capturedMonsNo_k__BackingField;
+	int32_t _capturedBallCountTvTopic_k__BackingField;
+	bool _encountEnable_k__BackingField;
+	bool _isDebugWalk_k__BackingField;
+	bool _isDebugPlayerVisible_k__BackingField;
+	bool _isDebugBattleTextView_k__BackingField;
+	bool _isPlayerInputActive;
+	bool _isPlayerInputActive_ContactEvent;
+	bool IsFieldKuruKuruStart;
+	bool IsFieldFallStart;
+	bool IsToUg;
+	bool IsFromUg;
+	bool ReserveZoneChangeNaminoriEnd;
+	System::String* _FieldWorpLinkName_k__BackingField;
+	System::String* _FieldWorpLabel_k__BackingField;
+	bool _isDebugNpcVisble_k__BackingField;
+	bool _isDebugNpcPokeVisble_k__BackingField;
+	int32_t _DebugEncountMonsNo_k__BackingField;
+	int32_t _FieldWeather_k__BackingField;
+	int32_t _DebugWeek_k__BackingField;
+	int32_t _FieldInputMode_k__BackingField;
+	bool _IsZenmetuFlag_k__BackingField;
+	bool _IsNeedUnloadOnFieldConnector_k__BackingField;
+	int32_t _Warp_k__BackingField;
+	bool _Telescope_k__BackingField;
+	bool _TelescopeReturn_k__BackingField;
+	bool _FieldCacheFlag_k__BackingField;
+	int32_t _SafariBallNum_k__BackingField;
+	int32_t _SafariStepCount_k__BackingField;
+	struct System_Collections_Generic_List_MonsNo__o* _SafariCaptureMonsNo_k__BackingField;
+	int32_t _IsCpuBoostMode_k__BackingField;
+	struct Dpr_Item_ItemInfo_o* _UsedFieldItem_k__BackingField;
+	int32_t _UsedFieldWazaNo_k__BackingField;
+	int32_t _UsedFieldWazaTemotiNo_k__BackingField;
+	bool _Flash_k__BackingField;
+	struct System_Collections_Generic_List_WazaNo__o* UsedFieldWazaInArea;
+	bool _PoketchOpen_k__BackingField;
+	int32_t _MovePokemonIndex_k__BackingField;
+	bool _IsD26Key_k__BackingField;
+	bool isNeedFixPokemonExp;
 };
 
 struct PlayerWork_c {
@@ -258,9 +303,11 @@ public:
   bool CustomSaveOperation(MethodInfo *method);
   bool CustomLoadAsyncOperation(MethodInfo *method);
   void OnPreSave(MethodInfo *method);
+  // 02cf2c00
+  static void set_WalkEncountCount(int32_t value, MethodInfo *method);
 
 
-  static DPData::ENC_SV_DATA_o * get_Enc_SV_Data();
+  static DPData::ENC_SV_DATA_o get_Enc_SV_Data(DPData::ENC_SV_DATA_o *__return_storage_ptr__, MethodInfo * method);
   static void set_Enc_SV_Data(DPData::ENC_SV_DATA_o value);
 
   static int32_t get_defaultPokeNo(MethodInfo *method);
