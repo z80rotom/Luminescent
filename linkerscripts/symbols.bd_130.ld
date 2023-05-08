@@ -336,7 +336,7 @@ _ZN3Dpr6Battle5Logic6Common14AddFieldEffectEPPNS1_30EventFactor_EventHandlerArgs
 _ZN3Dpr6Battle5Logic6Common16CheckFieldEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPiP10MethodInfo = 0x1d0a260 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common17RemoveFieldEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_50Section_FromEvent_FieldEffect_Remove_Description_oEP10MethodInfo = 0x1d0b7c0 - 0x05708000;
 
-_ZN10PlayerWork15get_Enc_SV_DataEv = 0x02cf2840 - 0x05708000;
+_ZN10PlayerWork15get_Enc_SV_DataEPN6DPData13ENC_SV_DATA_oEP10MethodInfo = 0x02cf2840 - 0x05708000;
 _ZN10PlayerWork15set_Enc_SV_DataEN6DPData13ENC_SV_DATA_oE = 0x02cf27d0 - 0x05708000;
 _ZN3Pml8PokePara9CoreParam9GetFormNoEP10MethodInfo = 0x02ce2b50 - 0x05708000;
 
@@ -437,3 +437,4 @@ _ZN15RandomGroupWork11RandomValueEiP10MethodInfo = 0x01998cb0 - 0x05708000;
 _ZN8ZoneWork15IsSpFishingZoneEiP10MethodInfo = 0x017da600 - 0x05708000;
 _ZN3Dpr5Field9SpFishing10CheckPointEP24UnityEngine_Vector2Int_oP10MethodInfo = 0x019b55c0 - 0x05708000;
 _ZN10PlayerWork20set_WalkEncountCountEiP10MethodInfo = 0x02cf2c00 - 0x05708000;
+_ZN8ItemWork10IsUseSprayEPtP10MethodInfo = 0x01aeb720 - 0x05708000;

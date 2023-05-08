@@ -2,3 +2,13 @@
 // void Dpr.EvScript.EvDataManager$$EndSpray(Dpr_EvScript_EvDataManager_o *__this,MethodInfo *method )
 2c550b8:
     bl JumpLabel
+
+// EncountDataWork$$EncDataSave_CanUseSpray
+01f08ac0:
+    b EncDataSave_CanUseSpray
+
+// Overwrite calls to ItemWork$$IsUseSpray
+017a2984:
+    bl IsUseSpray
+01bde854:
+    bl IsUseSpray

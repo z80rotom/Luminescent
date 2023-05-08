@@ -307,7 +307,7 @@ public:
   static void set_WalkEncountCount(int32_t value, MethodInfo *method);
 
 
-  static DPData::ENC_SV_DATA_o * get_Enc_SV_Data();
+  static DPData::ENC_SV_DATA_o get_Enc_SV_Data(DPData::ENC_SV_DATA_o *__return_storage_ptr__, MethodInfo * method);
   static void set_Enc_SV_Data(DPData::ENC_SV_DATA_o value);
 
   static int32_t get_defaultPokeNo(MethodInfo *method);

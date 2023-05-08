@@ -350,9 +350,9 @@ void UIManager_UseDSPlayerItem(Dpr::UI::UIManager_o * __this, Dpr::UI::UIBag_Dis
         System::String * labelName;
         if (flag)
         {
-            labelName = System::String::CreateString("SS_bag_353");
+            labelName = System::String::CreateString("SS_bag_371");
         } else {
-            labelName = System::String::CreateString("SS_bag_354");
+            labelName = System::String::CreateString("SS_bag_372");
         }
         uiBag->fields.msgWindowController->OpenMsgWindow(0, labelName, true, false, nullptr, action, nullptr);
     } else {

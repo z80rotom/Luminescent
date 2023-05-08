@@ -300,12 +300,12 @@ void SetWaterGBASlots(System::Array<MonsLv_o> *slots)
 // Sets the safari slots.
 void SetSafariSlots(System::Array<MonsLv_o> *slots)
 {
-    DPData::ENC_SV_DATA_o* encData = PlayerWork::get_Enc_SV_Data();
+    DPData::ENC_SV_DATA_o encData = PlayerWork::get_Enc_SV_Data(nullptr, nullptr);
     int32_t zoneId = PlayerWork::get_zoneID(nullptr);
     bool zukanFlag = ZukanWork::GetZenkokuFlag(nullptr);
 
     int32_t safariPos = ZoneWork::SafariZonePosID(zoneId, nullptr);
-    uint result = encData->fields.SafariRandSeed >> ((safariPos * 5) & 0x1fU);
+    uint result = encData.fields.SafariRandSeed >> ((safariPos * 5) & 0x1fU);
     int32_t index = (result & 0x1f) | 0x20;
     if (!zukanFlag)
     {
@@ -480,22 +480,28 @@ int32_t ApplyAbilityToEncounterRate(Dpr::Field::FieldEncount::ENC_FLD_SPA_o *spa
             case ILLUMINATE_ABILITY:
             case ARENA_TRAP_ABILITY:
             case NO_GUARD_ABILITY:
-                encounterRate = encounterRate << 1;
+                encounterRate *= 2;
                 break;
             // Half
             case STENCH_ABILITY:
             case WHITE_SMOKE_ABILITY:
             case QUICK_FEET_ABILITY:
             case INFILTRATOR_ABILITY:
-                encounterRate = encounterRate >> 1;
+                encounterRate /= 2;
                 break;
             // Half if sandstorm
             case SAND_VEIL_ABILITY:
-                encounterRate = encounterRate >> ((PlayerWork_c*) PlayerWork_TypeInfo)->static_fields->_FieldWeather_k__BackingField == SANDSTORM_WEATHER;
+                if (((PlayerWork_c*) PlayerWork_TypeInfo)->static_fields->_FieldWeather_k__BackingField == SANDSTORM_WEATHER)
+                {
+                    encounterRate /= 2;
+                }
                 break;
             // Half if hail
             case SNOW_CLOAK_ABILITY:
-                encounterRate = encounterRate >> ((PlayerWork_c*) PlayerWork_TypeInfo)->static_fields->_FieldWeather_k__BackingField == HAIL_WEATHER;
+                if (((PlayerWork_c*) PlayerWork_TypeInfo)->static_fields->_FieldWeather_k__BackingField == HAIL_WEATHER)
+                {
+                    encounterRate /= 2;
+                }
                 break;
         }
 
@@ -519,7 +525,7 @@ int32_t ApplyFishingAbilityToEncounterRate(Dpr::Field::FieldEncount::ENC_FLD_SPA
             // Double
             case STICKY_HOLD_ABILITY:
             case SUCTION_CUPS_ABILITY:
-                encounterRate = encounterRate << 1;
+                encounterRate *= 2;
                 break;
         }
 
@@ -543,7 +549,7 @@ int32_t ApplyLeadItemToEncounterRate(int32_t baseEncounterRate)
     if (item == PURE_INCENSE_ITEM || item == CLEANSE_TAG_ITEM)
     {
         // 66%
-        encounterRate = (encounterRate << 1) / 3;
+        encounterRate = (encounterRate * 2) / 3;
     }
 
     return encounterRate;
@@ -826,7 +832,6 @@ Dpr::Field::EncountResult_o * SetFishingEncount_EncounterSlots(int32_t inRodType
     Dpr::Field::FieldEncount_o::SetSpaStruct((Pml::PokePara::PokemonParam_o *)firstPokemon, fieldEnc, &spaStruct, nullptr);
 
     // Applies ability effects to the encounter rate
-    encounterRate = ApplyAbilityToEncounterRate(&spaStruct, encounterRate);
     encounterRate = ApplyFishingAbilityToEncounterRate(&spaStruct, encounterRate);
 
     // Roll if we get a hooked Pokémon
