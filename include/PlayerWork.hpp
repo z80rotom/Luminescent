@@ -303,6 +303,8 @@ public:
   bool CustomSaveOperation(MethodInfo *method);
   bool CustomLoadAsyncOperation(MethodInfo *method);
   void OnPreSave(MethodInfo *method);
+  // 02cf2c00
+  static void set_WalkEncountCount(int32_t value, MethodInfo *method);
 
 
   static DPData::ENC_SV_DATA_o * get_Enc_SV_Data();

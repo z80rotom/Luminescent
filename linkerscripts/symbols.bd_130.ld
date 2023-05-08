@@ -434,3 +434,6 @@ _ZN3Dpr5Field14FieldEncount_o16CheckMovePokeEncEP10MethodInfo = 0x019b4500 - 0x0
 _ZN8ZoneWork15SafariZonePosIDEiP10MethodInfo = 0x017da660 - 0x05708000;
 _ZN11GameManager15GetSafariMonsNoEiP10MethodInfo = 0x02cd1480 - 0x05708000;
 _ZN15RandomGroupWork11RandomValueEiP10MethodInfo = 0x01998cb0 - 0x05708000;
+_ZN8ZoneWork15IsSpFishingZoneEiP10MethodInfo = 0x017da600 - 0x05708000;
+_ZN3Dpr5Field9SpFishing10CheckPointEP24UnityEngine_Vector2Int_oP10MethodInfo = 0x019b55c0 - 0x05708000;
+_ZN10PlayerWork20set_WalkEncountCountEiP10MethodInfo = 0x02cf2c00 - 0x05708000;

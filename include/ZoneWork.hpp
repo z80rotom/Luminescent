@@ -13,4 +13,6 @@ struct ZoneWork
     static bool IsHillBackZone(int32_t zone_id, MethodInfo *method);
     // 017da660
     static int32_t SafariZonePosID(int32_t zone_id, MethodInfo *method);
+    // 017da600
+    static bool IsSpFishingZone(int32_t zone_id, MethodInfo *method);
 };
