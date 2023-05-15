@@ -324,6 +324,9 @@ public:
 
   static DPData::ZUKAN_WORK_o get_zukan(DPData::ZUKAN_WORK_o *__return_storage_ptr__, MethodInfo * method);
 
+  // 02ce2c20
+  static int32_t get_msgLangID(MethodInfo *method);
+
   // 0236e9f0
   static int32_t GetInt(int32_t index, MethodInfo *method);
   // 02379290

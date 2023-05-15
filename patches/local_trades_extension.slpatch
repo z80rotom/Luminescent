@@ -1,0 +1,12 @@
+[target=main, version=bd_130]
+// Rewrite LocalKoukan$$GetIndex
+01af3390:
+    b LocalKoukan_GetIndex
+
+// Rewrite LocalKoukan$$GetTargetData
+01af32a0:
+    b LocalKoukan_GetTargetData
+
+// Overwrite call to Dpr.Message.MessageHelper$$ConvertMsgId in LocalKoukan$$CreateTradePokeParam
+01af368c:
+    bl LocalKoukan_Language

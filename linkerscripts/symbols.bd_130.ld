@@ -438,3 +438,7 @@ _ZN8ZoneWork15IsSpFishingZoneEiP10MethodInfo = 0x017da600 - 0x05708000;
 _ZN3Dpr5Field9SpFishing10CheckPointEP24UnityEngine_Vector2Int_oP10MethodInfo = 0x019b55c0 - 0x05708000;
 _ZN10PlayerWork20set_WalkEncountCountEiP10MethodInfo = 0x02cf2c00 - 0x05708000;
 _ZN8ItemWork10IsUseSprayEPtP10MethodInfo = 0x01aeb720 - 0x05708000;
+
+_ZN11XLSXContent17LocalKoukanData_o8get_ItemEiP10MethodInfo = 0x017d5670 - 0x05708000;
+_ZN8GameData20DataManager_TypeInfoE = 0x04c59d70 - 0x05708000;
+_ZN10PlayerWork13get_msgLangIDEP10MethodInfo = 0x02ce2c20 - 0x05708000;
