@@ -1,9 +1,11 @@
 #include "il2cpp.hpp"
 #include "il2cpp-api.h"
+#include "Dpr/Battle/Logic/BTL_POKEPARAM.hpp"
 #include "Dpr/Battle/Logic/Common.hpp"
 #include "Dpr/Battle/Logic/Calc.hpp"
 #include "Dpr/Battle/Logic/EventFactor.hpp"
 #include "Dpr/Battle/Logic/EventID.hpp"
+#include "Dpr/Battle/Logic/EventSystem.hpp"
 #include "Dpr/Battle/Logic/Handler.hpp"
 #include "Dpr/Battle/Logic/Tables.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_SetItem_Description.hpp"
@@ -22,7 +24,7 @@ const uint16_t POKEID_TARGET1 = 6;
 using namespace Dpr::Battle::Logic;
 
 // Changes the handler for Thief to put the item into the player's bag.
-void HandlerDorobou(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
+void HandlerDorobou(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
 {
     socket_log_fmt("HandlerDorobou\n");
 
@@ -31,6 +33,7 @@ void HandlerDorobou(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, u
     system_load_typeinfo((void *)0x43ba);
     il2cpp_runtime_class_init(Common_TypeInfo);
 
+    // Check that we're looking at the attacking pokémon.
     uint attackingPoke = Common::GetEventVar(args, POKEID_ATK, nullptr);
     if (attackingPoke == pokeID)
     {
@@ -93,6 +96,32 @@ void HandlerDorobou(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, u
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+// Remove the check for if the attacking Pokémon is holding an item (for wilds)
+void DorobouStart(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
+{
+    socket_log_fmt("DorobouStart\n");
+
+    uint attackingPoke = (*args)->fields.pEventSystem->EVENTVAR_GetValue(POKEID_ATK, nullptr);
+    if (attackingPoke == pokeID)
+    {
+        BTL_POKEPARAM_o *pokeparam = (*args)->fields.pBattleEnv->fields.m_pokecon->GetPokeParamConst(pokeID, nullptr);
+        uint16_t item = pokeparam->GetItem(nullptr);
+
+        System_Int32_array *work = (*args)->fields.pMyFactor->fields.m_data->fields.work;
+        if (work->max_length > 0)
+        {
+            if (Common::GetCompetitor(args, nullptr) != 0) // Is a trainer
+            {
+                work->m_Items[0] = (int32_t)(item != 0);
+            }
+            else // Is wild
+            {
+                work->m_Items[0] = 1;
             }
         }
     }
