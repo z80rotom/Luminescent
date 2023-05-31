@@ -29,6 +29,7 @@ void HandlerDorobou(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, Metho
     socket_log_fmt("HandlerDorobou\n");
 
     system_load_typeinfo((void *)0xa92f);
+    system_load_typeinfo((void *)0xa965);
     system_load_typeinfo((void *)0x43b9);
     system_load_typeinfo((void *)0x43ba);
     il2cpp_runtime_class_init(Common_TypeInfo);
@@ -37,16 +38,20 @@ void HandlerDorobou(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, Metho
     uint attackingPoke = Common::GetEventVar(args, POKEID_ATK, nullptr);
     if (attackingPoke == pokeID)
     {
-        bool thiefEnabled = Common::Dorobou_CheckEnable(args, pokeID, nullptr);
-        if (thiefEnabled)
+        // Check that the attacking pokémon is not holding an item.
+        bool attackerHasNoItem = Common::Dorobou_CheckEnable(args, pokeID, nullptr);
+        if (attackerHasNoItem)
         {
+            // Check the target??
             uint targetPoke = Common::GetEventVar(args, POKEID_TARGET1, nullptr);
             if ((targetPoke & 0xff) != 0x1f)
             {
+                // Check if the target is holding an item.
                 BTL_POKEPARAM_o* targetPokeParam = Common::GetPokeParam(args, (uint8_t)targetPoke, nullptr);
                 uint16_t item = targetPokeParam->GetItem(nullptr);
                 if (item != 0)
                 {
+                    // Check if the item can be thieved. (Form change items, wild pokémon using the move, etc.)
                     bool cantSteal = Common::CheckCantStealPoke(args, pokeID, (uint8_t)targetPoke, nullptr);
                     if (!cantSteal)
                     {
@@ -102,27 +107,28 @@ void HandlerDorobou(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, Metho
 }
 
 // Remove the check for if the attacking Pokémon is holding an item (for wilds)
-void DorobouStart(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
+bool Dorobou_CheckEnable(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
 {
-    socket_log_fmt("DorobouStart\n");
-
-    uint attackingPoke = (*args)->fields.pEventSystem->EVENTVAR_GetValue(POKEID_ATK, nullptr);
-    if (attackingPoke == pokeID)
+    BTL_POKEPARAM_o *pokeparam = (*args)->fields.pBattleEnv->fields.m_pokecon->GetPokeParamConst(pokeID, nullptr);
+    uint16_t item = pokeparam->GetItem(nullptr);
+    
+    if (Common::GetCompetitor(args, nullptr) != 0) // Is a trainer
     {
-        BTL_POKEPARAM_o *pokeparam = (*args)->fields.pBattleEnv->fields.m_pokecon->GetPokeParamConst(pokeID, nullptr);
-        uint16_t item = pokeparam->GetItem(nullptr);
-
+        // Keep default behavior (true if attacking poke has no item)
         System_Int32_array *work = (*args)->fields.pMyFactor->fields.m_data->fields.work;
         if (work->max_length > 0)
         {
-            if (Common::GetCompetitor(args, nullptr) != 0) // Is a trainer
+            if (work->m_Items[0] != 0)
             {
-                work->m_Items[0] = (int32_t)(item != 0);
-            }
-            else // Is wild
-            {
-                work->m_Items[0] = 1;
+                return false;
             }
         }
+        
+        return item == 0;
+    }
+    else // Is wild
+    {
+        // Always set to true (attacking poke has no item)
+        return true;
     }
 }

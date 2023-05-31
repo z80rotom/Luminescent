@@ -3,6 +3,6 @@
 01807cb0:
     b HandlerDorobou
 
-// Rewrite Dpr.Battle.Logic.Common$$Dorobou_Start
-01d0e690:
-    b DorobouStart
+// Rewrite Dpr.Battle.Logic.Common$$Dorobou_CheckEnable
+01d0e720:
+    b Dorobou_CheckEnable
