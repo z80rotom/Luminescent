@@ -1,6 +1,8 @@
 #pragma once
 
 #include "il2cpp.hpp"
+#include "Dpr/Battle/Logic/BattleEnv.hpp"
+#include "Dpr/Battle/Logic/EventSystem.hpp"
 
 namespace Dpr
 {
@@ -8,16 +10,96 @@ namespace Dpr
     {
         namespace Logic
         {
+            struct EventFactor_Data_Fields {
+                struct EventFactor_EventHandlerTable_array* handlerTable;
+                struct EventFactor_SkipCheckHandler_o* skipCheckHandler;
+                uint8_t factorType;
+                uint32_t priority;
+                uint16_t subID;
+                uint8_t dependID;
+                uint8_t pokeID;
+                uint32_t eventLevel;
+                uint32_t numHandlers;
+                bool callingFlag;
+                bool recallEnableFlag;
+                bool rmReserveFlag;
+                bool sleepFlag;
+                bool tmpItemFlag;
+                bool existFlag;
+                struct System_Int32_array* work;
+            };
+
+            struct EventFactor_Data_RGCTXs {
+            };
+
+            struct EventFactor_Data_VTable {
+                VirtualInvokeData _0_Equals;
+                VirtualInvokeData _1_Finalize;
+                VirtualInvokeData _2_GetHashCode;
+                VirtualInvokeData _3_ToString;
+            };
+
+            struct EventFactor_Data_c {
+                Il2CppClass_1 _1;
+                struct EventFactor_Data_StaticFields* static_fields;
+                EventFactor_Data_RGCTXs* rgctx_data;
+                Il2CppClass_2 _2;
+                EventFactor_Data_VTable vtable;
+            };
+
+            struct EventFactor_Data_o {
+                EventFactor_Data_c *klass;
+                void *monitor;
+                EventFactor_Data_Fields fields;
+            };
+
+            struct EventFactor_Data_StaticFields {
+            };
+
+            struct EventFactor_Fields {
+                uint16_t m_instanceID;
+                struct EventFactor_o* m_prevFactor;
+                struct EventFactor_o* m_nextFactor;
+                struct EventFactor_Data_o* m_data;
+            };
+
+            struct EventFactor_RGCTXs {
+            };
+
+            struct EventFactor_VTable {
+                VirtualInvokeData _0_Equals;
+                VirtualInvokeData _1_Finalize;
+                VirtualInvokeData _2_GetHashCode;
+                VirtualInvokeData _3_ToString;
+            };
+
+            struct EventFactor_c {
+                Il2CppClass_1 _1;
+                struct EventFactor_StaticFields* static_fields;
+                EventFactor_RGCTXs* rgctx_data;
+                Il2CppClass_2 _2;
+                EventFactor_VTable vtable;
+            };
+
+            struct EventFactor_o {
+                EventFactor_c *klass;
+                void *monitor;
+                EventFactor_Fields fields;
+            };
+
+            struct EventFactor_StaticFields {
+            };
+
             struct EventFactor_EventHandlerArgs_Fields {
                 struct MainModule_o* pMainModule;
-                struct BattleEnv_o* pBattleEnv;
+                BattleEnv_o* pBattleEnv;
                 struct PokeActionContainer_o* pPokeActionContainer;
                 struct PokeChangeRequest_o* pPokeChangeRequest;
                 struct SectionContainer_o* pSectionContainer;
                 struct SectionSharedData_o* pSectionSharedData;
-                struct EventSystem_o* pEventSystem;
+                EventSystem_o* pEventSystem;
                 struct EventVarSet_o* pEventVar;
-                struct EventFactor_o* pMyFactor;
+                EventFactor_o* pMyFactor;
             };
 
             struct EventFactor_EventHandlerArgs_c;
