@@ -20,10 +20,12 @@ bool DecideFormNoFromHoldItem(int32_t monsno, uint32_t holdItemno, uint16_t *for
     {
         case GIRATINA_MONSNO:
             *formno = holdItemno == GIRATINA_ORB_ITEMNO;
-            break;
+            return true;
+
         case ARCEUS_MONSNO:
             *formno = Pml::PokePara::CalcTool::GetAruseusuType(holdItemno, (MethodInfo *) nullptr);
-            break;
+            return true;
+
         case MEWTWO_MONSNO:
             if (holdItemno == MEWTWO_ARMOR_MK2_ITEMNO)
             {
@@ -34,9 +36,14 @@ bool DecideFormNoFromHoldItem(int32_t monsno, uint32_t holdItemno, uint16_t *for
                 *formno = MEWTWO_ARMOR_MK1_FORMNO;
             }
             else *formno = 0;
+            return true;
+        
+        // Doesn't match any pokémon that changes forms, don't change
+        default:
+            return false;
     }
 
-    return true;
+    return false;
 }
 
 bool CheckUnbreakablePokeItem(uint16_t monsno,uint16_t itemID,MethodInfo *method)
