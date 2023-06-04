@@ -5,5 +5,5 @@
     b GetPickupItem
 
 // DEBUG: 100% for Pickup to proc after Battle
-02c3d1f0:
-    cmp x0, #0x64
+//02c3d1f0:
+//    cmp x0, #0x64
