@@ -19,7 +19,7 @@ namespace XLSXContent
         int32_t rand;
         uint8_t sex;
         int32_t language;
-        struct Pml_WazaNo_array* waza;
+        System::Array<int32_t>* waza;
     };
 
     struct LocalKoukanData_Sheetdata_c;

@@ -326,6 +326,8 @@ public:
 
   // 02ce2c20
   static int32_t get_msgLangID(MethodInfo *method);
+  // 02ce2d20
+  static DPData::MYSTATUS_o * get_playerStatus(MethodInfo *method);
 
   // 0236e9f0
   static int32_t GetInt(int32_t index, MethodInfo *method);

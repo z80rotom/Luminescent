@@ -8,5 +8,9 @@
     b LocalKoukan_GetTargetData
 
 // Overwrite call to Dpr.Message.MessageHelper$$ConvertMsgId in LocalKoukan$$CreateTradePokeParam
-01af368c:
-    bl LocalKoukan_Language
+//01af368c:
+//    bl LocalKoukan_Language
+
+// Rewrite LocalKoukan$$CreateTradePokeParam
+01af3510:
+    b LocalKoukan_CreateTradePokeParam

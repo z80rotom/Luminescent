@@ -4,10 +4,8 @@
 
 namespace Pml
 {
-
     namespace PokePara
     {
-
         struct InitialSpec_Fields {
             uint64_t randomSeed;
             bool isRandomSeedEnable;
@@ -47,5 +45,8 @@ namespace Pml
             void *monitor;
             InitialSpec_Fields fields;
         };
+        
+        // 04c5e700
+        extern void * InitialSpec_TypeInfo;
     }
 }
