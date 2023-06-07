@@ -1,8 +1,10 @@
 #pragma once
+
 #include "il2cpp.hpp"
-#include "XLSXContent/PokemonInfo.hpp"
 #include "XLSXContent/FieldCommonParam.hpp"
 #include "XLSXContent/LocalKoukanData.hpp"
+#include "XLSXContent/MonohiroiTable.hpp"
+#include "XLSXContent/PokemonInfo.hpp"
 
 namespace GameData
 {
@@ -46,7 +48,7 @@ namespace GameData
         struct XLSXContent_KinomiData_o* KinomiData;
         struct XLSXContent_KinomiPlaceData_o* KinomiPlaceData;
         struct XLSXContent_HoneyTree_o* HoneyTree;
-        struct XLSXContent_MonohiroiTable_o* MonohiroiTable;
+        XLSXContent::MonohiroiTable_o* MonohiroiTable;
         struct XLSXContent_UgJumpPos_o* UgJumpPos;
         struct XLSXContent_TowerTrainerTable_o* TowerTrainerTable;
         struct XLSXContent_TowerMatchingTable_o* TowerMatchingTable;

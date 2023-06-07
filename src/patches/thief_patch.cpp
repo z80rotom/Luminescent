@@ -1,9 +1,11 @@
 #include "il2cpp.hpp"
 #include "il2cpp-api.h"
+#include "Dpr/Battle/Logic/BTL_POKEPARAM.hpp"
 #include "Dpr/Battle/Logic/Common.hpp"
 #include "Dpr/Battle/Logic/Calc.hpp"
 #include "Dpr/Battle/Logic/EventFactor.hpp"
 #include "Dpr/Battle/Logic/EventID.hpp"
+#include "Dpr/Battle/Logic/EventSystem.hpp"
 #include "Dpr/Battle/Logic/Handler.hpp"
 #include "Dpr/Battle/Logic/Tables.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_SetItem_Description.hpp"
@@ -22,28 +24,34 @@ const uint16_t POKEID_TARGET1 = 6;
 using namespace Dpr::Battle::Logic;
 
 // Changes the handler for Thief to put the item into the player's bag.
-void HandlerDorobou(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
+void HandlerDorobou(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
 {
     socket_log_fmt("HandlerDorobou\n");
 
     system_load_typeinfo((void *)0xa92f);
+    system_load_typeinfo((void *)0xa965);
     system_load_typeinfo((void *)0x43b9);
     system_load_typeinfo((void *)0x43ba);
     il2cpp_runtime_class_init(Common_TypeInfo);
 
+    // Check that we're looking at the attacking pokémon.
     uint attackingPoke = Common::GetEventVar(args, POKEID_ATK, nullptr);
     if (attackingPoke == pokeID)
     {
-        bool thiefEnabled = Common::Dorobou_CheckEnable(args, pokeID, nullptr);
-        if (thiefEnabled)
+        // Check that the attacking pokémon is not holding an item.
+        bool attackerHasNoItem = Common::Dorobou_CheckEnable(args, pokeID, nullptr);
+        if (attackerHasNoItem)
         {
+            // Check the target??
             uint targetPoke = Common::GetEventVar(args, POKEID_TARGET1, nullptr);
             if ((targetPoke & 0xff) != 0x1f)
             {
+                // Check if the target is holding an item.
                 BTL_POKEPARAM_o* targetPokeParam = Common::GetPokeParam(args, (uint8_t)targetPoke, nullptr);
                 uint16_t item = targetPokeParam->GetItem(nullptr);
                 if (item != 0)
                 {
+                    // Check if the item can be thieved. (Form change items, wild pokémon using the move, etc.)
                     bool cantSteal = Common::CheckCantStealPoke(args, pokeID, (uint8_t)targetPoke, nullptr);
                     if (!cantSteal)
                     {
@@ -95,5 +103,32 @@ void HandlerDorobou(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, u
                 }
             }
         }
+    }
+}
+
+// Remove the check for if the attacking Pokémon is holding an item (for wilds)
+bool Dorobou_CheckEnable(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
+{
+    BTL_POKEPARAM_o *pokeparam = (*args)->fields.pBattleEnv->fields.m_pokecon->GetPokeParamConst(pokeID, nullptr);
+    uint16_t item = pokeparam->GetItem(nullptr);
+    
+    if (Common::GetCompetitor(args, nullptr) != 0) // Is a trainer
+    {
+        // Keep default behavior (true if attacking poke has no item)
+        System_Int32_array *work = (*args)->fields.pMyFactor->fields.m_data->fields.work;
+        if (work->max_length > 0)
+        {
+            if (work->m_Items[0] != 0)
+            {
+                return false;
+            }
+        }
+        
+        return item == 0;
+    }
+    else // Is wild
+    {
+        // Always set to true (attacking poke has no item)
+        return true;
     }
 }

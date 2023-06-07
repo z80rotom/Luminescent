@@ -402,6 +402,8 @@ _ZN3Dpr6Battle5Logic39Section_FromEvent_SetItem_Description_o4ctorEP10MethodInfo
 _ZN3Dpr6Battle5Logic6Common7SetItemEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_39Section_FromEvent_SetItem_Description_oEP10MethodInfo = 0x01d0bd20 - 0x05708000;
 _ZN8ItemWork9IsAddItemEiiP10MethodInfo = 0x01aea500 - 0x05708000;
 _ZN8ItemWork7AddItemEiiP10MethodInfo = 0x01aea3a0 - 0x05708000;
+_ZN3Dpr6Battle5Logic13EventSystem_o17EVENTVAR_GetValueEtP10MethodInfo = 0x018f60a0 - 0x05708000;
+_ZN3Dpr6Battle5Logic9POKECON_o17GetPokeParamConstEhP10MethodInfo = 0x02037250 - 0x05708000;
 
 _ZN19FieldObjectEntity_o16get_gridPositionEP10MethodInfo = 0x01d50aa0 - 0x05708000;
 _ZN11GameManager12GetAttributeE24UnityEngine_Vector2Int_oPiS1_bP10MethodInfo = 0x02cd3b60 - 0x05708000;
@@ -442,3 +444,6 @@ _ZN8ItemWork10IsUseSprayEPtP10MethodInfo = 0x01aeb720 - 0x05708000;
 _ZN11XLSXContent17LocalKoukanData_o8get_ItemEiP10MethodInfo = 0x017d5670 - 0x05708000;
 _ZN8GameData20DataManager_TypeInfoE = 0x04c59d70 - 0x05708000;
 _ZN10PlayerWork13get_msgLangIDEP10MethodInfo = 0x02ce2c20 - 0x05708000;
+
+_ZN11UnityEngine6Random5RangeEiiP10MethodInfo = 0x026941e0 - 0x05708000;
+_ZN8GameData20DataManager_TypeInfoE = 0x04c59d70 - 0x05708000;
