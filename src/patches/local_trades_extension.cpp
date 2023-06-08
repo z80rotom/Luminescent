@@ -73,36 +73,53 @@ Pml::PokePara::PokemonParam_o * LocalKoukan_CreateTradePokeParam(XLSXContent::Lo
     Pml::PokePara::InitialSpec_o * initialSpec = (Pml::PokePara::InitialSpec_o *) il2cpp_object_new(Pml::PokePara::InitialSpec_TypeInfo);
     initialSpec->ctor(nullptr);
 
-    int32_t formNo = (data->fields.monsno & 0xFFFF0000) >> 16; // Top 16 bits
-    int32_t monsNo = data->fields.monsno & 0x0000FFFF; // Bottom 16 bits
+    int32_t formNo =      (data->fields.monsno & 0xFFFF0000) >> 16;  // Bits 16-31
+    int32_t monsNo =       data->fields.monsno & 0x0000FFFF;         // Bits 0-15
 
-    int32_t speedIV = (data->fields.tokusei & 0xF8000000) >> 27; // Bits 27-31
-    int32_t spDefIV = (data->fields.tokusei & 0x07C00000) >> 22; // Bits 22-26
-    int32_t spAtkIV = (data->fields.tokusei & 0x003E0000) >> 17; // Bits 17-21
-    int32_t defIV =   (data->fields.tokusei & 0x0001F000) >> 12; // Bits 12-16
-    int32_t atkIV =   (data->fields.tokusei & 0x00000F80) >> 7;  // Bits 7-11
-    int32_t hpIV =    (data->fields.tokusei & 0x0000007C) >> 2;  // Bits 2-6
-    int32_t tokusei =  data->fields.tokusei & 0x00000003;        // Bits 0-1
+    int32_t speedIV =     (data->fields.tokusei & 0xF8000000) >> 27; // Bits 27-31
+    int32_t spDefIV =     (data->fields.tokusei & 0x07C00000) >> 22; // Bits 22-26
+    int32_t spAtkIV =     (data->fields.tokusei & 0x003E0000) >> 17; // Bits 17-21
+    int32_t defIV =       (data->fields.tokusei & 0x0001F000) >> 12; // Bits 12-16
+    int32_t atkIV =       (data->fields.tokusei & 0x00000F80) >> 7;  // Bits 7-11
+    int32_t hpIV =        (data->fields.tokusei & 0x0000007C) >> 2;  // Bits 2-6
+    int32_t tokusei =      data->fields.tokusei & 0x00000003;        // Bits 0-1
+
+    int32_t ivFlag =      (data->fields.seikaku & 0x00000800) >> 11; // Bit  11
+    int32_t contestFlag = (data->fields.seikaku & 0x00000400) >> 10; // Bit  10
+    int32_t ballId =      (data->fields.seikaku & 0x000003E0) >> 5;  // Bits 5-9
+    int32_t seikaku =      data->fields.seikaku & 0x0000001F;        // Bits 0-4
+
+    if (ballId == 0) ballId = POKEBALL_BALLID;
 
     initialSpec->fields.monsno = monsNo;
     initialSpec->fields.formno = formNo;
     initialSpec->fields.level = (uint16_t)data->fields.level;
     initialSpec->fields.rareRnd = 0x1ffffffff;
-    initialSpec->fields.id = (long)data->fields.trainerid;
-    initialSpec->fields.sex = (ushort)data->fields.sex;
-    initialSpec->fields.seikaku = (uint16_t)data->fields.seikaku;
+    initialSpec->fields.id = (uint64_t)data->fields.trainerid;
+    initialSpec->fields.sex = (uint16_t)data->fields.sex;
+    initialSpec->fields.seikaku = (uint16_t)seikaku;
     initialSpec->fields.tokuseiIndex = (uint8_t)tokusei;
-    initialSpec->fields.personalRnd = (long)data->fields.rand;
-    initialSpec->fields.randomSeed = (long)data->fields.rand;
+    initialSpec->fields.personalRnd = (uint64_t)data->fields.rand;
+    initialSpec->fields.randomSeed = (uint64_t)data->fields.rand;
     initialSpec->fields.isRandomSeedEnable = true;
+
+    if (ivFlag & 1)
+    {
+        if (initialSpec->fields.talentPower->max_length > HP_POWERID) initialSpec->fields.talentPower->m_Items[HP_POWERID] = (uint16_t)hpIV;
+        if (initialSpec->fields.talentPower->max_length > ATK_POWERID) initialSpec->fields.talentPower->m_Items[ATK_POWERID] = (uint16_t)atkIV;
+        if (initialSpec->fields.talentPower->max_length > DEF_POWERID) initialSpec->fields.talentPower->m_Items[DEF_POWERID] = (uint16_t)defIV;
+        if (initialSpec->fields.talentPower->max_length > SPATK_POWERID) initialSpec->fields.talentPower->m_Items[SPATK_POWERID] = (uint16_t)spAtkIV;
+        if (initialSpec->fields.talentPower->max_length > SPDEF_POWERID) initialSpec->fields.talentPower->m_Items[SPDEF_POWERID] = (uint16_t)spDefIV;
+        if (initialSpec->fields.talentPower->max_length > SPEED_POWERID) initialSpec->fields.talentPower->m_Items[SPEED_POWERID] = (uint16_t)speedIV;
+    }
 
     Pml::PokePara::PokemonParam_o * pokeParam = (Pml::PokePara::PokemonParam_o *) il2cpp_object_new(Pml::PokePara::PokemonParam_TypeInfo);
     pokeParam->ctor(initialSpec, nullptr);
     Pml::PokePara::CoreParam * coreParam = (Pml::PokePara::CoreParam *)pokeParam;
 
     Dpr::Message::MessageManager_o * messageManager = (Dpr::Message::MessageManager_o *)
-                    SmartPoint::AssetAssistant::SingletonMonoBehaviour::get_Instance
-                        (*SmartPoint::AssetAssistant::PTR_SingletonMonoBehaviour_MessageManager_get_Instance);
+        SmartPoint::AssetAssistant::SingletonMonoBehaviour::get_Instance
+            (*SmartPoint::AssetAssistant::PTR_SingletonMonoBehaviour_MessageManager_get_Instance);
     System::String* nickname = messageManager->GetNameMessage(System::String::CreateString("dp_scenario3"), data->fields.nickname_label, nullptr);
     coreParam->SetNickName(nickname, nullptr);
 
@@ -114,16 +131,9 @@ Pml::PokePara::PokemonParam_o * LocalKoukan_CreateTradePokeParam(XLSXContent::Lo
     uint32_t language = LocalKoukan_Language(data->fields.language, nullptr);
     coreParam->SetLangId(language, nullptr);
 
-    coreParam->SetGetBall(POKEBALL_BALLID, nullptr);
+    coreParam->SetGetBall(ballId, nullptr);
 
-    coreParam->ChangeTalentPower(HP_POWERID, hpIV, nullptr);
-    coreParam->ChangeTalentPower(ATK_POWERID, atkIV, nullptr);
-    coreParam->ChangeTalentPower(DEF_POWERID, defIV, nullptr);
-    coreParam->ChangeTalentPower(SPATK_POWERID, spAtkIV, nullptr);
-    coreParam->ChangeTalentPower(SPDEF_POWERID, spDefIV, nullptr);
-    coreParam->ChangeTalentPower(SPEED_POWERID, speedIV, nullptr);
-
-    if (monsNo == CHATOT_MONSNO)
+    if (contestFlag & 1)
     {
         coreParam->SetCondition(0, 20, nullptr);
         coreParam->SetCondition(1, 20, nullptr);
