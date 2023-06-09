@@ -19,8 +19,6 @@ const int32_t ENGLISH_LANGID = 2;
 
 const uint32_t POKEBALL_BALLID = 4;
 
-const int32_t CHATOT_MONSNO = 441;
-
 const int32_t HP_POWERID = 0;
 const int32_t ATK_POWERID = 1;
 const int32_t DEF_POWERID = 2;
