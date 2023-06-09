@@ -2,6 +2,7 @@
 
 #include "il2cpp.hpp"
 #include "XLSXContent/FieldCommonParam.hpp"
+#include "XLSXContent/LocalKoukanData.hpp"
 #include "XLSXContent/MonohiroiTable.hpp"
 #include "XLSXContent/PokemonInfo.hpp"
 
@@ -57,7 +58,7 @@ namespace GameData
         struct System_Collections_Generic_Dictionary_int__List_AdventureNoteData_SheetData___o* AdventureNoteDataDict;
         struct XLSXContent_TowerBattlePoint_o* TowerBattlePoint;
         struct TagPlaceData_o* TagPlaceData;
-        struct XLSXContent_LocalKoukanData_o* LocalKoukanData;
+        XLSXContent::LocalKoukanData_o* LocalKoukanData;
         struct XLSXContent_ContestCommonData_o* ContestCommonData;
         struct XLSXContent_TvDataTable_o* TvDataTable;
         struct XLSXContent_TvSchedule_o* TvSchedule;

@@ -1,13 +1,12 @@
 #pragma once
 
 #include "il2cpp.hpp"
+#include "System/Array.hpp"
 
 namespace Pml
 {
-
     namespace PokePara
     {
-
         struct InitialSpec_Fields {
             uint64_t randomSeed;
             bool isRandomSeedEnable;
@@ -21,7 +20,7 @@ namespace Pml
             uint16_t seikaku;
             uint8_t tokuseiIndex;
             uint8_t rareTryCount;
-            struct System_UInt16_array* talentPower;
+            System::Array<uint16_t>* talentPower;
             uint32_t friendship;
             uint8_t talentVNum;
             uint16_t weight;
@@ -47,5 +46,8 @@ namespace Pml
             void *monitor;
             InitialSpec_Fields fields;
         };
+        
+        // 04c5e700
+        extern void * InitialSpec_TypeInfo;
     }
 }

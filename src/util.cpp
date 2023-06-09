@@ -49,6 +49,7 @@ uint32_t getLevelCapIndex()
 {
     constexpr size_t NUM_FLAGS = 1;
     constexpr size_t NUM_SYS_FLAGS = 1;
+    constexpr size_t NUM_WORK_VALUES = 2;
     uint32_t numEvents = GetBadgeCount();
 
     uint32_t flags[NUM_FLAGS] = {
@@ -57,6 +58,16 @@ uint32_t getLevelCapIndex()
 
     uint32_t sysflags[NUM_SYS_FLAGS] = {
         5 // Game clear
+    };
+
+    uint32_t works[NUM_WORK_VALUES] = {
+        71, // WK_SCENE_R205A, Beating Mars at Valley Windworks
+        54 // WK_SCENE_C02, Beating Barry at Canalave
+    };
+
+    uint32_t workMins[NUM_WORK_VALUES] = {
+        2, // WK_SCENE_R205A, Beating Mars at Valley Windworks
+        1 // WK_SCENE_C02, Beating Barry at Canalave
     };
 
     for (size_t i = 0; i < NUM_FLAGS; i++)
@@ -75,6 +86,14 @@ uint32_t getLevelCapIndex()
         }
     }
 
+    for (size_t i = 0; i < NUM_WORK_VALUES; i++)
+    {
+        if (PlayerWork::GetInt(works[i], nullptr) >= workMins[i])
+        {
+            numEvents += 1;
+        }
+    }
+
     return numEvents;
 }
 
@@ -84,25 +103,29 @@ uint32_t getMaxLevelOfCapIndex(uint32_t index)
     {
         case 0: // Roark
             return 16;
-        case 1: // Gardenia
+        case 1: // Valley Windworks
+            return 19;
+        case 2: // Gardenia
             return 26;
-        case 2: // Fantina
+        case 3: // Fantina
             return 33;
-        case 3: // Maylene
+        case 4: // Maylene
             return 39;
-        case 4: // Crasher Wake
+        case 5: // Crasher Wake
             return 44;
-        case 5: // Byron
+        case 6: // Canalave Barry
+            return 49;
+        case 7: // Byron
             return 53;
-        case 6: // Candice
+        case 8: // Candice
             return 56;
-        case 7: // Spear Pillar
+        case 9: // Spear Pillar
             return 60;
-        case 8: // Volkner
+        case 10: // Volkner
             return 62;
-        case 9: // Cynthia
+        case 11: // Cynthia
             return 78;
-        case 10: // Stark Mountain
+        case 12: // Stark Mountain
             return 85;
         default: // Max
             return 100;

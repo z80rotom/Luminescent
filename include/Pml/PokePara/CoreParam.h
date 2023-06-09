@@ -4,6 +4,7 @@
 // #include "types.h"
 // #include "Pml/MonsNo.h"
 #include "Pml/PokePara/Accessor.h"
+#include "Pml/PokePara/OwnerInfo.hpp"
 #include "System/String.hpp"
 
 namespace System
@@ -50,6 +51,27 @@ namespace Pml
                 void SetNickName(System::String * nickname, MethodInfo * method);
 
                 uint8_t GetMezapaType(MethodInfo *method);
+
+                // 0204ac00
+                void SetParentName(System::String *name, MethodInfo *method);
+                // 02049650
+                void SetLangId(uint32_t langId, MethodInfo *method);
+                // 0204b840
+                void SetGetBall(uint32_t value, MethodInfo *method);
+                // 0204b040
+                void SetCondition(int32_t cond, uint8_t value, MethodInfo *method);
+                // 020464e0
+                void SetWaza(uint8_t wazaIndex, int32_t wazano, MethodInfo *method);
+                // 02048c90
+                bool UpdateOwnerInfo(Pml::PokePara::OwnerInfo_o *ownerInfo, MethodInfo *method);
+                // 020446e0
+                void ChangeTalentPower(int32_t powerId, uint32_t value, MethodInfo *method);
+
+                // 0204c910
+                bool StartFastMode(MethodInfo *method);
+                // 0204c960
+                bool EndFastMode(bool validFlag, MethodInfo *method);
+
 
                 void ChangeFormNo(uint16_t nextFormno, CoreParam_FormChangeResult_o *pResult, MethodInfo *method);
                 uint32_t GetPower(int32_t powerId, MethodInfo *method);
