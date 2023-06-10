@@ -468,3 +468,5 @@ _ZN3Pml8PokePara9CoreParam17ChangeTalentPowerEijP10MethodInfo = 0x020446e0 - 0x0
 
 _ZN11UnityEngine6Random5RangeEiiP10MethodInfo = 0x026941e0 - 0x05708000;
 _ZN8GameData20DataManager_TypeInfoE = 0x04c59d70 - 0x05708000;
+
+_ZN3Pml8PokePara9CoreParam12GetTokuseiNoEP10MethodInfo = 0x020488a0 - 0x05708000;

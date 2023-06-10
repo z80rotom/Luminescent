@@ -83,6 +83,8 @@ namespace Pml
                 uint8_t GetRareType(MethodInfo * method);
                 // 2048740
                 int32_t GetSeikaku(MethodInfo *method);
+                // 20488a0
+                int32_t GetTokuseiNo(MethodInfo *method);
                 // 2045ce0
                 uint8_t GetTokuseiIndex(MethodInfo *method);
                 // 2048ac0
