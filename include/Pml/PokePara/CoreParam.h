@@ -99,6 +99,8 @@ namespace Pml
                 bool IsHpZero(MethodInfo *method);
                 // 2043e30
                 uint32_t GetLevel(MethodInfo *method);
+                // 2046b40
+                bool CheckWazaMachine(uint32_t machineNo, MethodInfo *method);
 
                 System::Collections::Generic::HashSet_WazaNo__o * CollectRemindableWaza( MethodInfo *method );
 

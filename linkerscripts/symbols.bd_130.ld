@@ -472,3 +472,5 @@ _ZN8GameData20DataManager_TypeInfoE = 0x04c59d70 - 0x05708000;
 _ZN3Pml8PokePara9CoreParam12GetTokuseiNoEP10MethodInfo = 0x020488a0 - 0x05708000;
 
 ADD_GensiNoTikara = 0x01819480 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam16CheckWazaMachineEjP10MethodInfo = 0x02046b40 - 0x05708000;
+_ZN3Dpr6Battle5Logic8ItemData16GetWazaMashineNoEtP10MethodInfo = 0x0249d4e0 - 0x05708000;
