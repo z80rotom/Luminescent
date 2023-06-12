@@ -470,3 +470,5 @@ _ZN11UnityEngine6Random5RangeEiiP10MethodInfo = 0x026941e0 - 0x05708000;
 _ZN8GameData20DataManager_TypeInfoE = 0x04c59d70 - 0x05708000;
 
 _ZN3Pml8PokePara9CoreParam12GetTokuseiNoEP10MethodInfo = 0x020488a0 - 0x05708000;
+
+ADD_GensiNoTikara = 0x01819480 - 0x05708000;

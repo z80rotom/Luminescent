@@ -49,7 +49,7 @@ constexpr size_t BTL_STRID_STD_Magnitude6 = 124;
 constexpr size_t BTL_STRID_STD_Magnitude7 = 125;
 constexpr size_t BTL_STRID_STD_YubiWoFuru = 137;
 
-constexpr uint32_t NUM_NEW_MOVES = 7;
+constexpr uint32_t NUM_NEW_MOVES = 5;
 constexpr uint32_t NUM_KARAGENKI_MOVES = 2;
 constexpr uint32_t NUM_YUBI_WO_FURU_MOVES = 1;
 // WazaNo
@@ -69,6 +69,8 @@ constexpr uint32_t NUM_BTL_STRID_STD = 547;
 
 extern void * DAT_03a6bb14;
 extern MethodInfo * Handler_Karagenki_WazaPowMethodInfo;
+
+extern Il2CppMethodPointer ADD_GensiNoTikara;
 
 static uint32_t gMagnitude = 6;
 int32_t MAGNITUDE_POWER_TABLE[7] = {
@@ -257,6 +259,10 @@ void * Waza_system_array_new(void * typeInfo, uint32_t len)
     AddHandler(getFuncTable, &idx, FRUSTRATION_WAZANO, (Il2CppMethodPointer) &ADD_Frustration);
     socket_log_fmt("Magnitude idx: %08X\n", idx);
     AddHandler(getFuncTable, &idx, MAGNITUDE_WAZANO, (Il2CppMethodPointer) &ADD_Magnitude);
+    socket_log_fmt("Ominous Wind idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, OMINIOUSWIND_WAZANO, (Il2CppMethodPointer) &ADD_GensiNoTikara);
+    socket_log_fmt("Silver Wind idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, SILVERWIND_WAZANO, (Il2CppMethodPointer) &ADD_GensiNoTikara);
 
     return getFuncTable;
 }
