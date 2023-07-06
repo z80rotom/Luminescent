@@ -1,5 +1,7 @@
 #include "il2cpp.hpp"
 #include "il2cpp-api.h"
+
+#include "Audio/AudioManager.hpp"
 #include "Dpr/Item/ItemInfo.hpp"
 #include "Dpr/UI/UIBag.hpp"
 #include "Pml/PokePara/PokemonParam.h"
@@ -7,6 +9,7 @@
 #include "dual_slot.hpp"
 #include "ItemWork.hpp"
 #include "PlayerWork.hpp"
+#include "SmartPoint/AssetAssistant/SingletonMonoBehavior.hpp"
 #include "logger.hpp"
 #include "util.hpp"
 #include "XLSXContent/FieldEncountTable.hpp"
@@ -331,31 +334,48 @@ bool UseInfiniteRepelItem()
 void UIManager_UseDSPlayerItem(Dpr::UI::UIManager_o * __this, Dpr::UI::UIBag_Displayclass_o * dispClass)
 {
     system_load_typeinfo(DAT_7103a679b8);
+
+    Audio::AudioManager_o * audioManager = (Audio::AudioManager_o *)
+        SmartPoint::AssetAssistant::SingletonMonoBehaviour::get_Instance
+            (*SmartPoint::AssetAssistant::PTR_SingletonMonoBehaviour_AudioManager_get_Instance);
+
     // TODO: Fix DS Slots item and maybe update to give some text when you use it
     socket_log_fmt("UIManager_UseDSPlayerItem\n");
     sDisplayClassLocals = dispClass->fields.locals;
     Dpr::UI::UIBag_o * uiBag = dispClass->fields.locals->fields.__4__this;
+
     // Currently used item
     Dpr::Item::ItemInfo_o* item = dispClass->fields.locals->fields.item;
     sUIBag = uiBag;
     int32_t itemId = item->get_Id(nullptr);
+
     if (itemId == DUAL_SLOT_INCENSE_ITEM_ID)
     {
+        // INCENSE BURNER
         UseDualSlotIncense(__this, dispClass);
-    } else if (itemId == INFINITE_REPEL_ITEM_ID)
+    }
+    else if (itemId == INFINITE_REPEL_ITEM_ID)
     {
+        // INFINITE REPEL
         bool flag = UseInfiniteRepelItem();
         System_Action_o * action = (System_Action_o *) il2cpp_object_new(System_Action_TypeInfo);
         action->ctor(dispClass->fields.locals, ShowItemContextMenu_EndUseAction_MethodInfo, nullptr);
         System::String * labelName;
+
         if (flag)
         {
-            labelName = System::String::CreateString("SS_bag_353");
-        } else {
-            labelName = System::String::CreateString("SS_bag_354");
+            labelName = System::String::CreateString("SS_bag_371");
+            audioManager->PlaySe(0x8e8a8de1, nullptr, nullptr);
+        }
+        else
+        {
+            labelName = System::String::CreateString("SS_bag_372");
         }
         uiBag->fields.msgWindowController->OpenMsgWindow(0, labelName, true, false, nullptr, action, nullptr);
-    } else {
+    }
+    else
+    {
+        // DS PLAYER
         __this->UseDSPlayerItem(nullptr);
         System_Action_o * action = (System_Action_o *) il2cpp_object_new(System_Action_TypeInfo);
         action->ctor(dispClass->fields.locals, ShowItemContextMenu_EndUseAction_MethodInfo, nullptr);
@@ -363,7 +383,9 @@ void UIManager_UseDSPlayerItem(Dpr::UI::UIManager_o * __this, Dpr::UI::UIBag_Dis
         if (ItemWork::IsDsPlayer(nullptr))
         {
             labelName = System::String::CreateString("SS_bag_353");
-        } else {
+        }
+        else
+        {
             labelName = System::String::CreateString("SS_bag_354");
         }
         uiBag->fields.msgWindowController->OpenMsgWindow(0, labelName, true, false, nullptr, action, nullptr);
@@ -388,6 +410,22 @@ int32_t PlayerWork_set_DoubleSlot(System::Array<MonsLv_o> * monsLv)
     int32_t zoneID = PlayerWork::get_zoneID((MethodInfo *) nullptr);
     XLSXContent::FieldEncountTable::Sheettable_o * inData = GameManager::GetFieldEncountData(zoneID, nullptr);
 
+    // Time of Day encounters on slots 11/12
+    int32_t periodOfDay = GameManager::get_currentPeriodOfDay(nullptr);
+    // Daytime
+    if (periodOfDay == 1 || periodOfDay == 2)
+    {
+        monsLv->m_Items[10] = inData->fields.day->m_Items[0];
+        monsLv->m_Items[11] = inData->fields.day->m_Items[1];
+    }
+    // Night
+    if (periodOfDay == 3)
+    {
+        monsLv->m_Items[10] = inData->fields.night->m_Items[0];
+        monsLv->m_Items[11] = inData->fields.night->m_Items[1];
+    }
+
+    // Dual Slot encounters on slots 3/4
     int32_t work = PlayerWork::GetInt(DOUBLE_SLOT_WORK, nullptr);
     System::Array<MonsLv_o>* gbaDualSlot;
     switch (work)
@@ -413,20 +451,6 @@ int32_t PlayerWork_set_DoubleSlot(System::Array<MonsLv_o> * monsLv)
 
     monsLv->m_Items[2] = gbaDualSlot->m_Items[0];
     monsLv->m_Items[3] = gbaDualSlot->m_Items[1];
-
-    int32_t periodOfDay = GameManager::get_currentPeriodOfDay(nullptr);
-    // Daytime
-    if (periodOfDay == 1 || periodOfDay == 2)
-    {
-        monsLv->m_Items[10] = inData->fields.day->m_Items[0];
-        monsLv->m_Items[11] = inData->fields.day->m_Items[1];
-    }
-    // Night
-    if (periodOfDay == 3)
-    {
-        monsLv->m_Items[10] = inData->fields.night->m_Items[0];
-        monsLv->m_Items[11] = inData->fields.night->m_Items[1];
-    }
 
     return 0;
 }

@@ -11,6 +11,7 @@
 #include "Dpr/EvScript/EvDataManager.hpp"
 #include "PlayerWork.hpp"
 #include "Pml/Local/Random.h"
+#include "SmartPoint/AssetAssistant/SingletonMonoBehavior.hpp"
 #include "Dpr/EncountTools.hpp"
 
 const int32_t QUIVER_DANCE = 483;
@@ -350,18 +351,6 @@ namespace Dpr
 
         // 0x04b79658
         extern void ** PTR_EvDataManager_DisplayClass1541_0_o_TypeInfo;
-    }
-}
-
-namespace SmartPoint
-{
-    namespace AssetAssistant
-    {
-        struct SingletonMonoBehaviour
-        {
-            static void * get_Instance(MethodInfo * method);
-        };
-        extern MethodInfo ** PTR_SingletonMonoBehaviour_UIManager_get_Instance;
     }
 }
 

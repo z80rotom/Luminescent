@@ -35,4 +35,10 @@ struct ZukanWork_c {
 	ZukanWork_VTable vtable;
 };
 
+struct ZukanWork
+{
+    static System::Array<bool> * GetFormFlags(uint32_t monsno,uint8_t sex,bool color,MethodInfo *method);
+    static bool GetZenkokuFlag(MethodInfo *method);
+};
+
 extern ZukanWork_c * ZukanWork_TypeInfo;

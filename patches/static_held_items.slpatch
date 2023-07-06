@@ -1,0 +1,5 @@
+[target=main, version=bd_130]
+// Replace call to Pml.PokeParty$$GetMemberPointer in FieldManager$$EventWildBattle
+// Dpr.EncountTools$$SetWildPokemonItem is called within
+0179f85c:
+    bl EventWildBattle_SetWildPokemonItem

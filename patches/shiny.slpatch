@@ -51,3 +51,12 @@
     mov x0, x20
     mov x1, x19
     bl Pml_Local_RandomGenerator_GetRand_Hook
+
+
+// Change amount of masuda rolls for eggs (6 in vanilla)
+02050874:
+    mov w8, #0x6
+
+// Remove shiny charm effect from egg-only methods
+02050880:
+    add w9, w8, #0x0
