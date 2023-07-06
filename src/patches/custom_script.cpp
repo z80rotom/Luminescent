@@ -486,6 +486,22 @@ bool ToggleCollisionBox(Dpr::EvScript::EvDataManager_o * manager)
     return true;
 }
 
+// Sets the given work to 69. Acts as a check for a proper installation.
+// Arguments:
+//   [Work] work: The work to set.
+bool InstallCheck(Dpr::EvScript::EvDataManager_o * manager)
+{
+    socket_log_fmt("_INSTALL_CHECK\n");
+    System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
+
+    if (args->max_length >= 2)
+    {
+        SetWorkToValue(args->m_Items[1], 69);
+    }
+
+    return true;
+}
+
 // Handles overriden and new script commands, then calls the original method to handle the rest normally.
 bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID index, MethodInfo *method)
 {
@@ -508,6 +524,8 @@ bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID in
             return PartyBoxRelease(__this);
         case EvData::EvCmdID::_TOGGLE_COLLISION_BOX:
             return ToggleCollisionBox(__this);
+        case EvData::EvCmdID::_INSTALL_CHECK:
+            return InstallCheck(__this);
         default:
             break;
     }
