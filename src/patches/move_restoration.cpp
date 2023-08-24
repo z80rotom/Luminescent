@@ -49,9 +49,9 @@ constexpr size_t BTL_STRID_STD_Magnitude6 = 124;
 constexpr size_t BTL_STRID_STD_Magnitude7 = 125;
 constexpr size_t BTL_STRID_STD_YubiWoFuru = 137;
 
-constexpr uint32_t NUM_NEW_MOVES = 5;
+constexpr uint32_t NUM_NEW_MOVES = 4;
 constexpr uint32_t NUM_KARAGENKI_MOVES = 2;
-constexpr uint32_t NUM_YUBI_WO_FURU_MOVES = 1;
+constexpr uint32_t NUM_YUBI_WO_FURU_MOVES = 0;
 // WazaNo
 constexpr int32_t JUMPKICK_WAZANO = 26;
 constexpr int32_t THUNDER_WAZANO = 87;
@@ -126,7 +126,7 @@ void handler_Magnitude_WazaPow(EventFactor_EventHandlerArgs_o **args, uint8_t po
         return;
     }
 
-    // gMagnitude = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % 7;
+    gMagnitude = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % 7;
     socket_log_fmt("Magnitude: %08X\n", gMagnitude);
     int32_t waza_power = MAGNITUDE_POWER_TABLE[gMagnitude];
     socket_log_fmt("waza_power: %08X\n", waza_power);
@@ -155,7 +155,7 @@ void handler_Magnitude_Msg(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID
     socket_log_fmt("Section_FromEvent_Message::Description_o::ctor: %08X\n", &Section_FromEvent_Message::Description_o::ctor);
     socket_log_fmt("StrParam_o::Setup: %08X\n", &StrParam_o::Setup);
 
-    gMagnitude = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % 7;
+    //gMagnitude = Pml::Local::Random::GetValue((MethodInfo *) nullptr) % 7;
     Section_FromEvent_Message::Description_o * desc = (Section_FromEvent_Message::Description_o *) il2cpp_object_new(Section_FromEvent_Message::Description_TypeInfo);
     desc->ctor((MethodInfo *) nullptr);
     desc->fields.pokeID = pokeID;
@@ -176,9 +176,9 @@ int32_t KARAGENKI_ENTRIES[NUM_KARAGENKI_MOVES] = {
     FRUSTRATION_WAZANO
 };
 
-int32_t YUBI_WO_FURU_ENTRIES[NUM_YUBI_WO_FURU_MOVES] = {
+/*int32_t YUBI_WO_FURU_ENTRIES[NUM_YUBI_WO_FURU_MOVES] = {
     MAGNITUDE_WAZANO
-};
+};*/
 
 // 4c7a3b0
 
@@ -223,9 +223,9 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_Magnitude(MethodInfo *met
     socket_log_fmt("ADD_Magnitude\n");
     if (sMagnitudeEventHandlerTable == nullptr) {
         // socket_log_fmt("ADD_Magnitude init\n");
-        sMagnitudeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
+        sMagnitudeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
         sMagnitudeEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_WazaPow);
-        sMagnitudeEventHandlerTable->m_Items[1] = createEventHandlerTable(EVENT_ID_REQWAZA_MSG, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_Msg);
+        //sMagnitudeEventHandlerTable->m_Items[1] = createEventHandlerTable(EVENT_ID_REQWAZA_MSG, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_Msg);
     }
 
     return sMagnitudeEventHandlerTable;
@@ -257,8 +257,8 @@ void * Waza_system_array_new(void * typeInfo, uint32_t len)
     AddHandler(getFuncTable, &idx, RETURN_WAZANO, (Il2CppMethodPointer) &ADD_Return);
     socket_log_fmt("Frustration idx: %08X\n", idx);
     AddHandler(getFuncTable, &idx, FRUSTRATION_WAZANO, (Il2CppMethodPointer) &ADD_Frustration);
-    socket_log_fmt("Magnitude idx: %08X\n", idx);
-    AddHandler(getFuncTable, &idx, MAGNITUDE_WAZANO, (Il2CppMethodPointer) &ADD_Magnitude);
+    /*socket_log_fmt("Magnitude idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, MAGNITUDE_WAZANO, (Il2CppMethodPointer) &ADD_Magnitude);*/
     socket_log_fmt("Ominous Wind idx: %08X\n", idx);
     AddHandler(getFuncTable, &idx, OMINIOUSWIND_WAZANO, (Il2CppMethodPointer) &ADD_GensiNoTikara);
     socket_log_fmt("Silver Wind idx: %08X\n", idx);
