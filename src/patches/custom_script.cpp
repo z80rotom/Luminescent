@@ -23,6 +23,7 @@
 #include "GimmickWork.hpp"
 #include "PlayerWork.hpp"
 #include "WeatherWork.hpp"
+#include "ZukanWork.hpp"
 
 #include "util.hpp"
 #include "logger.hpp"
@@ -502,6 +503,45 @@ bool InstallCheck(Dpr::EvScript::EvDataManager_o * manager)
     return true;
 }
 
+// Sets the form of the Pokémon at the given index and tray index.
+// Arguments:
+//   [Work, Number] index: The index that points to the given Pokémon.
+//   [Work, Number] trayIndex: The tray index in which to look for the given Pokémon.
+//   [Work, Number] formno: The form to set the Pokémon to.
+bool ChangeFormNo(Dpr::EvScript::EvDataManager_o * manager)
+{
+    socket_log_fmt("_CHANGE_FORMNO\n");
+    system_load_typeinfo((void *)0x4495);
+    System::Array<EvData::Aregment_o>* args = manager->fields._evArg;
+
+    if (args->max_length >= 2)
+    {
+        int32_t index = GetWorkOrIntValue(args->m_Items[1]);
+
+        if (args->max_length >= 3)
+        {
+            int32_t trayIndex = GetWorkOrIntValue(args->m_Items[2]);
+
+            Pml::PokePara::PokemonParam_o * param = manager->GetPokemonParam(trayIndex, index, nullptr);
+            Pml::PokePara::CoreParam * coreparam = (Pml::PokePara::CoreParam *)param;
+
+            if (!IsNullOrEgg(param))
+            {
+                if (args->max_length >= 4)
+                {
+                    int32_t formno = GetWorkOrIntValue(args->m_Items[3]);
+                    socket_log_fmt("Changing form of Pokémon with tray index %d and index %d, to form %d\n", trayIndex, index, formno);
+                    coreparam->ChangeFormNo((uint16_t) formno, nullptr, nullptr);
+
+                    ZukanWork::SetPoke(param, 3, nullptr);
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
 // Handles overriden and new script commands, then calls the original method to handle the rest normally.
 bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID index, MethodInfo *method)
 {
@@ -526,6 +566,8 @@ bool RunEvCmdExtended(Dpr::EvScript::EvDataManager_o *__this, EvData::EvCmdID in
             return ToggleCollisionBox(__this);
         case EvData::EvCmdID::_INSTALL_CHECK:
             return InstallCheck(__this);
+        case EvData::EvCmdID::_CHANGE_FORMNO:
+            return ChangeFormNo(__this);
         default:
             break;
     }

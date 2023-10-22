@@ -474,3 +474,5 @@ _ZN3Pml8PokePara9CoreParam12GetTokuseiNoEP10MethodInfo = 0x020488a0 - 0x05708000
 ADD_GensiNoTikara = 0x01819480 - 0x05708000;
 _ZN3Pml8PokePara9CoreParam16CheckWazaMachineEjP10MethodInfo = 0x02046b40 - 0x05708000;
 _ZN3Dpr6Battle5Logic8ItemData16GetWazaMashineNoEtP10MethodInfo = 0x0249d4e0 - 0x05708000;
+
+_ZN9ZukanWork7SetPokeEPN3Pml8PokePara14PokemonParam_oEiP10MethodInfo = 0x017dc560 - 0x05708000;

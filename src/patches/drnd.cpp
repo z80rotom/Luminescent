@@ -11,9 +11,9 @@ const int32_t IS_SEE = 2;
 const int32_t IS_GET = 3;
 const uint32_t MAX_MONS = 1010;
 
-const uint32_t NATDEX_MONS_COUNT = 11;
+const uint32_t NATDEX_MONS_COUNT = 17;
 uint32_t NATDEX_MONS[NATDEX_MONS_COUNT] = {
-    700, 862, 863, 864, 865, 866, 899, 900, 901, 903, 904
+    607, 608, 609, 700, 862, 863, 864, 865, 866, 899, 900, 901, 903, 904, 957, 958, 959
 };
 
 // External links
