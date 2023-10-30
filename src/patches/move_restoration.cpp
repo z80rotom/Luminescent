@@ -72,8 +72,8 @@ constexpr int32_t SILVERWIND_WAZANO = 318;
 constexpr int32_t SKYUPPERCUT_WAZANO = 327;
 constexpr int32_t OMINIOUSWIND_WAZANO = 466;
 constexpr int32_t BELCH_WAZANO = 562;
+constexpr int32_t GIGATON_HAMMER_WAZANO = 603;
 constexpr int32_t STUFF_CHEEKS_WAZANO = 747;
-constexpr int32_t GIGATON_HAMMER_WAZANO = 893;
 
 constexpr uint32_t NUM_NEW_BTL_STRID_SET = 6;
 constexpr uint32_t NUM_NEW_BTL_STRID_STD = 6;
@@ -427,8 +427,11 @@ bool Dpr_Battle_Logic_BTL_CLIENT_is_unselectable_waza(BTL_CLIENT_o *bc, BTL_POKE
         return SetupBTLV_STRPARAM(strParam, 0x744, 2, args, sizeof(args) / sizeof(*args));
     }
 
-    if (waza == GIGATON_HAMMER_WAZANO && bpp->fields.m_prevSelectWazaID == waza)
+    if (waza == GIGATON_HAMMER_WAZANO && bpp->fields.m_prevSelectWazaID == waza) {
+        /*int32_t args[] = { bpp->GetID(nullptr), waza };
+        return SetupBTLV_STRPARAM(strParam, 1926, 2, args, sizeof(args) / sizeof(*args));*/
         return true;
+    }
 
     return false;
 }
