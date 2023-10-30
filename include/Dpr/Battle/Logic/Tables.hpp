@@ -12,6 +12,8 @@ namespace Dpr
             struct Tables
             {
                 static System::Array<uint16_t> * GetYubiFuruPermitTable(MethodInfo * method);
+
+                static bool IsKodawariItem(uint16_t itemID, MethodInfo *method);
             };
         }
     }

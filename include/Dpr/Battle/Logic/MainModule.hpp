@@ -94,6 +94,8 @@ namespace Dpr
                 MainModule_c *klass;
                 void *monitor;
                 MainModule_Fields fields;
+
+                bool IsSkyBattle(MethodInfo *method);
             };
 
             struct MainModule_StaticFields

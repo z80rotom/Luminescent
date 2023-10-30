@@ -1,11 +1,19 @@
+#include "Dpr/Battle/Logic/BTL_CLIENT.hpp"
+#include "Dpr/Battle/Logic/BTLV_STRPARAM.hpp"
 #include "Dpr/Battle/Logic/Common.hpp"
 #include "Dpr/Battle/Logic/Calc.hpp"
 #include "Dpr/Battle/Logic/EventFactor.hpp"
 #include "Dpr/Battle/Logic/EventID.hpp"
+#include "Dpr/Battle/Logic/FieldStatus.hpp"
+#include "Dpr/Battle/Logic/GWaza.hpp"
 #include "Dpr/Battle/Logic/Handler.hpp"
+#include "Dpr/Battle/Logic/MainModule.hpp"
 #include "Dpr/Battle/Logic/Tables.hpp"
-#include "Dpr/Battle/Logic/StrParam.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_Message.hpp"
+#include "Dpr/Battle/Logic/SICKCONT.hpp"
+#include "Dpr/Battle/Logic/StrParam.hpp"
+#include "Dpr/Battle/Logic/WAZADATA.hpp"
+#include "Pml/Item/ItemData.hpp"
 
 #include "il2cpp-api.h"
 #include "il2cpp.hpp"
@@ -56,16 +64,22 @@ constexpr uint32_t NUM_YUBI_WO_FURU_MOVES = 0;
 constexpr int32_t JUMPKICK_WAZANO = 26;
 constexpr int32_t THUNDER_WAZANO = 87;
 constexpr int32_t HIJUMPKICK_WAZANO = 136;
+constexpr int32_t STRUGGLE_WAZANO = 165;
 constexpr int32_t RETURN_WAZANO = 216;
 constexpr int32_t FRUSTRATION_WAZANO = 218;
 constexpr int32_t MAGNITUDE_WAZANO = 222;
 constexpr int32_t SILVERWIND_WAZANO = 318;
 constexpr int32_t SKYUPPERCUT_WAZANO = 327;
 constexpr int32_t OMINIOUSWIND_WAZANO = 466;
+constexpr int32_t BELCH_WAZANO = 562;
+constexpr int32_t STUFF_CHEEKS_WAZANO = 747;
+constexpr int32_t GIGATON_HAMMER_WAZANO = 893;
 
 constexpr uint32_t NUM_NEW_BTL_STRID_SET = 6;
 constexpr uint32_t NUM_NEW_BTL_STRID_STD = 6;
 constexpr uint32_t NUM_BTL_STRID_STD = 547;
+
+constexpr uint16_t NULL_ITEM = 0;
 
 extern void * DAT_03a6bb14;
 extern MethodInfo * Handler_Karagenki_WazaPowMethodInfo;
@@ -287,4 +301,134 @@ void * BTL_STRID_STD_system_array_new(void * typeInfo, uint32_t len)
     btl_strid_std_label->m_Items[BTL_STRID_STD_Magnitude6] = *System::String::CreateString("BTL_STRID_STD_Magnitude6");
     btl_strid_std_label->m_Items[BTL_STRID_STD_Magnitude7] = *System::String::CreateString("BTL_STRID_STD_Magnitude7");
     return arrayPtr;
+}
+
+
+// Gigaton Hammer stuff
+bool SetupBTLV_STRPARAM(BTLV_STRPARAM_o *strParam, uint16_t strID, uint8_t strType, const int32_t args[], uint64_t argCnt) {
+    if (strParam == nullptr)
+        return true;
+
+    strParam->fields.strType = strType;
+    System_Int32_array *oldArgs = strParam->fields.args;
+
+    for (uint64_t i = 0; i < oldArgs->max_length; ++i)
+        oldArgs->m_Items[i] = 0;
+
+    if (oldArgs->max_length < argCnt)
+        argCnt = oldArgs->max_length;
+
+    strParam->fields.argCnt = argCnt;
+
+    for (uint64_t i = 0; i < argCnt; ++i)
+        oldArgs->m_Items[i] = args[i];
+
+    return true;
+}
+
+bool Dpr_Battle_Logic_BTL_CLIENT_is_unselectable_waza(BTL_CLIENT_o *bc, BTL_POKEPARAM_o *bpp, int32_t waza, BTLV_STRPARAM_o *strParam, MethodInfo *method) {
+    system_load_typeinfo((void *)0x1ebc);
+
+    if (waza == STRUGGLE_WAZANO)
+        return false;
+
+    if (!WAZADATA::IsValid(waza, nullptr)) {
+        int32_t args[] = {};
+        return SetupBTLV_STRPARAM(strParam, 0x1fc, 1, args, sizeof(args) / sizeof(*args));
+    }
+
+    FieldStatus_o **fldSim = &bc->fields.m_fldSim;
+    uint16_t effItem = bpp->GetItemEffective(fldSim, nullptr);
+
+    if (effItem != NULL_ITEM) {
+        if (bpp->CheckSick(0x1c, nullptr) && !bpp->IsGMode(nullptr) && !GWaza::IsGWaza(waza, nullptr) && Tables::IsKodawariItem(effItem, nullptr)) {
+            BTL_SICKCONT_o cont = bpp->GetSickCont(0x1c, nullptr);
+            uint16_t lockMove = SICKCONT::GetParam(&cont, nullptr);
+
+            if (lockMove != waza && bpp->WAZA_IsUsable(lockMove, nullptr)) {
+                int32_t args[] = { effItem, lockMove };
+                return SetupBTLV_STRPARAM(strParam, 0x71, 1, args, sizeof(args) / sizeof(*args));
+            }
+        }
+
+        if (effItem == 0x280 && !WAZADATA::IsDamage(waza, nullptr)) {
+            int32_t args[] = { 0x280 };
+            return SetupBTLV_STRPARAM(strParam, 0x72, 1, args, sizeof(args) / sizeof(*args));
+        }
+    }
+
+    if (bpp->GetValue(20, nullptr) == 0xff && bpp->CheckSick(0x1c, nullptr) && !bpp->IsGMode(nullptr) && !GWaza::IsGWaza(waza, nullptr)) {
+        BTL_SICKCONT_o cont = bpp->GetSickCont(0x1c, nullptr);
+        uint16_t lockMove = SICKCONT::GetParam(&cont, nullptr);
+
+        if (lockMove != waza && bpp->WAZA_IsUsable(lockMove, nullptr)) {
+            int32_t args[] = { bpp->GetID(nullptr), lockMove };
+            return SetupBTLV_STRPARAM(strParam, 0x73, 1, args, sizeof(args) / sizeof(*args));
+        }
+    }
+
+    if (bpp->CheckSick(0x17, nullptr)) {
+        BTL_SICKCONT_o cont = bpp->GetSickCont(0x17, nullptr);
+        uint16_t lockMove = SICKCONT::GetParam(&cont, nullptr);
+
+        if (lockMove != waza && !GWaza::IsGWaza(waza, nullptr)) {
+            int32_t args[] = { bpp->GetID(nullptr), lockMove };
+            return SetupBTLV_STRPARAM(strParam, 0x73, 1, args, sizeof(args) / sizeof(*args));
+        }
+    }
+
+    if (bpp->CheckSick(0xb, nullptr) && !WAZADATA::IsDamage(waza, nullptr)) {
+        int32_t args[] = { bpp->GetID(nullptr), waza };
+        return SetupBTLV_STRPARAM(strParam, 0x302, 2, args, sizeof(args) / sizeof(*args));
+    }
+
+    if (bpp->CheckSick(0xc, nullptr) && bpp->fields.m_prevSelectWazaID == waza && !bpp->IsGMode(nullptr)) {
+        int32_t args[] = { bpp->GetID(nullptr), waza };
+        return SetupBTLV_STRPARAM(strParam, 0x30e, 2, args, sizeof(args) / sizeof(*args));
+    }
+
+    if (bpp->CheckSick(0xd, nullptr) && bpp->GetSickParam(0xd, nullptr) == waza && !GWaza::IsGWaza(waza, nullptr)) {
+        int32_t args[] = { bpp->GetID(nullptr), waza };
+        return SetupBTLV_STRPARAM(strParam, 0x322, 2, args, sizeof(args) / sizeof(*args));
+    }
+
+    if (bpp->CheckSick(0xf, nullptr) && WAZADATA::GetFlag(waza, 0xc, nullptr)) {
+        int32_t args[] = { bpp->GetID(nullptr), waza };
+        return SetupBTLV_STRPARAM(strParam, 0x4b4, 2, args, sizeof(args) / sizeof(*args));
+    }
+
+    if ((*fldSim)->CheckEffect(3, nullptr) && !bpp->IsGMode(nullptr) && bc->fields.m_fldSim->CheckFuin(&bc->fields.m_mainModule, bc->fields.m_pBattleEnv->fields.m_pokecon, bpp, waza, nullptr)) {
+        int32_t args[] = { bpp->GetID(nullptr), waza };
+        return SetupBTLV_STRPARAM(strParam, 0x31a, 2, args, sizeof(args) / sizeof(*args));
+    }
+
+    if ((*fldSim)->CheckEffect(2, nullptr) && !bpp->IsGMode(nullptr) && WAZADATA::GetFlag(waza, 9, nullptr)) {
+        int32_t args[] = { bpp->GetID(nullptr), waza };
+        return SetupBTLV_STRPARAM(strParam, 0x5c0, 2, args, sizeof(args) / sizeof(*args));
+    }
+
+    if (waza == STUFF_CHEEKS_WAZANO && !Pml::Item::ItemData::IsNuts(bpp->GetItem(nullptr), nullptr)) {
+        int32_t args[] = { bpp->GetID(nullptr) };
+        return SetupBTLV_STRPARAM(strParam, 0x199, 1, args, sizeof(args) / sizeof(*args));
+    }
+
+    if (waza == BELCH_WAZANO && !bpp->PERMFLAG_Get(0, nullptr)) {
+        int32_t args[] = { bpp->GetID(nullptr) };
+        return SetupBTLV_STRPARAM(strParam, 0x648, 2, args, sizeof(args) / sizeof(*args));
+    }
+
+    if (bc->fields.m_mainModule->IsSkyBattle(nullptr) && WAZADATA::GetFlag(waza, 0xe, nullptr)) {
+        int32_t args[] = {};
+        return SetupBTLV_STRPARAM(strParam, 0x110, 1, args, sizeof(args) / sizeof(*args));
+    }
+
+    if (bpp->CheckSick(0x18, nullptr) && !bpp->IsGMode(nullptr) && WAZADATA::GetFlag(waza, 8, nullptr)) {
+        int32_t args[] = { bpp->GetID(nullptr) };
+        return SetupBTLV_STRPARAM(strParam, 0x744, 2, args, sizeof(args) / sizeof(*args));
+    }
+
+    if (waza == GIGATON_HAMMER_WAZANO && bpp->fields.m_prevSelectWazaID == waza)
+        return true;
+
+    return false;
 }

@@ -26,3 +26,8 @@
     bl BTL_STRID_STD_system_array_new
 // 18048c0:
 //    b ADD_Karagenki
+
+
+// BTL_CLIENT$$is_unselectable_waza
+1f54b40:
+    b Dpr_Battle_Logic_BTL_CLIENT_is_unselectable_waza
