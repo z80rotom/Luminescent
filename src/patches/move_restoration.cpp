@@ -310,6 +310,8 @@ bool SetupBTLV_STRPARAM(BTLV_STRPARAM_o *strParam, uint16_t strID, uint8_t strTy
         return true;
 
     strParam->fields.strType = strType;
+    strParam->fields.strID = strID;
+    strParam->fields.wait = 0;
     System_Int32_array *oldArgs = strParam->fields.args;
 
     for (uint64_t i = 0; i < oldArgs->max_length; ++i)
@@ -428,8 +430,8 @@ bool Dpr_Battle_Logic_BTL_CLIENT_is_unselectable_waza(BTL_CLIENT_o *bc, BTL_POKE
     }
 
     if (waza == GIGATON_HAMMER_WAZANO && bpp->fields.m_prevSelectWazaID == waza) {
-        /*int32_t args[] = { bpp->GetID(nullptr), waza };
-        return SetupBTLV_STRPARAM(strParam, 1926, 2, args, sizeof(args) / sizeof(*args));*/
+        int32_t args[] = { bpp->GetID(nullptr), waza };
+        return SetupBTLV_STRPARAM(strParam, 1926, 2, args, sizeof(args) / sizeof(*args));
         return true;
     }
 
