@@ -3,6 +3,8 @@
 #include "il2cpp.hpp"
 #include "Dpr/Battle/Logic/BTL_POKEPARAM.hpp"
 #include "Dpr/Battle/Logic/EventFactor.hpp"
+#include "Dpr/Battle/Logic/ExPokePos.hpp"
+#include "Dpr/Battle/Logic/Section_CureSick.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_Message.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_FormChange.hpp"
 #include "Dpr/Battle/Logic/Section_FieldEffect_Add_Description.hpp"
@@ -10,6 +12,8 @@
 #include "Dpr/Battle/Logic/Section_FromEvent_SetItem_Description.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_SetWazaEffectIndex_Description_o.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_SwapItem_Description.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_RankReset.hpp"
+#include "Dpr/Battle/Logic/Section_SideEffect_Add.hpp"
 
 namespace Dpr
 {
@@ -60,6 +64,13 @@ namespace Dpr
                 static int32_t GetCompetitor(EventFactor_EventHandlerArgs_o **args, MethodInfo *method);
                 // 1d0bd20
                 static bool SetItem(EventFactor_EventHandlerArgs_o **args, Section_FromEvent_SetItem_Description_o **desc, MethodInfo *method);
+
+                static uint8_t ExpandExistPokeID(EventFactor_EventHandlerArgs_o **args, ExPokePos_o **exPos, System_Byte_array *dst_pokeID, MethodInfo *method);
+                static bool AddSideEffect(EventFactor_EventHandlerArgs_o **args, Section_SideEffect_Add_Description_o **desc, MethodInfo *method);
+                static bool RankReset(EventFactor_EventHandlerArgs_o **args, Section_FromEvent_RankReset_Description_o **desc, MethodInfo *method);
+                static uint8_t GetExistFrontPokePos(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
+                static int32_t PokeIDtoSide(EventFactor_EventHandlerArgs_o **args, uint8_t *pokeID, MethodInfo *method);
+                static bool CureSick(EventFactor_EventHandlerArgs_o **args, Section_CureSick_Description_o **desc, MethodInfo *method);
             };
 
             extern void * Common_TypeInfo;

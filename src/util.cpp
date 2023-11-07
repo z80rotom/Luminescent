@@ -157,12 +157,22 @@ uint32_t getLevelCapIndexOfLevel(uint32_t level)
     return 0;
 }
 
-Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * createEventHandlerTable(uint16_t eventID, MethodInfo * src, Il2CppMethodPointer methodPointer)
+System::Array<Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *> * CreateEventHandlerTable(uint32_t size)
+{
+    auto *array = (System::Array<Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *> *) malloc(32 + 8 * size);
+    array->max_length = size;
+    for (int i = 0; i < size; ++i)
+        array->m_Items[i] = nullptr;
+    return array;
+}
+
+Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * CreateEventHandler(uint16_t eventID, MethodInfo * src, Il2CppMethodPointer methodPointer)
 {
     MethodInfo * method = copyMethodInfo(src, methodPointer);
-    Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * evtHandlerTable = (Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *) il2cpp_object_new(Dpr::Battle::Logic::EventFactor_EventHandlerTable_TypeInfo);
-    Dpr::Battle::Logic::EventFactor_EventHandler_o * evtHandler = (Dpr::Battle::Logic::EventFactor_EventHandler_o *) il2cpp_object_new(Dpr::Battle::Logic::EventFactor_EventHandler_TypeInfo);
+    auto * evtHandlerTable = (Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *) malloc(sizeof(Dpr::Battle::Logic::EventFactor_EventHandlerTable_o));
+    auto * evtHandler = (Dpr::Battle::Logic::EventFactor_EventHandler_o *) malloc(sizeof(Dpr::Battle::Logic::EventFactor_EventHandler_o));
     evtHandler->ctor((intptr_t) methodPointer, method);
+    evtHandler->fields.super.delegates = nullptr;
     evtHandlerTable->fields.eventID = eventID;
     evtHandlerTable->fields.eventHandler = evtHandler;
 

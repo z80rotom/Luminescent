@@ -417,9 +417,9 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_Blademaster(MethodInfo *m
     socket_log_fmt("ADD_Blademaster\n");
     if (sBlademasterEventHandlerTable == nullptr) {
         socket_log_fmt("ADD_Blademaster init\n");
-        sBlademasterEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
-        sBlademasterEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::WAZA_POWER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_Blademaster_WazaPow);
-        sBlademasterEventHandlerTable->m_Items[1] = createEventHandlerTable(EventID::CRITICAL_CHECK, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_Blademaster_CritCheck);
+        sBlademasterEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(2);
+        sBlademasterEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::WAZA_POWER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_Blademaster_WazaPow);
+        sBlademasterEventHandlerTable->m_Items[1] = CreateEventHandler(EventID::CRITICAL_CHECK, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_Blademaster_CritCheck);
     }
 
     return sBlademasterEventHandlerTable;
@@ -431,8 +431,8 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_ToxicDebris(MethodInfo *m
     socket_log_fmt("ADD_ToxicDebris\n");
     if (sToxicDebrisEventHandlerTable == nullptr) {
         socket_log_fmt("ADD_ToxicDebris init\n");
-        sToxicDebrisEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
-        sToxicDebrisEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::WAZA_DMG_REACTION, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_ToxicDebris);
+        sToxicDebrisEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sToxicDebrisEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::WAZA_DMG_REACTION, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_ToxicDebris);
     }
 
     return sToxicDebrisEventHandlerTable;
@@ -443,10 +443,10 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_PurifyingSalt(MethodInfo 
     socket_log_fmt("ADD_PurifyingSalt\n");
     if (sPurifyingSaltEventHandlerTable == nullptr) {
         socket_log_fmt("ADD_PurifyingSalt init\n");
-        sPurifyingSaltEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 3);
-        sPurifyingSaltEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::WAZA_DMG_REACTION, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_PurifyingSalt_AttackerPower);
-        sPurifyingSaltEventHandlerTable->m_Items[1] = createEventHandlerTable(EventID::ADDSICK_CHECKFAIL, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_PurifyingSalt_AddSick_Checkfail);
-        sPurifyingSaltEventHandlerTable->m_Items[2] = createEventHandlerTable(EventID::CHECK_INEMURI, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_PurifyingSalt_InemuriCheck);
+        sPurifyingSaltEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(3);
+        sPurifyingSaltEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::WAZA_DMG_REACTION, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_PurifyingSalt_AttackerPower);
+        sPurifyingSaltEventHandlerTable->m_Items[1] = CreateEventHandler(EventID::ADDSICK_CHECKFAIL, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_PurifyingSalt_AddSick_Checkfail);
+        sPurifyingSaltEventHandlerTable->m_Items[2] = CreateEventHandler(EventID::CHECK_INEMURI, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_PurifyingSalt_InemuriCheck);
     }
 
     return sPurifyingSaltEventHandlerTable;
@@ -457,8 +457,8 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_VikavoltPriority(MethodIn
     socket_log_fmt("ADD_VikavoltPriority\n");
     if (sVikavoltPriorityEventHandlerTable == nullptr) {
         socket_log_fmt("ADD_VikavoltPriority init\n");
-        sVikavoltPriorityEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
-        sVikavoltPriorityEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::GET_WAZA_PRI, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_VikavoltPriority_GetPriority);
+        sVikavoltPriorityEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sVikavoltPriorityEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::GET_WAZA_PRI, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_VikavoltPriority_GetPriority);
     }
 
     return sVikavoltPriorityEventHandlerTable;
@@ -469,8 +469,8 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_ZeroToHero(MethodInfo *me
     socket_log_fmt("ADD_ZeroToHero\n");
     if (sZeroToHeroEventHandlerTable == nullptr) {
         socket_log_fmt("ADD_ZeroToHero init\n");
-        sZeroToHeroEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
-        sZeroToHeroEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::MEMBER_OUT_FIXED, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_ZeroToHero_MemberOutFixed);
+        sZeroToHeroEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sZeroToHeroEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::MEMBER_OUT_FIXED, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_ZeroToHero_MemberOutFixed);
     }
 
     return sZeroToHeroEventHandlerTable;
@@ -481,8 +481,8 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_ZeroToHero(MethodInfo *me
 //     socket_log_fmt("ADD_Opportunist\n");
 //     if (sOpportunistEventHandlerTable == nullptr) {
 //         socket_log_fmt("ADD_Opportunist init\n");
-//         sOpportunistEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
-//         sOpportunistEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::RANKEFF_FIXED, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handlerOpportunist_Rankeff_Fixed);
+//         sOpportunistEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+//         sOpportunistEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::RANKEFF_FIXED, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handlerOpportunist_Rankeff_Fixed);
 //     }
 
 //     return sOpportunistEventHandlerTable;
@@ -494,11 +494,11 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_MyceliumMight(MethodInfo 
     socket_log_fmt("ADD_MyceliumMight\n");
     if (sMyceliumMightEventHandlerTable == nullptr) {
         socket_log_fmt("ADD_MyceliumMight init\n");
-        sMyceliumMightEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 4);
-        sMyceliumMightEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::GET_WAZA_PRI, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MyceliumMight_GetPriority);
-        sMyceliumMightEventHandlerTable->m_Items[1] = createEventHandlerTable(EventID::WAZASEQ_START, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MyceliumMight_Start);
-        sMyceliumMightEventHandlerTable->m_Items[2] = createEventHandlerTable(EventID::WAZASEQ_END, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MyceliumMight_End);
-        sMyceliumMightEventHandlerTable->m_Items[3] = createEventHandlerTable(EventID::TOKUSEI_DISABLE, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MyceliumMight_End);
+        sMyceliumMightEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(4);
+        sMyceliumMightEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::GET_WAZA_PRI, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MyceliumMight_GetPriority);
+        sMyceliumMightEventHandlerTable->m_Items[1] = CreateEventHandler(EventID::WAZASEQ_START, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MyceliumMight_Start);
+        sMyceliumMightEventHandlerTable->m_Items[2] = CreateEventHandler(EventID::WAZASEQ_END, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MyceliumMight_End);
+        sMyceliumMightEventHandlerTable->m_Items[3] = CreateEventHandler(EventID::TOKUSEI_DISABLE, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MyceliumMight_End);
     }
 
     return sMyceliumMightEventHandlerTable;
@@ -507,9 +507,9 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_MyceliumMight(MethodInfo 
 System::Array<EventFactor_EventHandlerTable_o *> * ADD_TrickySurge(MethodInfo * method)
 {
     if (sTrickySurgeEventHandlerTable == nullptr) {
-        sTrickySurgeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
-        sTrickySurgeEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::MEMBER_IN, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_TrickySurge);
-        sTrickySurgeEventHandlerTable->m_Items[1] = createEventHandlerTable(EventID::CHANGE_TOKUSEI_AFTER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_TrickySurge);
+        sTrickySurgeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(2);
+        sTrickySurgeEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::MEMBER_IN, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_TrickySurge);
+        sTrickySurgeEventHandlerTable->m_Items[1] = CreateEventHandler(EventID::CHANGE_TOKUSEI_AFTER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_TrickySurge);
     }
 
     return sTrickySurgeEventHandlerTable;
@@ -519,9 +519,9 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_TrickySurge(MethodInfo * 
 System::Array<EventFactor_EventHandlerTable_o *> * ADD_WonderSurge(MethodInfo * method)
 {
     if (sWonderSurgeEventHandlerTable == nullptr) {
-        sWonderSurgeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
-        sWonderSurgeEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::MEMBER_IN, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_WonderSurge);
-        sWonderSurgeEventHandlerTable->m_Items[1] = createEventHandlerTable(EventID::CHANGE_TOKUSEI_AFTER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_WonderSurge);
+        sWonderSurgeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(2);
+        sWonderSurgeEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::MEMBER_IN, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_WonderSurge);
+        sWonderSurgeEventHandlerTable->m_Items[1] = CreateEventHandler(EventID::CHANGE_TOKUSEI_AFTER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_WonderSurge);
     }
 
     return sWonderSurgeEventHandlerTable;
@@ -531,9 +531,9 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_WonderSurge(MethodInfo * 
 System::Array<EventFactor_EventHandlerTable_o *> * ADD_MagicSurge(MethodInfo * method)
 {
     if (sMagicSurgeEventHandlerTable == nullptr) {
-        sMagicSurgeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 2);
-        sMagicSurgeEventHandlerTable->m_Items[0] = createEventHandlerTable(EventID::MEMBER_IN, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MagicSurge);
-        sMagicSurgeEventHandlerTable->m_Items[1] = createEventHandlerTable(EventID::CHANGE_TOKUSEI_AFTER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MagicSurge);
+        sMagicSurgeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(2);
+        sMagicSurgeEventHandlerTable->m_Items[0] = CreateEventHandler(EventID::MEMBER_IN, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MagicSurge);
+        sMagicSurgeEventHandlerTable->m_Items[1] = CreateEventHandler(EventID::CHANGE_TOKUSEI_AFTER, Method_handler_TetunoKobusi, (Il2CppMethodPointer) &handler_MagicSurge);
     }
 
     return sMagicSurgeEventHandlerTable;

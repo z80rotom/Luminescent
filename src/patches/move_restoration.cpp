@@ -9,7 +9,10 @@
 #include "Dpr/Battle/Logic/Handler.hpp"
 #include "Dpr/Battle/Logic/MainModule.hpp"
 #include "Dpr/Battle/Logic/Tables.hpp"
+#include "Dpr/Battle/Logic/Section_CureSick.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_Message.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_RankReset.hpp"
+#include "Dpr/Battle/Logic/Section_SideEffect_Add.hpp"
 #include "Dpr/Battle/Logic/SICKCONT.hpp"
 #include "Dpr/Battle/Logic/StrParam.hpp"
 #include "Dpr/Battle/Logic/WAZADATA.hpp"
@@ -42,6 +45,7 @@ const uint16_t WORK_ADRS = 68;
 const uint16_t AVOID_FLAG = 73;
 const uint16_t GEN_FLAG = 89;
 const uint16_t DISABLE_BURN_FLAG = 90;
+const uint16_t SUCCESS_FLAG = 120;
 // Refer to EventVar.Label = CHECK_HIDE
 const uint16_t HIDE_FLY = 3;
 const uint16_t HIDE_DIG = 5;
@@ -57,7 +61,7 @@ constexpr size_t BTL_STRID_STD_Magnitude6 = 124;
 constexpr size_t BTL_STRID_STD_Magnitude7 = 125;
 constexpr size_t BTL_STRID_STD_YubiWoFuru = 137;
 
-constexpr uint32_t NUM_NEW_MOVES = 4;
+constexpr uint32_t NUM_NEW_MOVES = 9;
 constexpr uint32_t NUM_KARAGENKI_MOVES = 2;
 constexpr uint32_t NUM_YUBI_WO_FURU_MOVES = 0;
 // WazaNo
@@ -73,6 +77,11 @@ constexpr int32_t SKYUPPERCUT_WAZANO = 327;
 constexpr int32_t OMINIOUSWIND_WAZANO = 466;
 constexpr int32_t BELCH_WAZANO = 562;
 constexpr int32_t GIGATON_HAMMER_WAZANO = 603;
+constexpr int32_t GLITZY_GLOW_WAZANO = 736;
+constexpr int32_t BADDY_BAD_WAZANO = 737;
+constexpr int32_t FREEZY_FROST_WAZANO = 739;
+constexpr int32_t SPARKLY_SWIRL_WAZANO = 740;
+constexpr int32_t VEEVEE_VOLLEY_WAZANO = 741;
 constexpr int32_t STUFF_CHEEKS_WAZANO = 747;
 
 constexpr uint32_t NUM_NEW_BTL_STRID_SET = 6;
@@ -80,6 +89,10 @@ constexpr uint32_t NUM_NEW_BTL_STRID_STD = 6;
 constexpr uint32_t NUM_BTL_STRID_STD = 547;
 
 constexpr uint16_t NULL_ITEM = 0;
+
+// SideEffectIDs
+constexpr int32_t REFLECT_SIDE = 0;
+constexpr int32_t LIGHT_SCREEN_SIDE = 1;
 
 extern void * DAT_03a6bb14;
 extern MethodInfo * Handler_Karagenki_WazaPowMethodInfo;
@@ -96,6 +109,41 @@ int32_t MAGNITUDE_POWER_TABLE[7] = {
     110,
     150,
 };
+
+
+bool HandlerAddSideEffect(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, int32_t effect, int32_t side, BTL_SICKCONT_o cont) {
+    socket_log_fmt("HandlerAddSideEffect\n");
+
+    system_load_typeinfo((void *)0xa8ef);
+    auto *desc = (Section_SideEffect_Add_Description_o *) il2cpp_object_new(Section_SideEffect_Add_Description_TypeInfo);
+    desc->ctor(nullptr);
+    desc->fields.pokeID = pokeID;
+    desc->fields.effect = effect;
+    desc->fields.side = side;
+    desc->fields.cont = cont;
+    desc->fields.isReplaceSuccessMessageArgs0ByExpandSide = true;
+    return Common::AddSideEffect(args, &desc, nullptr);
+}
+
+void HandlerRankResetAll(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID) {
+    socket_log_fmt("HandlerRankResetAll\n");
+
+    system_load_typeinfo((void *)0xa9b3);
+    auto *desc = (Section_FromEvent_RankReset_Description_o *) il2cpp_object_new(Section_FromEvent_RankReset_Description_TypeInfo);
+    desc->ctor(nullptr);
+    auto *exPos = (ExPokePos_o *)il2cpp_object_new(ExPokePos_TypeInfo);
+    exPos->ctor(ExPosType::FULL_ALL, Common::GetExistFrontPokePos(args, pokeID, nullptr), nullptr);
+    desc->fields.pokeCount = Common::ExpandExistPokeID(args, &exPos, desc->fields.pokeID, nullptr);
+    Common::RankReset(args, &desc, nullptr);
+
+    Section_FromEvent_Message::Description_o * descMsg = (Section_FromEvent_Message::Description_o *) il2cpp_object_new(Section_FromEvent_Message::Description_TypeInfo);
+    descMsg->ctor(nullptr);
+    descMsg->fields.pokeID = pokeID;
+    descMsg->fields.message->Setup(1, 116, nullptr);
+    Common::Message(args, &descMsg, nullptr);
+}
+
+
 
 void handler_Return_WazaPow(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
 {
@@ -184,6 +232,57 @@ void handler_Magnitude_Msg(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID
     // Common::RewriteEventVar(args, GEN_FLAG, 1, (MethodInfo *) nullptr);
 }
 
+// Glitzy Glow
+void HandlerGlitzyGlowDamageprocEndHitReal(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method) {
+    if (Common::GetEventVar(args, POKEID_ATK, nullptr) != pokeID)
+        return;
+
+    int32_t side = Common::PokeIDtoSide(args, &pokeID, nullptr);
+    BTL_SICKCONT_o sickCont = SICKCONT::MakeTurn(pokeID, 5, nullptr);
+
+    Handler::Waza_o::common_SideEffectCore(args, pokeID, side,
+                                           LIGHT_SCREEN_SIDE, &sickCont,
+                                           1, 145, side, true, nullptr);
+}
+// Baddy Bad
+void HandlerBaddyBadDamageprocEndHitReal(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method) {
+    if (Common::GetEventVar(args, POKEID_ATK, nullptr) != pokeID)
+        return;
+
+    int32_t side = Common::PokeIDtoSide(args, &pokeID, nullptr);
+    BTL_SICKCONT_o sickCont = SICKCONT::MakeTurn(pokeID, 5, nullptr);
+
+    Handler::Waza_o::common_SideEffectCore(args, pokeID, side,
+                                           REFLECT_SIDE, &sickCont,
+                                           1, 141, side, true, nullptr);
+}
+// Freezy Frost
+void HandlerFreezyFrostDamageprocEndHitReal(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method) {
+    if (Common::GetEventVar(args, POKEID_ATK, nullptr) != pokeID)
+        return;
+
+    HandlerRankResetAll(args, pokeID);
+}
+// Sparkly Swirl
+void HandlerSparklySwirlDamageprocEndHitReal(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method) {
+    if (Common::GetEventVar(args, POKEID_ATK, nullptr) != pokeID)
+        return;
+
+    BTL_POKEPARAM_o * bpp = Common::GetPokeParam(args, pokeID, (MethodInfo *) nullptr);
+    uint32_t sick = bpp->GetPokeSick(nullptr);
+
+    system_load_typeinfo((void *)0x893f);
+    Section_CureSick_Description_o* desc = (Section_CureSick_Description_o*) il2cpp_object_new(Section_CureSick_Description_TypeInfo);
+    desc->ctor(nullptr);
+    desc->fields.targetPokeCount = '\x01';
+    desc->fields.targetPokeID->m_Items[0] = pokeID;
+    desc->fields.pokeID = pokeID;
+    desc->fields.sick = sick;
+    Common::CureSick(args, &desc, nullptr);
+
+    Handler::Waza_o::common_CureFriendPokeSick(args, pokeID, true, true, nullptr);
+}
+
 
 int32_t KARAGENKI_ENTRIES[NUM_KARAGENKI_MOVES] = {
     RETURN_WAZANO,
@@ -203,9 +302,15 @@ int32_t KARAGENKI_ENTRIES[NUM_KARAGENKI_MOVES] = {
 static System::Array<EventFactor_EventHandlerTable_o *> * sReturnEventHandlerTable = nullptr;
 static System::Array<EventFactor_EventHandlerTable_o *> * sFrustrationEventHandlerTable = nullptr;
 static System::Array<EventFactor_EventHandlerTable_o *> * sMagnitudeEventHandlerTable = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sHandlerTableGlitzyGlow = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sHandlerTableBaddyBad = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sHandlerTableFreezyFrost = nullptr;
+static System::Array<EventFactor_EventHandlerTable_o *> * sHandlerTableSparklySwirl = nullptr;
 
 const int16_t EVENT_ID_REQWAZA_MSG = 27;
 const int16_t EVENT_ID_WAZA_POWER = 70;
+const int16_t EVENT_ID_DAMAGEPROC_END_HIT_REAL = 162;
+const int16_t UNCATEGORIZE_WAZA = 196;
 
 // Dpr.Battle.Logic.Handler.Waza$$
 System::Array<EventFactor_EventHandlerTable_o *> * ADD_Return(MethodInfo *method)
@@ -213,8 +318,8 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_Return(MethodInfo *method
     socket_log_fmt("ADD_Return\n");
     if (sReturnEventHandlerTable == nullptr) {
         // socket_log_fmt("ADD_Return init\n");
-        sReturnEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
-        sReturnEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Return_WazaPow);
+        sReturnEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sReturnEventHandlerTable->m_Items[0] = CreateEventHandler(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Return_WazaPow);
     }
 
     return sReturnEventHandlerTable;
@@ -225,8 +330,8 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_Frustration(MethodInfo *m
     socket_log_fmt("ADD_Frustration\n");
     if (sFrustrationEventHandlerTable == nullptr) {
         // socket_log_fmt("ADD_Frustration init\n");
-        sFrustrationEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
-        sFrustrationEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Frustration_WazaPow);
+        sFrustrationEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sFrustrationEventHandlerTable->m_Items[0] = CreateEventHandler(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Frustration_WazaPow);
     }
 
     return sFrustrationEventHandlerTable;
@@ -237,19 +342,54 @@ System::Array<EventFactor_EventHandlerTable_o *> * ADD_Magnitude(MethodInfo *met
     socket_log_fmt("ADD_Magnitude\n");
     if (sMagnitudeEventHandlerTable == nullptr) {
         // socket_log_fmt("ADD_Magnitude init\n");
-        sMagnitudeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) system_array_new(EventFactor_EventHandlerTable_Array_TypeInfo, 1);
-        sMagnitudeEventHandlerTable->m_Items[0] = createEventHandlerTable(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_WazaPow);
-        //sMagnitudeEventHandlerTable->m_Items[1] = createEventHandlerTable(EVENT_ID_REQWAZA_MSG, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_Msg);
+        sMagnitudeEventHandlerTable = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sMagnitudeEventHandlerTable->m_Items[0] = CreateEventHandler(EVENT_ID_WAZA_POWER, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_WazaPow);
+        //sMagnitudeEventHandlerTable->m_Items[1] = CreateEventHandler(EVENT_ID_REQWAZA_MSG, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &handler_Magnitude_Msg);
     }
 
     return sMagnitudeEventHandlerTable;
+}
+
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_GlitzyGlow(MethodInfo *method) {
+    socket_log_fmt("ADD_GlitzyGlow\n");
+    if (sHandlerTableGlitzyGlow == nullptr) {
+        sHandlerTableGlitzyGlow = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sHandlerTableGlitzyGlow->m_Items[0] = CreateEventHandler(EVENT_ID_DAMAGEPROC_END_HIT_REAL, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &HandlerGlitzyGlowDamageprocEndHitReal);
+    }
+    return sHandlerTableGlitzyGlow;
+}
+
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_BaddyBad(MethodInfo *method) {
+    socket_log_fmt("ADD_BaddyBad\n");
+    if (sHandlerTableBaddyBad == nullptr) {
+        sHandlerTableBaddyBad = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sHandlerTableBaddyBad->m_Items[0] = CreateEventHandler(EVENT_ID_DAMAGEPROC_END_HIT_REAL, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &HandlerBaddyBadDamageprocEndHitReal);
+    }
+    return sHandlerTableBaddyBad;
+}
+
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_FreezyFrost(MethodInfo *method) {
+    socket_log_fmt("ADD_FreezyFrost\n");
+    if (sHandlerTableFreezyFrost == nullptr) {
+        sHandlerTableFreezyFrost = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sHandlerTableFreezyFrost->m_Items[0] = CreateEventHandler(EVENT_ID_DAMAGEPROC_END_HIT_REAL, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &HandlerFreezyFrostDamageprocEndHitReal);
+    }
+    return sHandlerTableFreezyFrost;
+}
+
+System::Array<EventFactor_EventHandlerTable_o *> * ADD_SparklySwirl(MethodInfo *method) {
+    socket_log_fmt("ADD_SparklySwirl\n");
+    if (sHandlerTableSparklySwirl == nullptr) {
+        sHandlerTableSparklySwirl = (System::Array<EventFactor_EventHandlerTable_o *> *) CreateEventHandlerTable(1);
+        sHandlerTableSparklySwirl->m_Items[0] = CreateEventHandler(EVENT_ID_DAMAGEPROC_END_HIT_REAL, Handler_Karagenki_WazaPowMethodInfo, (Il2CppMethodPointer) &HandlerSparklySwirlDamageprocEndHitReal);
+    }
+    return sHandlerTableSparklySwirl;
 }
 
 
 
 void AddHandler(System::Array<Waza_GET_FUNC_TABLE_ELEM_o> * getFuncTable, uint32_t * idx, int32_t wazaNo, Il2CppMethodPointer methodPointer)
 {
-
     MethodInfo * method = copyMethodInfo(Method_ADD_Karagenki, methodPointer);
     Waza_GET_FUNC_TABLE_ELEM_o * elem = &getFuncTable->m_Items[*idx];
     socket_log_fmt("Got GET_FUNC_TABLE_ELEM at %i\n", *idx);
@@ -277,6 +417,17 @@ void * Waza_system_array_new(void * typeInfo, uint32_t len)
     AddHandler(getFuncTable, &idx, OMINIOUSWIND_WAZANO, (Il2CppMethodPointer) &ADD_GensiNoTikara);
     socket_log_fmt("Silver Wind idx: %08X\n", idx);
     AddHandler(getFuncTable, &idx, SILVERWIND_WAZANO, (Il2CppMethodPointer) &ADD_GensiNoTikara);
+
+    socket_log_fmt("Glitzy Glow idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, GLITZY_GLOW_WAZANO, (Il2CppMethodPointer) &ADD_GlitzyGlow);
+    socket_log_fmt("Baddy Bad idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, BADDY_BAD_WAZANO, (Il2CppMethodPointer) &ADD_BaddyBad);
+    socket_log_fmt("Freezy Frost idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, FREEZY_FROST_WAZANO, (Il2CppMethodPointer) &ADD_FreezyFrost);
+    socket_log_fmt("Sparkly Swirl idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, SPARKLY_SWIRL_WAZANO, (Il2CppMethodPointer) &ADD_SparklySwirl);
+    socket_log_fmt("Veevee Volley idx: %08X\n", idx);
+    AddHandler(getFuncTable, &idx, VEEVEE_VOLLEY_WAZANO, (Il2CppMethodPointer) &ADD_Return);
 
     return getFuncTable;
 }

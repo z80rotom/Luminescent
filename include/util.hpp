@@ -27,4 +27,5 @@ uint32_t getLevelCapIndex();
 uint32_t getMaxLevelOfCapIndex(uint32_t index);
 uint32_t getMaxLevel();
 uint32_t getLevelCapIndexOfLevel(uint32_t level);
-Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * createEventHandlerTable(uint16_t eventID, MethodInfo * src, Il2CppMethodPointer methodPointer);
+System::Array<Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *> * CreateEventHandlerTable(uint32_t size);
+Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * CreateEventHandler(uint16_t eventID, MethodInfo * src, Il2CppMethodPointer methodPointer);
