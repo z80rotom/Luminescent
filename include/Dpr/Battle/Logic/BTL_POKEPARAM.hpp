@@ -82,6 +82,7 @@ namespace Dpr
                 bool CheckSick(int32_t sickType,MethodInfo *method);
                 uint8_t GetID(MethodInfo *method);
                 int32_t GetValue(int32_t valueID,MethodInfo *method);
+                uint16_t GetMonsNo(MethodInfo *method);
 
                 BTL_POKEPARAM_c *klass;
                 void *monitor;

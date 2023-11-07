@@ -514,3 +514,5 @@ _ZN3Dpr6Battle5Logic8SICKCONT8MakeTurnEhhP10MethodInfo = 0x20d4680 - 0x05708000;
 _ZN3Dpr6Battle5Logic30Section_CureSick_Description_o4ctorEP10MethodInfo = 0x21b48b0 - 0x05708000;
 _ZN3Dpr6Battle5Logic37Section_CureSick_Description_TypeInfoE = 0x4c5b1a8 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common8CureSickEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_30Section_CureSick_Description_oEP10MethodInfo = 0x1d0a960 - 0x05708000;
+
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o9GetMonsNoEP10MethodInfo = 0x1fdcfb0 - 0x05708000;
