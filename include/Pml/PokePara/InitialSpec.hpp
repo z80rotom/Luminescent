@@ -20,7 +20,7 @@ namespace Pml
             uint16_t seikaku;
             uint8_t tokuseiIndex;
             uint8_t rareTryCount;
-            System::Array<uint16_t>* talentPower;
+            System_UInt16_array* talentPower;
             uint32_t friendship;
             uint8_t talentVNum;
             uint16_t weight;
