@@ -19,7 +19,6 @@ void Dpr_Battle_Logic_Handler_Item_handler_Leek(EventFactor_EventHandlerArgs_o**
     uint16_t monsNo = __this->GetMonsNo(nullptr);
 
     if (monsNo == 83 || monsNo == 865) {
-        socket_log_fmt("Raising crit rate!\n");
         int32_t critStage = Common::GetEventVar(args, 47, nullptr);
         Common::RewriteEventVar(args, 47, critStage + 2, nullptr);
     }
