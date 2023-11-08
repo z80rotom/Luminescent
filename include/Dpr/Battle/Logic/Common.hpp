@@ -4,6 +4,7 @@
 #include "Dpr/Battle/Logic/BTL_POKEPARAM.hpp"
 #include "Dpr/Battle/Logic/EventFactor.hpp"
 #include "Dpr/Battle/Logic/ExPokePos.hpp"
+#include "Dpr/Battle/Logic/PokeAction.hpp"
 #include "Dpr/Battle/Logic/Section_CureSick.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_Message.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_FormChange.hpp"
@@ -71,6 +72,10 @@ namespace Dpr
                 static uint8_t GetExistFrontPokePos(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
                 static int32_t PokeIDtoSide(EventFactor_EventHandlerArgs_o **args, uint8_t *pokeID, MethodInfo *method);
                 static bool CureSick(EventFactor_EventHandlerArgs_o **args, Section_CureSick_Description_o **desc, MethodInfo *method);
+                static PokeAction_o* SearchByPokeID(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, bool isSkipGStart, bool isSkipNull, MethodInfo *method);
+                static bool IsFriendPokeID(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID1, uint8_t pokeID2, MethodInfo *method);
+                static bool TokuseiWindow_In(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
+                static bool TokuseiWindow_Out(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
             };
 
             extern void * Common_TypeInfo;

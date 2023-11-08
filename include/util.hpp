@@ -29,3 +29,6 @@ uint32_t getMaxLevel();
 uint32_t getLevelCapIndexOfLevel(uint32_t level);
 System::Array<Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *> * CreateEventHandlerTable(uint32_t size);
 Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * CreateEventHandler(uint16_t eventID, MethodInfo * src, Il2CppMethodPointer methodPointer);
+void HandlerRankResetAll(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, uint8_t pokeID);
+void HandlerRankReset(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, uint8_t pokeID);
+

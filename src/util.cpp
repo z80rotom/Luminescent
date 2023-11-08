@@ -1,6 +1,9 @@
 #include "util.hpp"
 #include "il2cpp-api.h"
 #include "PlayerWork.hpp"
+#include "Dpr/Battle/Logic/Common.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_Message.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_RankReset.hpp"
 #include "logger.hpp"
 
 
@@ -177,4 +180,43 @@ Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * CreateEventHandler(uint16_
     evtHandlerTable->fields.eventHandler = evtHandler;
 
     return evtHandlerTable;
+}
+
+void HandlerRankResetAll(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, uint8_t pokeID) {
+    socket_log_fmt("HandlerRankResetAll\n");
+
+    using namespace Dpr::Battle::Logic;
+
+    system_load_typeinfo((void *)0xa9b3);
+    auto *desc = (Section_FromEvent_RankReset_Description_o *) il2cpp_object_new(Section_FromEvent_RankReset_Description_TypeInfo);
+    desc->ctor(nullptr);
+    auto *exPos = (ExPokePos_o *)il2cpp_object_new(ExPokePos_TypeInfo);
+    exPos->ctor(ExPosType::FULL_ALL, Common::GetExistFrontPokePos(args, pokeID, nullptr), nullptr);
+    desc->fields.pokeCount = Common::ExpandExistPokeID(args, &exPos, desc->fields.pokeID, nullptr);
+    Common::RankReset(args, &desc, nullptr);
+
+    Section_FromEvent_Message::Description_o * descMsg = (Section_FromEvent_Message::Description_o *) il2cpp_object_new(Section_FromEvent_Message::Description_TypeInfo);
+    descMsg->ctor(nullptr);
+    descMsg->fields.pokeID = pokeID;
+    descMsg->fields.message->Setup(1, 116, nullptr);
+    Common::Message(args, &descMsg, nullptr);
+}
+
+void HandlerRankReset(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, uint8_t pokeID) {
+    socket_log_fmt("HandlerRankReset\n");
+
+    using namespace Dpr::Battle::Logic;
+
+    system_load_typeinfo((void *)0xa911);
+    auto *desc = (Section_FromEvent_RankReset_Description_o *) il2cpp_object_new(Section_FromEvent_RankReset_Description_TypeInfo);
+    desc->ctor(nullptr);
+    desc->fields.pokeCount = 1;
+    desc->fields.pokeID->m_Items[0] = pokeID;
+    Common::RankReset(args, &desc, nullptr);
+
+    Section_FromEvent_Message::Description_o * descMsg = (Section_FromEvent_Message::Description_o *) il2cpp_object_new(Section_FromEvent_Message::Description_TypeInfo);
+    descMsg->ctor(nullptr);
+    descMsg->fields.pokeID = pokeID;
+    descMsg->fields.message->Setup(1, 268, nullptr);
+    Common::Message(args, &descMsg, nullptr);
 }

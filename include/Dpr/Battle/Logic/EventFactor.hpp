@@ -3,6 +3,7 @@
 #include "il2cpp.hpp"
 #include "Dpr/Battle/Logic/BattleEnv.hpp"
 #include "Dpr/Battle/Logic/EventSystem.hpp"
+#include "Dpr/Battle/Logic/PokeActionContainer.hpp"
 
 namespace Dpr
 {
@@ -93,7 +94,7 @@ namespace Dpr
             struct EventFactor_EventHandlerArgs_Fields {
                 struct MainModule_o* pMainModule;
                 BattleEnv_o* pBattleEnv;
-                struct PokeActionContainer_o* pPokeActionContainer;
+                PokeActionContainer_o* pPokeActionContainer;
                 struct PokeChangeRequest_o* pPokeChangeRequest;
                 struct SectionContainer_o* pSectionContainer;
                 struct SectionSharedData_o* pSectionSharedData;

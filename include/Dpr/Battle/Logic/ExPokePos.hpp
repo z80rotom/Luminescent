@@ -29,14 +29,14 @@ namespace Dpr
                 enum ExPosType {
                     BASE_POS,
                     NEXT_FRIENDS,
-                    AREA_ENEMY,
-                    AREA_OTHERS,
-                    AREA_MYTEAM,
-                    AREA_FRIENDS,
+                    AREA_ENEMY, // Adjacent Opponents
+                    AREA_OTHERS, // All but the User
+                    AREA_MYTEAM, // All Allies
+                    AREA_FRIENDS, // Adjacent Allies
                     AREA_ALL,
-                    FULL_ENEMY,
-                    FULL_FRIENDS,
-                    FULL_ALL
+                    FULL_ENEMY, // All Opponents
+                    FULL_FRIENDS, // All Allies and User
+                    FULL_ALL // All
                 };
             }
         }

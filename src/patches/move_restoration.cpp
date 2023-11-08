@@ -125,25 +125,6 @@ bool HandlerAddSideEffect(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID,
     return Common::AddSideEffect(args, &desc, nullptr);
 }
 
-void HandlerRankResetAll(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID) {
-    socket_log_fmt("HandlerRankResetAll\n");
-
-    system_load_typeinfo((void *)0xa9b3);
-    auto *desc = (Section_FromEvent_RankReset_Description_o *) il2cpp_object_new(Section_FromEvent_RankReset_Description_TypeInfo);
-    desc->ctor(nullptr);
-    auto *exPos = (ExPokePos_o *)il2cpp_object_new(ExPokePos_TypeInfo);
-    exPos->ctor(ExPosType::FULL_ALL, Common::GetExistFrontPokePos(args, pokeID, nullptr), nullptr);
-    desc->fields.pokeCount = Common::ExpandExistPokeID(args, &exPos, desc->fields.pokeID, nullptr);
-    Common::RankReset(args, &desc, nullptr);
-
-    Section_FromEvent_Message::Description_o * descMsg = (Section_FromEvent_Message::Description_o *) il2cpp_object_new(Section_FromEvent_Message::Description_TypeInfo);
-    descMsg->ctor(nullptr);
-    descMsg->fields.pokeID = pokeID;
-    descMsg->fields.message->Setup(1, 116, nullptr);
-    Common::Message(args, &descMsg, nullptr);
-}
-
-
 
 void handler_Return_WazaPow(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method)
 {
@@ -203,7 +184,6 @@ void handler_Magnitude_Msg(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID
     system_load_typeinfo((void *)0xa9bf);
     il2cpp_runtime_class_init(Common_TypeInfo);
 
-    // TODO: Stubbed
     socket_log_fmt("handler_Magnitude_Msg\n");
     int32_t evPokeID = Common::GetEventVar(args, POKEID_ATK, (MethodInfo *) nullptr);
 
