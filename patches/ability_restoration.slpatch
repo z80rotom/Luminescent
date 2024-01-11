@@ -1,3 +1,6 @@
 [target=main, version=bd_130]
 1964f24:
     bl Tokusei_system_array_new
+
+1942fd0:
+    cmp x0, #0x2

@@ -4,6 +4,8 @@
 #include "Pml/PokePara/CoreParam.h"
 #include "System/Array.hpp"
 
+#include "BTL_SICKCONT.hpp"
+
 namespace Dpr
 {
     namespace Battle
@@ -70,6 +72,17 @@ namespace Dpr
 
                 Pml::PokePara::CoreParam * GetSrcDataConst(MethodInfo *method);
 
+                uint16_t GetItemEffective(FieldStatus_o **fldSim, MethodInfo *method);
+                BTL_SICKCONT_o GetSickCont(int32_t sick, MethodInfo *method);
+                uint16_t GetSickParam(int32_t sick, MethodInfo *method);
+                bool IsGMode(MethodInfo *method);
+                bool PERMFLAG_Get(int32_t flagID, MethodInfo *method);
+                bool WAZA_IsUsable(int32_t waza, MethodInfo *method);
+
+                bool CheckSick(int32_t sickType,MethodInfo *method);
+                uint8_t GetID(MethodInfo *method);
+                int32_t GetValue(int32_t valueID,MethodInfo *method);
+                uint16_t GetMonsNo(MethodInfo *method);
 
                 BTL_POKEPARAM_c *klass;
                 void *monitor;

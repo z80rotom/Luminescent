@@ -12,7 +12,8 @@ _Znwm = 0x00584220 - 0x05708000;
 _Znam = 0x00584560 - 0x05708000;
 _ZdlPv = 0x005845c0 - 0x05708000;
 _ZdaPv = 0x005848d0 - 0x05708000;
- 
+
+_ZN10PlayerWork15get_playerPartyEP10MethodInfo = 0x02ce2b50 - 0x05708000;
 _ZN10PlayerWork10get_zoneIDEP10MethodInfo = 0x02ceea50 - 0x05708000;
 _ZN3Pml5Local6Random8GetValueEP10MethodInfo = 0x024a00a0 - 0x05708000;
 _ZN3Pml8PokePara8CalcTool11IsRareColorEjjP10MethodInfo = 0x024ad790 - 0x05708000;
@@ -48,7 +49,7 @@ _Z21_system_load_typeinfoPv = 0x00264fe0 - 0x05708000;
 _Z18il2cpp_object_initPvS_ = 0x002926e0 - 0x05708000;
 System_Boolean_array_TypeInfo = 0x04e4aa20 - 0x056E6000;
 System_Byte_array_typeInfo = 0x04c552e0 - 0x05708000;
-System_UInt16_array_TypeInfo = 0x04e4aae8 - 0x056E6000;
+System_UInt16_array_TypeInfo = 0x04c559e8 - 0x05708000;
 System_UInt32_array_TypeInfo = 0x04e4a9c8 - 0x056E6000;
 System_Int32_array_TypeInfo = 0x04c553e0 - 0x05708000;
 UnityEngine_Vector3_Array_TypeInfo = 0x04e4cdf8 - 0x056E6000;
@@ -110,7 +111,6 @@ _ZN6System11Collections7Generic20ListXMenuTopItem_AddEPNS1_33List_ShopBoutiqueIt
 _ZN6System11Collections7Generic46List_ShopBoutiqueItemItem_Param_Add_MethodInfoE = 0x04bba810 - 0x05708000;
 PTR_DATA_04bba8a8 = 0x04bba8a8 - 0x05708000;
 
-MonsLv_Array_TypeInfo = 0x04e54300 - 0x056E6000;
 _ZN11GameManager19GetFieldEncountDataEiP10MethodInfo = 0x02cd1150 - 0x05708000;
 
 _ZN3Dpr2UI30ContextMenuItem_Param_TypeInfoE = 0x04c5e788 - 0x05708000;
@@ -247,6 +247,8 @@ _ZN14FieldManager_o9GetFormNoEiiiP10MethodInfo = 0x179f560 - 0x05708000;
 
 _ZN8ItemWork7SubItemEiiP10MethodInfo = 0x01aea450 - 0x05708000;
 _ZN3Dpr4Item10ItemInfo_o6get_IdEP10MethodInfo = 0x01ca61f0 - 0x05708000;
+_ZN8ItemWork11GetItemInfoEiP10MethodInfo = 0x01aea5b0 - 0x05708000;
+_ZN3Dpr4Item10ItemInfo_o9get_countEP10MethodInfo = 0x01ca5cc0 - 0x05708000;
 _ZN10PlayerWork9get_zukanEPN6DPData12ZUKAN_WORK_oEP10MethodInfo = 0x2cf1040 - 0x05708000;
 _ZN3Dpr7Message20MessageWordSetHelper12SetDigitWordEiiP10MethodInfo = 0x01f9a580 - 0x05708000;
 _ZN3Pml8PokePara9CoreParam8GetPowerEiP10MethodInfo = 0x20435c0 - 0x05708000;
@@ -287,11 +289,15 @@ _ZN3Dpr2UI7UIBag_o15OpenContextMenuEPN6System5ArrayIiEEP30System_Action_ContextM
 _ZN8ItemWork10IsDsPlayerEP10MethodInfo = 0x1aeb550 - 0x05708000;
 _ZN3Pml8Personal14PersonalSystem15GetPersonalDataEitP10MethodInfo = 0x024a0ca0 - 0x05708000;
 _ZN3Pml8PokePara9CoreParam11GetRareTypeEP10MethodInfo = 0x204a5a0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam10GetSeikakuEP10MethodInfo = 0x2048740 - 0x05708000;
 DAT_7103a679b8 = 0x3a679b8 - 0x05708000;
 _ZN11GameManager22get_currentPeriodOfDayEP10MethodInfo = 0x2cd0c60 - 0x05708000;
 _ZN3Pml8PokePara13InitialSpec_o4ctorEP10MethodInfo = 0x20521d0 - 0x05708000;
 _ZN3Dpr8EvScript15EvDataManager_o9JumpLabelEPN6System6StringEPNS0_18EventEndDelegate_oEP10MethodInfo = 0x02c423c0 - 0x05708000;
 _ZN3Dpr8EvScript15EvDataManager_o12UpdateEvdataEfbP10MethodInfo = 0x02c42ea0 - 0x05708000;
+_ZN3Dpr8EvScript15EvDataManager_o8RunEvCmdEiP10MethodInfo = 0x02c5b290 - 0x05708000;
+_ZN3Dpr8EvScript15EvDataManager_o16GetPokemonFormNoEPN3Pml8PokePara14PokemonParam_oEP10MethodInfo = 0x02c67ff0 - 0x05708000;
+_ZN3Dpr8EvScript15EvDataManager_o15GetPokemonParamEiiP10MethodInfo =  0x02c67f20 - 0x05708000;
 Handler_Karagenki_WazaPowMethodInfo = 0x04c7a3b0 - 0x05708000;
 Method_handler_TetunoKobusi = 0x4c79da0 - 0x05708000;
 _ZN3Dpr6Battle5Logic44EventFactor_EventHandlerTable_Array_TypeInfoE = 0x4c5b148 - 0x05708000;
@@ -320,6 +326,7 @@ _ZN3Dpr6Battle5Logic6Common22DetachSkipCheckHandlerEPPNS1_30EventFactor_EventHan
 DAT_7104cbc6f7 = 0x04cbc6f7 - 0x05708000;
 _ZN3Dpr5Field18SwayGrass_InfoTypeE = 0x4c5ac58 - 0x05708000;
 _Z12handler_HazePPN3Dpr6Battle5Logic30EventFactor_EventHandlerArgs_oEhP10MethodInfo = 0x17fc490 - 0x05708000;
+_ZN11WeatherWork13set_WeatherIDEiP10MethodInfo = 0x17d18a0 - 0x05708000;
 
 _ZN3Dpr6Battle5Logic37Section_FieldEffect_Add_Description_o4ctorEP10MethodInfo = 0x21b8240 - 0x05708000;
 _ZN3Dpr6Battle5Logic44Section_FieldEffect_Add_Description_TypeInfoE = 0x4c5b2f8 - 0x05708000;
@@ -329,8 +336,11 @@ _ZN3Dpr6Battle5Logic6Common14AddFieldEffectEPPNS1_30EventFactor_EventHandlerArgs
 _ZN3Dpr6Battle5Logic6Common16CheckFieldEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPiP10MethodInfo = 0x1d0a260 - 0x05708000;
 _ZN3Dpr6Battle5Logic6Common17RemoveFieldEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_50Section_FromEvent_FieldEffect_Remove_Description_oEP10MethodInfo = 0x1d0b7c0 - 0x05708000;
 
-_ZN10PlayerWork15get_Enc_SV_DataEv = 0x02cf2840 - 0x05708000;
+_ZN10PlayerWork15get_Enc_SV_DataEPN6DPData13ENC_SV_DATA_oEP10MethodInfo = 0x02cf2840 - 0x05708000;
 _ZN10PlayerWork15set_Enc_SV_DataEN6DPData13ENC_SV_DATA_oE = 0x02cf27d0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam9GetFormNoEP10MethodInfo = 0x02ce2b50 - 0x05708000;
+
+_ZN3Dpr3Box14BoxPokemonWork12ClearPokemonEiiP10MethodInfo = 0x01d30e80 - 0x05708000;
 
 StringLiteral_9194 = 0x4ca7d88 - 0x05708000;
 StringLiteral_9195 = 0x4ca7d90 - 0x05708000;
@@ -343,3 +353,178 @@ _Z14FUN_710025de78j = 0x25de78 - 0x05708000;
 _Z14FUN_71002543b0lj = 0x2543b0 - 0x05708000;
 _Z14FUN_7100266700Pv = 0x266700 - 0x05708000;
 _Z20thunk_FUN_71002926e0Pvm = 0x2926e0 - 0x05708000;
+
+EntityManager_TypeInfo = 0x04c59d10 - 0x05708000;
+GimmickWork_TypeInfo = 0x04c5ee48 - 0x05708000;
+AreaID_Array_TypeInfo = 0x04c64060 - 0x05708000;
+
+_ZN3Dpr17FieldObjectMove_o6UpdateEfP10MethodInfo = 0x01a77b00 - 0x05708000;
+_ZN3Dpr22FieldObjectRotateYaw_o6UpdateEfP10MethodInfo = 0x01a783e0 - 0x05708000;
+_ZN26FieldNagisaGymGearEntity_o10IsRotatingEP10MethodInfo = 0x01d52b20 - 0x05708000;
+_ZN26FieldNagisaGymGearEntity_o16GetDegRotateTypeEiP10MethodInfo = 0x01d52990 - 0x05708000;
+_ZN26FieldNagisaGymGearEntity_o6RotateEiiP10MethodInfo = 0x01d529c0 - 0x05708000;
+_ZN13GimmickWork_o13GetGearRotateEiP10MethodInfo = 0x02cd72d0 - 0x05708000;
+_ZN13GimmickWork_o13SetGearRotateEiiP10MethodInfo = 0x02cd7470 - 0x05708000;
+_ZN3Dpr17FieldObjectMove_o10get_IsBusyEP10MethodInfo = 0x01a778d0 - 0x05708000;
+_ZN3Dpr22FieldObjectRotateYaw_o10get_IsBusyEP10MethodInfo = 0x01a781c0 - 0x05708000;
+_ZN17AnimationPlayer_o4PlayEiffP10MethodInfo = 0x0211e9b0 - 0x05708000;
+_ZN10SmartPoint14AssetAssistant52PTR_SingletonMonoBehaviour_AudioManager_get_InstanceE = 0x04b76380 - 0x05708000;
+_ZN5Audio14AudioManager_o6PlaySeEjPvP10MethodInfo = 0x021eb8d0 - 0x05708000;
+_ZN19FieldPlayerEntity_o8PlayWalkEP10MethodInfo = 0x01dad950 - 0x05708000;
+_ZN3Dpr17FieldObjectMove_o15SetObjectEntityEP19FieldObjectEntity_oP10MethodInfo = 0x01a779e0 - 0x05708000;
+_ZN3Dpr17FieldObjectMove_o9MoveSpeedE21UnityEngine_Vector3_ofP10MethodInfo = 0x01a77f40 - 0x05708000;
+_ZN3Dpr22FieldObjectRotateYaw_o15SetObjectEntityEP19FieldObjectEntity_oP10MethodInfo = 0x01a782d0 - 0x05708000;
+_ZN3Dpr22FieldObjectRotateYaw_o8MoveTimeEffP10MethodInfo = 0x01a785e0 - 0x05708000;
+_ZN6Effect16EffectInstance_o4StopEfbP10MethodInfo = 0x01efe7b0 - 0x05708000;
+_ZN10SmartPoint14AssetAssistant9Sequencer4StopEPN11UnityEngine11Coroutine_oEP10MethodInfo = 0x02bc29b0 - 0x05708000;
+
+_ZN8EvData_o9GetStringEiP10MethodInfo = 0x01f115b0 - 0x05708000;
+_ZN11UnityEngine12GameObject_o4FindEPN6System6StringEP10MethodInfo = 0x026b1ea0 - 0x05708000;
+_ZN11UnityEngine12GameObject_o12GetComponentEP10MethodInfo = 0x01f48980 - 0x05708000;
+_ZN11UnityEngine39PTR_GameObject_BoxCollider_GetComponentE = 0x04be4160 - 0x05708000;
+_ZN11UnityEngine10Collider_o11set_enabledEbP10MethodInfo = 0x02c1c600 - 0x05708000;
+_ZN3Pml8Personal14PersonalSystem17GetTokuseiPatternEP10MethodInfo = 0x024a15d0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam15GetTokuseiIndexEP10MethodInfo = 0x02045ce0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam15SetTokuseiIndexEhP10MethodInfo = 0x02048ac0 - 0x05708000;
+_ZN3Dpr12EncountTools18SetupBattleTrainerEP37Dpr_Battle_Logic_BATTLE_SETUP_PARAM_oiiiiiiiP10MethodInfo = 0x02c3b800 - 0x05708000;
+
+_ZN3Dpr6Battle5Logic47Section_FromEvent_SwapItem_Description_TypeInfoE = 0x04c5b1f0 - 0x05708000;
+_ZN3Dpr6Battle5Logic40Section_FromEvent_SwapItem_Description_o4ctorEP10MethodInfo = 0x01fb8800 - 0x05708000;
+_ZN3Dpr6Battle5Logic57Section_FromEvent_SetWazaEffectIndex_Description_TypeInfoE = 0x04c5b350 - 0x05708000;
+_ZN3Dpr6Battle5Logic50Section_FromEvent_SetWazaEffectIndex_Description_o4ctorEP10MethodInfo = 0x01fb7f40 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common19Dorobou_CheckEnableEPPNS1_30EventFactor_EventHandlerArgs_oEhP10MethodInfo = 0x01d0e720 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common18CheckCantStealPokeEPPNS1_30EventFactor_EventHandlerArgs_oEhhP10MethodInfo = 0x01d0da30 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common8SwapItemEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_40Section_FromEvent_SwapItem_Description_oEP10MethodInfo = 0x01d0bdb0 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common18SetWazaEffectIndexEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_50Section_FromEvent_SetWazaEffectIndex_Description_oEP10MethodInfo = 0x01d0cb40 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common13GetCompetitorEPPNS1_30EventFactor_EventHandlerArgs_oEP10MethodInfo = 0x01d0a1f0 - 0x05708000;
+_ZN3Dpr6Battle5Logic46Section_FromEvent_SetItem_Description_TypeInfoE = 0x04c5b1f8 - 0x05708000;
+_ZN3Dpr6Battle5Logic39Section_FromEvent_SetItem_Description_o4ctorEP10MethodInfo = 0x01fb7ab0 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common7SetItemEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_39Section_FromEvent_SetItem_Description_oEP10MethodInfo = 0x01d0bd20 - 0x05708000;
+_ZN8ItemWork9IsAddItemEiiP10MethodInfo = 0x01aea500 - 0x05708000;
+_ZN8ItemWork7AddItemEiiP10MethodInfo = 0x01aea3a0 - 0x05708000;
+_ZN3Dpr6Battle5Logic13EventSystem_o17EVENTVAR_GetValueEtP10MethodInfo = 0x018f60a0 - 0x05708000;
+_ZN3Dpr6Battle5Logic9POKECON_o17GetPokeParamConstEhP10MethodInfo = 0x02037250 - 0x05708000;
+
+_ZN19FieldObjectEntity_o16get_gridPositionEP10MethodInfo = 0x01d50aa0 - 0x05708000;
+_ZN11GameManager12GetAttributeE24UnityEngine_Vector2Int_oPiS1_bP10MethodInfo = 0x02cd3b60 - 0x05708000;
+_ZN11GameManager17GetAttributeTableEiP10MethodInfo = 0x02cd3ed0 - 0x05708000;
+_ZN11AttributeID12MATR_IsWaterEiP10MethodInfo = 0x021267d0 - 0x05708000;
+_ZN3Dpr5Field14FieldEncount_o12SetSpaStructEPN3Pml8PokePara14PokemonParam_oEPN11XLSXContent17FieldEncountTable12Sheettable_oEPNS0_12FieldEncount13ENC_FLD_SPA_oEP10MethodInfo = 0x019b3eb0 - 0x05708000;
+_ZN15EncountDataWork23EncDataSave_CanUseSprayEP10MethodInfo = 0x01f08ac0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam8IsHpZeroEP10MethodInfo = 0x02043bd0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam8GetLevelEP10MethodInfo = 0x02043e30 - 0x05708000;
+_ZN3Dpr5Field14FieldEncount_o15MapEncountCheckEjibP10MethodInfo = 0x019b4100 - 0x05708000;
+_ZN3Dpr5Field11SwayGrass_o24SwayGrass_CheckSpEncountEPNS0_12FieldEncount15SWAY_ENC_INFO_oEP21UnityEngine_Vector3_ofP10MethodInfo = 0x019b43d0 - 0x05708000;
+_ZN3Dpr5Field22EncountResult_TypeInfoE = 0x04c5f200 - 0x05708000;
+_ZN3Dpr5Field15EncountResult_o4ctorEP10MethodInfo = 0x019b2c70 - 0x05708000;
+MonsLv_Array_TypeInfo = 0x04c5f208 - 0x05708000;
+_ZN15EncountDataWork15GetMovePokeDataEiPN6DPData14MV_POKE_DATA_oEP10MethodInfo = 0x01f08e10 - 0x05708000;
+_ZN3Dpr5Field14FieldEncount_o15EncountParamSetEiiiNS0_12FieldEncount13ENC_FLD_SPA_oEPN3Pml8PokePara14PokemonParam_oEPPNS0_15EncountResult_oEP10MethodInfo = 0x019b47f0 - 0x05708000;
+_ZN3Dpr5Field14FieldEncount_o8LastProcEPPNS0_15EncountResult_oEPNS0_12FieldEncount13ENC_FLD_SPA_oEP10MethodInfo = 0x019b4990 - 0x05708000;
+_ZN11GameManager11get_mapInfoEP10MethodInfo = 0x02cca5f0 - 0x05708000;
+_ZN11XLSXContent9MapInfo_o8get_ItemEiP10MethodInfo = 0x017d5790 - 0x05708000;
+_ZN3Dpr5Field14FieldEncount_o14SetEncountDataEPN3Pml8PokePara14PokemonParam_oEiNS0_12FieldEncount13ENC_FLD_SPA_oEPN6System5ArrayI8MonsLv_oEEiiPPNS0_15EncountResult_oEP10MethodInfo = 0x019b6e30 - 0x05708000;
+_ZN3Dpr5Field11SwayGrass_o6StopSEEP10MethodInfo = 0x019b4fa0 - 0x05708000;
+_ZN9ZukanWork14GetZenkokuFlagEP10MethodInfo = 0x017db490 - 0x05708000;
+_ZN15EncountDataWork15IsTairyouHasseiEP10MethodInfo = 0x01f09d60 - 0x05708000;
+_ZN8ZoneWork20TairyouHassei_ZoneIDEP10MethodInfo = 0x017da6f0 - 0x05708000;
+_ZN8ZoneWork14IsHillBackZoneEiP10MethodInfo = 0x017da610 - 0x05708000;
+_ZN15EncountDataWork15GetUrayamaIndexEiP10MethodInfo = 0x01f09de0 - 0x05708000;
+_ZN11GameManager16GetUrayamaMonsNoEiP10MethodInfo = 0x02cd1590 - 0x05708000;
+_ZN3Dpr5Field14FieldEncount_o13WildEncSingleEPN3Pml8PokePara14PokemonParam_oEPPNS0_15EncountResult_oEPN11XLSXContent17FieldEncountTable12Sheettable_oEPN6System5ArrayI8MonsLv_oEENS0_12FieldEncount13ENC_FLD_SPA_oENSI_15SWAY_ENC_INFO_oEP10MethodInfo = 0x019b4c00 - 0x05708000;
+_ZN3Dpr5Field14FieldEncount_o16CheckMovePokeEncEP10MethodInfo = 0x019b4500 - 0x05708000;
+_ZN8ZoneWork15SafariZonePosIDEiP10MethodInfo = 0x017da660 - 0x05708000;
+_ZN11GameManager15GetSafariMonsNoEiP10MethodInfo = 0x02cd1480 - 0x05708000;
+_ZN15RandomGroupWork11RandomValueEiP10MethodInfo = 0x01998cb0 - 0x05708000;
+_ZN8ZoneWork15IsSpFishingZoneEiP10MethodInfo = 0x017da600 - 0x05708000;
+_ZN3Dpr5Field9SpFishing10CheckPointEP24UnityEngine_Vector2Int_oP10MethodInfo = 0x019b55c0 - 0x05708000;
+_ZN10PlayerWork20set_WalkEncountCountEiP10MethodInfo = 0x02cf2c00 - 0x05708000;
+_ZN8ItemWork10IsUseSprayEPtP10MethodInfo = 0x01aeb720 - 0x05708000;
+
+_ZN11XLSXContent17LocalKoukanData_o8get_ItemEiP10MethodInfo = 0x017d5670 - 0x05708000;
+_ZN8GameData20DataManager_TypeInfoE = 0x04c59d70 - 0x05708000;
+_ZN10PlayerWork13get_msgLangIDEP10MethodInfo = 0x02ce2c20 - 0x05708000;
+_ZN3Pml8PokePara20InitialSpec_TypeInfoE = 0x04c5e700 - 0x05708000;
+_ZN3Pml8PokePara21PokemonParam_TypeInfoE = 0x04c59c10 - 0x05708000;
+_ZN3Pml8PokePara14PokemonParam_o4ctorEPNS0_13InitialSpec_oEP10MethodInfo = 0x02055140 - 0x05708000;
+_ZN10SmartPoint14AssetAssistant54PTR_SingletonMonoBehaviour_MessageManager_get_InstanceE = 0x04b7ac50 - 0x05708000;
+_ZN3Dpr7Message16MessageManager_o14GetNameMessageEPN6System6StringES4_P10MethodInfo = 0x0210ce50 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam13SetParentNameEPN6System6StringEP10MethodInfo = 0x0204ac00 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam9SetLangIdEjP10MethodInfo = 0x02049650 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam10SetGetBallEjP10MethodInfo = 0x0204b840 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam12SetConditionEihP10MethodInfo = 0x0204b040 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam7SetWazaEhiP10MethodInfo = 0x020464e0 - 0x05708000;
+_ZN10PlayerWork16get_playerStatusEP10MethodInfo = 0x02ce2d20 - 0x05708000;
+_ZN3Pml8PokePara18OwnerInfo_TypeInfoE = 0x04c5fbe8 - 0x05708000;
+_ZN3Pml8PokePara11OwnerInfo_o4ctorEPN6DPData10MYSTATUS_oEP10MethodInfo = 0x02054ea0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam15UpdateOwnerInfoEPNS0_11OwnerInfo_oEP10MethodInfo = 0x02048c90 - 0x05708000;
+_ZN8poketool9poke_memo20poketool_poke_memo_o14ClearPlaceTimeEPN3Pml8PokePara9CoreParamEiP10MethodInfo = 0x02bacca0 - 0x05708000;
+_ZN8poketool9poke_memo20poketool_poke_memo_o12SetPlaceTimeEPN3Pml8PokePara9CoreParamEjiP10MethodInfo = 0x02baccc0 - 0x05708000;
+_ZN8poketool9poke_memo20poketool_poke_memo_o11SetGetLevelEPN3Pml8PokePara9CoreParamEP10MethodInfo = 0x02bace70 - 0x05708000;
+_ZN8poketool9poke_memo20poketool_poke_memo_o10SetVersionEPN3Pml8PokePara9CoreParamEP10MethodInfo = 0x02baceb0 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam13StartFastModeEP10MethodInfo = 0x0204c910 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam11EndFastModeEbP10MethodInfo = 0x0204c960 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam17ChangeTalentPowerEijP10MethodInfo = 0x020446e0 - 0x05708000;
+
+_ZN11UnityEngine6Random5RangeEiiP10MethodInfo = 0x026941e0 - 0x05708000;
+_ZN8GameData20DataManager_TypeInfoE = 0x04c59d70 - 0x05708000;
+
+_ZN3Pml8PokePara9CoreParam12GetTokuseiNoEP10MethodInfo = 0x020488a0 - 0x05708000;
+
+ADD_GensiNoTikara = 0x01819480 - 0x05708000;
+_ZN3Pml8PokePara9CoreParam16CheckWazaMachineEjP10MethodInfo = 0x02046b40 - 0x05708000;
+_ZN3Dpr6Battle5Logic8ItemData16GetWazaMashineNoEtP10MethodInfo = 0x0249d4e0 - 0x05708000;
+
+_ZN9ZukanWork7SetPokeEPN3Pml8PokePara14PokemonParam_oEiP10MethodInfo = 0x017dc560 - 0x05708000;
+
+_ZN3Dpr6Battle5Logic12MainModule_o11IsSkyBattleEP10MethodInfo = 0x202c950 - 0x05708000;
+_ZN3Dpr6Battle5Logic13FieldStatus_o11CheckEffectEiP10MethodInfo = 0x18f54b0 - 0x05708000;
+_ZN3Dpr6Battle5Logic13FieldStatus_o9CheckFuinEPPNS1_12MainModule_oEPNS1_9POKECON_oEPNS1_15BTL_POKEPARAM_oEiP10MethodInfo = 0x18fb0e0 - 0x05708000;
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o11GetSickContEiP10MethodInfo = 0x1fddf80 - 0x05708000;
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o12GetSickParamEiP10MethodInfo = 0x1fddf00 - 0x05708000;
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o12PERMFLAG_GetEiP10MethodInfo = 0x1fdfec0 - 0x05708000;
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o13WAZA_IsUsableEiP10MethodInfo = 0x1fdf800 - 0x05708000;
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o16GetItemEffectiveEPPNS1_13FieldStatus_oEP10MethodInfo = 0x1fdfd70 - 0x05708000;
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o7IsGModeEP10MethodInfo = 0x1fdb9a0 - 0x05708000;
+_ZN3Dpr6Battle5Logic5GWaza7IsGWazaEiP10MethodInfo = 0x1900cf0 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Tables14IsKodawariItemEtP10MethodInfo = 0x1f790d0 - 0x05708000;
+_ZN3Dpr6Battle5Logic8SICKCONT8GetParamEPNS1_14BTL_SICKCONT_oEP10MethodInfo = 0x20d4de0 - 0x05708000;
+_ZN3Dpr6Battle5Logic8WAZADATA7IsValidEiP10MethodInfo = 0x1f72c00 - 0x05708000;
+_ZN3Pml4Item8ItemData6IsNutsEtP10MethodInfo = 0x249dc50 - 0x05708000;
+
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o9CheckSickEiP10MethodInfo = 0x1fd8b30 - 0x05708000;
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o5GetIDEP10MethodInfo = 0x1fd8a50 - 0x05708000;
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o8GetValueEiP10MethodInfo = 0x1fdd010 - 0x05708000;
+_ZN3Dpr6Battle5Logic8WAZADATA8IsDamageEiP10MethodInfo = 0x1f72c80 - 0x05708000;
+_ZN3Dpr6Battle5Logic8WAZADATA7GetFlagEiiP10MethodInfo = 0x1f72bf0 - 0x05708000;
+
+_ZN3Dpr6Battle5Logic41Section_FromEvent_RankReset_Description_o4ctorEP10MethodInfo = 0x1fb7090 - 0x05708000;
+_ZN3Dpr6Battle5Logic48Section_FromEvent_RankReset_Description_TypeInfoE = 0x4c5b360 - 0x05708000;
+_ZN3Dpr6Battle5Logic36Section_SideEffect_Add_Description_o4ctorEP10MethodInfo = 0x21cb080 - 0x05708000;
+_ZN3Dpr6Battle5Logic43Section_SideEffect_Add_Description_TypeInfoE = 0x4c5b3c8 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common13AddSideEffectEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_36Section_SideEffect_Add_Description_oEP10MethodInfo = 0x1d0b4b0 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common9RankResetEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_41Section_FromEvent_RankReset_Description_oEP10MethodInfo = 0x1d0ad80 - 0x05708000;
+_ZN3Dpr6Battle5Logic11ExPokePos_o4ctorEihP10MethodInfo = 0x18f6730 - 0x05708000;
+_ZN3Dpr6Battle5Logic18ExPokePos_TypeInfoE = 0x4c5a8e8 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common17ExpandExistPokeIDEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_11ExPokePos_oEP17System_Byte_arrayP10MethodInfo = 0x1d0f510 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common20GetExistFrontPokePosEPPNS1_30EventFactor_EventHandlerArgs_oEhP10MethodInfo = 0x1d0f1e0 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common12PokeIDtoSideEPPNS1_30EventFactor_EventHandlerArgs_oEPhP10MethodInfo = 0x1d09f50 - 0x05708000;
+_ZN3Dpr6Battle5Logic7Handler6Waza_o25common_CureFriendPokeSickEPPNS1_30EventFactor_EventHandlerArgs_oEhbbP10MethodInfo = 0x180d360 - 0x05708000;
+_ZN3Dpr6Battle5Logic8SICKCONT8MakeTurnEhhP10MethodInfo = 0x20d4680 - 0x05708000;
+_ZN3Dpr6Battle5Logic30Section_CureSick_Description_o4ctorEP10MethodInfo = 0x21b48b0 - 0x05708000;
+_ZN3Dpr6Battle5Logic37Section_CureSick_Description_TypeInfoE = 0x4c5b1a8 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common8CureSickEPPNS1_30EventFactor_EventHandlerArgs_oEPPNS1_30Section_CureSick_Description_oEP10MethodInfo = 0x1d0a960 - 0x05708000;
+
+_ZN3Dpr6Battle5Logic15BTL_POKEPARAM_o9GetMonsNoEP10MethodInfo = 0x1fdcfb0 - 0x05708000;
+
+_ZN3Dpr6Battle5Logic7Handler4Waza20handler_Jisin_damageEPPNS1_30EventFactor_EventHandlerArgs_oEhP10MethodInfo = 0x1806520 - 0x05708000;
+_ZN3Dpr6Battle5Logic7Handler4Waza23handler_Jisin_checkHideEPPNS1_30EventFactor_EventHandlerArgs_oEhP10MethodInfo = 0x1806610 - 0x05708000;
+_ZN3Dpr6Battle5Logic4Calc7GetRandEjP10MethodInfo = 0x1f74990 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common14SearchByPokeIDEPPNS1_30EventFactor_EventHandlerArgs_oEhbbP10MethodInfo = 0x1d0a1c0 - 0x05708000;
+_ZN3Dpr6Battle5Logic10PokeAction9GetWazaIDEPNS1_12PokeAction_oEP10MethodInfo = 0x2042560 - 0x05708000;
+_ZN3Dpr6Battle5Logic21PokeActionContainer_o20IsAllActDoneByPokeIDEhP10MethodInfo = 0x2042860 - 0x05708000;
+_ZN3Dpr6Battle5Logic4Calc10IsOccurPerEjP10MethodInfo = 0x1f75e20 - 0x05708000;
+_ZN3Dpr6Battle5Logic4Calc23MakeDefaultPokeSickContEjhbP10MethodInfo = 0x1f74d20 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common14IsFriendPokeIDEPPNS1_30EventFactor_EventHandlerArgs_oEhhP10MethodInfo = 0x1d0a040 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common16TokuseiWindow_InEPPNS1_30EventFactor_EventHandlerArgs_oEhP10MethodInfo = 0x1d0a4a0 - 0x05708000;
+_ZN3Dpr6Battle5Logic6Common17TokuseiWindow_OutEPPNS1_30EventFactor_EventHandlerArgs_oEhP10MethodInfo = 0x1d0a550 - 0x05708000;

@@ -1,0 +1,8 @@
+[target=main, version=bd_130]
+// Rewrite Dpr.Battle.Logic.Handler.Waza$$handler_Dorobou
+01807cb0:
+    b HandlerDorobou
+
+// Rewrite Dpr.Battle.Logic.Common$$Dorobou_CheckEnable
+01d0e720:
+    b Dorobou_CheckEnable

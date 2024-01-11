@@ -1,6 +1,0 @@
-[target=main, version=bd_130]
-01f6db20:
-    bl LocalKoukan_GetTargetData
-
-01f6db48:
-    bl LocalKoukan_CreateTradePokeParam

@@ -1,0 +1,21 @@
+[target=main, version=bd_130]
+
+// Pml.PokePara.Accessor$$GetDprIllegalFlag
+// Always return false (legal)
+024a8520:
+    b GetDprIllegalFlag
+
+// PokeDupeChecker$$IsDuplicatedPokemonParam
+// Always return false (legal)
+01997390:
+    b IsDuplicatedPokemonParam
+
+// Pml.PokePara.Accessor$$SetDprIllegalFlag
+// Do nothing (Don't set the illegal flag)
+024a84a0:
+    b SetDprIllegalFlag
+
+// Pml.PokePara.CoreDataHeader$$set_fuseiTamagoFlag
+// Do nothing (Don't set the Bad Egg flag)
+//02043460:
+//    b set_fuseiTamagoFlag

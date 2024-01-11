@@ -1,6 +1,10 @@
 #include "util.hpp"
 #include "il2cpp-api.h"
 #include "PlayerWork.hpp"
+#include "Dpr/Battle/Logic/Common.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_Message.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_RankReset.hpp"
+#include "logger.hpp"
 
 
 void system_load_typeinfo(void * typeInfo)
@@ -44,14 +48,175 @@ uint32_t GetBadgeCount()
          (bVar7 & 1) + (bVar8 & 1);
 }
 
-Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * createEventHandlerTable(uint16_t eventID, MethodInfo * src, Il2CppMethodPointer methodPointer)
+uint32_t getLevelCapIndex()
+{
+    constexpr size_t NUM_FLAGS = 1;
+    constexpr size_t NUM_SYS_FLAGS = 1;
+    constexpr size_t NUM_WORK_VALUES = 2;
+    uint32_t numEvents = GetBadgeCount();
+
+    uint32_t flags[NUM_FLAGS] = {
+        2770 // Beating Cyrus at spear pillar
+    };
+
+    uint32_t sysflags[NUM_SYS_FLAGS] = {
+        5 // Game clear
+    };
+
+    uint32_t works[NUM_WORK_VALUES] = {
+        71, // WK_SCENE_R205A, Beating Mars at Valley Windworks
+        54 // WK_SCENE_C02, Beating Barry at Canalave
+    };
+
+    uint32_t workMins[NUM_WORK_VALUES] = {
+        2, // WK_SCENE_R205A, Beating Mars at Valley Windworks
+        1 // WK_SCENE_C02, Beating Barry at Canalave
+    };
+
+    for (size_t i = 0; i < NUM_FLAGS; i++)
+    {
+        if (PlayerWork::GetBool(flags[i], nullptr))
+        {
+            numEvents += 1;
+        }
+    }
+
+    for (size_t i = 0; i < NUM_SYS_FLAGS; i++)
+    {
+        if (PlayerWork::GetSytemFlag(sysflags[i], nullptr))
+        {
+            numEvents += 1;
+        }
+    }
+
+    for (size_t i = 0; i < NUM_WORK_VALUES; i++)
+    {
+        if (PlayerWork::GetInt(works[i], nullptr) >= workMins[i])
+        {
+            numEvents += 1;
+        }
+    }
+
+    return numEvents;
+}
+
+uint32_t getMaxLevelOfCapIndex(uint32_t index)
+{
+    switch (index)
+    {
+        case 0: // Roark
+            return 16;
+        case 1: // Valley Windworks
+            return 19;
+        case 2: // Gardenia
+            return 26;
+        case 3: // Fantina
+            return 33;
+        case 4: // Maylene
+            return 39;
+        case 5: // Crasher Wake
+            return 44;
+        case 6: // Canalave Barry
+            return 49;
+        case 7: // Byron
+            return 53;
+        case 8: // Candice
+            return 56;
+        case 9: // Spear Pillar
+            return 60;
+        case 10: // Volkner
+            return 62;
+        case 11: // Cynthia
+            return 78;
+        case 12: // Stark Mountain
+            return 85;
+        default: // Max
+            return 100;
+    }
+}
+
+uint32_t getMaxLevel()
+{
+    uint32_t index = getLevelCapIndex();
+    return getMaxLevelOfCapIndex(index);
+}
+
+uint32_t getLevelCapIndexOfLevel(uint32_t level)
+{
+    uint32_t i = 0;
+    uint32_t levelOfCap = 0;
+    do
+    {
+        levelOfCap = getMaxLevelOfCapIndex(i);
+        socket_log_fmt("checking cap %d\n", levelOfCap);
+        if (level <= levelOfCap)
+        {
+            return i;
+        }
+        i++;
+    }
+    while (levelOfCap < 100);
+
+    return 0;
+}
+
+System::Array<Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *> * CreateEventHandlerTable(uint32_t size)
+{
+    auto *array = (System::Array<Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *> *) malloc(32 + 8 * size);
+    array->max_length = size;
+    for (int i = 0; i < size; ++i)
+        array->m_Items[i] = nullptr;
+    return array;
+}
+
+Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * CreateEventHandler(uint16_t eventID, MethodInfo * src, Il2CppMethodPointer methodPointer)
 {
     MethodInfo * method = copyMethodInfo(src, methodPointer);
-    Dpr::Battle::Logic::EventFactor_EventHandlerTable_o * evtHandlerTable = (Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *) il2cpp_object_new(Dpr::Battle::Logic::EventFactor_EventHandlerTable_TypeInfo);
-    Dpr::Battle::Logic::EventFactor_EventHandler_o * evtHandler = (Dpr::Battle::Logic::EventFactor_EventHandler_o *) il2cpp_object_new(Dpr::Battle::Logic::EventFactor_EventHandler_TypeInfo);
+    auto * evtHandlerTable = (Dpr::Battle::Logic::EventFactor_EventHandlerTable_o *) malloc(sizeof(Dpr::Battle::Logic::EventFactor_EventHandlerTable_o));
+    auto * evtHandler = (Dpr::Battle::Logic::EventFactor_EventHandler_o *) malloc(sizeof(Dpr::Battle::Logic::EventFactor_EventHandler_o));
     evtHandler->ctor((intptr_t) methodPointer, method);
+    evtHandler->fields.super.delegates = nullptr;
     evtHandlerTable->fields.eventID = eventID;
     evtHandlerTable->fields.eventHandler = evtHandler;
 
     return evtHandlerTable;
+}
+
+void HandlerRankResetAll(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, uint8_t pokeID) {
+    socket_log_fmt("HandlerRankResetAll\n");
+
+    using namespace Dpr::Battle::Logic;
+
+    system_load_typeinfo((void *)0xa9b3);
+    auto *desc = (Section_FromEvent_RankReset_Description_o *) il2cpp_object_new(Section_FromEvent_RankReset_Description_TypeInfo);
+    desc->ctor(nullptr);
+    auto *exPos = (ExPokePos_o *)il2cpp_object_new(ExPokePos_TypeInfo);
+    exPos->ctor(ExPosType::FULL_ALL, Common::GetExistFrontPokePos(args, pokeID, nullptr), nullptr);
+    desc->fields.pokeCount = Common::ExpandExistPokeID(args, &exPos, desc->fields.pokeID, nullptr);
+    Common::RankReset(args, &desc, nullptr);
+
+    Section_FromEvent_Message::Description_o * descMsg = (Section_FromEvent_Message::Description_o *) il2cpp_object_new(Section_FromEvent_Message::Description_TypeInfo);
+    descMsg->ctor(nullptr);
+    descMsg->fields.pokeID = pokeID;
+    descMsg->fields.message->Setup(1, 116, nullptr);
+    Common::Message(args, &descMsg, nullptr);
+}
+
+void HandlerRankReset(Dpr::Battle::Logic::EventFactor_EventHandlerArgs_o **args, uint8_t pokeID) {
+    socket_log_fmt("HandlerRankReset\n");
+
+    using namespace Dpr::Battle::Logic;
+
+    system_load_typeinfo((void *)0xa911);
+    auto *desc = (Section_FromEvent_RankReset_Description_o *) il2cpp_object_new(Section_FromEvent_RankReset_Description_TypeInfo);
+    desc->ctor(nullptr);
+    desc->fields.pokeCount = 1;
+    desc->fields.pokeID->m_Items[0] = pokeID;
+    Common::RankReset(args, &desc, nullptr);
+
+    Section_FromEvent_Message::Description_o * descMsg = (Section_FromEvent_Message::Description_o *) il2cpp_object_new(Section_FromEvent_Message::Description_TypeInfo);
+    descMsg->ctor(nullptr);
+    descMsg->fields.pokeID = pokeID;
+    descMsg->fields.message->Setup(1, 268, nullptr);
+    Common::Message(args, &descMsg, nullptr);
 }
