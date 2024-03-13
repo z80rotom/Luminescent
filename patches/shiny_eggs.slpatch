@@ -1,0 +1,17 @@
+[target=main, version=bd_130]
+
+02cccf00:
+    b DataManager_GetUniqueID1
+
+//02ccd050:
+//    b DataManager_GetUniqueID2
+
+02ccd170:
+    b DataManager_GetUniqueID3
+
+
+01cc503c:
+    bl Allow_Release_Egg
+
+01cc5888:
+    bl Allow_Release_Egg
