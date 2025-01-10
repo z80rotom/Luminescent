@@ -1,7 +1,7 @@
 [target=main, version=bd_130]
 // 01d68a10:
-01d603e0:
-    b BadgeWork_IsGet
+//01d603e0:
+//    b BadgeWork_IsGet
 
 // 025684c0:
 //    b Dpr_Battle_Logic_Section_WazaExec_CheckFail_1st_checkSabotageType

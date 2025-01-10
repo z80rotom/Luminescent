@@ -1,6 +1,8 @@
 #pragma once
 
 #include "il2cpp.hpp"
+#include "UnityEngine/GameObject.hpp"
+#include "Dpr/Field/FieldEncount/SWAY_ENC_INFO.hpp"
 
 namespace Dpr
 {
@@ -27,6 +29,11 @@ namespace Dpr
             SwayGrass_c *klass;
             void *monitor;
             SwayGrass_Fields fields;
+
+            // 019b43d0
+            static bool SwayGrass_CheckSpEncount(Dpr::Field::FieldEncount::SWAY_ENC_INFO_o *info, UnityEngine_Vector3_o *pos, float size, MethodInfo *method);
+            // 019b4fa0
+            static void StopSE(MethodInfo *method);
         };
         struct SwayGrass_StaticFields {
             bool is_swaygrass_flag;
@@ -38,7 +45,7 @@ namespace Dpr
             int32_t rensa_mons;
             uint32_t rensa_lv;
             bool BattleEndRensaStart;
-            struct UnityEngine_GameObject_o* RootGrass;
+            struct UnityEngine::GameObject_o* RootGrass;
             bool _callSwayBGM;
             bool _callStopSwayBGM;
         };

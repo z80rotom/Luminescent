@@ -2,6 +2,7 @@
 #include "Dpr/Message/MessageWordSetHelper.hpp"
 #include "System/Array.hpp"
 #include "System/String.hpp"
+#include "UnityEngine/GameObject.hpp"
 
 struct BoxStatusPanelUI_Fields {
 	Pml::PokePara::CoreParam * pokemonParam;
@@ -21,7 +22,7 @@ struct BoxStatusPanelUI_o {
 struct Dpr_UI_PokemonStatusPanel_Fields {
 	UnityEngine_MonoBehaviour_Fields super;
 	struct Pml_PokePara_PokemonParam_o* _pokemonParam;
-	struct UnityEngine_GameObject_o* _aButtonGuide;
+	struct UnityEngine::GameObject_o* _aButtonGuide;
 	struct Dpr_UI_UIInputController_o* input;
 	struct Dpr_UI_PokemonStatusWindow_Param_o* statusParam;
 	struct UnityEngine_Events_UnityAction_bool__o* onChangeMemberSelectArrow;

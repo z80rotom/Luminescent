@@ -1,3 +1,5 @@
+#pragma once
+
 #include "il2cpp.hpp"
 
 namespace Dpr
@@ -9,6 +11,8 @@ namespace Dpr
             int32_t GetFieldFunctionType(MethodInfo * method);
             // 1ca61f0
             int32_t get_Id(MethodInfo *method);
+            // 1ca5cc0
+            int32_t get_count(MethodInfo *method);
         };
     }
 }

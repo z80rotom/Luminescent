@@ -40,7 +40,7 @@ namespace Dpr
             struct UnityEngine_Sprite_array* shortcutButonSprites;
             int32_t index;
             struct UnityEngine_RectTransform_o* rectTransform;
-            struct Dpr::Item::ItemInfo_o* item;
+            Dpr::Item::ItemInfo_o* item;
         };
 
         struct BagItemButton_o {

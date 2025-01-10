@@ -336,6 +336,11 @@ namespace Dpr
                     // 18114a0
                     static bool common_SideEffectCore(EventFactor_EventHandlerArgs_o ** args, uint8_t pokeID, int32_t side, int32_t effect, BTL_SICKCONT_o * cont, 
                                                 int32_t strType, uint32_t strID, int32_t strArg, bool replaceStrArg0ByExpandSide, MethodInfo * method);
+                    static bool common_CureFriendPokeSick(EventFactor_EventHandlerArgs_o **args, uint8_t attackerID, bool excludeOutOfWazaTarget, bool canWriteGenFlag, MethodInfo *method);
+
+                    static void handler_Jisin_damage(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
+                    static void handler_Jisin_checkHide(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
+
 
                     Waza_c *klass;
                     void *monitor;

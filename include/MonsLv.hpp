@@ -11,3 +11,6 @@ struct MonsLv_Fields {
 struct MonsLv_o {
     MonsLv_Fields fields;
 };
+
+// 04c5f208
+extern void * MonsLv_Array_TypeInfo;

@@ -3,10 +3,18 @@
 #include "il2cpp.hpp"
 #include "Dpr/Battle/Logic/BTL_POKEPARAM.hpp"
 #include "Dpr/Battle/Logic/EventFactor.hpp"
+#include "Dpr/Battle/Logic/ExPokePos.hpp"
+#include "Dpr/Battle/Logic/PokeAction.hpp"
+#include "Dpr/Battle/Logic/Section_CureSick.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_Message.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_FormChange.hpp"
 #include "Dpr/Battle/Logic/Section_FieldEffect_Add_Description.hpp"
 #include "Dpr/Battle/Logic/Section_FromEvent_FieldEffect_Remove_Description.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_SetItem_Description.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_SetWazaEffectIndex_Description_o.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_SwapItem_Description.hpp"
+#include "Dpr/Battle/Logic/Section_FromEvent_RankReset.hpp"
+#include "Dpr/Battle/Logic/Section_SideEffect_Add.hpp"
 
 namespace Dpr
 {
@@ -45,6 +53,29 @@ namespace Dpr
                 static void AttachSkipCheckHandler(EventFactor_EventHandlerArgs_o ** args, EventFactor_SkipCheckHandler_o ** handler, MethodInfo * method);
                 // 1d0a0c0
                 static void DetachSkipCheckHandler(EventFactor_EventHandlerArgs_o ** args, MethodInfo * method);
+                // 1d0e720
+                static bool Dorobou_CheckEnable(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
+                // 1d0da30
+                static bool CheckCantStealPoke(EventFactor_EventHandlerArgs_o **args, uint8_t attackPokeID, uint8_t targetPokeID, MethodInfo *method);
+                // 1d0bdb0
+                static bool SwapItem(EventFactor_EventHandlerArgs_o **args, Section_FromEvent_SwapItem_Description_o **desc, MethodInfo *method);
+                // 1d0cb40
+                static void SetWazaEffectIndex(EventFactor_EventHandlerArgs_o **args, Section_FromEvent_SetWazaEffectIndex_Description_o **desc, MethodInfo *method);
+                // 1d0a1f0
+                static int32_t GetCompetitor(EventFactor_EventHandlerArgs_o **args, MethodInfo *method);
+                // 1d0bd20
+                static bool SetItem(EventFactor_EventHandlerArgs_o **args, Section_FromEvent_SetItem_Description_o **desc, MethodInfo *method);
+
+                static uint8_t ExpandExistPokeID(EventFactor_EventHandlerArgs_o **args, ExPokePos_o **exPos, System_Byte_array *dst_pokeID, MethodInfo *method);
+                static bool AddSideEffect(EventFactor_EventHandlerArgs_o **args, Section_SideEffect_Add_Description_o **desc, MethodInfo *method);
+                static bool RankReset(EventFactor_EventHandlerArgs_o **args, Section_FromEvent_RankReset_Description_o **desc, MethodInfo *method);
+                static uint8_t GetExistFrontPokePos(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
+                static int32_t PokeIDtoSide(EventFactor_EventHandlerArgs_o **args, uint8_t *pokeID, MethodInfo *method);
+                static bool CureSick(EventFactor_EventHandlerArgs_o **args, Section_CureSick_Description_o **desc, MethodInfo *method);
+                static PokeAction_o* SearchByPokeID(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, bool isSkipGStart, bool isSkipNull, MethodInfo *method);
+                static bool IsFriendPokeID(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID1, uint8_t pokeID2, MethodInfo *method);
+                static bool TokuseiWindow_In(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
+                static bool TokuseiWindow_Out(EventFactor_EventHandlerArgs_o **args, uint8_t pokeID, MethodInfo *method);
             };
 
             extern void * Common_TypeInfo;

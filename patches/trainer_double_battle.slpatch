@@ -1,3 +1,4 @@
 [target=main, version=bd_130]
-2c3b9e4:
-    bl BTL_SETUP_Trainer
+
+2c5015c:
+    bl Dpr_EncountTools_SetupBattleTrainer

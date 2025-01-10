@@ -130,32 +130,24 @@ HashSet_WazaNo__o * CoreParam::CollectRemindableWaza( MethodInfo *method )
     socket_log_fmt("CollectRemindableWaza\n");
     socket_log_fmt("&Pml::PokePara::Accessor::GetWazaNo: %08X\n", &Pml::PokePara::Accessor::GetWazaNo);
 
-    int32_t monsNo = this->GetMonsNo((MethodInfo *) nullptr);
-    uint16_t formNo = this->GetFormNo((MethodInfo *) nullptr);
-    socket_log_fmt("monsNo: %04X\n", monsNo);
-    socket_log_fmt("formNo: %02X\n", formNo);
     HashSet_WazaNo__o * hashSet = this->_CollectRemindableWaza((MethodInfo *) nullptr);
-    socket_log_fmt("hashSet: %08X\n", hashSet);
 
     PmlUse_o * pmlUse = PmlUse_o::get_Instance((MethodInfo *) nullptr);
-    socket_log_fmt("pmlUse: %08X\n", pmlUse);
     ItemTable_o * itemTable = pmlUse->fields.itemPrmTotal;
-    socket_log_fmt("itemTable: %08X\n", itemTable);
     System::Array<SheetWazaMachine_o *> * wazaMachine = itemTable->fields.WazaMachine;
-    socket_log_fmt("wazaMachine: %08X\n", wazaMachine);
-    socket_log_fmt("this->fields.m_accessor: %08X\n", this->fields.m_accessor);
 
     SheetWazaMachine_o * iWazaMachine;
     for (size_t i = 0; i < wazaMachine->max_length; i++)
     {
         iWazaMachine = wazaMachine->m_Items[i];
-        if (!ItemData::HaveItem(iWazaMachine->fields.itemNo, (MethodInfo *) nullptr))
+        if (!ItemData::HaveItem(iWazaMachine->fields.itemNo, nullptr))
         {
             continue;
         }
         
-        PersonalSystem::LoadPersonalData(monsNo, formNo, (MethodInfo *) nullptr);
-        if (!PersonalSystem::CheckPersonalWazaMachine(iWazaMachine->fields.machineNo, (MethodInfo *) nullptr))
+        uint32_t machineNo = ItemData::GetWazaMashineNo(iWazaMachine->fields.itemNo, nullptr);
+        bool canLearnTm = this->CheckWazaMachine(machineNo, nullptr);
+        if (!canLearnTm)
         {
             continue;
         }

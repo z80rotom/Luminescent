@@ -1,0 +1,4 @@
+[target=main, version=bd_130]
+
+01911260:
+    b Dpr_Battle_Logic_Handler_Item_handler_Leek
